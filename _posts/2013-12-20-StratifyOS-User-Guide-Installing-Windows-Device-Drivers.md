@@ -3,10 +3,12 @@ layout: post
 title: Installing Windows Device Drivers
 category: User Guides
 tagline: Stratify OS User Guide
-tags : [stratify, user-guide]
+tags : [stratify, user-guide, windows]
 ad:
-  description: "Short Description of Blog advertisement"
-  image: "blog-ad.jpg"
+  title: "Let's Build Together"
+  description: "Stratify Labs can help you build your next product with our expert engineering and consulting services."
+  image: "services-ad-image.png"
+  link: "/services/"
 ---
 
 ## Windows XP/Vista/7

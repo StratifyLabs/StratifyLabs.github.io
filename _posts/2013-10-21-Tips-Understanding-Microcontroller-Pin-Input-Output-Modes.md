@@ -3,7 +3,7 @@ layout: post
 title: Understanding Microcontroller Pin Input/Output Modes
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, microcontroller, gpio, programming]
+tags : [embedded, microcontroller, gpio, programming, pio]
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/gpio-output-types.svg" />
 General purpose input/output (GPIO) pins on microcontrollers have various modes 

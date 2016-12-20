@@ -3,7 +3,7 @@ layout: post
 title: Finding a Great Freelancer
 category : Product Management
 tagline: Four Tips
-tags : [product development, freelancer]
+tags : [product development, freelancer, business]
 ad:
   title: "Let's Build Together"
   description: "Stratify Labs can help you build your next product with our expert engineering and consulting services."
