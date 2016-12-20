@@ -1,16 +1,16 @@
 
 .post_image {
-	width: 100%; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;
+  width: 100%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .post_image_tall {
-	width: 50%; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;
+  width: 50%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .post_image_home {
@@ -21,15 +21,15 @@
 }
 
 .post_equation {
-	width: 50%; 
-	display: block; 
-	margin-left: auto; 
-	margin-right: auto;
+  width: 50%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .anchor{
-	padding-top: 50px; 
-	margin-top: -50px;
+  padding-top: 50px; 
+  margin-top: -50px;
 }
 
 .flex-video {
@@ -146,14 +146,14 @@ label:hover input[type="radio"] ~ i.fa {
 }
 
 #ciForm .row, #cuForm .row {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .error-message {
-    color: red;
-    padding-top: 10px;
+  color: red;
+  padding-top: 10px;
 }
 
 .form-subheader {
@@ -168,7 +168,7 @@ label:hover input[type="radio"] ~ i.fa {
 }
 
 .form-subheader-triangle {
-  float:left
+  float:left;
 }
 
 .form-subheader-triangle svg {
@@ -185,4 +185,165 @@ label:hover input[type="radio"] ~ i.fa {
 
 .form-question-desc {
   font-size: 12px;
+}
+
+input#mce-EMAIL {
+  width: 100%;
+}
+
+/******************************************************************************
+/* Blog Styling */
+article.post-card {
+  box-shadow: 0 3px 13px 1px rgba(0,0,0,0.12);
+  transition: .3s all ease-in-out;
+  padding:20px;
+  margin-bottom:30px;
+  margin-top: 22px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 15px;
+}
+
+article.post-card:hover {
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,0.06);
+  background-color: #FAFAFA;
+}
+
+.post-title h2 {
+  font-size:20px;
+  margin:0;
+}
+
+.post-title:hover {
+  text-decoration: none;
+}
+
+.post-categories {
+  margin: 10px 0;
+  float:left;
+  font-size:14px;
+}
+
+.post-date {
+  margin: 10px 0;
+  float:right;
+  font-size:14px;
+}
+
+.post-content .btn {
+  margin: 20px 0;
+}
+
+.post-meta {
+  border-top: 2px solid #ededed;
+  padding-top: 30px;
+}
+
+.post-meta-categories a {
+  font-size:14px;
+  text-transform:uppercase;
+  background-color: #ededed;
+  display: inline-block;
+  margin-left: 5px;
+  padding:5px;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.post-meta-categories a:hover {
+  background-color: #44546a;
+  color: #fff;
+}
+
+.container .pagination {
+  width:100%;
+}
+
+.prev-page {
+  float:left;
+}
+
+.next-page {
+  float:right;
+}
+
+/******************************************************************************
+/* Blog Sidebar Styles */
+.filter-col-ctn h2 {
+  font-size: 20px;
+  margin: 22px 0 20px 0;
+  font-weight: 400;
+}
+
+.filter-col-ctn ul {
+  list-style: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.filter-col-ctn .tagcloud, .filter-col-ctn form {
+  margin-bottom: 40px;
+}
+
+.filter-col-ctn ul li {
+  padding: 12px 1px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.filter-col-ctn .badge {
+  float: right;
+}
+
+.tagcloud a {
+  background-color: #888;
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin: 0 4px 8px 0;
+  padding: 6px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.tagcloud a:hover {
+  background-color: #44546a;
+}
+
+/******************************************************************************
+/* Infinite scroll loading spinner and animation */
+.infinite-spinner {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #333;
+  margin: 60px auto;
+  -webkit-animation: scaleout 1.0s infinite ease-in-out;
+  animation: scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleout {
+  0% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
 }

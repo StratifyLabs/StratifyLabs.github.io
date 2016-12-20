@@ -4,6 +4,9 @@ title: Finding a Great Freelancer
 category : Product Management
 tagline: Four Tips
 tags : [product development, freelancer]
+ad:
+  description: "Short Description of Blog advertisement"
+  image: "blog-ad.jpg"
 ---
 
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/tips.jpg" />

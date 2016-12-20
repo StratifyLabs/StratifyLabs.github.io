@@ -1,0 +1,90 @@
+{% comment %} 
+<!--
+  Siderail Feature
+
+  This file contains the code needed to generate a siderail consisting of blog
+  archives for categories as well as for months/years.
+
+  Currently the siderail is included on all 3 of the blog layouts, i.e. -
+  blog index, blog page, and blog archives page.
+--> 
+{% endcomment %}
+
+<!-- Siderail -->
+<div class="blogroll-navigation">
+
+  <!-- Categories -->
+  <div class="filter-col-ctn">
+    <h2><i class="fa fa-folder-open"></i> Categories</h2>
+    <ul>
+    {% assign sorted_cats = (site.categories | sort:0) %}
+    {% for cat in sorted_cats %}
+
+      {% capture same_page %}/tips/category/{{ cat[0] | replace: ' ', '-' }}/{% endcapture %}
+	      
+      <li><a href="{{ same_page | prepend: site.baseurl }}" {% if page.url == "same_page" %}class="is-active"{% endif %}>{{ cat[0] | capitalize }}</a> <span class="badge">{{ cat[1].size }}</span></li>
+
+    {% endfor %}
+
+    </ul>
+  </div> <!-- .blog-cat-col -->
+
+
+  <!-- Tags -->
+  <div class="filter-col-ctn tags">
+    <h2><i class="fa fa-tags"></i> Tags</h2>
+
+          <div class="tagcloud">
+
+          {% assign sorted_tags = (site.tags | sort:0) %}
+
+          {% for tag in sorted_tags %}
+            <a href="{{ site.baseurl }}/tips/tag/{{ tag | first | slugize | replace: ' ', '-' }}/" class="">{{ tag | first }}</a>
+          {% endfor %}
+
+          </div>
+  </div> <!-- .blog-cat-col -->
+
+
+  <!-- Archives -->
+  <div class="filter-col-ctn">
+    <h2><i class="fa fa-archive"></i> Archive</h2>
+    <ul class="filter-col">
+
+    {% assign counter = 0 %}
+    {% for post in site.posts %}
+      {% assign thisyear = post.date | date: "%B %Y" %}
+      {% assign prevyear = post.previous.date | date: "%B %Y" %}
+      {% assign counter = counter | plus: 1 %}
+    	
+      {% if thisyear != prevyear %}
+        {% capture same_page %}/tips/{{ post.date | date: "%Y" }}/{{ post.date | date: "%m"}}/{% endcapture %}
+
+        <li><a href="{{ same_page | prepend: site.baseurl }}" {% if page.url == same_page %}class="is-active"{% endif %}>{{ thisyear }}</a> <span class="badge">{{ counter }}</span>
+
+        {% assign counter = 0 %}
+      {% endif %}
+  
+    {% endfor %}
+    
+    </ul>
+  </div> <!-- .blog-date-col -->
+
+  <div class="filter-col-ctn">
+    <h2><i class="fa fa-envelope"></i> Stratify Newsletter</h2>
+    <!-- Begin MailChimp Signup Form -->
+    <div id="mc_embed_signup">
+      <form action="//stratifylabs.us13.list-manage.com/subscribe/post?u=84779f6d7271364d8f9420147&amp;id=7b3b32c0f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <label for="mce-EMAIL">Subscribe here to get our latest updates</label>
+          <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+          <div class="clear">
+            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info submitbtn" style="margin-top:20px;">Sign me up!</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--End mc_embed_signup-->
+  </div>
+
+</div> <!-- .blogroll-navigation -->

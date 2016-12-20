@@ -9,51 +9,49 @@ tags : [stratify]
 We want to enable people to build smart products faster. There is already a huge range of professtional tools used for building smart products.  Most of them are for one of two categories: application processors or microcontrollers.  Stratify combines the best of both.
 
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<h2 class="text-center">Application Processors</h2>
-			<p></p>
-			<ul class="list-group">
-			<li class="list-group-item list-group-item-info">Great for smartphones, tablets, and video</li>
-			<li class="list-group-item list-group-item-info">ARM Cortex A Series</li>
-			<li class="list-group-item list-group-item-success">Apps are easy</li>
-			<li class="list-group-item list-group-item-danger">Kernel is difficult</li>
-			<li class="list-group-item list-group-item-danger">Higher power consumption</li>
-			<li class="list-group-item list-group-item-danger">Expensive hardware development</li>
-			<li class="list-group-item list-group-item-danger">More expensive</li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<h2 class="text-center">Microcontrollers</h2>
-			<p></p>
-			<ul class="list-group">
-			<li class="list-group-item list-group-item-info">Great for smartwatches and IoT</li>
-			<li class="list-group-item list-group-item-info">ARM Cortex M Series</li>
-			<li class="list-group-item list-group-item-danger">Apps are difficult</li>
-			<li class="list-group-item list-group-item-danger">Kernel is difficult</li>
-			<li class="list-group-item list-group-item-success">Low power consumption</li>
-			<li class="list-group-item list-group-item-success">Rapid hardware development</li>
-			<li class="list-group-item list-group-item-success">Less expensive</li>
-			</ul>
-		</div>
-		<div class="col-md-4">
-			<h2 class="text-center"><b>Stratify OS</b></h2>
-			<p></p>
-			<ul class="list-group">
-			<li class="list-group-item list-group-item-info">Great for smartwatches and IoT</li>
-			<li class="list-group-item list-group-item-info">ARM Cortex M Series</li>
-			<li class="list-group-item list-group-item-success"><b>Apps are easy</b></li>
-			<li class="list-group-item list-group-item-success"><b>Kernel is easy</b></li>
-			<li class="list-group-item list-group-item-success"><b>Low power</b> consumption</li>
-			<li class="list-group-item list-group-item-success"><b>Rapid hardware development</b></li>
-			<li class="list-group-item list-group-item-success">Inexpensive hardware</li>
-			</ul>
-		</div>
+<div class="row">
+	<div class="col-md-4">
+		<h2 class="text-center">Application Processors</h2>
+		<p></p>
+		<ul class="list-group">
+		<li class="list-group-item list-group-item-info">Great for smartphones, tablets, and video</li>
+		<li class="list-group-item list-group-item-info">ARM Cortex A Series</li>
+		<li class="list-group-item list-group-item-success">Apps are easy</li>
+		<li class="list-group-item list-group-item-danger">Kernel is difficult</li>
+		<li class="list-group-item list-group-item-danger">Higher power consumption</li>
+		<li class="list-group-item list-group-item-danger">Expensive hardware development</li>
+		<li class="list-group-item list-group-item-danger">More expensive</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<h2 class="text-center">Microcontrollers</h2>
+		<p></p>
+		<ul class="list-group">
+		<li class="list-group-item list-group-item-info">Great for smartwatches and IoT</li>
+		<li class="list-group-item list-group-item-info">ARM Cortex M Series</li>
+		<li class="list-group-item list-group-item-danger">Apps are difficult</li>
+		<li class="list-group-item list-group-item-danger">Kernel is difficult</li>
+		<li class="list-group-item list-group-item-success">Low power consumption</li>
+		<li class="list-group-item list-group-item-success">Rapid hardware development</li>
+		<li class="list-group-item list-group-item-success">Less expensive</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<h2 class="text-center"><b>Stratify OS</b></h2>
+		<p></p>
+		<ul class="list-group">
+		<li class="list-group-item list-group-item-info">Great for smartwatches and IoT</li>
+		<li class="list-group-item list-group-item-info">ARM Cortex M Series</li>
+		<li class="list-group-item list-group-item-success"><b>Apps are easy</b></li>
+		<li class="list-group-item list-group-item-success"><b>Kernel is easy</b></li>
+		<li class="list-group-item list-group-item-success"><b>Low power</b> consumption</li>
+		<li class="list-group-item list-group-item-success"><b>Rapid hardware development</b></li>
+		<li class="list-group-item list-group-item-success">Inexpensive hardware</li>
+		</ul>
 	</div>
 </div>
 
-<div class="container">
+<div>
 	<h1>Maker Use Case <small>Best features from Raspberry Pi and Arduino</small></h1>
 	<div class="row" style="margin-top: 1.5em;">
 		<div class="col-md-6">

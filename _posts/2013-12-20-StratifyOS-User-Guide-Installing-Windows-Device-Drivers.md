@@ -4,6 +4,9 @@ title: Installing Windows Device Drivers
 category: User Guides
 tagline: Stratify OS User Guide
 tags : [stratify, user-guide]
+ad:
+  description: "Short Description of Blog advertisement"
+  image: "blog-ad.jpg"
 ---
 
 ## Windows XP/Vista/7
