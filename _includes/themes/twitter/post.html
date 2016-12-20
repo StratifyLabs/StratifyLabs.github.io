@@ -40,8 +40,13 @@
 
 			{% if page.ad %}
 			<div class="filter-col-ctn" style="padding: 10px;text-align: center;">
-			  <img src="/images/{{ page.ad['image'] }}" style="margin-bottom:20px;">
+			<article class="post-card" >
+			<a href="{{ BASE_PATH }}{{ page.ad['link'] }}" >
+			<h4>{{ page.ad['title'] }}</h4>
+			  <img src="/images/{{ page.ad['image'] }}" style="margin-bottom:20px;" class="post_image">
 			  <p>{{ page.ad['description'] }}</p>
+			  </a>
+			</article>
 			</div>
 			{% endif %}
 

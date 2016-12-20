@@ -84,8 +84,11 @@ $(document).ready( function(){
 
 		{% if post.ad %}
 		<div class="filter-col-ctn" style="padding: 10px;text-align: center;">
-		  <img src="/images/{{ post.ad['image'] }}" style="margin-bottom:20px;">
+		<a href="{{ BASE_PATH }}{{ post.ad['link'] }}" >
+		<h4>{{ post.ad['title'] }}</h4>
+		  <img src="/images/{{ post.ad['image'] }}" style="margin-bottom:20px;" class="post_image">
 		  <p>{{ post.ad['description'] }}</p>
+		</a>
 		</div>
 		{% endif %}
 

@@ -5,8 +5,10 @@ category : Product Management
 tagline: Four Tips
 tags : [product development, freelancer]
 ad:
-  description: "Short Description of Blog advertisement"
-  image: "blog-ad.jpg"
+  title: "Let's Build Together"
+  description: "Stratify Labs can help you build your next product with our expert engineering and consulting services."
+  image: "services-ad-image.png"
+  link: "/services/"
 ---
 
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/tips.jpg" />
