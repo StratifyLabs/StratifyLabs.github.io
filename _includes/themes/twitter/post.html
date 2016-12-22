@@ -50,6 +50,11 @@
 			</div>
 			{% endif %}
 
+			    <h1><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.baseurl }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square"></i></a> 
+    			<a href="https://facebook.com/sharer.php?u={{ site.baseurl }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square"></i></a> 
+    			<a href="https://plus.google.com/share?url={{ site.baseurl }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square"></i></a></h1>
+
+
 			<h1>{{ page.title }}</h1>
 			{% if page.tagline %}<h2>{{page.tagline}}</h2>{% endif %}
 
