@@ -102,9 +102,9 @@ To work with Stratify OS, you need to download three tools
 </p>
 <ol>
 <li><a href="https://eclipse.org/cdt/" target="_blank">Eclipse CDT</a></li>
-<li>Stratify SDK:  <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Labs-SDK-Installer.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/StratifyLabs-SDK.dmg">Mac OS X</a></li>
-<li>Stratify Link: <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link-Installer.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link.dmg">Mac OS X</a></li>
-<li>Stratify Link 2.0-beta0: <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link-Installer-2.0-beta0.exe">Windows</a></li>
+<li>Stratify SDK:  <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Labs-SDK-Installer.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/StratifyLabs-SDK.dmg">MacOS</a></li>
+<li>Stratify Link: <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link-Installer.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link.dmg">MacOS</a></li>
+<li>Stratify Link 2.0-beta0: <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link-Installer-2.0-beta0.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link-2.0-beta0.dmg">MacOS</a></li>
 </ol>
 
 
