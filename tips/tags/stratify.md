@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Stratify
+title: Stratify OS Tips from Stratify Labs
 permalink: /tips/tag/stratify/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Stratify
 sections:
  intro: Blog
  brief: Stratify Tag

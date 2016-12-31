@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Freelancer
+title: Freelancer Hiring Tips from Stratify Labs
 permalink: /tips/tag/freelancer/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Freelancer
 sections:
  intro: Blog
  brief: Freelancer Tag

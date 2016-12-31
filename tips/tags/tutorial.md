@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Tutorial
+title: Tutorials for Stratify Labs
 permalink: /tips/tag/tutorial/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Tutorial
 sections:
  intro: Blog
  brief: Tutorial Tag

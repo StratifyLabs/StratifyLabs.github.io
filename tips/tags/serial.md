@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Serial
+title: Serial Programming Tips from Stratify Labs
 permalink: /tips/tag/serial/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Serial
 sections:
  intro: Blog
  brief: Serial Tag

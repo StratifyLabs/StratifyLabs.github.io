@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Product Development
+title: Product Development Tips from Stratify Labs
 permalink: /tips/tag/product-development/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Product Development
 sections:
  intro: Blog
  brief: Product Development Tag

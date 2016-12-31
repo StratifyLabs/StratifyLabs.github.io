@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Programming
+title: Embedded Programming Tips from Stratify Labs
 permalink: /tips/tag/programming/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Programming
 sections:
  intro: Blog
  brief: Programming Tag

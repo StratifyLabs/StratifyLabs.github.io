@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Javascript
+title: Javascript Programming Tips from Stratify Labs
 permalink: /tips/tag/javascript/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Javascript
 sections:
  intro: Blog
  brief: Javascript Tag

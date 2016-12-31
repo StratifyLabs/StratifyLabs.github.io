@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: LED
+title: LED Design and Control Tips from Stratify Labs
 permalink: /tips/tag/led/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: LED
 sections:
  intro: Blog
  brief: LED Tag

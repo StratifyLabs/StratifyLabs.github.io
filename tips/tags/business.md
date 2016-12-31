@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Business
+title: Product Development Business Tips from Stratify Labs
 permalink: /tips/tag/business/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Business
 sections:
  intro: Blog
  brief: Business Tag

@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Circuit
+title: Product Development Circuit Tips from Stratify Labs
 permalink: /tips/tag/circuit/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Circuit
 sections:
  intro: Blog
  brief: Circuit Tag

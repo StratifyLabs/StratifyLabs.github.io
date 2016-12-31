@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Embedded Design Tips
+title: Embedded Design Tips from Stratify Labs
 permalink: /tips/category/embedded-design-tips/
 breadcrumb: tips
 archive-type: Category
+archive-keyword: Embedded Design Tips
 sections:
  intro: Blog
  brief: Embedded Design Tips Category

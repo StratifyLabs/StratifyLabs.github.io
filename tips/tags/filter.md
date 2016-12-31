@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Filter
+title: Filter Design Tips from Stratify Labs
 permalink: /tips/tag/filter/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Filter
 sections:
  intro: Blog
  brief: Filter Tag

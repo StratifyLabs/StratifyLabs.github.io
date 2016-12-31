@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: FFT
+title: FFT Programming Tips from Stratify Labs
 permalink: /tips/tag/fft/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: FFT
 sections:
  intro: Blog
  brief: FFT Tag

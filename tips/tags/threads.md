@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Threads
+title: Embedded Programming Multi-threading Tips from Stratify Labs
 permalink: /tips/tag/threads/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Threads
 sections:
  intro: Blog
  brief: Threads Tag

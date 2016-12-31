@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Popular
+title: Popular Tips from Stratify Labs
 permalink: /tips/tag/popular/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Popular
 sections:
  intro: Blog
  brief: Popular Tag

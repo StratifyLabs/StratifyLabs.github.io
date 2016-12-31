@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: FIFO
+title: FIFO Programming Tips from Stratify Labs
 permalink: /tips/tag/fifo/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: FIFO
 sections:
  intro: Blog
  brief: FIFO Tag

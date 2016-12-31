@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: C
+title: C Programming Tips from Stratify Labs
 permalink: /tips/tag/c/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: C
 sections:
  intro: Blog
  brief: C Tag

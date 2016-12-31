@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: ARM
+title: ARM Embedded Microcontroller Design Tips from Stratify Labs
 permalink: /tips/tag/arm/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: ARM
 sections:
  intro: Blog
  brief: ARM Tag

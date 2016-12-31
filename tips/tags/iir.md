@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: IIR
+title: IIR Filter Tips from Stratify Labs
 permalink: /tips/tag/iir/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: IIR
 sections:
  intro: Blog
  brief: IIR Tag

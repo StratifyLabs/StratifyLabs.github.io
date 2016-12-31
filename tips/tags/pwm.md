@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: PWM
+title: PWM Programming Tips from Stratify Labs
 permalink: /tips/tag/pwm/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: PWM
 sections:
  intro: Blog
  brief: PWM Tag

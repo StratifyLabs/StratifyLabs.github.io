@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: MacOSX
+title: MacOSX Tips from Stratify Labs
 permalink: /tips/tag/macosx/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: MacOSX
 sections:
  intro: Blog
  brief: MacOSX Tag

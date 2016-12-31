@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: UART
+title: UART Programming Tips from Stratify Labs
 permalink: /tips/tag/uart/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: UART
 sections:
  intro: Blog
  brief: UART Tag

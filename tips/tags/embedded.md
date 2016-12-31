@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Embedded
+title: Embedded Systems Tips from Stratify Labs
 permalink: /tips/tag/embedded/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Embedded
 sections:
  intro: Blog
  brief: Embedded Tag

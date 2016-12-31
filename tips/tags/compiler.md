@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Compiler
+title: Compiler Tips from Stratify Labs
 permalink: /tips/tag/compiler/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Compiler
 sections:
  intro: Blog
  brief: Compiler Tag

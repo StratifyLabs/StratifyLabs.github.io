@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: ADC
+title: Product Development ADC Tips from Stratify Labs
 permalink: /tips/tag/adc/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: ADC
 sections:
  intro: Blog
  brief: ADC Tag

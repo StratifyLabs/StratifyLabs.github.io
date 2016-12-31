@@ -1,9 +1,10 @@
 ---
 layout: page-tags
-title: Microcontroller
+title: Microcontroller Programming Tips from Stratify Labs
 permalink: /tips/tag/microcontroller/
 breadcrumb: tips
 archive-type: Tag
+archive-keyword: Microcontroller
 sections:
  intro: Blog
  brief: Microcontroller Tag
