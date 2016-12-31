@@ -66,7 +66,7 @@
 			<div class="post-categories">
 				<strong>Categories:</strong>
 					{% for cat in page.category %}
-						{% capture same_page %}/tips/category/{{ cat | replace: ' ', '-' }}/{% endcapture %}
+						{% capture same_page %}/tips/category/{{ cat | replace: ' ', '-' | downcase }}/{% endcapture %}
 					<a href="{{ same_page | prepend: site.baseurl }}" style="font-size:14px;text-transform:uppercase;">{{ cat }}</a>{% unless forloop.last %},{% endunless %}
 					{% endfor %}
 			</div>
@@ -82,7 +82,7 @@
 				<div class="sh-columns post-meta-comments">
 					<span class="post-meta-categories"> <i class="fa fa-tag"></i>
 						{% for tag in page.tags %}
-						<a href="{{ site.baseurl }}/tips/tag/{{ tag | replace: ' ', '-' }}/">{{ tag }}</a>
+						<a href="{{ site.baseurl }}/tips/tag/{{ tag | replace: ' ', '-' | downcase }}/">{{ tag }}</a>
 						{% endfor %}
 					</span>
 				</div>
@@ -117,7 +117,7 @@
 	<div class="post-categories">
 		<strong>Categories:</strong>
 			{% for cat in page.category %}
-			{% capture same_page %}/tips/category/{{ cat | replace: ' ', '-' }}/{% endcapture %}
+			{% capture same_page %}/tips/category/{{ cat | replace: ' ', '-' | downcase }}/{% endcapture %}
 			<a href="{{ same_page | prepend: site.baseurl }}" style="font-size:14px;text-transform:uppercase;">{{ cat }}</a>{% unless forloop.last %},{% endunless %}
 			{% endfor %}
 	</div>
@@ -135,7 +135,7 @@
 		<div class="sh-columns post-meta-comments">
 			<span class="post-meta-categories"> <i class="fa fa-tag"></i>
 				{% for tag in page.tags %}
-				<a href="{{ site.baseurl }}/tips/tag/{{ tag | replace: ' ', '-' }}/">{{ tag }}</a>
+				<a href="{{ site.baseurl }}/tips/tag/{{ tag | replace: ' ', '-' | downcase }}/">{{ tag }}</a>
 				{% endfor %}
 			</span>
 		</div>
