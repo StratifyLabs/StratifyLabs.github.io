@@ -43,6 +43,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae9560ffb17a1d5ca8d671a3d1b869524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d485fe84903ab80fd3f65a213c76054"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classui_1_1_event.html">ui::Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a9d485fe84903ab80fd3f65a213c76054">event</a> ()</td></tr>
 <tr class="separator:a9d485fe84903ab80fd3f65a213c76054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32027c75ca0d27ee69a3d3167f71251f"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="classui_1_1_event.html#a7a63f9d9e4e884e15022b1520aeb06d3">ui::Event::button_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a32027c75ca0d27ee69a3d3167f71251f">event_id</a> () const </td></tr>
+<tr class="separator:a32027c75ca0d27ee69a3d3167f71251f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c51e8137b6a378e32d739ae1462dc44"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a9c51e8137b6a378e32d739ae1462dc44">get_actuated</a> ()</td></tr>
 <tr class="separator:a9c51e8137b6a378e32d739ae1462dc44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75f6762d88ce382d0c3d75f6483b2b6f"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a75f6762d88ce382d0c3d75f6483b2b6f">get_duration</a> ()</td></tr>
@@ -57,6 +59,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aced39558f267f571ebac92026f9e810f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a4ff590ff70d11f14256dec2e455c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#ac9a4ff590ff70d11f14256dec2e455c1">reset</a> ()</td></tr>
 <tr class="separator:ac9a4ff590ff70d11f14256dec2e455c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673ae54251d28ac75be06dd64ddf4a97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a673ae54251d28ac75be06dd64ddf4a97">set_event_id</a> (enum <a class="el" href="classui_1_1_event.html#a7a63f9d9e4e884e15022b1520aeb06d3">ui::Event::button_id</a> v)</td></tr>
+<tr class="separator:a673ae54251d28ac75be06dd64ddf4a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d5e0e342c71bd9c79b718971c260a37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a0d5e0e342c71bd9c79b718971c260a37">update</a> ()</td></tr>
 <tr class="separator:a0d5e0e342c71bd9c79b718971c260a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -64,6 +68,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0254a2634c312eaa80bda004a576294d"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#a0254a2634c312eaa80bda004a576294d">held_duration</a> ()</td></tr>
 <tr class="separator:a0254a2634c312eaa80bda004a576294d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5eee64373be4afea036b942ea2a776f"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#ae5eee64373be4afea036b942ea2a776f">max_held_duration</a> ()</td></tr>
+<tr class="separator:ae5eee64373be4afea036b942ea2a776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf42886e782ccdfe33af7f91a477c8bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#adf42886e782ccdfe33af7f91a477c8bf">set_held_duration</a> (u32 v)</td></tr>
 <tr class="separator:adf42886e782ccdfe33af7f91a477c8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -105,6 +111,30 @@ Static Public Member Functions</h2></td></tr>
 <li><a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9af564a11e2a1266d34f7df8f3521043ee">ui::Event::BUTTON_ACTUATED</a></li>
 <li>ui::Event::BUTTON_HOLD </li>
 </ul>
+
+</div>
+</div>
+<a class="anchor" id="a32027c75ca0d27ee69a3d3167f71251f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classui_1_1_event.html#a7a63f9d9e4e884e15022b1520aeb06d3">ui::Event::button_id</a> ui::Button::event_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Access the event ID of the button </p>
 
 </div>
 </div>
@@ -284,6 +314,30 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae5eee64373be4afea036b942ea2a776f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static u32 ui::Button::max_held_duration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This method returns the max held duration which will effectively disable the reporting of button holds</p>
+<div class="fragment"><div class="line"><a class="code" href="classui_1_1_button.html#adf42886e782ccdfe33af7f91a477c8bf">Button::set_held_duration</a>( <a class="code" href="classui_1_1_button.html#ae5eee64373be4afea036b942ea2a776f">Button::max_held_duration</a>() );</div></div><!-- fragment --> 
+</div>
+</div>
 <a class="anchor" id="ac9a4ff590ff70d11f14256dec2e455c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -305,6 +359,31 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Reset the state of the button </p>
+
+</div>
+</div>
+<a class="anchor" id="a673ae54251d28ac75be06dd64ddf4a97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ui::Button::set_event_id </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="classui_1_1_event.html#a7a63f9d9e4e884e15022b1520aeb06d3">ui::Event::button_id</a>&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the event ID of the button </p>
 
 </div>
 </div>

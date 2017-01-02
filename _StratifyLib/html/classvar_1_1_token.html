@@ -28,6 +28,7 @@ title: Stratify OS Docs
 <div class="header">
   <div class="summary">
 <a href="classvar_1_1_token-members.html">List of all members</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">var::Token Class Reference</div>  </div>
@@ -36,14 +37,23 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The <a class="el" href="classvar_1_1_token.html" title="Abstract Token Class. ">Token</a> Class can convert any <a class="el" href="classvar_1_1_string.html" title="String class. ">String</a> into a list of <a class="el" href="classvar_1_1_token.html" title="Abstract Token Class. ">Token</a>. The class is similar to STDC strtok(). </p>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a250c09e106d78a57193233a6122facc7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a250c09e106d78a57193233a6122facc7">at</a> (size_t n) const </td></tr>
 <tr class="separator:a250c09e106d78a57193233a6122facc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1302ef52f45a4454427e396d5673e989"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a1302ef52f45a4454427e396d5673e989">is_count_empty_tokens</a> () const </td></tr>
+<tr class="separator:a1302ef52f45a4454427e396d5673e989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5859a776c004b9271d25d54a40caf022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a5859a776c004b9271d25d54a40caf022">parse</a> (const char *delim, const char *ignore=0)</td></tr>
 <tr class="separator:a5859a776c004b9271d25d54a40caf022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ede9851e9fce2e26db5a7569b29b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a14ede9851e9fce2e26db5a7569b29b36">set_count_empty_tokens</a> (bool v=true)</td></tr>
+<tr class="separator:a14ede9851e9fce2e26db5a7569b29b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a62b6211c07cb842ad0bc165712c42"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a33a62b6211c07cb842ad0bc165712c42">size</a> () const </td></tr>
 <tr class="separator:a33a62b6211c07cb842ad0bc165712c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a116d986608b29844a8fdfe6691ee1674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a116d986608b29844a8fdfe6691ee1674">sort</a> (enum <a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8">sort_options</a> sort_option=<a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8ae27d1242531f4af190ab63cbb1403598">SORT_NONE</a>)</td></tr>
+<tr class="separator:a116d986608b29844a8fdfe6691ee1674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861e9dc5b89d855de37f11eea6105f4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a861e9dc5b89d855de37f11eea6105f4d">Token</a> (const char *src, const char *delim, const char *ignore=0, bool count_empty=false)</td></tr>
 <tr class="separator:a861e9dc5b89d855de37f11eea6105f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classvar_1_1_string"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classvar_1_1_string')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classvar_1_1_string.html">var::String</a></td></tr>
@@ -145,6 +155,31 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:aac90392f23faeb7347cd5581bab1e85d inherit pub_static_methods_classvar_1_1_data"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#aac90392f23faeb7347cd5581bab1e85d">min_size</a> ()</td></tr>
 <tr class="separator:aac90392f23faeb7347cd5581bab1e85d inherit pub_static_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a8ca956672decab5668cce811510d4ac8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8">var::Token::sort_options</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sorting Options </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8ca956672decab5668cce811510d4ac8ae27d1242531f4af190ab63cbb1403598"></a>SORT_NONE&#160;</td><td class="fielddoc">
+<p>Don't sort </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8ca956672decab5668cce811510d4ac8a3ff781ee71abf4930941bfbdaef4a812"></a>SORT_AZ&#160;</td><td class="fielddoc">
+<p>Sort from A to Z </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8ca956672decab5668cce811510d4ac8a1eb6da846ca61e56bdee1e359ada690c"></a>SORT_ZA&#160;</td><td class="fielddoc">
+<p>Sort from Z to A </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a861e9dc5b89d855de37f11eea6105f4d"></a>
 <div class="memitem">
@@ -213,6 +248,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1302ef52f45a4454427e396d5673e989"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool var::Token::is_count_empty_tokens </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Access whether or not <a class="el" href="classvar_1_1_token.html#a5859a776c004b9271d25d54a40caf022">parse()</a> will count empty tokens </p>
+
+</div>
+</div>
 <a class="anchor" id="a5859a776c004b9271d25d54a40caf022"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,6 +309,31 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a14ede9851e9fce2e26db5a7569b29b36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void var::Token::set_count_empty_tokens </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>v</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set whether or not <a class="el" href="classvar_1_1_token.html#a5859a776c004b9271d25d54a40caf022">parse()</a> should include empty tokens </p>
+
+</div>
+</div>
 <a class="anchor" id="a33a62b6211c07cb842ad0bc165712c42"></a>
 <div class="memitem">
 <div class="memproto">
@@ -271,6 +355,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Return the total number of tokens </p>
+
+</div>
+</div>
+<a class="anchor" id="a116d986608b29844a8fdfe6691ee1674"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void var::Token::sort </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8">sort_options</a>&#160;</td>
+          <td class="paramname"><em>sort_option</em> = <code><a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8ae27d1242531f4af190ab63cbb1403598">SORT_NONE</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method sorts the tokens as specified </p>
 
 </div>
 </div>

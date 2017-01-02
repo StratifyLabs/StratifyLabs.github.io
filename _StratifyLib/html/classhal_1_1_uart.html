@@ -38,7 +38,7 @@ title: Stratify OS Docs
 <div class="textblock"><p>This class implements a serial UART port.</p>
 <p>Here is an example of how to use the UART.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0); <span class="comment">//use UART0</span></div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.init(115200); <span class="comment">//initializes using 115200 and default parameters (see init())</span></div><div class="line">     uart.read(buffer, 256); <span class="comment">//this will block until at least one byte arrives</span></div><div class="line">     uart.close(); <span class="comment">//free the file descriptors and power down the device</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>The above example opens using the UART in blocking mode. If you want to be able to read the UART without blocking until a byte arrives, you can use non-blocking mode.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0);</div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.open(<a class="code" href="classhal_1_1_dev.html#aae3b1869d2bb445b394f506feebc3996a065bc00ed73070148986de80ccaac42c">Uart::NONBLOCK</a>|<a class="code" href="classhal_1_1_dev.html#aae3b1869d2bb445b394f506feebc3996a02c013ac9cc6b40a64ebf3e32e4d76ce">Uart::RDWR</a>);</div><div class="line"> <span class="comment">//now set the attributes</span></div><div class="line">     uart.set_attr(115200, <span class="comment">//115200 baud rate</span></div><div class="line">     0, <span class="comment">//pin assignment 0 (P0.2 and P0.3 on LPC17xx)</span></div><div class="line">     <a class="code" href="classhal_1_1_uart.html#a5b0cc6759e273648a9155f6554d3360bae010203a70b23c568d11d6aaed9b3faa">Uart::NONE</a>, <span class="comment">// no parity</span></div><div class="line">     <a class="code" href="classhal_1_1_uart.html#a9fecf8000f3feecca2ac606674307250aedf92adbb53f638584e7a54f0b4100ec">Uart::STOP1</a>, <span class="comment">//one stop bit</span></div><div class="line">     8 <span class="comment">//8 bits per character</span></div><div class="line">     );</div><div class="line">     uart.read(buffer, 256); <span class="comment">//returns immediately even if no data is available (errno is set to EAGAIN if no data)</span></div><div class="line">     uart.close(); <span class="comment">//free the resources</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0);</div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.open(<a class="code" href="classhal_1_1_dev.html#aae3b1869d2bb445b394f506feebc3996a065bc00ed73070148986de80ccaac42c">Uart::NONBLOCK</a>|<a class="code" href="classhal_1_1_dev.html#aae3b1869d2bb445b394f506feebc3996a02c013ac9cc6b40a64ebf3e32e4d76ce">Uart::RDWR</a>);</div><div class="line"> <span class="comment">//now set the attributes</span></div><div class="line">     uart.set_attr(115200, <span class="comment">//115200 baud rate</span></div><div class="line">     0, <span class="comment">//pin assignment 0 (P0.2 and P0.3 on LPC17xx)</span></div><div class="line">     <a class="code" href="classhal_1_1_uart.html#a9fecf8000f3feecca2ac606674307250ae010203a70b23c568d11d6aaed9b3faa">Uart::NONE</a>, <span class="comment">// no parity</span></div><div class="line">     <a class="code" href="classhal_1_1_uart.html#a3ae073907f9f45945069b32a9e47e7d2aedf92adbb53f638584e7a54f0b4100ec">Uart::STOP1</a>, <span class="comment">//one stop bit</span></div><div class="line">     8 <span class="comment">//8 bits per character</span></div><div class="line">     );</div><div class="line">     uart.read(buffer, 256); <span class="comment">//returns immediately even if no data is available (errno is set to EAGAIN if no data)</span></div><div class="line">     uart.close(); <span class="comment">//free the resources</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="inherit_header pub_types_classhal_1_1_dev"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhal_1_1_dev')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhal_1_1_dev.html">hal::Dev</a></td></tr>
@@ -110,7 +110,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa9a204855ab0bcd490f9338b4f08a809 inherit pro_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a5b0cc6759e273648a9155f6554d3360b"></a>
+<a class="anchor" id="a9fecf8000f3feecca2ac606674307250"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -123,20 +123,20 @@ Additional Inherited Members</h2></td></tr>
 <p>UART Parity values. </p>
 <p>This is a list of the UART parity values </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360bae010203a70b23c568d11d6aaed9b3faa"></a>NONE&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250ae010203a70b23c568d11d6aaed9b3faa"></a>NONE&#160;</td><td class="fielddoc">
 <p>No Parity </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360bafb0ccbcbb61eb1bb66a34c530efb0c73"></a>EVEN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250afb0ccbcbb61eb1bb66a34c530efb0c73"></a>EVEN&#160;</td><td class="fielddoc">
 <p>Even Parity </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba447c2e40a9be8d0beca92131c3364993"></a>ODD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a447c2e40a9be8d0beca92131c3364993"></a>ODD&#160;</td><td class="fielddoc">
 <p>Odd Parity </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="a9fecf8000f3feecca2ac606674307250"></a>
+<a class="anchor" id="a3ae073907f9f45945069b32a9e47e7d2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -149,10 +149,10 @@ Additional Inherited Members</h2></td></tr>
 <p>UART Stop bits. </p>
 <p>This is a list of the UART stop bit values </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250aedf92adbb53f638584e7a54f0b4100ec"></a>STOP1&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3ae073907f9f45945069b32a9e47e7d2aedf92adbb53f638584e7a54f0b4100ec"></a>STOP1&#160;</td><td class="fielddoc">
 <p>One stop bit </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a809f5238906779de7e0299482de0c747"></a>STOP2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a3ae073907f9f45945069b32a9e47e7d2a809f5238906779de7e0299482de0c747"></a>STOP2&#160;</td><td class="fielddoc">
 <p>Two stop bits </p>
 </td></tr>
 </table>
@@ -287,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0d80eadb427270d1827fb8ca14badd38"></a>
+<a class="anchor" id="adb84b6db16fc6d6c109930a5cde69ace"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -316,7 +316,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>stop</em> = <code><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga0ed680fdb405e7195d9f14032851eebba4adb27df73696c5fe5cd0960367b04ea">UART_ATTR_STOP_BITS_2</a></code>, </td>
+          <td class="paramname"><em>stop</em> = <code><a class="el" href="classhal_1_1_uart.html#a3ae073907f9f45945069b32a9e47e7d2aedf92adbb53f638584e7a54f0b4100ec">STOP1</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

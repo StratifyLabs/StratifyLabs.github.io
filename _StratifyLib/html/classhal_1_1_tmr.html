@@ -39,8 +39,8 @@ title: Stratify OS Docs
 <p>The <a class="el" href="classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. ">Tmr</a> class can be used to configure a timer to count rising edges on an input capture pin or to generate waveforms on an output compare pin. It can also configure the timer to use the internal CPU clock at various frequencies.</p>
 <p>For example this will start a microsecond timer (1Mhz) using an internal clock:</p>
 <div class="fragment"><div class="line">Tmr tmr(0); <span class="comment">//use /dev/tmr0</span></div><div class="line">tmr.init(); <span class="comment">//the default is 1MHz clock using the CPU see init() below</span></div><div class="line">tmr.set(0); <span class="comment">//set the value to zero</span></div><div class="line">tmr.on(); <span class="comment">//turn the timer on</span></div><div class="line">Timer::wait_msec(100);</div><div class="line">printf(<span class="stringliteral">&quot;My timer value is %d\n&quot;</span>, tmr.value()); <span class="comment">//The value will be about 100,000</span></div></div><!-- fragment --><p>Here is an example using the <a class="el" href="classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. ">Tmr</a> to count external edges on input capture 0</p>
-<div class="fragment"><div class="line">Tmr tmr(0);</div><div class="line">tmr.init(0, <span class="comment">//frequency is ignored in this case</span></div><div class="line">     <a class="code" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8fa65ae1cba2dbae52065d6db8406805a32">Tmr::INPUT0</a>|<a class="code" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8fa990b1901f61d9c6df79de6aa6db7b29d">Tmr::RISING</a>, <span class="comment">//use input capture channel 0 rising edges as the clock source</span></div><div class="line">     __TMR0_PINASSIGN_PORT1_26_27_28_29, <span class="comment">//This is for the LPC17xx to use P1.26 for CAP0.0 (timer0/input0)</span></div><div class="line">     0, <span class="comment">//not using output compare channels</span></div><div class="line">     0); <span class="comment">//not using input capture (other than clock source)</span></div><div class="line">tmr.on();</div><div class="line"> <span class="comment">//Tmr0 is now counting edges arriving on P1.26 (CAP0.0) for LPC17xx devices</span></div><div class="line">printf(<span class="stringliteral">&quot;Received %d edges\n&quot;</span>, tmr.value()); <span class="comment">//show the number of edges that have arrived</span></div></div><!-- fragment --><p>You can also use the output compare channels to set the top value of the timer.</p>
-<div class="fragment"><div class="line">Tmr tmr(0);</div><div class="line">tmr.init(); <span class="comment">//use default settings (1MHz CPU timer)</span></div><div class="line"></div><div class="line">tmr.set_action(0,</div><div class="line">     <a class="code" href="classhal_1_1_tmr.html#aeb3ff35f942f146281de2a3da38daf14af3f2fc912921447c07d734e4ff323f81">Tmr::RESET</a>); <span class="comment">//reset the timer to zero when the event happens</span></div><div class="line">     <span class="comment">//Now assign a value to output compare channel 0</span></div><div class="line">tmr.setoc(0, <span class="comment">//we are using output compare channel 0</span></div><div class="line">     1000000 <span class="comment">//When the count gets to 1 million (1 second at 1MHz), reset the timer</span></div><div class="line">     );</div><div class="line">tmr.on();</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line">Tmr tmr(0);</div><div class="line">tmr.init(0, <span class="comment">//frequency is ignored in this case</span></div><div class="line">     <a class="code" href="classhal_1_1_tmr.html#af9be002f1d6e86e20e9b1ada56ac139da65ae1cba2dbae52065d6db8406805a32">Tmr::INPUT0</a>|<a class="code" href="classhal_1_1_tmr.html#af9be002f1d6e86e20e9b1ada56ac139da990b1901f61d9c6df79de6aa6db7b29d">Tmr::RISING</a>, <span class="comment">//use input capture channel 0 rising edges as the clock source</span></div><div class="line">     __TMR0_PINASSIGN_PORT1_26_27_28_29, <span class="comment">//This is for the LPC17xx to use P1.26 for CAP0.0 (timer0/input0)</span></div><div class="line">     0, <span class="comment">//not using output compare channels</span></div><div class="line">     0); <span class="comment">//not using input capture (other than clock source)</span></div><div class="line">tmr.on();</div><div class="line"> <span class="comment">//Tmr0 is now counting edges arriving on P1.26 (CAP0.0) for LPC17xx devices</span></div><div class="line">printf(<span class="stringliteral">&quot;Received %d edges\n&quot;</span>, tmr.value()); <span class="comment">//show the number of edges that have arrived</span></div></div><!-- fragment --><p>You can also use the output compare channels to set the top value of the timer.</p>
+<div class="fragment"><div class="line">Tmr tmr(0);</div><div class="line">tmr.init(); <span class="comment">//use default settings (1MHz CPU timer)</span></div><div class="line"></div><div class="line">tmr.set_action(0,</div><div class="line">     <a class="code" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8faf3f2fc912921447c07d734e4ff323f81">Tmr::RESET</a>); <span class="comment">//reset the timer to zero when the event happens</span></div><div class="line">     <span class="comment">//Now assign a value to output compare channel 0</span></div><div class="line">tmr.setoc(0, <span class="comment">//we are using output compare channel 0</span></div><div class="line">     1000000 <span class="comment">//When the count gets to 1 million (1 second at 1MHz), reset the timer</span></div><div class="line">     );</div><div class="line">tmr.on();</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="inherit_header pub_types_classhal_1_1_dev"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhal_1_1_dev')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhal_1_1_dev.html">hal::Dev</a></td></tr>
@@ -138,7 +138,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa9a204855ab0bcd490f9338b4f08a809 inherit pro_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14"></a>
+<a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -147,31 +147,31 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This lists the values for the event when using <a class="el" href="classhal_1_1_tmr.html#a20b7baa7547d3c869beca5ec6e8f445d">set_action()</a>. The values can be Or'd (|) together such as <a class="el" href="classhal_1_1_tmr.html#aeb3ff35f942f146281de2a3da38daf14af3f2fc912921447c07d734e4ff323f81">Tmr::RESET</a>|Tmr::INTERRUPT. </p>
+<p>This lists the values for the event when using <a class="el" href="classhal_1_1_tmr.html#a20b7baa7547d3c869beca5ec6e8f445d">set_action()</a>. The values can be Or'd (|) together such as <a class="el" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8faf3f2fc912921447c07d734e4ff323f81">Tmr::RESET</a>|Tmr::INTERRUPT. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14a24a54fd58bcf98d545f7b60dc9405fe8"></a>INTERRUPT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa24a54fd58bcf98d545f7b60dc9405fe8"></a>INTERRUPT&#160;</td><td class="fielddoc">
 <p>Trigger interrupt and execute callback </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14af3f2fc912921447c07d734e4ff323f81"></a>RESET&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8faf3f2fc912921447c07d734e4ff323f81"></a>RESET&#160;</td><td class="fielddoc">
 <p>Reset timer value to zero </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14a548b609964bd121d692c5c46567c1c52"></a>STOP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa548b609964bd121d692c5c46567c1c52"></a>STOP&#160;</td><td class="fielddoc">
 <p>Stop the timer </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14afc88d1c739483b51a26e62457e4d5720"></a>SETOC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fafc88d1c739483b51a26e62457e4d5720"></a>SETOC&#160;</td><td class="fielddoc">
 <p>Set the output compare pin high </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14a9339e6ece1a70191e9ce280eb4359af7"></a>CLROC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa9339e6ece1a70191e9ce280eb4359af7"></a>CLROC&#160;</td><td class="fielddoc">
 <p>Clear the output compare pin </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb3ff35f942f146281de2a3da38daf14a87332c46a979d1676e30f0c206711c7c"></a>TOGGLEOC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa87332c46a979d1676e30f0c206711c7c"></a>TOGGLEOC&#160;</td><td class="fielddoc">
 <p>Toggle the output compare pin </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8f"></a>
+<a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -182,31 +182,31 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>This is a list of the timer clock sources. Not all clock sources are available on all devices. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8faaf4920d75cdf7c402c1549dc78bde5e2"></a>CPU&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139daaf4920d75cdf7c402c1549dc78bde5e2"></a>CPU&#160;</td><td class="fielddoc">
 <p>Use the internal CPU clock </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa65ae1cba2dbae52065d6db8406805a32"></a>INPUT0&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139da65ae1cba2dbae52065d6db8406805a32"></a>INPUT0&#160;</td><td class="fielddoc">
 <p>Use input 0 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa95f23afeef856ddefa3b6b2d038628a6"></a>INPUT1&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139da95f23afeef856ddefa3b6b2d038628a6"></a>INPUT1&#160;</td><td class="fielddoc">
 <p>Use input 1 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa51dc6c266aef9bd8d9f1f1b662e09eff"></a>INPUT2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139da51dc6c266aef9bd8d9f1f1b662e09eff"></a>INPUT2&#160;</td><td class="fielddoc">
 <p>Use input 2 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8faf0c8978c35fa2e93441dfb3d0c8502da"></a>INPUT3&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139daf0c8978c35fa2e93441dfb3d0c8502da"></a>INPUT3&#160;</td><td class="fielddoc">
 <p>Use input 3 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa990b1901f61d9c6df79de6aa6db7b29d"></a>RISING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139da990b1901f61d9c6df79de6aa6db7b29d"></a>RISING&#160;</td><td class="fielddoc">
 <p>Modifier to clock on rising edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa292fcdee9500bb90ea2dd15910bff315"></a>FALLING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139da292fcdee9500bb90ea2dd15910bff315"></a>FALLING&#160;</td><td class="fielddoc">
 <p>Modifier to clock on falling edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8fa22a44982218c951c67443a7b3e8080a3"></a>BOTH&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139da22a44982218c951c67443a7b3e8080a3"></a>BOTH&#160;</td><td class="fielddoc">
 <p>Modifier to clock on both rising and falling edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8827200257ab821dff6f5b4bdc275c8facd8657453a87b1d1b0c1dae35fe0f05b"></a>COUNTDOWN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="af9be002f1d6e86e20e9b1ada56ac139dacd8657453a87b1d1b0c1dae35fe0f05b"></a>COUNTDOWN&#160;</td><td class="fielddoc">
 <p>Modifier for a countdown timer </p>
 </td></tr>
 </table>
@@ -384,7 +384,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>timer frequency (if using TMR_CLKSRC_CPU) </td></tr>
-    <tr><td class="paramname">clksrc</td><td>clock source for the timer (default is <a class="el" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8faaf4920d75cdf7c402c1549dc78bde5e2">Tmr::CPU</a>) </td></tr>
+    <tr><td class="paramname">clksrc</td><td>clock source for the timer (default is <a class="el" href="classhal_1_1_tmr.html#af9be002f1d6e86e20e9b1ada56ac139daaf4920d75cdf7c402c1549dc78bde5e2">Tmr::CPU</a>) </td></tr>
     <tr><td class="paramname">pin_assign</td><td>The pin assignment if using input capture (including clock source) or output compare pins </td></tr>
     <tr><td class="paramname">enabled_oc_chans</td><td>Mask of the enabled output compare channels (only if external pins are used) </td></tr>
     <tr><td class="paramname">enabled_ic_chans</td><td>Mask of the enabled input capture channels (only if external pins are used&ndash;not including clock source) </td></tr>
@@ -490,8 +490,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>The channel to use </td></tr>
-    <tr><td class="paramname">event</td><td>The event such as <a class="el" href="classhal_1_1_tmr.html#aeb3ff35f942f146281de2a3da38daf14a24a54fd58bcf98d545f7b60dc9405fe8">Tmr::INTERRUPT</a> </td></tr>
-    <tr><td class="paramname">callback</td><td>Callback executed if <a class="el" href="classhal_1_1_tmr.html#aeb3ff35f942f146281de2a3da38daf14a24a54fd58bcf98d545f7b60dc9405fe8">Tmr::INTERRUPT</a> is used </td></tr>
+    <tr><td class="paramname">event</td><td>The event such as <a class="el" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8fa24a54fd58bcf98d545f7b60dc9405fe8">Tmr::INTERRUPT</a> </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback executed if <a class="el" href="classhal_1_1_tmr.html#a8827200257ab821dff6f5b4bdc275c8fa24a54fd58bcf98d545f7b60dc9405fe8">Tmr::INTERRUPT</a> is used </td></tr>
     <tr><td class="paramname">context</td><td>First argument passed to callback </td></tr>
   </table>
   </dd>
