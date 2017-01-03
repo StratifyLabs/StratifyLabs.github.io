@@ -4,18 +4,12 @@ title: Stratify Labs
 tagline: Rapid Embedded Development
 ---
 
-<script>
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-
 
 <div style="background: #344555; color: #fff;">
 <div class="container">
-	<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+<div class="row" style="margin-top: 50px; margin-bottom: 50px">
 		<div class="col-md-3">
-			<img class="post_image" src="{{ BASE_PATH }}/images/Stratify-Labs-Logo-Icon.svg" />
+			<img class="post_image" height="200px" src="{{ BASE_PATH }}/images/Stratify-Labs-Logo-Icon.svg" />
 		</div>
 		<div class="col-md-9">
 			<h1><b>Stratify Labs</b></h1>

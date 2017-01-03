@@ -10,9 +10,9 @@ sections:
 
 <div style="background: #344555; color: #fff;">
 <div class="container">
-	<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+<div class="row header_row">
 		<div class="col-md-3 text-center">
-			<h1><i class="{{ page.sections['icon'] }}"></i></h1>
+			<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 		</div>
 		<div class="col-md-9">
 			<h1><b>{{ page.sections['intro'] }}</b></h1>
@@ -159,7 +159,7 @@ If you use the GPLv3 license, you must either:
 </ul>
 </p>
 <p>
-You can also: 
+You can also:
 <ul>
 <li>Purchase a commercial license and keep the license current for the lifetime of your product</li>
 <li>Contact us about purchasing a perpetual license for your product</li>
@@ -167,7 +167,3 @@ You can also:
 </p>
 
 </div>
-
-
-
-

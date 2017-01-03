@@ -1,34 +1,39 @@
 
+.header_row {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
 .post_image {
-  width: 100%; 
-  display: block; 
-  margin-left: auto; 
+  width: 100%;
+  display: block;
+  margin-left: auto;
   margin-right: auto;
 }
 
 .post_image_tall {
-  width: 50%; 
-  display: block; 
-  margin-left: auto; 
+  width: 50%;
+  display: block;
+  margin-left: auto;
   margin-right: auto;
 }
 
 .post_image_home {
-  width: 20%; 
-  display: block; 
-  margin-left: auto; 
+  width: 20%;
+  display: block;
+  margin-left: auto;
   margin-right: auto;
 }
 
 .post_equation {
-  width: 50%; 
-  display: block; 
-  margin-left: auto; 
+  width: 50%;
+  display: block;
+  margin-left: auto;
   margin-right: auto;
 }
 
 .anchor{
-  padding-top: 50px; 
+  padding-top: 50px;
   margin-top: -50px;
 }
 
@@ -40,10 +45,10 @@
   margin-bottom: 16px;
   overflow: hidden;
 }
- 
+
 .flex-video.widescreen { padding-bottom: 57.25%; }
 .flex-video.vimeo { padding-top: 0; }
- 
+
 .flex-video iframe,
 .flex-video object,
 .flex-video embed {
@@ -58,7 +63,7 @@
 }
 
   table.center {
-    margin-left:auto; 
+    margin-left:auto;
     margin-right:auto;
     width: 75%;
   }
@@ -77,7 +82,7 @@
   color:#db4437;
 }
 
-.form-control, .btn.form-control, .form-control:focus, .form-control.focus, 
+.form-control, .btn.form-control, .form-control:focus, .form-control.focus,
 .form-control.active.focus, .form-control>span:focus, label, label:focus,
 .btn.active:focus {
   border: 0;
@@ -116,17 +121,17 @@ input[type="text"].form-control.other {
   font-size: 20px;
 }
 
-label input[type="radio"] ~ i.fa.fa-circle-o, 
+label input[type="radio"] ~ i.fa.fa-circle-o,
 label input[type="checkbox"] ~ i.fa.fa-square-o {
   color: #c8c8c8;
   display: inline;
 }
 
-label input[type="radio"] ~ i.fa.fa-dot-circle-o, 
+label input[type="radio"] ~ i.fa.fa-dot-circle-o,
 label input[type="checkbox"] ~ i.fa.fa-check-square,
 label input[type="checkbox"]:checked ~ i.fa.fa-square-o,
 label input[type="radio"]:checked ~ i.fa.fa-circle-o,
-div#provider-type-field, 
+div#provider-type-field,
 div#member-skills-field {
   display: none;
 }

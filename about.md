@@ -10,9 +10,9 @@ sections:
 
 <div style="background: #344555; color: #fff;">
 <div class="container">
-	<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+<div class="row header_row">
 		<div class="col-md-3 text-center">
-			<h1><i class="{{ page.sections['icon'] }}"></i></h1>
+			<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 		</div>
 		<div class="col-md-9">
 			<h1><b>{{ page.sections['intro'] }}</b></h1>
@@ -29,7 +29,7 @@ sections:
 					<img style="height: auto;" src="{{ BASE_PATH }}/images/Stratify-Labs-Logo.svg" />
 				</center>
 			</p>
-		
+
 				<p><b>Stratify Labs</b> is a blend of full and part-time freelance designers and engineers as well as the technology we have created to help us build smart products faster. We provide full service product development consulting services including industrial design, mechanical engineering, electrical engineering, as well as firmware and software development.</p>
 
 
@@ -78,8 +78,3 @@ sections:
 
 	</div>
 </div>
-
-
-
-
-

@@ -1,14 +1,14 @@
 <div style="background: #344555; color: #fff;">
 	<div class="container">
-		<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+		<div class="row header_row">
 			<div class="col-md-3 text-center">
-				<h1>
+				<h2>
 				{% if page.sections['intro'] %}
 					<i class="{{ page.sections['icon'] }}"></i>
 				{% else %}
 					<i class="fa fa-newspaper-o fa-5x"></i>
 				{% endif %}
-				</h1>
+			</h2>
 			</div>
 			<div class="col-md-9">
 				{% if page.sections['intro'] %}
@@ -28,11 +28,11 @@
 
 			<div class="pagination">
 				<center>
-					{% if page.previous %} 
+					{% if page.previous %}
 						<a href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prev" class="prev-page"><span class="meta-nav">←</span> Previous Post</a>
-					{% endif %} 
+					{% endif %}
 
-					{% if page.next %} 
+					{% if page.next %}
 						<a href="{{ BASE_PATH }}{{ page.next.url }}" rel="next" class="next-page">Next Post <span class="meta-nav">→</span></a>
 					{% endif %}
 				</center>
@@ -52,8 +52,8 @@
 
 
 			{% if 0==1 %}
-			<h1><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square"></i></a> 
-    		<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square"></i></a> 
+			<h1><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square"></i></a>
+    		<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square"></i></a>
     		<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square"></i></a></h1>
 			{% endif %}
 
@@ -88,10 +88,10 @@
 				</div>
 			</div>
 
-				
+
 		</div>
 		<div class="col-md-4">
-			{% include JB/blog-sidebar.html %} 
+			{% include JB/blog-sidebar.html %}
 		</div>
 	</div>
 

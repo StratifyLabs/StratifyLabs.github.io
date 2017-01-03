@@ -13,7 +13,7 @@ $(function () {
 
 <div style="background: #344555; color: #fff;">
 <div class="container">
-	<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+<div class="row header_row">
 		<div class="col-md-3">
 			<img class="post_image" src="{{ BASE_PATH }}/images/Stratify-OS-Logo-Cog.svg" />
 		</div>
@@ -38,11 +38,11 @@ $(function () {
 			</div>
 			<div class="col-md-3">
 				<i class="fa fa-5x fa-cloud"></i>
-				<h4><b>IoT</b> Ready</h4>	
+				<h4><b>IoT</b> Ready</h4>
 			</div>
 			<div class="col-md-3">
 				<i class="fa fa-5x fa-square"></i>
-				<h4><b>App</b> Enabled</h4>	
+				<h4><b>App</b> Enabled</h4>
 			</div>
 		</div>
 	</div>
@@ -51,7 +51,7 @@ $(function () {
 <div style="background: #fff;">
 	<div class="container">
 	<h1>Develop <b>Faster</b></h1>
-	<p>Stratify dispenses with the monolithic binary model eliminating the need for build system and source code integration with the RTOS, middleware, device 
+	<p>Stratify dispenses with the monolithic binary model eliminating the need for build system and source code integration with the RTOS, middleware, device
 	drivers and applications.  The hardware is ready to run your application out of the box.</p>
 		<div class="row" style="margin-top: 20px; margin-bottom: 20px; text-align: center">
 			<div class="col-md-4">
@@ -265,9 +265,3 @@ $(function () {
 		{% include themes/twitter/signup.html %}
 	</div>
 </div>
-
-
-
-
-
-

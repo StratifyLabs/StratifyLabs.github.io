@@ -10,9 +10,9 @@ sections:
 
 <div style="background: #344555; color: #fff;">
 <div class="container">
-	<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+<div class="row header_row">
 		<div class="col-md-3 text-center">
-			<h1><i class="{{ page.sections['icon'] }}"></i></h1>
+			<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 		</div>
 		<div class="col-md-9">
 			<h1><b>{{ page.sections['intro'] }}</b></h1>
@@ -42,7 +42,7 @@ sections:
 				<div class="alert alert-danger" style="height:200px">
 					<h4>Concept and Design</h4>
 					<h1><b><i class="fa fa-pencil-square-o"></i></b></h1>
-					<p>Create concepts and renderings to see how your idea 
+					<p>Create concepts and renderings to see how your idea
 					can be realized.</p>
 				</div>
 			</div>
@@ -58,7 +58,7 @@ sections:
 				<div class="alert alert-info" style="height:200px">
 					<h4>Prototyping</h4>
 					<h1><b><i class="fa fa-wrench"></i></b></h1>
-					<p>Build prototypes to ensure your product has the right 
+					<p>Build prototypes to ensure your product has the right
 					performance, look and feel.</p>
 				</div>
 			</div>
@@ -66,7 +66,7 @@ sections:
 				<div class="alert alert-success" style="height:200px">
 					<h4>Production</h4>
 					<h1><b><i class="fa fa-cube"></i></b></h1>
-					<p>Fine tune the design for production and find the right 
+					<p>Fine tune the design for production and find the right
 					partners to build at scale.</p>
 				</div>
 			</div>
@@ -181,7 +181,7 @@ sections:
 			        <p>We developed the original electronics for the Clamcase iPad keyboard and supported both FCC testing and production.</p>
 			      </div>
 			    </div>
-			
+
 			  </div>
 
 			  <!-- Controls -->
@@ -201,8 +201,3 @@ sections:
 	<p></p>
 
 </div>
-
-
-
-
-

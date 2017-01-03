@@ -10,9 +10,9 @@ sections:
 
 <div style="background: #344555; color: #fff;">
 	<div class="container">
-		<div class="row" style="margin-top: 50px; margin-bottom: 50px;">
+  <div class="row header_row">
 			<div class="col-md-3 text-center">
-				<h1><i class="{{ page.sections['icon'] }}"></i></h1>
+				<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 			</div>
 			<div class="col-md-9">
 				<h1><b>{{ page.sections['intro'] }}</b></h1>
@@ -169,7 +169,3 @@ board by following <a href="https://github.com/StratifyLabs/mbedLPC1768#mbedlpc1
 		{% include themes/twitter/signup.html %}
 	</div>
 </div>
-
-
-
-

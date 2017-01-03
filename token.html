@@ -7,7 +7,7 @@
         window.location.protocol = "https";
 </script>
 <meta charset="utf-8">
-<title>Stratify Labs</title> 
+<title>Stratify Labs</title>
 <meta name="author" content="Stratify Labs, Inc">
 
 <!-- Enable responsive viewport -->
@@ -19,7 +19,7 @@
     <![endif]-->
 
 <!-- Le styles -->
-<link rel="canonical" href=" { { site.url } }{ { page.url } }" />
+<link rel="canonical" href=" {{ site.url }}{{ page.url }}" />
 <link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
 <link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
 <link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
@@ -61,7 +61,7 @@
 </form>
 
 </div>
-	
+
 <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
 <script>
 var isFirebaseInitialized = false;
@@ -88,10 +88,10 @@ function initializeFirebase(){
 function signInFunction() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("pass").value;
-    
+
   initializeFirebase();
   firebase.auth().signOut();
-  
+
   if (firebase.auth().currentUser) {
     // [START signout]
     firebase.auth().signOut();
@@ -99,7 +99,7 @@ function signInFunction() {
   } else {
     var email = document.getElementById('email').value;
     var password = document.getElementById('pass').value;
-    
+
     // Sign in with email and pass.
     // [START authwithemail]
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
@@ -120,7 +120,7 @@ function signInFunction() {
 
     		result.getToken().then(function(token){
         var userId = firebase.auth().currentUser.uid;
-        
+
         console.log("{  \"status\": \"success\", \"uid\": \"" + userId + "\", \"token\": \"" + token + "\"}");
         document.getElementById("token").value = "{  \"status\": \"success\", \"uid\": \"" + userId + "\", \"token\": \"" + token + "\"}";
     });
