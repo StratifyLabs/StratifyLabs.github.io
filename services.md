@@ -152,7 +152,8 @@ sections:
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-stratify-work" data-slide-to="0" class="active"></li>
 			    <li data-target="#carousel-stratify-work" data-slide-to="1"></li>
-			    <li data-target="#carousel-stratify-work" data-slide-to="2"></li>
+          <li data-target="#carousel-stratify-work" data-slide-to="2"></li>
+          <li data-target="#carousel-stratify-work" data-slide-to="3"></li>
 			  </ol>
 
 			  <!-- Wrapper for slides -->
@@ -168,7 +169,7 @@ sections:
 			    <div class="item">
 			      <img src="{{ BASE_PATH }}/images/coaction-hero-production-work.png" alt="Stratify OS">
 			      <div class="carousel-caption">
-			       	<h3>Stratify OS: Rapid Embedded Develoment</h3>
+			       	<h3>Stratify OS: Rapid Embedded Development</h3>
 			        <p>Stratiyf OS is a technology we developed to help our clients go to market much more quickly. It
 			        is a hardware/software solution that streamlines smart product development.</p>
 			      </div>
@@ -181,6 +182,14 @@ sections:
 			        <p>We developed the original electronics for the Clamcase iPad keyboard and supported both FCC testing and production.</p>
 			      </div>
 			    </div>
+
+          <div class="item">
+            <img src="{{ BASE_PATH }}/images/apiqe-work.png" alt="Fogo">
+            <div class="carousel-caption">
+              <h3>Apiqe Commercial Water Appliance</h3>
+              <p>The Apiqe water dispenser is powered by Stratify technology which made for a very smooth PCB and firmware design effort and a great product.</p>
+            </div>
+          </div>
 
 			  </div>
 

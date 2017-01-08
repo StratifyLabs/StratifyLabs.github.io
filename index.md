@@ -20,7 +20,7 @@ tagline: Rapid Embedded Development
 </div>
 
 <div style="background: #ddd;">
-	<div class="container" style="padding-top: 50px; padding-bottom: 50px">
+	<div class="container" style="padding-top: 10px; padding-bottom: 10px">
 	<center>
 	<h1><i class="fa fa-wrench"></i> Let's <b>Build</b> Together</h1>
 	</center>
