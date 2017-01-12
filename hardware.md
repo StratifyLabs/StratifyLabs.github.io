@@ -79,7 +79,7 @@ sections:
 
 <div style="background: #fff;">
 	<div class="container">
-	<h2>Stratify <b>Hardware</b> <small>Coming soon</small></h2>
+	<h2>Coming soon</h2>
 		<div class="row text-center" style="margin-top: 20px; margin-bottom: 20px;">
 			<div class="col-md-12">
 				<div class="table-responsive">
