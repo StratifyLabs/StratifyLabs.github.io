@@ -28,9 +28,58 @@ sections:
 	</div>
 </div>
 
+
+<div class="container">
+<h2>Stratify <b>Hardware</b> <small>microcontroller development boards</small></h2>
+
+<div class="row">
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><h4>Stratify Alpha</h4></div>
+      <div class="panel-body">
+        <img class="post_image" src="{{ BASE_PATH }}/images/stratify-alpha-angle.png" />
+        <p>arm cortex-m4 development board with Stratify OS</p>
+      </div>
+      <div class="panel-footer">
+        <a href="{{ BASE_PATH }}/hardware/stratify-alpha/" class="btn btn-success">Learn More</a>
+      </div>
+    </div>  
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><h4>CoAction Hero</h4></div>
+      <div class="panel-body">
+        <img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero-angle.png" />
+        <p>arm cortex-m3 development board with Stratify OS</p>
+      </div>
+      <div class="panel-footer">
+        <a href="{{ BASE_PATH }}/hardware/coaction-hero/" class="btn btn-success">Learn More</a>
+      </div>
+    </div>  
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><h4>mbed LPC1768</h4></div>
+      <div class="panel-body">
+        <img class="post_image" src="{{ BASE_PATH }}/images/mbedLPC1768-1.png" />
+        <p>arm cortex-m3 development board compatible with Stratify OS</p>
+      </div>
+      <div class="panel-footer">
+        <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/" class="btn btn-success">Learn More</a>
+      </div>
+    </div>  
+  </div>
+
+
+</div>
+</div>
+
 <div style="background: #fff;">
 	<div class="container">
-	<h1>Stratify <b>Hardware</b> <small>Coming soon</small></h1>
+	<h2>Stratify <b>Hardware</b> <small>Coming soon</small></h2>
 		<div class="row text-center" style="margin-top: 20px; margin-bottom: 20px;">
 			<div class="col-md-12">
 				<div class="table-responsive">
@@ -91,7 +140,7 @@ sections:
 					  </tr>
 					  <tr>
 					    <td class="text-left"><i class="fa fa-download"></i> <b>External Flash</b></td>
-					    <td>32MB</td>
+					    <td>2MB</td>
 					    <td>32MB</td>
 					    <td>256MB</td>
 					  </tr>
@@ -112,56 +161,6 @@ sections:
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="container">
-<a name="CoActionHero"></a>
-
-<hr>
-
-<h1>CoAction Hero</h1>
-
-<img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero-production.png" />
-
-<h2>Features</h2>
-
-<ul>
-<li>Stratify OS pre-installed and ready for you to build apps!</li>
-<li>120MHz, 512KB flash, 64KB ram LPC1769 ARM Cortex M3 microcontroller</li>
-<li>USB device</li>
-<li>1MB serial flash chip for storing user files</li>
-<li>Easiest way to get started developing Stratify OS applications</li>
-</ul>
-
-<p>
-More info:
-</p>
-<ul>
-<li><a href="{{ BASE_PATH }}/files/coaction-hero-datasheet-A.pdf">Datasheet</a></li>
-<li><a href="{{ BASE_PATH }}/files/CoAction-Hero-Microcomputer-Schematic.pdf">Schematic</a></li>
-</ul>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="NY8QYJ9Z8ZCW2">
-<button type="submit" class="btn btn-success" name="submit">Buy Now for $39</button>
-</form>
-
-<a name="MBEDLPC1768"></a>
-
-<hr />
-<br />
-
-<h1>Mbed LPC1768</h1>
-
-<p>
-StratifyOS can also run on the <a href="http://mbed.org/platforms/mbed-LPC1768/" target="_blank">mbed LPC1768</a>
-board by following <a href="https://github.com/StratifyLabs/mbedLPC1768#mbedlpc1768" target="_blank">these instructions</a>.
-</p>
-
-
-<img class="post_image" src="{{ BASE_PATH }}/images/mbed-xively-kit.jpg" />
-
 </div>
 
 <div style="background: #ddd;">

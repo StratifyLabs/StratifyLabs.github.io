@@ -36,12 +36,17 @@ sections:
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="{{ BASE_PATH }}/images/coaction-hero-production.png" alt="Fogo">
+
+  <div class="item active">
+    <img src="{{ BASE_PATH }}/images/coation-hero-carousel1.png" alt="CoAction Hero Microcontroller Development Board">
+  </div>
+
+    <div class="item">
+      <img src="{{ BASE_PATH }}/images/coaction-hero-production.png" alt="CoAction Hero Microcontroller development board production">
     </div>
 
     <div class="item">
-      <img src="{{ BASE_PATH }}/images/coaction-hero-pins.png" alt="Fogo">
+      <img src="{{ BASE_PATH }}/images/coaction-hero-pins.png" alt="CoAction Hero Microcontroller development board pinout">
     </div>
 
   </div>
