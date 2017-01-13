@@ -4,28 +4,33 @@ title: RAM/Flash Usage in Embedded C Programs
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, c, programming, popular]
+ad:
+  title: "Get the CoAction Hero with Stratify OS pre-installed"
+  description: "Stratify OS pre-installed means simple development with powerful features using just a USB cable."
+  image: "coaction-hero-production-ad.png"
+  link: "/hardware/coaction-hero/?utm_source=blog&utm_campaign=stratify_coaction_hero&utm_medium=ad&utm_content=a"
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/flash-map.svg" />
-In embedded designs, memory, especially RAM, is a precious 
-resource.  Understanding how C allocates variables in memory 
+In embedded designs, memory, especially RAM, is a precious
+resource.  Understanding how C allocates variables in memory
 is crucial to getting the best use of memory in embedded systems.
 
-Memory in a C program includes code (executable instructions) and 
-data.  Code is typically read-only and executable--characteristics 
-enforced by the operating system (OS).  Data memory is 
-non-executable (enforced by the OS), can be either read-only or 
-read-write, and is either statically or dynamically allocated which 
-characteristics are managed by the compiler.  In desktop programs, the 
-entire memory map is managed through virtual memory using a hardware 
-construct, called a Memory Management Unit (MMU), to map the 
-program's memory to physical RAM.  In RAM-constrained embedded systems 
-lacking an MMU, the memory map is divided in to a section for flash 
+Memory in a C program includes code (executable instructions) and
+data.  Code is typically read-only and executable--characteristics
+enforced by the operating system (OS).  Data memory is
+non-executable (enforced by the OS), can be either read-only or
+read-write, and is either statically or dynamically allocated which
+characteristics are managed by the compiler.  In desktop programs, the
+entire memory map is managed through virtual memory using a hardware
+construct, called a Memory Management Unit (MMU), to map the
+program's memory to physical RAM.  In RAM-constrained embedded systems
+lacking an MMU, the memory map is divided in to a section for flash
 memory (code and read-only data) and a section for RAM (read-write data).
 
-<div class="alert alert-info"><span class="label label-danger">Note</span> This article 
-talks about specifics of the C language implementation using GCC with 
-the ARM Cortex-M3 architecture. Other implementations differ on 
+<div class="alert alert-info"><span class="label label-danger">Note</span> This article
+talks about specifics of the C language implementation using GCC with
+the ARM Cortex-M3 architecture. Other implementations differ on
 specifics, but the basic concepts are the same.</div>
 
 ## Flash:  Code and Read-Only Memory
@@ -35,7 +40,7 @@ Code and read-only data are stored in flash memory.  The layout of a C program's
 {% highlight CPP %} #include <stdio.h>
 const int read_only_variable = 2000;
 int data_variable = 500;
- 
+
 void my_function(void){
      int x;
      x = 200;
@@ -61,12 +66,12 @@ Statically allocated memory means that the compiler determines the memory addres
 
 {% highlight CPP %}
 #include <stdio.h>
- 
+
 //these variables are globally allocated
 int data_var = 500;
 int bss_var0;
 int bss_var1 = 0;
- 
+
 void my_function(void){
      int uninitialized_var;
      printf("data_var:%d, bss_var0:%d\n", data_var, bss_var0);
@@ -81,14 +86,14 @@ Static memory should not be confused with the C keyword _static_.  While all C _
 
 {% highlight CPP %}
 #include <stdio.h>
- 
+
 int global_var; //statically allocated as a global variable
 static int static_var; //statically allocated but only accessible within file
- 
+
 void my_function(void){
      static int my_static = 0; //statically allocated, accessible within my_function
      int my_stack = 0; //allocated on the stack
- 
+
      printf("my_static:%d, my_stack:%d\n", my_static, my_stack);
      my_stack++;
      my_static++;
@@ -114,20 +119,20 @@ The beginning of the heap is just above the last bss variable (see diagram above
 {% highlight CPP %}#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
- 
+
 void my_func(void){
      char * buffer;
- 
+
      buffer = malloc(512); //allocate 512 bytes for buffer on the heap
      if ( buffer == NULL ){
           perror("Failed to allocate memory");
           return;
      }
- 
+
      //now buffer can be treated as if it were declared char buffer[512]
      memset(buffer, 0, 512); //zero out the buffer
      sprintf(buffer, "Buffer is at location 0x%lX\n", buffer); //show buffers address
- 
+
      free(buffer); //This frees 512 bytes to be used by another call to malloc()
 }{% endhighlight %}
 
@@ -136,16 +141,16 @@ Dynamically allocated memory is a convenient tool for application developers but
 {% highlight CPP %}#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
- 
+
 void my_fragmenting_function(void){
      char * my_buffers[3];
      int i;
      for(i=0; i < 3; i++){
           my_buffers[i] = malloc(128); //allocated 128 bytes (3 times)
      }
- 
+
      free( buffer[1] );
- 
+
      buffer[1] = malloc(256);
 }{% endhighlight %}
 
@@ -156,12 +161,12 @@ The example above allocates 128 bytes three times then frees the middle 128 byte
 Variables that are declared within a function, known as local variables, are either allocated on the stack or simply assigned a register value.  Whether a variable is allocated on the stack or simply assigned to a register depends on many factors such as the compiler (including conventions associated with the architecture), the microcontroller architecture, as well as the number of variables already assigned to registers.  Consider the following code example:
 
 {% highlight CPP %}#include <stdio.h>
- 
+
 int my_function(int a, int b, int c, int d){
      int x;
      register int y;
      char buf[64];
- 
+
      sprintf(buf, "Test String\n");
      x = a + b + c + strlen(buf);
      y = d*d;
@@ -177,4 +182,3 @@ It is important to make the distinction between the registers used with local va
 ## Conclusion
 
 In embedded systems, it is crucial to pay close attention to memory usage.  Having a sound understanding of how C allocates variables in RAM and flash both dynamically and statically is key to getting the most out of limited memory.
-

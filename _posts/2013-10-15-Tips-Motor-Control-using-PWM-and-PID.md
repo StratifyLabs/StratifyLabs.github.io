@@ -4,16 +4,21 @@ title: Motor Control using PWM and PID
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, control, pwm, pid, motor, programming, circuit, popular]
+ad:
+  title: "Get the CoAction Hero with Stratify OS pre-installed"
+  description: "Stratify OS pre-installed means simple development with powerful features using just a USB cable."
+  image: "coaction-hero-production-ad.png"
+  link: "/hardware/coaction-hero/?utm_source=blog&utm_campaign=stratify_coaction_hero&utm_medium=ad&utm_content=a"
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/h-bridge.svg" />
-Bi-directional motor control can be done using an H-bridge circuit 
-with pulse-width modulation (PWM) from a microcontroller to vary 
-the speed. Several design challenges include preventing shoot-through, implementing 
-a snubber circuit, as well as open and closed loop (such as PID) control 
+Bi-directional motor control can be done using an H-bridge circuit
+with pulse-width modulation (PWM) from a microcontroller to vary
+the speed. Several design challenges include preventing shoot-through, implementing
+a snubber circuit, as well as open and closed loop (such as PID) control
 mechanisms.
 
 {{ excerpt_separator }}
- 
+
 ## PWM Control of an H-Bridge
 
 An H-bridge circuit consists of four transistors (usually two PMOS's and two NMOS's).  To maximize efficiency, the transistors are driven at a higher voltage than the microcontroller.  A typical H-bridge circuit with logic scaling circuitry is shown above.
@@ -36,12 +41,12 @@ A snubber circuit is used to suppress the voltage transients caused by PWM switc
 
 <img class="post_equation" src="{{ BASE_PATH }}/images/inductor-voltage-formula.svg" />
 
-When the PWM signal switches the motor from on to off, there is a rapid change 
-in current (ie di/dt is large) which causes a voltage spike.  Without a snubber 
-circuit, the energy from the voltage spike can result in arcing, damage to the 
-body diode in the H-bridge transistors, or cause electromagnetic interference 
-in nearby circuitry.  The snubber circuit safely dissipates the energy in 
-passive elements.  A simple, effective snubber circuit consists of a resistor 
+When the PWM signal switches the motor from on to off, there is a rapid change
+in current (ie di/dt is large) which causes a voltage spike.  Without a snubber
+circuit, the energy from the voltage spike can result in arcing, damage to the
+body diode in the H-bridge transistors, or cause electromagnetic interference
+in nearby circuitry.  The snubber circuit safely dissipates the energy in
+passive elements.  A simple, effective snubber circuit consists of a resistor
 and capacitor in series across the terminals of the motor as shown below.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/motorsnubber.svg" />
@@ -72,7 +77,7 @@ typedef struct{
   float ki /*! Integrator constant */;
   float kd /*! Differential constant */;
 } pid_f_t;
- 
+
 /*! \details This function initializes the data in a PID structure.
  *
  */
@@ -83,7 +88,7 @@ void pid_init_f(pid_f_t * ptr /*! A pointer to the PID data structure */,
   ptr->min = min;
   ptr->max = max;
 }
- 
+
 /*! \details This function updates the value of the manipulated variable (MV)
  * based on the current state of the PID loop.
  */
@@ -110,7 +115,7 @@ float pid_update_f(float sp /*! The set point */,
   return manp;
 }
 {% endhighlight %}
- 
+
 It is important to properly apply the manipulated variable to the process.  In the H-bridge shown above, Q5 inverts the PWM signal which means the software needs to invert the PWM value before applying it.  Also while switching Q2 and Q4, the states of Q1 and Q3 determine the motor direction; this affects how the sign of the manipulated variable is interpreted.  These nuances in the circuit can make debugging a PID loop tricky but can be overcome with sound analysis as well as trial and error.
 
 ### Example
@@ -145,7 +150,7 @@ The source code uses a PID loop to control the motor speed. First, it reads the 
 #include <time.h>
 #include <dsp.h>
 #include <pid.h>
- 
+
 #define TMR_PORT 0 //Timer port used to capture encoder data
 #define ADC_PORT 0 //ADC port for getting user input
 #define ADC_INPUT_CHAN (7) //ADC channel for user input
@@ -155,25 +160,25 @@ The source code uses a PID loop to control the motor speed. First, it reads the 
 #define PWM_FREQ (1000000)  //PWM clock frequency
 #define PWM_TOP 1000 //Top value for PWM clock
 #define PWM_PERIOD (PWM_TOP*1000/PWM_FREQ) //Period in ms
- 
+
 static int init(void); //initilize timer, PWM and ADC
 static int init_tmr(void);
 static int init_pwm(void);
 static int init_adc(void);
- 
+
 //Set the output duty cycle
 static void set_duty(int duty);
- 
+
 int main(int argc, char * argv[]){
   pwm_reqattr_t req;
   int i;
- 
+
   //These are for sampling the ADC (user input)
   adc_sample_t samp;
   int32_t samp_avg;
   uint16_t alpha;
   uint32_t set_speed;
- 
+
   //This is for measuring the motor speed
   uint32_t delta_ms; //elapsed time in milliseconds
   uint32_t last_ms;
@@ -184,24 +189,24 @@ int main(int argc, char * argv[]){
   uint32_t last_pos; //position from last measurement
   uint32_t delta_pos;
   uint32_t speed;
- 
+
   //PID variables
   pid_i32_t pid;
   uint32_t duty;
- 
+
   if( init() < 0 ){
                 //exit unsuccessfully if any hardware failed to initialize
     exit(1);
   }
- 
+
   //Initialize the ADC averaging (EMA filter)
   alpha = DSP_EMA_I32_ALPHA(0.1);
   adc_read(ADC_PORT, ADC_INPUT_CHAN, &samp, sizeof(adc_sample_t));
   samp_avg = samp;
- 
+
   //Since there is no initial measurement, the first speed will be bogus
   last_ms = 0;
- 
+
   //initialize the PID
   pid_init_i32(&pid, 200, 900); //Bound the duty between 20% and 90%
   pid_setconstants_i32(&pid,
@@ -210,64 +215,64 @@ int main(int argc, char * argv[]){
       PID_I32_CONSTANT(0.01), //I constant
       PID_I32_CONSTANT(0.0001)  //D constant
       );
- 
+
   usleep(50*1000);
   set_duty(0);
- 
+
   //Get the initial time so that the program start time is close to zero in the output data
   clock_gettime(CLOCK_REALTIME, &now);
   ref_ms = (now.tv_sec * 1000 + (now.tv_nsec + 500000) / 1000000); //convert to milliseconds
- 
+
   i = 0;
   while(1){
     //Read and averge the ADC to get the set point
     adc_read(ADC_PORT, ADC_INPUT_CHAN, &samp, sizeof(adc_sample_t));
     samp_avg = dsp_ema_i32(samp, samp_avg, alpha);
     set_speed = samp_avg * 8500 / ADC_MAX + 1500;
- 
+
     //Now measure the position and calculate the speed (pos/time)
     clock_gettime(CLOCK_REALTIME, &now);
     now_ms = (now.tv_sec * 1000 + (now.tv_nsec + 500000) / 1000000); //convert to milliseconds
     delta_ms = now_ms - last_ms;
     last_ms = now_ms;
- 
- 
+
+
     current_pos = tmr_get(TMR_PORT);
     delta_pos = current_pos - last_pos;
     //calculate in RPM (1000*60 ms in a min and 200 counts per revolution)
     speed = (delta_pos*(1000*60/200))/(delta_ms);
     last_pos = current_pos;
- 
+
     //Calculate the new duty cycle
     duty = pid_update_i32(set_speed, speed, &pid);
     set_duty(duty);
- 
+
     //Display the data and wait for the next update
     if ( i++ > 0 ){ //first sample is garbage because the delta values are invalid
       printf("%d %d %d %d;\n", now_ms - ref_ms, set_speed, speed, duty);
     }
     usleep(25*1000); //update every 25 ms
   }
- 
+
   return 0;
 }
- 
+
 int init(void){
         if( init_tmr() < 0 ){ return -1; }
   if( init_adc() < 0 ){ return -1; }
   if( init_pwm() < 0 ){ return -1; }
   return 0;
 }
- 
+
 int init_tmr(void){
   tmr_attr_t attr;
- 
+
   //Open the timer port
   if( tmr_open(TMR_PORT) < 0 ){
     perror("failed to open tmr");
     return -1;
   }
- 
+
   //We are using Capture 0 on timer 0 (CAP0. -- count rising edges
   attr.clksrc = TMR_CLKSRC_IC0 | TMR_CLKSRC_EDGERISING;
   attr.freq = 0; //this is not used with input capture counting
@@ -278,25 +283,25 @@ int init_tmr(void){
     perror("failed to setattr tmr");
     return -1;
   }
- 
+
   //Turn the timer on (start counting edges)
   if ( tmr_on(TMR_PORT) < 0 ){
     perror("failed to turn tmr on");
   }
- 
+
   return 0;
 }
- 
+
 int init_pwm(void){
   pwm_attr_t attr;
   pwm_reqattr_t req;
- 
+
   //Open the PWM port
   if( pwm_open(PWM_PORT) < 0 ){
     perror("failed to open pwm");
     return -1;
   }
- 
+
   //Set the PWM attributes
   attr.enabled_channels = (1<<PWM_CHAN_HIGH)|(1<<PWM_CHAN_LOW);
   attr.freq = PWM_FREQ;
@@ -305,34 +310,34 @@ int init_pwm(void){
   if( pwm_setattr(PWM_PORT, &attr) < 0 ){
     perror("failed to setattr pwm");
   }
- 
+
   //Allow the PWM clock time to initialize
   usleep(100*1000);
- 
+
   //Set both PWM outputs to Zero
   req.channel = PWM_CHAN_HIGH;
   req.duty = 0;
   if( pwm_set(PWM_PORT, &req) < 0 ){
     perror("failed to set high duty");
   }
- 
+
   req.channel = PWM_CHAN_LOW;
   if( pwm_set(PWM_PORT, &req) < 0 ){
     perror("failed to set low duty");
   }
- 
+
   return 0;
 }
- 
+
 int init_adc(void){
   adc_attr_t attr;
- 
+
   //Open the ADC port
   if( adc_open(ADC_PORT) < 0){
     perror("failed to open adc");
     return -1;
   }
- 
+
   //Set the ADC attributes
   attr.enabled_channels = (1<<ADC_INPUT_CHAN);
   attr.freq = ADC_MAX_FREQ;
@@ -341,10 +346,10 @@ int init_adc(void){
     perror("failed to setattr for adc");
     return -1;
   }
- 
+
   return 0;
 }
- 
+
 void set_duty(int duty){
   pwm_reqattr_t req;
   if( duty == 0 ){
@@ -383,7 +388,7 @@ axis([xmin xmax 0 ymax]);
 legend("Set Point", "Speed", "Duty*1000");
 print("output.png", "-dpng");
 </pre>
- 
+
 The following shows the motor speed, duty cycle (per one thousand), and the actual speed.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/motordemoplot.svg" />
@@ -393,4 +398,3 @@ To get the above performance, the PID constants required tweaking. The approach 
 ### Conclusion
 
 Precision, bi-directional motor control is achievable in embedded designs using an H-bridge driver, circuitry to sense feedback from the motor, and a PID algorithm.  It is important to have a well designed H-bridge that prevents shoot-through and suppresses electomagnetic interference with a snubber circuit.  The sensing feedback can come in the form of speed (using encoders) or current; though, the best results will be achieved using an encoder.  Finally, the PID algorithm can be tuned to ensure the control algorithm meets the application's requirements.
-
