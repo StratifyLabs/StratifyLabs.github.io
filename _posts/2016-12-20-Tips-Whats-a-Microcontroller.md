@@ -4,6 +4,12 @@ title: What's a Microcontroller
 category: Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, microcontroller, stratify]
+ad:
+  title: "Get the CoAction Hero with Stratify OS pre-installed"
+  description: "The CoAction Hero is an ARM Cortex M3 development board. It has Stratify OS pre-installed which gives you easy-to-use multi-threading, hardware abstraction and debugging all by simply connecting a USB cable."
+  image: "coaction-hero-production-ad.png"
+  link: "/hardware/coaction-hero/?utm_source=blog&utm_campaign=stratify_coaction_hero&utm_medium=ad&utm_content=a"
+  
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/microcontroller.svg" />
 A microcontroller is a microprocessor with integrated hardware peripherals (such as SPI, UART, I2C, ADC) and memory (usually RAM and flash). Compared to microprocessors, they boot instantly, consume less power and are easier to integrate into products but typically present firmware development challenges.

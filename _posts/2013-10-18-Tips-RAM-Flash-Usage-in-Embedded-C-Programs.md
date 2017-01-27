@@ -6,7 +6,7 @@ tagline: Embedded Design
 tags : [embedded, c, programming, popular]
 ad:
   title: "Get the CoAction Hero with Stratify OS pre-installed"
-  description: "Stratify OS pre-installed means simple development with powerful features using just a USB cable."
+  description: "The CoAction Hero is an ARM Cortex M3 development board. It has Stratify OS pre-installed which gives you easy-to-use multi-threading, hardware abstraction and debugging all by simply connecting a USB cable."
   image: "coaction-hero-production-ad.png"
   link: "/hardware/coaction-hero/?utm_source=blog&utm_campaign=stratify_coaction_hero&utm_medium=ad&utm_content=a"
 ---
