@@ -38,7 +38,9 @@ sections:
     <div class="panel panel-default">
       <div class="panel-heading"><h4>Stratify Alpha</h4></div>
       <div class="panel-body">
+        <a href="{{ BASE_PATH }}/hardware/stratify-alpha/">
         <img class="post_image" src="{{ BASE_PATH }}/images/stratify-alpha-angle.png" />
+        </a>
         <p>arm cortex-m4 development board with Stratify OS</p>
       </div>
       <div class="panel-footer">
@@ -51,7 +53,9 @@ sections:
     <div class="panel panel-default">
       <div class="panel-heading"><h4>CoAction Hero</h4></div>
       <div class="panel-body">
+      <a href="{{ BASE_PATH }}/hardware/coaction-hero/">
         <img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero-angle.png" />
+        </a>
         <p>arm cortex-m3 development board with Stratify OS</p>
       </div>
       <div class="panel-footer">
@@ -64,7 +68,9 @@ sections:
     <div class="panel panel-default">
       <div class="panel-heading"><h4>mbed LPC1768</h4></div>
       <div class="panel-body">
+      <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/">
         <img class="post_image" src="{{ BASE_PATH }}/images/mbedLPC1768-1.png" />
+        </a>
         <p>arm cortex-m3 development board compatible with Stratify OS</p>
       </div>
       <div class="panel-footer">
