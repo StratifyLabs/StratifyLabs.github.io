@@ -22,9 +22,144 @@ sections:
 </div>
 </div>
 
+
+<div style="background: #ddd;">
+	<div class="container" style="padding-top: 50px; padding-bottom: 50px">
+		<center>
+			<h2>Getting Started</h2>
+		</center>
+	</div>
+</div>
+
 <div class="container">
 
-<h1>License and Pricing</h1>
+<center>
+<h3><i class="fa fa-cogs"></i> The Hardware</h3>
+<p>Powerful ARM Cortex-M Development Boards</p>
+</center>
+
+<div class="row">
+
+  <div class="col-md-6">
+    <center>
+      <p>
+        <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/hardware/coaction-hero/">CoAction Hero</a>
+      </p>
+    </center>
+  </div>
+
+  <div class="col-md-6">
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/hardware/mbed-lpc1768/">MBED LPC1768</a>
+    </p>
+  </center>
+  </div>
+
+</div>
+
+<hr>
+
+<center>
+<h3><i class="fa fa-wrench"></i> The Tools</h3>
+<p>Free Cross-Platform Development Tools</p>
+</center>
+
+<div class="row">
+  <div class="col-md-6">
+  <center>
+  <h4>Download for <b>Windows</b></h4>
+  </center>
+
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://eclipse.org/cdt/" target="_blank">Eclipse C/C++ Development Toolkit</a>
+    </p>
+  </center>
+
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Labs-SDK-Installer-2.1.0.exe">ARM Compiler with Stratify SDK</a>
+    </p>
+  </center>
+
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.1/Stratify-Link-Installer-2.1.exe">Stratify Link 2</a>
+    </p>
+  </center>
+
+  </div>
+
+  <div class="col-md-6">
+
+  <center>
+  <h4>Download for <b>Mac</b></h4>
+  </center>
+
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://eclipse.org/cdt/" target="_blank">Eclipse C/C++ Development Toolkit</a>
+    </p>
+  </center>
+
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/StratifyLabs-SDK-2.1.0.dmg">ARM Compiler with Stratify SDK</a>
+    </p>
+  </center>
+
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.1/Stratify-Link-2.1.dmg">Stratify Link 2</a>
+    </p>
+  </center>
+
+
+  </div>
+</div>
+
+<hr>
+
+<center>
+<h3><i class="fa fa-code-fork"></i> The Code</h3>
+<p>Start by forking on Github</p>
+</center>
+
+<div class="row">
+  <div class="col-md-6">
+    <center>
+      <p>
+        <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/HelloWorld"  target="_blank">Hello World</a>
+      </p>
+    </center>
+  </div>
+  <div class="col-md-6">
+  <center>
+    <p>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs" target="_blank">Much More</a>
+    </p>
+  </center>
+  </div>
+</div>
+</div>
+
+<p>
+</p>
+
+<div style="background: #ddd;">
+	<div class="container" style="padding-top: 50px; padding-bottom: 50px">
+		<center>
+			<h2>License Information</h2>
+		</center>
+	</div>
+</div>
+
+
+<div class="container">
+
+<h3>Pricing and Options</h3>
+
 
 <div class="table-responsive">
 <table class="table table-striped" style="font-size: 1.4em;">
@@ -78,50 +213,7 @@ sections:
 
 </p>
 
-</div>
-
-<div style="background: #ddd;">
-
-<div class="container">
-
-<h1>Getting Started</h1>
-
-<h2>The Hardware</h2>
-
-<p>
-We are working hard on getting three new Stratify boards ready for production as well as porting Stratify to existing development
-boards. Stratify OS can currently be run on the following hardware platforms.</p>
-<center>
-<a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/hardware/">CoAction Hero - Buy Now</a> <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/mbedLPC1768#mbedlpc1768" target="_blank">MBED LPC1768 - Install Now</a>
-</center>
-
-<h2>The Tools</h2>
-
-<p>
-To work with Stratify OS, you need to download three tools
-</p>
-<ol>
-<li><a href="https://eclipse.org/cdt/" target="_blank">Eclipse CDT</a></li>
-<li>Stratify SDK:  <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Labs-SDK-Installer-2.1.0.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/StratifyLabs-SDK-2.1.0.dmg">MacOS</a></li>
-<li>Stratify Link 2: <a href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.1/Stratify-Link-Installer-2.1.exe">Windows</a>, <a href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.1/Stratify-Link-2.1.dmg">MacOS</a></li>
-<li>Stratify Link (Old Version): <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link-Installer.exe">Windows</a>, <a href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Link.dmg">MacOS</a></li>
-</ol>
-
-
-<h2>The Code</h2>
-
-<p>You can get started by forking or downloading the <a href="https://github.com/StratifyLabs/HelloWorld" target="_blank">Hello Word</a> application from github.</p>
-
-<p>
-You aren't required to download any of the StratifyOS source code to build applications. However, if you want to check out the OS source code, it is on <a href="https://github.com/StratifyLabs" target="_blank">Github</a>.
-</p>
-
-</div>
-</div>
-
-<div class="container">
-
-<h1>License FAQ</h1>
+<h3>License FAQ</h3>
 
 <p>
 <b>Are Stratify applications considered a combined work of Stratify OS?</b>
