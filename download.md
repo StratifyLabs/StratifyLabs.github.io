@@ -111,7 +111,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.1/Stratify-Link-2.1.dmg">Stratify Link 2</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.2/Stratify-Link-2.2.dmg">Stratify Link 2</a>
     </p>
   </center>
 
