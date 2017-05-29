@@ -34,8 +34,10 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class implements <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> device peripherals. </p>
-</div><table class="memberdecls">
+<div class="textblock"><p>This class implements <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> device peripherals.</p>
+<p>A normal <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> transfer (<a class="el" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa57d53a62dedf29aebef8cfbfc695e686" title="Normal I2C transfer writes 8-bit pointer then reads or writes data. ">I2C::SETUP_NORMAL_TRANSFER</a>) updates the register pointer and then either reads or writes data. For example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"></div><div class="line">u16 data;</div><div class="line"><a class="code" href="classhal_1_1_i2_c.html#a01a9595603690335b507955765537589">I2C</a> i2c(0); <span class="comment">//use I2C port 0</span></div><div class="line">i2c.init(100000); <span class="comment">//100KHz</span></div><div class="line"></div><div class="line">i2c.setup(0x4C, <a class="code" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa57d53a62dedf29aebef8cfbfc695e686">I2C::SETUP_NORMAL_TRANSFER</a>); <span class="comment">//slave addr is 0x4C</span></div><div class="line"></div><div class="line">i2c.read(5, &amp;data, <span class="keyword">sizeof</span>(data)); <span class="comment">//read 2 bytes from register 5</span></div></div><!-- fragment --><p>The code above will execute 2 <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> transactions. It will write 5 to the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> slave device register pointer. It will then read 2 bytes from the slave device.</p>
+<p>If the slave device is not configured with a register pointer, you can use the <a class="el" href="classhal_1_1_i2_c.html#a2c047ffb868ce23e974ca280efad42a9">I2C::setup()</a> method to perform other types of transactions.</p>
+<div class="fragment"><div class="line">i2c.setup(0x4C, <a class="code" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aae0131e764d00cd14f1781503520c2859">SETUP_DATA_ONLY_TRANSFER</a>);</div><div class="line">i2c.write(&amp;data, <span class="keyword">sizeof</span>(data)); <span class="comment">//this will write 2 bytes contained in data (location is ignored)</span></div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acb9d9238b161b572de728ccf1fd5df48"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#acb9d9238b161b572de728ccf1fd5df48">clear</a> (int <a class="el" href="classhal_1_1_dev.html#a9861302d93018e68af3304915990bcea">loc</a>, int bit)</td></tr>
@@ -46,20 +48,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3e5c36051062a5ed45ccd4bf7d173745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01a9595603690335b507955765537589"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a01a9595603690335b507955765537589">I2C</a> (port_t port)</td></tr>
 <tr class="separator:a01a9595603690335b507955765537589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aead481ae466393fcbe0b5243848ea110"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#aead481ae466393fcbe0b5243848ea110">init</a> (int bitrate=100000, int pin_assign=0)</td></tr>
-<tr class="separator:aead481ae466393fcbe0b5243848ea110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b499b07e290ad52261d08fc095abf8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a8b499b07e290ad52261d08fc095abf8e">init</a> (int bitrate=100000, int pin_assign=0, u16 o_flags=<a class="el" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba74e5fe2877157feb39e316d0c2fb0b6d">MASTER</a>)</td></tr>
+<tr class="separator:a8b499b07e290ad52261d08fc095abf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae42089713f7b7a96b1e9a5b0e76bf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#afae42089713f7b7a96b1e9a5b0e76bf1">read</a> (int <a class="el" href="classhal_1_1_dev.html#a9861302d93018e68af3304915990bcea">loc</a>, u8 &amp;reg)</td></tr>
 <tr class="separator:afae42089713f7b7a96b1e9a5b0e76bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6765c77af4a0a10bd2d1a894feef1073"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a6765c77af4a0a10bd2d1a894feef1073">reset</a> ()</td></tr>
+<tr class="separator:a6765c77af4a0a10bd2d1a894feef1073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb1ad49ac5ae6550135aac28df68147"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a0cb1ad49ac5ae6550135aac28df68147">set</a> (int <a class="el" href="classhal_1_1_dev.html#a9861302d93018e68af3304915990bcea">loc</a>, int bit, bool high=true)</td></tr>
 <tr class="separator:a0cb1ad49ac5ae6550135aac28df68147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f60e26f9cf6ef0b006fe8ad449fbf4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a20f60e26f9cf6ef0b006fe8ad449fbf4">set_attr</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structi2c__attr__t.html">i2c_attr_t</a> &amp;attr)</td></tr>
 <tr class="separator:a20f60e26f9cf6ef0b006fe8ad449fbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b88929b826cd3e647fdf0cc7d06c30a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a0b88929b826cd3e647fdf0cc7d06c30a">set_attr</a> (u32 bitrate=100000, u8 pin_assign=0, u16 o_flags=<a class="el" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba74e5fe2877157feb39e316d0c2fb0b6d">MASTER</a>)</td></tr>
 <tr class="separator:a0b88929b826cd3e647fdf0cc7d06c30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eea13e381d6e04f459c11c08d9dc09d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a2eea13e381d6e04f459c11c08d9dc09d">setup</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structi2c__reqattr__t.html">i2c_reqattr_t</a> &amp;req)</td></tr>
-<tr class="separator:a2eea13e381d6e04f459c11c08d9dc09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c047ffb868ce23e974ca280efad42a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a2c047ffb868ce23e974ca280efad42a9">setup</a> (const i2c_setup_t &amp;setup)</td></tr>
+<tr class="separator:a2c047ffb868ce23e974ca280efad42a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab98a8b469bba86b730a77230007cb1e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#aab98a8b469bba86b730a77230007cb1e">setup</a> (u16 slave_addr, u8 <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___h_i_o.html#gabc4e6699c8b5078aaa43087c3702a84d">type</a>=<a class="el" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa57d53a62dedf29aebef8cfbfc695e686">SETUP_NORMAL_TRANSFER</a>)</td></tr>
 <tr class="separator:aab98a8b469bba86b730a77230007cb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac072b52340b6a7a5312111bf2ad8fff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#aac072b52340b6a7a5312111bf2ad8fff">setup_slave</a> (const i2c_slave_setup_t &amp;<a class="el" href="classhal_1_1_i2_c.html#a2c047ffb868ce23e974ca280efad42a9">setup</a>)</td></tr>
+<tr class="separator:aac072b52340b6a7a5312111bf2ad8fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b76dfef4bdc40c41e561c3fb36e6bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a56b76dfef4bdc40c41e561c3fb36e6bd">setup_slave</a> (u8 addr, char *data, u16 <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga07a39d48e46b05223805b7a7efe606ca">size</a>, u8 o_flags=0)</td></tr>
+<tr class="separator:a56b76dfef4bdc40c41e561c3fb36e6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67fb7dfa80c55fbd8b75b8ba2d4d791"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#ac67fb7dfa80c55fbd8b75b8ba2d4d791">write</a> (int <a class="el" href="classhal_1_1_dev.html#a9861302d93018e68af3304915990bcea">loc</a>, u8 reg)</td></tr>
 <tr class="separator:ac67fb7dfa80c55fbd8b75b8ba2d4d791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhal_1_1_periph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1_periph')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1_periph.html">hal::Periph</a></td></tr>
@@ -257,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aead481ae466393fcbe0b5243848ea110"></a>
+<a class="anchor" id="a8b499b07e290ad52261d08fc095abf8e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -274,7 +282,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pin_assign</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>pin_assign</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba74e5fe2877157feb39e316d0c2fb0b6d">MASTER</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -288,7 +302,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method initializes the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> port. It opens the port and sets the attributes as specified. </p><div class="fragment"><div class="line">I2c i2c(0);  <span class="comment">//Use port 0</span></div><div class="line">i2c.init(400000); <span class="comment">//400KHz bitrate</span></div></div><!-- fragment --> 
+<p>This method initializes the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> port. It opens the port and sets the attributes as specified. </p><div class="fragment"><div class="line"><a class="code" href="classhal_1_1_i2_c.html#a01a9595603690335b507955765537589">I2C</a> i2c(0);  <span class="comment">//Use port 0</span></div><div class="line">i2c.init(400000); <span class="comment">//400KHz bitrate</span></div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="afae42089713f7b7a96b1e9a5b0e76bf1"></a>
@@ -315,6 +329,22 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Read the value of a register on an <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> device </p>
+
+</div>
+</div>
+<a class="anchor" id="a6765c77af4a0a10bd2d1a894feef1073"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::I2C::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> bus state </p>
 
 </div>
 </div>
@@ -417,15 +447,15 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2eea13e381d6e04f459c11c08d9dc09d"></a>
+<a class="anchor" id="a2c047ffb868ce23e974ca280efad42a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int hal::I2C::setup </td>
           <td>(</td>
-          <td class="paramtype">const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structi2c__reqattr__t.html">i2c_reqattr_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>req</em></td><td>)</td>
+          <td class="paramtype">const i2c_setup_t &amp;&#160;</td>
+          <td class="paramname"><em>setup</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -466,6 +496,70 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Setup an <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> transaction using the slave addr and type </p>
+
+</div>
+</div>
+<a class="anchor" id="aac072b52340b6a7a5312111bf2ad8fff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::I2C::setup_slave </td>
+          <td>(</td>
+          <td class="paramtype">const i2c_slave_setup_t &amp;&#160;</td>
+          <td class="paramname"><em>setup</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setup the bus to listen for transactions as a slave </p>
+
+</div>
+</div>
+<a class="anchor" id="a56b76dfef4bdc40c41e561c3fb36e6bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::I2C::setup_slave </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>o_flags</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Setup the bus to listen for transactions as a slave </p>
 
 </div>
 </div>

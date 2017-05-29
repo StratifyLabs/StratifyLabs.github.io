@@ -36,7 +36,12 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This is the base class for physical devices. </p>
+<div class="textblock"><p>This is a device class used for accessing physical devices or files.</p>
+<ul>
+<li>MCU peripheral hardware (most devices have a class that inherits this class)</li>
+<li>Devices with built in drivers (see "/dev" folder on the device)</li>
+<li>Regular files (<a class="el" href="classsys_1_1_file.html" title="File Class. ">sys::File</a> inherits this class) </li>
+</ul>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -101,6 +106,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>These values are used as flags when opening devices or files </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aae3b1869d2bb445b394f506feebc3996a2385bec26b1f2b1ee3566e0b1cc5be2e"></a>RDONLY&#160;</td><td class="fielddoc">
 <p>Open as read-only </p>
@@ -164,6 +170,17 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>List of options for <em>whence</em> argument of <a class="el" href="classhal_1_1_dev.html#ac310f8cad112e50bb1bcc2e61d02a38d">seek()</a> </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a62a41d952662ff5e211eb0be2eedbf39a26537dcd66b2156743908c17cef61fca"></a>SET&#160;</td><td class="fielddoc">
+<p>Set the location of the file descriptor </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a62a41d952662ff5e211eb0be2eedbf39a4e41dfe76c79f65748bac74db2c28a5b"></a>CURRENT&#160;</td><td class="fielddoc">
+<p>Set the location relative to the current location </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a62a41d952662ff5e211eb0be2eedbf39a3562dd74669431a9e830dff94a5418b4"></a>END&#160;</td><td class="fielddoc">
+<p>Set the location relative to the end of the file or device </p>
+</td></tr>
+</table>
 
 </div>
 </div>
