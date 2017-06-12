@@ -16,9 +16,118 @@ title: Stratify OS Docs
   </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Bitmap Primitive Operations</div>  </div>
+<div class="title">Bitmap Drawing</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga16ce4df01bbc196575b93d19cb6377c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p_p_r_i_m_o_p.html#ga16ce4df01bbc196575b93d19cb6377c3">sg_draw_bitmap</a> (const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src)</td></tr>
+<tr class="separator:ga16ce4df01bbc196575b93d19cb6377c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga259cc3ef2cc9e1130701f38b3bed4e7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p_p_r_i_m_o_p.html#ga259cc3ef2cc9e1130701f38b3bed4e7c">sg_draw_sub_bitmap</a> (const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src, sg_point_t p_src, sg_dim_t d_src)</td></tr>
+<tr class="separator:ga259cc3ef2cc9e1130701f38b3bed4e7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga16ce4df01bbc196575b93d19cb6377c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sg_draw_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">const sg_bmap_t *&#160;</td>
+          <td class="paramname"><em>bmap_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>p_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sg_bmap_t *&#160;</td>
+          <td class="paramname"><em>bmap_src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function sets the pixels in a bitmap based on the pixels of the source bitmap</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bmap_dest</td><td>The destination bitmap </td></tr>
+    <tr><td class="paramname">p_dest</td><td>The point in the destination bitmap of the top left corner of <em>bitmap</em> </td></tr>
+    <tr><td class="paramname">bmap_src</td><td>The source bitmap </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga259cc3ef2cc9e1130701f38b3bed4e7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sg_draw_sub_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">const sg_bmap_t *&#160;</td>
+          <td class="paramname"><em>bmap_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>p_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sg_bmap_t *&#160;</td>
+          <td class="paramname"><em>bmap_src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>p_src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_dim_t&#160;</td>
+          <td class="paramname"><em>d_src</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function draws a subset of the source bitmap on the destination bitmap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bmap_dest</td><td>The destination bitmap </td></tr>
+    <tr><td class="paramname">p_dest</td><td>The point in the destination bitmap to start setting pixels </td></tr>
+    <tr><td class="paramname">bmap_src</td><td>The source bitmap </td></tr>
+    <tr><td class="paramname">p_src</td><td>The top left corner of the source bitmap to copy </td></tr>
+    <tr><td class="paramname">d_src</td><td>The dimensions of the area to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->

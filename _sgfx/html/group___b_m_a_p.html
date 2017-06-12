@@ -26,97 +26,16 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4887ac36d48473fbc232612b760e33a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#ga4887ac36d48473fbc232612b760e33a6">sg_set_data</a> (sg_bmap_t *bmap, sg_bmap_data_t *mem, sg_size_t w, sg_size_t h)</td></tr>
-<tr class="separator:ga4887ac36d48473fbc232612b760e33a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60d359ca21c4f047b3ea0281e06df4a5"><td class="memItemLeft" align="right" valign="top">sg_bmap_data_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#ga60d359ca21c4f047b3ea0281e06df4a5">sg_data</a> (const sg_bmap_t *bmap, sg_point_t p)</td></tr>
-<tr class="separator:ga60d359ca21c4f047b3ea0281e06df4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e5cd505c4739c96ca9c27455dd91932"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#ga9e5cd505c4739c96ca9c27455dd91932">sg_size</a> (const sg_bmap_t *bmap)</td></tr>
-<tr class="separator:ga9e5cd505c4739c96ca9c27455dd91932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3b27a5fdb6c9ab3d1f5eeba523b48ea"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#gac3b27a5fdb6c9ab3d1f5eeba523b48ea">sg_byte_width</a> (const sg_bmap_t *bmap)</td></tr>
-<tr class="separator:gac3b27a5fdb6c9ab3d1f5eeba523b48ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c1e322de623773802f65a4f63d28931"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#ga0c1e322de623773802f65a4f63d28931">sg_word_width</a> (const sg_bmap_t *bmap)</td></tr>
-<tr class="separator:ga0c1e322de623773802f65a4f63d28931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf87e6ef5511f3ffbe1a27cbd8e606111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#gaf87e6ef5511f3ffbe1a27cbd8e606111">sg_bound</a> (const sg_bmap_t *bmap, sg_point_t *p)</td></tr>
-<tr class="separator:gaf87e6ef5511f3ffbe1a27cbd8e606111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac649270421f04b547da5377f72cb71e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p.html#gac649270421f04b547da5377f72cb71e6">sg_bmap_set_data</a> (sg_bmap_t *bmap, sg_bmap_data_t *mem, sg_dim_t dim)</td></tr>
+<tr class="separator:gac649270421f04b547da5377f72cb71e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaf87e6ef5511f3ffbe1a27cbd8e606111"></a>
+<a class="anchor" id="gac649270421f04b547da5377f72cb71e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void sg_bound </td>
-          <td>(</td>
-          <td class="paramtype">const sg_bmap_t *&#160;</td>
-          <td class="paramname"><em>bmap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sg_point_t *&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Ensures point <em>p</em> is in the bitmap <em>bmap</em> </p>
-
-</div>
-</div>
-<a class="anchor" id="gac3b27a5fdb6c9ab3d1f5eeba523b48ea"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t sg_byte_width </td>
-          <td>(</td>
-          <td class="paramtype">const sg_bmap_t *&#160;</td>
-          <td class="paramname"><em>bmap</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the byte width of the bitmap </p>
-
-</div>
-</div>
-<a class="anchor" id="ga60d359ca21c4f047b3ea0281e06df4a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">sg_bmap_data_t* sg_data </td>
-          <td>(</td>
-          <td class="paramtype">const sg_bmap_t *&#160;</td>
-          <td class="paramname"><em>bmap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sg_point_t&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function returns a pointer to the sg_bmap_data_t at point <em>p</em> </p>
-
-</div>
-</div>
-<a class="anchor" id="ga4887ac36d48473fbc232612b760e33a6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sg_set_data </td>
+          <td class="memname">void sg_bmap_set_data </td>
           <td>(</td>
           <td class="paramtype">sg_bmap_t *&#160;</td>
           <td class="paramname"><em>bmap</em>, </td>
@@ -130,14 +49,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sg_size_t&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sg_size_t&#160;</td>
-          <td class="paramname"><em>h</em>&#160;</td>
+          <td class="paramtype">sg_dim_t&#160;</td>
+          <td class="paramname"><em>dim</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -147,40 +60,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Change effective size without free/alloc sequence </p>
-
-</div>
-</div>
-<a class="anchor" id="ga9e5cd505c4739c96ca9c27455dd91932"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t sg_size </td>
-          <td>(</td>
-          <td class="paramtype">const sg_bmap_t *&#160;</td>
-          <td class="paramname"><em>bmap</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the size of the bitmap data in bytes </p>
-
-</div>
-</div>
-<a class="anchor" id="ga0c1e322de623773802f65a4f63d28931"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t sg_word_width </td>
-          <td>(</td>
-          <td class="paramtype">const sg_bmap_t *&#160;</td>
-          <td class="paramname"><em>bmap</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the 32-bit word width of the bitmap </p>
 
 </div>
 </div>
