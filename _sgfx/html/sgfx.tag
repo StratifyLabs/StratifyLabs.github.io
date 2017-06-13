@@ -86,6 +86,174 @@
     </member>
     <member kind="function">
       <type>void</type>
+      <name>sg_cursor_set</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>gad5b16f99a1df33e34b75ebb35e690ae2</anchor>
+      <arglist>(sg_cursor_t *cursor, const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_inc_x</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga9ae4049ef004fd75e70c92a7d4b68852</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_dec_x</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga2c82aecc3f3056340324bdaf191c2a1b</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_inc_y</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga0febabc6755f006c49bba16a46042647</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_dec_y</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga4a44ef4bc10f8b2c772bc20b6036d63a</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>sg_color_t</type>
+      <name>sg_cursor_get_pixel</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga8a104ab33f2b7177d7b61e6b0fe61f65</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_pixel</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga22c5c277b897de2ee3f5e1075816fdbf</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_hline</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>gadf97ca930c72ed9da6ced382c52d32da</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_invert_hline</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga9b0235abcb38aaafe824725e511bce2c</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_clear_hline</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga517b565a2bad8d671cc4971e3e1c40c0</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_cursor</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga03fa44c5c35ef1815c1de27fbe2dc9e5</anchor>
+      <arglist>(sg_cursor_t *dest_cursor, const sg_cursor_t *src_cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_pattern</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga53264ddb0ed35cc74ff51fc2ed9af253</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width, sg_bmap_data_t pattern)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_shift_right</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga5444d81f2a7d7bc8c8c486b20e2373a2</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t shift_width, sg_size_t shift_distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_shift_left</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>gaf0e95b0a1c2dbc1e40ef5a60000f4329</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t shift_width, sg_size_t shift_distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>sg_color_t</type>
+      <name>sg_get_pixel</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gada60bb2d0b7ddfff9e4a899401014b84</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_pixel</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gab9195c2401cb6a7a7537befefa1c631a</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_line</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga67fb348019a559079c60da75768cb64b</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_quadtratic_bezier</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga9b2f58b3a76cc85d1019eb79534d0ef4</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_cubic_bezier</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga9b890ef640d67abe8b055b851ced74f5</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t p4)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_rectangle</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gabde219207564397ffc71399d59741d11</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_invert_rectangle</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gadce059bb7c834c2cfd612b3dd3654657</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_clear_rectangle</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga6617a2636d95f8477d66d97ba1ffc90e</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_pour</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga996c613dc71d9544dc1a63418029d88a</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_pattern</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga10cb8e965e4f9da2090c318d26c3c388</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, sg_bmap_data_t odd_pattern, sg_bmap_data_t even_pattern, sg_size_t pattern_height)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
       <name>sg_draw_bitmap</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
       <anchor>ga16ce4df01bbc196575b93d19cb6377c3</anchor>
@@ -97,6 +265,41 @@
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
       <anchor>ga259cc3ef2cc9e1130701f38b3bed4e7c</anchor>
       <arglist>(const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src, sg_point_t p_src, sg_dim_t d_src)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_primitive</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>gad0989bd2fb30e58304f75f0ce8f6d10d</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t *prim, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_primitive_list</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>ga5416f94ad7cc1c372b2ed5654777c13f</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t prim_list[], unsigned int total, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_icon</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>ga9cd0b66cb5730d08f235d6d8b87fd33e</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>sg_animate</name>
+      <anchorfile>group___a_n_i_m_a_t_i_o_n.html</anchorfile>
+      <anchor>ga4ad1833ed46c822f0bc19d124db80cb5</anchor>
+      <arglist>(sg_bmap_t *bmap, sg_bmap_t *bitmap, sg_animation_t *animation)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>sg_animate_init</name>
+      <anchorfile>group___a_n_i_m_a_t_i_o_n.html</anchorfile>
+      <anchor>ga9e3452297ea389b28864670d71d07b55</anchor>
+      <arglist>(sg_animation_t *animation, u8 type, u8 path, u8 step_total, sg_size_t motion_total, sg_point_t start, sg_dim_t dim)</arglist>
     </member>
   </compound>
   <compound kind="file">
@@ -341,12 +544,26 @@
   </compound>
   <compound kind="group">
     <name>ANIMATION</name>
-    <title>Bitmap Animations</title>
+    <title>Animations</title>
     <filename>group___a_n_i_m_a_t_i_o_n.html</filename>
+    <member kind="function">
+      <type>int</type>
+      <name>sg_animate</name>
+      <anchorfile>group___a_n_i_m_a_t_i_o_n.html</anchorfile>
+      <anchor>ga4ad1833ed46c822f0bc19d124db80cb5</anchor>
+      <arglist>(sg_bmap_t *bmap, sg_bmap_t *bitmap, sg_animation_t *animation)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>sg_animate_init</name>
+      <anchorfile>group___a_n_i_m_a_t_i_o_n.html</anchorfile>
+      <anchor>ga9e3452297ea389b28864670d71d07b55</anchor>
+      <arglist>(sg_animation_t *animation, u8 type, u8 path, u8 step_total, sg_size_t motion_total, sg_point_t start, sg_dim_t dim)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>COORD</name>
-    <title>Bitmap Coordinates</title>
+    <title>Coordinates</title>
     <filename>group___c_o_o_r_d.html</filename>
     <member kind="enumeration">
       <type></type>
@@ -395,13 +612,193 @@
   </compound>
   <compound kind="group">
     <name>CURSOR</name>
-    <title>Bitmap Cursor Drawing</title>
+    <title>Cursor Drawing</title>
     <filename>group___c_u_r_s_o_r.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_set</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>gad5b16f99a1df33e34b75ebb35e690ae2</anchor>
+      <arglist>(sg_cursor_t *cursor, const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_inc_x</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga9ae4049ef004fd75e70c92a7d4b68852</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_dec_x</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga2c82aecc3f3056340324bdaf191c2a1b</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_inc_y</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga0febabc6755f006c49bba16a46042647</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_dec_y</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga4a44ef4bc10f8b2c772bc20b6036d63a</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>sg_color_t</type>
+      <name>sg_cursor_get_pixel</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga8a104ab33f2b7177d7b61e6b0fe61f65</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_pixel</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga22c5c277b897de2ee3f5e1075816fdbf</anchor>
+      <arglist>(sg_cursor_t *cursor)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_hline</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>gadf97ca930c72ed9da6ced382c52d32da</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_invert_hline</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga9b0235abcb38aaafe824725e511bce2c</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_clear_hline</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga517b565a2bad8d671cc4971e3e1c40c0</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_cursor</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga03fa44c5c35ef1815c1de27fbe2dc9e5</anchor>
+      <arglist>(sg_cursor_t *dest_cursor, const sg_cursor_t *src_cursor, sg_size_t width)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_draw_pattern</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga53264ddb0ed35cc74ff51fc2ed9af253</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t width, sg_bmap_data_t pattern)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_shift_right</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>ga5444d81f2a7d7bc8c8c486b20e2373a2</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t shift_width, sg_size_t shift_distance)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_cursor_shift_left</name>
+      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
+      <anchor>gaf0e95b0a1c2dbc1e40ef5a60000f4329</anchor>
+      <arglist>(sg_cursor_t *cursor, sg_size_t shift_width, sg_size_t shift_distance)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>BMAPMGMT</name>
+    <title>Data Management</title>
+    <filename>group___b_m_a_p_m_g_m_t.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_bmap_set_data</name>
+      <anchorfile>group___b_m_a_p_m_g_m_t.html</anchorfile>
+      <anchor>gac649270421f04b547da5377f72cb71e6</anchor>
+      <arglist>(sg_bmap_t *bmap, sg_bmap_data_t *mem, sg_dim_t dim)</arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>BMAPPRIMOP</name>
-    <title>Bitmap Drawing</title>
+    <title>Drawing</title>
     <filename>group___b_m_a_p_p_r_i_m_o_p.html</filename>
+    <member kind="function">
+      <type>sg_color_t</type>
+      <name>sg_get_pixel</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gada60bb2d0b7ddfff9e4a899401014b84</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_pixel</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gab9195c2401cb6a7a7537befefa1c631a</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_line</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga67fb348019a559079c60da75768cb64b</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_quadtratic_bezier</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga9b2f58b3a76cc85d1019eb79534d0ef4</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_cubic_bezier</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga9b890ef640d67abe8b055b851ced74f5</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t p4)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_rectangle</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gabde219207564397ffc71399d59741d11</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_invert_rectangle</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>gadce059bb7c834c2cfd612b3dd3654657</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_clear_rectangle</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga6617a2636d95f8477d66d97ba1ffc90e</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_pour</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga996c613dc71d9544dc1a63418029d88a</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_draw_pattern</name>
+      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
+      <anchor>ga10cb8e965e4f9da2090c318d26c3c388</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, sg_bmap_data_t odd_pattern, sg_bmap_data_t even_pattern, sg_size_t pattern_height)</arglist>
+    </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_bitmap</name>
@@ -418,20 +815,8 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>BMAPMGMT</name>
-    <title>Bitmap Management</title>
-    <filename>group___b_m_a_p_m_g_m_t.html</filename>
-    <member kind="function">
-      <type>void</type>
-      <name>sg_bmap_set_data</name>
-      <anchorfile>group___b_m_a_p_m_g_m_t.html</anchorfile>
-      <anchor>gac649270421f04b547da5377f72cb71e6</anchor>
-      <arglist>(sg_bmap_t *bmap, sg_bmap_data_t *mem, sg_dim_t dim)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
     <name>BMAPOP</name>
-    <title>Bitmap Transforms</title>
+    <title>Transforms</title>
     <filename>group___b_m_a_p_o_p.html</filename>
     <member kind="function">
       <type>void</type>
@@ -464,8 +849,29 @@
   </compound>
   <compound kind="group">
     <name>BMAPVECTOR</name>
-    <title>Bitmap Vector Drawing</title>
+    <title>Vector Graphics</title>
     <filename>group___b_m_a_p_v_e_c_t_o_r.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_primitive</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>gad0989bd2fb30e58304f75f0ce8f6d10d</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t *prim, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_primitive_list</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>ga5416f94ad7cc1c372b2ed5654777c13f</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t prim_list[], unsigned int total, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_icon</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>ga9cd0b66cb5730d08f235d6d8b87fd33e</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+    </member>
   </compound>
   <compound kind="page">
     <name>index</name>
