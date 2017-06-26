@@ -39,8 +39,8 @@ title: Stratify OS Docs
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3d81277f4dbaae94ff0433ebae79c280"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_event_dev.html#a3d81277f4dbaae94ff0433ebae79c280">action</a> (int <a class="el" href="classsys_1_1_signal_event.html#a02ab8d13d8e7162454d606865db52fe6">event</a>, int channel=0)</td></tr>
 <tr class="separator:a3d81277f4dbaae94ff0433ebae79c280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a9332aab00328b02fc6abc5ae71d799"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_event_dev.html#a7a9332aab00328b02fc6abc5ae71d799">SignalEventDev</a> (bool persistant, int signo, int sigcode=0, int sigvalue=0)</td></tr>
-<tr class="separator:a7a9332aab00328b02fc6abc5ae71d799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393f3f7e953f172ac341fd195d9744c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_event_dev.html#a393f3f7e953f172ac341fd195d9744c3">SignalEventDev</a> (bool persistent, int signo, int sigcode=0, int sigvalue=0)</td></tr>
+<tr class="separator:a393f3f7e953f172ac341fd195d9744c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de76afe483811a911de71dd194e583c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_event_dev.html#a3de76afe483811a911de71dd194e583c">SignalEventDev</a> (<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structsignal__callback__t.html">signal_callback_t</a> context)</td></tr>
 <tr class="separator:a3de76afe483811a911de71dd194e583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsys_1_1_signal_event"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsys_1_1_signal_event')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsys_1_1_signal_event.html">sys::SignalEvent</a></td></tr>
@@ -60,7 +60,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a438a1105795dbad3270212a633dceb40 inherit pub_methods_classsys_1_1_signal_event"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7a9332aab00328b02fc6abc5ae71d799"></a>
+<a class="anchor" id="a393f3f7e953f172ac341fd195d9744c3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -71,7 +71,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">sys::SignalEventDev::SignalEventDev </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>persistant</em>, </td>
+          <td class="paramname"><em>persistent</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -103,10 +103,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This constructs a physical event.</p>
+<p>Constructs a signal event based on a hardware device action.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">persistant</td><td>If false, the signal will be sent only on the first hardware event </td></tr>
+    <tr><td class="paramname">persistent</td><td>If false, the signal will be sent only on the first hardware event </td></tr>
     <tr><td class="paramname">signo</td><td>The signal number </td></tr>
     <tr><td class="paramname">sigcode</td><td>The signal code </td></tr>
     <tr><td class="paramname">sigvalue</td><td>The signal value </td></tr>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Construct a physical event using a <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structsignal__callback__t.html">signal_callback_t</a> data structure.</p>
+<p>Constructs a signal event based on a hardware device action using a <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structsignal__callback__t.html">signal_callback_t</a> data structure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">context</td><td>A copy of the <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structsignal__callback__t.html">signal_callback_t</a> data to use to handle the event. </td></tr>

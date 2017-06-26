@@ -83,7 +83,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Construct an event based on a signal number </p>
+<p>Constructs an event based on a signal number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signo</td><td>The signal number </td></tr>
+    <tr><td class="paramname">sigvalue</td><td>The signal value </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -108,7 +115,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a UI Event from this Signal event </p>
+<p>Returns a UI Event based on this signal event. </p>
 
 </div>
 </div>
@@ -125,7 +132,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the event handler </p>
+<p>Sets the event handler.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>A reference to the <a class="el" href="classsys_1_1_signal_handler.html" title="Signal Handler Class. ">SignalHandler</a> object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -150,7 +164,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sends a signal to a process</p>
+<p>Sends a signal to a process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pid</td><td>The process ID of the receiving signal </td></tr>
@@ -182,7 +196,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sends a signal to a thread within a process.</p>
+<p>Sends a signal to a thread within a process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>The thread ID </td></tr>
@@ -213,7 +227,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Trigger the event on the current thread </p>
+<p>Triggers the event on the current thread. </p>
 
 </div>
 </div>
@@ -238,9 +252,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Send a signal to a process with a value associated with the signal. </p>
-<p>This method sends a signal and associated value to a process.</p>
+<p>Sends a signal and associated value to a process.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pid</td><td>The process ID of the receiving signal </td></tr>

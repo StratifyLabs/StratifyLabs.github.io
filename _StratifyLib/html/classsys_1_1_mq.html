@@ -45,10 +45,12 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab134185fd303fe853b56b65ddcdb2e5e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#ab134185fd303fe853b56b65ddcdb2e5e">create</a> (const char *name, int oflag, mode_t mode, long <a class="el" href="classsys_1_1_mq.html#a80ad5e29d4836fe619a4a9892ff28e73">flags</a>, long maxmsg, long msgsize)</td></tr>
 <tr class="separator:ab134185fd303fe853b56b65ddcdb2e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d28b630cc69b6cf8684f520b6d3aa90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#a8d28b630cc69b6cf8684f520b6d3aa90">get_attr</a> (struct <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmq__attr.html">mq_attr</a> *mqstat)</td></tr>
-<tr class="separator:a8d28b630cc69b6cf8684f520b6d3aa90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6a3453252a54123991ba078cf5896a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#afb6a3453252a54123991ba078cf5896a">get_attr</a> (struct <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmq__attr.html">mq_attr</a> &amp;mqstat)</td></tr>
+<tr class="separator:afb6a3453252a54123991ba078cf5896a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5a0ca3e3f6c1b6c838028e4c657b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsys_1_1_mq_attr.html">MqAttr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#a6c5a0ca3e3f6c1b6c838028e4c657b3e">get_attr</a> ()</td></tr>
 <tr class="separator:a6c5a0ca3e3f6c1b6c838028e4c657b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f729dd279e3993b791ff5fd0bcc312d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#a4f729dd279e3993b791ff5fd0bcc312d">is_open</a> () const </td></tr>
+<tr class="separator:a4f729dd279e3993b791ff5fd0bcc312d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addbe70098b099eec31d6d983c99b7273"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#addbe70098b099eec31d6d983c99b7273">msg_prio</a> () const </td></tr>
 <tr class="separator:addbe70098b099eec31d6d983c99b7273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db26470f016e2aa202c73550919c13d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#a9db26470f016e2aa202c73550919c13d">notify</a> (const struct sigevent *notification)</td></tr>
@@ -59,8 +61,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a26bb32c35784dc4bbed8f1e1276534b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24ee5310795104a739991f363c123746"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#a24ee5310795104a739991f363c123746">send</a> (const char *msg_ptr, size_t msg_len, unsigned <a class="el" href="classsys_1_1_mq.html#addbe70098b099eec31d6d983c99b7273">msg_prio</a>=0)</td></tr>
 <tr class="separator:a24ee5310795104a739991f363c123746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d16467a33beced9dea51cd86b8f5cb"><td class="memItemLeft" align="right" valign="top">ssize_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#a53d16467a33beced9dea51cd86b8f5cb">timedreceive</a> (char *msg_ptr, size_t msg_len, const struct timespec *abs_timeout)</td></tr>
-<tr class="separator:a53d16467a33beced9dea51cd86b8f5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0994b4c706adaaf5458d2b4df5d311d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_mq.html#ad0994b4c706adaaf5458d2b4df5d311d">timedsend</a> (const char *msg_ptr, size_t msg_len, unsigned <a class="el" href="classsys_1_1_mq.html#addbe70098b099eec31d6d983c99b7273">msg_prio</a>, const struct timespec *abs_timeout)</td></tr>
 <tr class="separator:ad0994b4c706adaaf5458d2b4df5d311d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -142,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method creates a new message queue.</p>
+<p>Creates a new message queue.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the queue </td></tr>
@@ -158,20 +158,20 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8d28b630cc69b6cf8684f520b6d3aa90"></a>
+<a class="anchor" id="afb6a3453252a54123991ba078cf5896a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int sys::Mq::get_attr </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmq__attr.html">mq_attr</a> *&#160;</td>
+          <td class="paramtype">struct <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmq__attr.html">mq_attr</a> &amp;&#160;</td>
           <td class="paramname"><em>mqstat</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Copy message queue attributes to mqstat </p>
+<p>Copies message queue attributes to mqstat. </p>
 
 </div>
 </div>
@@ -187,7 +187,31 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the message queue attributes </p>
+<p>Returns a copy of the message queue attributes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f729dd279e3993b791ff5fd0bcc312d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::Mq::is_open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the message queue is open. </p>
 
 </div>
 </div>
@@ -211,7 +235,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Message priority of last message received </p>
+<p>Returns the message priority of last message received. </p>
 
 </div>
 </div>
@@ -228,7 +252,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Not currently supported </p>
+<p>Is not currently supported. </p>
 
 </div>
 </div>
@@ -267,7 +291,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method opens a message queue</p>
+<p>Opens a message queue.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the message queue </td></tr>
@@ -304,7 +328,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Receive a message from the queue </p>
+<p>Receives a message from the queue.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg_ptr</td><td>A pointer to the destination message </td></tr>
+    <tr><td class="paramname">msg_len</td><td>The number of bytes available in <em>msg_ptr</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read </dd></dl>
 
 </div>
 </div>
@@ -337,40 +369,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Send a message to the queue </p>
-
-</div>
-</div>
-<a class="anchor" id="a53d16467a33beced9dea51cd86b8f5cb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">ssize_t sys::Mq::timedreceive </td>
-          <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>msg_ptr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>msg_len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const struct timespec *&#160;</td>
-          <td class="paramname"><em>abs_timeout</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Receive a message from the queue with a timeout </p>
+<p>Sends a message to the queue.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg_ptr</td><td>A pointer to the message to send </td></tr>
+    <tr><td class="paramname">msg_len</td><td>The number of bytes to send </td></tr>
+    <tr><td class="paramname">msg_prio</td><td>The message priority (default is 0, lowest priority) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes sent </dd></dl>
 
 </div>
 </div>
@@ -434,7 +442,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Delete a message queue </p>
+<p>Deletes a named message queue. </p>
 
 </div>
 </div>

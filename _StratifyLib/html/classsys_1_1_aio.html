@@ -37,7 +37,7 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The Asynchronous IO class is used for performing asynchronous operations on hardware devices. When calling synchronous IO, the read/write function is called and then returns when the operation is complete. With Asynchronous IO, the read/write function returns immediately and the <a class="el" href="classsys_1_1_aio.html" title="Asynchronous IO Class. ">Aio</a> class can be used to see when the operation completes.</p>
 <p>On Stratify OS, synchronous operations will always cause the running thread to yield the processor. This can be avoided by using the <a class="el" href="classsys_1_1_aio.html" title="Asynchronous IO Class. ">Aio</a> class. Consider the following example:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stfy/Sys.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stfy/Var.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     String <a class="code" href="classsys_1_1_aio.html#a93a7ff2d461b1d11ff42fb9b41be02e6">buf</a> = <span class="stringliteral">&quot;Hello World!\n&quot;</span>;</div><div class="line">     Uart uart(0); <span class="comment">//we will read/write data to UART port 0</span></div><div class="line">     <a class="code" href="classsys_1_1_aio.html#a9ae1a0c258c3b4b1236b3e6fe961192d">Aio</a> aio(buf.data(), buf.size()); <span class="comment">//aio uses buf as it&#39;s data</span></div><div class="line"></div><div class="line">     uart.init(2400); <span class="comment">//init the UART with baudrate 2400</span></div><div class="line"></div><div class="line"> <span class="comment">//First a synchronous write</span></div><div class="line">     uart.write(buf.c_str(), buf.size());  <span class="comment">//this will return when the bytes are written</span></div><div class="line"> <span class="comment">//While bytes are writing, the processor will be used on another thread</span></div><div class="line"></div><div class="line"> <span class="comment">//Now the AIO version</span></div><div class="line">     uart.write(aio);</div><div class="line"> <span class="comment">//This thread keeps the processor -- so we can do something else in parallel</span></div><div class="line"></div><div class="line">     <span class="keywordflow">while</span>( aio.done() == false ){</div><div class="line">     <a class="code" href="classsys_1_1_timer.html#aaa7c6c03ff04eb6d8a19e33e23fe23bf">Timer::wait_msec</a>(5); <span class="comment">//wait for the operation to complete</span></div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stfy/sys.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stfy/var.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     String <a class="code" href="classsys_1_1_aio.html#a93a7ff2d461b1d11ff42fb9b41be02e6">buf</a> = <span class="stringliteral">&quot;Hello World!\n&quot;</span>;</div><div class="line">     Uart uart(0); <span class="comment">//we will read/write data to UART port 0</span></div><div class="line">     <a class="code" href="classsys_1_1_aio.html#a9ae1a0c258c3b4b1236b3e6fe961192d">Aio</a> aio(buf.data(), buf.size()); <span class="comment">//aio uses buf as it&#39;s data</span></div><div class="line"></div><div class="line">     uart.init(2400); <span class="comment">//init the UART with baudrate 2400</span></div><div class="line"></div><div class="line"> <span class="comment">//First a synchronous write</span></div><div class="line">     uart.write(buf.c_str(), buf.size());  <span class="comment">//this will return when the bytes are written</span></div><div class="line"> <span class="comment">//While bytes are writing, the processor will be used on another thread</span></div><div class="line"></div><div class="line"> <span class="comment">//Now the AIO version</span></div><div class="line">     uart.write(aio);</div><div class="line"> <span class="comment">//This thread keeps the processor -- so we can do something else in parallel</span></div><div class="line"></div><div class="line">     <span class="keywordflow">while</span>( aio.done() == false ){</div><div class="line">     <a class="code" href="classsys_1_1_timer.html#aaa7c6c03ff04eb6d8a19e33e23fe23bf">Timer::wait_msec</a>(5); <span class="comment">//wait for the operation to complete</span></div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ae1a0c258c3b4b1236b3e6fe961192d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a9ae1a0c258c3b4b1236b3e6fe961192d">Aio</a> (volatile void *<a class="el" href="classsys_1_1_aio.html#a93a7ff2d461b1d11ff42fb9b41be02e6">buf</a>, int <a class="el" href="classsys_1_1_aio.html#a7d5faa6158829436a39ddb6ce40b028b">nbytes</a>, int <a class="el" href="classsys_1_1_aio.html#a7487da279f97d995b855cda9fc4a7ee0">offset</a>=0)</td></tr>
@@ -56,10 +56,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7487da279f97d995b855cda9fc4a7ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4578cd1107807ba4b3821d767275002b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a4578cd1107807ba4b3821d767275002b">ret</a> ()</td></tr>
 <tr class="separator:a4578cd1107807ba4b3821d767275002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0aeeee411e0f72293f39e919b81055c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#ae0aeeee411e0f72293f39e919b81055c">set_buf</a> (volatile void *<a class="el" href="classsys_1_1_aio.html#a93a7ff2d461b1d11ff42fb9b41be02e6">buf</a>)</td></tr>
-<tr class="separator:ae0aeeee411e0f72293f39e919b81055c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17ef7fd619ffbdfae0465634e17ba40f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a17ef7fd619ffbdfae0465634e17ba40f">set_nbytes</a> (int <a class="el" href="classsys_1_1_aio.html#a7d5faa6158829436a39ddb6ce40b028b">nbytes</a>)</td></tr>
-<tr class="separator:a17ef7fd619ffbdfae0465634e17ba40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ada99a7f0fe41c47777b2b4334fb669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a3ada99a7f0fe41c47777b2b4334fb669">set_buf</a> (volatile void *<a class="el" href="classsys_1_1_aio.html#a93a7ff2d461b1d11ff42fb9b41be02e6">buf</a>, int <a class="el" href="classsys_1_1_aio.html#a7d5faa6158829436a39ddb6ce40b028b">nbytes</a>)</td></tr>
+<tr class="separator:a3ada99a7f0fe41c47777b2b4334fb669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa269f000d6634a92480be73bfa7fc604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#aa269f000d6634a92480be73bfa7fc604">set_offset</a> (int <a class="el" href="classsys_1_1_aio.html#a7487da279f97d995b855cda9fc4a7ee0">offset</a>)</td></tr>
 <tr class="separator:aa269f000d6634a92480be73bfa7fc604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2d1bd6a7fc9035520854d0bfadab478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#af2d1bd6a7fc9035520854d0bfadab478">signal</a> (int number, int value)</td></tr>
@@ -110,7 +108,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Declare an <a class="el" href="classsys_1_1_aio.html" title="Asynchronous IO Class. ">Aio</a> object. </p>
+<p>Constructs a new <a class="el" href="classsys_1_1_aio.html" title="Asynchronous IO Class. ">Aio</a> object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>The buffer for data transactions </td></tr>
+    <tr><td class="paramname">nbytes</td><td>The number of bytes to transfer on transactions </td></tr>
+    <tr><td class="paramname">offset</td><td>The file/device offset location </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -135,7 +141,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the buffer pointer </p>
+<p>Returns the buffer pointer. </p>
 
 </div>
 </div>
@@ -159,7 +165,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check to see if operation is complete </p>
+<p>Returns true if operation is complete. </p>
 
 </div>
 </div>
@@ -183,7 +189,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the error number of the operation </p>
+<p>Returns the error number of the operation. </p>
 
 </div>
 </div>
@@ -207,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Check to see if operation is still in progress </p>
+<p>Returns true if operation is still in progress </p>
 
 </div>
 </div>
@@ -231,7 +237,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the number of bytes to transfer </p>
+<p>Returns the number of bytes to transfer. </p>
 
 </div>
 </div>
@@ -255,7 +261,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the offset (or channel for Dac, Adc, Pwm, etc) </p>
+<p>Returns the offset (or channel for Dac, Adc, Pwm, etc). </p>
 
 </div>
 </div>
@@ -279,11 +285,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the return value of the operation </p>
+<p>Returns the return value of the operation. </p>
 
 </div>
 </div>
-<a class="anchor" id="ae0aeeee411e0f72293f39e919b81055c"></a>
+<a class="anchor" id="a3ada99a7f0fe41c47777b2b4334fb669"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -294,33 +300,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void sys::Aio::set_buf </td>
           <td>(</td>
           <td class="paramtype">volatile void *&#160;</td>
-          <td class="paramname"><em>buf</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"><em>buf</em>, </td>
         </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Set the buffer pointer </p>
-
-</div>
-</div>
-<a class="anchor" id="a17ef7fd619ffbdfae0465634e17ba40f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
         <tr>
-          <td class="memname">void sys::Aio::set_nbytes </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>nbytes</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -329,7 +320,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the number of bytes to transfer </p>
+<p>Sets the buffer pointer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>A pointer to the data buffer </td></tr>
+    <tr><td class="paramname">nbytes</td><td>The number of bytes to transfer </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -354,7 +352,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the offset (or channcel for Dac, Adc, Pwm, etc) </p>
+<p>Sets the offset (or channcel for Dac, Adc, Pwm, etc). </p>
 
 </div>
 </div>
@@ -389,7 +387,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method will cause the thread to receive a signal when the operation completes.</p>
+<p>Causes the calling thread to receive a signal when the operation completes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">number</td><td>The signal number (ie SIGTERM) use -1 to prevent a signal from being sent </td></tr>
@@ -438,7 +436,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Block until all transfers in list have completed or timeout is reached </p>
+<p>Blocks until all transfers in list have completed or timeout is reached.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>A list of AIO structures </td></tr>
+    <tr><td class="paramname">nent</td><td>The number of entities in the list </td></tr>
+    <tr><td class="paramname">timeout_usec</td><td>Timeout in microseconds to block (0 to block indefinitely) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -463,7 +469,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Block until the operation completes or timeout is reached </p>
+<p>Blocks until the operation completes or timeout is reached.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_usec</td><td>The timeout in microseconds (0 to block indefinitely) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

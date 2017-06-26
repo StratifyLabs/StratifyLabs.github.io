@@ -35,11 +35,12 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"></div><table class="memberdecls">
+<div class="textblock"><p>The <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> storage class can be used to manage both statically and dyncamilly allocated data. The statically allocated data can be either read/write or read-only.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/var.hpp&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> buffer_const[16];</div><div class="line"><span class="keywordtype">char</span> buffer[16];</div><div class="line"></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> empty; <span class="comment">//the size of the data is zero. data_const() will return a pointer to a zero-length null-terminated string</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_dynamic(16); <span class="comment">//this will dynamically allocate 16 bytes (see alloc())</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_static(buffer, 16); <span class="comment">//will use buffer and consider it statically allocated (see set())</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_readonly(buffer_const, 16, <span class="keyword">true</span>); <span class="comment">//this will consider the data read only -- calls to data() will return 0</span></div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( data_readonly.data() == 0 ){</div><div class="line">     printf(<span class="stringliteral">&quot;Data is read only\n&quot;</span>); <span class="comment">//this will print</span></div><div class="line">}</div><div class="line"></div><div class="line">printf(<span class="stringliteral">&quot;This is empty data %s\n&quot;</span>, empty.cdata_const()); <span class="comment">//this is OK because empty data will return a valid string pointer</span></div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a28a72af1760aee56bf3cb46f7940db7b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a28a72af1760aee56bf3cb46f7940db7b">alloc</a> (size_t s, bool <a class="el" href="classvar_1_1_data.html#af3c7503c87d197318e1aca2ba3121e57">resize</a>=false)</td></tr>
-<tr class="separator:a28a72af1760aee56bf3cb46f7940db7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69505b4d7abe632483ce845ea2d99678"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a69505b4d7abe632483ce845ea2d99678">alloc</a> (size_t <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga07a39d48e46b05223805b7a7efe606ca">size</a>, bool <a class="el" href="classvar_1_1_data.html#aa120d738e9342fb2faf6c545801726ee">resize</a>=false)</td></tr>
+<tr class="separator:a69505b4d7abe632483ce845ea2d99678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa1f64af6118113377673a09b719a8a9"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#afa1f64af6118113377673a09b719a8a9">calc_size</a> () const </td></tr>
 <tr class="separator:afa1f64af6118113377673a09b719a8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61668acf4d27c76d4c6c5c94a11735ac"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a61668acf4d27c76d4c6c5c94a11735ac">capacity</a> () const </td></tr>
@@ -52,22 +53,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5d7f63758528a956dc508f4af2819042"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> ()</td></tr>
 <tr class="separator:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880e300367ab2ad804686e6f2e8fffed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a880e300367ab2ad804686e6f2e8fffed">Data</a> (void *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga87fc25f861a1a1b74ad39ba0714c3689">mem</a>, size_t s, bool readonly=false)</td></tr>
-<tr class="separator:a880e300367ab2ad804686e6f2e8fffed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28dd7386884d79f31256b0ee33306ed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a28dd7386884d79f31256b0ee33306ed0">Data</a> (size_t s)</td></tr>
-<tr class="separator:a28dd7386884d79f31256b0ee33306ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059c89625ec6c6073e25028ebf8956da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a059c89625ec6c6073e25028ebf8956da">Data</a> (void *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga87fc25f861a1a1b74ad39ba0714c3689">mem</a>, size_t <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga07a39d48e46b05223805b7a7efe606ca">size</a>, bool readonly=false)</td></tr>
+<tr class="separator:a059c89625ec6c6073e25028ebf8956da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a564d0dd9041939a58396c54979f31972"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a564d0dd9041939a58396c54979f31972">Data</a> (size_t <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga07a39d48e46b05223805b7a7efe606ca">size</a>)</td></tr>
+<tr class="separator:a564d0dd9041939a58396c54979f31972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf8676ded784b05b53154a6f3ca11d7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#adcf8676ded784b05b53154a6f3ca11d7">data</a> () const </td></tr>
 <tr class="separator:adcf8676ded784b05b53154a6f3ca11d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d33ba1650f4e0b9b53d66816491d8f5"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a4d33ba1650f4e0b9b53d66816491d8f5">data_const</a> () const </td></tr>
 <tr class="separator:a4d33ba1650f4e0b9b53d66816491d8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744e6257721ef9b228238a61cafe7239"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a744e6257721ef9b228238a61cafe7239">fill</a> (unsigned char d)</td></tr>
 <tr class="separator:a744e6257721ef9b228238a61cafe7239"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c7503c87d197318e1aca2ba3121e57"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#af3c7503c87d197318e1aca2ba3121e57">resize</a> (size_t s)</td></tr>
-<tr class="separator:af3c7503c87d197318e1aca2ba3121e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bc4356671661af2ecfccfe08b71e7f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a1bc4356671661af2ecfccfe08b71e7f1">set</a> (void *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga87fc25f861a1a1b74ad39ba0714c3689">mem</a>, size_t s, bool readonly=false)</td></tr>
-<tr class="separator:a1bc4356671661af2ecfccfe08b71e7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0140085944c397df85e2dd6764fe3e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ad0140085944c397df85e2dd6764fe3e7">free</a> ()</td></tr>
+<tr class="separator:ad0140085944c397df85e2dd6764fe3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa120d738e9342fb2faf6c545801726ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#aa120d738e9342fb2faf6c545801726ee">resize</a> (size_t <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga07a39d48e46b05223805b7a7efe606ca">size</a>)</td></tr>
+<tr class="separator:aa120d738e9342fb2faf6c545801726ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba61f420aee3f7199f883d0444eba01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#abba61f420aee3f7199f883d0444eba01">set</a> (void *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga87fc25f861a1a1b74ad39ba0714c3689">mem</a>, size_t <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga07a39d48e46b05223805b7a7efe606ca">size</a>, bool readonly=false)</td></tr>
+<tr class="separator:abba61f420aee3f7199f883d0444eba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89de3545f89be59506e7a0e1dbccf066"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a89de3545f89be59506e7a0e1dbccf066">set_min_capacity</a> (size_t s)</td></tr>
 <tr class="separator:a89de3545f89be59506e7a0e1dbccf066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52664e17992b64006a918041d92f803e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a52664e17992b64006a918041d92f803e">~Data</a> ()</td></tr>
+<tr class="separator:a52664e17992b64006a918041d92f803e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -87,11 +92,11 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> object with no data </p>
+<p>Constructs a data object with no data </p>
 
 </div>
 </div>
-<a class="anchor" id="a880e300367ab2ad804686e6f2e8fffed"></a>
+<a class="anchor" id="a059c89625ec6c6073e25028ebf8956da"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -105,7 +110,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -120,11 +125,20 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> object with non-mutable data (not memory managed) </p>
+<p>Constructs a data object with non-mutable data pointers (not memory managed)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mem</td><td>A pointer to the data </td></tr>
+    <tr><td class="paramname">size</td><td>The number of bytes available </td></tr>
+    <tr><td class="paramname">readonly</td><td>If true, the data will be accessible as read-only</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function does not manage the memory provided. The <a class="el" href="classvar_1_1_data.html#a69505b4d7abe632483ce845ea2d99678">alloc()</a> and <a class="el" href="classvar_1_1_data.html#ad0140085944c397df85e2dd6764fe3e7">free()</a> methods will have no effect. </p>
 
 </div>
 </div>
-<a class="anchor" id="a28dd7386884d79f31256b0ee33306ed0"></a>
+<a class="anchor" id="a564d0dd9041939a58396c54979f31972"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -132,17 +146,48 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">var::Data::Data </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> oject with dynamically allocated memory with <em>s</em> bytes (resizeable) </p>
+<p>Constructs data oject with dynamically allocated memory with <em>size</em> bytes (resizeable)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The number of bytes to allocate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a52664e17992b64006a918041d92f803e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual var::Data::~Data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Deconstructs a <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> object.</p>
+<p>This method will free any data that was allocated dynamically. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a28a72af1760aee56bf3cb46f7940db7b"></a>
+<a class="anchor" id="a69505b4d7abe632483ce845ea2d99678"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -150,7 +195,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">int var::Data::alloc </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -165,15 +210,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reallocate the data storage</p>
+<p>Allocates (or reallocates) memory for the <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>The number of bytes to allocate </td></tr>
-    <tr><td class="paramname">resize</td><td>if true, the old data is copied to the new data location </td></tr>
+    <tr><td class="paramname">size</td><td>The number of bytes to allocate </td></tr>
+    <tr><td class="paramname">resize</td><td>If true, the old data is copied to the new data location </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero If the operation was successful and -1 if it failed</dd></dl>
+<p>If the memory was specified using the <a class="el" href="classvar_1_1_data.html#abba61f420aee3f7199f883d0444eba01">set()</a> method or constructed as statically allocated memory, this will return an error. </p>
 
 </div>
 </div>
@@ -199,8 +245,6 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>For top level data objects this is the same as <a class="el" href="classvar_1_1_data.html#a61668acf4d27c76d4c6c5c94a11735ac">capacity()</a>. Other objects may re-implement to change how much user data is available. For example, Var::String will return the size of the string rather than the capacity of the data object</p>
 <dl class="section return"><dt>Returns</dt><dd>The number of bytes availabe in a data object </dd></dl>
-
-<p>Reimplemented in <a class="el" href="classsgfx_1_1_bitmap.html#ac9c62a1487581d7f7175dc5cd3ac60f6">sgfx::Bitmap</a>.</p>
 
 </div>
 </div>
@@ -249,7 +293,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieve a char pointer to the data. This will return zero if the data is readonly. </p>
+<p>Retrieve a char pointer to the data. This will return zero if the data is readonly.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvar_1_1_data.html#abba61f420aee3f7199f883d0444eba01">set()</a> </dd></dl>
 
 </div>
 </div>
@@ -313,7 +358,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieve a pointer to the data. This will return zero if the data is readonly. </p>
+<p>Retrieve a pointer to the data. This will return zero if the data is readonly.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvar_1_1_data.html#abba61f420aee3f7199f883d0444eba01">set()</a> </dd></dl>
 
 </div>
 </div>
@@ -337,7 +383,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieve a pointer to const data. </p>
+<p>Retrieve a pointer to const data. This will return the memory pointer whether the memory is read-only or read-write. </p>
 
 </div>
 </div>
@@ -364,6 +410,23 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad0140085944c397df85e2dd6764fe3e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int var::Data::free </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Free the memory associated with this object. This will only perform any operations if the memory was dynamically allocating using this object.</p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aac90392f23faeb7347cd5581bab1e85d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -384,11 +447,11 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The minimum data storage size of any data object </p>
+<p>Returns the minimum data storage size of any <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> object. </p>
 
 </div>
 </div>
-<a class="anchor" id="af3c7503c87d197318e1aca2ba3121e57"></a>
+<a class="anchor" id="aa120d738e9342fb2faf6c545801726ee"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -399,7 +462,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">int var::Data::resize </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>s</em></td><td>)</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -409,8 +472,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Resize the data</p>
-<p>This is the same as <a class="el" href="classvar_1_1_data.html#a28a72af1760aee56bf3cb46f7940db7b">alloc()</a> with <em>resize</em> set to true</p>
+<p>Resizes the data (equivalent to <a class="el" href="classvar_1_1_data.html#a69505b4d7abe632483ce845ea2d99678">alloc()</a>).</p>
+<p>This is the same as <a class="el" href="classvar_1_1_data.html#a69505b4d7abe632483ce845ea2d99678">alloc()</a> with <em>resize</em> set to true</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The number of new bytes </td></tr>
@@ -421,7 +484,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1bc4356671661af2ecfccfe08b71e7f1"></a>
+<a class="anchor" id="abba61f420aee3f7199f883d0444eba01"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -435,7 +498,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -450,15 +513,17 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the storage object of the data</p>
+<p>Sets the storage object of the data. This object will treat the data as statically allocated and will not free the memory if <a class="el" href="classvar_1_1_data.html#ad0140085944c397df85e2dd6764fe3e7">free()</a> is called or the object is destroyed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">mem</td><td>A pointer to a fixed place in memory to use as storage </td></tr>
-    <tr><td class="paramname">s</td><td>The number of bytes allocated </td></tr>
-    <tr><td class="paramname">readonly</td><td>true if readonly (used for data stored in flash) </td></tr>
+    <tr><td class="paramname">size</td><td>The number of bytes allocated </td></tr>
+    <tr><td class="paramname">readonly</td><td>true if readonly (used for data stored in flash)</td></tr>
   </table>
   </dd>
 </dl>
+<p>If the memory is specified as read-only, <a class="el" href="classvar_1_1_data.html#adcf8676ded784b05b53154a6f3ca11d7">data()</a> will return 0 and <a class="el" href="classvar_1_1_data.html#a4d33ba1650f4e0b9b53d66816491d8f5">data_const()</a> will return a pointer to the memory.</p>
+<p>If this object had previously allocated memory dynamically, the memory will be freed when this method is called. </p>
 
 </div>
 </div>
@@ -475,7 +540,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the minimum capacity of the data storage area</p>
+<p>Set the minimum capacity of the data storage area.</p>
+<p>If the memory was specified using the <a class="el" href="classvar_1_1_data.html#abba61f420aee3f7199f883d0444eba01">set()</a> method, this will return an error.</p>
 <p>If the current capacity is less than <em>s</em>, the object will be resized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

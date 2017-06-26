@@ -42,8 +42,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8b833c4ce993e6b64cb302b16f872b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49fd609d0d9855b93e44884ceaa0cf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#ad49fd609d0d9855b93e44884ceaa0cf0">calc_len</a> (const char *str) const </td></tr>
 <tr class="separator:ad49fd609d0d9855b93e44884ceaa0cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba2300ace295788bb3ac6118392b3c63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#aba2300ace295788bb3ac6118392b3c63">clear_str</a> (const char *str, <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;<a class="el" href="classsgfx_1_1_font.html#a8b833c4ce993e6b64cb302b16f872b1f">bitmap</a>, sg_point_t point) const </td></tr>
-<tr class="separator:aba2300ace295788bb3ac6118392b3c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac619518d2744d39a76dc66452a779b34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#ac619518d2744d39a76dc66452a779b34">draw_str</a> (const char *str, <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;<a class="el" href="classsgfx_1_1_font.html#a8b833c4ce993e6b64cb302b16f872b1f">bitmap</a>, sg_point_t point) const </td></tr>
+<tr class="separator:ac619518d2744d39a76dc66452a779b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53e2102aee09704bc738338ac03230f0"><td class="memItemLeft" align="right" valign="top">virtual sg_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a53e2102aee09704bc738338ac03230f0">get_h</a> () const  =0</td></tr>
 <tr class="separator:a53e2102aee09704bc738338ac03230f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d156823e63bd4da001d31d54d90834e"><td class="memItemLeft" align="right" valign="top">sg_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a4d156823e63bd4da001d31d54d90834e">letter_spacing</a> () const </td></tr>
@@ -52,8 +52,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8090bfc68c3a33a98ad58c6cd55f3a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81cfa9b6845eed52bc0671e9c67e517d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a81cfa9b6845eed52bc0671e9c67e517d">set_space_size</a> (int s)</td></tr>
 <tr class="separator:a81cfa9b6845eed52bc0671e9c67e517d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb9da58d870f6715d6c1ddd4dfe26fe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#acb9da58d870f6715d6c1ddd4dfe26fe9">set_str</a> (const char *str, <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;<a class="el" href="classsgfx_1_1_font.html#a8b833c4ce993e6b64cb302b16f872b1f">bitmap</a>, sg_point_t point) const </td></tr>
-<tr class="separator:acb9da58d870f6715d6c1ddd4dfe26fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cc7686dca946d20d397cbaa35c705e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a2cc7686dca946d20d397cbaa35c705e8">size</a> () const </td></tr>
 <tr class="separator:a2cc7686dca946d20d397cbaa35c705e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad838b0202f33baca93af3d45ab4ad7d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#ad838b0202f33baca93af3d45ab4ad7d7">space_size</a> () const </td></tr>
@@ -150,12 +148,12 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba2300ace295788bb3ac6118392b3c63"></a>
+<a class="anchor" id="ac619518d2744d39a76dc66452a779b34"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int sgfx::Font::clear_str </td>
+          <td class="memname">int sgfx::Font::draw_str </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
@@ -179,10 +177,10 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Clear the string pixels in the bitmap</p>
+<p>Set the string pixels in the bitmap</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">str</td><td>The string to draw (or clear) </td></tr>
+    <tr><td class="paramname">str</td><td>The string to draw (or set) </td></tr>
     <tr><td class="paramname">bitmap</td><td>The bitmap to draw the string on </td></tr>
     <tr><td class="paramname">point</td><td>The top left corner to start drawing the string </td></tr>
   </table>
@@ -289,48 +287,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Set the number of pixels in a space between words </p>
-
-</div>
-</div>
-<a class="anchor" id="acb9da58d870f6715d6c1ddd4dfe26fe9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sgfx::Font::set_str </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>str</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;&#160;</td>
-          <td class="paramname"><em>bitmap</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">sg_point_t&#160;</td>
-          <td class="paramname"><em>point</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set the string pixels in the bitmap</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">str</td><td>The string to draw (or set) </td></tr>
-    <tr><td class="paramname">bitmap</td><td>The bitmap to draw the string on </td></tr>
-    <tr><td class="paramname">point</td><td>The top left corner to start drawing the string </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>

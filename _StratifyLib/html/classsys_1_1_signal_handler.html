@@ -36,7 +36,7 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class is used for handling signal events.</p>
 <p>Here is an example of setting up a signal handler.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/Sys.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">volatile</span> <span class="keywordtype">bool</span> wait_for_signal;</div><div class="line"><span class="keywordtype">void</span> my_handler(<span class="keywordtype">int</span> a){</div><div class="line">     <span class="comment">//do something</span></div><div class="line">     wait_for_signal = <span class="keyword">false</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <a class="code" href="classsys_1_1_signal_handler.html#a5e74fa2bcf973dbed54cd8b82645877e">SignalHandler</a> handler(my_handler);</div><div class="line">     SignalEvent event(SIGINT);</div><div class="line"></div><div class="line">     wait_for_signal = <span class="keyword">true</span>;</div><div class="line"></div><div class="line">     <span class="comment">//this will cause my_handler() to be executed when SIGINT is received</span></div><div class="line">     <span class="keyword">event</span>.set_handler(handler);</div><div class="line"></div><div class="line">     <span class="comment">//the program will stay in this loop until SIGINT is received</span></div><div class="line">     <span class="keywordflow">while</span>( wait_for_signal == <span class="keyword">true</span> ){</div><div class="line">          <a class="code" href="classsys_1_1_timer.html#aaa7c6c03ff04eb6d8a19e33e23fe23bf">Timer::wait_msec</a>(1);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/sys.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">volatile</span> <span class="keywordtype">bool</span> wait_for_signal;</div><div class="line"><span class="keywordtype">void</span> my_handler(<span class="keywordtype">int</span> a){</div><div class="line">     <span class="comment">//do something</span></div><div class="line">     wait_for_signal = <span class="keyword">false</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <a class="code" href="classsys_1_1_signal_handler.html#a5e74fa2bcf973dbed54cd8b82645877e">SignalHandler</a> handler(my_handler);</div><div class="line">     SignalEvent event(SIGINT);</div><div class="line"></div><div class="line">     wait_for_signal = <span class="keyword">true</span>;</div><div class="line"></div><div class="line">     <span class="comment">//this will cause my_handler() to be executed when SIGINT is received</span></div><div class="line">     <span class="keyword">event</span>.set_handler(handler);</div><div class="line"></div><div class="line">     <span class="comment">//the program will stay in this loop until SIGINT is received</span></div><div class="line">     <span class="keywordflow">while</span>( wait_for_signal == <span class="keyword">true</span> ){</div><div class="line">          <a class="code" href="classsys_1_1_timer.html#aaa7c6c03ff04eb6d8a19e33e23fe23bf">Timer::wait_msec</a>(1);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2d834b53f989cb73b63afa98cbaf7d9"><td class="memItemLeft" align="right" valign="top">const struct sigaction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_handler.html#ab2d834b53f989cb73b63afa98cbaf7d9">sigaction</a> () const </td></tr>
@@ -68,7 +68,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Construct a signal handler </p>
+<p>Constructs a signal handler.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>The function to execute with an associated signal </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -109,7 +115,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Construct a sigaction handler </p>
+<p>Constructs a sigaction handler.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sigaction</td><td>The action to execute with an associated signal </td></tr>
+    <tr><td class="paramname">flags</td><td>Not used </td></tr>
+    <tr><td class="paramname">mask</td><td>Not used </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -134,7 +148,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Access the sigaction member </p>
+<p>Accesses the sigaction member. </p>
 
 </div>
 </div>

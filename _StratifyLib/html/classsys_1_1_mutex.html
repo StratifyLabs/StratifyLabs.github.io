@@ -64,7 +64,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct a <a class="el" href="classsys_1_1_mutex.html" title="Mutex Class. ">Mutex</a> with the default settings </p>
+<p>Constructs a <a class="el" href="classsys_1_1_mutex.html" title="Mutex Class. ">Mutex</a> with the default settings. </p>
 
 </div>
 </div>
@@ -81,7 +81,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct a <a class="el" href="classsys_1_1_mutex.html" title="Mutex Class. ">Mutex</a> using the specified attributes </p>
+<p>Constructs a <a class="el" href="classsys_1_1_mutex.html" title="Mutex Class. ">Mutex</a> using the specified attributes. </p>
 
 </div>
 </div>
@@ -98,7 +98,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method attempts to lock the mutex. If the mutex is locked by another thread, the thread will block until the mutex becomes available.</p>
+<p>Attempts to lock the mutex. If the mutex is locked by another thread, the thread will block until the mutex becomes available.</p>
 <p>If the thread already holds a lock on the mutex, it will</p>
 <ul>
 <li>increment the count if the mutex is recursive, or</li>
@@ -130,7 +130,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Try to lock the mutex but force a timeout after the specified duration</p>
+<p>Attempts to lock the mutex but force a timeout after the specified duration</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sec</td><td>The number of seconds to wait before a timeout </td></tr>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This methods attempts to lock the mutex. If the mutex is locked by another thread, the method returns immediately, returns less than zero, and sets errno to EBUSY.</p>
+<p>Attempts to lock the mutex. If the mutex is locked by another thread, the method returns immediately, returns less than zero, and sets errno to EBUSY.</p>
 <p>If the mutex is locked by the current thread, it will be incremented if it is recursive or just return zero and keep the lock if non-recursive. </p>
 
 </div>
@@ -170,7 +170,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unlock the mutex </p>
+<p>Unlocks the mutex. </p>
 
 </div>
 </div>

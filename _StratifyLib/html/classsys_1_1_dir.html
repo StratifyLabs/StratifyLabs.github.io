@@ -46,6 +46,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18f0d838ab67cdf4cb1f1c77d308b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d0c74c4179e1d2d2c660ec757a76c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#ae7d0c74c4179e1d2d2c660ec757a76c6">ino</a> ()</td></tr>
 <tr class="separator:ae7d0c74c4179e1d2d2c660ec757a76c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6f78244025154863be0035e57c89a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#adf6f78244025154863be0035e57c89a2">is_open</a> () const </td></tr>
+<tr class="separator:adf6f78244025154863be0035e57c89a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6bc1613b872e0a0e3bc4f77b9c256b2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#ae6bc1613b872e0a0e3bc4f77b9c256b2">name</a> ()</td></tr>
 <tr class="separator:ae6bc1613b872e0a0e3bc4f77b9c256b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f979414193b72cf0d62c8bea64bcbb8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#a6f979414193b72cf0d62c8bea64bcbb8">open</a> (const char *<a class="el" href="classsys_1_1_dir.html#ae6bc1613b872e0a0e3bc4f77b9c256b2">name</a>)</td></tr>
@@ -72,7 +74,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct a <a class="el" href="classsys_1_1_dir.html" title="Dir class. ">Dir</a> object </p>
+<p>Constructs a <a class="el" href="classsys_1_1_dir.html" title="Dir class. ">Dir</a> object </p>
 
 </div>
 </div>
@@ -89,7 +91,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Close the directory </p>
+<p>Closes the directory. </p>
 
 </div>
 </div>
@@ -157,6 +159,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="adf6f78244025154863be0035e57c89a2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::Dir::is_open </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a true if the directory is open. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae6bc1613b872e0a0e3bc4f77b9c256b2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -194,7 +220,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Open a directory </p>
+<p>Opens a directory. </p>
 
 </div>
 </div>
@@ -210,7 +236,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This methods reads the next entry in the directory. </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the name of the entry or 0 if no more entries exist </dd></dl>
+<p>Returns a pointer to the next entry or 0 if no more entries exist. </p>
 
 </div>
 </div>

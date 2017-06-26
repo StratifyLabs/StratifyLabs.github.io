@@ -56,7 +56,7 @@ title: Stratify OS Docs
 <li>control variable: the PWM duty cycle that should be applied to the heater</li>
 <li>error variable: the different between the desired temperature output and the present temperature output</li>
 </ul>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/calc.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"></div><div class="line">Pid_f pid_loop;</div><div class="line">Pwm control(0);</div><div class="line">Adc present_value(0);</div><div class="line">u16 adc_value;</div><div class="line"></div><div class="line"><span class="keyword">volatile</span> <span class="keywordtype">bool</span> is_active = <span class="keyword">true</span>;</div><div class="line"></div><div class="line">pid_loop.set_kp(1.0);</div><div class="line">pid_loop.set_ki(0.1);</div><div class="line">pid_loop.set_kd(0.001);</div><div class="line">pid_loop.set_maximum(1000); <span class="comment">//max duty cycle</span></div><div class="line">pid_loop.set_minimum(0); <span class="comment">//min duty cycle</span></div><div class="line"></div><div class="line"> <span class="comment">//Init the PWM output and ADC input</span></div><div class="line"></div><div class="line"><span class="keywordflow">while</span>( is_active ){</div><div class="line"> present_value.read(0, &amp;adc_value, 2);</div><div class="line">  control.set_duty( pid_looop.calc_control_variable( 3.3 * adc_value / 4096 ) );</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;stfy/calc.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stfy/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classcalc_1_1_pid__f.html#abd17ca5d245bfff577c9333b6c80784a">Pid_f</a> pid_loop;</div><div class="line">Pwm control(0);</div><div class="line">Adc present_value(0);</div><div class="line">u16 adc_value;</div><div class="line"></div><div class="line"><span class="keyword">volatile</span> <span class="keywordtype">bool</span> is_active = <span class="keyword">true</span>;</div><div class="line"></div><div class="line">pid_loop.set_kp(1.0);</div><div class="line">pid_loop.set_ki(0.1);</div><div class="line">pid_loop.set_kd(0.001);</div><div class="line">pid_loop.set_maximum(1000); <span class="comment">//max duty cycle</span></div><div class="line">pid_loop.set_minimum(0); <span class="comment">//min duty cycle</span></div><div class="line"></div><div class="line"> <span class="comment">//Init the PWM output and ADC input</span></div><div class="line"></div><div class="line"><span class="keywordflow">while</span>( is_active ){</div><div class="line"> present_value.read(0, &amp;adc_value, 2);</div><div class="line">  control.set_duty( pid_looop.calc_control_variable( 3.3 * adc_value / 4096 ) );</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4273dcf5f55c50c34096d7981f3fea91"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcalc_1_1_pid__f.html#a4273dcf5f55c50c34096d7981f3fea91">calc_control_variable</a> (float present_value)</td></tr>
@@ -71,6 +71,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a39a6049711dfa3010797398cbc12ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4901edc217e747152bc2a35b73990f04"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcalc_1_1_pid__f.html#a4901edc217e747152bc2a35b73990f04">min</a> () const </td></tr>
 <tr class="separator:a4901edc217e747152bc2a35b73990f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd17ca5d245bfff577c9333b6c80784a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcalc_1_1_pid__f.html#abd17ca5d245bfff577c9333b6c80784a">Pid_f</a> (float <a class="el" href="classcalc_1_1_pid__f.html#a28b6ac4a82ccd56e3634b7f9ac808678">target</a>=0.0, float <a class="el" href="classcalc_1_1_pid__f.html#aba1d03ee4920df8a139a4cc0a2dc25cf">kp</a>=1.0, float <a class="el" href="classcalc_1_1_pid__f.html#abae605b5adab4a292ad4572958379b33">ki</a>=0.1, float <a class="el" href="classcalc_1_1_pid__f.html#ad4c58171664152d273947f41de11f5f5">kd</a>=0.0, float <a class="el" href="classcalc_1_1_pid__f.html#a4901edc217e747152bc2a35b73990f04">min</a>=1.0, float <a class="el" href="classcalc_1_1_pid__f.html#a8a39a6049711dfa3010797398cbc12ff">max</a>=0.0)</td></tr>
+<tr class="separator:abd17ca5d245bfff577c9333b6c80784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8b7411ab08449f17c96c6b466bcfd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcalc_1_1_pid__f.html#a2c8b7411ab08449f17c96c6b466bcfd7">reset</a> ()</td></tr>
 <tr class="separator:a2c8b7411ab08449f17c96c6b466bcfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedb0786fdc805b214904f93e57819ac1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcalc_1_1_pid__f.html#aedb0786fdc805b214904f93e57819ac1">set_kd</a> (float v)</td></tr>
@@ -88,6 +90,69 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28b6ac4a82ccd56e3634b7f9ac808678"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcalc_1_1_pid__f.html#a28b6ac4a82ccd56e3634b7f9ac808678">target</a> () const </td></tr>
 <tr class="separator:a28b6ac4a82ccd56e3634b7f9ac808678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="abd17ca5d245bfff577c9333b6c80784a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">calc::Pid_f::Pid_f </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>target</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>kp</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ki</em> = <code>0.1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>kd</em> = <code>0.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>min</em> = <code>1.0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>max</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a new PID (float) object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">target</td><td>The target value </td></tr>
+    <tr><td class="paramname">kp</td><td>The proportional constant </td></tr>
+    <tr><td class="paramname">ki</td><td>The integral constant </td></tr>
+    <tr><td class="paramname">kd</td><td>The differential constant </td></tr>
+    <tr><td class="paramname">min</td><td>The minimum value for the calculated control value </td></tr>
+    <tr><td class="paramname">max</td><td>The maximum value for the calculated control value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a4273dcf5f55c50c34096d7981f3fea91"></a>
 <div class="memitem">
@@ -102,7 +167,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method calculates the control variable based on the current state of the system.</p>
+<p>Calculates the control variable based on the current state of the system.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">present_value</td><td>The present value of the system </td></tr>
@@ -133,7 +198,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method accesses the differential constant. </p>
+<p>Returns the differential constant. </p>
 
 </div>
 </div>
@@ -157,7 +222,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method accesses the integral constant. </p>
+<p>Returns the integral constant. </p>
 
 </div>
 </div>
@@ -181,7 +246,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method accesses the proportional constant. </p>
+<p>Returns the proportional constant. </p>
 
 </div>
 </div>
@@ -205,7 +270,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method accesses the maximum value for the control variable. </p>
+<p>Returns the maximum value for the control variable. </p>
 
 </div>
 </div>
@@ -229,7 +294,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method accesses the minimum value for the control variable. </p>
+<p>Returns the minimum value for the control variable. </p>
 
 </div>
 </div>
@@ -245,7 +310,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This method resets the state of the PID control loop. </p>
+<p>Resets the state of the PID control loop. </p>
 
 </div>
 </div>
@@ -270,7 +335,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sets the differential constant value. </p>
+<p>Sets the differential constant value. </p>
 
 </div>
 </div>
@@ -295,7 +360,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sets the integral constant value. </p>
+<p>Sets the integral constant value. </p>
 
 </div>
 </div>
@@ -320,7 +385,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sets the proportional constant value. </p>
+<p>Sets the proportional constant value. </p>
 
 </div>
 </div>
@@ -345,7 +410,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sets the maximum allowed value of the target variable. </p>
+<p>Sets the maximum allowed value of the target variable. </p>
 
 </div>
 </div>
@@ -370,7 +435,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sets the minimum allowed value of the target variable. </p>
+<p>Sets the minimum allowed value of the target variable. </p>
 
 </div>
 </div>
@@ -395,7 +460,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method sets the value for the target variable. </p>
+<p>Sets the value for the target variable. </p>
 
 </div>
 </div>
@@ -419,7 +484,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method accesses the target variable. </p>
+<p>Returns the target variable. </p>
 
 </div>
 </div>
