@@ -85,7 +85,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.1/Stratify-Link-Installer-2.1.exe">Stratify Link 2</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.6/Stratify-Link-Installer-2.6.exe">Stratify Link 2</a>
     </p>
   </center>
 
@@ -111,7 +111,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.2/Stratify-Link-2.2.dmg">Stratify Link 2</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.6/StratifyLink-2.6.dmg">Stratify Link 2</a>
     </p>
   </center>
 
