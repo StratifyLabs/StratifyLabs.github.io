@@ -79,7 +79,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/Stratify-Labs-SDK-Installer-2.1.0.exe">ARM Compiler with Stratify SDK</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.6.0/Stratify-Labs-SDK-Installer-2.6.0.exe">ARM Compiler with Stratify SDK</a>
     </p>
   </center>
 
@@ -105,7 +105,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://dl.dropboxusercontent.com/u/33863234/StratifyLabs/StratifyLabs-SDK-2.1.0.dmg">ARM Compiler with Stratify SDK</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.6.0/StratifyLabs-SDK-2.6.0.dmg">ARM Compiler with Stratify SDK</a>
     </p>
   </center>
 
