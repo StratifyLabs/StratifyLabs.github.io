@@ -73,7 +73,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://eclipse.org/cdt/" target="_blank">Eclipse C/C++ Development Toolkit</a>
+      <a class="btn btn-lg btn-primary" href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/oxygenr" target="_blank">Eclipse C/C++ Development Toolkit</a>
     </p>
   </center>
 
@@ -99,7 +99,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://eclipse.org/cdt/" target="_blank">Eclipse C/C++ Development Toolkit</a>
+      <a class="btn btn-lg btn-primary" href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/oxygenr" target="_blank">Eclipse C/C++ Development Toolkit</a>
     </p>
   </center>
 
