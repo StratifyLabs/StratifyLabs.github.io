@@ -22,16 +22,16 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="classhal_1_1_lcd.html">Lcd</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="classhal_1_1_display.html">Display</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">hal::Lcd Member List</div>  </div>
+<div class="title">hal::Display Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="classhal_1_1_lcd.html">hal::Lcd</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="classhal_1_1_display.html">hal::Display</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a22de864bfdbc3ba4ff5ec06c2164884f">alloc</a>(sg_size_t w, sg_size_t h)</td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classvar_1_1_data.html#a69505b4d7abe632483ce845ea2d99678">var::Data::alloc</a>(size_t size, bool resize=false)</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"></td></tr>
@@ -49,19 +49,19 @@ title: Stratify OS Docs
   <tr><td class="entry"><a class="el" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a>()</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvar_1_1_data.html#a059c89625ec6c6073e25028ebf8956da">Data</a>(void *mem, size_t size, bool readonly=false)</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classvar_1_1_data.html#a564d0dd9041939a58396c54979f31972">Data</a>(size_t size)</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classhal_1_1_display.html#a417bd3877f564970e911bbb004da204b">Display</a>()</td><td class="entry"><a class="el" href="classhal_1_1_display.html">hal::Display</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classhal_1_1_display.html#ac329934fbbbd4822f154ddc4e30d9791">Display</a>(sg_bmap_data_t *mem, sg_size_t w, sg_size_t h)</td><td class="entry"><a class="el" href="classhal_1_1_display.html">hal::Display</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a7144164a33ee8cb9f91df5afc135f1c5">draw_bitmap</a>(sg_point_t p_dest, const Bitmap &amp;src) const </td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#abec9acb305277a41f54886b82b9c932c">draw_pixel</a>(sg_point_t p) const </td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a6cf290288f3d27dd2ccea29273168920">draw_sub_bitmap</a>(sg_point_t p_dest, const Bitmap &amp;src, sg_point_t p_src, sg_dim_t d_src) const </td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classvar_1_1_data.html#a744e6257721ef9b228238a61cafe7239">fill</a>(unsigned char d)</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a54a71c1e04a4c6846d61ba7526a32dd4">free</a>()</td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a72933cf704dc98c96a6bda995f083674">get_pixel</a>(sg_point_t p) const </td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classhal_1_1_lcd.html#a55facf499165956b2f7d2c7fbda93662">init</a>(const char *name=0)=0</td><td class="entry"><a class="el" href="classhal_1_1_lcd.html">hal::Lcd</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classhal_1_1_lcd.html#a00599f507d75bf679d283635b415e401">Lcd</a>(sg_bmap_data_t *mem, sg_size_t w, sg_size_t h)</td><td class="entry"><a class="el" href="classhal_1_1_lcd.html">hal::Lcd</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classhal_1_1_lcd.html#a48e4f105034997178734d74e07864eb3">Lcd</a>()</td><td class="entry"><a class="el" href="classhal_1_1_lcd.html">hal::Lcd</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classhal_1_1_display.html#a575ab5ee8e339b66b0ba4fcc7d77ac45">init</a>(const char *name=0)=0</td><td class="entry"><a class="el" href="classhal_1_1_display.html">hal::Display</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#aeb08a8aa20d1c749f3f84133ed81b24d">load</a>(const char *path)</td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvar_1_1_data.html#aac90392f23faeb7347cd5581bab1e85d">min_size</a>()</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classhal_1_1_lcd.html#a1e356635a18eff1e705c91cd939e7a98">off</a>()</td><td class="entry"><a class="el" href="classhal_1_1_lcd.html">hal::Lcd</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classhal_1_1_lcd.html#aab17f3b2bbe8a97b88ce96ecd24d8f54">on</a>()</td><td class="entry"><a class="el" href="classhal_1_1_lcd.html">hal::Lcd</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classhal_1_1_display.html#ae4f277c1e2fde326a776b9ec24603028">off</a>()</td><td class="entry"><a class="el" href="classhal_1_1_display.html">hal::Display</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classhal_1_1_display.html#a78a636b45bffe9a15a7432173e15116a">on</a>()</td><td class="entry"><a class="el" href="classhal_1_1_display.html">hal::Display</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh</a>() const </td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classvar_1_1_data.html#aa120d738e9342fb2faf6c545801726ee">resize</a>(size_t size)</td><td class="entry"><a class="el" href="classvar_1_1_data.html">var::Data</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html#a4a091ec6420eb5c8dc74245ba2ab8551">save</a>(const char *path) const </td><td class="entry"><a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td><td class="entry"></td></tr>

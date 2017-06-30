@@ -22,32 +22,32 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="classhal_1_1_lcd.html">Lcd</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="classhal_1_1_display.html">Display</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classhal_1_1_lcd-members.html">List of all members</a> &#124;
+<a href="classhal_1_1_display-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">hal::Lcd Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">hal::Display Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This is an abstract class for drawing graphics and text on a monochrome LCD. The typical implementation will keep a copy of the bitmap in local memory and use the <a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh()</a> method to copy the local memory to the LCD. </p>
+<div class="textblock"><p>The <a class="el" href="classhal_1_1_display.html" title="Display Class. ">Display</a> class is for drawing on a display such as an OLED or LCD. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a55facf499165956b2f7d2c7fbda93662"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_lcd.html#a55facf499165956b2f7d2c7fbda93662">init</a> (const char *name=0)=0</td></tr>
-<tr class="separator:a55facf499165956b2f7d2c7fbda93662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00599f507d75bf679d283635b415e401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_lcd.html#a00599f507d75bf679d283635b415e401">Lcd</a> (sg_bmap_data_t *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga87fc25f861a1a1b74ad39ba0714c3689">mem</a>, sg_size_t w, sg_size_t h)</td></tr>
-<tr class="separator:a00599f507d75bf679d283635b415e401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48e4f105034997178734d74e07864eb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_lcd.html#a48e4f105034997178734d74e07864eb3">Lcd</a> ()</td></tr>
-<tr class="separator:a48e4f105034997178734d74e07864eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e356635a18eff1e705c91cd939e7a98"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_lcd.html#a1e356635a18eff1e705c91cd939e7a98">off</a> ()</td></tr>
-<tr class="separator:a1e356635a18eff1e705c91cd939e7a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab17f3b2bbe8a97b88ce96ecd24d8f54"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_lcd.html#aab17f3b2bbe8a97b88ce96ecd24d8f54">on</a> ()</td></tr>
-<tr class="separator:aab17f3b2bbe8a97b88ce96ecd24d8f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417bd3877f564970e911bbb004da204b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#a417bd3877f564970e911bbb004da204b">Display</a> ()</td></tr>
+<tr class="separator:a417bd3877f564970e911bbb004da204b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac329934fbbbd4822f154ddc4e30d9791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#ac329934fbbbd4822f154ddc4e30d9791">Display</a> (sg_bmap_data_t *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___m_l_c_d.html#ga87fc25f861a1a1b74ad39ba0714c3689">mem</a>, sg_size_t w, sg_size_t h)</td></tr>
+<tr class="separator:ac329934fbbbd4822f154ddc4e30d9791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575ab5ee8e339b66b0ba4fcc7d77ac45"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#a575ab5ee8e339b66b0ba4fcc7d77ac45">init</a> (const char *name=0)=0</td></tr>
+<tr class="separator:a575ab5ee8e339b66b0ba4fcc7d77ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f277c1e2fde326a776b9ec24603028"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#ae4f277c1e2fde326a776b9ec24603028">off</a> ()</td></tr>
+<tr class="separator:ae4f277c1e2fde326a776b9ec24603028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a636b45bffe9a15a7432173e15116a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#a78a636b45bffe9a15a7432173e15116a">on</a> ()</td></tr>
+<tr class="separator:a78a636b45bffe9a15a7432173e15116a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsgfx_1_1_bitmap"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsgfx_1_1_bitmap')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a></td></tr>
 <tr class="memitem:a22de864bfdbc3ba4ff5ec06c2164884f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a22de864bfdbc3ba4ff5ec06c2164884f">alloc</a> (sg_size_t w, sg_size_t h)</td></tr>
 <tr class="separator:a22de864bfdbc3ba4ff5ec06c2164884f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,12 +139,36 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aac90392f23faeb7347cd5581bab1e85d inherit pub_static_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a00599f507d75bf679d283635b415e401"></a>
+<a class="anchor" id="a417bd3877f564970e911bbb004da204b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hal::Display::Display </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a new object with no video memory. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac329934fbbbd4822f154ddc4e30d9791"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">hal::Lcd::Lcd </td>
+          <td class="memname">hal::Display::Display </td>
           <td>(</td>
           <td class="paramtype">sg_bmap_data_t *&#160;</td>
           <td class="paramname"><em>mem</em>, </td>
@@ -168,36 +192,20 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct MLcd with known width, height, and memory pointer </p>
-
-</div>
-</div>
-<a class="anchor" id="a48e4f105034997178734d74e07864eb3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">hal::Lcd::Lcd </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Construct MLcd with unknown dimensions (use alloc(w,h) later) </p>
+<p>Constructs a new object with the provided memory buffer</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mem</td><td>A pointer to the bitmap memory </td></tr>
+    <tr><td class="paramname">w</td><td>The width of the memory area in pixels </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the memory area in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a55facf499165956b2f7d2c7fbda93662"></a>
+<a class="anchor" id="a575ab5ee8e339b66b0ba4fcc7d77ac45"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -205,7 +213,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int hal::Lcd::init </td>
+          <td class="memname">virtual int hal::Display::init </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em> = <code>0</code></td><td>)</td>
@@ -218,11 +226,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Pure virtual function to initialize the LCD </p>
+<p>Initializes the display. </p>
 
 </div>
 </div>
-<a class="anchor" id="a1e356635a18eff1e705c91cd939e7a98"></a>
+<a class="anchor" id="ae4f277c1e2fde326a776b9ec24603028"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -230,7 +238,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int hal::Lcd::off </td>
+          <td class="memname">virtual int hal::Display::off </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -242,11 +250,11 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Turn the LCD pixels off </p>
+<p>Turns the display off. </p>
 
 </div>
 </div>
-<a class="anchor" id="aab17f3b2bbe8a97b88ce96ecd24d8f54"></a>
+<a class="anchor" id="a78a636b45bffe9a15a7432173e15116a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -254,7 +262,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual int hal::Lcd::on </td>
+          <td class="memname">virtual int hal::Display::on </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -266,7 +274,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Turn the LCD pixels on </p>
+<p>Turns the display on. </p>
 
 </div>
 </div>

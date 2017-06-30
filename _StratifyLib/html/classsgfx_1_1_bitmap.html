@@ -55,12 +55,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9a2678a42e94cc53b4d488f294057028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7144164a33ee8cb9f91df5afc135f1c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a7144164a33ee8cb9f91df5afc135f1c5">draw_bitmap</a> (sg_point_t p_dest, const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;src) const </td></tr>
 <tr class="separator:a7144164a33ee8cb9f91df5afc135f1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec9acb305277a41f54886b82b9c932c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#abec9acb305277a41f54886b82b9c932c">draw_pixel</a> (sg_point_t p) const </td></tr>
+<tr class="separator:abec9acb305277a41f54886b82b9c932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf290288f3d27dd2ccea29273168920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a6cf290288f3d27dd2ccea29273168920">draw_sub_bitmap</a> (sg_point_t p_dest, const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;src, sg_point_t p_src, sg_dim_t d_src) const </td></tr>
 <tr class="separator:a6cf290288f3d27dd2ccea29273168920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a71c1e04a4c6846d61ba7526a32dd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a54a71c1e04a4c6846d61ba7526a32dd4">free</a> ()</td></tr>
 <tr class="separator:a54a71c1e04a4c6846d61ba7526a32dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72933cf704dc98c96a6bda995f083674"><td class="memItemLeft" align="right" valign="top">sg_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a72933cf704dc98c96a6bda995f083674">get_pixel</a> (sg_point_t p) const </td></tr>
+<tr class="separator:a72933cf704dc98c96a6bda995f083674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb08a8aa20d1c749f3f84133ed81b24d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#aeb08a8aa20d1c749f3f84133ed81b24d">load</a> (const char *path)</td></tr>
+<tr class="separator:aeb08a8aa20d1c749f3f84133ed81b24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bbce417565555014ae9f811ba38dc78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh</a> () const </td></tr>
 <tr class="separator:a7bbce417565555014ae9f811ba38dc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a091ec6420eb5c8dc74245ba2ab8551"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a4a091ec6420eb5c8dc74245ba2ab8551">save</a> (const char *path) const </td></tr>
+<tr class="separator:a4a091ec6420eb5c8dc74245ba2ab8551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a588427ec2482f8901b81c9d9c83286b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a588427ec2482f8901b81c9d9c83286b2">set_data</a> (sg_bitmap_hdr_t *hdr, bool readonly=false)</td></tr>
 <tr class="separator:a588427ec2482f8901b81c9d9c83286b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb195dd77fb5117f4c3ae7f9a709c881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#acb195dd77fb5117f4c3ae7f9a709c881">set_pen_color</a> (sg_color_t color)</td></tr>
@@ -361,7 +369,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Return the size of a bitmap of specified size </p>
+<p>Returns the size of a bitmap of specified size </p>
 
 </div>
 </div>
@@ -405,6 +413,39 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abec9acb305277a41f54886b82b9c932c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::draw_pixel </td>
+          <td>(</td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Draws a pizel at the specified point.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The point where to draw the pixel</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The color of the pixel is determined by the pen settings.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsgfx_1_1_bitmap.html#acb195dd77fb5117f4c3ae7f9a709c881">set_pen_color()</a> </dd></dl>
 
 </div>
 </div>
@@ -481,6 +522,62 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a72933cf704dc98c96a6bda995f083674"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sg_color_t sgfx::Bitmap::get_pixel </td>
+          <td>(</td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the value of the pixel at the specified point.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The point to get the pixel color </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The color of the pixel at <em>p</em> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb08a8aa20d1c749f3f84133ed81b24d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sgfx::Bitmap::load </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Loads a bitmap from a file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to the bitmap file name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a7bbce417565555014ae9f811ba38dc78"></a>
 <div class="memitem">
 <div class="memproto">
@@ -503,6 +600,31 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This method is designated as an interface for classes that inherit <a class="el" href="classsgfx_1_1_bitmap.html" title="Bitmap Class. ">Bitmap</a> to copy the bitmap to a physical device (such as hal::DisplayDev). The implementation in this class is simple an empty method. Here is an example:</p>
 <div class="fragment"><div class="line">DisplayDev display; <span class="comment">//this class inherits bitmap and re-implments refresh()</span></div><div class="line"></div><div class="line">display.clear(); <span class="comment">//clear the bitmap in memory</span></div><div class="line">display.refresh(); <span class="comment">//copy the memory to the physical device (or notify the underlying driver that it is time to copy)</span></div></div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="a4a091ec6420eb5c8dc74245ba2ab8551"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sgfx::Bitmap::save </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Saves a bitmap to a file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path for the new file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>If the file already exists, it will be overwritten. </p>
+
 </div>
 </div>
 <a class="anchor" id="a588427ec2482f8901b81c9d9c83286b2"></a>
@@ -528,7 +650,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set data pointer and size for bitmap </p>
+<p>Sets data pointer and size for bitmap </p>
 
 </div>
 </div>
@@ -556,10 +678,18 @@ Static Public Member Functions</h2></td></tr>
 <p>Sets the color of the pen.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">color</td><td>The color of the pen </td></tr>
+    <tr><td class="paramname">color</td><td>The color of the pen</td></tr>
   </table>
   </dd>
 </dl>
+<p>Valid colors value depend on the format of the underlying Stratify graphics library. The Stratify graphics library supports the following formats.</p><ul>
+<li>1bpp (bit per pixel)</li>
+<li>2bpp</li>
+<li>4bpp</li>
+<li>8bpp</li>
+</ul>
+<p>For example, for 4bpp, there are 16 colors so <em>color</em> can be from 0 to 15 (inclusive). The actual color that displays on the screen depends on the DisplayPalette associated with the Display.</p>
+<dl class="section see"><dt>See also</dt><dd>DisplayPalette, Display </dd></dl>
 
 </div>
 </div>
@@ -623,7 +753,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Change effective size without free/alloc sequence </p>
+<p>Changes effective size without free/alloc sequence </p>
 
 </div>
 </div>
@@ -672,7 +802,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Maximum x value </p>
+<p>Returns the maximum x value. </p>
 
 </div>
 </div>
@@ -696,7 +826,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Maximum y value </p>
+<p>Returns the maximum y value. </p>
 
 </div>
 </div>
