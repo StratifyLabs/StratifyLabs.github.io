@@ -28,24 +28,21 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structffifo__attr__t.html">ffifo_attr_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO Attributes.  <a href="structffifo__attr__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__attr__t.html">fifo_attr_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO Attributes.  <a href="structfifo__attr__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__peek__t.html">fifo_peek_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO Peek data.  <a href="structfifo__peek__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__cfg__t.html">fifo_cfg_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">FIFO Configuration.  <a href="structfifo__cfg__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga670519da9a74984f5605f50cf675385d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#ga670519da9a74984f5605f50cf675385d">FIFO_DEVICE</a>(device_name,  cfg_ptr,  state_ptr,  mode_value,  uid_value,  gid_value)</td></tr>
-<tr class="memdesc:ga670519da9a74984f5605f50cf675385d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga670519da9a74984f5605f50cf675385d">More...</a><br /></td></tr>
-<tr class="separator:ga670519da9a74984f5605f50cf675385d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30ff48c79763bdd7c003eb41184c7d65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#ga30ff48c79763bdd7c003eb41184c7d65">I_FIFO_ATTR</a></td></tr>
-<tr class="memdesc:ga30ff48c79763bdd7c003eb41184c7d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga30ff48c79763bdd7c003eb41184c7d65">More...</a><br /></td></tr>
-<tr class="separator:ga30ff48c79763bdd7c003eb41184c7d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f40ca557aed98dc7ef51ae4fbeff868"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#ga3f40ca557aed98dc7ef51ae4fbeff868">I_FIFO_GETINFO</a></td></tr>
+<tr class="memdesc:ga3f40ca557aed98dc7ef51ae4fbeff868"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga3f40ca557aed98dc7ef51ae4fbeff868">More...</a><br /></td></tr>
+<tr class="separator:ga3f40ca557aed98dc7ef51ae4fbeff868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f9954de41765a8b9a5a73c66aae9daa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0f9954de41765a8b9a5a73c66aae9daa"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#ga0f9954de41765a8b9a5a73c66aae9daa">I_FIFO_FLUSH</a></td></tr>
 <tr class="memdesc:ga0f9954de41765a8b9a5a73c66aae9daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request flushes all data out of the fifo (third <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl()</a> arg is omitted). <br /></td></tr>
@@ -58,82 +55,17 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#gab11d9f1ec93aaf8bfce1a579f258b439">I_FIFO_EXIT</a></td></tr>
 <tr class="memdesc:gab11d9f1ec93aaf8bfce1a579f258b439"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request shuts down the operation of the FIFO. <br /></td></tr>
 <tr class="separator:gab11d9f1ec93aaf8bfce1a579f258b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40bc035a4c24444b501687addddb5ca9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#ga40bc035a4c24444b501687addddb5ca9">I_FIFO_SETWRITEBLOCK</a></td></tr>
-<tr class="memdesc:ga40bc035a4c24444b501687addddb5ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request tells the FIFO whether or not to block when data is written and the buffer is full.  <a href="#ga40bc035a4c24444b501687addddb5ca9">More...</a><br /></td></tr>
-<tr class="separator:ga40bc035a4c24444b501687addddb5ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab49deb73a64bd5aeb28e625abebd9c18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___f_i_f_o.html#gab49deb73a64bd5aeb28e625abebd9c18">I_FIFO_PEEK</a></td></tr>
 <tr class="memdesc:gab49deb73a64bd5aeb28e625abebd9c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request a peek at the data in the FIFO.  <a href="#gab49deb73a64bd5aeb28e625abebd9c18">More...</a><br /></td></tr>
 <tr class="separator:gab49deb73a64bd5aeb28e625abebd9c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga670519da9a74984f5605f50cf675385d"></a>
+<a class="anchor" id="ga3f40ca557aed98dc7ef51ae4fbeff868"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FIFO_DEVICE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">device_name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cfg_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">state_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">mode_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">uid_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">gid_value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines the configuration values for a FIFO device.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device_name</td><td>The name of the device (e.g "fifo0") </td></tr>
-    <tr><td class="paramname">cfg_ptr</td><td>A pointer to the const <a class="el" href="structfifo__cfg__t.html">fifo_cfg_t</a> data structure </td></tr>
-    <tr><td class="paramname">state_ptr</td><td>A pointer to the state structure (see fifo_state_t) </td></tr>
-    <tr><td class="paramname">mode_value</td><td>The access mode (usually 0666) </td></tr>
-    <tr><td class="paramname">uid_value</td><td>The User ID </td></tr>
-    <tr><td class="paramname">gid_value</td><td>The Group ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;hwdl/fifo.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;const fifo_cfg_t fifo_cfg0 = { .buffer = fifo_buf0, .size = FIFO_BUF_SIZE };</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;fifo_state_t fifo_state0;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;const device_t devices[DEVICES_TOTAL+1] = {</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     ...</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     FIFO_DEVICE(&quot;fifo0&quot;, &amp;fifo_cfg0, &amp;fifo_state0, 0666, USER_ROOT, GROUP_ROOT),</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;     ...</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;     DEVICE_TERMINATOR</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga30ff48c79763bdd7c003eb41184c7d65"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_FIFO_ATTR</td>
+          <td class="memname">#define I_FIFO_GETINFO</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -151,18 +83,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>This request allows a process to peek at the data in the FIFO without reading it.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;char buffer[16];</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;fifo_peek_t peek_req;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;peek_req.buf = buffer; //Destination buffer</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;peek_req.loc = 0; //first available bytes in FIFO</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;peek_req.nbyte = 16; //peek up to 16 bytes</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ioctl(fifo_fd, I_FIFO_PEEK, &amp;peek);</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga40bc035a4c24444b501687addddb5ca9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_FIFO_SETWRITEBLOCK</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
 </div>
 </div>
 </div><!-- contents -->

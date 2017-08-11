@@ -1,6 +1,0 @@
-<map id="Filesystem" name="Filesystem">
-<area shape="rect" id="node1" href="$group___u_n_i___f_i_l_e___a_c_c_e_s_s.html" title="Access" alt="" coords="379,5,443,30"/>
-<area shape="rect" id="node2" href="$group___u_n_i___p_e_r_m_s.html" title="Permissions" alt="" coords="364,54,458,79"/>
-<area shape="rect" id="node3" href="$group___u_n_i___f_i_l_d_e_s.html" title="Descriptor Handling" alt="" coords="341,103,480,129"/>
-<area shape="rect" id="node5" href="$group___u_n_i_s_t_d.html" title="Unix Standard (unistd)" alt="" coords="6,54,160,79"/>
-</map>

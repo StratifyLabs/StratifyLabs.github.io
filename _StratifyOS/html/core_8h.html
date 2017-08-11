@@ -16,7 +16,7 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -32,16 +32,10 @@ title: Stratify OS Docs
 <p>Analog to Digital Converter Header File.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
 <code>#include &quot;mcu/types.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="pio_8h.html">iface/dev/pio.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__clkout__t.html">core_clkout_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used with I_CORE_SETCLKOUT.  <a href="structcore__clkout__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html">core_attr_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core IO Attributes.  <a href="structcore__attr__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -54,10 +48,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf53f2c68c35f0bd4c048c212c859510e"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gaf53f2c68c35f0bd4c048c212c859510e">I_CORE_ATTR</a></td></tr>
-<tr class="memdesc:gaf53f2c68c35f0bd4c048c212c859510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This requests reads the core attributes. <br /></td></tr>
-<tr class="separator:gaf53f2c68c35f0bd4c048c212c859510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8430d6f739b43666a9f7d67b0ed08cb"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gae8430d6f739b43666a9f7d67b0ed08cb">I_CORE_GETINFO</a></td></tr>
+<tr class="memdesc:gae8430d6f739b43666a9f7d67b0ed08cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This requests reads the core attributes. <br /></td></tr>
+<tr class="separator:gae8430d6f739b43666a9f7d67b0ed08cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5098e31f3fc6c096f1b30d6d88a73ad9"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga5098e31f3fc6c096f1b30d6d88a73ad9">I_CORE_SETATTR</a></td></tr>
 <tr class="memdesc:ga5098e31f3fc6c096f1b30d6d88a73ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This requests writes the core attributes. <br /></td></tr>
@@ -65,24 +59,15 @@ Macros</h2></td></tr>
 <tr class="memitem:ga553cd81816094decf23ffd7070c3a274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga553cd81816094decf23ffd7070c3a274">I_CORE_SETPINFUNC</a></td></tr>
 <tr class="memdesc:ga553cd81816094decf23ffd7070c3a274"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___c_o_r_e.html#ga553cd81816094decf23ffd7070c3a274">More...</a><br /></td></tr>
 <tr class="separator:ga553cd81816094decf23ffd7070c3a274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f1705b30be917a00886af84a60f3e0c"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga8f1705b30be917a00886af84a60f3e0c">I_CORE_SLEEP</a></td></tr>
-<tr class="memdesc:ga8f1705b30be917a00886af84a60f3e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request powersdown the device. <br /></td></tr>
-<tr class="separator:ga8f1705b30be917a00886af84a60f3e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4680cb894578ddd4242691d727e49654"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga4680cb894578ddd4242691d727e49654">I_CORE_RESET</a></td></tr>
-<tr class="memdesc:ga4680cb894578ddd4242691d727e49654"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request resets the device. <br /></td></tr>
-<tr class="separator:ga4680cb894578ddd4242691d727e49654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3e7592889371a041783fdc713dafe54"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gae3e7592889371a041783fdc713dafe54">I_CORE_INVOKEBOOTLOADER</a></td></tr>
-<tr class="memdesc:gae3e7592889371a041783fdc713dafe54"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request invokes the bootloader. <br /></td></tr>
-<tr class="separator:gae3e7592889371a041783fdc713dafe54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab18399788c0a6653e37c6b51ab2fa796"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gab18399788c0a6653e37c6b51ab2fa796">I_CORE_SETCLKOUT</a></td></tr>
 <tr class="memdesc:gab18399788c0a6653e37c6b51ab2fa796"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___c_o_r_e.html#gab18399788c0a6653e37c6b51ab2fa796">More...</a><br /></td></tr>
 <tr class="separator:gab18399788c0a6653e37c6b51ab2fa796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad37592d62d290851b1a3d7d402f744bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gad37592d62d290851b1a3d7d402f744bb">I_CORE_SETCLKDIVIDE</a></td></tr>
 <tr class="memdesc:gad37592d62d290851b1a3d7d402f744bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___c_o_r_e.html#gad37592d62d290851b1a3d7d402f744bb">More...</a><br /></td></tr>
 <tr class="separator:gad37592d62d290851b1a3d7d402f744bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d2334e3f8e0ffa23c341c70a5cda580"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga4d2334e3f8e0ffa23c341c70a5cda580">I_CORE_GETMCUBOARDCONFIG</a></td></tr>
+<tr class="memdesc:ga4d2334e3f8e0ffa23c341c70a5cda580"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___c_o_r_e.html#ga4d2334e3f8e0ffa23c341c70a5cda580">More...</a><br /></td></tr>
+<tr class="separator:ga4d2334e3f8e0ffa23c341c70a5cda580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>

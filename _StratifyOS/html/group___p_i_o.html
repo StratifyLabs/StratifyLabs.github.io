@@ -17,9 +17,7 @@ title: Stratify OS Docs
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Pin Input/Output (PIO)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
@@ -28,25 +26,13 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The PIO module gives access to the pins including reading, writing, and configuring the direction register. The PIO module does not allow the pin to be configured for another function (such as UART TX).</p>
 <p>The following is an example of how to use the PIO in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="pio_8h.html">dev/pio.h</a>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> pio_example(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structpio__attr__t.html">pio_attr_t</a> attr;</div><div class="line">     <a class="code" href="structmcu__action__t.html">pio_action_t</a> action;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/pio0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line"></div><div class="line">     attr.output = (1&lt;&lt;1)|(1&lt;&lt;0);</div><div class="line">     attr.input = 0;</div><div class="line">     <span class="comment">//this will configure pins 0 and 1 of PIO Port 0 as outputs</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___p_i_o.html#gae851f29f89a1b7d8450f38a76ac0eed1">I_PIO_SETATTR</a>, &amp;attr) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to configure peripheral pins (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//this will set pin 0 of PIO Port 0</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___p_i_o.html#gac688f856f112a8777b10cd07ace86e76">I_PIO_SETMASK</a>, (<span class="keywordtype">void</span>*)((1&lt;&lt;0))) ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to set pin (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//this will clear pin 1 of PIO 0</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___p_i_o.html#gaa07a1d1cad90750308b8524fa965d63f">I_PIO_CLRMASK</a>, (<span class="keywordtype">void</span>*)((1&lt;&lt;1))) ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to clear pin (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpio__t.html">pio_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO port and pin.  <a href="structpio__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpio__attr__t.html">pio_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIO Attribute Data Structure.  <a href="structpio__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpio__action__data__t.html">pio_action_data_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data struct for passing data to callbacks.  <a href="structpio__action__data__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="pio_8h.html">dev/pio.h</a>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> pio_example(){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     pio_attr_t attr;</div><div class="line">     pio_action_t action;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/pio0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line"></div><div class="line">     attr.output = (1&lt;&lt;1)|(1&lt;&lt;0);</div><div class="line">     attr.input = 0;</div><div class="line">     <span class="comment">//this will configure pins 0 and 1 of PIO Port 0 as outputs</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___p_i_o.html#gae851f29f89a1b7d8450f38a76ac0eed1">I_PIO_SETATTR</a>, &amp;attr) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to configure peripheral pins (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//this will set pin 0 of PIO Port 0</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___p_i_o.html#gac688f856f112a8777b10cd07ace86e76">I_PIO_SETMASK</a>, (<span class="keywordtype">void</span>*)((1&lt;&lt;0))) ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to set pin (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//this will clear pin 1 of PIO 0</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___p_i_o.html#gaa07a1d1cad90750308b8524fa965d63f">I_PIO_CLRMASK</a>, (<span class="keywordtype">void</span>*)((1&lt;&lt;1))) ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to clear pin (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga24c3a3828dccf4b615bcdc73285a5c23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga24c3a3828dccf4b615bcdc73285a5c23"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga24c3a3828dccf4b615bcdc73285a5c23">I_PIO_ATTR</a></td></tr>
-<tr class="memdesc:ga24c3a3828dccf4b615bcdc73285a5c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get the attributes. <br /></td></tr>
-<tr class="separator:ga24c3a3828dccf4b615bcdc73285a5c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c9082b2c58d070d2c65e3490b24246b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7c9082b2c58d070d2c65e3490b24246b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga7c9082b2c58d070d2c65e3490b24246b">I_PIO_GETINFO</a></td></tr>
+<tr class="memdesc:ga7c9082b2c58d070d2c65e3490b24246b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get the attributes. <br /></td></tr>
+<tr class="separator:ga7c9082b2c58d070d2c65e3490b24246b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae851f29f89a1b7d8450f38a76ac0eed1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae851f29f89a1b7d8450f38a76ac0eed1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#gae851f29f89a1b7d8450f38a76ac0eed1">I_PIO_SETATTR</a></td></tr>
 <tr class="memdesc:gae851f29f89a1b7d8450f38a76ac0eed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to set the attributes. <br /></td></tr>
@@ -67,13 +53,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga39c300857261b172b08d471e1586a261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga39c300857261b172b08d471e1586a261">I_PIO_SET</a></td></tr>
 <tr class="memdesc:ga39c300857261b172b08d471e1586a261"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga39c300857261b172b08d471e1586a261">More...</a><br /></td></tr>
 <tr class="separator:ga39c300857261b172b08d471e1586a261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafca6496338c7821c25bd946055328197"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a></td></tr>
-<tr class="separator:gafca6496338c7821c25bd946055328197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5364eeae1649d633e476aedff241eaf8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga5364eeae1649d633e476aedff241eaf8">pio_action_t</a></td></tr>
-<tr class="separator:ga5364eeae1649d633e476aedff241eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -136,120 +115,73 @@ Enumerations</h2></td></tr>
 <p>This request sets the pins that are sets in the mask. The ctl argument is the mask. The following code sets bits 0 to 4 on port 4: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;pio_fd = open(&quot;/dev/pio4&quot;, O_RDWR&quot;);</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(pio_fd, I_PIO_SETMASK, 0x0F);</div></div><!-- fragment --> 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga5364eeae1649d633e476aedff241eaf8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a> <a class="el" href="group___p_i_o.html#ga5364eeae1649d633e476aedff241eaf8">pio_action_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines a PIO action.</p>
-<p>See <a class="el" href="group___p_i_o.html#ga6119418a0587e58206fc76353700ec72">pio_action_event_t</a> for PIO specific events. There are no PIO specific channel definitions. </p>
-
-</div>
-</div>
-<a class="anchor" id="gafca6496338c7821c25bd946055328197"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef uint32_t <a class="el" href="group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This is an MCU specific typedef of the PIO sample size. For 32-bit MCU's this is typically a uint32_t. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga6119418a0587e58206fc76353700ec72"></a>
+<a class="anchor" id="ga0c2b3d5e7a698e36b34db9eea836cf91"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___p_i_o.html#ga6119418a0587e58206fc76353700ec72">pio_action_event_t</a></td>
+          <td class="memname">enum <a class="el" href="group___p_i_o.html#ga0c2b3d5e7a698e36b34db9eea836cf91">pio_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This lists defines the values to use for the event when setting the action for a pin. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6119418a0587e58206fc76353700ec72a9b8445a415d5960b25bd2eaaa54fb070"></a>PIO_ACTION_EVENT_NONE&#160;</td><td class="fielddoc">
-<p>Specifies No PIO event </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a87ab487492803226f03df276ee386257"></a>PIO_FLAG_SET_INPUT&#160;</td><td class="fielddoc">
+<p>Configure the pin as an input </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6119418a0587e58206fc76353700ec72a0622c02facf6431e34b38797cf1b3a8c"></a>PIO_ACTION_EVENT_RISING&#160;</td><td class="fielddoc">
-<p>Specifies a rising edge on the PIO </p>
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91ac2aba738133df3a90960352442ffc9c9"></a>PIO_FLAG_SET_OUTPUT&#160;</td><td class="fielddoc">
+<p>Configure the pin as an output </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6119418a0587e58206fc76353700ec72ad512aa731c7ff7fa2e21f9116d4c77c3"></a>PIO_ACTION_EVENT_FALLING&#160;</td><td class="fielddoc">
-<p>Specifies a falling edge on the PIO </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6119418a0587e58206fc76353700ec72ae400ad8e2478e9476771f31a12acf742"></a>PIO_ACTION_EVENT_BOTH&#160;</td><td class="fielddoc">
-<p>Specifies both edges on the PIO </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="gaf822c507345363a31e1e4d5fb54f6ab6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___p_i_o.html#gaf822c507345363a31e1e4d5fb54f6ab6">pio_mode_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the PIN mode options. Not all options are supported on all architectures. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6ad07098aeb1a97c62f7d0cd844402def5"></a>PIO_MODE_INPUT&#160;</td><td class="fielddoc">
-<p>Input flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a2bea82834493634f2a1eb09f3b469a3c"></a>PIO_MODE_OUTPUT&#160;</td><td class="fielddoc">
-<p>Output flag </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6abc2aaf94b4e3b911f3dbe6143c26d242"></a>PIO_MODE_PULLUP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a677704677ba5f9116f5350c03087e14c"></a>PIO_FLAG_IS_PULLUP&#160;</td><td class="fielddoc">
 <p>Use the built-in pullup </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a083e5177f03913050981025692020df6"></a>PIO_MODE_PULLDOWN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a60d97cac1b46777dfa83f066999d230f"></a>PIO_FLAG_IS_PULLDOWN&#160;</td><td class="fielddoc">
 <p>Use the built-in pull-down </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a02dee44e071e48660a92dd488d713037"></a>PIO_MODE_REPEATER&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91adf69286517d448c064c5cc274f0c57c4"></a>PIO_FLAG_IS_REPEATER&#160;</td><td class="fielddoc">
 <p>Use the built-in repeater function </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6aa3a6c14048f8f3722a1ff870759ec3e2"></a>PIO_MODE_FLOAT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a14a4ca40fd64be9ac5d763d16e4a7962"></a>PIO_FLAG_IS_FLOAT&#160;</td><td class="fielddoc">
 <p>Leave the pin floating </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6ac7eb004ffe85d69e643231832b64e1a2"></a>PIO_MODE_OUTPUT_2MHZ&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a7303e1963dc172c5f700360c58bbfcc7"></a>PIO_FLAG_IS_SPEED_LOW&#160;</td><td class="fielddoc">
 <p>Max speed 2Mhz (stm32f only) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a2507b7cd3a592cefa7e4d144b9ef8087"></a>PIO_MODE_FAST_MODE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91af3d09fab2d89c7fc7dbae79fd5b6db38"></a>PIO_FLAG_IS_SPEED_MEDIUM&#160;</td><td class="fielddoc">
 <p>Add fast mode slew rate </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6af35dd8d87f06383c569ae0828e8aba3c"></a>PIO_MODE_OUTPUT_10MHZ&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a5aeecf7a1832ee7cd8e308472fe6ad48"></a>PIO_FLAG_IS_SPEED_HIGH&#160;</td><td class="fielddoc">
 <p>Max speed 10Mhz (stm32f only) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a9a29a714dae5d85e1819195d8550ddd5"></a>PIO_MODE_OUTPUT_50MHZ&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a58851349a47b5c9a4ac4bee0ad826edd"></a>PIO_FLAG_IS_SPEED_BLAZING&#160;</td><td class="fielddoc">
 <p>Max speed 50Mhz (stm32f only) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6ae53278871dfc1db6cc6e28ff59ce30d4"></a>PIO_MODE_OPENDRAIN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a9d1b6a9df2f09772b8144c70ba4e08ba"></a>PIO_FLAG_IS_OPENDRAIN&#160;</td><td class="fielddoc">
 <p>Configure as open drain </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a70e2d7b0b1dfc9af38876acd69410bb5"></a>PIO_MODE_HYSTERESIS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a00079c7a88c1d6013c97f96bde765e82"></a>PIO_FLAG_IS_HYSTERESIS&#160;</td><td class="fielddoc">
 <p>Enable hysteresis on pin </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6a510450851ea01b20c51597dcde8b9090"></a>PIO_MODE_DIRONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a940880dd883958fd5948839c8deac0fb"></a>PIO_FLAG_IS_DIRONLY&#160;</td><td class="fielddoc">
 <p>Only set input/output (ignore other settings) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6ad5a32857e3d26b7a96477967aa5ee8d8"></a>PIO_MODE_ANALOG&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a40471d2ad572834af8620640d05b924d"></a>PIO_FLAG_IS_ANALOG&#160;</td><td class="fielddoc">
 <p>Use an analog rather than digital input </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6aa47b3cb844309b680ebf1593909b1853"></a>PIO_MODE_INVERT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91a01c879f85ca81f3349edb1d7953bad6a"></a>PIO_FLAG_IS_INVERT&#160;</td><td class="fielddoc">
 <p>Invert the logic on the pin </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf822c507345363a31e1e4d5fb54f6ab6ae5569f94db4bad32f5541533234524ff"></a>PIO_MODE_FILTER&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91af2cdb0a58b79d23c84e52a552341f2da"></a>PIO_FLAG_IS_FILTER&#160;</td><td class="fielddoc">
 <p>Filter noise on pin </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91ac34d4af90f0239f983305fe877eeff59"></a>PIO_FLAG_SET&#160;</td><td class="fielddoc">
+<p>Set the bits in the mask </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91ad37e3060f241a60266f878979578ca10"></a>PIO_FLAG_CLEAR&#160;</td><td class="fielddoc">
+<p>Clear the bits in the mask </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0c2b3d5e7a698e36b34db9eea836cf91aa88f81747ca708752df34dd43a02c7d2"></a>PIO_FLAG_ASSIGN&#160;</td><td class="fielddoc">
+<p>Assign the pinmask value to the port </p>
 </td></tr>
 </table>
 

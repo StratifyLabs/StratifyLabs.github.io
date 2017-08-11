@@ -1,9 +1,0 @@
-<map id="include/iface/dev/rtc.h" name="include/iface/dev/rtc.h">
-<area shape="rect" id="node2" href="$__gettimeofday_8c.html" title="src/sys/time/_gettimeofday.c" alt="" coords="4,81,192,106"/>
-<area shape="rect" id="node3" href="$__settimeofday_8c.html" title="src/sys/time/_settimeofday.c" alt="" coords="217,81,404,106"/>
-<area shape="rect" id="node4" href="$hibernate_8c.html" title="src/sys/time/hibernate.c" alt="" coords="429,81,589,106"/>
-<area shape="rect" id="node5" href="$iface_2link_8h.html" title="Link Layer Header. " alt="" coords="614,81,743,106"/>
-<area shape="rect" id="node6" href="$__exit_8c.html" title="src/sys/unistd/_exit.c" alt="" coords="433,155,577,181"/>
-<area shape="rect" id="node7" href="$sys_8h.html" title="include/iface/dev/sys.h" alt="" coords="601,155,756,181"/>
-<area shape="rect" id="node8" href="$__open_8c.html" title="src/sys/unistd/_open.c" alt="" coords="602,230,755,255"/>
-</map>

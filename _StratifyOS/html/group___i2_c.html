@@ -19,30 +19,29 @@ title: Stratify OS Docs
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Inter-Integrated Circuit (I2C) Master<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
+<div class="title">Inter-Integrated Circuit (I2C) Master or Slave<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>This module implements an I2C multi-master using two GPIO pins and a pin change interrupt. More information about accessing peripheral IO is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
-<p>The following is an example of how to write the I2C in an OS environment: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> access_i2c(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structi2c__attr__t.html">i2c_attr_t</a> attr;</div><div class="line">     <a class="code" href="structi2c__setup__t.html">i2c_reqattr_t</a> req;</div><div class="line">     u8 data[8];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/i2c0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.<a class="code" href="structi2c__attr__t.html#abe996f2e6c41e00b64bd652627fd515d">bitrate</a> = 4000000; <span class="comment">//Use a 400KHz I2C clock frequency</span></div><div class="line">          attr.<a class="code" href="structi2c__attr__t.html#ad292e59ddba02dda0d98a24fea46d9c4">pin_assign</a> = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;attr) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now use ioctl to setup a transfer operation</span></div><div class="line">     req.<a class="code" href="structi2c__setup__t.html#af4d3335551849a639d847934b3fcedf6">slave_addr</a> = 0x3F; <span class="comment">//This is the right-justified 7-bit or 10-bit slave address</span></div><div class="line">     req.<a class="code" href="structi2c__setup__t.html#af1ab036a59df5e072d19402fa456cb4e">transfer</a> = <a class="code" href="group___i2_c.html#gga3ad96dadad63bfad13256b053c868ac3a4493a827b39459a5bb65561dbf0640d3">I2C_TRANSFER_NORMAL</a>; <span class="comment">//This is a &quot;normal&quot;, see i2c_trasfer_mode_t for details</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___i2_c.html#ga2bc7c029d97669b7952c0b72609603be">I_I2C_SETUP</a>, &amp;req);</div><div class="line"></div><div class="line">     <span class="comment">//now read the I2C:  This will 1) Start 2) write the 8-bit ptr value 3) Restart 4) Read 8 bytes and 5) Stop</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 0, SEEK_SET); <span class="comment">//this is the ptr value</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, data, 8) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error Reading adc0 (%d)\n&quot;</span>&lt; errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
+<p>This module implements an I2C multi-master or slave bus.</p>
+<p>The following is an example of how to write the I2C in an OS environment: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> access_i2c(){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     i2c_attr_t attr;</div><div class="line">     i2c_reqattr_t req;</div><div class="line">     u8 data[8];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/i2c0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.bitrate = 4000000; <span class="comment">//Use a 400KHz I2C clock frequency</span></div><div class="line">          attr.pin_assign = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;attr) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now use ioctl to setup a transfer operation</span></div><div class="line">     req.slave_addr = 0x3F; <span class="comment">//This is the right-justified 7-bit or 10-bit slave address</span></div><div class="line">     req.transfer = I2C_TRANSFER_NORMAL; <span class="comment">//This is a &quot;normal&quot;, see i2c_trasfer_mode_t for details</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_I2C_SETUP, &amp;req);</div><div class="line"></div><div class="line">     <span class="comment">//now read the I2C:  This will 1) Start 2) write the 8-bit ptr value 3) Restart 4) Read 8 bytes and 5) Stop</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 0, SEEK_SET); <span class="comment">//this is the ptr value</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, data, 8) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error Reading adc0 (%d)\n&quot;</span>&lt; errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__setup__t.html">i2c_setup_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data used to setup I2C transfers.  <a href="structi2c__setup__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__info__t.html">i2c_info_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Info Data Structure.  <a href="structi2c__info__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__attr__t.html">i2c_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C IO Attributes.  <a href="structi2c__attr__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__pin__assignment__t.html">i2c_pin_assignment_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Pin Assignment.  <a href="structi2c__pin__assignment__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga2e2f2a9bd05dd3c79bbd35988cd3dbb0">I_I2C_ATTR</a></td></tr>
-<tr class="memdesc:ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the I2C attributes. <br /></td></tr>
-<tr class="separator:ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25f75c30568f91758d943e463e6f06f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga25f75c30568f91758d943e463e6f06f2"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga25f75c30568f91758d943e463e6f06f2">I_I2C_GETINFO</a></td></tr>
+<tr class="memdesc:ga25f75c30568f91758d943e463e6f06f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the I2C attributes. <br /></td></tr>
+<tr class="separator:ga25f75c30568f91758d943e463e6f06f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga963ce3908c1a1435a40671cb8631735c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga963ce3908c1a1435a40671cb8631735c"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga963ce3908c1a1435a40671cb8631735c">I_I2C_SETATTR</a></td></tr>
 <tr class="memdesc:ga963ce3908c1a1435a40671cb8631735c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the I2C attributes. <br /></td></tr>
@@ -51,63 +50,12 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gae2e682283b1316ec64d69633d76b6588">I_I2C_SETACTION</a></td></tr>
 <tr class="memdesc:gae2e682283b1316ec64d69633d76b6588"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the I2C action. <br /></td></tr>
 <tr class="separator:gae2e682283b1316ec64d69633d76b6588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bc7c029d97669b7952c0b72609603be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga2bc7c029d97669b7952c0b72609603be">I_I2C_SETUP</a></td></tr>
-<tr class="memdesc:ga2bc7c029d97669b7952c0b72609603be"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga2bc7c029d97669b7952c0b72609603be">More...</a><br /></td></tr>
-<tr class="separator:ga2bc7c029d97669b7952c0b72609603be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a37788a3d02cabfaa96fa0058306cff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga6a37788a3d02cabfaa96fa0058306cff">I_I2C_GETERR</a></td></tr>
-<tr class="memdesc:ga6a37788a3d02cabfaa96fa0058306cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga6a37788a3d02cabfaa96fa0058306cff">More...</a><br /></td></tr>
-<tr class="separator:ga6a37788a3d02cabfaa96fa0058306cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gacb09d3584b32f3efd8c8d50cc52b4c80"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gacb09d3584b32f3efd8c8d50cc52b4c80">i2c_action_t</a></td></tr>
-<tr class="separator:gacb09d3584b32f3efd8c8d50cc52b4c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga6a37788a3d02cabfaa96fa0058306cff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_I2C_GETERR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request can be used in non-blocking mode to check the error status of the last transmission. The <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl()</a> returns the error value. The ctl argument is NULL for this request. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;err = ioctl(i2c_fd, I_I2C_GETERR);</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga2bc7c029d97669b7952c0b72609603be"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_I2C_SETUP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This ioctl request sets up an I2C transfer. The third argument is a pointer to an i2c_reqattr_t data structure.</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;i2c_reqattr_t req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;char buf[32];</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;req.transfer = I2C_TRANSFER_NORMAL;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;req.slave_addr = 0x4C;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(i2c_fd, I_I2C_SETUP, &amp;req);</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;lseek(i2c_fd, loc, SEEK_SET); //loc is the location in the register map to read</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;read(i2c_fd, buf, 32);</div></div><!-- fragment --> 
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gacb09d3584b32f3efd8c8d50cc52b4c80"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a> <a class="el" href="group___i2_c.html#gacb09d3584b32f3efd8c8d50cc52b4c80">i2c_action_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines an I2C action. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gadb49720dc49f7d4e4cf9adbf2948e409"></a>
+<a class="anchor" id="gac36f475ca5b446f4fde4c9b90bec77c8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -118,89 +66,91 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This enumeration lists the errors which may occur when running an I2C operation. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a4b9fe6f1f00736f7579721c85433cd85"></a>I2C_STATE_NONE&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a5feee47669cdab4f25da4e0de0c16633"></a>I2C_ERROR_NONE&#160;</td><td class="fielddoc">
 <p>No errors </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a9bc582d4159c45394cc6c2c5dc4ad14b"></a>I2C_ERROR_START&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a9bc582d4159c45394cc6c2c5dc4ad14b"></a>I2C_ERROR_START&#160;</td><td class="fielddoc">
 <p>Error while starting </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a7e270c609e58ecf5bc7946ac67dfb066"></a>I2C_ERROR_WRITE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a7e270c609e58ecf5bc7946ac67dfb066"></a>I2C_ERROR_WRITE&#160;</td><td class="fielddoc">
 <p>Error while writing </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a6b7ba78b8ad1e491de04b31ab0ffbb8e"></a>I2C_ERROR_ACK&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a6b7ba78b8ad1e491de04b31ab0ffbb8e"></a>I2C_ERROR_ACK&#160;</td><td class="fielddoc">
 <p>Ack Error (most common error for a mis-wired hardware) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a37664a1000f758f1741ed9087903aad3"></a>I2C_ERROR_STOP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a37664a1000f758f1741ed9087903aad3"></a>I2C_ERROR_STOP&#160;</td><td class="fielddoc">
 <p>Error while stopping </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a2b7eecd3273ba4318b33f714fe81a140"></a>I2C_ERROR_MASTER_ACK&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a2b7eecd3273ba4318b33f714fe81a140"></a>I2C_ERROR_MASTER_ACK&#160;</td><td class="fielddoc">
 <p>The master could not create an ACK </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409aaa04dc8c79e3a0fac375e2f9447d55ee"></a>I2C_ERROR_BUS_BUSY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8aaa04dc8c79e3a0fac375e2f9447d55ee"></a>I2C_ERROR_BUS_BUSY&#160;</td><td class="fielddoc">
 <p>The Bus is busy (happens with multi-masters on bus) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a4ad4a8f910e34819bb7e934495c729ad"></a>I2C_ERROR_ARBITRATION_LOST&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggac36f475ca5b446f4fde4c9b90bec77c8a4ad4a8f910e34819bb7e934495c729ad"></a>I2C_ERROR_ARBITRATION_LOST&#160;</td><td class="fielddoc">
 <p>Arbitration lost on multi-master bus </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a37703115a79d1a057040c1a36918383b"></a>I2C_STATE_RD_OP&#160;</td><td class="fielddoc">
-<p>Internal Use only </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a8bf13f39fa366522a3d23a08fc707c0b"></a>I2C_STATE_WR_OP&#160;</td><td class="fielddoc">
-<p>Internal Use only </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a3160a906d0391441d13cc8b44068d538"></a>I2C_STATE_RD_16_OP&#160;</td><td class="fielddoc">
-<p>Internal Use only </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a8b66cb9ef1827bf28e992be1c5018006"></a>I2C_STATE_WR_16_OP&#160;</td><td class="fielddoc">
-<p>Internal Use only </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb49720dc49f7d4e4cf9adbf2948e409a223c58456e8ef3357afcc6ad65f34788"></a>I2C_STATE_WR_PTR_ONLY&#160;</td><td class="fielddoc">
-<p>Internal use only </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga3ad96dadad63bfad13256b053c868ac3"></a>
+<a class="anchor" id="ga35689050a00ae4d0da14a1abe0e38dc3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___i2_c.html#ga3ad96dadad63bfad13256b053c868ac3">i2c_transfer_t</a></td>
+          <td class="memname">enum <a class="el" href="group___i2_c.html#ga35689050a00ae4d0da14a1abe0e38dc3">i2c_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This lists the I2C setup transfer types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga3ad96dadad63bfad13256b053c868ac3a4493a827b39459a5bb65561dbf0640d3"></a>I2C_TRANSFER_NORMAL&#160;</td><td class="fielddoc">
-<p>This specifies the IOCTL mode value for Normal. This means <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read()</a> performs:</p><ul>
-<li>Start</li>
-<li>Write value to ptr</li>
-<li>Restart</li>
-<li>Read I2C data</li>
-<li>Stop</li>
-</ul>
-<p>And <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write()</a> performs</p><ul>
-<li>Start</li>
-<li>Write value to ptr</li>
-<li>Write data</li>
-<li>Stop </li>
-</ul>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3afdac6266e166155b1609f80e271c376c"></a>I2C_FLAG_SET_MASTER&#160;</td><td class="fielddoc">
+<p>Operate as a master I2C bus </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga3ad96dadad63bfad13256b053c868ac3a9b2805ac15bc798f7082cb5ef4c84e3c"></a>I2C_TRANSFER_NORMAL_16&#160;</td><td class="fielddoc">
-<p>This specifies the IOCTL mode value for Normal but uses a 16-bit pointer rather than an 8-bit pointer value. </p>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a3e0646aa6d900d8a52d295a14b2e146e"></a>I2C_FLAG_SET_SLAVE&#160;</td><td class="fielddoc">
+<p>Operate as a slave (ignored if master is set) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga3ad96dadad63bfad13256b053c868ac3a455447d1240251898be01a1c75e89057"></a>I2C_TRANSFER_READ_ONLY&#160;</td><td class="fielddoc">
-<p>This specifies the IOCTL mode value for read only. This means the <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read()</a> performs: </p>
-<ul>
-<li>Start</li>
-<li>Read I2C data</li>
-<li>Stop</li>
-</ul>
-<p>The <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write()</a> function is not available in this mode. </p>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a22fe56a26d0865eafd8495d296fd28c8"></a>I2C_FLAG_IS_SLAVE_ACK_GENERAL_CALL&#160;</td><td class="fielddoc">
+<p>If slave operation, ack general call </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga3ad96dadad63bfad13256b053c868ac3a2693c0564dac87bc78012b3f5a495d9d"></a>I2C_TRANSFER_WRITE_PTR&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3af903f9c25cf176a36eebef867f28e0e0"></a>I2C_FLAG_IS_PULLUP&#160;</td><td class="fielddoc">
+<p>Enable internal pullups if available (ignore otherwise) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3ae1b939747c495a813d61102c9630a752"></a>I2C_FLAG_PREPARE_PTR_DATA&#160;</td><td class="fielddoc">
+<p>This prepares the driver to write the ptr then read/write data </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a0ea5e30ac4d7d71f113f21426eb3b42a"></a>I2C_FLAG_IS_PTR_16&#160;</td><td class="fielddoc">
+<p>This tells the driver to write a 16-bit ptr then read/write data (use with I2C_FLAG_PREPARE_PTR_DATA or I2C_FLAG_PREPARE_PTR) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3af8599591794682efd40cd2c84853bd05"></a>I2C_FLAG_PREPARE_PTR&#160;</td><td class="fielddoc">
 <p>This will write the ptr value only without writing or reading any data. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a3ced669585db4c385ec9fb4e1be92015"></a>I2C_FLAG_PREPARE_DATA&#160;</td><td class="fielddoc">
+<p>This will read/write data without first writing the pointer information </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a1ec6b5e272a895da2d62faaf17616df8"></a>I2C_FLAG_IS_SLAVE_ADDR0&#160;</td><td class="fielddoc">
+<p>If hardware supports multiple slave addrs, use the first slot (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a634ce9cbc933667fb6f72f0b57de1842"></a>I2C_FLAG_IS_SLAVE_ADDR1&#160;</td><td class="fielddoc">
+<p>If hardware supports multiple slave addrs, use the second slot </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a8bf570a5dd4efc698d4f71b7425ab957"></a>I2C_FLAG_IS_SLAVE_ADDR2&#160;</td><td class="fielddoc">
+<p>If hardware supports multiple slave addrs, use the third slot </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a8aaf943abac0d7146e5cfd3d601adcc6"></a>I2C_FLAG_IS_SLAVE_ADDR3&#160;</td><td class="fielddoc">
+<p>If hardware supports multiple slave addrs, use the fourth slot </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a653c11befa1f8c150c58e77b23fd4a08"></a>I2C_FLAG_IS_SLAVE_PTR_8&#160;</td><td class="fielddoc">
+<p>Use a 8-bit address pointer when accessing data (default) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3aa8d708b2da59c6bd8002a2957e9d5919"></a>I2C_FLAG_IS_SLAVE_PTR_16&#160;</td><td class="fielddoc">
+<p>Use a 16-bit address pointer when accessing data (set automatically is size &gt; 255) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a3440a0543ac0b2a43e26dab2d5b303bd"></a>I2C_FLAG_RESET&#160;</td><td class="fielddoc">
+<p>Reset the state of the I2C </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga35689050a00ae4d0da14a1abe0e38dc3a283c7a933378c6d5c6ad63e4fc659f0c"></a>I2C_FLAG_IS_NO_STOP&#160;</td><td class="fielddoc">
+<p>Don't issue a stop condition when complete (use with I2C_FLAG_PREPARE_DATA) </p>
 </td></tr>
 </table>
 

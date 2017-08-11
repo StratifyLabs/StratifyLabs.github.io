@@ -37,10 +37,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga2a44402f986b7f8b5e27b1d5852fbcbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2a44402f986b7f8b5e27b1d5852fbcbf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___q_e_i.html#ga2a44402f986b7f8b5e27b1d5852fbcbf">I_QEI_ATTR</a></td></tr>
-<tr class="memdesc:ga2a44402f986b7f8b5e27b1d5852fbcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the QEI attributes. <br /></td></tr>
-<tr class="separator:ga2a44402f986b7f8b5e27b1d5852fbcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga231f6649e1b81107b97ca01185476846"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga231f6649e1b81107b97ca01185476846"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___q_e_i.html#ga231f6649e1b81107b97ca01185476846">I_QEI_GETINFO</a></td></tr>
+<tr class="memdesc:ga231f6649e1b81107b97ca01185476846"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the QEI attributes. <br /></td></tr>
+<tr class="separator:ga231f6649e1b81107b97ca01185476846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99c807b9988284bf47ff3168f62d7de8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga99c807b9988284bf47ff3168f62d7de8"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___q_e_i.html#ga99c807b9988284bf47ff3168f62d7de8">I_QEI_SETATTR</a></td></tr>
 <tr class="memdesc:ga99c807b9988284bf47ff3168f62d7de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the QEI attributes. <br /></td></tr>
@@ -58,9 +58,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga0063233e3e292589f18bcb3b4fed2c8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___q_e_i.html#ga0063233e3e292589f18bcb3b4fed2c8e">I_QEI_GETINDEX</a></td></tr>
 <tr class="memdesc:ga0063233e3e292589f18bcb3b4fed2c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga0063233e3e292589f18bcb3b4fed2c8e">More...</a><br /></td></tr>
 <tr class="separator:ga0063233e3e292589f18bcb3b4fed2c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8062a40baffcb7dfcdfb120e0d70ef58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___q_e_i.html#ga8062a40baffcb7dfcdfb120e0d70ef58">I_QEI_RESET</a></td></tr>
-<tr class="memdesc:ga8062a40baffcb7dfcdfb120e0d70ef58"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga8062a40baffcb7dfcdfb120e0d70ef58">More...</a><br /></td></tr>
-<tr class="separator:ga8062a40baffcb7dfcdfb120e0d70ef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -112,89 +109,46 @@ Enumerations</h2></td></tr>
 <p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;int32_t velocity;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;velocity = ioctl(qei_fd, I_QEI_GETVELOCITY);</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ga8062a40baffcb7dfcdfb120e0d70ef58"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_QEI_RESET</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request resets the QEI position. The ctl argument is one or more <a class="el" href="group___q_e_i.html#ga6dcb53fdb9caa7943bba45d545ad1290">qei_reset_mask_t</a> values.</p>
-<p>Example (resets the position and velocity but not the index count): </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;ioctl(qei_fd, I_QEI_RESETPOS, (QEI_RESET_POS|QEI_RESET_VELOCITY));</div></div><!-- fragment --> 
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga579a2b499d0668b9d8743bfbd71a554a"></a>
+<a class="anchor" id="gabb337ae1680e0890cc5434bd84a3442f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___q_e_i.html#ga579a2b499d0668b9d8743bfbd71a554a">qei_action_event_mask_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>These are the events for <a class="el" href="group___q_e_i.html#gac00bb8b9fa6cc5583693a020800bdba4">qei_action_t</a>. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga579a2b499d0668b9d8743bfbd71a554aaf127f1ad0df7d15e6e21a8e85ebce5aa"></a>QEI_ACTION_EVENT_INDEX&#160;</td><td class="fielddoc">
-<p>A pulse on the index line </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga579a2b499d0668b9d8743bfbd71a554aabcc7510f36a5502b62c144de87be56dc"></a>QEI_ACTION_EVENT_DIRCHANGE&#160;</td><td class="fielddoc">
-<p>A change in direction </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga0b9ae3fe9d097d35283efa54afad29b4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___q_e_i.html#ga0b9ae3fe9d097d35283efa54afad29b4">qei_mode_t</a></td>
+          <td class="memname">enum <a class="el" href="group___q_e_i.html#gabb337ae1680e0890cc5434bd84a3442f">qei_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This defines the bits used in the "mode" member of <a class="el" href="structqei__attr__t.html">qei_attr_t</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga0b9ae3fe9d097d35283efa54afad29b4ace874063956aa81e10e7fcb9e7f9e83c"></a>QEI_MODE_INVERT_DIR&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442faa08339c61be95a01765f28e3b7bc07c0"></a>QEI_FLAG_SET&#160;</td><td class="fielddoc">
+<p>Set the QEI attributes </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa41d533ddaa259cbddeb29075b77940d8"></a>QEI_FLAG_IS_INVERT_DIR&#160;</td><td class="fielddoc">
 <p>Invert the direction </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga0b9ae3fe9d097d35283efa54afad29b4a6bf8f789c9d068ab076433f0d0f43853"></a>QEI_MODE_SIGNAL_MODE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa4d1ba0e4ba87c4ad0e512bd241d817eb"></a>QEI_FLAG_IS_SIGNAL_MODE&#160;</td><td class="fielddoc">
 <p>Use signal mode </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga0b9ae3fe9d097d35283efa54afad29b4a030f5acfb1ccdb62761c8af4d736463a"></a>QEI_MODE_DOUBLE_EDGE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa0f4da161f48e6222249155f2d3cb5a1d"></a>QEI_FLAG_IS_DOUBLE_EDGE&#160;</td><td class="fielddoc">
 <p>Count both edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga0b9ae3fe9d097d35283efa54afad29b4a737b2d5a1053061549cbb89abe512797"></a>QEI_MODE_INVERT_INDEX&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa523e8cdc5c9933f4ccc33cb50a0293e9"></a>QEI_FLAG_IS_INVERT_INDEX&#160;</td><td class="fielddoc">
 <p>Invert the index </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga6dcb53fdb9caa7943bba45d545ad1290"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___q_e_i.html#ga6dcb53fdb9caa7943bba45d545ad1290">qei_reset_mask_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the bitmask used with the <a class="el" href="group___q_e_i.html#ga8062a40baffcb7dfcdfb120e0d70ef58">I_QEI_RESET</a> request. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6dcb53fdb9caa7943bba45d545ad1290ab4a34c9fd60647b1873b02fde80a37c3"></a>QEI_RESET_POS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa0cc9bf789267b78a216376dafcd88d83"></a>QEI_FLAG_RESET&#160;</td><td class="fielddoc">
+<p>Reset the QEI </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fad2b725a5ef57e6be3603a42922a384ba"></a>QEI_FLAG_IS_RESET_POS&#160;</td><td class="fielddoc">
 <p>Reset the position </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6dcb53fdb9caa7943bba45d545ad1290a661846e489fd65bb36eb4eb695357581"></a>QEI_RESET_VELOCITY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa69f85b6f278185f693d204873bf882aa"></a>QEI_FLAG_IS_RESET_VELOCITY&#160;</td><td class="fielddoc">
 <p>Reset the velocity </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6dcb53fdb9caa7943bba45d545ad1290ab7854470e60ce02475815449c07b9ede"></a>QEI_RESET_INDEX&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fad723dc627b3615d138f39d830930961c"></a>QEI_FLAG_IS_RESET_INDEX&#160;</td><td class="fielddoc">
 <p>Reset the index count </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6dcb53fdb9caa7943bba45d545ad1290a17aba7ea6a7d28645d675950c1387ac0"></a>QEI_RESET_POS_ONINDEX&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabb337ae1680e0890cc5434bd84a3442fa4738e98cc9eeb33c4811e7b72712adf6"></a>QEI_FLAG_IS_RESET_POS_ONINDEX&#160;</td><td class="fielddoc">
 <p>Reset the position on the next index pulse </p>
 </td></tr>
 </table>

@@ -7,22 +7,23 @@ tags : [embedded, tutorial]
 number: 10
 ---
 
-The following is a list of the C order of operations from highest precendence to lowest.  
-Operators within the same group have equal precendence and evaluate lefto-to-right 
+The following is a list of the C order of operations from highest precedence to lowest.  
+Operators within the same group have equal precedence and evaluate left-to-right
 or right-to-left as indicated.
 
 ### Left-to-Right
 
 - ++ post increment
-- -- post decrement
+- \-\- post decrement
 - () function call
 - [] array subscripting
+- . structure/union member selection
 - -> element selection via pointer
 
 ### Right-to-Left
 
 - ++ pre increment
-- <span>--</span> pre decrement
+- \-\- pre decrement
 - \+ unary plus
 - \- unary minus
 - ! logical not
@@ -70,7 +71,7 @@ or right-to-left as indicated.
 
 ### Left-to-Right
 
-- | bitwise or
+- \| bitwise or
 
 ### Left-to-Right
 
@@ -78,7 +79,7 @@ or right-to-left as indicated.
 
 ### Left-to-Right
 
-- || logical or
+- \|\| logical or
 
 ### Left-to-Right
 

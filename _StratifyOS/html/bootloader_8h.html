@@ -16,7 +16,7 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -30,23 +30,13 @@ title: Stratify OS Docs
 
 <p>Analog to Digital Converter Header File.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;iface/link_transport.h&quot;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
-<code>#include &quot;mcu/types.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="pio_8h.html">iface/dev/pio.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;mcu/types.h&quot;</code><br />
+<code>#include &quot;sos/link/transport.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__attr__t.html">bootloader_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootloader attributes.  <a href="structbootloader__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__attr__14x__t.html">bootloader_attr_14x_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootloader attributes.  <a href="structbootloader__attr__14x__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__api__t.html">bootloader_api_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootloader attributes.  <a href="structbootloader__api__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__info__t.html">bootloader_info_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootloader attributes.  <a href="structbootloader__info__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__writepage__t.html">bootloader_writepage_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="structbootloader__writepage__t.html#details">More...</a><br /></td></tr>
@@ -64,9 +54,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9282030ab69b36c283952c3b72136895"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga9282030ab69b36c283952c3b72136895">I_BOOTLOADER_ERASE</a></td></tr>
 <tr class="memdesc:ga9282030ab69b36c283952c3b72136895"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga9282030ab69b36c283952c3b72136895">More...</a><br /></td></tr>
 <tr class="separator:ga9282030ab69b36c283952c3b72136895"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7941dcf2dfee5d59c5d85a1317d037c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga7941dcf2dfee5d59c5d85a1317d037c2">I_BOOTLOADER_ATTR</a></td></tr>
-<tr class="memdesc:ga7941dcf2dfee5d59c5d85a1317d037c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga7941dcf2dfee5d59c5d85a1317d037c2">More...</a><br /></td></tr>
-<tr class="separator:ga7941dcf2dfee5d59c5d85a1317d037c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3886c771d61ed8d490f5e0c32f6f1a6e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga3886c771d61ed8d490f5e0c32f6f1a6e">I_BOOTLOADER_GETINFO</a></td></tr>
+<tr class="memdesc:ga3886c771d61ed8d490f5e0c32f6f1a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga3886c771d61ed8d490f5e0c32f6f1a6e">More...</a><br /></td></tr>
+<tr class="separator:ga3886c771d61ed8d490f5e0c32f6f1a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6bdf82ba5bb14fd967bb360a754ecd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#gad6bdf82ba5bb14fd967bb360a754ecd6">I_BOOTLOADER_RESET</a></td></tr>
 <tr class="memdesc:gad6bdf82ba5bb14fd967bb360a754ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#gad6bdf82ba5bb14fd967bb360a754ecd6">More...</a><br /></td></tr>
 <tr class="separator:gad6bdf82ba5bb14fd967bb360a754ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>

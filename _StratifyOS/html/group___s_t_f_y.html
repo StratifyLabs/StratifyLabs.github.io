@@ -30,7 +30,8 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsignal__callback__t.html">signal_callback_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsos__board__config__t.html">sos_board_config_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stratify Board Configuration Structure.  <a href="structsos__board__config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
@@ -43,13 +44,11 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group___p_o_s_i_x"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_o_s_i_x.html">POSIX</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group___u_s_b___d_e_v"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b___d_e_v.html">USB Device</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1c6d5de492ac61ad29aec7aa9a436bbf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;&quot;2.0.0&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;&quot;3.0.0&quot;</td></tr>
 <tr class="memdesc:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version. <br /></td></tr>
 <tr class="separator:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -59,8 +58,8 @@ Functions</h2></td></tr>
 <tr class="separator:gae65665332278b3b47ba519a1aba0222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac149b46cea60ad2b3538a075d91ffacb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#gac149b46cea60ad2b3538a075d91ffacb">powerdown</a> (int seconds)</td></tr>
 <tr class="separator:gac149b46cea60ad2b3538a075d91ffacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad20ba7632740ffd6129845b9028a0d6b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#gad20ba7632740ffd6129845b9028a0d6b">initial_thread</a> (void *arg) 1</td></tr>
-<tr class="separator:gad20ba7632740ffd6129845b9028a0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46e6c06dae5493d81b29faaf3b810b48"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#ga46e6c06dae5493d81b29faaf3b810b48">sos_default_thread</a> (void *arg)</td></tr>
+<tr class="separator:ga46e6c06dae5493d81b29faaf3b810b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga822cdf991a028966eb7656caefacae21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#ga822cdf991a028966eb7656caefacae21">mkfs</a> (const char *path)</td></tr>
 <tr class="separator:ga822cdf991a028966eb7656caefacae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga03c0afc4d1b734bd2edfc7e5937b716a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#ga03c0afc4d1b734bd2edfc7e5937b716a">mount</a> (const char *path)</td></tr>
@@ -75,8 +74,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gace57c1587a1b9898b868e269d8a0e2ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#gace57c1587a1b9898b868e269d8a0e2ba">kernel_request</a> (int request, void *data) 1</td></tr>
 <tr class="memdesc:gace57c1587a1b9898b868e269d8a0e2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be implemented by user. Default returns zero.  <a href="#gace57c1587a1b9898b868e269d8a0e2ba">More...</a><br /></td></tr>
 <tr class="separator:gace57c1587a1b9898b868e269d8a0e2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7e7d69325cf91d2c2a4ba062a11324d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_t_f_y.html#ga7e7d69325cf91d2c2a4ba062a11324d5">signal_callback</a> (void *context, mcu_event_t data)</td></tr>
-<tr class="separator:ga7e7d69325cf91d2c2a4ba062a11324d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gae65665332278b3b47ba519a1aba0222b"></a>
@@ -100,23 +97,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="gad20ba7632740ffd6129845b9028a0d6b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* initial_thread </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>arg</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function is weakly bound to code that initializes each filesystem and starts any processes that are designed to auto-run. It can be completely replaced so that users can customize the startup sequence. </p>
 
 </div>
 </div>
@@ -264,13 +244,13 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Launch an application from a data file system.</p>
 <p>The options are:</p><ul>
-<li>LINK_APPFS_EXEC_OPTIONS_REPLACE</li>
-<li>LINK_APPFS_EXEC_OPTIONS_FLASH</li>
-<li>LINK_APPFS_EXEC_OPTIONS_STARTUP (only with LINK_APPFS_EXEC_OPTIONS_FLASH)</li>
-<li>LINK_APPFS_EXEC_OPTIONS_REPLACE</li>
-<li>LINK_APPFS_EXEC_OPTIONS_ORPHAN</li>
+<li>APPFS_FLAG_IS_REPLACE</li>
+<li>APPFS_FLAG_IS_FLASH</li>
+<li>APPFS_FLAG_IS_STARTUP (only with APPFS_FLAG_IS_FLASH)</li>
+<li>APPFS_FLAG_IS_REPLACE</li>
+<li>APPFS_FLAG_IS_ORPHAN</li>
 </ul>
-<p>Here is an example of launching a new application: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;caos.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;pid_t p;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;int status;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;char exec_path[PATH_MAX];</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;p = launch(&quot;/home/HelloWorld&quot;, exec_path, 0, LINK_APPFS_EXEC_OPTIONS_FLASH, 0, 0, 0);</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;wait(&amp;status); //wait until hello world is done running</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;unlink(exec_path); //delete the installed image (or just leave it there to run again)</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>Here is an example of launching a new application: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;caos.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;pid_t p;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;int status;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;char exec_path[PATH_MAX];</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;p = launch(&quot;/home/HelloWorld&quot;, exec_path, 0, APPFS_FLAG_IS_FLASH, 0, 0, 0);</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;wait(&amp;status); //wait until hello world is done running</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;unlink(exec_path); //delete the installed image (or just leave it there to run again)</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>Path to launch binary </td></tr>
     <tr><td class="paramname">exec_dest</td><td>The path to store the path where the binary is installed (e.g. /app/flash/0-HelloWorld) </td></tr>
@@ -349,33 +329,21 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga7e7d69325cf91d2c2a4ba062a11324d5"></a>
+<a class="anchor" id="ga46e6c06dae5493d81b29faaf3b810b48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int signal_callback </td>
+          <td class="memname">void* sos_default_thread </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>context</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>arg</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">mcu_event_t&#160;</td>
-          <td class="paramname"><em>data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This function can be set as the callback for <a class="el" href="structmcu__action__t.html">mcu_action_t</a>. In this case, the context is pointing to a <a class="el" href="structsignal__callback__t.html">signal_callback_t</a>. When the event happens, it will send a signal to the specified task.</p>
-<p>If keep is non-zero, the signal will be sent each time the interrupt happens. Otherwise, the signal is just sent one time.</p>
-<p>In the example below, the thread below will receive a SIGUSR1 the next time the external interrupt goes low. The run_on_sigusr1() will execute when the signal is received.</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;pthread.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#include &lt;signal.h&gt;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;#include &lt;stfy/Hal.hpp&gt;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;void run_on_sigusr1(int a){</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     printf(&quot;got sigusr1\n&quot;);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;Eint intr(0);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;intr.init();</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;signal(SIGUSR1, (_sig_func_ptr)run_on_sigusr1);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;signal_callback_t sig; //this must be valid when the interrupt happens</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;sig.tid = pthread_self();</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;sig.signo = SIGUSR1;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;sig.keep = 0;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;intr.setaction(0, EINT_ACTION_EVENT_FALLING, signal_callback, &amp;sig);</div></div><!-- fragment --> 
+<p>This function is weakly bound to code that initializes each filesystem and starts any processes that are designed to auto-run. It can be completely replaced so that users can customize the startup sequence. </p>
+
 </div>
 </div>
 <a class="anchor" id="gaedcfb39a22d2dddb718d1d4e188f52de"></a>

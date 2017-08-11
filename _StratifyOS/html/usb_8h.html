@@ -16,14 +16,13 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">usb.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___u_s_b.html">Universal Serial Bus (USB)</a></div></div>  </div>
@@ -32,9 +31,7 @@ title: Stratify OS Docs
 
 <p>Universal Serial Bus Header File.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;mcu/types.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -44,61 +41,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gafef3e2779778d570731d60ca44227c0d"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gafef3e2779778d570731d60ca44227c0d">I_USB_ATTR</a></td></tr>
-<tr class="memdesc:gafef3e2779778d570731d60ca44227c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the USB attributes. <br /></td></tr>
-<tr class="separator:gafef3e2779778d570731d60ca44227c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6f6c4daba62bacea67d686703974644"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gad6f6c4daba62bacea67d686703974644">I_USB_SETATTR</a></td></tr>
-<tr class="memdesc:gad6f6c4daba62bacea67d686703974644"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the USB attributes. <br /></td></tr>
-<tr class="separator:gad6f6c4daba62bacea67d686703974644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7561bd1047753ea4d31750a6e169dcb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga7561bd1047753ea4d31750a6e169dcb1">I_USB_RESET</a></td></tr>
-<tr class="memdesc:ga7561bd1047753ea4d31750a6e169dcb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#ga7561bd1047753ea4d31750a6e169dcb1">More...</a><br /></td></tr>
-<tr class="separator:ga7561bd1047753ea4d31750a6e169dcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga01556db3ac51057a7b46248d3d82ebc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga01556db3ac51057a7b46248d3d82ebc3">I_USB_ATTACH</a></td></tr>
-<tr class="memdesc:ga01556db3ac51057a7b46248d3d82ebc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#ga01556db3ac51057a7b46248d3d82ebc3">More...</a><br /></td></tr>
-<tr class="separator:ga01556db3ac51057a7b46248d3d82ebc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dad0e52179b7ec389712b592e70e9cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga1dad0e52179b7ec389712b592e70e9cc">I_USB_DETACH</a></td></tr>
-<tr class="memdesc:ga1dad0e52179b7ec389712b592e70e9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#ga1dad0e52179b7ec389712b592e70e9cc">More...</a><br /></td></tr>
-<tr class="separator:ga1dad0e52179b7ec389712b592e70e9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14f78d39c2242b61c939abc54f8fbe99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga14f78d39c2242b61c939abc54f8fbe99">I_USB_CONFIGURE</a></td></tr>
-<tr class="memdesc:ga14f78d39c2242b61c939abc54f8fbe99"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#ga14f78d39c2242b61c939abc54f8fbe99">More...</a><br /></td></tr>
-<tr class="separator:ga14f78d39c2242b61c939abc54f8fbe99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga268ff33ef187038af7193f87b9fe9d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga268ff33ef187038af7193f87b9fe9d8b">I_USB_SETADDR</a></td></tr>
-<tr class="memdesc:ga268ff33ef187038af7193f87b9fe9d8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#ga268ff33ef187038af7193f87b9fe9d8b">More...</a><br /></td></tr>
-<tr class="separator:ga268ff33ef187038af7193f87b9fe9d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaafdf6965129a7bc8daf67ad1f39f8cf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gaafdf6965129a7bc8daf67ad1f39f8cf6">I_USB_RESETEP</a></td></tr>
-<tr class="memdesc:gaafdf6965129a7bc8daf67ad1f39f8cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gaafdf6965129a7bc8daf67ad1f39f8cf6">More...</a><br /></td></tr>
-<tr class="separator:gaafdf6965129a7bc8daf67ad1f39f8cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa0c78d4ec81f63b00f1812788d1fbdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gaaa0c78d4ec81f63b00f1812788d1fbdf">I_USB_ENABLEEP</a></td></tr>
-<tr class="memdesc:gaaa0c78d4ec81f63b00f1812788d1fbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gaaa0c78d4ec81f63b00f1812788d1fbdf">More...</a><br /></td></tr>
-<tr class="separator:gaaa0c78d4ec81f63b00f1812788d1fbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga138790e1c9c34c1792e233f28bcd8225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga138790e1c9c34c1792e233f28bcd8225">I_USB_DISABLEEP</a></td></tr>
-<tr class="memdesc:ga138790e1c9c34c1792e233f28bcd8225"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#ga138790e1c9c34c1792e233f28bcd8225">More...</a><br /></td></tr>
-<tr class="separator:ga138790e1c9c34c1792e233f28bcd8225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac2174b37571a9c6aee5bb468583985cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gac2174b37571a9c6aee5bb468583985cc">I_USB_STALLEP</a></td></tr>
-<tr class="memdesc:gac2174b37571a9c6aee5bb468583985cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gac2174b37571a9c6aee5bb468583985cc">More...</a><br /></td></tr>
-<tr class="separator:gac2174b37571a9c6aee5bb468583985cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6fd7eda91dd24231db4459cc1520fd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gac6fd7eda91dd24231db4459cc1520fd5">I_USB_UNSTALLEP</a></td></tr>
-<tr class="memdesc:gac6fd7eda91dd24231db4459cc1520fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gac6fd7eda91dd24231db4459cc1520fd5">More...</a><br /></td></tr>
-<tr class="separator:gac6fd7eda91dd24231db4459cc1520fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8129187a9468244e2f1730808642e24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gab8129187a9468244e2f1730808642e24">I_USB_CFGEP</a></td></tr>
-<tr class="memdesc:gab8129187a9468244e2f1730808642e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gab8129187a9468244e2f1730808642e24">More...</a><br /></td></tr>
-<tr class="separator:gab8129187a9468244e2f1730808642e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6b890fbfcce430ca6ed3c175bac637c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gac6b890fbfcce430ca6ed3c175bac637c">I_USB_SETEVENTHANDLER</a></td></tr>
-<tr class="memdesc:gac6b890fbfcce430ca6ed3c175bac637c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gac6b890fbfcce430ca6ed3c175bac637c">More...</a><br /></td></tr>
-<tr class="separator:gac6b890fbfcce430ca6ed3c175bac637c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc85c456d6ed233afeee0193d13ea005"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gabc85c456d6ed233afeee0193d13ea005">I_USB_ISCONNECTED</a></td></tr>
 <tr class="memdesc:gabc85c456d6ed233afeee0193d13ea005"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gabc85c456d6ed233afeee0193d13ea005">More...</a><br /></td></tr>
 <tr class="separator:gabc85c456d6ed233afeee0193d13ea005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga4d80bc3de464eccce2940d955448ef06"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#ga4d80bc3de464eccce2940d955448ef06">usb_action_t</a></td></tr>
-<tr class="separator:ga4d80bc3de464eccce2940d955448ef06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa05b8bd2a1c73a12e168475b91c2139e"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_s_b.html#gaa05b8bd2a1c73a12e168475b91c2139e">usb_event_handler_t</a>) (<a class="el" href="group___u_s_b.html#ga64e493e34c1d014134234576ebf1d2b1">usb_spec_event_t</a>)</td></tr>
-<tr class="memdesc:gaa05b8bd2a1c73a12e168475b91c2139e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___u_s_b.html#gaa05b8bd2a1c73a12e168475b91c2139e">More...</a><br /></td></tr>
-<tr class="separator:gaa05b8bd2a1c73a12e168475b91c2139e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>

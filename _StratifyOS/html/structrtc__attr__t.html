@@ -30,7 +30,7 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 
-<p>RTC IO Attributes.  
+<p>RTC Attributes.  
  <a href="structrtc__attr__t.html#details">More...</a></p>
 
 <p><code>#include &lt;rtc.h&gt;</code></p>
@@ -39,33 +39,18 @@ title: Stratify OS Docs
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a25bb08c987aa2d78a02031b510d9ac63"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__attr__t.html#a25bb08c987aa2d78a02031b510d9ac63">pin_assign</a></td></tr>
-<tr class="separator:a25bb08c987aa2d78a02031b510d9ac63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f19da65f0ae48d8aae9ef8495532950"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__attr__t.html#a2f19da65f0ae48d8aae9ef8495532950">clock</a></td></tr>
-<tr class="separator:a2f19da65f0ae48d8aae9ef8495532950"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911c7406ee51a5d5a0e904530c69710d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__attr__t.html#a911c7406ee51a5d5a0e904530c69710d">freq</a></td></tr>
-<tr class="separator:a911c7406ee51a5d5a0e904530c69710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2f856d85ff780f454e347500925d48"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__attr__t.html#a6b2f856d85ff780f454e347500925d48">o_flags</a></td></tr>
+<tr class="separator:a6b2f856d85ff780f454e347500925d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8a45d11569fd4d7de79f03989cdebbd"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__attr__t.html#af8a45d11569fd4d7de79f03989cdebbd">freq</a></td></tr>
+<tr class="separator:af8a45d11569fd4d7de79f03989cdebbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a2f19da65f0ae48d8aae9ef8495532950"></a>
+<a class="anchor" id="af8a45d11569fd4d7de79f03989cdebbd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u8 rtc_attr_t::clock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>The source clock </p>
-
-</div>
-</div>
-<a class="anchor" id="a911c7406ee51a5d5a0e904530c69710d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t rtc_attr_t::freq</td>
+          <td class="memname">u32 rtc_attr_t::freq</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -73,16 +58,16 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a25bb08c987aa2d78a02031b510d9ac63"></a>
+<a class="anchor" id="a6b2f856d85ff780f454e347500925d48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u8 rtc_attr_t::pin_assign</td>
+          <td class="memname">u32 rtc_attr_t::o_flags</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Always 0 </p>
+<p>Bitmask for setting attributes </p>
 
 </div>
 </div>

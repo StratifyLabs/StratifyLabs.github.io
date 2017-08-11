@@ -18,8 +18,7 @@ title: Stratify OS Docs
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Analog to Digital Converter (ADC)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
 </div><!--header-->
@@ -28,53 +27,34 @@ title: Stratify OS Docs
 <p>ADC Interface Spec</p>
 <p>The ADC peripheral driver allows access to the MCU's built-in ADC. Each peripheral is opened using a unique port number and mode settings. Once open, any channel from the ADC can be read. Closing the peripheral will disable power to the ADC. More information about accessing hardware is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
 <p>The following is an example of how to read the ADC in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="adc_8h.html">dev/adc.h</a>&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> read_adc(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="group___a_d_c.html#gadba18d3d5cc6cb1c33a976677f8dfb53">adc_sample_t</a> buffer[16]; <span class="comment">//a buffer for 16 samples</span></div><div class="line">     <a class="code" href="structadc__attr__t.html">adc_attr_t</a> attr;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/adc0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.<a class="code" href="structadc__attr__t.html#ab738d487c94267803329e344647cc188">enabled_channels</a> = (1&lt;&lt;5); <span class="comment">//enabled channel five</span></div><div class="line">          attr.<a class="code" href="structadc__attr__t.html#ac060c4c10f0db40a04a9ea192e42fbe6">freq</a> = <a class="code" href="group___a_d_c.html#gaee9ff036d0e34f634b48e953d19d3bc2">ADC_MAX_FREQ</a>;</div><div class="line">          attr.<a class="code" href="structadc__attr__t.html#a10f84e0bc6968495f07862c5d597eea2">pin_assign</a> = 0;</div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___a_d_c.html#gaf9007b82aa0f9af53bbb74796462927e">I_ADC_SETATTR</a>, &amp;ctl_adc) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set ADC configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//now read 16 samples of the ADC</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 5, SEEK_SET); <span class="comment">//this sets the channel to 5 -- it&#39;s a &#39;c&#39; device so it doesn&#39;t auto-increment</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, buffer, <span class="keyword">sizeof</span>(<a class="code" href="group___a_d_c.html#gadba18d3d5cc6cb1c33a976677f8dfb53">adc_sample_t</a>)*16) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error reading peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
+<div class="fragment"></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structadc__attr__t.html">adc_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC IO Attributes.  <a href="structadc__attr__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structadc__pin__assignment__t.html">adc_pin_assignment_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADC Pin assignment.  <a href="structadc__pin__assignment__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga555a695bf58df062dc03f0e892d95cd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga555a695bf58df062dc03f0e892d95cd7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#ga555a695bf58df062dc03f0e892d95cd7">ADC_MAX</a></td></tr>
-<tr class="memdesc:ga555a695bf58df062dc03f0e892d95cd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the maximum value the ADC will return. It is specific to the MCU architecture. <br /></td></tr>
-<tr class="separator:ga555a695bf58df062dc03f0e892d95cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0098a1eafb8a60a1c65773e1064d595"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf0098a1eafb8a60a1c65773e1064d595"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#gaf0098a1eafb8a60a1c65773e1064d595">ADC_MIN</a></td></tr>
-<tr class="memdesc:gaf0098a1eafb8a60a1c65773e1064d595"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the minimum step value of the ADC. This is MCU specific. For example if the data is not right-justified and the lowest 4 bits are always zero, ADC_MIN will be 0x10. <br /></td></tr>
-<tr class="separator:gaf0098a1eafb8a60a1c65773e1064d595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee9ff036d0e34f634b48e953d19d3bc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaee9ff036d0e34f634b48e953d19d3bc2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#gaee9ff036d0e34f634b48e953d19d3bc2">ADC_MAX_FREQ</a></td></tr>
-<tr class="memdesc:gaee9ff036d0e34f634b48e953d19d3bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This values defines the maximum frequency that can be used when reading the ADC. When doing an IOCTL write request, the freq member should not exceed this value. <br /></td></tr>
-<tr class="separator:gaee9ff036d0e34f634b48e953d19d3bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80ffb194332afa77a9880ce73e0d1bfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#ga80ffb194332afa77a9880ce73e0d1bfb">I_ADC_ATTR</a></td></tr>
-<tr class="memdesc:ga80ffb194332afa77a9880ce73e0d1bfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga80ffb194332afa77a9880ce73e0d1bfb">More...</a><br /></td></tr>
-<tr class="separator:ga80ffb194332afa77a9880ce73e0d1bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga02b7f8c840dee616023f905dfaa0a14d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#ga02b7f8c840dee616023f905dfaa0a14d">I_ADC_GETINFO</a></td></tr>
+<tr class="memdesc:ga02b7f8c840dee616023f905dfaa0a14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga02b7f8c840dee616023f905dfaa0a14d">More...</a><br /></td></tr>
+<tr class="separator:ga02b7f8c840dee616023f905dfaa0a14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf9007b82aa0f9af53bbb74796462927e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#gaf9007b82aa0f9af53bbb74796462927e">I_ADC_SETATTR</a></td></tr>
 <tr class="memdesc:gaf9007b82aa0f9af53bbb74796462927e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gaf9007b82aa0f9af53bbb74796462927e">More...</a><br /></td></tr>
 <tr class="separator:gaf9007b82aa0f9af53bbb74796462927e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gadba18d3d5cc6cb1c33a976677f8dfb53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadba18d3d5cc6cb1c33a976677f8dfb53"></a>
-typedef u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___a_d_c.html#gadba18d3d5cc6cb1c33a976677f8dfb53">adc_sample_t</a></td></tr>
-<tr class="memdesc:gadba18d3d5cc6cb1c33a976677f8dfb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the type of an ADC sample (see adc_read() and adc_write()). <br /></td></tr>
-<tr class="separator:gadba18d3d5cc6cb1c33a976677f8dfb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga80ffb194332afa77a9880ce73e0d1bfb"></a>
+<a class="anchor" id="ga02b7f8c840dee616023f905dfaa0a14d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_ADC_ATTR</td>
+          <td class="memname">#define I_ADC_GETINFO</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This requests reads the ADC attributes.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/adc.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;adc_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int adc_fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(adc_fd, I_ADC_GETATTR, &amp;attr);</div></div><!-- fragment --> 
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/adc.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;adc_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int adc_fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(adc_fd, I_ADC_GETINFO, &amp;attr);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="gaf9007b82aa0f9af53bbb74796462927e"></a>

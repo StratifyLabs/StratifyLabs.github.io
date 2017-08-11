@@ -23,8 +23,6 @@ title: Stratify OS Docs
   </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">mem_attr_t Struct Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___m_e_m.html">Memory (RAM/Flash)</a></div></div>  </div>
 </div><!--header-->
@@ -36,25 +34,5 @@ title: Stratify OS Docs
 <p><code>#include &lt;mem.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This defines the attributes of the memory.</p>
-<p>It is used with I_MEM_GETATTR. The attributes are read-only so I_MEM_SETATTR has no effect. </p>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a6ec1ff61a9cb3b80567cf8654441ee57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ec1ff61a9cb3b80567cf8654441ee57"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmem__attr__t.html#a6ec1ff61a9cb3b80567cf8654441ee57">flash_pages</a></td></tr>
-<tr class="memdesc:a6ec1ff61a9cb3b80567cf8654441ee57"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of flash pages. <br /></td></tr>
-<tr class="separator:a6ec1ff61a9cb3b80567cf8654441ee57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a488d5f89462cc6dc5e2154ac29e30c4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a488d5f89462cc6dc5e2154ac29e30c4c"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmem__attr__t.html#a488d5f89462cc6dc5e2154ac29e30c4c">flash_size</a></td></tr>
-<tr class="memdesc:a488d5f89462cc6dc5e2154ac29e30c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total size of the flash memory. <br /></td></tr>
-<tr class="separator:a488d5f89462cc6dc5e2154ac29e30c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2295dca1f3970f25ebf9b3e78e47198"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2295dca1f3970f25ebf9b3e78e47198"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmem__attr__t.html#ac2295dca1f3970f25ebf9b3e78e47198">ram_pages</a></td></tr>
-<tr class="memdesc:ac2295dca1f3970f25ebf9b3e78e47198"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of RAM pages. <br /></td></tr>
-<tr class="separator:ac2295dca1f3970f25ebf9b3e78e47198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab02f6a8f2a97f595da77b418bb67173b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab02f6a8f2a97f595da77b418bb67173b"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmem__attr__t.html#ab02f6a8f2a97f595da77b418bb67173b">ram_size</a></td></tr>
-<tr class="memdesc:ab02f6a8f2a97f595da77b418bb67173b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total size of the RAM. <br /></td></tr>
-<tr class="separator:ab02f6a8f2a97f595da77b418bb67173b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-</div><!-- contents -->
+<p>It is used with I_MEM_GETINFO. The attributes are read-only so I_MEM_SETATTR has no effect. </p>
+</div></div><!-- contents -->

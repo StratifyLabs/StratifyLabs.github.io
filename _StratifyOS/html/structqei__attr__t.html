@@ -39,29 +39,96 @@ title: Stratify OS Docs
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac279e47a26d03649054a69e81001c409"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac279e47a26d03649054a69e81001c409"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#ac279e47a26d03649054a69e81001c409">pin_assign</a></td></tr>
-<tr class="memdesc:ac279e47a26d03649054a69e81001c409"><td class="mdescLeft">&#160;</td><td class="mdescRight">The GPIO configuration to use (see LPC17XXDEV) <br /></td></tr>
-<tr class="separator:ac279e47a26d03649054a69e81001c409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3da3588902bb639a87c14f6a9146c23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3da3588902bb639a87c14f6a9146c23"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#af3da3588902bb639a87c14f6a9146c23">max_pos</a></td></tr>
-<tr class="memdesc:af3da3588902bb639a87c14f6a9146c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum position (QEI rolls over at this point) <br /></td></tr>
-<tr class="separator:af3da3588902bb639a87c14f6a9146c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8d78fd40fbc0ddc2cdf96c2a3495b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec8d78fd40fbc0ddc2cdf96c2a3495b1"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#aec8d78fd40fbc0ddc2cdf96c2a3495b1">velocity_comp</a></td></tr>
-<tr class="memdesc:aec8d78fd40fbc0ddc2cdf96c2a3495b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Velocity compare value. <br /></td></tr>
+<tr class="memitem:a16ab77491795a225deed13f2c5a14c15"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a16ab77491795a225deed13f2c5a14c15">o_flags</a></td></tr>
+<tr class="separator:a16ab77491795a225deed13f2c5a14c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0369f047b09fb43552b736cabd6d4d58"><td class="memItemLeft" align="right" valign="top">qei_pin_assignment_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a0369f047b09fb43552b736cabd6d4d58">pin_assignment</a></td></tr>
+<tr class="separator:a0369f047b09fb43552b736cabd6d4d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c6836a5e8b311ed815d52a493ffe9c2"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a9c6836a5e8b311ed815d52a493ffe9c2">top</a></td></tr>
+<tr class="separator:a9c6836a5e8b311ed815d52a493ffe9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa5a317f1fabb693299b12a34f7012d"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a3fa5a317f1fabb693299b12a34f7012d">max_position</a></td></tr>
+<tr class="separator:a3fa5a317f1fabb693299b12a34f7012d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8d78fd40fbc0ddc2cdf96c2a3495b1"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#aec8d78fd40fbc0ddc2cdf96c2a3495b1">velocity_comp</a></td></tr>
 <tr class="separator:aec8d78fd40fbc0ddc2cdf96c2a3495b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bec76bbe5c5f0149362c645c1d027c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11bec76bbe5c5f0149362c645c1d027c"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a11bec76bbe5c5f0149362c645c1d027c">filter</a></td></tr>
-<tr class="memdesc:a11bec76bbe5c5f0149362c645c1d027c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The filter coefficient (0 to disable) <br /></td></tr>
+<tr class="memitem:a11bec76bbe5c5f0149362c645c1d027c"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a11bec76bbe5c5f0149362c645c1d027c">filter</a></td></tr>
 <tr class="separator:a11bec76bbe5c5f0149362c645c1d027c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d676925e188c9f827aa7170e1559c93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d676925e188c9f827aa7170e1559c93"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#a5d676925e188c9f827aa7170e1559c93">mode</a></td></tr>
-<tr class="memdesc:a5d676925e188c9f827aa7170e1559c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">The QEI mode (see <a class="el" href="group___q_e_i.html#ga0b9ae3fe9d097d35283efa54afad29b4">qei_mode_t</a>) <br /></td></tr>
-<tr class="separator:a5d676925e188c9f827aa7170e1559c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76c7a48143dc293dddfd9c3d6ccd8d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac76c7a48143dc293dddfd9c3d6ccd8d4"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structqei__attr__t.html#ac76c7a48143dc293dddfd9c3d6ccd8d4">vfreq</a></td></tr>
-<tr class="memdesc:ac76c7a48143dc293dddfd9c3d6ccd8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frequency at which to update the velocity in Hz. <br /></td></tr>
-<tr class="separator:ac76c7a48143dc293dddfd9c3d6ccd8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a11bec76bbe5c5f0149362c645c1d027c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 qei_attr_t::filter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The filter coefficient (0 to disable) </p>
+
+</div>
+</div>
+<a class="anchor" id="a3fa5a317f1fabb693299b12a34f7012d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 qei_attr_t::max_position</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The maximum position (QEI rolls over at this point) </p>
+
+</div>
+</div>
+<a class="anchor" id="a16ab77491795a225deed13f2c5a14c15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 qei_attr_t::o_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Flag bitmask </p>
+
+</div>
+</div>
+<a class="anchor" id="a0369f047b09fb43552b736cabd6d4d58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qei_pin_assignment_t qei_attr_t::pin_assignment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Pin assignment </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c6836a5e8b311ed815d52a493ffe9c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 qei_attr_t::top</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maximum value </p>
+
+</div>
+</div>
+<a class="anchor" id="aec8d78fd40fbc0ddc2cdf96c2a3495b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 qei_attr_t::velocity_comp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The Velocity compare value </p>
+
+</div>
+</div>
 </div><!-- contents -->

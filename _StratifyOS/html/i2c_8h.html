@@ -16,41 +16,38 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">i2c.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___i2_c.html">Inter-Integrated Circuit (I2C) Master</a></div></div>  </div>
+<div class="title">i2c.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___i2_c.html">Inter-Integrated Circuit (I2C) Master or Slave</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>I2C Header File.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;mcu/types.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__setup__t.html">i2c_setup_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data used to setup I2C transfers.  <a href="structi2c__setup__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__info__t.html">i2c_info_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Info Data Structure.  <a href="structi2c__info__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__attr__t.html">i2c_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C IO Attributes.  <a href="structi2c__attr__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi2c__pin__assignment__t.html">i2c_pin_assignment_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Pin Assignment.  <a href="structi2c__pin__assignment__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga2e2f2a9bd05dd3c79bbd35988cd3dbb0">I_I2C_ATTR</a></td></tr>
-<tr class="memdesc:ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the I2C attributes. <br /></td></tr>
-<tr class="separator:ga2e2f2a9bd05dd3c79bbd35988cd3dbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25f75c30568f91758d943e463e6f06f2"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga25f75c30568f91758d943e463e6f06f2">I_I2C_GETINFO</a></td></tr>
+<tr class="memdesc:ga25f75c30568f91758d943e463e6f06f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the I2C attributes. <br /></td></tr>
+<tr class="separator:ga25f75c30568f91758d943e463e6f06f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga963ce3908c1a1435a40671cb8631735c"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga963ce3908c1a1435a40671cb8631735c">I_I2C_SETATTR</a></td></tr>
 <tr class="memdesc:ga963ce3908c1a1435a40671cb8631735c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the I2C attributes. <br /></td></tr>
@@ -59,17 +56,6 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gae2e682283b1316ec64d69633d76b6588">I_I2C_SETACTION</a></td></tr>
 <tr class="memdesc:gae2e682283b1316ec64d69633d76b6588"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the I2C action. <br /></td></tr>
 <tr class="separator:gae2e682283b1316ec64d69633d76b6588"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bc7c029d97669b7952c0b72609603be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga2bc7c029d97669b7952c0b72609603be">I_I2C_SETUP</a></td></tr>
-<tr class="memdesc:ga2bc7c029d97669b7952c0b72609603be"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___i2_c.html#ga2bc7c029d97669b7952c0b72609603be">More...</a><br /></td></tr>
-<tr class="separator:ga2bc7c029d97669b7952c0b72609603be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a37788a3d02cabfaa96fa0058306cff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#ga6a37788a3d02cabfaa96fa0058306cff">I_I2C_GETERR</a></td></tr>
-<tr class="memdesc:ga6a37788a3d02cabfaa96fa0058306cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___i2_c.html#ga6a37788a3d02cabfaa96fa0058306cff">More...</a><br /></td></tr>
-<tr class="separator:ga6a37788a3d02cabfaa96fa0058306cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gacb09d3584b32f3efd8c8d50cc52b4c80"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___i2_c.html#gacb09d3584b32f3efd8c8d50cc52b4c80">i2c_action_t</a></td></tr>
-<tr class="separator:gacb09d3584b32f3efd8c8d50cc52b4c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>

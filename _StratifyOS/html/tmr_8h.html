@@ -16,14 +16,12 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">tmr.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___t_m_r.html">Timer (TMR)</a></div></div>  </div>
@@ -33,69 +31,22 @@ title: Stratify OS Docs
 <p>Timer Header File.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
+<code>#include &quot;mcu/types.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtmr__reqattr__t.html">tmr_reqattr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Timer Channel (OC or IC) Request Data.  <a href="structtmr__reqattr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtmr__attr__t.html">tmr_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer Attribute Data Structure.  <a href="structtmr__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaeb94082355400363145390ae5efdda5c"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaeb94082355400363145390ae5efdda5c">TMR_MODE_SETCLKSRC</a>(x)</td></tr>
-<tr class="memdesc:gaeb94082355400363145390ae5efdda5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the timer clock source as part of the mode. <br /></td></tr>
-<tr class="separator:gaeb94082355400363145390ae5efdda5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6a5a1545ae8f42d6457c33f96f01249"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gac6a5a1545ae8f42d6457c33f96f01249">TMR_MODE_SETCOUNTER</a>(x)</td></tr>
-<tr class="memdesc:gac6a5a1545ae8f42d6457c33f96f01249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is used to specify the timer counter mode when opening a timer port.  <a href="group___t_m_r.html#gac6a5a1545ae8f42d6457c33f96f01249">More...</a><br /></td></tr>
-<tr class="separator:gac6a5a1545ae8f42d6457c33f96f01249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49ae0f8adb3b15f7c8f4737b8300f95f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga49ae0f8adb3b15f7c8f4737b8300f95f">I_TMR_ATTR</a></td></tr>
-<tr class="memdesc:ga49ae0f8adb3b15f7c8f4737b8300f95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the timer attributes.  <a href="group___t_m_r.html#ga49ae0f8adb3b15f7c8f4737b8300f95f">More...</a><br /></td></tr>
-<tr class="separator:ga49ae0f8adb3b15f7c8f4737b8300f95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefe78a760425bd615ec9aae7c5c24166"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaefe78a760425bd615ec9aae7c5c24166">I_TMR_SETATTR</a></td></tr>
-<tr class="memdesc:gaefe78a760425bd615ec9aae7c5c24166"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the timer attributes. <br /></td></tr>
-<tr class="separator:gaefe78a760425bd615ec9aae7c5c24166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b2b84970c0419efbbaf1748b9e2d2c3"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga6b2b84970c0419efbbaf1748b9e2d2c3">I_TMR_SETACTION</a></td></tr>
-<tr class="memdesc:ga6b2b84970c0419efbbaf1748b9e2d2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the timer interrupt action. <br /></td></tr>
-<tr class="separator:ga6b2b84970c0419efbbaf1748b9e2d2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3871e5d0dfcd5d2df1999bc7e731f167"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga3871e5d0dfcd5d2df1999bc7e731f167">I_TMR_ON</a></td></tr>
-<tr class="memdesc:ga3871e5d0dfcd5d2df1999bc7e731f167"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request turns the timer on. After a timer is opened it must be turned on before it starts running. The ctl argument is NULL. <br /></td></tr>
-<tr class="separator:ga3871e5d0dfcd5d2df1999bc7e731f167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga061cffe54c3f7f31414dca0647c027c3"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga061cffe54c3f7f31414dca0647c027c3">I_TMR_OFF</a></td></tr>
-<tr class="memdesc:ga061cffe54c3f7f31414dca0647c027c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request turns the timer off. After a timer is opened it is off. <br /></td></tr>
-<tr class="separator:ga061cffe54c3f7f31414dca0647c027c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d1975c0f529d6cdc1e15c0de5740114"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga1d1975c0f529d6cdc1e15c0de5740114">I_TMR_SETOC</a></td></tr>
-<tr class="memdesc:ga1d1975c0f529d6cdc1e15c0de5740114"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#ga1d1975c0f529d6cdc1e15c0de5740114">More...</a><br /></td></tr>
-<tr class="separator:ga1d1975c0f529d6cdc1e15c0de5740114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fc056b76c426b5d4057e247e556a1b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga0fc056b76c426b5d4057e247e556a1b9">I_TMR_GETOC</a></td></tr>
-<tr class="memdesc:ga0fc056b76c426b5d4057e247e556a1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#ga0fc056b76c426b5d4057e247e556a1b9">More...</a><br /></td></tr>
-<tr class="separator:ga0fc056b76c426b5d4057e247e556a1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa38dabc8bc8475b1a28f517522d9e9ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaa38dabc8bc8475b1a28f517522d9e9ca">I_TMR_SETIC</a></td></tr>
-<tr class="memdesc:gaa38dabc8bc8475b1a28f517522d9e9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#gaa38dabc8bc8475b1a28f517522d9e9ca">More...</a><br /></td></tr>
-<tr class="separator:gaa38dabc8bc8475b1a28f517522d9e9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e81c0e7c9fe916daa9e1f1d92fc495"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga84e81c0e7c9fe916daa9e1f1d92fc495">I_TMR_GETIC</a></td></tr>
-<tr class="memdesc:ga84e81c0e7c9fe916daa9e1f1d92fc495"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#ga84e81c0e7c9fe916daa9e1f1d92fc495">More...</a><br /></td></tr>
-<tr class="separator:ga84e81c0e7c9fe916daa9e1f1d92fc495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb14eaf594e9c24ecee030e9f0e50642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaeb14eaf594e9c24ecee030e9f0e50642">I_TMR_SETCHANNEL</a></td></tr>
+<tr class="memdesc:gaeb14eaf594e9c24ecee030e9f0e50642"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#gaeb14eaf594e9c24ecee030e9f0e50642">More...</a><br /></td></tr>
+<tr class="separator:gaeb14eaf594e9c24ecee030e9f0e50642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga724795f12465bd12f1a0be004e6b9ced"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga724795f12465bd12f1a0be004e6b9ced">I_TMR_GETCHANNEL</a></td></tr>
+<tr class="memdesc:ga724795f12465bd12f1a0be004e6b9ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#ga724795f12465bd12f1a0be004e6b9ced">More...</a><br /></td></tr>
+<tr class="separator:ga724795f12465bd12f1a0be004e6b9ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5917be06a3069c73fec5b2efbe094fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gad5917be06a3069c73fec5b2efbe094fd">I_TMR_SET</a></td></tr>
 <tr class="memdesc:gad5917be06a3069c73fec5b2efbe094fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#gad5917be06a3069c73fec5b2efbe094fd">More...</a><br /></td></tr>
 <tr class="separator:gad5917be06a3069c73fec5b2efbe094fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab3dad8f32add45b25ab32f918b607d9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gab3dad8f32add45b25ab32f918b607d9e">I_TMR_GET</a></td></tr>
 <tr class="memdesc:gab3dad8f32add45b25ab32f918b607d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___t_m_r.html#gab3dad8f32add45b25ab32f918b607d9e">More...</a><br /></td></tr>
 <tr class="separator:gab3dad8f32add45b25ab32f918b607d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga97a1456a718acfeb3ee21c9645384fd4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga97a1456a718acfeb3ee21c9645384fd4">tmr_action_t</a></td></tr>
-<tr class="separator:ga97a1456a718acfeb3ee21c9645384fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>

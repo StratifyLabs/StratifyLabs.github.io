@@ -17,9 +17,7 @@ title: Stratify OS Docs
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Digital to Analog Converter (DAC)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
 </div><!--header-->
@@ -27,51 +25,47 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The DAC peripheral driver allows access to the MCU's built-in DAC. More information about accessing peripheral IO is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
 <p>The following is an example of how to write the DAC in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> write_dac(<a class="code" href="group___d_a_c.html#gabd6a9ee116e27658e61ad708f023a59e">dac_sample_t</a> * src, <span class="keywordtype">int</span> samples){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structdac__attr__t.html">dac_attr_t</a> ctl;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/dac0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     ctl.<a class="code" href="structdac__attr__t.html#a6d244760c605b1501a956aa9fe6c1441">enabled_channels</a> = (1&lt;&lt;0); <span class="comment">//enable channel zero</span></div><div class="line">          ctl.<a class="code" href="structdac__attr__t.html#a8cfe68f9809dcef63b949d1112ed3fe9">freq</a> = 20000; <span class="comment">//20KHz output</span></div><div class="line">          ctl.<a class="code" href="structdac__attr__t.html#ab2ceabd606d3563e53910c0abe6e6964">pin_assign</a> = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;ctl) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//now write the samples of the DAC</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 0, SEEK_SET); <span class="comment">//this sets the channel to 0, &#39;c&#39; device does not auto-increment on write</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, src, <span class="keyword">sizeof</span>(<a class="code" href="group___d_a_c.html#gabd6a9ee116e27658e61ad708f023a59e">dac_sample_t</a>)*samples) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error writing peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdac__attr__t.html">dac_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC Attribute Data Structure.  <a href="structdac__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> write_dac(dac_sample_t * src, <span class="keywordtype">int</span> samples){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     dac_attr_t ctl;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/dac0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     ctl.enabled_channels = (1&lt;&lt;0); <span class="comment">//enable channel zero</span></div><div class="line">          ctl.freq = 20000; <span class="comment">//20KHz output</span></div><div class="line">          ctl.pin_assign = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;ctl) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//now write the samples of the DAC</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 0, SEEK_SET); <span class="comment">//this sets the channel to 0, &#39;c&#39; device does not auto-increment on write</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, src, <span class="keyword">sizeof</span>(dac_sample_t)*samples) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error writing peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga41ef69195f41271a871d6b5935767b1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga41ef69195f41271a871d6b5935767b1d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga41ef69195f41271a871d6b5935767b1d">DAC_MAX_VALUE</a></td></tr>
-<tr class="memdesc:ga41ef69195f41271a871d6b5935767b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the maximum value that can be written to the DAC. It is MCU specific. <br /></td></tr>
-<tr class="separator:ga41ef69195f41271a871d6b5935767b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcc82abe18018d7ef3b1eb7792cdd18f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#gadcc82abe18018d7ef3b1eb7792cdd18f">I_DAC_ATTR</a></td></tr>
-<tr class="memdesc:gadcc82abe18018d7ef3b1eb7792cdd18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gadcc82abe18018d7ef3b1eb7792cdd18f">More...</a><br /></td></tr>
-<tr class="separator:gadcc82abe18018d7ef3b1eb7792cdd18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga770e98cda8560b06917026fb4ba838bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga770e98cda8560b06917026fb4ba838bf">I_DAC_GETINFO</a></td></tr>
+<tr class="memdesc:ga770e98cda8560b06917026fb4ba838bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga770e98cda8560b06917026fb4ba838bf">More...</a><br /></td></tr>
+<tr class="separator:ga770e98cda8560b06917026fb4ba838bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7150dab3ac159845b2d8f9a1d511a43b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga7150dab3ac159845b2d8f9a1d511a43b">I_DAC_SETATTR</a></td></tr>
 <tr class="memdesc:ga7150dab3ac159845b2d8f9a1d511a43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga7150dab3ac159845b2d8f9a1d511a43b">More...</a><br /></td></tr>
 <tr class="separator:ga7150dab3ac159845b2d8f9a1d511a43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccfeb1c6be0803f41d23ba754d7e61e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#gaccfeb1c6be0803f41d23ba754d7e61e5">I_DAC_VALUE</a></td></tr>
-<tr class="memdesc:gaccfeb1c6be0803f41d23ba754d7e61e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gaccfeb1c6be0803f41d23ba754d7e61e5">More...</a><br /></td></tr>
-<tr class="separator:gaccfeb1c6be0803f41d23ba754d7e61e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44e19f7aaf804aa4a92aae3f7f7abc09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga44e19f7aaf804aa4a92aae3f7f7abc09">I_DAC_GET</a></td></tr>
+<tr class="memdesc:ga44e19f7aaf804aa4a92aae3f7f7abc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga44e19f7aaf804aa4a92aae3f7f7abc09">More...</a><br /></td></tr>
+<tr class="separator:ga44e19f7aaf804aa4a92aae3f7f7abc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga07e3998926f31ef3c9877367ed90f310"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga07e3998926f31ef3c9877367ed90f310">I_DAC_SET</a></td></tr>
 <tr class="memdesc:ga07e3998926f31ef3c9877367ed90f310"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga07e3998926f31ef3c9877367ed90f310">More...</a><br /></td></tr>
 <tr class="separator:ga07e3998926f31ef3c9877367ed90f310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gabd6a9ee116e27658e61ad708f023a59e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabd6a9ee116e27658e61ad708f023a59e"></a>
-typedef u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#gabd6a9ee116e27658e61ad708f023a59e">dac_sample_t</a></td></tr>
-<tr class="memdesc:gabd6a9ee116e27658e61ad708f023a59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the type of variable used when writing the DAC. <br /></td></tr>
-<tr class="separator:gabd6a9ee116e27658e61ad708f023a59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gadcc82abe18018d7ef3b1eb7792cdd18f"></a>
+<a class="anchor" id="ga44e19f7aaf804aa4a92aae3f7f7abc09"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_DAC_ATTR</td>
+          <td class="memname">#define I_DAC_GET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This IOCTL arg value causes the ioctl call to return the current output value of the DAC.</p>
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_channel_t value;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;value.channel = 0;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;ioctl(dac_fd, I_DAC_GET, &amp;value);</div></div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="ga770e98cda8560b06917026fb4ba838bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DAC_GETINFO</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This requests reads the DAC attributes.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/adc.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;dac_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(fd, I_DAC_GETATTR, &amp;attr);</div></div><!-- fragment --> 
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/adc.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;dac_info_t info;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(fd, I_DAC_GETINFO, &amp;info);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga07e3998926f31ef3c9877367ed90f310"></a>
@@ -84,7 +78,7 @@ typedef u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 <p>This IOCTL arg value causes the ioctl call to set the output of the DAC</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;dac_reqattr_t reqattr;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;reqattr.channel = 0;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;reqattr.value = DAC_MAX / 2;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;ioctl(dac_fd, I_DAC_SET, &amp;reqattr);</div></div><!-- fragment --> 
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_channel_t value;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;value.channel = 0;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;value.value = DAC_MAX / 2;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;ioctl(dac_fd, I_DAC_SET, &amp;value);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga7150dab3ac159845b2d8f9a1d511a43b"></a>
@@ -97,20 +91,7 @@ typedef u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
       </table>
 </div><div class="memdoc">
 <p>This requests writes the DAC attributes.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/adc.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;dac_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(fd, I_ADC_SETATTR, &amp;attr);</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="gaccfeb1c6be0803f41d23ba754d7e61e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_DAC_VALUE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This IOCTL arg value causes the ioctl call to return the current output value of the DAC.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;dac_reqattr_t reqattr;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;reqattr.channel = 0;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;ioctl(dac_fd, I_DAC_GET, &amp;reqattr);</div></div><!-- fragment --> 
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/dac.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;dac_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(fd, I_ADC_SETATTR, &amp;attr);</div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->

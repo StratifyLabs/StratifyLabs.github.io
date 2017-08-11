@@ -16,14 +16,12 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">dac.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___d_a_c.html">Digital to Analog Converter (DAC)</a></div></div>  </div>
 </div><!--header-->
@@ -32,39 +30,21 @@ title: Stratify OS Docs
 <p>DAC Header File.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
+<code>#include &quot;mcu/types.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdac__attr__t.html">dac_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DAC Attribute Data Structure.  <a href="structdac__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga41ef69195f41271a871d6b5935767b1d"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga41ef69195f41271a871d6b5935767b1d">DAC_MAX_VALUE</a></td></tr>
-<tr class="memdesc:ga41ef69195f41271a871d6b5935767b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the maximum value that can be written to the DAC. It is MCU specific. <br /></td></tr>
-<tr class="separator:ga41ef69195f41271a871d6b5935767b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcc82abe18018d7ef3b1eb7792cdd18f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#gadcc82abe18018d7ef3b1eb7792cdd18f">I_DAC_ATTR</a></td></tr>
-<tr class="memdesc:gadcc82abe18018d7ef3b1eb7792cdd18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___d_a_c.html#gadcc82abe18018d7ef3b1eb7792cdd18f">More...</a><br /></td></tr>
-<tr class="separator:gadcc82abe18018d7ef3b1eb7792cdd18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga770e98cda8560b06917026fb4ba838bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga770e98cda8560b06917026fb4ba838bf">I_DAC_GETINFO</a></td></tr>
+<tr class="memdesc:ga770e98cda8560b06917026fb4ba838bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___d_a_c.html#ga770e98cda8560b06917026fb4ba838bf">More...</a><br /></td></tr>
+<tr class="separator:ga770e98cda8560b06917026fb4ba838bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7150dab3ac159845b2d8f9a1d511a43b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga7150dab3ac159845b2d8f9a1d511a43b">I_DAC_SETATTR</a></td></tr>
 <tr class="memdesc:ga7150dab3ac159845b2d8f9a1d511a43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___d_a_c.html#ga7150dab3ac159845b2d8f9a1d511a43b">More...</a><br /></td></tr>
 <tr class="separator:ga7150dab3ac159845b2d8f9a1d511a43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccfeb1c6be0803f41d23ba754d7e61e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#gaccfeb1c6be0803f41d23ba754d7e61e5">I_DAC_VALUE</a></td></tr>
-<tr class="memdesc:gaccfeb1c6be0803f41d23ba754d7e61e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___d_a_c.html#gaccfeb1c6be0803f41d23ba754d7e61e5">More...</a><br /></td></tr>
-<tr class="separator:gaccfeb1c6be0803f41d23ba754d7e61e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44e19f7aaf804aa4a92aae3f7f7abc09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga44e19f7aaf804aa4a92aae3f7f7abc09">I_DAC_GET</a></td></tr>
+<tr class="memdesc:ga44e19f7aaf804aa4a92aae3f7f7abc09"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___d_a_c.html#ga44e19f7aaf804aa4a92aae3f7f7abc09">More...</a><br /></td></tr>
+<tr class="separator:ga44e19f7aaf804aa4a92aae3f7f7abc09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga07e3998926f31ef3c9877367ed90f310"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#ga07e3998926f31ef3c9877367ed90f310">I_DAC_SET</a></td></tr>
 <tr class="memdesc:ga07e3998926f31ef3c9877367ed90f310"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___d_a_c.html#ga07e3998926f31ef3c9877367ed90f310">More...</a><br /></td></tr>
 <tr class="separator:ga07e3998926f31ef3c9877367ed90f310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gabd6a9ee116e27658e61ad708f023a59e"><td class="memItemLeft" align="right" valign="top">
-typedef u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_a_c.html#gabd6a9ee116e27658e61ad708f023a59e">dac_sample_t</a></td></tr>
-<tr class="memdesc:gabd6a9ee116e27658e61ad708f023a59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the type of variable used when writing the DAC. <br /></td></tr>
-<tr class="separator:gabd6a9ee116e27658e61ad708f023a59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -1,36 +1,70 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <tagfile>
   <compound kind="file">
+    <name>dirent.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/posix/sys/</path>
+    <filename>dirent_8h</filename>
+    <class kind="struct">dirent</class>
+    <member kind="function">
+      <type>int</type>
+      <name>closedir</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>gaaeac2b41e8c2c3a5f91c9bd511a8c0a6</anchor>
+      <arglist>(DIR *dirp)</arglist>
+    </member>
+    <member kind="function">
+      <type>DIR *</type>
+      <name>opendir</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>gae27c7f260a652b74c43296993d14ef0b</anchor>
+      <arglist>(const char *dirname)</arglist>
+    </member>
+    <member kind="function">
+      <type>struct dirent *</type>
+      <name>readdir</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>ga824e3b8c5995631b373ddb65cb674318</anchor>
+      <arglist>(DIR *dirp)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>readdir_r</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>ga2219da481be06be4bf9f8f363b607492</anchor>
+      <arglist>(DIR *dirp, struct dirent *entry, struct dirent **result)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>rewinddir</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>gad4fcb58b9194b1a3c1699654de963719</anchor>
+      <arglist>(DIR *dirp)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>seekdir</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>ga6be27113ffd4a87f2f46c3d1d9a71046</anchor>
+      <arglist>(DIR *dirp, long loc)</arglist>
+    </member>
+    <member kind="function">
+      <type>long</type>
+      <name>telldir</name>
+      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
+      <anchor>ga4c2cd02bd612ae655782632c9f5227ec</anchor>
+      <arglist>(DIR *dirp)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>adc.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>adc_8h</filename>
-    <class kind="struct">adc_attr_t</class>
+    <class kind="struct">adc_pin_assignment_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>ADC_MAX</name>
+      <name>I_ADC_GETINFO</name>
       <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>ga555a695bf58df062dc03f0e892d95cd7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>ADC_MIN</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gaf0098a1eafb8a60a1c65773e1064d595</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>ADC_MAX_FREQ</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gaee9ff036d0e34f634b48e953d19d3bc2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_ADC_GETATTR</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gae599932a5a540645042f364aa40335ae</anchor>
+      <anchor>ga02b7f8c840dee616023f905dfaa0a14d</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -40,21 +74,12 @@
       <anchor>gaf9007b82aa0f9af53bbb74796462927e</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>u32</type>
-      <name>adc_sample_t</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gadba18d3d5cc6cb1c33a976677f8dfb53</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>bootloader.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>bootloader_8h</filename>
-    <class kind="struct">bootloader_attr_t</class>
-    <class kind="struct">bootloader_attr_14x_t</class>
-    <class kind="struct">bootloader_api_t</class>
+    <class kind="struct">bootloader_info_t</class>
     <class kind="struct">bootloader_writepage_t</class>
     <member kind="define">
       <type>#define</type>
@@ -79,16 +104,9 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_BOOTLOADER_GETATTR</name>
+      <name>I_BOOTLOADER_GETINFO</name>
       <anchorfile>group___b_o_o_t_l_o_a_d_e_r___d_e_v.html</anchorfile>
-      <anchor>ga028418a856d6fbcedcdd26f0db7d602a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_BOOTLOADER_GETATTR_14X</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r___d_e_v.html</anchorfile>
-      <anchor>ga504d2040cf0c847b633a481331c94ac3</anchor>
+      <anchor>ga3886c771d61ed8d490f5e0c32f6f1a6e</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -108,18 +126,16 @@
   </compound>
   <compound kind="file">
     <name>core.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>core_8h</filename>
-    <includes id="pio_8h" name="pio.h" local="yes" imported="no">iface/dev/pio.h</includes>
-    <class kind="struct">core_clkout_t</class>
     <class kind="struct">core_attr_t</class>
     <class kind="struct">core_pinfunc_t</class>
     <class kind="struct">core_irqprio_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_CORE_GETATTR</name>
+      <name>I_CORE_GETINFO</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gacc115354487b4b8c2c583daca96548de</anchor>
+      <anchor>gae8430d6f739b43666a9f7d67b0ed08cb</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -138,34 +154,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_CORE_SLEEP</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ga8f1705b30be917a00886af84a60f3e0c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_CORE_RESET</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ga4680cb894578ddd4242691d727e49654</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_CORE_INVOKEBOOTLOADER</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gae3e7592889371a041783fdc713dafe54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_CORE_SETIRQPRIO</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gad4a6cc0f610397db5a44995e02e5c42f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>I_CORE_SETCLKOUT</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
       <anchor>gab18399788c0a6653e37c6b51ab2fa796</anchor>
@@ -178,84 +166,126 @@
       <anchor>gad37592d62d290851b1a3d7d402f744bb</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>core_reset_src_t</name>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_CORE_GETMCUBOARDCONFIG</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gaf04fba81a1f0a6d59e921ebc87e8d5f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_SOFTWARE</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8aa0bbb4b9d5b607b43a1b0f9e8dcb2cdb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_POR</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8ac6f2aef9da1ce5b696dad040f8bcbab6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_EXTERNAL</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8a018feec3645bf1bf424bfa28724fe1ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_WDT</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8a4d630cff829eda2bb6a4b6c7bfafc61b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_BOR</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8a209b5045149f90eaac04b725e3810711</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_SYSTEM</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8ad0efde405a00c0036dbd92e6bc30be65</anchor>
+      <anchor>ga4d2334e3f8e0ffa23c341c70a5cda580</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>core_clkout_src_t</name>
+      <name>core_flag_t</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ga865263eb03a43700297f3eba0c085b88</anchor>
+      <anchor>ga64fcd23e7657832c6cd5f4e2d92bf2df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_CPU</name>
+      <name>CORE_FLAG_IS_RESET_SOFTWARE</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88a3160a6cbffbdee1b81ce7d569da99d4d</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa6b1ef7ed5af8c29842a5893d7b1f3c86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_MAIN_OSC</name>
+      <name>CORE_FLAG_IS_RESET_POR</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88af167725ce9ad98ead0a3d3871b326592</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa30db832962b1fe3ac718ba069e84ee88</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_INTERNAL_OSC</name>
+      <name>CORE_FLAG_IS_RESET_EXTERNAL</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88a08b98eb799bf5d81adac50c3b196fe3c</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa2e8f1ccfd817a6741ba951649b88b517</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_USB</name>
+      <name>CORE_FLAG_IS_RESET_WDT</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88aa154acb89b22a02a8e5cfa751692862b</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa815ce8c047bdf7abeade7fe1cb64a74e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_RTC</name>
+      <name>CORE_FLAG_IS_RESET_BOR</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88a8a2942f4d7646b06229be812913b1917</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfaaa057420fddebda905b2eddfc012af5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_RESET_SYSTEM</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfab6948fd774147a3ebca2b36b3ce66509</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_SET_CLKOUT</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa26ed5b14790a844b051cf92710bf637f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_CPU</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa9c58afa6e2cbe9eb61a13c5620b32bab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_MAIN_OSC</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa8b58ace79141afab1fb22cd6ce0fdd76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_INTERNAL_OSC</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa2162f8a368fc3151f2a358c0152d3dff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_USB</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dface05669bff392c983fceb672885beda0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_RTC</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfacdb31ed58788072825c7e630c75c9577</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_SLEEP</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfaf139c3a3d78a9a456c62bcba19edf906</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_DEEPSLEEP</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfae1c3e498ed42a767e541a2d0ffdb3f90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_DEEPSLEEP_STOP</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa0f40b4e525e0f70cdef37399fb67eeae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_DEEPSLEEP_STANDBY</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa92351dc405b19c007e001ef6c9a9f862</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_RESET</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa660c0c8be411e093188d4441db273780</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_INVOKE_BOOTLOADER</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa74eee9244f726b295dd6037a9568ef0f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -475,55 +505,40 @@
       <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba215d008a1cf5b84c0e60fa3d9d3505c5</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>core_sleep_t</name>
+    <member kind="enumvalue">
+      <name>CORE_PERIPH_SYS</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gae362c5b04fb1b6ea07f8bdaa21bc51f7</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba83b871fc07c09371f45a3d23dc66595a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_SLEEP</name>
+      <name>CORE_PERIPH_QSPI</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7af823b996b773f6ba9f25335667bb0028</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba79aa948f1b5e4b3b55b3f46a503489cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_DEEPSLEEP</name>
+      <name>CORE_PERIPH_USART</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7a1a9f202f4a02d51817564ecb64883330</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba4c921426a5922acca3d9077eb7704bb4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_DEEPSLEEP_STOP</name>
+      <name>CORE_PERIPH_SDIO</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7abdec31630a7b2a46bb60344530b8b9d9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_DEEPSLEEP_STANDBY</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7a373788321a29fb5f9e3a3a5e6d838943</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99bad2ca4ca434157076af27187ac0070106</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>dac.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>dac_8h</filename>
-    <class kind="struct">dac_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>DAC_MAX_VALUE</name>
+      <name>I_DAC_GETINFO</name>
       <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>ga41ef69195f41271a871d6b5935767b1d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DAC_GETATTR</name>
-      <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>ga2aef61f2f1ea9a9375ec056d78d606a3</anchor>
+      <anchor>ga770e98cda8560b06917026fb4ba838bf</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -535,9 +550,9 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DAC_VALUE</name>
+      <name>I_DAC_GET</name>
       <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>gaccfeb1c6be0803f41d23ba754d7e61e5</anchor>
+      <anchor>ga44e19f7aaf804aa4a92aae3f7f7abc09</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -547,142 +562,107 @@
       <anchor>ga07e3998926f31ef3c9877367ed90f310</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>uint32_t</type>
-      <name>dac_sample_t</name>
-      <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>gaf7a0f5287d897fc67ce9d9981c5b6236</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>devfifo.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>devfifo_8h</filename>
-    <class kind="struct">devfifo_attr_t</class>
-    <class kind="struct">devfifo_cfg_t</class>
+    <class kind="struct">devfifo_info_t</class>
+    <class kind="struct">devfifo_config_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>DEVFIFO_DEVICE</name>
+      <name>I_DEVFIFO_GETINFO</name>
       <anchorfile>group___s_y_s___d_e_v_f_i_f_o.html</anchorfile>
-      <anchor>ga7380b90b4a5446ee9431e75b27943a38</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DEVFIFO_GETATTR</name>
-      <anchorfile>group___s_y_s___d_e_v_f_i_f_o.html</anchorfile>
-      <anchor>ga7e78b3c0079120fa0f94c439fc63775f</anchor>
+      <anchor>ga9457a6d30f19447deef334bfae345bc5</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
-    <name>disk.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
-    <filename>disk_8h</filename>
-    <class kind="struct">disk_attr_t</class>
+    <name>display.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>display_8h</filename>
+    <class kind="struct">display_palette_t</class>
+    <class kind="struct">display_info_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_PROTECT</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga9baa43dfcd6232dc973ece1c409a581d</anchor>
+      <name>I_DISPLAY_GETINFO</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga933c7f9e6519196ff82c3f363057162b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_UNPROTECT</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gab3d07e4f8bd14632a169101cfcfe841c</anchor>
+      <name>I_DISPLAY_CLEAR</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga4d203f9c4c24115c148ce93d4398024a</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_ERASEBLOCK</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga714c9f18f86d8a3fc01e7e598af00a4e</anchor>
+      <name>I_DISPLAY_REFRESH</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga21b2851b92eeae5a507c76f5c154fee8</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_ERASEDEVICE</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga172ebb6426469f5c5e80bedde4b21184</anchor>
+      <name>I_DISPLAY_INIT</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga72f9a13713770930830d78d05b085c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_POWERDOWN</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gafb3a67c64836a10e8d3bc8f18cc4c150</anchor>
+      <name>I_DISPLAY_ENABLE</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga92f00edbdd340c1bcc65f4881e56bcb2</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_POWERUP</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gaad871a23999389c2ceb0376480814cf9</anchor>
+      <name>I_DISPLAY_DISABLE</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>gae665a558aa34916d311f4bfba3fd094d</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_GETSIZE</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga612b377df35a735f4d144bf37623e389</anchor>
+      <name>I_DISPLAY_ISBUSY</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga0a3c9bf34320f19a957364ef04370ce4</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_GETBLOCKSIZE</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga9a3c212d3cb793324343c48424bd8dbc</anchor>
+      <name>I_DISPLAY_GETPALETTE</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga12d252cdb67782ea857e306ec2964d4e</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="file">
+    <name>drive.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>drive_8h</filename>
+    <class kind="struct">drive_info_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_GETBLOCKERASETIME</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gad99e96c1a82c1d74924b9e6c55224739</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_GETDEVICEERASETIME</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga2490bed8315b72874e4f34ffdda768fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_ERASEBLOCKS</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga42c325c785ec20a7562e62c54126e072</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_GETATTR</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga7373ba5dc7f66a9ce1b90d27cc5995fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_BUSY</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga0d7c15f0a2b32fa9141d0f8355c56f7d</anchor>
+      <name>I_DRIVE_ISBUSY</name>
+      <anchorfile>group___d_r_i_v_e.html</anchorfile>
+      <anchor>gabb0780def5b2f452808f1dc5a8fdede4</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>eint.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>eint_8h</filename>
     <class kind="struct">eint_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_EINT_GETATTR</name>
+      <name>I_EINT_GETINFO</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>gaf63454446a977fa24c3b4501e096ef90</anchor>
+      <anchor>ga5628820b86ce1abde7f4fa28795f8abd</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -699,60 +679,10 @@
       <anchor>gafafdc3233a44f8e060b32de3560ffae8</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>eint_action_t</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ga0cc94e61cd3d7732766b249dc30b9ba9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>eint_action_event_t</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>gadd1257260f1ba401df43dd34fa2d28d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_UNCONFIGURED</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5a7f362899eaa0583dccbdea0bbaf8f5a1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_RISING</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_FALLING</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_BOTH</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5aaab3f9601e94feb16265e6512ff683f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_LOW</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5ac72b8d7c05b72a3917fd88c51a084146</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_HIGH</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5aa169884effda9ecad418a5dab0f1ec40</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>emc.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>emc_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -873,14 +803,14 @@
   </compound>
   <compound kind="file">
     <name>enet.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>enet_8h</filename>
     <class kind="struct">enet_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_ENET_GETATTR</name>
+      <name>I_ENET_GETINFO</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ga6f62b4e8691e5d816a6bb4c6dfaafc28</anchor>
+      <anchor>gafb9f80afef01ffc6c69fcadb5b5d8400</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -950,33 +880,33 @@
     <member kind="enumvalue">
       <name>ENET_FLAGS_USERMII</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fceae63959e536664571d59dd5b313b26dae</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ae63959e536664571d59dd5b313b26dae</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_FULLDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fcead8fb14a32b90abe4c0d9128ca416d969</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ad8fb14a32b90abe4c0d9128ca416d969</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_HALFDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fceaa582a4f418d27604aeef4293b85151d4</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aa582a4f418d27604aeef4293b85151d4</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>eth.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>eth_8h</filename>
     <class kind="struct">eth_attr_t</class>
     <class kind="struct">eth_txstatus_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_ETH_GETATTR</name>
+      <name>I_ETH_GETINFO</name>
       <anchorfile>group___e_t_h___d_e_v.html</anchorfile>
-      <anchor>ga22dd39cc4b68f3f902695d8304dfb387</anchor>
+      <anchor>ga73b01f9134d45a23de3eb104e0e78a6b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1023,24 +953,23 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>ffifo.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>ffifo_8h</filename>
+    <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">fifo.h</includes>
+    <class kind="struct">ffifo_attr_t</class>
+  </compound>
+  <compound kind="file">
     <name>fifo.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>fifo_8h</filename>
     <class kind="struct">fifo_attr_t</class>
     <class kind="struct">fifo_peek_t</class>
-    <class kind="struct">fifo_cfg_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>FIFO_DEVICE</name>
+      <name>I_FIFO_GETINFO</name>
       <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
-      <anchor>ga670519da9a74984f5605f50cf675385d</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_FIFO_GETATTR</name>
-      <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
-      <anchor>ga81cb55b73d1c48300efc4f9170781de9</anchor>
+      <anchor>ga3f40ca557aed98dc7ef51ae4fbeff868</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1066,13 +995,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_FIFO_SETWRITEBLOCK</name>
-      <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
-      <anchor>ga40bc035a4c24444b501687addddb5ca9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>I_FIFO_PEEK</name>
       <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
       <anchor>gab49deb73a64bd5aeb28e625abebd9c18</anchor>
@@ -1081,7 +1003,7 @@
   </compound>
   <compound kind="file">
     <name>flash.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>flash_8h</filename>
     <class kind="struct">flash_pageinfo_t</class>
     <class kind="struct">flash_writepage_t</class>
@@ -1143,246 +1065,16 @@
     </member>
   </compound>
   <compound kind="file">
-    <name>hio.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
-    <filename>hio_8h</filename>
-    <class kind="struct">hio_desc_t</class>
-    <class kind="struct">hio_attr_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_GETATTR</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gaf332e758fecfa46dc5ce2c9160264d29</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_SETREPORT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga8f3a80a1ae8d5005f356272c4095ef58</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_REPORT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gac4a93a6c449fa863b55b43b888f23f33</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_INIT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga25d5162af8864c63cac550b37aea0026</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>hio_data_t</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga7c6c8941505284f2e03ee28e0c3c80fc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_BIT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcacfb87fe9636054a27b0ef6e0b9cde341</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT8</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcace071cbafea00f0edbf397a3d02aae65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT16</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca88bddf3f661aa92b07f037a5ad7c35fd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT32</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca5910f423ba41845fab280ef6216f0564</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT64</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca36168f22a5f5a02de5423c29dafecaf6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT8</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcac5f094cff3eeea9704f20fc666200b6f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT16</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca6458b388ce8dc1961b9b6eb09efcf7f3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT32</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcab8c4874c992debf22ed010c3fba2bc1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT64</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcaef58bb506f189afffa88cf191a3047d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_FLOAT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca41ee28b64124bb1195ba4499005741bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_DOUBLE</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcad2a163c0c3a14069a1a32871d37fc0c7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>hio_io_type</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gaba3f829ed128f9908e3ec1ce5ebdd3cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda8589c54a0f4975971911d8a8175fbc94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_BUTTON</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda651d5ab299b41d620a0078416ea18207</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_DPAD</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda7ff15162da4aa3527911ee74f6cd03b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_JOYSTICK</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda2634a649969bfd42534a290c54365105</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_SWITCH</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda43324255156cb55959471c870d0fd104</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_SELECTOR</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda9ead10641bb4c546f278f00fc93df30f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_OUT_LED</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cdacb35f73142dc58a32b4da7c51f613ced</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_STATUS</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cdac73f1f912de6c40ca630e8780eac5341</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_OUT_STATUS</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda95d94a206b44822bf62a2748d8b7906c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>hio_subtype</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gaa1434a7950ec810f3dd4a187f5204578</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_UP</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a6d0f621eb5a19b8f30e9fd0682e6827a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_RIGHT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ac66eaa37c513885e52f5c1e4f30ef8cf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_DOWN</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ad809a94dab82e440b457969c7add187e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_LEFT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a4436b78825446b9913c323cfd52e7f54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_CENTER</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a45e6bdb6d6a982142f9d7d650e94e62d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_JOYSTICK_X</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ae94aef9ff934553e312b9c6b8e6a948d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_JOYSTICK_Y</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a093e3702d970ae6bbb2ae598e896f878</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA_MIN</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a96d7b3fa61a051e4504df8b8c507decb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA_MAX</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ab43f1363908026af41aeba156e9cc0d0</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
     <name>i2c.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>i2c_8h</filename>
-    <class kind="struct">i2c_reqattr_t</class>
-    <class kind="struct">i2c_attr_t</class>
+    <class kind="struct">i2c_info_t</class>
+    <class kind="struct">i2c_pin_assignment_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_I2C_GETATTR</name>
+      <name>I_I2C_GETINFO</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gaf6038303904f4036e757d39125c82b42</anchor>
+      <anchor>ga25f75c30568f91758d943e463e6f06f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1399,135 +1091,168 @@
       <anchor>gae2e682283b1316ec64d69633d76b6588</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_I2C_SETUP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>ga2bc7c029d97669b7952c0b72609603be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_I2C_GETERR</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>ga6a37788a3d02cabfaa96fa0058306cff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>i2c_action_t</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gacb09d3584b32f3efd8c8d50cc52b4c80</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumvalue">
-      <name>I2C_STATE_NONE</name>
+      <name>I2C_ERROR_NONE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa4b9fe6f1f00736f7579721c85433cd85</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a5feee47669cdab4f25da4e0de0c16633</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_START</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_WRITE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa7e270c609e58ecf5bc7946ac67dfb066</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a7e270c609e58ecf5bc7946ac67dfb066</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_STOP</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa37664a1000f758f1741ed9087903aad3</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a37664a1000f758f1741ed9087903aad3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_MASTER_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa2b7eecd3273ba4318b33f714fe81a140</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a2b7eecd3273ba4318b33f714fe81a140</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_BUS_BUSY</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaaaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8aaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ARBITRATION_LOST</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa4ad4a8f910e34819bb7e934495c729ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_RD_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa37703115a79d1a057040c1a36918383b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_WR_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa8bf13f39fa366522a3d23a08fc707c0b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_RD_16_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa3160a906d0391441d13cc8b44068d538</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_WR_16_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa8b66cb9ef1827bf28e992be1c5018006</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a4ad4a8f910e34819bb7e934495c729ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>i2c_transfer_t</name>
+      <name>i2c_flag_t</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>ga3ad96dadad63bfad13256b053c868ac3</anchor>
+      <anchor>ga35689050a00ae4d0da14a1abe0e38dc3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2C_TRANSFER_NORMAL</name>
+      <name>I2C_FLAG_SET_MASTER</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga3ad96dadad63bfad13256b053c868ac3a4493a827b39459a5bb65561dbf0640d3</anchor>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3afdac6266e166155b1609f80e271c376c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2C_TRANSFER_NORMAL_16</name>
+      <name>I2C_FLAG_SET_SLAVE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga3ad96dadad63bfad13256b053c868ac3a9b2805ac15bc798f7082cb5ef4c84e3c</anchor>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a3e0646aa6d900d8a52d295a14b2e146e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2C_TRANSFER_READ_ONLY</name>
+      <name>I2C_FLAG_IS_SLAVE_ACK_GENERAL_CALL</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga3ad96dadad63bfad13256b053c868ac3a455447d1240251898be01a1c75e89057</anchor>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a22fe56a26d0865eafd8495d296fd28c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_PULLUP</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3af903f9c25cf176a36eebef867f28e0e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_PREPARE_PTR_DATA</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3ae1b939747c495a813d61102c9630a752</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_PTR_16</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a0ea5e30ac4d7d71f113f21426eb3b42a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_PREPARE_PTR</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3af8599591794682efd40cd2c84853bd05</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_PREPARE_DATA</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a3ced669585db4c385ec9fb4e1be92015</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR0</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a1ec6b5e272a895da2d62faaf17616df8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR1</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a634ce9cbc933667fb6f72f0b57de1842</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR2</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a8bf570a5dd4efc698d4f71b7425ab957</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR3</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a8aaf943abac0d7146e5cfd3d601adcc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_PTR_8</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a653c11befa1f8c150c58e77b23fd4a08</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_PTR_16</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3aa8d708b2da59c6bd8002a2957e9d5919</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_RESET</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a3440a0543ac0b2a43e26dab2d5b303bd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_NO_STOP</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a283c7a933378c6d5c6ad63e4fc659f0c</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>i2s.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>i2s_8h</filename>
-    <class kind="struct">i2s_attr_t</class>
+    <class kind="struct">i2s_info_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_I2S_GETATTR</name>
+      <name>I_I2S_GETINFO</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ga2c3152a57afd71183e4cc8611b9fc22d</anchor>
+      <anchor>ga648c6e585fc62944d337e495b30d3b4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1544,42 +1269,83 @@
       <anchor>ga25434165fa37a902d65facabc838225d</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>i2s_action_t</name>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_WIDTH_8</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gaa11529edd55d2691400952cc77421aaa</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea7150971097fdd72d0426984c8a839da6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2S_MODE_WORDWIDTH_8</name>
+      <name>I2S_FLAG_IS_WIDTH_16</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ab51522d8f0f167193c2a756186a196db</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea75cc6917775c8396c1e2adf0589c44a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2S_MODE_WORDWIDTH_16</name>
+      <name>I2S_FLAG_IS_WIDTH_24</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a20553dc321430b35ede0c29ba014e148</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea96539a142fa0b31f91c0fc3faea32a49</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2S_MODE_WORDWIDTH_32</name>
+      <name>I2S_FLAG_IS_WIDTH_32</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a65278b8e19bc4ec830549b82354ec514</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea1c6f3f810c5208ac2d674ecd0490a362</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_MONO</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea52f39d0ff752118830e325b3b949d5cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_STEREO</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea69835433d9ae237149269532364f3cce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_SET_MASTER</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea98b78a09cd05aa7e4fe607f71f63f439</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_SET_SLAVE</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea10166847cbcd0167dc946434778c6f52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_TRANSMITTER</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9eafdc2f01fd2eb4f33355436e0820f3e22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_RECEIVER</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9eae191dab537f2696329528e31175cd59d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_MCK_ENABLED</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ead501dd84c6c9480fed39a8a6f2f19204</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>mci.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>mci_8h</filename>
     <class kind="struct">mci_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_MCI_GETATTR</name>
+      <name>I_MCI_GETINFO</name>
       <anchorfile>group___m_c_i.html</anchorfile>
-      <anchor>ga09b3eda7a20ae5e4a5ec353f70430307</anchor>
+      <anchor>gaf87987c19edc7be882c2968b8873677a</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1599,31 +1365,10 @@
   </compound>
   <compound kind="file">
     <name>mem.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>mem_8h</filename>
     <class kind="struct">mem_attr_t</class>
     <class kind="struct">mem_pageinfo_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>MEM_MIN_FLASH_WRITE_SIZE</name>
-      <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>gaebc4771824dac98e7aee93a4de063353</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>MEM_MAX_FLASH_WRITE_SIZE</name>
-      <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>gabdad7ca9519210528788a3a020124f7a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MEM_GETATTR</name>
-      <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ga14bd3264693fbe0bd29cfa33f049e340</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_MEM_ERASEPAGE</name>
@@ -1646,122 +1391,53 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>MEM_PAGEINFO_TYPE_QUERY</name>
+      <name>MEM_FLAG_IS_QUERY</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ace2f63f226d25f9614d12001b7832b6a</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a671eb93e618c68d10475b2c2fc7a7f28</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>MEM_PAGEINFO_TYPE_RAM</name>
+      <name>MEM_FLAG_IS_RAM</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ae3db254b91a6adcdbb87eb9c978d8af3</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a94296b10ac8302cf61ab46134041027b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>MEM_PAGEINFO_TYPE_FLASH</name>
+      <name>MEM_FLAG_IS_FLASH</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a093faf180cdabc3b7693234a8068c553</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25ae10ff3f5485ca4fe32d56761298be46e</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
-    <name>mlcd.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
-    <filename>mlcd_8h</filename>
-    <class kind="struct">mlcd_attr_t</class>
+    <name>netif.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>netif_8h</filename>
+    <class kind="struct">netif_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_MLCD_GETATTR</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga3764689aafa880b400bbae34389f94bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_CLEAR</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gadcb7eae821312000c0ac21557f32ad00</anchor>
+      <name>I_NETIF_INIT</name>
+      <anchorfile>group___n_e_t_i_f.html</anchorfile>
+      <anchor>ga4c451b9f2243bbf24f31cd6aa16e1810</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_MLCD_HOLD</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga53769052c69cde35a0d953a4d88a4346</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_TOUCH</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga52aac77a924a9f90c652b7b5d0a53a85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_INIT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gace1ad40a5aefcc1727b6780bd078cf0c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_ON</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga98d29c309fa0ed30652024889a01d468</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_OFF</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gad6ed95275880427e1e63573ea571a41a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_BUSY</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga8a79a884628c59386fadfb2b98c5b8d3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_TOP</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13abc6a5c49706e01ea43bcd645cd4e4350</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_BOTTOM</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13a0b6b1d7c12042c6687460ddb1efc25ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_LEFT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13a27b44fa8ad85dca1ca04bfed2d39d159</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_RIGHT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13ad4a45c8a3c05365edb073979a5f60391</anchor>
+      <name>I_NETIF_LEN</name>
+      <anchorfile>group___n_e_t_i_f.html</anchorfile>
+      <anchor>gaf294e0bfd76b9811fd0d9adc2ae9f75c</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>pio.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>pio_8h</filename>
-    <class kind="struct">pio_t</class>
-    <class kind="struct">pio_attr_t</class>
-    <class kind="struct">pio_action_data_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_PIO_GETATTR</name>
+      <name>I_PIO_GETINFO</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ga6eab1d482f284ff0a8649e2a8553e60f</anchor>
+      <anchor>ga7c9082b2c58d070d2c65e3490b24246b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1806,166 +1482,137 @@
       <anchor>ga39c300857261b172b08d471e1586a261</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>uint32_t</type>
-      <name>pio_sample_t</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gafca6496338c7821c25bd946055328197</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>pio_action_t</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ga5364eeae1649d633e476aedff241eaf8</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>pio_mode_t</name>
+      <name>pio_flag_t</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gaf822c507345363a31e1e4d5fb54f6ab6</anchor>
+      <anchor>ga0c2b3d5e7a698e36b34db9eea836cf91</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_INPUT</name>
+      <name>PIO_FLAG_SET_INPUT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ad07098aeb1a97c62f7d0cd844402def5</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a87ab487492803226f03df276ee386257</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT</name>
+      <name>PIO_FLAG_SET_OUTPUT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a2bea82834493634f2a1eb09f3b469a3c</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91ac2aba738133df3a90960352442ffc9c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_PULLUP</name>
+      <name>PIO_FLAG_IS_PULLUP</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6abc2aaf94b4e3b911f3dbe6143c26d242</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a677704677ba5f9116f5350c03087e14c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_PULLDOWN</name>
+      <name>PIO_FLAG_IS_PULLDOWN</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a083e5177f03913050981025692020df6</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a60d97cac1b46777dfa83f066999d230f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_REPEATER</name>
+      <name>PIO_FLAG_IS_REPEATER</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a02dee44e071e48660a92dd488d713037</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91adf69286517d448c064c5cc274f0c57c4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_FLOAT</name>
+      <name>PIO_FLAG_IS_FLOAT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6aa3a6c14048f8f3722a1ff870759ec3e2</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a14a4ca40fd64be9ac5d763d16e4a7962</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT_2MHZ</name>
+      <name>PIO_FLAG_IS_SPEED_LOW</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ac7eb004ffe85d69e643231832b64e1a2</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a7303e1963dc172c5f700360c58bbfcc7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_FAST_MODE</name>
+      <name>PIO_FLAG_IS_SPEED_MEDIUM</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a2507b7cd3a592cefa7e4d144b9ef8087</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91af3d09fab2d89c7fc7dbae79fd5b6db38</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT_10MHZ</name>
+      <name>PIO_FLAG_IS_SPEED_HIGH</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6af35dd8d87f06383c569ae0828e8aba3c</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a5aeecf7a1832ee7cd8e308472fe6ad48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT_50MHZ</name>
+      <name>PIO_FLAG_IS_SPEED_BLAZING</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a9a29a714dae5d85e1819195d8550ddd5</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a58851349a47b5c9a4ac4bee0ad826edd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OPENDRAIN</name>
+      <name>PIO_FLAG_IS_OPENDRAIN</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ae53278871dfc1db6cc6e28ff59ce30d4</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a9d1b6a9df2f09772b8144c70ba4e08ba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_HYSTERESIS</name>
+      <name>PIO_FLAG_IS_HYSTERESIS</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a70e2d7b0b1dfc9af38876acd69410bb5</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a00079c7a88c1d6013c97f96bde765e82</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_DIRONLY</name>
+      <name>PIO_FLAG_IS_DIRONLY</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a510450851ea01b20c51597dcde8b9090</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a940880dd883958fd5948839c8deac0fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_ANALOG</name>
+      <name>PIO_FLAG_IS_ANALOG</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ad5a32857e3d26b7a96477967aa5ee8d8</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a40471d2ad572834af8620640d05b924d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_INVERT</name>
+      <name>PIO_FLAG_IS_INVERT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6aa47b3cb844309b680ebf1593909b1853</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a01c879f85ca81f3349edb1d7953bad6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_FILTER</name>
+      <name>PIO_FLAG_IS_FILTER</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ae5569f94db4bad32f5541533234524ff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>pio_action_event_t</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ga6119418a0587e58206fc76353700ec72</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91af2cdb0a58b79d23c84e52a552341f2da</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_NONE</name>
+      <name>PIO_FLAG_SET</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72a9b8445a415d5960b25bd2eaaa54fb070</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91ac34d4af90f0239f983305fe877eeff59</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_RISING</name>
+      <name>PIO_FLAG_CLEAR</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72a0622c02facf6431e34b38797cf1b3a8c</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91ad37e3060f241a60266f878979578ca10</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_FALLING</name>
+      <name>PIO_FLAG_ASSIGN</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72ad512aa731c7ff7fa2e21f9116d4c77c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_BOTH</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72ae400ad8e2478e9476771f31a12acf742</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91aa88f81747ca708752df34dd43a02c7d2</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>pwm.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>pwm_8h</filename>
-    <class kind="struct">pwm_attr_t</class>
-    <class kind="struct">pwm_reqattr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_PWM_GETATTR</name>
+      <name>I_PWM_GETINFO</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ga3dd2442122ad11a0e676bd5beaad9fdf</anchor>
+      <anchor>gaaf911a3bb4a0b0b2c39d7f3406dbe8af</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -1977,104 +1624,65 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_PWM_SET</name>
+      <name>I_PWM_SETCHANNEL</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gac9d07b82e0695639d6ecbbc061b83314</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>uint32_t</type>
-      <name>pwm_duty_t</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>pwm_duty_t</type>
-      <name>pwm_sample_t</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ga090028c2fa62a95140c1d5221ef6e988</anchor>
+      <anchor>ga0439f661deed5f58cd21908dfd25bb0b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>pwm_action_event_t</name>
+      <name>pwm_flag_t</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gadb0ac4dd4fa0f375b62eb9892bef454d</anchor>
+      <anchor>ga7921b846c2d204e17ebfa2b312f991ae</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_NONE</name>
+      <name>PWM_FLAG_SET_TIMER</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dae7f9a88f48882ed3bea0e97471032ffb</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea5b53251b434dbe3b9613bcedef48c836</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_INTERRUPT</name>
+      <name>PWM_FLAG_IS_ACTIVE_HIGH</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dabd38c51940b756c66419f1e67d28cb98</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea33af3b58a7b2c0c8af07e68a6106c127</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_RESET</name>
+      <name>PWM_FLAG_IS_ACTIVE_LOW</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dab3b89d3b5dda63db98e2ef5d290c7777</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea1a9f1bde450a22a5dcbaf58bed9dc55d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_STOP</name>
+      <name>PWM_FLAG_SET_CHANNELS</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454da446afa9e95d740843b13987d732360b7</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea05bfc5555dd143d9163460c110e3e022</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_SETOC</name>
+      <name>PWM_FLAG_CLEAR_CHANNELS</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454da4cf1cc05b6bcb1f19efb1fb1a354dd21</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea80b9ef7770a1b1115beb44696e0af2d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_CLROC</name>
+      <name>PWM_FLAG_IS_ENABLED</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dae340c466bc882f68657e4077d10e5250</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_TOGGLEOC</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454da0fc8c2a0a3e0ac4de8c55ae7b3b10b32</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>pwm_attr_flags_t</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gaad9478ab24c5f2deba744bd6697c1cd1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PWM_ATTR_FLAGS_ACTIVE_HIGH</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggaad9478ab24c5f2deba744bd6697c1cd1a382322b0b1eeb3b35fce8d67b5d5e4fd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PWM_ATTR_FLAGS_ACTIVE_LOW</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggaad9478ab24c5f2deba744bd6697c1cd1afc960faa75fd295af15350e500d299b1</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea2ee281bf6bea17bb2aa9d00b34f55a70</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>qei.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>qei_8h</filename>
     <class kind="struct">qei_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_QEI_GETATTR</name>
+      <name>I_QEI_GETINFO</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gafb53154cb3a8a0726c99dc0d20147e4e</anchor>
+      <anchor>ga231f6649e1b81107b97ca01185476846</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -2112,13 +1720,6 @@
       <anchor>ga0063233e3e292589f18bcb3b4fed2c8e</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_QEI_RESET</name>
-      <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga8062a40baffcb7dfcdfb120e0d70ef58</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="typedef">
       <type>mcu_action_t</type>
       <name>qei_action_t</name>
@@ -2128,114 +1729,119 @@
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>qei_mode_t</name>
+      <name>qei_flag_t</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga0b9ae3fe9d097d35283efa54afad29b4</anchor>
+      <anchor>gabb337ae1680e0890cc5434bd84a3442f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_INVERT_DIR</name>
+      <name>QEI_FLAG_SET</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4ace874063956aa81e10e7fcb9e7f9e83c</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442faa08339c61be95a01765f28e3b7bc07c0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_SIGNAL_MODE</name>
+      <name>QEI_FLAG_IS_INVERT_DIR</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4a6bf8f789c9d068ab076433f0d0f43853</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa41d533ddaa259cbddeb29075b77940d8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_DOUBLE_EDGE</name>
+      <name>QEI_FLAG_IS_SIGNAL_MODE</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4a030f5acfb1ccdb62761c8af4d736463a</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa4d1ba0e4ba87c4ad0e512bd241d817eb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_INVERT_INDEX</name>
+      <name>QEI_FLAG_IS_DOUBLE_EDGE</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4a737b2d5a1053061549cbb89abe512797</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>qei_reset_mask_t</name>
-      <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga6dcb53fdb9caa7943bba45d545ad1290</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa0f4da161f48e6222249155f2d3cb5a1d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_POS</name>
+      <name>QEI_FLAG_IS_INVERT_INDEX</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290ab4a34c9fd60647b1873b02fde80a37c3</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa523e8cdc5c9933f4ccc33cb50a0293e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_VELOCITY</name>
+      <name>QEI_FLAG_RESET</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290a661846e489fd65bb36eb4eb695357581</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa0cc9bf789267b78a216376dafcd88d83</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_INDEX</name>
+      <name>QEI_FLAG_IS_RESET_POS</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290ab7854470e60ce02475815449c07b9ede</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fad2b725a5ef57e6be3603a42922a384ba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_POS_ONINDEX</name>
+      <name>QEI_FLAG_IS_RESET_VELOCITY</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290a17aba7ea6a7d28645d675950c1387ac0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>qei_action_event_mask_t</name>
-      <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga579a2b499d0668b9d8743bfbd71a554a</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa69f85b6f278185f693d204873bf882aa</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_ACTION_EVENT_INDEX</name>
+      <name>QEI_FLAG_IS_RESET_INDEX</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga579a2b499d0668b9d8743bfbd71a554aaf127f1ad0df7d15e6e21a8e85ebce5aa</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fad723dc627b3615d138f39d830930961c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_ACTION_EVENT_DIRCHANGE</name>
+      <name>QEI_FLAG_IS_RESET_POS_ONINDEX</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga579a2b499d0668b9d8743bfbd71a554aabcc7510f36a5502b62c144de87be56dc</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa4738e98cc9eeb33c4811e7b72712adf6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>radio.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>radio_8h</filename>
+    <class kind="struct">radio_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_GETINFO</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>gaf0c3bc64fe2a7d12aa69406858d8ce20</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETATTR</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga56012bd20c8c3ccea29ea7eacb13bbd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETFREQUENCY</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga4b7c6dc4b3d08e471eb5c006da7f4b97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETMODE</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga502e4b09e1997fd58caa25d32146cb41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETPACKETSIZE</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga6c6c8c8b7754aa81c597f6496c1c4a93</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>rtc.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>rtc_8h</filename>
     <class kind="struct">rtc_time_t</class>
-    <class kind="struct">rtc_alarm_t</class>
     <class kind="struct">rtc_attr_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_SETALARM</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ga4e0edc05fb0c989c5acf8b4927ae5d6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_GETALARM</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gac0187ffba6245e88b438e7c893c39b37</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_DISABLEALARM</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ga04d1d524a9262ad0fe5e91702c762a7a</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_RTC_SET</name>
@@ -2250,99 +1856,155 @@
       <anchor>gaeaf4abd917cc5d7b03ff96b2f563ed8c</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_SETCOUNTEVENT</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gac7ca674f40bdc951efb4355bc535655f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>rtc_action_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gaabcd0a7c862cfbdacac11a78f830cec0</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>rtc_clock_t</name>
+      <name>rtc_flag_t</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ga10606f83fcd2315eb36b2ae3c03602d0</anchor>
+      <anchor>gae814e9a42ebbf3a08561cf205c6fb7e5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_CLKSRC_EXTERNAL_32768</name>
+      <name>RTC_FLAG_ENABLE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gga10606f83fcd2315eb36b2ae3c03602d0a3818a99ab8ddd9d696ecc285a5faefc9</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ad5d2eb86026cd9303caff0cd622523e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_CLKSRC_INTERNAL_40000</name>
+      <name>RTC_FLAG_DISABLE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gga10606f83fcd2315eb36b2ae3c03602d0a665121a63cedc225f2865e70d5d16d2f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>rtc_event_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gad2e192ed9a33b6c005c2c19ccbd6a21b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>rtc_event_count_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gae2a9c3088277a56623c7d73f8e530702</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a6369632a74fc7643adb6c99a0a777313</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_NONE</name>
+      <name>RTC_FLAG_IS_SOURCE_EXTERNAL_32768</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a675a78d2a535580b6ad2005f582cc931</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a085a4c5b88118dcc8fc98d3567a90ae4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_SECOND</name>
+      <name>RTC_FLAG_IS_SOURCE_INTERNAL_40000</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5acd1284f5eeee917cfff700ae8c749781</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_MINUTE</name>
+      <name>RTC_FLAG_ENABLE_ALARM</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702adc0af148d93bba5ff96a7a4af9f99906</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a5598e66901b519c51adca369b5979268</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_HOUR</name>
+      <name>RTC_FLAG_DISABLE_ALARM</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a870fc262d71be6da443ff3b8f99af6ee</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab02f99dd110a1197eeb54411405309e6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_DAY</name>
+      <name>RTC_FLAG_IS_ALARM_ONCE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a0de9a98b6ea51a595601127b0a478e5b</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a35f5d79fc11ade6d254c2fcb8af50b47</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_WEEK</name>
+      <name>RTC_FLAG_IS_ALARM_MINUTE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702af35802cceffa6243c496a1e14ae4dfe1</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a4631c30d98f06d43d2a93d8c489f6234</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_MONTH</name>
+      <name>RTC_FLAG_IS_ALARM_HOURLY</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a249cf96b5a5ea7c8ddc8b2ef78c2d8bb</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a721b6a1f716ca7c09299bf8a608745ec</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_YEAR</name>
+      <name>RTC_FLAG_IS_ALARM_DAILY</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702ae764f4357ddc3122b7db17bd0583e41f</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a4d9a5f71f3d38fe031bcfee8715fb5ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_ALARM_WEEKLY</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a7302fcf5b68f3645154ee850f302a1cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_ALARM_MONTHLY</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a4b09815683541b237296c280b16fe140</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_ALARM_YEARLY</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aba62369d04b4996f6b8b0be3a3dbb428</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_ENABLE_COUNT_EVENT</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ae3a0bd1b7d8b3a56f259ec305ec77f89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_SECOND</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aa1ab9b614408a975dc44fc309941baee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_MINUTE</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab092ce34bc7fcffc2e3928f3fd9ff23d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_HOUR</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a986202656bc35342862cd6a8f91d7536</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_DAY_OF_WEEK</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab12d9867e416d378529a56670cb45434</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_DAY_OF_MONTH</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aa6b4cd5e9f1cd65a23eaa74426c5c9cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_DAY_OF_YEAR</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a530d3e2adf401253a7afeaf0a3d9b66b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_WEEK</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5af079f9dd87aba9765ed57fcfa05612b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_MONTH</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aa28e0a6a09009a2cff5b50805f729694</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_YEAR</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a6dc83eb25f865dad92e1209d121b883e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_DISABLE_COUNT_EVENT</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab96a900bd80ebc85ba63bab2177451c6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -2467,80 +2129,16 @@
       <anchor>gga1352508ef17e1a342ef93ec92e79960ea04e1a4c8171b0af9e5287442dc3ccd75</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>rtc_alarm_type_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gae65938264f8a116c77c92d7fab17ade2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_ONCE</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a976059f900a12b9f02432ed0b6a28892</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_MINUTE</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2abd4217b9c181fb80434b4b0e807af176</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_HOURLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2ae81ff75817eaa48f57cc3ce6b0b63c7f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_DAILY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a378147facd1e8ab25c0387c6d0440d16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_WEEKLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a6e6d0960e73f262cbd236e296491c850</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_MONTHLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a34d8089b1d93ba817b04bcfa61426236</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_YEARLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a1457b47302f3060cba5c2b71dfc94905</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>spi.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>spi_8h</filename>
-    <class kind="struct">spi_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>SPI_ATTR_MASTER</name>
+      <name>I_SPI_GETINFO</name>
       <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ga6faa4977e39f942b86a645da384e5583</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SPI_ATTR_SLAVE</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gac1457e15fdf08e9acf8d795988a21766</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_SPI_GETATTR</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gaae98e7ee7daf758e6b5df7dba87c9d04</anchor>
+      <anchor>ga9af95975cd0f8779447aa0c9b5918d82</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -2557,109 +2155,16 @@
       <anchor>gab641415ca6596d88617661aaf2457739</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_SPI_SETDUPLEX</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ga889b7810c9c1f1bae770b150227fcd97</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE0</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a925f70e60e25311cab69bdd17751dad2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE1</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a2ab2ff89b36b85669b92107e6ad34be8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE2</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a6d73e87183fc02e7da42175fa44f665d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE3</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a2174a55e6163a71cbdb385461666376d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_FORMAT_SPI</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gga5d76b81b0ad4c19007a781d4edb8181fad49c166c5feaf65c09e37436e5617404</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_FORMAT_TI</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gga5d76b81b0ad4c19007a781d4edb8181fa40e286f8948f9fbde964e42c67941398</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_FORMAT_MICROWIRE</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gga5d76b81b0ad4c19007a781d4edb8181fa7e042162d6a2937d41b77a7dad80e72a</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>sys.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>sys_8h</filename>
-    <includes id="iface_2link_8h" name="link.h" local="yes" imported="no">iface/link.h</includes>
-    <class kind="struct">sys_attr_t</class>
+    <class kind="struct">sys_26_info_t</class>
     <class kind="struct">sys_taskattr_t</class>
     <class kind="struct">sys_killattr_t</class>
     <class kind="struct">sys_process_t</class>
     <class kind="struct">sys_sudo_t</class>
-    <class kind="struct">led_req_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SYS_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga6e627ad6f9d2d7e08e75612917db2ffc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>NULL_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga05d9e85ca6c6f2d354e0ff7d66ad1279</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>ZERO_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gad91dbbd3c0bef76b5b6f86a1b3c0cb3b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>FULL_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga147b4f9304705097a1bd75ba47070d97</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LED_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga35ecbbd6edb8e55c7d6841ba5b3f4546</anchor>
-      <arglist>(dev_name, active_level, pio_port0, pio_pin0, pio_port1, pio_pin1, pio_port2, pio_pin2, pio_port3, pio_pin3)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_SYS_GETATTR</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gae5331e280386e4b946296b770c21869c</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_SYS_GETTASK</name>
@@ -2683,6 +2188,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>I_SYS_GETID</name>
+      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
+      <anchor>ga4a76c61e7288d56c111bc6991c5140a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>I_SYS_GETPROCESS</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
       <anchor>gad8d831b99cd6f4396a939aaca76729b7</anchor>
@@ -2697,100 +2209,28 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_LED_SET</name>
+      <name>I_SYS_GETBOARDCONFIG</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga984e40321cd06b5f9674d79659e5b197</anchor>
+      <anchor>ga38e59452723362e21bfbc90043748fb1</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SDSPI_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga98c40f68ce18efe96809c27ac330c7ae</anchor>
-      <arglist>(device_name, port_number, pin_assign_value, cs_port_value, cs_pin_value, bitrate_value, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>tmr.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>tmr_8h</filename>
-    <class kind="struct">tmr_reqattr_t</class>
-    <class kind="struct">tmr_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>TMR_MODE_SETCLKSRC</name>
+      <name>I_TMR_SETCHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gaeb94082355400363145390ae5efdda5c</anchor>
-      <arglist>(x)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>TMR_MODE_SETCOUNTER</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gac6a5a1545ae8f42d6457c33f96f01249</anchor>
-      <arglist>(x)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_GETATTR</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga019da11cefc626f1e3364bf33a170ee9</anchor>
+      <anchor>gaeb14eaf594e9c24ecee030e9f0e50642</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_TMR_SETATTR</name>
+      <name>I_TMR_GETCHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gaefe78a760425bd615ec9aae7c5c24166</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_SETACTION</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga6b2b84970c0419efbbaf1748b9e2d2c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_ON</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga3871e5d0dfcd5d2df1999bc7e731f167</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_OFF</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga061cffe54c3f7f31414dca0647c027c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_SETOC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga1d1975c0f529d6cdc1e15c0de5740114</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_GETOC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga0fc056b76c426b5d4057e247e556a1b9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_SETIC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gaa38dabc8bc8475b1a28f517522d9e9ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_GETIC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga84e81c0e7c9fe916daa9e1f1d92fc495</anchor>
+      <anchor>ga724795f12465bd12f1a0be004e6b9ced</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -2807,133 +2247,124 @@
       <anchor>gab3dad8f32add45b25ab32f918b607d9e</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>tmr_action_t</name>
+    <member kind="enumvalue">
+      <name>TMR_FLAG_SET_TIMER</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga97a1456a718acfeb3ee21c9645384fd4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>tmr_clksrc_t</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga752e581dd80394311e122634680ece35</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa5dfdbe71ed150ae09e23615714eff2e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_CPU</name>
+      <name>TMR_FLAG_IS_SOURCE_CPU</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa742da0fb8db8c45acb6d4b018ba55d86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC0</name>
+      <name>TMR_FLAG_IS_SOURCE_IC0</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a3933e4497b943bc0722ef7033951fca4</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa794db5e17b3079ecadee20efc13044f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC1</name>
+      <name>TMR_FLAG_IS_SOURCE_IC1</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35ad2ea59fe333f27d6bdc9da487c4c72f6</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa28be26e249e69809e36f36dcc4096ebd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC2</name>
+      <name>TMR_FLAG_IS_SOURCE_IC2</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a2e5c982133dc1a6f795c84968cec1d01</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaaa3562f641363187babba77043975bac1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC3</name>
+      <name>TMR_FLAG_IS_SOURCE_IC3</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a015a3600ae46137f09d06fb113995783</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaab3a24764c7f9f968a79b10e034723e48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_EDGERISING</name>
+      <name>TMR_FLAG_IS_SOURCE_EDGERISING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a2297f0ee2c2197fe99729267865dd6a7</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_EDGEFALLING</name>
+      <name>TMR_FLAG_IS_SOURCE_EDGEFALLING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35abd5e50b4088f9422b84d5cdffe9e5777</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaad3639b3137158884e9122acaa46977c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_EDGEBOTH</name>
+      <name>TMR_FLAG_IS_SOURCE_EDGEBOTH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a9cc719060c8595411a6030bdabb77e89</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa22f41aef0b086c0a35ca94a3f22b4439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_COUNTDOWN</name>
+      <name>TMR_FLAG_IS_SOURCE_COUNTDOWN</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a5042929f4e1bcc8634324edf0e267f15</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>tmr_action_event_t</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga7d678038d5737ca6e05ef60e6ca788d6</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_NONE</name>
+      <name>TMR_FLAG_IS_AUTO_RELOAD</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a012f94da7c88cd58b06b09c96f3decc7</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaabcb1e623cc7755340f6020cb41c9f1b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_INTERRUPT</name>
+      <name>TMR_FLAG_SET_CHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a50bd71a86096a576520c8e7c4af61260</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa87040de7272d6c5d2196bf9dbcbe3a98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_RESET</name>
+      <name>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaad291f4ddca584ad66c7c02206e6dde9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_STOP</name>
+      <name>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a89ea0f12427c4cc7f129b55f7c98d1b4</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa918e8cde8248ff148f0b25a3965ce6f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_SETOC</name>
+      <name>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6adc37fbdb7862d00df403acad539acc43</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa449baa91a44c73260b6be430d09d173f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_CLROC</name>
+      <name>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a226d7bac1d981225639c6c82fc532e4b</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa7576a21d5beca6f6e0bbc7058b418e02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_TOGGLEOC</name>
+      <name>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6ab566e6a0a36284f4f69b72c1a8757d12</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa2d188a2834cd81867a3eeb6a4a94e54a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_PWMMODE</name>
+      <name>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6ae8f09fda9578c5a6510d7bc9656845c0</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa25cd980f2a1ca52032547ad6b22d260b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TMR_FLAG_IS_CHANNEL_PWM_MODE</name>
+      <anchorfile>group___t_m_r.html</anchorfile>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaaece070a45d921ec85472633e8e924f4f</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>tty.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>tty_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -2944,57 +2375,29 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_TTY_GETATTR</name>
+      <name>I_TTY_ATTR</name>
       <anchorfile>group___t_t_y.html</anchorfile>
-      <anchor>ga48cd753d9124466d5e17f480cea29cf1</anchor>
+      <anchor>ga41e23d688113169dea7c3b277f8cc291</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>uart.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>uart_8h</filename>
     <class kind="struct">uart_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>UART_ATTR_START_BITS_1</name>
+      <name>I_UART_GET</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gab74f38c5c9dc38d60858196e03b70064</anchor>
+      <anchor>gabaf6d86bf01ea58e1a77dc20b6e3a927</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>UART_ATTR_START_BITS_2</name>
+      <name>I_UART_PUT</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gaf4157d28f4d2dda8c3d1d06b3c113016</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_GETATTR</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga9d4bf965f9a8be7593539fa30a3f43bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_SETATTR</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga2b70a7fe4a7e66651d66d45400c5a426</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_CLEAR</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gacdad9a7610a78f0dd2f7bde6b68756b1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_GETBYTE</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga21aadf48f1923d3d8e3f38e5c42c1c41</anchor>
+      <anchor>gad1aa440bd35fcfd40b4c66be777d972b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -3004,193 +2407,74 @@
       <anchor>gaf833617db8bf5b3655839e7306ce3aca</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>uart_action_t</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga33025c65120d2b9b8adaf3ecf8574979</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>uart_parity_t</name>
+      <name>uart_flag_t</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga6bcc37e31dd40c204b4ac6f6189e8878</anchor>
+      <anchor>ga836e09ffaa5767111e9d10b38a17fd75</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_PARITY_NONE</name>
+      <name>UART_FLAG_SET_CONTROL_LINE_STATE</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75af06f1a36599c883f32d94be73b023146</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_PARITY_ODD</name>
+      <name>UART_FLAG_IS_STOP1</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a2180bc10bf2b729d86ea09e8effdf159</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_PARITY_EVEN</name>
+      <name>UART_FLAG_IS_STOP2</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a196c77bb40bb4464f6fa17a50e86d456</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_1</name>
+      <name>UART_FLAG_IS_STOP0_5</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebba9cdf6533cdf2fa04d02403c12253884f</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a0a26939cf9910551b9dea139ff438f99</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_2</name>
+      <name>UART_FLAG_IS_STOP1_5</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebba4adb27df73696c5fe5cd0960367b04ea</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a7f18da32d69f698d3f8fa00952246818</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_0_5</name>
+      <name>UART_FLAG_IS_PARITY_NONE</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebba2230cced463779a586e0d310c6dd7131</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75aa5f6abbb08cda7052ace32ba7c3010ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_1_5</name>
+      <name>UART_FLAG_IS_PARITY_ODD</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebbaeb592c3e505aa00bee9bb3eeae0c1055</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a6327afb078cd209182b8bb507bf80e6e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_EVENT_DATA_READY</name>
+      <name>UART_FLAG_IS_PARITY_EVEN</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0944a4353780132eeab7b06e3e42291dac7c6ddcc663f8fac1ba66a679c598606</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>UART_EVENT_WRITE_COMPLETE</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0944a4353780132eeab7b06e3e42291da270f0fc3a099a5f7a4432a031943a627</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a01d2df822a1c45a97bc5c63e09719f11</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>uartfifo.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>uartfifo_8h</filename>
-    <includes id="uart_8h" name="uart.h" local="yes" imported="no">iface/dev/uart.h</includes>
     <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">fifo.h</includes>
-    <class kind="struct">uartfifo_cfg_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>UARTFIFO_DEVICE</name>
-      <anchorfile>group___s_y_s___u_a_r_t_f_i_f_o.html</anchorfile>
-      <anchor>gae961927cdb3c39941ee9947bac437316</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
+    <includes id="uart_8h" name="uart.h" local="yes" imported="no">uart.h</includes>
   </compound>
   <compound kind="file">
     <name>usb.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>usb_8h</filename>
     <class kind="struct">usb_attr_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_GETATTR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga785d453825b98b0d07217b7038219f18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_SETATTR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gad6f6c4daba62bacea67d686703974644</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_RESET</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga7561bd1047753ea4d31750a6e169dcb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_ATTACH</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga01556db3ac51057a7b46248d3d82ebc3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_DETACH</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga1dad0e52179b7ec389712b592e70e9cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_CONFIGURE</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga14f78d39c2242b61c939abc54f8fbe99</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_SETADDR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga268ff33ef187038af7193f87b9fe9d8b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_RESETEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gaafdf6965129a7bc8daf67ad1f39f8cf6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_ENABLEEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gaaa0c78d4ec81f63b00f1812788d1fbdf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_DISABLEEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga138790e1c9c34c1792e233f28bcd8225</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_STALLEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gac2174b37571a9c6aee5bb468583985cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_UNSTALLEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gac6fd7eda91dd24231db4459cc1520fd5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_CFGEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gab8129187a9468244e2f1730808642e24</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_SETEVENTHANDLER</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gac6b890fbfcce430ca6ed3c175bac637c</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_USB_ISCONNECTED</name>
@@ -3198,875 +2482,50 @@
       <anchor>gabc85c456d6ed233afeee0193d13ea005</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>usb_action_t</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga4d80bc3de464eccce2940d955448ef06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>void(*</type>
-      <name>usb_event_handler_t</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gaa05b8bd2a1c73a12e168475b91c2139e</anchor>
-      <arglist>)(usb_spec_event_t)</arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SETUP_EVENT</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5acb6fd04450fad1154a28a34854d755f0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_OUT_EVENT</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a252da7a582f3e5ac441ce510ea534a70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_IN_EVENT</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a8299ede3f5483b2f2fbf64361e7c9c21</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_OUT_EVENT_STALL</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a173cfc749e23847664dd24482653940a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_IN_EVENT_STALL</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a8305e7204f1523c4cb8114c7da5a50fb</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>usb_spec_event_t</name>
+      <name>usb_flag_t</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga64e493e34c1d014134234576ebf1d2b1</anchor>
+      <anchor>gab98f8d9f47d35e414c6fabeca9afe495</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_NONE</name>
+      <name>USB_FLAG_SET_UNCONFIGURED</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1ab25f25f85cf492bbd3103823d369918d</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a7677ef20be3476ecef501832d691a954</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_RESET</name>
+      <name>USB_FLAG_SET_DEVICE</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a25b63f6fb0cff997e788dea2efaba053</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a81cf5357682f48a1cbcbd64f3fdf4f61</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_POWER</name>
+      <name>USB_FLAG_SET_HOST</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a6b3e52ae311ae7611a065213426aae79</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a12b9f8be2cb11d58902203e93d38887f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_SUSPEND</name>
+      <name>USB_FLAG_SET_OTG</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a01b514743987fc89d263e1a5f3df6d04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_RESUME</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a4b09f1245f9ef9ff77c4cf3adf27aa3a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_DEBUG</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a440b047b717239298de57a137602028b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_WAKEUP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1aa64b8298343e08d09f7f3adc37218a14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_WAKEUP_CFG</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1abb155db2e80a68e9d793f5535f672f4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_DIR_CTRL_EP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1af5c68635b605539c4a272085139161a5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_ERR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a39ed8d6613bba05453ba9adeb56722b5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_FIQ</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1aeb2df3e4403d96154002fa7446ac5de7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_SOF</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1ad89fce2cf7da52d07d9d5eaa58fb77da</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_TOTAL</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1ae461c3926187266c37d0d34e193858c0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>usb_attr_mode_t</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga578dcf8d54f14603f1fb0b0b1ce56713</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_ATTR_MODE_UNCONFIGURED</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga578dcf8d54f14603f1fb0b0b1ce56713ae4561e72ba2f4b40f92051ff4e025889</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_ATTR_MODE_HOST</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga578dcf8d54f14603f1fb0b0b1ce56713a04a5a05450d79146c435dbbf9e70168b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_ATTR_MODE_OTG</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga578dcf8d54f14603f1fb0b0b1ce56713a57c2667c533296d123c4f16b75202ba8</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a50050d2fc5d468f9cabd0b907a3b2e2e</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>usbfifo.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/dev/</path>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>usbfifo_8h</filename>
-    <includes id="usb_8h" name="usb.h" local="yes" imported="no">iface/dev/usb.h</includes>
     <includes id="fifo_8h" name="fifo.h" local="yes" imported="no">fifo.h</includes>
-    <class kind="struct">usbfifo_cfg_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>USBFIFO_DEVICE</name>
-      <anchorfile>group___s_y_s___u_s_b_f_i_f_o.html</anchorfile>
-      <anchor>ga4db272ec6c5801e3201d8319c9ab3fb3</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
+    <includes id="usb_8h" name="usb.h" local="yes" imported="no">usb.h</includes>
   </compound>
   <compound kind="file">
-    <name>dirent.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/posix/sys/</path>
-    <filename>dirent_8h</filename>
-    <class kind="struct">dirent</class>
-    <member kind="function">
-      <type>int</type>
-      <name>closedir</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>gaaeac2b41e8c2c3a5f91c9bd511a8c0a6</anchor>
-      <arglist>(DIR *dirp)</arglist>
-    </member>
-    <member kind="function">
-      <type>DIR *</type>
-      <name>opendir</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>gae27c7f260a652b74c43296993d14ef0b</anchor>
-      <arglist>(const char *dirname)</arglist>
-    </member>
-    <member kind="function">
-      <type>struct dirent *</type>
-      <name>readdir</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>ga824e3b8c5995631b373ddb65cb674318</anchor>
-      <arglist>(DIR *dirp)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>readdir_r</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>ga2219da481be06be4bf9f8f363b607492</anchor>
-      <arglist>(DIR *dirp, struct dirent *entry, struct dirent **result)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>rewinddir</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>gad4fcb58b9194b1a3c1699654de963719</anchor>
-      <arglist>(DIR *dirp)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>seekdir</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>ga6be27113ffd4a87f2f46c3d1d9a71046</anchor>
-      <arglist>(DIR *dirp, long loc)</arglist>
-    </member>
-    <member kind="function">
-      <type>long</type>
-      <name>telldir</name>
-      <anchorfile>group___d_i_r_e_n_t.html</anchorfile>
-      <anchor>ga4c2cd02bd612ae655782632c9f5227ec</anchor>
-      <arglist>(DIR *dirp)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>link.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/iface/</path>
-    <filename>iface_2link_8h</filename>
-    <includes id="adc_8h" name="adc.h" local="yes" imported="no">dev/adc.h</includes>
-    <includes id="bootloader_8h" name="bootloader.h" local="yes" imported="no">dev/bootloader.h</includes>
-    <includes id="core_8h" name="core.h" local="yes" imported="no">dev/core.h</includes>
-    <includes id="pio_8h" name="pio.h" local="yes" imported="no">dev/pio.h</includes>
-    <includes id="dac_8h" name="dac.h" local="yes" imported="no">dev/dac.h</includes>
-    <includes id="eint_8h" name="eint.h" local="yes" imported="no">dev/eint.h</includes>
-    <includes id="flash_8h" name="flash.h" local="yes" imported="no">dev/flash.h</includes>
-    <includes id="i2c_8h" name="i2c.h" local="yes" imported="no">dev/i2c.h</includes>
-    <includes id="pwm_8h" name="pwm.h" local="yes" imported="no">dev/pwm.h</includes>
-    <includes id="qei_8h" name="qei.h" local="yes" imported="no">dev/qei.h</includes>
-    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">dev/rtc.h</includes>
-    <includes id="spi_8h" name="spi.h" local="yes" imported="no">dev/spi.h</includes>
-    <includes id="tmr_8h" name="tmr.h" local="yes" imported="no">dev/tmr.h</includes>
-    <includes id="uart_8h" name="uart.h" local="yes" imported="no">dev/uart.h</includes>
-    <includes id="usb_8h" name="usb.h" local="yes" imported="no">dev/usb.h</includes>
-    <includes id="sys_8h" name="sys.h" local="yes" imported="no">dev/sys.h</includes>
-    <class kind="union">link_op_t</class>
-    <class kind="struct">link_reply_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_PHY_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga791c4825256b199c45a231919e9ca487</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_PROT_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga99043b249fff71ae801688138117ce5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_DEV_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga3ed6a9d071bf7a159218e117872263f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFMT</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga171b7c8730271deb6e5aa68136a4740f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFDIR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga7a6f21b636cffd5f5c06bd09bae4194b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFCHR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2b17b2febed35066590ffcb92d89bd10</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFBLK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf7b2d7d4dc8e0d6b72f787575bbe9654</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFREG</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga105ec7b73e771eca325804406ae03e65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFLNK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae829b2e5c373944dbce984d4b330fecd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFSOCK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga4b9daa0a45ab4b90a1421ee773393513</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFIFO</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac0fd9aefc3188763ba174f93aba698f3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRWXU</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga363234e755d7128e3e1813a6e5651915</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRUSR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga5842b1623d7a5a84e7b4f680ad4fdf82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IWUSR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gad2364d2292c43d82eb04d11dc64ec313</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IXUSR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga4d48dd607635d52737ab987e694b8f06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRWXG</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga50fbbc9901108c114b6b3fa1c780e861</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRGRP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab6b49801a1df23f6c0c45b4ac9b6dd68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IWGRP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga15be78b0705907a0ac9cb8b9e675c915</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IXGRP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab75b10f83eb7510809e3df0dc05e9b64</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRWXO</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga053a15ca37d26350864792ef1c2ec661</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IROTH</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga886dfc37334a414bbe524504a4d727c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IWOTH</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaefec91c29eae7095ffe7af4cb01f6a14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IXOTH</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga5ae54c39c00ad4f04598cef10b94b582</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_ISUID</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga1a6db80672511a0637f34f01cad820d1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_ISGID</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf2a1e3831f59f2ab446f2e0f3a14cad1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_ISVTX</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2cd0abc32f496cb8603341105b17f7c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_OVERFLOW</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf9dd75909df0713efbc7fd655ca1a164</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_RESUME</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gadc2d04f2cf3739a98c2553388f8944d2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FLUSH_START</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga61466a4574005590ac19be1e435d0354</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FLUSH_STOP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae5f6c74f59665ccbc7b2d46821e90791</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_START</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga15531ee0e8e6fa35ae805221252ead23</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_STOP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab36bb2d660571f55f80c6bdd0f026f94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FILTER</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga94f70c65345d59077e2b2022c5e2380c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gadfd2932878e963d0137662ac9d406d2a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_UNNAMED_USER_EVENT</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaed0a2b5b9956feac0b180a4b513fa64a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_MESSAGE</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga731c1b667bb7b95c174530b1d2c95f44</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_WARNING</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac9eac82b6df00d12a35bef8676b89e5e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_CRITICAL</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gadb675bb1b26a459df4fbc611614153cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FATAL</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga148cf924c1377e2c42c3b5dd95f290be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_RDONLY</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac6aeea1a6e2524d8202419c28ecab777</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_WRONLY</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2d0bd8911c5e24b3ad908a075d189313</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_RDWR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae80e0143643175d3bd04ad72443f75fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_APPEND</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaa6d6c75ffa4888a0d70314171f90c165</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_CREAT</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae47d038edb66d060603aa84f4960e233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_TRUNC</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga70886d1c2dee75fb78ffba62d417b590</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_EXCL</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gafbac29836431df00cd509d76f5c53a5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_NONBLOCK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga51eaa834f089254f4ab95cc7b44a7b17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>volatile void *</type>
-      <name>link_dev_t</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga648a6bd0ab27ce7e2f6afaadf7d273a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_init</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>gad9dc554a4425c2de2dbd47a5134dc987</anchor>
-      <arglist>(void)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>link_exit</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga67ba802c25b9673aa4c022e132b585d4</anchor>
-      <arglist>(void)</arglist>
-    </member>
-    <member kind="function">
-      <type>link_transport_phy_t</type>
-      <name>link_connect</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>gab9df96b591f79d2f123f4a45f8a3f852</anchor>
-      <arglist>(const char *sn)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_disconnect</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga0ff40181a593a2f603a887ebebb79fc9</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>char *</type>
-      <name>link_new_device_list</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>gaa8322b59b78ce53702fa744a544c3cf2</anchor>
-      <arglist>(int max)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>link_del_device_list</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga219a561d7c160d5bd7717d56add55fd6</anchor>
-      <arglist>(char *sn_list)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_get_err</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga667060ebac6fd04b38e8a7c9b1e4b5b7</anchor>
-      <arglist>(void)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>link_set_debug</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga1b6c63cf2c981bd45cb4c14dd17634cc</anchor>
-      <arglist>(int debug_level)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_open</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga0dcab7ecd94bab708648012000e408d9</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, int flags,...)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_ioctl</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gabfaae5ad494e42f62b31127a306797ef</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, int request,...)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_read</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae2277f9efbd77259db93c0fc76d373c9</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_write</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gad03c33a3319d76de1b994c83a5e889b2</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, const void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_close</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga094b294b36391dfc64464591b53c7193</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_unlink</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga6f97b09fef314b4d5cfb7ee9429332f8</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_lseek</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga931d744f542b63d83fd798c027a91d3f</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, off_t offset, int whence)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_mkdir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga5b7cbca8b1704ed1d32dd31d9136debd</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, link_mode_t mode)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_rmdir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga80483d24e4b1d03cb18abfbd7dc4fd63</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_opendir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf58c6f028ef5f43f0d24f32758e16e19</anchor>
-      <arglist>(link_transport_phy_t handle, const char *dirname)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_closedir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf70334eef40924a40a6c4636ec0e193b</anchor>
-      <arglist>(link_transport_phy_t handle, int dirp)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_readdir_r</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2c9c4a06710346463c2429b109111623</anchor>
-      <arglist>(link_transport_phy_t handle, int dirp, struct link_dirent *entry, struct link_dirent **result)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_mkfs</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae42733b80a99180a691c70df2137a776</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_exec</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga35ac1537f8085cec57c6c486c50357c4</anchor>
-      <arglist>(link_transport_phy_t handle, const char *file)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_symlink</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga7c5d439f1e023269ae96bec64796e020</anchor>
-      <arglist>(link_transport_phy_t handle, const char *old_path, const char *new_path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_open_stdio</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac47136477797862dd600df2f168c9d2f</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_close_stdio</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga1ac9be3df41ec2e93c14c7f885247eb0</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_read_stdout</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga32cd6db0a6c68963889254337306d0de</anchor>
-      <arglist>(link_transport_phy_t handle, void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_write_stdin</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga8b0b58b5af967a70e52ab1cb639924da</anchor>
-      <arglist>(link_transport_phy_t handle, const void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_settime</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2eecf4e6e45a1aebb4153c37b89a518a</anchor>
-      <arglist>(link_transport_phy_t handle, struct tm *t)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_gettime</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae19982b878801cd3c79b453bba8105ca</anchor>
-      <arglist>(link_transport_phy_t handle, struct tm *t)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_kill_pid</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga74752cc07271977dc00325b3a7d1364f</anchor>
-      <arglist>(link_transport_phy_t handle, int pid, int signo)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_get_security_addr</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga37f1acd91ab909786a553dd7db8993f3</anchor>
-      <arglist>(u32 *addr)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_rename</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga909eaaae93a9bef999e319acd8f55f83</anchor>
-      <arglist>(link_transport_phy_t handle, const char *old_path, const char *new_path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_chown</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab6408de0f86e876b9f7186610738be59</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, int owner, int group)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_chmod</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaac73aa5cb0aad85ea60f730da1e7efb0</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, int mode)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_reset</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>ga142569331199e28d41d508d216447591</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_resetbootloader</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>gab1c1e88e6b17042b38ed225ee69e8e16</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_readflash</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>gab1b99bdf48c4c09453f4fc226a60274b</anchor>
-      <arglist>(link_transport_phy_t handle, int addr, void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_writeflash</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>ga168a914dbd78cb979d72862648a50cd9</anchor>
-      <arglist>(link_transport_phy_t handle, int addr, const void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_eraseflash</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>gad46c232c9792dd6d121b0868159edb93</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>link_errno</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga38bd77abee21e101bdb11e391e58747d</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>stratify.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/stratify/</path>
-    <filename>stratify_8h</filename>
-    <class kind="struct">signal_callback_t</class>
+    <name>sos.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/</path>
+    <filename>sos_8h</filename>
+    <class kind="struct">sos_board_config_t</class>
     <member kind="function">
       <type>int</type>
       <name>hibernate</name>
@@ -4083,10 +2542,10 @@
     </member>
     <member kind="function">
       <type>void *</type>
-      <name>initial_thread</name>
+      <name>sos_default_thread</name>
       <anchorfile>group___s_t_f_y.html</anchorfile>
-      <anchor>gad20ba7632740ffd6129845b9028a0d6b</anchor>
-      <arglist>(void *arg) 1</arglist>
+      <anchor>ga46e6c06dae5493d81b29faaf3b810b48</anchor>
+      <arglist>(void *arg)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -4130,51 +2589,10 @@
       <anchor>gace57c1587a1b9898b868e269d8a0e2ba</anchor>
       <arglist>(int request, void *data) 1</arglist>
     </member>
-    <member kind="function">
-      <type>int</type>
-      <name>signal_callback</name>
-      <anchorfile>group___s_t_f_y.html</anchorfile>
-      <anchor>ga4393cbea94379cda8f528b741b5d49c2</anchor>
-      <arglist>(void *context, const void *data)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>usb_dev_adc.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/stratify/</path>
-    <filename>usb__dev__adc_8h</filename>
-  </compound>
-  <compound kind="file">
-    <name>usb_dev_cdc.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/stratify/</path>
-    <filename>usb__dev__cdc_8h</filename>
-  </compound>
-  <compound kind="file">
-    <name>usb_dev_hid.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/stratify/</path>
-    <filename>usb__dev__hid_8h</filename>
-    <member kind="function">
-      <type>uint32_t</type>
-      <name>usb_dev_hid_get_report</name>
-      <anchorfile>group___u_s_b___d_e_v___h_i_d.html</anchorfile>
-      <anchor>gaeb5d1ee8665c8fcee14d0eb3dc5150d0</anchor>
-      <arglist>(void)</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>usb_dev_msc.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/include/stratify/</path>
-    <filename>usb__dev__msc_8h</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>MSC_SUBCLASS_RBC</name>
-      <anchorfile>group___u_s_b___d_e_v___m_s_c.html</anchorfile>
-      <anchor>ga0e494337587564a5a04c55a54573e253</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>config.h</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/</path>
+    <path>/Users/tgil/git/StratifyOS/src/</path>
     <filename>config_8h</filename>
     <member kind="define">
       <type>#define</type>
@@ -4186,7 +2604,7 @@
   </compound>
   <compound kind="file">
     <name>dirent.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/dirent/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/dirent/</path>
     <filename>dirent_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <includes id="dirent_8h" name="dirent.h" local="yes" imported="no">dirent.h</includes>
@@ -4242,7 +2660,7 @@
   </compound>
   <compound kind="file">
     <name>grp.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/grp/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/grp/</path>
     <filename>grp_8c</filename>
     <member kind="function">
       <type>struct group *</type>
@@ -4276,27 +2694,27 @@
       <type>struct group *</type>
       <name>getgrent</name>
       <anchorfile>group___g_r_p.html</anchorfile>
-      <anchor>gad562e93b891b0df5e1d875b7ad118aa6</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga000b03acd164a7b8712a8bbec6a9f048</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setgrent</name>
       <anchorfile>group___g_r_p.html</anchorfile>
-      <anchor>gacb15dcd4c02d1f8b693306cd43a8aa69</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gabb37dfa0f0c86a8cdb4bd12e74b6256b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>endgrent</name>
       <anchorfile>group___g_r_p.html</anchorfile>
-      <anchor>gad8139e6b6a3e1c75bc059ff9507cbd48</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gadec2ce5b05d5c32cc4a692cef8fd2aec</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>mqueue.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/mqueue/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/mqueue/</path>
     <filename>mqueue_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -4371,7 +2789,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_attr.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__attr_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4489,7 +2907,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_attr_init.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__attr__init_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4509,7 +2927,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_cancel.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__cancel_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4522,13 +2940,13 @@
   </compound>
   <compound kind="file">
     <name>pthread_cleanup.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__cleanup_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
   </compound>
   <compound kind="file">
     <name>pthread_cond.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__cond_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4576,7 +2994,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_condattr.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__condattr_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4624,7 +3042,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_create.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__create_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4644,7 +3062,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_mutex.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__mutex_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4706,7 +3124,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_mutexattr.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__mutexattr_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4768,7 +3186,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_mutexattr_init.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__mutexattr__init_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4788,7 +3206,7 @@
   </compound>
   <compound kind="file">
     <name>pthread_schedparam.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__schedparam_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4808,19 +3226,19 @@
   </compound>
   <compound kind="file">
     <name>pthread_self.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pthread/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pthread/</path>
     <filename>pthread__self_8c</filename>
     <member kind="function">
       <type>pthread_t</type>
       <name>pthread_self</name>
       <anchorfile>group___p_t_h_r_e_a_d.html</anchorfile>
-      <anchor>ga4c4f5f3b4f8f45d9d897847d53b11aaa</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga7533cb85402df1287295323a4fd809b3</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>pwd.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/pwd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/pwd/</path>
     <filename>pwd_8c</filename>
     <member kind="function">
       <type>struct passwd *</type>
@@ -4854,27 +3272,27 @@
       <type>struct passwd *</type>
       <name>getpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
-      <anchor>ga6c9819b8d04fd2807a7a017801b76d17</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga2f7ceedcdd60308b6a47d86af06cef1b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
-      <anchor>ga015c67a1cd39fb9dc8910ad7d622c6fa</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga8fa077ac6b2ed8565db3ecfa3be0f85c</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>endpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
-      <anchor>gacd2bac39cbb74a8b6fde9ac61f02d0f5</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga70fd2517d9f12a9bbed870c911950414</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>sched_posix.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/sched/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/sched/</path>
     <filename>sched__posix_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -4930,13 +3348,13 @@
       <type>int</type>
       <name>sched_yield</name>
       <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga357cd4b34c13011749dfffb42b489f09</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gad35c30371efccc9ca7187cc8497770dd</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>sem.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/semaphore/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/semaphore/</path>
     <filename>sem_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5011,7 +3429,7 @@
   </compound>
   <compound kind="file">
     <name>_kill.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/signal/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/signal/</path>
     <filename>__kill_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5030,22 +3448,15 @@
   </compound>
   <compound kind="file">
     <name>_wait.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/signal/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/signal/</path>
     <filename>__wait_8c</filename>
   </compound>
   <compound kind="file">
     <name>pthread_kill.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/signal/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/signal/</path>
     <filename>pthread__kill_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
-    <includes id="stratify_8h" name="stratify.h" local="no" imported="no">stratify/stratify.h</includes>
-    <member kind="function">
-      <type>int</type>
-      <name>signal_callback</name>
-      <anchorfile>group___s_i_g_n_a_l.html</anchorfile>
-      <anchor>ga4393cbea94379cda8f528b741b5d49c2</anchor>
-      <arglist>(void *context, const void *data)</arglist>
-    </member>
+    <includes id="sos_8h" name="sos.h" local="yes" imported="no">sos/sos.h</includes>
     <member kind="function">
       <type>int</type>
       <name>pthread_kill</name>
@@ -5056,7 +3467,7 @@
   </compound>
   <compound kind="file">
     <name>sig_realtime.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/signal/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/signal/</path>
     <filename>sig__realtime_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5089,7 +3500,7 @@
   </compound>
   <compound kind="file">
     <name>signal.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/signal/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/signal/</path>
     <filename>signal_8c</filename>
     <member kind="function">
       <type>_sig_func_ptr</type>
@@ -5129,14 +3540,14 @@
   </compound>
   <compound kind="file">
     <name>signal_handler.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/signal/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/signal/</path>
     <filename>signal__handler_8c</filename>
   </compound>
   <compound kind="file">
     <name>_gettimeofday.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/time/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/time/</path>
     <filename>__gettimeofday_8c</filename>
-    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">iface/dev/rtc.h</includes>
+    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">sos/dev/rtc.h</includes>
     <member kind="function">
       <type>int</type>
       <name>gettimeofday</name>
@@ -5147,14 +3558,14 @@
   </compound>
   <compound kind="file">
     <name>_itimer.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/time/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/time/</path>
     <filename>__itimer_8c</filename>
   </compound>
   <compound kind="file">
     <name>_settimeofday.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/time/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/time/</path>
     <filename>__settimeofday_8c</filename>
-    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">iface/dev/rtc.h</includes>
+    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">sos/dev/rtc.h</includes>
     <member kind="function">
       <type>int</type>
       <name>settimeofday</name>
@@ -5165,7 +3576,7 @@
   </compound>
   <compound kind="file">
     <name>_times.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/time/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/time/</path>
     <filename>__times_8c</filename>
     <member kind="function">
       <type>clock_t</type>
@@ -5177,7 +3588,7 @@
   </compound>
   <compound kind="file">
     <name>clocks.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/time/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/time/</path>
     <filename>clocks_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -5211,10 +3622,10 @@
   </compound>
   <compound kind="file">
     <name>hibernate.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/time/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/time/</path>
     <filename>hibernate_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
-    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">iface/dev/rtc.h</includes>
+    <includes id="rtc_8h" name="rtc.h" local="yes" imported="no">sos/dev/rtc.h</includes>
     <member kind="function">
       <type>int</type>
       <name>hibernate</name>
@@ -5232,8 +3643,9 @@
   </compound>
   <compound kind="file">
     <name>_close.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__close_8c</filename>
+    <includes id="sos_8h" name="sos.h" local="yes" imported="no">sos/sos.h</includes>
     <member kind="function">
       <type>int</type>
       <name>close</name>
@@ -5244,10 +3656,9 @@
   </compound>
   <compound kind="file">
     <name>_exit.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__exit_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
-    <includes id="iface_2link_8h" name="link.h" local="yes" imported="no">iface/link.h</includes>
     <member kind="function">
       <type>void</type>
       <name>_exit</name>
@@ -5258,8 +3669,9 @@
   </compound>
   <compound kind="file">
     <name>_fcntl.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__fcntl_8c</filename>
+    <includes id="sos_8h" name="sos.h" local="yes" imported="no">sos/sos.h</includes>
     <member kind="function">
       <type>int</type>
       <name>fcntl</name>
@@ -5270,26 +3682,26 @@
   </compound>
   <compound kind="file">
     <name>_fork.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__fork_8c</filename>
     <member kind="function">
       <type>pid_t</type>
       <name>fork</name>
       <anchorfile>group___u_n_i___p_r_o_c_e_s_s.html</anchorfile>
-      <anchor>gaa4e4714e6e8927c80b2553a40094b6d9</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga04629be7bde8f11cbf56e09e66a62dcc</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>pid_t</type>
       <name>vfork</name>
       <anchorfile>group___u_n_i___p_r_o_c_e_s_s.html</anchorfile>
-      <anchor>ga00de8c0545c31325a425f53371a56235</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga2fc1371c63ca2ec8aec2abf4b1678e12</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>_fstat.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__fstat_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5301,32 +3713,32 @@
   </compound>
   <compound kind="file">
     <name>_getpid.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__getpid_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
       <type>pid_t</type>
       <name>getpid</name>
       <anchorfile>group___u_n_i_s_t_d.html</anchorfile>
-      <anchor>gac61b207337ca21b3b309593fd1a0cb82</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gadd1dc6545057b7f1c7f91352536fb060</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>_getppid.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__getppid_8c</filename>
     <member kind="function">
       <type>pid_t</type>
       <name>getppid</name>
       <anchorfile>group___u_n_i_s_t_d.html</anchorfile>
-      <anchor>gac6d7f7ade00dcdc302b0da5664eee812</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga556b7b3c8a853a6c86d847da7f008fc0</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="file">
     <name>_isatty.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__isatty_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5338,7 +3750,7 @@
   </compound>
   <compound kind="file">
     <name>_link.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__link_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5350,7 +3762,7 @@
   </compound>
   <compound kind="file">
     <name>_lseek.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__lseek_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
@@ -5363,9 +3775,9 @@
   </compound>
   <compound kind="file">
     <name>_open.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__open_8c</filename>
-    <includes id="sys_8h" name="sys.h" local="yes" imported="no">iface/dev/sys.h</includes>
+    <includes id="sys_8h" name="sys.h" local="yes" imported="no">sos/dev/sys.h</includes>
     <member kind="function">
       <type>int</type>
       <name>open</name>
@@ -5376,8 +3788,9 @@
   </compound>
   <compound kind="file">
     <name>_read.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__read_8c</filename>
+    <includes id="sos_8h" name="sos.h" local="yes" imported="no">sos/sos.h</includes>
     <member kind="function">
       <type>int</type>
       <name>read</name>
@@ -5388,7 +3801,7 @@
   </compound>
   <compound kind="file">
     <name>_rename.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__rename_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5400,7 +3813,7 @@
   </compound>
   <compound kind="file">
     <name>_stat.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__stat_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5412,7 +3825,7 @@
   </compound>
   <compound kind="file">
     <name>_symlink.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__symlink_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5424,13 +3837,14 @@
   </compound>
   <compound kind="file">
     <name>_unlink.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__unlink_8c</filename>
   </compound>
   <compound kind="file">
     <name>_write.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>__write_8c</filename>
+    <includes id="sos_8h" name="sos.h" local="yes" imported="no">sos/sos.h</includes>
     <member kind="function">
       <type>int</type>
       <name>write</name>
@@ -5441,7 +3855,7 @@
   </compound>
   <compound kind="file">
     <name>access.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>access_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5453,7 +3867,7 @@
   </compound>
   <compound kind="file">
     <name>chmod.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>chmod_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5465,7 +3879,7 @@
   </compound>
   <compound kind="file">
     <name>chown.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>chown_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5477,9 +3891,10 @@
   </compound>
   <compound kind="file">
     <name>ioctl.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>ioctl_8c</filename>
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
+    <includes id="sos_8h" name="sos.h" local="yes" imported="no">sos/sos.h</includes>
     <member kind="function">
       <type>int</type>
       <name>ioctl</name>
@@ -5490,7 +3905,7 @@
   </compound>
   <compound kind="file">
     <name>lstat.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>lstat_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5502,7 +3917,7 @@
   </compound>
   <compound kind="file">
     <name>mkdir.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>mkdir_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5514,7 +3929,7 @@
   </compound>
   <compound kind="file">
     <name>rmdir.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>rmdir_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5526,7 +3941,7 @@
   </compound>
   <compound kind="file">
     <name>sleep.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>sleep_8c</filename>
     <member kind="function">
       <type>unsigned int</type>
@@ -5538,12 +3953,12 @@
   </compound>
   <compound kind="file">
     <name>unistd_data_transfer.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>unistd__data__transfer_8c</filename>
   </compound>
   <compound kind="file">
     <name>usleep.c</name>
-    <path>/Users/tgil/stratify-workspace/StratifyOS/src/sys/unistd/</path>
+    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
     <filename>usleep_8c</filename>
     <member kind="function">
       <type>int</type>
@@ -5554,28 +3969,14 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>adc_attr_t</name>
-    <filename>structadc__attr__t.html</filename>
+    <name>adc_pin_assignment_t</name>
+    <filename>structadc__pin__assignment__t.html</filename>
     <member kind="variable">
-      <type>u8</type>
-      <name>pin_assign</name>
-      <anchorfile>structadc__attr__t.html</anchorfile>
-      <anchor>a10f84e0bc6968495f07862c5d597eea2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>enabled_channels</name>
-      <anchorfile>structadc__attr__t.html</anchorfile>
-      <anchor>ab738d487c94267803329e344647cc188</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>freq</name>
-      <anchorfile>structadc__attr__t.html</anchorfile>
-      <anchor>ac060c4c10f0db40a04a9ea192e42fbe6</anchor>
-      <arglist></arglist>
+      <type>mcu_pin_t</type>
+      <name>channel</name>
+      <anchorfile>structadc__pin__assignment__t.html</anchorfile>
+      <anchor>af19c9d0504c2e232ee99f7e51f717ff9</anchor>
+      <arglist>[4]</arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -5632,91 +4033,34 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>bootloader_api_t</name>
-    <filename>structbootloader__api__t.html</filename>
-    <member kind="variable">
-      <type>u32</type>
-      <name>code_size</name>
-      <anchorfile>structbootloader__api__t.html</anchorfile>
-      <anchor>a4f75d6476508cb5d1ed9142b70adde2a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void(*</type>
-      <name>exec</name>
-      <anchorfile>structbootloader__api__t.html</anchorfile>
-      <anchor>ad06fc97a687dd16fa9582500b479c414</anchor>
-      <arglist>)(void *args)</arglist>
-    </member>
-    <member kind="variable">
-      <type>void(*</type>
-      <name>usb_dev_priv_init</name>
-      <anchorfile>structbootloader__api__t.html</anchorfile>
-      <anchor>acc7bf02cd95460222113155fe51c3db7</anchor>
-      <arglist>)(void *context)</arglist>
-    </member>
-    <member kind="variable">
-      <type>bootloader_aes_api_t</type>
-      <name>aes</name>
-      <anchorfile>structbootloader__api__t.html</anchorfile>
-      <anchor>a7486d81ce46cab0f15b2dfc328bb6f5c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>bootloader_attr_14x_t</name>
-    <filename>structbootloader__attr__14x__t.html</filename>
+    <name>bootloader_info_t</name>
+    <filename>structbootloader__info__t.html</filename>
     <member kind="variable">
       <type>u32</type>
       <name>version</name>
-      <anchorfile>structbootloader__attr__14x__t.html</anchorfile>
-      <anchor>ac00136fda15ffa70175cf793c9be30af</anchor>
+      <anchorfile>structbootloader__info__t.html</anchorfile>
+      <anchor>a55341ada638890fa778fc9d8768c317d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>serialno</name>
-      <anchorfile>structbootloader__attr__14x__t.html</anchorfile>
-      <anchor>aaa9a34b410186c114ab040afdbb97c1a</anchor>
+      <anchorfile>structbootloader__info__t.html</anchorfile>
+      <anchor>af0614d6c703d6fea329ae38311466f72</anchor>
       <arglist>[4]</arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>startaddr</name>
-      <anchorfile>structbootloader__attr__14x__t.html</anchorfile>
-      <anchor>a916f6c7601af62b8392dba0febdd7265</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>bootloader_attr_t</name>
-    <filename>structbootloader__attr__t.html</filename>
-    <member kind="variable">
-      <type>u32</type>
-      <name>version</name>
-      <anchorfile>structbootloader__attr__t.html</anchorfile>
-      <anchor>a25c8de55bcefa5f98ed4a82a5ba6c6d4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>serialno</name>
-      <anchorfile>structbootloader__attr__t.html</anchorfile>
-      <anchor>ae7f50f19d4694474eb77289a5567fac0</anchor>
-      <arglist>[4]</arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>startaddr</name>
-      <anchorfile>structbootloader__attr__t.html</anchorfile>
-      <anchor>aa4abf730f2dea92442c3d00cf65cb006</anchor>
+      <anchorfile>structbootloader__info__t.html</anchorfile>
+      <anchor>a2b4eea7ee77c73fb7183603544782a2b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>hardware_id</name>
-      <anchorfile>structbootloader__attr__t.html</anchorfile>
-      <anchor>a303177760989f7c88a6b3c6c2a584536</anchor>
+      <anchorfile>structbootloader__info__t.html</anchorfile>
+      <anchor>ab0f41764a9e07b362e8da0ff76889788</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5749,49 +4093,17 @@
     <name>core_attr_t</name>
     <filename>structcore__attr__t.html</filename>
     <member kind="variable">
-      <type>uint32_t</type>
-      <name>serial_number</name>
+      <type>u32</type>
+      <name>o_flags</name>
       <anchorfile>structcore__attr__t.html</anchorfile>
-      <anchor>af814d0af22134270091735cd68e786de</anchor>
-      <arglist>[4]</arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>clock</name>
-      <anchorfile>structcore__attr__t.html</anchorfile>
-      <anchor>aad8ce833ba07ca2acf27e040e8e90219</anchor>
+      <anchor>a88b0a8e30814bed2bcc9b4feb06e87b2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
-      <name>signature</name>
+      <type>u32</type>
+      <name>freq</name>
       <anchorfile>structcore__attr__t.html</anchorfile>
-      <anchor>a21fab8e443570a3dda1c587cc87523de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>reset_type</name>
-      <anchorfile>structcore__attr__t.html</anchorfile>
-      <anchor>ac0c665b47679fec38a3f1df4926316dd</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>core_clkout_t</name>
-    <filename>structcore__clkout__t.html</filename>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>src</name>
-      <anchorfile>structcore__clkout__t.html</anchorfile>
-      <anchor>add56e841fb8d2446c806651924fe76b4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>div</name>
-      <anchorfile>structcore__clkout__t.html</anchorfile>
-      <anchor>ae724b080cfc2ae5ffceb1d5cfc2c01c9</anchor>
+      <anchor>ae1719dc5af395c6d73499cc22b8b89b6</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5799,24 +4111,24 @@
     <name>core_irqprio_t</name>
     <filename>structcore__irqprio__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>periph</name>
       <anchorfile>structcore__irqprio__t.html</anchorfile>
-      <anchor>a1d117741a6788df807e1b4276533f59b</anchor>
+      <anchor>aa5594b60e66e10974cf8b445c106a6fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>s8</type>
       <name>prio</name>
       <anchorfile>structcore__irqprio__t.html</anchorfile>
-      <anchor>a7c70d93bc9ce088d5194a901380ede47</anchor>
+      <anchor>a60ce148949d88a8353784342d6cba8bd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>port</name>
       <anchorfile>structcore__irqprio__t.html</anchorfile>
-      <anchor>afad633e69da6afc7a10f8ec62a9ecb28</anchor>
+      <anchor>a3a0d336662071539aa48a56335e1a1c6</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5824,500 +4136,95 @@
     <name>core_pinfunc_t</name>
     <filename>structcore__pinfunc__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>periph_port</name>
       <anchorfile>structcore__pinfunc__t.html</anchorfile>
-      <anchor>a7960f82a425d48e144519fdb9bcfac1a</anchor>
+      <anchor>a92fd9e1f2a37712814ee31feef8941c0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>periph_func</name>
       <anchorfile>structcore__pinfunc__t.html</anchorfile>
-      <anchor>abc5179131d158d963909b36aaffaa610</anchor>
+      <anchor>a9613571382a2e0eec43f028a22f5f272</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>pio_t</type>
+      <type>mcu_pin_t</type>
       <name>io</name>
       <anchorfile>structcore__pinfunc__t.html</anchorfile>
-      <anchor>a6644650abd2581250c51af4ebb92954e</anchor>
+      <anchor>a38e01a27378f11b55d654b43bf64cc61</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>dac_attr_t</name>
-    <filename>structdac__attr__t.html</filename>
+    <name>devfifo_config_t</name>
+    <filename>structdevfifo__config__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
-      <anchorfile>structdac__attr__t.html</anchorfile>
-      <anchor>a02967e4e7ce70e05b0ee1845f8695ab6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>enabled_channels</name>
-      <anchorfile>structdac__attr__t.html</anchorfile>
-      <anchor>aa1feb38c44545f3af763f574c1318855</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>freq</name>
-      <anchorfile>structdac__attr__t.html</anchorfile>
-      <anchor>a173eac4045b35d199647b97ede9a604a</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>devfifo_attr_t</name>
-    <filename>structdevfifo__attr__t.html</filename>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>size</name>
-      <anchorfile>structdevfifo__attr__t.html</anchorfile>
-      <anchor>aa78aa04c4b18bab027716ac3895093ac</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>used</name>
-      <anchorfile>structdevfifo__attr__t.html</anchorfile>
-      <anchor>a9fd4813b01e1b37f2861450d773e5557</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>overflow</name>
-      <anchorfile>structdevfifo__attr__t.html</anchorfile>
-      <anchor>a20e2c7ebb39dcb4755d33ceec877710c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>devfifo_cfg_t</name>
-    <filename>structdevfifo__cfg__t.html</filename>
-    <member kind="variable">
-      <type>const device_t *</type>
+      <type>const void *</type>
       <name>dev</name>
-      <anchorfile>structdevfifo__cfg__t.html</anchorfile>
-      <anchor>a284c15ed174401a250787cd3d631c62c</anchor>
+      <anchorfile>structdevfifo__config__t.html</anchorfile>
+      <anchor>ab155cacd634fe9799dab193743a21548</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>char *</type>
       <name>buffer</name>
-      <anchorfile>structdevfifo__cfg__t.html</anchorfile>
-      <anchor>a6f93b7b15f07f0cc590852af8f104322</anchor>
+      <anchorfile>structdevfifo__config__t.html</anchorfile>
+      <anchor>a0711208ca92fd317c9b0848b9181e987</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>size</name>
-      <anchorfile>structdevfifo__cfg__t.html</anchorfile>
-      <anchor>aa492bf9eb0e3868d168835aa5c97110b</anchor>
+      <anchorfile>structdevfifo__config__t.html</anchorfile>
+      <anchor>a6965de01f0bcac25bd65b2d41eaf72e7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>req_getbyte</name>
-      <anchorfile>structdevfifo__cfg__t.html</anchorfile>
-      <anchor>a7125b2cad3b8915296ccde563cb94e47</anchor>
+      <anchorfile>structdevfifo__config__t.html</anchorfile>
+      <anchor>acf01afb4e45dff4f9fec91b691317328</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>req_setaction</name>
-      <anchorfile>structdevfifo__cfg__t.html</anchorfile>
-      <anchor>a5ed27866d0ab5642b626681cd8a3f32e</anchor>
+      <anchorfile>structdevfifo__config__t.html</anchorfile>
+      <anchor>ac470499ae453afd0ab0bb84967fa131a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>int</type>
       <name>event</name>
-      <anchorfile>structdevfifo__cfg__t.html</anchorfile>
-      <anchor>a0dfeca67bd72bbdcc0201789f242e8b5</anchor>
+      <anchorfile>structdevfifo__config__t.html</anchorfile>
+      <anchor>a6e575d86310f9ca97dbfce2b5c995073</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>device_adc_cfg_t</name>
-    <filename>structdevice__adc__cfg__t.html</filename>
+    <name>devfifo_info_t</name>
+    <filename>structdevfifo__info__t.html</filename>
     <member kind="variable">
-      <type>u16</type>
-      <name>reference</name>
-      <anchorfile>structdevice__adc__cfg__t.html</anchorfile>
-      <anchor>a27e236f0334fffb229c25d3d83318a84</anchor>
+      <type>uint32_t</type>
+      <name>size</name>
+      <anchorfile>structdevfifo__info__t.html</anchorfile>
+      <anchor>a2d9d742fc5b458534ae405d581b4c38a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>i8</type>
-      <name>channels</name>
-      <anchorfile>structdevice__adc__cfg__t.html</anchorfile>
-      <anchor>a1715c74708a2ed91beb9de53831f6bda</anchor>
-      <arglist>[DEVICE_MAX_ADC_CHANNELS]</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_cfg_t</name>
-    <filename>structdevice__cfg__t.html</filename>
-    <member kind="variable">
-      <type>device_periph_t</type>
-      <name>periph</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a224496a33b9dc315c1bedf149268a7f7</anchor>
+      <type>uint32_t</type>
+      <name>used</name>
+      <anchorfile>structdevfifo__info__t.html</anchorfile>
+      <anchor>a608274d7e5fd49feebded3aa8789e4cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>u8</type>
-      <name>pin_assign</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a34b189e4e6a7c94ab3c75d6af6d94ca4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>bitrate</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>ad21f01b4ad2415340042719a87043ba0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_spi_cfg_t</type>
-      <name>spi</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a1c75c04556a9e3442c5e8e561bdbf4cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_pwm_cfg_t</type>
-      <name>pwm</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a77bbd9dbfe54f9e6ec7c7fd090541541</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_adc_cfg_t</type>
-      <name>adc</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a22e2b68e4e7cf8365d7d87fc42d4a4a5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_uart_cfg_t</type>
-      <name>uart</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a6327847fe1261cfa145b3fd5bab76b70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_i2c_cfg_t</type>
-      <name>i2c</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a213c4a0c65071ced87897ba314ba3ea6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>pio_t</type>
-      <name>pio</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a790c08be956c06db503418ac80f236f4</anchor>
-      <arglist>[4]</arglist>
-    </member>
-    <member kind="variable">
-      <type>const void *</type>
-      <name>dcfg</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>a1dd25afc5eba5444390bafc0303bc768</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>state</name>
-      <anchorfile>structdevice__cfg__t.html</anchorfile>
-      <anchor>ab77e7f3c4f723597c63be1d182c2d77c</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_driver_t</name>
-    <filename>structdevice__driver__t.html</filename>
-    <member kind="variable">
-      <type>device_driver_open_t</type>
-      <name>open</name>
-      <anchorfile>structdevice__driver__t.html</anchorfile>
-      <anchor>a1e0fae71c3279d067e7f42ab2124ea37</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_driver_ioctl_t</type>
-      <name>ioctl</name>
-      <anchorfile>structdevice__driver__t.html</anchorfile>
-      <anchor>a636b06f827db50004930a7bc394aca68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_driver_read_t</type>
-      <name>read</name>
-      <anchorfile>structdevice__driver__t.html</anchorfile>
-      <anchor>a4381ca18baa18aefd5f840d65b3bb80c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_driver_write_t</type>
-      <name>write</name>
-      <anchorfile>structdevice__driver__t.html</anchorfile>
-      <anchor>a7bbbf7fcec85485d058c095d2c96b744</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_driver_close_t</type>
-      <name>close</name>
-      <anchorfile>structdevice__driver__t.html</anchorfile>
-      <anchor>acc1ab645a0be60b7ba17f37e99c1b4f1</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_gpio_t</name>
-    <filename>structdevice__gpio__t.html</filename>
-    <member kind="variable">
-      <type>i8</type>
-      <name>port</name>
-      <anchorfile>structdevice__gpio__t.html</anchorfile>
-      <anchor>afa84e69bd588f8b056707dc1bd30d7ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>i8</type>
-      <name>pin</name>
-      <anchorfile>structdevice__gpio__t.html</anchorfile>
-      <anchor>ae0bcf29b60392f68e12c3525ed284560</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_i2c_cfg_t</name>
-    <filename>structdevice__i2c__cfg__t.html</filename>
-    <member kind="variable">
-      <type>u16</type>
-      <name>slave_addr</name>
-      <anchorfile>structdevice__i2c__cfg__t.html</anchorfile>
-      <anchor>a46d03acdf1152c43fd743efe20985aba</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_periph_t</name>
-    <filename>structdevice__periph__t.html</filename>
-    <member kind="variable">
-      <type>u8</type>
-      <name>port</name>
-      <anchorfile>structdevice__periph__t.html</anchorfile>
-      <anchor>a87bde612eb5c5f076676e4bc44f2e192</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_pwm_cfg_t</name>
-    <filename>structdevice__pwm__cfg__t.html</filename>
-    <member kind="variable">
-      <type>u32</type>
-      <name>top</name>
-      <anchorfile>structdevice__pwm__cfg__t.html</anchorfile>
-      <anchor>ad7fd8c267ab34c763c0bf400c7b6be6c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>freq</name>
-      <anchorfile>structdevice__pwm__cfg__t.html</anchorfile>
-      <anchor>a4c5f3b6ca8eec477a581181a6cded33c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>i8</type>
-      <name>channels</name>
-      <anchorfile>structdevice__pwm__cfg__t.html</anchorfile>
-      <anchor>ab2892588f272999cdc24d8dfc9ad6a98</anchor>
-      <arglist>[DEVICE_MAX_PWM_CHANNELS]</arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_spi_cfg_t</name>
-    <filename>structdevice__spi__cfg__t.html</filename>
-    <member kind="variable">
-      <type>pio_t</type>
-      <name>cs</name>
-      <anchorfile>structdevice__spi__cfg__t.html</anchorfile>
-      <anchor>a1f1501f53c517f0e7fc37aaf16b73601</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>width</name>
-      <anchorfile>structdevice__spi__cfg__t.html</anchorfile>
-      <anchor>a13a773bdd02bd159af95d82eafc539fd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>format</name>
-      <anchorfile>structdevice__spi__cfg__t.html</anchorfile>
-      <anchor>a6b6dffbd01cdaebdaeb9f3758f6f7e47</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>mode</name>
-      <anchorfile>structdevice__spi__cfg__t.html</anchorfile>
-      <anchor>a4c85bf49d6e2946bc365253b184c592b</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_t</name>
-    <filename>structdevice__t.html</filename>
-    <member kind="variable">
-      <type>char</type>
-      <name>name</name>
-      <anchorfile>structdevice__t.html</anchorfile>
-      <anchor>a44b694d4926d675cabd252d3697c13fb</anchor>
-      <arglist>[NAME_MAX]</arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>uid</name>
-      <anchorfile>structdevice__t.html</anchorfile>
-      <anchor>ae3efd87c5ddda72d812a1a846362372f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>gid</name>
-      <anchorfile>structdevice__t.html</anchorfile>
-      <anchor>a5e15986a84d4b65c480d1b894970ced5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>mode</name>
-      <anchorfile>structdevice__t.html</anchorfile>
-      <anchor>a442b865cc6804c23a4775ad50b7f3357</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_driver_t</type>
-      <name>driver</name>
-      <anchorfile>structdevice__t.html</anchorfile>
-      <anchor>a48a9820ff074f3ab35a895b0ea18584d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>device_cfg_t</type>
-      <name>cfg</name>
-      <anchorfile>structdevice__t.html</anchorfile>
-      <anchor>a737e31aabded1fbf8d35b94762a40115</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_transfer_t</name>
-    <filename>structdevice__transfer__t.html</filename>
-    <member kind="variable">
-      <type>int</type>
-      <name>tid</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a9ca5a40b9981746eadf87bec8465c811</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>flags</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a26511d3ed637ac9227b96050a4669a24</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>loc</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a9513ef7343f0343b66bb6e2b2ee05182</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const void *</type>
-      <name>cbuf</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a0611c46dfceb2ac8e45088cfca9c7a9a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>buf</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a33ab02f5be228631bc710c15449a984b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const char *</type>
-      <name>cchbuf</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a1b8486b32aff19a2c038e9f38a133493</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>char *</type>
-      <name>chbuf</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a5ce8d8586a48a1eb5e66fa3cb929d29d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>nbyte</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>acbe4975923b1f26dbb7a6a1faa7d9df9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>mcu_callback_t</type>
-      <name>callback</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>aff67463ac5acf844be87aa47284c506d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>context</name>
-      <anchorfile>structdevice__transfer__t.html</anchorfile>
-      <anchor>a20842ee8eb522337fd34f2fb4ef8be85</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>device_uart_cfg_t</name>
-    <filename>structdevice__uart__cfg__t.html</filename>
-    <member kind="variable">
-      <type>u8</type>
-      <name>stop_bits</name>
-      <anchorfile>structdevice__uart__cfg__t.html</anchorfile>
-      <anchor>af38aedcb80e305b7ad5904376813aa96</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>parity</name>
-      <anchorfile>structdevice__uart__cfg__t.html</anchorfile>
-      <anchor>ae8baedf0fbbfe416630c87ebf10c7247</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>width</name>
-      <anchorfile>structdevice__uart__cfg__t.html</anchorfile>
-      <anchor>a250fb3eb4e93cf490eb3e2a43a2c7f27</anchor>
+      <type>uint32_t</type>
+      <name>overflow</name>
+      <anchorfile>structdevfifo__info__t.html</anchorfile>
+      <anchor>a84f9526140e2852ffdecda3a5e9cfacd</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6340,55 +4247,203 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>disk_attr_t</name>
-    <filename>structdisk__attr__t.html</filename>
+    <name>display_info_t</name>
+    <filename>structdisplay__info__t.html</filename>
     <member kind="variable">
-      <type>uint16_t</type>
+      <type>u16</type>
+      <name>w</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a16ebbab2f3649da93c1e178e3291a6df</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>h</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a9d5609da3ff5a1c8d2b0a92ad679656f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>void *</type>
+      <name>mem</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>af840461391297cab6016dfe23a1bab2d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>void *</type>
+      <name>scratch_mem</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a96e8d49a17e45e86b14b49fcb570f1ed</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>size</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a39551932dec3af132ee4e281b38e5204</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>cols</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a14615b729bab09974c593a799e7a801f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>rows</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>ac38a4d82f47dfdf0d5fe47b6d3dd3365</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>freq</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a802d0d5941d9687fcb51e719b1934aa2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>o_flags</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a72a65f092784cbd31956717c7d41f000</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>bits_per_pixel</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a71f188dc63ca74c7fb35daf7a702e01b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>margin_left</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>af8b107bd3dc8f4b4b1d4aeed99c2679e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>margin_right</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a6d43dd8be304c5ddb7bf3f132ca971fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>margin_top</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>af5ef897f84ce6a5bff4295b51285879a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>margin_bottom</name>
+      <anchorfile>structdisplay__info__t.html</anchorfile>
+      <anchor>a99a42474fffb36cd4bddfc797080466e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>display_palette_t</name>
+    <filename>structdisplay__palette__t.html</filename>
+    <member kind="variable">
+      <type>u8</type>
+      <name>pixel_format</name>
+      <anchorfile>structdisplay__palette__t.html</anchorfile>
+      <anchor>ab7a5b5e2542fa75d56a50bcb2621ca37</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>count</name>
+      <anchorfile>structdisplay__palette__t.html</anchorfile>
+      <anchor>aed8ac3932428ec3e222262e87984f948</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>pixel_size</name>
+      <anchorfile>structdisplay__palette__t.html</anchorfile>
+      <anchor>a012ad36065546c03b55dd7ce19c16aeb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>void *</type>
+      <name>colors</name>
+      <anchorfile>structdisplay__palette__t.html</anchorfile>
+      <anchor>aa7db797289a11868cab87101662b5faa</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>drive_info_t</name>
+    <filename>structdrive__info__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a6dda89c6dd4736a06cda5d8690ec295f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_events</name>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a4f25336f1ccccac5004960c759a63df9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
       <name>address_size</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>a9b1f9d38321d0f877f6a07b2765899f4</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a9b9c82f6ddd4d5b2c5e344a4387e6ccd</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint16_t</type>
+      <type>u16</type>
       <name>write_block_size</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>aaf152d2bf57dfb68fdf34f893450683b</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a3ca592dd729254e985f5959d16f695bf</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>num_write_blocks</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>ae77d123df90381e51acd930059d9837a</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a14df6d3067ff86ce8279e16fd546ced7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>erase_block_size</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>a482f56ac8e0ad772e987ea39e83f3239</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a3ed6cde1e1167f0687712f79942f2fe4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>erase_block_time</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>ac4c3dfd846d5b849964b91ac27168462</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a999b8fa52628c8d7b5b3c16d2ccb20f7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>erase_device_time</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>a5f7d0c17e433c5ce2a744aed470ff716</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>acbe1a640b7c79630c5426fdc81e765ef</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>bitrate</name>
-      <anchorfile>structdisk__attr__t.html</anchorfile>
-      <anchor>a6b983982423e70b96696d9cf84ef3932</anchor>
+      <anchorfile>structdrive__info__t.html</anchorfile>
+      <anchor>a10ccfb26ab0aa66312822e30433184a2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6400,24 +4455,10 @@
     <name>eint_attr_t</name>
     <filename>structeint__attr__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
+      <type>u32</type>
+      <name>o_flags</name>
       <anchorfile>structeint__attr__t.html</anchorfile>
-      <anchor>a29a20d1250f75e808af5b5b876027ea2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>value</name>
-      <anchorfile>structeint__attr__t.html</anchorfile>
-      <anchor>a3856c21e6184664c35cb6ee8cac3dc42</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>mode</name>
-      <anchorfile>structeint__attr__t.html</anchorfile>
-      <anchor>a7d239e5bbaf64f5ab2601ba3ae61d62b</anchor>
+      <anchor>a823d33f65f292ec6f9700235aa150921</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6425,24 +4466,24 @@
     <name>enet_attr_t</name>
     <filename>structenet__attr__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>pin_assign</name>
       <anchorfile>structenet__attr__t.html</anchorfile>
-      <anchor>a72c7faa498b0c65ed5c8488525c0a203</anchor>
+      <anchor>a0ed85372961bbf0ce03d298f3a450fd9</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u16</type>
       <name>flags</name>
       <anchorfile>structenet__attr__t.html</anchorfile>
-      <anchor>aec8a6fdc60e1accc625d687776c37bde</anchor>
+      <anchor>a455e308f61fff0a8463fc16e9a106fd1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>mac_addr</name>
       <anchorfile>structenet__attr__t.html</anchorfile>
-      <anchor>af482c40e66db039abf165bfecf25a77d</anchor>
+      <anchor>af57ef7651a4e6e892a9802d47e5f757d</anchor>
       <arglist>[6]</arglist>
     </member>
   </compound>
@@ -6469,45 +4510,24 @@
     <filename>structeth__txstatus__t.html</filename>
   </compound>
   <compound kind="struct">
-    <name>fifo_attr_t</name>
-    <filename>structfifo__attr__t.html</filename>
+    <name>ffifo_attr_t</name>
+    <filename>structffifo__attr__t.html</filename>
     <member kind="variable">
-      <type>uint32_t</type>
-      <name>size</name>
-      <anchorfile>structfifo__attr__t.html</anchorfile>
-      <anchor>a02d2f450eda3a15e89e1c8e6626dbe69</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>used</name>
-      <anchorfile>structfifo__attr__t.html</anchorfile>
-      <anchor>a7c698e0ef8f3817376245aad4a667ae1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>overflow</name>
-      <anchorfile>structfifo__attr__t.html</anchorfile>
-      <anchor>a86b72ff8d46855169812eeb80297707c</anchor>
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structffifo__attr__t.html</anchorfile>
+      <anchor>a81195dbda3bcac4961342f30181ac4be</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>fifo_cfg_t</name>
-    <filename>structfifo__cfg__t.html</filename>
+    <name>fifo_attr_t</name>
+    <filename>structfifo__attr__t.html</filename>
     <member kind="variable">
-      <type>uint32_t</type>
-      <name>size</name>
-      <anchorfile>structfifo__cfg__t.html</anchorfile>
-      <anchor>af6ef2ee88157c3288a4dcaab266f3aa7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>char *</type>
-      <name>buffer</name>
-      <anchorfile>structfifo__cfg__t.html</anchorfile>
-      <anchor>a7f642065e80c386324078fed9b3e9994</anchor>
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structfifo__attr__t.html</anchorfile>
+      <anchor>aa018def9d0d38f485fc2589d13ac552e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6515,10 +4535,10 @@
     <name>fifo_peek_t</name>
     <filename>structfifo__peek__t.html</filename>
     <member kind="variable">
-      <type>ssize_t</type>
+      <type>u32</type>
       <name>loc</name>
       <anchorfile>structfifo__peek__t.html</anchorfile>
-      <anchor>a7a7ecaa87142219c22eb8a29a9c2a72a</anchor>
+      <anchor>a34e5878cae08c493e8aa524f4efb26b5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -6529,10 +4549,10 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>ssize_t</type>
+      <type>int</type>
       <name>nbyte</name>
       <anchorfile>structfifo__peek__t.html</anchorfile>
-      <anchor>a3a2ea1f257251ccb000361cf3d964c2a</anchor>
+      <anchor>adb168f2c410cb9389080c1999091f819</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6540,24 +4560,24 @@
     <name>flash_pageinfo_t</name>
     <filename>structflash__pageinfo__t.html</filename>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>page</name>
       <anchorfile>structflash__pageinfo__t.html</anchorfile>
-      <anchor>a286298bb81f5dab7d02d9524d78ef3fc</anchor>
+      <anchor>a9b7f0be2013271d657b0012fd5774747</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>addr</name>
       <anchorfile>structflash__pageinfo__t.html</anchorfile>
-      <anchor>a6e4bdf81724f8ca6dc8deba72fd7b14f</anchor>
+      <anchor>aa2210a25999758d63fd9aa363082773b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>size</name>
       <anchorfile>structflash__pageinfo__t.html</anchorfile>
-      <anchor>a28561822c2175f28b46dd07f8f87e800</anchor>
+      <anchor>a9ccca74a9f9cffc258dd41c53699ce28</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6565,163 +4585,119 @@
     <name>flash_writepage_t</name>
     <filename>structflash__writepage__t.html</filename>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>addr</name>
       <anchorfile>structflash__writepage__t.html</anchorfile>
-      <anchor>a16dd68943e26f3a21b35aaf6bd97ab7e</anchor>
+      <anchor>ac71cdd2f5621ad1c7675f2e68b4d23fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>nbyte</name>
       <anchorfile>structflash__writepage__t.html</anchorfile>
-      <anchor>acad39d3514dd3a45a0f01c65e9e57a03</anchor>
+      <anchor>ac52b9b04094360a70ccb9b0ae7e5f061</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>buf</name>
       <anchorfile>structflash__writepage__t.html</anchorfile>
-      <anchor>ada65fc394b82ba0c36d1fc15f03eef58</anchor>
+      <anchor>a7e4b6ac6f646719c923c7f7c21288daf</anchor>
       <arglist>[FLASH_MAX_WRITE_SIZE]</arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>hio_attr_t</name>
-    <filename>structhio__attr__t.html</filename>
+    <name>i2c_info_t</name>
+    <filename>structi2c__info__t.html</filename>
     <member kind="variable">
-      <type>const hio_desc_t *</type>
-      <name>report_desc</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga2158b54c0e39f46dc27281acafc4b493</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>count</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga1059a8fd88a0db39cc4b5a29a8861882</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>size</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga8c8b174df5216f23cff4e09dba1984fc</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>hio_desc_t</name>
-    <filename>structhio__desc__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>type</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gabc4e6699c8b5078aaa43087c3702a84d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>use</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga57754a789c0ef2f4ed1950caa894bb8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>count</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga21a69c943eb8580733a4fee196e0581b</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>i2c_attr_t</name>
-    <filename>structi2c__attr__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
-      <anchorfile>structi2c__attr__t.html</anchorfile>
-      <anchor>adf893113064e15c2469cc206697bcc46</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>bitrate</name>
-      <anchorfile>structi2c__attr__t.html</anchorfile>
-      <anchor>a7f58e2df0c6afe57de0c300ce21efd8e</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>i2c_reqattr_t</name>
-    <filename>structi2c__reqattr__t.html</filename>
-    <member kind="variable">
-      <type>i2c_transfer_t</type>
-      <name>transfer</name>
-      <anchorfile>structi2c__reqattr__t.html</anchorfile>
-      <anchor>a28f623f973a312837815984d98fb1028</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>slave_addr</name>
-      <anchorfile>structi2c__reqattr__t.html</anchorfile>
-      <anchor>a2c8992032c8e2ed244346157ed9cdcb7</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>i2s_attr_t</name>
-    <filename>structi2s__attr__t.html</filename>
-    <member kind="variable">
-      <type>u8</type>
-      <name>pin_assign</name>
-      <anchorfile>structi2s__attr__t.html</anchorfile>
-      <anchor>a40002c9c29362c0f696af6bd9912598d</anchor>
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structi2c__info__t.html</anchorfile>
+      <anchor>a5515def8fe2c492a937c9447fc158b63</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
-      <name>mode</name>
-      <anchorfile>structi2s__attr__t.html</anchorfile>
-      <anchor>a745b8b39b6789849cfe037943be42bbf</anchor>
+      <name>o_events</name>
+      <anchorfile>structi2c__info__t.html</anchorfile>
+      <anchor>ad1b4f19be0081f0191d2be69ca29dec2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
-      <name>frequency</name>
-      <anchorfile>structi2s__attr__t.html</anchorfile>
-      <anchor>a443edccf6b77eee23b3687bf1a332eda</anchor>
+      <name>freq</name>
+      <anchorfile>structi2c__info__t.html</anchorfile>
+      <anchor>acf0ac680171540e4226b4a7ac1ac6e52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>err</name>
+      <anchorfile>structi2c__info__t.html</anchorfile>
+      <anchor>a03adcb9c461f2c7e92c7052a72e2f5ae</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>led_req_t</name>
-    <filename>structled__req__t.html</filename>
+    <name>i2c_pin_assignment_t</name>
+    <filename>structi2c__pin__assignment__t.html</filename>
     <member kind="variable">
-      <type>u8</type>
-      <name>channel</name>
-      <anchorfile>structled__req__t.html</anchorfile>
-      <anchor>a279230e3e8043d64eea00222ec9a7b45</anchor>
+      <type>mcu_pin_t</type>
+      <name>sda</name>
+      <anchorfile>structi2c__pin__assignment__t.html</anchorfile>
+      <anchor>ac10590797eb50b1a3a0431a12f556df0</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>u8</type>
-      <name>on</name>
-      <anchorfile>structled__req__t.html</anchorfile>
-      <anchor>a7811e53345e2597ff280b9476252db5a</anchor>
+      <type>mcu_pin_t</type>
+      <name>scl</name>
+      <anchorfile>structi2c__pin__assignment__t.html</anchorfile>
+      <anchor>ac82bc78ade22e3b7d373dbad0c5241b6</anchor>
       <arglist></arglist>
     </member>
-  </compound>
-  <compound kind="union">
-    <name>link_op_t</name>
-    <filename>unionlink__op__t.html</filename>
   </compound>
   <compound kind="struct">
-    <name>link_reply_t</name>
-    <filename>structlink__reply__t.html</filename>
+    <name>i2s_info_t</name>
+    <filename>structi2s__info__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structi2s__info__t.html</anchorfile>
+      <anchor>a9a2bb83f46ba7cc14ca90e82005581f3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_events</name>
+      <anchorfile>structi2s__info__t.html</anchorfile>
+      <anchor>ac282014b77628cdf485a83558c5ee32f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>freq</name>
+      <anchorfile>structi2s__info__t.html</anchorfile>
+      <anchor>aa51cf8a28b48afc610e09ca8df62b72a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>led_info_t</name>
+    <filename>structled__info__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structled__info__t.html</anchorfile>
+      <anchor>a4a0d570772a5f598ab2844eaaab8aa3f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_events</name>
+      <anchorfile>structled__info__t.html</anchorfile>
+      <anchor>a59ef9fa02e695799b51074a21c530005</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>mci_attr_t</name>
@@ -6759,225 +4735,85 @@
     <name>mcu_action_t</name>
     <filename>structmcu__action__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
+      <type>u8</type>
       <name>channel</name>
       <anchorfile>structmcu__action__t.html</anchorfile>
-      <anchor>ac6b0060d2f992136fc2430c93c29a93b</anchor>
+      <anchor>af37fc1b6d5b4c87ea411e5da2de1ab0b</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>event</name>
+      <type>s8</type>
+      <name>prio</name>
       <anchorfile>structmcu__action__t.html</anchorfile>
-      <anchor>a88f1b1bb5d3c5b39394ae6c28ffead80</anchor>
+      <anchor>afc5db8181227918a36530a76aa87689d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>mcu_callback_t</type>
-      <name>callback</name>
+      <type>u32</type>
+      <name>o_events</name>
       <anchorfile>structmcu__action__t.html</anchorfile>
-      <anchor>af00441ab337efaad213ee78aed9f15b4</anchor>
+      <anchor>a4b024ebb989b08788f8a6c4ffd3dd276</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>void *</type>
-      <name>context</name>
+      <type>mcu_event_handler_t</type>
+      <name>handler</name>
       <anchorfile>structmcu__action__t.html</anchorfile>
-      <anchor>a431c0e5c65b90315ac5f53eb739eb576</anchor>
+      <anchor>aa65fea9f6b66220236da3b25e52b2459</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>mcu_pin_t</name>
+    <filename>structmcu__pin__t.html</filename>
+    <member kind="variable">
+      <type>u8</type>
+      <name>port</name>
+      <anchorfile>structmcu__pin__t.html</anchorfile>
+      <anchor>a6a8b4252261c7fa78aa04e0d954ccdbb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>pin</name>
+      <anchorfile>structmcu__pin__t.html</anchorfile>
+      <anchor>a17ea42849a4bf6422070ce4ed81143b6</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
     <name>mem_attr_t</name>
     <filename>structmem__attr__t.html</filename>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>flash_pages</name>
-      <anchorfile>structmem__attr__t.html</anchorfile>
-      <anchor>a555ead0d467cfbc8f271b6481ea25d52</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>flash_size</name>
-      <anchorfile>structmem__attr__t.html</anchorfile>
-      <anchor>a4148b3139bfadcff4c3f3f02996d949d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>ram_pages</name>
-      <anchorfile>structmem__attr__t.html</anchorfile>
-      <anchor>a77229587097bb7e6cb2749bf27ae4436</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>ram_size</name>
-      <anchorfile>structmem__attr__t.html</anchorfile>
-      <anchor>a87d524a806d016db49510e8430390c2d</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>mem_pageinfo_t</name>
     <filename>structmem__pageinfo__t.html</filename>
     <member kind="variable">
-      <type>int32_t</type>
+      <type>s32</type>
       <name>num</name>
       <anchorfile>structmem__pageinfo__t.html</anchorfile>
-      <anchor>a84e8ef7ef2133f755337aa0e5df08a31</anchor>
+      <anchor>acf2400dcc8173a4aad57acb477ff34c3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>type</name>
+      <type>u32</type>
+      <name>o_flags</name>
       <anchorfile>structmem__pageinfo__t.html</anchorfile>
-      <anchor>a2815c969da0de60ae30a6ea6e9029ab8</anchor>
+      <anchor>a097f43bbf2d9e13666ce32747eff2ee3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>addr</name>
       <anchorfile>structmem__pageinfo__t.html</anchorfile>
-      <anchor>ad3778550838abeb7b7fa330c60df62d5</anchor>
+      <anchor>a28ce00b805a09a617bec9bc0e88d3be7</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>size</name>
       <anchorfile>structmem__pageinfo__t.html</anchorfile>
-      <anchor>a9c5dd9dee1320634e352d9d7591932cd</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>mlcd_attr_t</name>
-    <filename>structmlcd__attr__t.html</filename>
-    <member kind="variable">
-      <type>u16</type>
-      <name>w</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga41c9a2eb49d312c9a6017fd74f026233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>h</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga9291cf01e8b979e54b7b85435fb3646b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>mem</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga7aec3e57e8c279de09c1df3e5ec0b7f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8 *</type>
-      <name>mem8</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga83e2dc255d563de69f1ebd17e568e024</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32 *</type>
-      <name>mem32</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga205ce04250e07490641e8f396a250823</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>scratch_mem</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gad248032935305e7a707167ed2dd36641</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8 *</type>
-      <name>scratch_mem8</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga15bafd76a644bb3fdca1af9276b8fd53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32 *</type>
-      <name>scratch_mem32</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gaa29670b9be67c372ecb2379e746287f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>size</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga07a39d48e46b05223805b7a7efe606ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>cols</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gaecbdbea9344c680e6f97585258885446</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>rows</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga96eb84c898e1cf3d0efdbca905f65b16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>freq</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga8b9e4c2db3e8e3037740abc6006e99c1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>hold</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga569f2b033e54a994d8a6581e41167b4f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>orientation</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gae0f18cdf606e18b63a3529ff33a8b9ff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_left</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga6be67f922f6b67993ad69c1a47ca204a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_right</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gac84cb49dd5410d01b4c7105c48540632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_top</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga75c1ecc07a097af08190347b89bec917</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_bottom</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga267f63432703615799cec82d97ec0d14</anchor>
+      <anchor>a25fe9c1f9cab56c211f97eca676f1866</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7014,170 +4850,98 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>pio_action_data_t</name>
-    <filename>structpio__action__data__t.html</filename>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>mask</name>
-      <anchorfile>structpio__action__data__t.html</anchorfile>
-      <anchor>a05e56b4939f277ab563ca9b0161ae330</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>pio_attr_t</name>
-    <filename>structpio__attr__t.html</filename>
-    <member kind="variable">
-      <type>pio_sample_t</type>
-      <name>mask</name>
-      <anchorfile>structpio__attr__t.html</anchorfile>
-      <anchor>ab8ea033430b8f003c35ffd558bcef609</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>mode</name>
-      <anchorfile>structpio__attr__t.html</anchorfile>
-      <anchor>ae3f16236d9d036d65dd5ae88afb14ba2</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>pio_t</name>
-    <filename>structpio__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>port</name>
-      <anchorfile>structpio__t.html</anchorfile>
-      <anchor>a913556bdbd0e54ab9c2175a89b49ffe2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin</name>
-      <anchorfile>structpio__t.html</anchorfile>
-      <anchor>a65a2046418a17af232877bc411a8c9b5</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>pwm_attr_t</name>
-    <filename>structpwm__attr__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
-      <anchorfile>structpwm__attr__t.html</anchorfile>
-      <anchor>a1664fab32ed7e60a828101349e2068b7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>enabled_channels</name>
-      <anchorfile>structpwm__attr__t.html</anchorfile>
-      <anchor>afa6e533ed6cc37440087bd6014783ee9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>flags</name>
-      <anchorfile>structpwm__attr__t.html</anchorfile>
-      <anchor>a5b4eb669e021aa77c0c4ac3cdbc4e0af</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>pwm_duty_t</type>
-      <name>top</name>
-      <anchorfile>structpwm__attr__t.html</anchorfile>
-      <anchor>abef1ea5b29606b756e293d9cb64e4e9a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>freq</name>
-      <anchorfile>structpwm__attr__t.html</anchorfile>
-      <anchor>a68cff709a9b708c1d7d0c90140fc76f7</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>pwm_reqattr_t</name>
-    <filename>structpwm__reqattr__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>channel</name>
-      <anchorfile>structpwm__reqattr__t.html</anchorfile>
-      <anchor>a4b2137ff09705679b71adf8c278289b5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>pwm_duty_t</type>
-      <name>duty</name>
-      <anchorfile>structpwm__reqattr__t.html</anchorfile>
-      <anchor>a898444eaf97c0aa612821bbb99092bd2</anchor>
-      <arglist></arglist>
-    </member>
+    <name>netif_attr_t</name>
+    <filename>structnetif__attr__t.html</filename>
   </compound>
   <compound kind="struct">
     <name>qei_attr_t</name>
     <filename>structqei__attr__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
+      <type>u32</type>
+      <name>o_flags</name>
       <anchorfile>structqei__attr__t.html</anchorfile>
-      <anchor>a08df6093af38d31a0365d8d9a51d9899</anchor>
+      <anchor>a16ab77491795a225deed13f2c5a14c15</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
-      <name>max_pos</name>
+      <type>qei_pin_assignment_t</type>
+      <name>pin_assignment</name>
       <anchorfile>structqei__attr__t.html</anchorfile>
-      <anchor>adbe5237e6edbcc19e50b24780fa7c96a</anchor>
+      <anchor>a0369f047b09fb43552b736cabd6d4d58</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
+      <name>top</name>
+      <anchorfile>structqei__attr__t.html</anchorfile>
+      <anchor>a9c6836a5e8b311ed815d52a493ffe9c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>max_position</name>
+      <anchorfile>structqei__attr__t.html</anchorfile>
+      <anchor>a3fa5a317f1fabb693299b12a34f7012d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
       <name>velocity_comp</name>
       <anchorfile>structqei__attr__t.html</anchorfile>
-      <anchor>ab4e3ae40cad1f9a82298593a7495f736</anchor>
+      <anchor>aec8d78fd40fbc0ddc2cdf96c2a3495b1</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>filter</name>
       <anchorfile>structqei__attr__t.html</anchorfile>
-      <anchor>af711cf7bac7b010413cf00f11e19adb4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>mode</name>
-      <anchorfile>structqei__attr__t.html</anchorfile>
-      <anchor>a54088afc96d55f75012a24e32137aa45</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>vfreq</name>
-      <anchorfile>structqei__attr__t.html</anchorfile>
-      <anchor>a947ba1abeda840e0f0433d7d5a0ae4bb</anchor>
+      <anchor>a11bec76bbe5c5f0149362c645c1d027c</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>rtc_alarm_t</name>
-    <filename>structrtc__alarm__t.html</filename>
+    <name>radio_attr_t</name>
+    <filename>structradio__attr__t.html</filename>
     <member kind="variable">
-      <type>rtc_time_t</type>
-      <name>time</name>
-      <anchorfile>structrtc__alarm__t.html</anchorfile>
-      <anchor>aabc689ef7dc89b6ef7d6339ca8dfbe4c</anchor>
+      <type>u32</type>
+      <name>code_rate</name>
+      <anchorfile>structradio__attr__t.html</anchorfile>
+      <anchor>a638002097bef47bbae8b5c910274132f</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>type</name>
-      <anchorfile>structrtc__alarm__t.html</anchorfile>
-      <anchor>ae9eb1ee28fcfb5bfc5561337827cf644</anchor>
+      <type>u32</type>
+      <name>data_rate</name>
+      <anchorfile>structradio__attr__t.html</anchorfile>
+      <anchor>a0872e5b3085d2441f3ebf67aace2ccc4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>freq</name>
+      <anchorfile>structradio__attr__t.html</anchorfile>
+      <anchor>ad4a8c90bcd5a2241896c8c40c8b95e70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32 *</type>
+      <name>hopping_table</name>
+      <anchorfile>structradio__attr__t.html</anchorfile>
+      <anchor>a7cae75194db4d68514253328f0e87204</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>hopping_entries</name>
+      <anchorfile>structradio__attr__t.html</anchorfile>
+      <anchor>aab26691d741a4217def7c0d8253e736c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>power</name>
+      <anchorfile>structradio__attr__t.html</anchorfile>
+      <anchor>aef67938d7bbbd974b54b54ff1c91e97f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7185,24 +4949,17 @@
     <name>rtc_attr_t</name>
     <filename>structrtc__attr__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
+      <type>u32</type>
+      <name>o_flags</name>
       <anchorfile>structrtc__attr__t.html</anchorfile>
-      <anchor>a392313f88f4010f2d75808003b6e781f</anchor>
+      <anchor>a6b2f856d85ff780f454e347500925d48</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>clock</name>
-      <anchorfile>structrtc__attr__t.html</anchorfile>
-      <anchor>a926c6ece8fab50b950daf68c90c3d0de</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>freq</name>
       <anchorfile>structrtc__attr__t.html</anchorfile>
-      <anchor>a911c7406ee51a5d5a0e904530c69710d</anchor>
+      <anchor>af8a45d11569fd4d7de79f03989cdebbd</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7217,152 +4974,235 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
+      <type>u32</type>
       <name>useconds</name>
       <anchorfile>structrtc__time__t.html</anchorfile>
-      <anchor>a9ba34c8bbd37c123a0ba77ac34fd6366</anchor>
+      <anchor>a6ab8f3c6e03177a699b0015f108fd6ac</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
-    <name>signal_callback_t</name>
-    <filename>structsignal__callback__t.html</filename>
+    <name>sos_board_config_t</name>
+    <filename>structsos__board__config__t.html</filename>
+    <member kind="variable">
+      <type>u8</type>
+      <name>clk_usecond_tmr</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>ab3c22df2fccec60a61a34d6dc1f0f7cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>task_total</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a4e0fa6ea7ec7cfbd194da562b96b64a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>start_stack_size</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a7d3e39d22a8b92a1b85480b3136b5fd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>stdin_dev</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>ae6ebd4626a4a803d3e10285b9a496216</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>stdout_dev</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>ab1ef7c787c29cdc21f1285c448c05588</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>stderr_dev</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>adc019b283f37b725234fae405de91425</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>trace_dev</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>aee23639afe8f5eb0c0f17b880ec0f78a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>sys_name</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a1e267cb339105d32deb871aa6faf39d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>sys_version</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>af7c02c0c7ce5ab4ed93498b4c2d8267d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const char *</type>
+      <name>sys_id</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a7da9399944402ee865945d74fd9383b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>sys_memory_size</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>af57e5514bf6d7c930ce854f7177dee34</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>o_sys_flags</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>abedeb52c7752632cd114f960f6f17682</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>void *(*</type>
+      <name>start</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a2f4821f0b9897f48960c5bfcd1a5f369</anchor>
+      <arglist>)(void *)</arglist>
+    </member>
+    <member kind="variable">
+      <type>void *</type>
+      <name>start_args</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a88a64974ed3361f4881ce88459e71e0b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const sos_socket_api_t *</type>
+      <name>socket_api</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a55e767c93dedfe82e702650231226e28</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>void(*</type>
+      <name>trace_event</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a500331ce85e4a8d5fed6b674b9ca6de5</anchor>
+      <arglist>)(void *event)</arglist>
+    </member>
+    <member kind="variable">
+      <type>void(*</type>
+      <name>request</name>
+      <anchorfile>structsos__board__config__t.html</anchorfile>
+      <anchor>a32841f55edc277f7bfb95775c0e76fdb</anchor>
+      <arglist>)(void)</arglist>
+    </member>
   </compound>
   <compound kind="struct">
-    <name>sn_t</name>
-    <filename>structsn__t.html</filename>
-  </compound>
-  <compound kind="struct">
-    <name>spi_attr_t</name>
-    <filename>structspi__attr__t.html</filename>
-    <member kind="variable">
-      <type>u8</type>
-      <name>pin_assign</name>
-      <anchorfile>structspi__attr__t.html</anchorfile>
-      <anchor>a9963d531b0bd415fea88ceb0fbf2a761</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>bitrate</name>
-      <anchorfile>structspi__attr__t.html</anchorfile>
-      <anchor>aac37374cb5e1d4287049ecfbaea4990d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>mode</name>
-      <anchorfile>structspi__attr__t.html</anchorfile>
-      <anchor>aad2cae831b3a1f36b6c5f926f1f5d25d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>master</name>
-      <anchorfile>structspi__attr__t.html</anchorfile>
-      <anchor>a3e43b924c441fb5b7fb78d6345a5cb9f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>width</name>
-      <anchorfile>structspi__attr__t.html</anchorfile>
-      <anchor>a190b1f3aa35b559a723658f430343b24</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>format</name>
-      <anchorfile>structspi__attr__t.html</anchorfile>
-      <anchor>a7bade17516e57cce47d220c0f0c175e1</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>sys_attr_t</name>
-    <filename>structsys__attr__t.html</filename>
+    <name>sys_26_info_t</name>
+    <filename>structsys__26__info__t.html</filename>
     <member kind="variable">
       <type>char</type>
-      <name>version</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a9a0ca1776b9909befa954eb172e8b999</anchor>
+      <name>kernel_version</name>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>af137d72239c05d78470efc1c12295da0</anchor>
       <arglist>[8]</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>sys_version</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a0a82e59a0696cb5c19fc624469faa321</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a0ebc077860636875341b640ee7387814</anchor>
       <arglist>[8]</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>arch</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>aa35ce7db55a8a6cca5fe3477baa4ff0b</anchor>
-      <arglist>[8]</arglist>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a7f92d2702446ee94b1ad4694700ccaeb</anchor>
+      <arglist>[16]</arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>signature</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a276bab9c1ddb28e214498a97c2ef7d26</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>ae3a6cbb63d03f7c2ffc8cd2da60e460c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>security</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>aa71916b33a66cb879a7e1869dc36200d</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>ac1c32c10cb762602757092feda7dd66d</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>cpu_freq</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>ac8647c0107c28821d768279ecff3ce03</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a69535c71b5bab3feebd78be2cdba7e01</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>sys_mem_size</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a487a2bd303dd26043665e44eb303e327</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a08a8897d68b59d70a11857ee686a6321</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>stdout_name</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a67fbdc0f8f83a407eeccc305243a45de</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>adb0b1a407104bfa3a6ba40aa16ea06ec</anchor>
       <arglist>[LINK_NAME_MAX]</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>stdin_name</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>abb8c5ec67a149dacdb35f52ae149e164</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a99b4845938b7cde05ec754c3df787757</anchor>
       <arglist>[LINK_NAME_MAX]</arglist>
     </member>
     <member kind="variable">
       <type>char</type>
       <name>name</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a5d3be3ee13ac5a8c2d4a82d9b6d3b330</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>abd9e5bab9e7cde27863c71361121cace</anchor>
       <arglist>[LINK_NAME_MAX]</arglist>
     </member>
     <member kind="variable">
-      <type>sn_t</type>
+      <type>char</type>
+      <name>id</name>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>ad0148d59b926962065011ba056caa2a5</anchor>
+      <arglist>[LINK_PATH_MAX]</arglist>
+    </member>
+    <member kind="variable">
+      <type>mcu_sn_t</type>
       <name>serial</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a62997fa9caa7c3c27477271b3dc50b62</anchor>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>aa90c3adab58072e861b601a93dc09928</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
-      <name>flags</name>
-      <anchorfile>structsys__attr__t.html</anchorfile>
-      <anchor>a8594460e098df89a0b0eb92e5f0260f1</anchor>
+      <name>o_flags</name>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a16af99d5008b9919414b2e7806f8b526</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>hardware_id</name>
+      <anchorfile>structsys__26__info__t.html</anchorfile>
+      <anchor>a0b5dcdec73d7f7afadd2ba64220d92d5</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7384,17 +5224,17 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>i32</type>
+      <type>s32</type>
       <name>si_sigcode</name>
       <anchorfile>structsys__killattr__t.html</anchorfile>
-      <anchor>a5ebd03030433e37dc1d02d7e777d4490</anchor>
+      <anchor>adc7ec6b8b8c922495e3c6dd2b4d7233e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>i32</type>
+      <type>s32</type>
       <name>si_sigvalue</name>
       <anchorfile>structsys__killattr__t.html</anchorfile>
-      <anchor>ad4a352c230c22d0255d39acc866a6957</anchor>
+      <anchor>a0a3aa7c5798bcbe1a802f916f581df59</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7409,17 +5249,17 @@
       <arglist>[24]</arglist>
     </member>
     <member kind="variable">
-      <type>i32</type>
+      <type>s32</type>
       <name>pid</name>
       <anchorfile>structsys__process__t.html</anchorfile>
-      <anchor>a679619b010b2e6575708ce113d247996</anchor>
+      <anchor>a597b34cb1b760cbf878b3729427b7862</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>i32</type>
+      <type>s32</type>
       <name>pthread_id</name>
       <anchorfile>structsys__process__t.html</anchorfile>
-      <anchor>a30bc550dd350cbdc5a428ccf82811447</anchor>
+      <anchor>a8f2214c5f57b1474e1bb798f799809f8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7530,202 +5370,53 @@
     </member>
   </compound>
   <compound kind="struct">
-    <name>tmr_attr_t</name>
-    <filename>structtmr__attr__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
-      <anchorfile>structtmr__attr__t.html</anchorfile>
-      <anchor>a6ad5e4a6c786d35be35483cf0a7998b2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>freq</name>
-      <anchorfile>structtmr__attr__t.html</anchorfile>
-      <anchor>aca286608dbd9e77db08e8d694b547c16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>clksrc</name>
-      <anchorfile>structtmr__attr__t.html</anchorfile>
-      <anchor>a350c863adf6378c4b838a3585bc7fb6c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>counter_mode</name>
-      <anchorfile>structtmr__attr__t.html</anchorfile>
-      <anchor>a8441897a604a780771c4f1f0f86ede50</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>enabled_oc_chans</name>
-      <anchorfile>structtmr__attr__t.html</anchorfile>
-      <anchor>a3936d31bfd7cfb638f669d9e86725e38</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>enabled_ic_chans</name>
-      <anchorfile>structtmr__attr__t.html</anchorfile>
-      <anchor>afce288564f843a7407fccc7294b018bc</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>tmr_reqattr_t</name>
-    <filename>structtmr__reqattr__t.html</filename>
-    <member kind="variable">
-      <type>u32</type>
-      <name>channel</name>
-      <anchorfile>structtmr__reqattr__t.html</anchorfile>
-      <anchor>ace2cca6590717a3c4980a9d438f59c8d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>value</name>
-      <anchorfile>structtmr__reqattr__t.html</anchorfile>
-      <anchor>a914d8521536a6abe0a7283d47458c932</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
     <name>uart_attr_t</name>
     <filename>structuart__attr__t.html</filename>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
-      <anchorfile>structuart__attr__t.html</anchorfile>
-      <anchor>a7a220446820d1cfc3287f903b4e50336</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>start</name>
-      <anchorfile>structuart__attr__t.html</anchorfile>
-      <anchor>a98b23501cd1f3ea4f81ca002757b07a2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>stop</name>
-      <anchorfile>structuart__attr__t.html</anchorfile>
-      <anchor>a8466176541ccb3d37308884f5672dca3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>parity</name>
-      <anchorfile>structuart__attr__t.html</anchorfile>
-      <anchor>ab889f02ef7a8d761b9729feee9318450</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint32_t</type>
-      <name>baudrate</name>
-      <anchorfile>structuart__attr__t.html</anchorfile>
-      <anchor>aa94e58584407d254bda954d37fd0ced3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>width</name>
-      <anchorfile>structuart__attr__t.html</anchorfile>
-      <anchor>a4bcff2760ca438cb9aac1844fd1efbd1</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>uartfifo_cfg_t</name>
-    <filename>structuartfifo__cfg__t.html</filename>
-    <member kind="variable">
-      <type>int</type>
-      <name>port</name>
-      <anchorfile>structuartfifo__cfg__t.html</anchorfile>
-      <anchor>a8da3c5ea5bccc39e750bee003ee55f89</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>char *</type>
-      <name>buffer</name>
-      <anchorfile>structuartfifo__cfg__t.html</anchorfile>
-      <anchor>a18192a832df2e3d55c5452750da2a13b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>size</name>
-      <anchorfile>structuartfifo__cfg__t.html</anchorfile>
-      <anchor>a55e017ef0105ad6f4bfe938e5b000577</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="struct">
     <name>usb_attr_t</name>
     <filename>structusb__attr__t.html</filename>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>pin_assign</name>
+      <type>u32</type>
+      <name>o_flags</name>
       <anchorfile>structusb__attr__t.html</anchorfile>
-      <anchor>a243bd2430c199ddef2632f72a33c5c33</anchor>
+      <anchor>a7b512e17e022de81ef2f942ea18cfbf4</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint8_t</type>
-      <name>mode</name>
+      <type>usb_pin_assignment_t</type>
+      <name>pin_assignment</name>
       <anchorfile>structusb__attr__t.html</anchorfile>
-      <anchor>af6e135f98495427cda393053fa97fbd6</anchor>
+      <anchor>a4bad2f8d689e9b093517e617354df8fa</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>uint32_t</type>
-      <name>crystal_freq</name>
+      <type>u32</type>
+      <name>freq</name>
       <anchorfile>structusb__attr__t.html</anchorfile>
-      <anchor>ae2707da01b58073eb137c24ba32c32e9</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>usbfifo_cfg_t</name>
-    <filename>structusbfifo__cfg__t.html</filename>
-    <member kind="variable">
-      <type>int</type>
-      <name>port</name>
-      <anchorfile>structusbfifo__cfg__t.html</anchorfile>
-      <anchor>a4eabb887c13e29a7305879b5e620e661</anchor>
+      <anchor>a7c1c1ecc9e7410af31dbab1e9766c468</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>endpoint</name>
-      <anchorfile>structusbfifo__cfg__t.html</anchorfile>
-      <anchor>a5dc7013c3e05289a0746a129baaec6dd</anchor>
+      <type>u32</type>
+      <name>address</name>
+      <anchorfile>structusb__attr__t.html</anchorfile>
+      <anchor>a84426d15121ace18ed92381e3feabb67</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>int</type>
-      <name>endpoint_size</name>
-      <anchorfile>structusbfifo__cfg__t.html</anchorfile>
-      <anchor>a755bcdbe4b4b1cf314edc72c5e753691</anchor>
+      <type>u16</type>
+      <name>max_packet_size</name>
+      <anchorfile>structusb__attr__t.html</anchorfile>
+      <anchor>a2afd22bec69a47e3268f80531a8e7dbb</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>char *</type>
-      <name>buffer</name>
-      <anchorfile>structusbfifo__cfg__t.html</anchorfile>
-      <anchor>a52542347bade3bd8fa29ea022bedf03b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>size</name>
-      <anchorfile>structusbfifo__cfg__t.html</anchorfile>
-      <anchor>a6d5b89a5c964dfe219c40d399f779478</anchor>
-      <arglist></arglist>
+      <type>u32</type>
+      <name>resd</name>
+      <anchorfile>structusb__attr__t.html</anchorfile>
+      <anchor>a6c4dd974b3e3dcc4297f352926a20caf</anchor>
+      <arglist>[8]</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -7772,33 +5463,12 @@
     <name>ADC</name>
     <title>Analog to Digital Converter (ADC)</title>
     <filename>group___a_d_c.html</filename>
-    <class kind="struct">adc_attr_t</class>
+    <class kind="struct">adc_pin_assignment_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>ADC_MAX</name>
+      <name>I_ADC_GETINFO</name>
       <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>ga555a695bf58df062dc03f0e892d95cd7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>ADC_MIN</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gaf0098a1eafb8a60a1c65773e1064d595</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>ADC_MAX_FREQ</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gaee9ff036d0e34f634b48e953d19d3bc2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_ADC_GETATTR</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gae599932a5a540645042f364aa40335ae</anchor>
+      <anchor>ga02b7f8c840dee616023f905dfaa0a14d</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -7806,13 +5476,6 @@
       <name>I_ADC_SETATTR</name>
       <anchorfile>group___a_d_c.html</anchorfile>
       <anchor>gaf9007b82aa0f9af53bbb74796462927e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>u32</type>
-      <name>adc_sample_t</name>
-      <anchorfile>group___a_d_c.html</anchorfile>
-      <anchor>gadba18d3d5cc6cb1c33a976677f8dfb53</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7948,17 +5611,10 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>USB_DEV_ADC</name>
-    <title>Audio Device Class</title>
-    <filename>group___u_s_b___d_e_v___a_d_c.html</filename>
-  </compound>
-  <compound kind="group">
     <name>BOOTLOADER_DEV</name>
     <title>Bootloader Access</title>
     <filename>group___b_o_o_t_l_o_a_d_e_r___d_e_v.html</filename>
-    <class kind="struct">bootloader_attr_t</class>
-    <class kind="struct">bootloader_attr_14x_t</class>
-    <class kind="struct">bootloader_api_t</class>
+    <class kind="struct">bootloader_info_t</class>
     <class kind="struct">bootloader_writepage_t</class>
     <member kind="define">
       <type>#define</type>
@@ -7983,16 +5639,9 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_BOOTLOADER_GETATTR</name>
+      <name>I_BOOTLOADER_GETINFO</name>
       <anchorfile>group___b_o_o_t_l_o_a_d_e_r___d_e_v.html</anchorfile>
-      <anchor>ga028418a856d6fbcedcdd26f0db7d602a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_BOOTLOADER_GETATTR_14X</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r___d_e_v.html</anchorfile>
-      <anchor>ga504d2040cf0c847b633a481331c94ac3</anchor>
+      <anchor>ga3886c771d61ed8d490f5e0c32f6f1a6e</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -8011,54 +5660,9 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>BOOTLOADER</name>
-    <title>Bootloader Functions</title>
-    <filename>group___b_o_o_t_l_o_a_d_e_r.html</filename>
-    <member kind="function">
-      <type>int</type>
-      <name>link_reset</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>ga142569331199e28d41d508d216447591</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_resetbootloader</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>gab1c1e88e6b17042b38ed225ee69e8e16</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_readflash</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>gab1b99bdf48c4c09453f4fc226a60274b</anchor>
-      <arglist>(link_transport_phy_t handle, int addr, void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_writeflash</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>ga168a914dbd78cb979d72862648a50cd9</anchor>
-      <arglist>(link_transport_phy_t handle, int addr, const void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_eraseflash</name>
-      <anchorfile>group___b_o_o_t_l_o_a_d_e_r.html</anchorfile>
-      <anchor>gad46c232c9792dd6d121b0868159edb93</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
     <name>STDC</name>
     <title>C Standard Library</title>
     <filename>group___s_t_d_c.html</filename>
-  </compound>
-  <compound kind="group">
-    <name>USB_DEV_CDC</name>
-    <title>Communications Device Class</title>
-    <filename>group___u_s_b___d_e_v___c_d_c.html</filename>
   </compound>
   <compound kind="group">
     <name>PTHREAD_COND</name>
@@ -8153,15 +5757,14 @@
     <name>CORE</name>
     <title>Core Microcontroller Access</title>
     <filename>group___c_o_r_e.html</filename>
-    <class kind="struct">core_clkout_t</class>
     <class kind="struct">core_attr_t</class>
     <class kind="struct">core_pinfunc_t</class>
     <class kind="struct">core_irqprio_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_CORE_GETATTR</name>
+      <name>I_CORE_GETINFO</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gacc115354487b4b8c2c583daca96548de</anchor>
+      <anchor>gae8430d6f739b43666a9f7d67b0ed08cb</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -8180,34 +5783,6 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_CORE_SLEEP</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ga8f1705b30be917a00886af84a60f3e0c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_CORE_RESET</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ga4680cb894578ddd4242691d727e49654</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_CORE_INVOKEBOOTLOADER</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gae3e7592889371a041783fdc713dafe54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_CORE_SETIRQPRIO</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gad4a6cc0f610397db5a44995e02e5c42f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>I_CORE_SETCLKOUT</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
       <anchor>gab18399788c0a6653e37c6b51ab2fa796</anchor>
@@ -8220,84 +5795,126 @@
       <anchor>gad37592d62d290851b1a3d7d402f744bb</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>core_reset_src_t</name>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_CORE_GETMCUBOARDCONFIG</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gaf04fba81a1f0a6d59e921ebc87e8d5f8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_SOFTWARE</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8aa0bbb4b9d5b607b43a1b0f9e8dcb2cdb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_POR</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8ac6f2aef9da1ce5b696dad040f8bcbab6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_EXTERNAL</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8a018feec3645bf1bf424bfa28724fe1ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_WDT</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8a4d630cff829eda2bb6a4b6c7bfafc61b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_BOR</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8a209b5045149f90eaac04b725e3810711</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_RESET_SRC_SYSTEM</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggaf04fba81a1f0a6d59e921ebc87e8d5f8ad0efde405a00c0036dbd92e6bc30be65</anchor>
+      <anchor>ga4d2334e3f8e0ffa23c341c70a5cda580</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>core_clkout_src_t</name>
+      <name>core_flag_t</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ga865263eb03a43700297f3eba0c085b88</anchor>
+      <anchor>ga64fcd23e7657832c6cd5f4e2d92bf2df</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_CPU</name>
+      <name>CORE_FLAG_IS_RESET_SOFTWARE</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88a3160a6cbffbdee1b81ce7d569da99d4d</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa6b1ef7ed5af8c29842a5893d7b1f3c86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_MAIN_OSC</name>
+      <name>CORE_FLAG_IS_RESET_POR</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88af167725ce9ad98ead0a3d3871b326592</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa30db832962b1fe3ac718ba069e84ee88</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_INTERNAL_OSC</name>
+      <name>CORE_FLAG_IS_RESET_EXTERNAL</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88a08b98eb799bf5d81adac50c3b196fe3c</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa2e8f1ccfd817a6741ba951649b88b517</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_USB</name>
+      <name>CORE_FLAG_IS_RESET_WDT</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88aa154acb89b22a02a8e5cfa751692862b</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa815ce8c047bdf7abeade7fe1cb64a74e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_CLKOUT_RTC</name>
+      <name>CORE_FLAG_IS_RESET_BOR</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gga865263eb03a43700297f3eba0c085b88a8a2942f4d7646b06229be812913b1917</anchor>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfaaa057420fddebda905b2eddfc012af5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_RESET_SYSTEM</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfab6948fd774147a3ebca2b36b3ce66509</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_SET_CLKOUT</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa26ed5b14790a844b051cf92710bf637f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_CPU</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa9c58afa6e2cbe9eb61a13c5620b32bab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_MAIN_OSC</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa8b58ace79141afab1fb22cd6ce0fdd76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_INTERNAL_OSC</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa2162f8a368fc3151f2a358c0152d3dff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_USB</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dface05669bff392c983fceb672885beda0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_IS_CLKOUT_RTC</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfacdb31ed58788072825c7e630c75c9577</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_SLEEP</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfaf139c3a3d78a9a456c62bcba19edf906</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_DEEPSLEEP</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfae1c3e498ed42a767e541a2d0ffdb3f90</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_DEEPSLEEP_STOP</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa0f40b4e525e0f70cdef37399fb67eeae</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_DEEPSLEEP_STANDBY</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa92351dc405b19c007e001ef6c9a9f862</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_RESET</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa660c0c8be411e093188d4441db273780</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>CORE_FLAG_EXEC_INVOKE_BOOTLOADER</name>
+      <anchorfile>group___c_o_r_e.html</anchorfile>
+      <anchor>gga64fcd23e7657832c6cd5f4e2d92bf2dfa74eee9244f726b295dd6037a9568ef0f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -8517,35 +6134,28 @@
       <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba215d008a1cf5b84c0e60fa3d9d3505c5</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>core_sleep_t</name>
+    <member kind="enumvalue">
+      <name>CORE_PERIPH_SYS</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>gae362c5b04fb1b6ea07f8bdaa21bc51f7</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba83b871fc07c09371f45a3d23dc66595a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_SLEEP</name>
+      <name>CORE_PERIPH_QSPI</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7af823b996b773f6ba9f25335667bb0028</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba79aa948f1b5e4b3b55b3f46a503489cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_DEEPSLEEP</name>
+      <name>CORE_PERIPH_USART</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7a1a9f202f4a02d51817564ecb64883330</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99ba4c921426a5922acca3d9077eb7704bb4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>CORE_DEEPSLEEP_STOP</name>
+      <name>CORE_PERIPH_SDIO</name>
       <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7abdec31630a7b2a46bb60344530b8b9d9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>CORE_DEEPSLEEP_STANDBY</name>
-      <anchorfile>group___c_o_r_e.html</anchorfile>
-      <anchor>ggae362c5b04fb1b6ea07f8bdaa21bc51f7a373788321a29fb5f9e3a3a5e6d838943</anchor>
+      <anchor>gga0cdc50382b3b72c2e4b983c2f2a6f99bad2ca4ca434157076af27187ac0070106</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8590,129 +6200,17 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>DEVICE</name>
-    <title>Device Configuration</title>
-    <filename>group___d_e_v_i_c_e.html</filename>
-    <class kind="struct">device_periph_t</class>
-    <class kind="struct">device_gpio_t</class>
-    <class kind="struct">device_spi_cfg_t</class>
-    <class kind="struct">device_i2c_cfg_t</class>
-    <class kind="struct">device_uart_cfg_t</class>
-    <class kind="struct">device_adc_cfg_t</class>
-    <class kind="struct">device_pwm_cfg_t</class>
-    <class kind="struct">device_cfg_t</class>
-    <class kind="struct">device_transfer_t</class>
-    <class kind="struct">device_driver_t</class>
-    <class kind="struct">device_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>DEVICE_MAX_ADC_CHANNELS</name>
-      <anchorfile>group___d_e_v_i_c_e.html</anchorfile>
-      <anchor>gac32db06aaae796b77832c68a4f11051b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>DEVICE_MAX_PWM_CHANNELS</name>
-      <anchorfile>group___d_e_v_i_c_e.html</anchorfile>
-      <anchor>ga3be76be16dbb2e4f5b0fcf5d0d89b676</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>DEVICE_PERIPH</name>
-      <anchorfile>group___d_e_v_i_c_e.html</anchorfile>
-      <anchor>gaf2dab6bcaaea877f754624fa0e10dbcf</anchor>
-      <arglist>(device_name, periph_name, port_number, mode_value, uid_value, gid_value, device_type)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
     <name>SYS_DEVFIFO</name>
     <title>Device FIFO</title>
     <filename>group___s_y_s___d_e_v_f_i_f_o.html</filename>
-    <class kind="struct">devfifo_attr_t</class>
-    <class kind="struct">devfifo_cfg_t</class>
+    <class kind="struct">devfifo_info_t</class>
+    <class kind="struct">devfifo_config_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>DEVFIFO_DEVICE</name>
+      <name>I_DEVFIFO_GETINFO</name>
       <anchorfile>group___s_y_s___d_e_v_f_i_f_o.html</anchorfile>
-      <anchor>ga7380b90b4a5446ee9431e75b27943a38</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DEVFIFO_GETATTR</name>
-      <anchorfile>group___s_y_s___d_e_v_f_i_f_o.html</anchorfile>
-      <anchor>ga7e78b3c0079120fa0f94c439fc63775f</anchor>
+      <anchor>ga9457a6d30f19447deef334bfae345bc5</anchor>
       <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>USB_HANDLE</name>
-    <title>Device Handling</title>
-    <filename>group___u_s_b___h_a_n_d_l_e.html</filename>
-    <member kind="typedef">
-      <type>volatile void *</type>
-      <name>link_dev_t</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga648a6bd0ab27ce7e2f6afaadf7d273a3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_init</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>gad9dc554a4425c2de2dbd47a5134dc987</anchor>
-      <arglist>(void)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>link_exit</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga67ba802c25b9673aa4c022e132b585d4</anchor>
-      <arglist>(void)</arglist>
-    </member>
-    <member kind="function">
-      <type>link_transport_phy_t</type>
-      <name>link_connect</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>gab9df96b591f79d2f123f4a45f8a3f852</anchor>
-      <arglist>(const char *sn)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_disconnect</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga0ff40181a593a2f603a887ebebb79fc9</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>char *</type>
-      <name>link_new_device_list</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>gaa8322b59b78ce53702fa744a544c3cf2</anchor>
-      <arglist>(int max)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>link_del_device_list</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga219a561d7c160d5bd7717d56add55fd6</anchor>
-      <arglist>(char *sn_list)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_get_err</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga667060ebac6fd04b38e8a7c9b1e4b5b7</anchor>
-      <arglist>(void)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>link_set_debug</name>
-      <anchorfile>group___u_s_b___h_a_n_d_l_e.html</anchorfile>
-      <anchor>ga1b6c63cf2c981bd45cb4c14dd17634cc</anchor>
-      <arglist>(int debug_level)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -8722,24 +6220,23 @@
     <subgroup>ADC</subgroup>
     <subgroup>BOOTLOADER_DEV</subgroup>
     <subgroup>CORE</subgroup>
-    <subgroup>DEVICE</subgroup>
     <subgroup>SYS_DEVFIFO</subgroup>
     <subgroup>DAC</subgroup>
-    <subgroup>DISK</subgroup>
+    <subgroup>DRIVE</subgroup>
+    <subgroup>DISPLAY</subgroup>
     <subgroup>ETH_DEV</subgroup>
     <subgroup>EINT</subgroup>
     <subgroup>EMC</subgroup>
     <subgroup>SYS_FIFO</subgroup>
     <subgroup>FLASH</subgroup>
-    <subgroup>HIO</subgroup>
     <subgroup>I2C</subgroup>
     <subgroup>I2S</subgroup>
     <subgroup>MEM</subgroup>
-    <subgroup>MLCD</subgroup>
     <subgroup>MCI</subgroup>
     <subgroup>PIO</subgroup>
     <subgroup>PWM</subgroup>
     <subgroup>QEI</subgroup>
+    <subgroup>RADIO</subgroup>
     <subgroup>RTC</subgroup>
     <subgroup>SPI</subgroup>
     <subgroup>SYS_DEV</subgroup>
@@ -8754,19 +6251,11 @@
     <name>DAC</name>
     <title>Digital to Analog Converter (DAC)</title>
     <filename>group___d_a_c.html</filename>
-    <class kind="struct">dac_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>DAC_MAX_VALUE</name>
+      <name>I_DAC_GETINFO</name>
       <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>ga41ef69195f41271a871d6b5935767b1d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DAC_GETATTR</name>
-      <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>ga2aef61f2f1ea9a9375ec056d78d606a3</anchor>
+      <anchor>ga770e98cda8560b06917026fb4ba838bf</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -8778,9 +6267,9 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DAC_VALUE</name>
+      <name>I_DAC_GET</name>
       <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>gaccfeb1c6be0803f41d23ba754d7e61e5</anchor>
+      <anchor>ga44e19f7aaf804aa4a92aae3f7f7abc09</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -8788,13 +6277,6 @@
       <name>I_DAC_SET</name>
       <anchorfile>group___d_a_c.html</anchorfile>
       <anchor>ga07e3998926f31ef3c9877367ed90f310</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>uint32_t</type>
-      <name>dac_sample_t</name>
-      <anchorfile>group___d_a_c.html</anchorfile>
-      <anchor>gaf7a0f5287d897fc67ce9d9981c5b6236</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8854,99 +6336,78 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>DISK</name>
+    <name>DRIVE</name>
     <title>Disk</title>
-    <filename>group___d_i_s_k.html</filename>
-    <class kind="struct">disk_attr_t</class>
+    <filename>group___d_r_i_v_e.html</filename>
+    <class kind="struct">drive_info_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_PROTECT</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga9baa43dfcd6232dc973ece1c409a581d</anchor>
+      <name>I_DRIVE_ISBUSY</name>
+      <anchorfile>group___d_r_i_v_e.html</anchorfile>
+      <anchor>gabb0780def5b2f452808f1dc5a8fdede4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>DISPLAY</name>
+    <title>Display</title>
+    <filename>group___d_i_s_p_l_a_y.html</filename>
+    <class kind="struct">display_palette_t</class>
+    <class kind="struct">display_info_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_DISPLAY_GETINFO</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga933c7f9e6519196ff82c3f363057162b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_UNPROTECT</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gab3d07e4f8bd14632a169101cfcfe841c</anchor>
+      <name>I_DISPLAY_CLEAR</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga4d203f9c4c24115c148ce93d4398024a</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_ERASEBLOCK</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga714c9f18f86d8a3fc01e7e598af00a4e</anchor>
+      <name>I_DISPLAY_REFRESH</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga21b2851b92eeae5a507c76f5c154fee8</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_ERASEDEVICE</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga172ebb6426469f5c5e80bedde4b21184</anchor>
+      <name>I_DISPLAY_INIT</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga72f9a13713770930830d78d05b085c42</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_POWERDOWN</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gafb3a67c64836a10e8d3bc8f18cc4c150</anchor>
+      <name>I_DISPLAY_ENABLE</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga92f00edbdd340c1bcc65f4881e56bcb2</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_POWERUP</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gaad871a23999389c2ceb0376480814cf9</anchor>
+      <name>I_DISPLAY_DISABLE</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>gae665a558aa34916d311f4bfba3fd094d</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_GETSIZE</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga612b377df35a735f4d144bf37623e389</anchor>
+      <name>I_DISPLAY_ISBUSY</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga0a3c9bf34320f19a957364ef04370ce4</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_DISK_GETBLOCKSIZE</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga9a3c212d3cb793324343c48424bd8dbc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_GETBLOCKERASETIME</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>gad99e96c1a82c1d74924b9e6c55224739</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_GETDEVICEERASETIME</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga2490bed8315b72874e4f34ffdda768fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_ERASEBLOCKS</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga42c325c785ec20a7562e62c54126e072</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_GETATTR</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga7373ba5dc7f66a9ce1b90d27cc5995fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_DISK_BUSY</name>
-      <anchorfile>group___d_i_s_k.html</anchorfile>
-      <anchor>ga0d7c15f0a2b32fa9141d0f8355c56f7d</anchor>
+      <name>I_DISPLAY_GETPALETTE</name>
+      <anchorfile>group___d_i_s_p_l_a_y.html</anchorfile>
+      <anchor>ga12d252cdb67782ea857e306ec2964d4e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -8963,9 +6424,9 @@
     <class kind="struct">eth_txstatus_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_ETH_GETATTR</name>
+      <name>I_ETH_GETINFO</name>
       <anchorfile>group___e_t_h___d_e_v.html</anchorfile>
-      <anchor>ga22dd39cc4b68f3f902695d8304dfb387</anchor>
+      <anchor>ga73b01f9134d45a23de3eb104e0e78a6b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -9019,9 +6480,9 @@
     <class kind="struct">enet_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_EINT_GETATTR</name>
+      <name>I_EINT_GETINFO</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>gaf63454446a977fa24c3b4501e096ef90</anchor>
+      <anchor>ga5628820b86ce1abde7f4fa28795f8abd</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -9040,9 +6501,9 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_ENET_GETATTR</name>
+      <name>I_ENET_GETINFO</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ga6f62b4e8691e5d816a6bb4c6dfaafc28</anchor>
+      <anchor>gafb9f80afef01ffc6c69fcadb5b5d8400</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -9061,59 +6522,9 @@
     </member>
     <member kind="typedef">
       <type>mcu_action_t</type>
-      <name>eint_action_t</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ga0cc94e61cd3d7732766b249dc30b9ba9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
       <name>enet_action_t</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
       <anchor>ga79ffe5b971974a4223b91cde49464d9b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>eint_action_event_t</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>gadd1257260f1ba401df43dd34fa2d28d5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_UNCONFIGURED</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5a7f362899eaa0583dccbdea0bbaf8f5a1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_RISING</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_FALLING</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_BOTH</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5aaab3f9601e94feb16265e6512ff683f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_LOW</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5ac72b8d7c05b72a3917fd88c51a084146</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>EINT_ACTION_EVENT_HIGH</name>
-      <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggadd1257260f1ba401df43dd34fa2d28d5aa169884effda9ecad418a5dab0f1ec40</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -9162,19 +6573,19 @@
     <member kind="enumvalue">
       <name>ENET_FLAGS_USERMII</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fceae63959e536664571d59dd5b313b26dae</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ae63959e536664571d59dd5b313b26dae</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_FULLDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fcead8fb14a32b90abe4c0d9128ca416d969</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600ad8fb14a32b90abe4c0d9128ca416d969</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_HALFDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fceaa582a4f418d27604aeef4293b85151d4</anchor>
+      <anchor>ggabed82baf7f470b522273a3e37c24c600aa582a4f418d27604aeef4293b85151d4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9303,21 +6714,14 @@
     <name>SYS_FIFO</name>
     <title>FIFO Buffer</title>
     <filename>group___s_y_s___f_i_f_o.html</filename>
+    <class kind="struct">ffifo_attr_t</class>
     <class kind="struct">fifo_attr_t</class>
     <class kind="struct">fifo_peek_t</class>
-    <class kind="struct">fifo_cfg_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>FIFO_DEVICE</name>
+      <name>I_FIFO_GETINFO</name>
       <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
-      <anchor>ga670519da9a74984f5605f50cf675385d</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_FIFO_GETATTR</name>
-      <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
-      <anchor>ga81cb55b73d1c48300efc4f9170781de9</anchor>
+      <anchor>ga3f40ca557aed98dc7ef51ae4fbeff868</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -9339,13 +6743,6 @@
       <name>I_FIFO_EXIT</name>
       <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
       <anchor>gab11d9f1ec93aaf8bfce1a579f258b439</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_FIFO_SETWRITEBLOCK</name>
-      <anchorfile>group___s_y_s___f_i_f_o.html</anchorfile>
-      <anchor>ga40bc035a4c24444b501687addddb5ca9</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -9505,493 +6902,35 @@
       <type>struct group *</type>
       <name>getgrent</name>
       <anchorfile>group___g_r_p.html</anchorfile>
-      <anchor>gad562e93b891b0df5e1d875b7ad118aa6</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga000b03acd164a7b8712a8bbec6a9f048</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setgrent</name>
       <anchorfile>group___g_r_p.html</anchorfile>
-      <anchor>gacb15dcd4c02d1f8b693306cd43a8aa69</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gabb37dfa0f0c86a8cdb4bd12e74b6256b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>endgrent</name>
       <anchorfile>group___g_r_p.html</anchorfile>
-      <anchor>gad8139e6b6a3e1c75bc059ff9507cbd48</anchor>
-      <arglist>(void)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>HIO</name>
-    <title>Human Input/Output Device</title>
-    <filename>group___h_i_o.html</filename>
-    <class kind="struct">hio_desc_t</class>
-    <class kind="struct">hio_attr_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_GETATTR</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gaf332e758fecfa46dc5ce2c9160264d29</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_SETREPORT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga8f3a80a1ae8d5005f356272c4095ef58</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_REPORT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gac4a93a6c449fa863b55b43b888f23f33</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_HIO_INIT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga25d5162af8864c63cac550b37aea0026</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>hio_data_t</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga7c6c8941505284f2e03ee28e0c3c80fc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_BIT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcacfb87fe9636054a27b0ef6e0b9cde341</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT8</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcace071cbafea00f0edbf397a3d02aae65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT16</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca88bddf3f661aa92b07f037a5ad7c35fd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT32</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca5910f423ba41845fab280ef6216f0564</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT64</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca36168f22a5f5a02de5423c29dafecaf6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT8</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcac5f094cff3eeea9704f20fc666200b6f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT16</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca6458b388ce8dc1961b9b6eb09efcf7f3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT32</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcab8c4874c992debf22ed010c3fba2bc1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT64</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcaef58bb506f189afffa88cf191a3047d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_FLOAT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca41ee28b64124bb1195ba4499005741bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_DOUBLE</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcad2a163c0c3a14069a1a32871d37fc0c7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>hio_io_type</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gaba3f829ed128f9908e3ec1ce5ebdd3cd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda8589c54a0f4975971911d8a8175fbc94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_BUTTON</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda651d5ab299b41d620a0078416ea18207</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_DPAD</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda7ff15162da4aa3527911ee74f6cd03b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_JOYSTICK</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda2634a649969bfd42534a290c54365105</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_SWITCH</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda43324255156cb55959471c870d0fd104</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_SELECTOR</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda9ead10641bb4c546f278f00fc93df30f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_OUT_LED</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cdacb35f73142dc58a32b4da7c51f613ced</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_STATUS</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cdac73f1f912de6c40ca630e8780eac5341</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_OUT_STATUS</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda95d94a206b44822bf62a2748d8b7906c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>hio_subtype</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gaa1434a7950ec810f3dd4a187f5204578</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_UP</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a6d0f621eb5a19b8f30e9fd0682e6827a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_RIGHT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ac66eaa37c513885e52f5c1e4f30ef8cf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_DOWN</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ad809a94dab82e440b457969c7add187e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_LEFT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a4436b78825446b9913c323cfd52e7f54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_CENTER</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a45e6bdb6d6a982142f9d7d650e94e62d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_JOYSTICK_X</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ae94aef9ff934553e312b9c6b8e6a948d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_JOYSTICK_Y</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a093e3702d970ae6bbb2ae598e896f878</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA_MIN</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a96d7b3fa61a051e4504df8b8c507decb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA_MAX</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ab43f1363908026af41aeba156e9cc0d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_BIT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcacfb87fe9636054a27b0ef6e0b9cde341</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT8</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcace071cbafea00f0edbf397a3d02aae65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT16</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca88bddf3f661aa92b07f037a5ad7c35fd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT32</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca5910f423ba41845fab280ef6216f0564</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_UINT64</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca36168f22a5f5a02de5423c29dafecaf6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT8</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcac5f094cff3eeea9704f20fc666200b6f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT16</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca6458b388ce8dc1961b9b6eb09efcf7f3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT32</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcab8c4874c992debf22ed010c3fba2bc1a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_INT64</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcaef58bb506f189afffa88cf191a3047d7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_FLOAT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fca41ee28b64124bb1195ba4499005741bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_TYPE_DOUBLE</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gga7c6c8941505284f2e03ee28e0c3c80fcad2a163c0c3a14069a1a32871d37fc0c7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda8589c54a0f4975971911d8a8175fbc94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_BUTTON</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda651d5ab299b41d620a0078416ea18207</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_DPAD</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda7ff15162da4aa3527911ee74f6cd03b0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_JOYSTICK</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda2634a649969bfd42534a290c54365105</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_SWITCH</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda43324255156cb55959471c870d0fd104</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_SELECTOR</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda9ead10641bb4c546f278f00fc93df30f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_OUT_LED</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cdacb35f73142dc58a32b4da7c51f613ced</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_IN_STATUS</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cdac73f1f912de6c40ca630e8780eac5341</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_OUT_STATUS</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaba3f829ed128f9908e3ec1ce5ebdd3cda95d94a206b44822bf62a2748d8b7906c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_UP</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a6d0f621eb5a19b8f30e9fd0682e6827a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_RIGHT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ac66eaa37c513885e52f5c1e4f30ef8cf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_DOWN</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ad809a94dab82e440b457969c7add187e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_LEFT</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a4436b78825446b9913c323cfd52e7f54</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_DPAD_CENTER</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a45e6bdb6d6a982142f9d7d650e94e62d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_JOYSTICK_X</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ae94aef9ff934553e312b9c6b8e6a948d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_JOYSTICK_Y</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a093e3702d970ae6bbb2ae598e896f878</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA_MIN</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578a96d7b3fa61a051e4504df8b8c507decb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>HIO_EXTREMA_MAX</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ggaa1434a7950ec810f3dd4a187f5204578ab43f1363908026af41aeba156e9cc0d0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>type</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>gabc4e6699c8b5078aaa43087c3702a84d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint8_t</type>
-      <name>use</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga57754a789c0ef2f4ed1950caa894bb8e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>count</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga21a69c943eb8580733a4fee196e0581b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>const hio_desc_t *</type>
-      <name>report_desc</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga2158b54c0e39f46dc27281acafc4b493</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>count</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga1059a8fd88a0db39cc4b5a29a8861882</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>uint16_t</type>
-      <name>size</name>
-      <anchorfile>group___h_i_o.html</anchorfile>
-      <anchor>ga8c8b174df5216f23cff4e09dba1984fc</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>USB_DEV_HID</name>
-    <title>Human Interface Device</title>
-    <filename>group___u_s_b___d_e_v___h_i_d.html</filename>
-    <member kind="function">
-      <type>uint32_t</type>
-      <name>usb_dev_hid_get_report</name>
-      <anchorfile>group___u_s_b___d_e_v___h_i_d.html</anchorfile>
-      <anchor>gaeb5d1ee8665c8fcee14d0eb3dc5150d0</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gadec2ce5b05d5c32cc4a692cef8fd2aec</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>I2C</name>
-    <title>Inter-Integrated Circuit (I2C) Master</title>
+    <title>Inter-Integrated Circuit (I2C) Master or Slave</title>
     <filename>group___i2_c.html</filename>
-    <class kind="struct">i2c_reqattr_t</class>
-    <class kind="struct">i2c_attr_t</class>
+    <class kind="struct">i2c_info_t</class>
+    <class kind="struct">i2c_pin_assignment_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_I2C_GETATTR</name>
+      <name>I_I2C_GETINFO</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gaf6038303904f4036e757d39125c82b42</anchor>
+      <anchor>ga25f75c30568f91758d943e463e6f06f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -10008,135 +6947,168 @@
       <anchor>gae2e682283b1316ec64d69633d76b6588</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_I2C_SETUP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>ga2bc7c029d97669b7952c0b72609603be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_I2C_GETERR</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>ga6a37788a3d02cabfaa96fa0058306cff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>i2c_action_t</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gacb09d3584b32f3efd8c8d50cc52b4c80</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumvalue">
-      <name>I2C_STATE_NONE</name>
+      <name>I2C_ERROR_NONE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa4b9fe6f1f00736f7579721c85433cd85</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a5feee47669cdab4f25da4e0de0c16633</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_START</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_WRITE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa7e270c609e58ecf5bc7946ac67dfb066</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a7e270c609e58ecf5bc7946ac67dfb066</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_STOP</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa37664a1000f758f1741ed9087903aad3</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a37664a1000f758f1741ed9087903aad3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_MASTER_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa2b7eecd3273ba4318b33f714fe81a140</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a2b7eecd3273ba4318b33f714fe81a140</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_BUS_BUSY</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaaaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8aaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ARBITRATION_LOST</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa4ad4a8f910e34819bb7e934495c729ad</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_RD_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa37703115a79d1a057040c1a36918383b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_WR_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa8bf13f39fa366522a3d23a08fc707c0b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_RD_16_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa3160a906d0391441d13cc8b44068d538</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>I2C_STATE_WR_16_OP</name>
-      <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa8b66cb9ef1827bf28e992be1c5018006</anchor>
+      <anchor>ggac36f475ca5b446f4fde4c9b90bec77c8a4ad4a8f910e34819bb7e934495c729ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>i2c_transfer_t</name>
+      <name>i2c_flag_t</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>ga3ad96dadad63bfad13256b053c868ac3</anchor>
+      <anchor>ga35689050a00ae4d0da14a1abe0e38dc3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2C_TRANSFER_NORMAL</name>
+      <name>I2C_FLAG_SET_MASTER</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga3ad96dadad63bfad13256b053c868ac3a4493a827b39459a5bb65561dbf0640d3</anchor>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3afdac6266e166155b1609f80e271c376c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2C_TRANSFER_NORMAL_16</name>
+      <name>I2C_FLAG_SET_SLAVE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga3ad96dadad63bfad13256b053c868ac3a9b2805ac15bc798f7082cb5ef4c84e3c</anchor>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a3e0646aa6d900d8a52d295a14b2e146e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2C_TRANSFER_READ_ONLY</name>
+      <name>I2C_FLAG_IS_SLAVE_ACK_GENERAL_CALL</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga3ad96dadad63bfad13256b053c868ac3a455447d1240251898be01a1c75e89057</anchor>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a22fe56a26d0865eafd8495d296fd28c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_PULLUP</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3af903f9c25cf176a36eebef867f28e0e0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_PREPARE_PTR_DATA</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3ae1b939747c495a813d61102c9630a752</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_PTR_16</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a0ea5e30ac4d7d71f113f21426eb3b42a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_PREPARE_PTR</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3af8599591794682efd40cd2c84853bd05</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_PREPARE_DATA</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a3ced669585db4c385ec9fb4e1be92015</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR0</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a1ec6b5e272a895da2d62faaf17616df8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR1</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a634ce9cbc933667fb6f72f0b57de1842</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR2</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a8bf570a5dd4efc698d4f71b7425ab957</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_ADDR3</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a8aaf943abac0d7146e5cfd3d601adcc6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_PTR_8</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a653c11befa1f8c150c58e77b23fd4a08</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_SLAVE_PTR_16</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3aa8d708b2da59c6bd8002a2957e9d5919</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_RESET</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a3440a0543ac0b2a43e26dab2d5b303bd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2C_FLAG_IS_NO_STOP</name>
+      <anchorfile>group___i2_c.html</anchorfile>
+      <anchor>gga35689050a00ae4d0da14a1abe0e38dc3a283c7a933378c6d5c6ad63e4fc659f0c</anchor>
       <arglist></arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>I2S</name>
-    <title>Inter-Integrated Circuit (I2S) Master</title>
+    <title>Inter-Integrated Sound (I2S) Master</title>
     <filename>group___i2_s.html</filename>
-    <class kind="struct">i2s_attr_t</class>
+    <class kind="struct">i2s_info_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_I2S_GETATTR</name>
+      <name>I_I2S_GETINFO</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ga2c3152a57afd71183e4cc8611b9fc22d</anchor>
+      <anchor>ga648c6e585fc62944d337e495b30d3b4f</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -10153,29 +7125,70 @@
       <anchor>ga25434165fa37a902d65facabc838225d</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>i2s_action_t</name>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_WIDTH_8</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gaa11529edd55d2691400952cc77421aaa</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea7150971097fdd72d0426984c8a839da6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2S_MODE_WORDWIDTH_8</name>
+      <name>I2S_FLAG_IS_WIDTH_16</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ab51522d8f0f167193c2a756186a196db</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea75cc6917775c8396c1e2adf0589c44a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2S_MODE_WORDWIDTH_16</name>
+      <name>I2S_FLAG_IS_WIDTH_24</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a20553dc321430b35ede0c29ba014e148</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea96539a142fa0b31f91c0fc3faea32a49</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>I2S_MODE_WORDWIDTH_32</name>
+      <name>I2S_FLAG_IS_WIDTH_32</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a65278b8e19bc4ec830549b82354ec514</anchor>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea1c6f3f810c5208ac2d674ecd0490a362</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_MONO</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea52f39d0ff752118830e325b3b949d5cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_STEREO</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea69835433d9ae237149269532364f3cce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_SET_MASTER</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea98b78a09cd05aa7e4fe607f71f63f439</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_SET_SLAVE</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea10166847cbcd0167dc946434778c6f52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_TRANSMITTER</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9eafdc2f01fd2eb4f33355436e0820f3e22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_RECEIVER</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9eae191dab537f2696329528e31175cd59d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_MCK_ENABLED</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ead501dd84c6c9480fed39a8a6f2f19204</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -10183,540 +7196,6 @@
     <name>LINK_LAYER</name>
     <title>Link Transport Layer (for remote access to system)</title>
     <filename>group___l_i_n_k___l_a_y_e_r.html</filename>
-    <class kind="union">link_op_t</class>
-    <class kind="struct">link_reply_t</class>
-    <subgroup>BOOTLOADER</subgroup>
-    <subgroup>USB_HANDLE</subgroup>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_PHY_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga791c4825256b199c45a231919e9ca487</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_PROT_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga99043b249fff71ae801688138117ce5a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_DEV_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga3ed6a9d071bf7a159218e117872263f4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFMT</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga171b7c8730271deb6e5aa68136a4740f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFDIR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga7a6f21b636cffd5f5c06bd09bae4194b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFCHR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2b17b2febed35066590ffcb92d89bd10</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFBLK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf7b2d7d4dc8e0d6b72f787575bbe9654</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFREG</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga105ec7b73e771eca325804406ae03e65</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFLNK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae829b2e5c373944dbce984d4b330fecd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFSOCK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga4b9daa0a45ab4b90a1421ee773393513</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IFIFO</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac0fd9aefc3188763ba174f93aba698f3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRWXU</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga363234e755d7128e3e1813a6e5651915</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRUSR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga5842b1623d7a5a84e7b4f680ad4fdf82</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IWUSR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gad2364d2292c43d82eb04d11dc64ec313</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IXUSR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga4d48dd607635d52737ab987e694b8f06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRWXG</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga50fbbc9901108c114b6b3fa1c780e861</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRGRP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab6b49801a1df23f6c0c45b4ac9b6dd68</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IWGRP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga15be78b0705907a0ac9cb8b9e675c915</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IXGRP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab75b10f83eb7510809e3df0dc05e9b64</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IRWXO</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga053a15ca37d26350864792ef1c2ec661</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IROTH</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga886dfc37334a414bbe524504a4d727c8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IWOTH</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaefec91c29eae7095ffe7af4cb01f6a14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_IXOTH</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga5ae54c39c00ad4f04598cef10b94b582</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_ISUID</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga1a6db80672511a0637f34f01cad820d1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_ISGID</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf2a1e3831f59f2ab446f2e0f3a14cad1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_S_ISVTX</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2cd0abc32f496cb8603341105b17f7c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_OVERFLOW</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf9dd75909df0713efbc7fd655ca1a164</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_RESUME</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gadc2d04f2cf3739a98c2553388f8944d2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FLUSH_START</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga61466a4574005590ac19be1e435d0354</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FLUSH_STOP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae5f6c74f59665ccbc7b2d46821e90791</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_START</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga15531ee0e8e6fa35ae805221252ead23</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_STOP</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab36bb2d660571f55f80c6bdd0f026f94</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FILTER</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga94f70c65345d59077e2b2022c5e2380c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_ERROR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gadfd2932878e963d0137662ac9d406d2a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_UNNAMED_USER_EVENT</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaed0a2b5b9956feac0b180a4b513fa64a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_MESSAGE</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga731c1b667bb7b95c174530b1d2c95f44</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_WARNING</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac9eac82b6df00d12a35bef8676b89e5e</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_CRITICAL</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gadb675bb1b26a459df4fbc611614153cb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_POSIX_TRACE_FATAL</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga148cf924c1377e2c42c3b5dd95f290be</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_RDONLY</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac6aeea1a6e2524d8202419c28ecab777</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_WRONLY</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2d0bd8911c5e24b3ad908a075d189313</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_RDWR</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae80e0143643175d3bd04ad72443f75fa</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_APPEND</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaa6d6c75ffa4888a0d70314171f90c165</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_CREAT</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae47d038edb66d060603aa84f4960e233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_TRUNC</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga70886d1c2dee75fb78ffba62d417b590</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_EXCL</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gafbac29836431df00cd509d76f5c53a5d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LINK_O_NONBLOCK</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga51eaa834f089254f4ab95cc7b44a7b17</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_open</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga0dcab7ecd94bab708648012000e408d9</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, int flags,...)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_ioctl</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gabfaae5ad494e42f62b31127a306797ef</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, int request,...)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_read</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae2277f9efbd77259db93c0fc76d373c9</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_write</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gad03c33a3319d76de1b994c83a5e889b2</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, const void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_close</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga094b294b36391dfc64464591b53c7193</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_unlink</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga6f97b09fef314b4d5cfb7ee9429332f8</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_lseek</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga931d744f542b63d83fd798c027a91d3f</anchor>
-      <arglist>(link_transport_phy_t handle, int fildes, off_t offset, int whence)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_mkdir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga5b7cbca8b1704ed1d32dd31d9136debd</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, link_mode_t mode)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_rmdir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga80483d24e4b1d03cb18abfbd7dc4fd63</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_opendir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf58c6f028ef5f43f0d24f32758e16e19</anchor>
-      <arglist>(link_transport_phy_t handle, const char *dirname)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_closedir</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaf70334eef40924a40a6c4636ec0e193b</anchor>
-      <arglist>(link_transport_phy_t handle, int dirp)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_readdir_r</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2c9c4a06710346463c2429b109111623</anchor>
-      <arglist>(link_transport_phy_t handle, int dirp, struct link_dirent *entry, struct link_dirent **result)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_mkfs</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae42733b80a99180a691c70df2137a776</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_exec</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga35ac1537f8085cec57c6c486c50357c4</anchor>
-      <arglist>(link_transport_phy_t handle, const char *file)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_symlink</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga7c5d439f1e023269ae96bec64796e020</anchor>
-      <arglist>(link_transport_phy_t handle, const char *old_path, const char *new_path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_open_stdio</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gac47136477797862dd600df2f168c9d2f</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_close_stdio</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga1ac9be3df41ec2e93c14c7f885247eb0</anchor>
-      <arglist>(link_transport_phy_t handle)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_read_stdout</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga32cd6db0a6c68963889254337306d0de</anchor>
-      <arglist>(link_transport_phy_t handle, void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_write_stdin</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga8b0b58b5af967a70e52ab1cb639924da</anchor>
-      <arglist>(link_transport_phy_t handle, const void *buf, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_settime</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga2eecf4e6e45a1aebb4153c37b89a518a</anchor>
-      <arglist>(link_transport_phy_t handle, struct tm *t)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_gettime</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gae19982b878801cd3c79b453bba8105ca</anchor>
-      <arglist>(link_transport_phy_t handle, struct tm *t)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_kill_pid</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga74752cc07271977dc00325b3a7d1364f</anchor>
-      <arglist>(link_transport_phy_t handle, int pid, int signo)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_get_security_addr</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga37f1acd91ab909786a553dd7db8993f3</anchor>
-      <arglist>(u32 *addr)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_rename</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga909eaaae93a9bef999e319acd8f55f83</anchor>
-      <arglist>(link_transport_phy_t handle, const char *old_path, const char *new_path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_chown</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gab6408de0f86e876b9f7186610738be59</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, int owner, int group)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>link_chmod</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>gaac73aa5cb0aad85ea60f730da1e7efb0</anchor>
-      <arglist>(link_transport_phy_t handle, const char *path, int mode)</arglist>
-    </member>
-    <member kind="variable">
-      <type>int</type>
-      <name>link_errno</name>
-      <anchorfile>group___l_i_n_k___l_a_y_e_r.html</anchorfile>
-      <anchor>ga38bd77abee21e101bdb11e391e58747d</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>USB_DEV_MSC</name>
-    <title>Mass Storage Class</title>
-    <filename>group___u_s_b___d_e_v___m_s_c.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>MSC_SUBCLASS_RBC</name>
-      <anchorfile>group___u_s_b___d_e_v___m_s_c.html</anchorfile>
-      <anchor>ga0e494337587564a5a04c55a54573e253</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>MEM</name>
@@ -10724,27 +7203,6 @@
     <filename>group___m_e_m.html</filename>
     <class kind="struct">mem_attr_t</class>
     <class kind="struct">mem_pageinfo_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>MEM_MIN_FLASH_WRITE_SIZE</name>
-      <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>gaebc4771824dac98e7aee93a4de063353</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>MEM_MAX_FLASH_WRITE_SIZE</name>
-      <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>gabdad7ca9519210528788a3a020124f7a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MEM_GETATTR</name>
-      <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ga14bd3264693fbe0bd29cfa33f049e340</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_MEM_ERASEPAGE</name>
@@ -10767,21 +7225,21 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>MEM_PAGEINFO_TYPE_QUERY</name>
+      <name>MEM_FLAG_IS_QUERY</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ace2f63f226d25f9614d12001b7832b6a</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a671eb93e618c68d10475b2c2fc7a7f28</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>MEM_PAGEINFO_TYPE_RAM</name>
+      <name>MEM_FLAG_IS_RAM</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ae3db254b91a6adcdbb87eb9c978d8af3</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a94296b10ac8302cf61ab46134041027b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>MEM_PAGEINFO_TYPE_FLASH</name>
+      <name>MEM_FLAG_IS_FLASH</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a093faf180cdabc3b7693234a8068c553</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25ae10ff3f5485ca4fe32d56761298be46e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -10861,293 +7319,15 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>MLCD</name>
-    <title>Mono LCD</title>
-    <filename>group___m_l_c_d.html</filename>
-    <class kind="struct">mlcd_attr_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_GETATTR</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga3764689aafa880b400bbae34389f94bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_CLEAR</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gadcb7eae821312000c0ac21557f32ad00</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_HOLD</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga53769052c69cde35a0d953a4d88a4346</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_TOUCH</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga52aac77a924a9f90c652b7b5d0a53a85</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_INIT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gace1ad40a5aefcc1727b6780bd078cf0c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_ON</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga98d29c309fa0ed30652024889a01d468</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_OFF</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gad6ed95275880427e1e63573ea571a41a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_MLCD_BUSY</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga8a79a884628c59386fadfb2b98c5b8d3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_TOP</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13abc6a5c49706e01ea43bcd645cd4e4350</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_BOTTOM</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13a0b6b1d7c12042c6687460ddb1efc25ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_LEFT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13a27b44fa8ad85dca1ca04bfed2d39d159</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_RIGHT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13ad4a45c8a3c05365edb073979a5f60391</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_TOP</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13abc6a5c49706e01ea43bcd645cd4e4350</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_BOTTOM</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13a0b6b1d7c12042c6687460ddb1efc25ec</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_LEFT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13a27b44fa8ad85dca1ca04bfed2d39d159</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>ORIENT_RIGHT</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gga39fca1837c5ce7715cbf571669660c13ad4a45c8a3c05365edb073979a5f60391</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>w</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga41c9a2eb49d312c9a6017fd74f026233</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>h</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga9291cf01e8b979e54b7b85435fb3646b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>mem</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga7aec3e57e8c279de09c1df3e5ec0b7f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>mem</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga87fc25f861a1a1b74ad39ba0714c3689</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8 *</type>
-      <name>mem8</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga83e2dc255d563de69f1ebd17e568e024</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8 *</type>
-      <name>mem8</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga309e7c3c51e84dd49af2bebd38096408</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32 *</type>
-      <name>mem32</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga205ce04250e07490641e8f396a250823</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32 *</type>
-      <name>mem32</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gac524425a0cc163ff9b02e29ab2342571</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>scratch_mem</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gad248032935305e7a707167ed2dd36641</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>void *</type>
-      <name>scratch_mem</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gaec9ba623cfef86fd316b4b6930782e6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8 *</type>
-      <name>scratch_mem8</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga15bafd76a644bb3fdca1af9276b8fd53</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8 *</type>
-      <name>scratch_mem8</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gaf4830e6cce67ca891cc95104ffab8489</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32 *</type>
-      <name>scratch_mem32</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gaa29670b9be67c372ecb2379e746287f9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32 *</type>
-      <name>scratch_mem32</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga6271477ccccd663a2105795e37c65813</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>size</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga07a39d48e46b05223805b7a7efe606ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>cols</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gaecbdbea9344c680e6f97585258885446</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>rows</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga96eb84c898e1cf3d0efdbca905f65b16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u32</type>
-      <name>freq</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga8b9e4c2db3e8e3037740abc6006e99c1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>hold</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga569f2b033e54a994d8a6581e41167b4f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u8</type>
-      <name>orientation</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gae0f18cdf606e18b63a3529ff33a8b9ff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_left</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga6be67f922f6b67993ad69c1a47ca204a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_right</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>gac84cb49dd5410d01b4c7105c48540632</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_top</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga75c1ecc07a097af08190347b89bec917</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>u16</type>
-      <name>margin_bottom</name>
-      <anchorfile>group___m_l_c_d.html</anchorfile>
-      <anchor>ga267f63432703615799cec82d97ec0d14</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="group">
     <name>MCI</name>
     <title>Multimedia Card Interface</title>
     <filename>group___m_c_i.html</filename>
     <class kind="struct">mci_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_MCI_GETATTR</name>
+      <name>I_MCI_GETINFO</name>
       <anchorfile>group___m_c_i.html</anchorfile>
-      <anchor>ga09b3eda7a20ae5e4a5ec353f70430307</anchor>
+      <anchor>gaf87987c19edc7be882c2968b8873677a</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -11297,6 +7477,26 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>NETIF</name>
+    <title>Network Interface</title>
+    <filename>group___n_e_t_i_f.html</filename>
+    <class kind="struct">netif_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_NETIF_INIT</name>
+      <anchorfile>group___n_e_t_i_f.html</anchorfile>
+      <anchor>ga4c451b9f2243bbf24f31cd6aa16e1810</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_NETIF_LEN</name>
+      <anchorfile>group___n_e_t_i_f.html</anchorfile>
+      <anchor>gaf294e0bfd76b9811fd0d9adc2ae9f75c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>POSIX</name>
     <title>POSIX</title>
     <filename>group___p_o_s_i_x.html</filename>
@@ -11348,22 +7548,22 @@
       <type>struct passwd *</type>
       <name>getpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
-      <anchor>ga6c9819b8d04fd2807a7a017801b76d17</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga2f7ceedcdd60308b6a47d86af06cef1b</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>setpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
-      <anchor>ga015c67a1cd39fb9dc8910ad7d622c6fa</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga8fa077ac6b2ed8565db3ecfa3be0f85c</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>endpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
-      <anchor>gacd2bac39cbb74a8b6fde9ac61f02d0f5</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga70fd2517d9f12a9bbed870c911950414</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -11396,14 +7596,11 @@
     <name>PIO</name>
     <title>Pin Input/Output (PIO)</title>
     <filename>group___p_i_o.html</filename>
-    <class kind="struct">pio_t</class>
-    <class kind="struct">pio_attr_t</class>
-    <class kind="struct">pio_action_data_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_PIO_GETATTR</name>
+      <name>I_PIO_GETINFO</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ga6eab1d482f284ff0a8649e2a8553e60f</anchor>
+      <anchor>ga7c9082b2c58d070d2c65e3490b24246b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -11448,152 +7645,125 @@
       <anchor>ga39c300857261b172b08d471e1586a261</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>uint32_t</type>
-      <name>pio_sample_t</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gafca6496338c7821c25bd946055328197</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>pio_action_t</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ga5364eeae1649d633e476aedff241eaf8</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>pio_mode_t</name>
+      <name>pio_flag_t</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gaf822c507345363a31e1e4d5fb54f6ab6</anchor>
+      <anchor>ga0c2b3d5e7a698e36b34db9eea836cf91</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_INPUT</name>
+      <name>PIO_FLAG_SET_INPUT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ad07098aeb1a97c62f7d0cd844402def5</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a87ab487492803226f03df276ee386257</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT</name>
+      <name>PIO_FLAG_SET_OUTPUT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a2bea82834493634f2a1eb09f3b469a3c</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91ac2aba738133df3a90960352442ffc9c9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_PULLUP</name>
+      <name>PIO_FLAG_IS_PULLUP</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6abc2aaf94b4e3b911f3dbe6143c26d242</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a677704677ba5f9116f5350c03087e14c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_PULLDOWN</name>
+      <name>PIO_FLAG_IS_PULLDOWN</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a083e5177f03913050981025692020df6</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a60d97cac1b46777dfa83f066999d230f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_REPEATER</name>
+      <name>PIO_FLAG_IS_REPEATER</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a02dee44e071e48660a92dd488d713037</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91adf69286517d448c064c5cc274f0c57c4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_FLOAT</name>
+      <name>PIO_FLAG_IS_FLOAT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6aa3a6c14048f8f3722a1ff870759ec3e2</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a14a4ca40fd64be9ac5d763d16e4a7962</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT_2MHZ</name>
+      <name>PIO_FLAG_IS_SPEED_LOW</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ac7eb004ffe85d69e643231832b64e1a2</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a7303e1963dc172c5f700360c58bbfcc7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_FAST_MODE</name>
+      <name>PIO_FLAG_IS_SPEED_MEDIUM</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a2507b7cd3a592cefa7e4d144b9ef8087</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91af3d09fab2d89c7fc7dbae79fd5b6db38</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT_10MHZ</name>
+      <name>PIO_FLAG_IS_SPEED_HIGH</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6af35dd8d87f06383c569ae0828e8aba3c</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a5aeecf7a1832ee7cd8e308472fe6ad48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OUTPUT_50MHZ</name>
+      <name>PIO_FLAG_IS_SPEED_BLAZING</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a9a29a714dae5d85e1819195d8550ddd5</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a58851349a47b5c9a4ac4bee0ad826edd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_OPENDRAIN</name>
+      <name>PIO_FLAG_IS_OPENDRAIN</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ae53278871dfc1db6cc6e28ff59ce30d4</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a9d1b6a9df2f09772b8144c70ba4e08ba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_HYSTERESIS</name>
+      <name>PIO_FLAG_IS_HYSTERESIS</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a70e2d7b0b1dfc9af38876acd69410bb5</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a00079c7a88c1d6013c97f96bde765e82</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_DIRONLY</name>
+      <name>PIO_FLAG_IS_DIRONLY</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6a510450851ea01b20c51597dcde8b9090</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a940880dd883958fd5948839c8deac0fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_ANALOG</name>
+      <name>PIO_FLAG_IS_ANALOG</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ad5a32857e3d26b7a96477967aa5ee8d8</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a40471d2ad572834af8620640d05b924d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_INVERT</name>
+      <name>PIO_FLAG_IS_INVERT</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6aa47b3cb844309b680ebf1593909b1853</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91a01c879f85ca81f3349edb1d7953bad6a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_MODE_FILTER</name>
+      <name>PIO_FLAG_IS_FILTER</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ggaf822c507345363a31e1e4d5fb54f6ab6ae5569f94db4bad32f5541533234524ff</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>pio_action_event_t</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>ga6119418a0587e58206fc76353700ec72</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91af2cdb0a58b79d23c84e52a552341f2da</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_NONE</name>
+      <name>PIO_FLAG_SET</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72a9b8445a415d5960b25bd2eaaa54fb070</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91ac34d4af90f0239f983305fe877eeff59</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_RISING</name>
+      <name>PIO_FLAG_CLEAR</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72a0622c02facf6431e34b38797cf1b3a8c</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91ad37e3060f241a60266f878979578ca10</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_FALLING</name>
+      <name>PIO_FLAG_ASSIGN</name>
       <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72ad512aa731c7ff7fa2e21f9116d4c77c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PIO_ACTION_EVENT_BOTH</name>
-      <anchorfile>group___p_i_o.html</anchorfile>
-      <anchor>gga6119418a0587e58206fc76353700ec72ae400ad8e2478e9476771f31a12acf742</anchor>
+      <anchor>gga0c2b3d5e7a698e36b34db9eea836cf91aa88f81747ca708752df34dd43a02c7d2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -11643,8 +7813,8 @@
       <type>pthread_t</type>
       <name>pthread_self</name>
       <anchorfile>group___p_t_h_r_e_a_d.html</anchorfile>
-      <anchor>ga4c4f5f3b4f8f45d9d897847d53b11aaa</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga7533cb85402df1287295323a4fd809b3</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -11655,28 +7825,26 @@
       <type>pid_t</type>
       <name>fork</name>
       <anchorfile>group___u_n_i___p_r_o_c_e_s_s.html</anchorfile>
-      <anchor>gaa4e4714e6e8927c80b2553a40094b6d9</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga04629be7bde8f11cbf56e09e66a62dcc</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>pid_t</type>
       <name>vfork</name>
       <anchorfile>group___u_n_i___p_r_o_c_e_s_s.html</anchorfile>
-      <anchor>ga00de8c0545c31325a425f53371a56235</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga2fc1371c63ca2ec8aec2abf4b1678e12</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="group">
     <name>PWM</name>
     <title>Pulse Width Modulation (PWM)</title>
     <filename>group___p_w_m.html</filename>
-    <class kind="struct">pwm_attr_t</class>
-    <class kind="struct">pwm_reqattr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_PWM_GETATTR</name>
+      <name>I_PWM_GETINFO</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ga3dd2442122ad11a0e676bd5beaad9fdf</anchor>
+      <anchor>gaaf911a3bb4a0b0b2c39d7f3406dbe8af</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -11688,91 +7856,52 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_PWM_SET</name>
+      <name>I_PWM_SETCHANNEL</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gac9d07b82e0695639d6ecbbc061b83314</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>uint32_t</type>
-      <name>pwm_duty_t</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>pwm_duty_t</type>
-      <name>pwm_sample_t</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ga090028c2fa62a95140c1d5221ef6e988</anchor>
+      <anchor>ga0439f661deed5f58cd21908dfd25bb0b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>pwm_action_event_t</name>
+      <name>pwm_flag_t</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gadb0ac4dd4fa0f375b62eb9892bef454d</anchor>
+      <anchor>ga7921b846c2d204e17ebfa2b312f991ae</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_NONE</name>
+      <name>PWM_FLAG_SET_TIMER</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dae7f9a88f48882ed3bea0e97471032ffb</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea5b53251b434dbe3b9613bcedef48c836</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_INTERRUPT</name>
+      <name>PWM_FLAG_IS_ACTIVE_HIGH</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dabd38c51940b756c66419f1e67d28cb98</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea33af3b58a7b2c0c8af07e68a6106c127</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_RESET</name>
+      <name>PWM_FLAG_IS_ACTIVE_LOW</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dab3b89d3b5dda63db98e2ef5d290c7777</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea1a9f1bde450a22a5dcbaf58bed9dc55d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_STOP</name>
+      <name>PWM_FLAG_SET_CHANNELS</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454da446afa9e95d740843b13987d732360b7</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea05bfc5555dd143d9163460c110e3e022</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_SETOC</name>
+      <name>PWM_FLAG_CLEAR_CHANNELS</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454da4cf1cc05b6bcb1f19efb1fb1a354dd21</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea80b9ef7770a1b1115beb44696e0af2d9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_CLROC</name>
+      <name>PWM_FLAG_IS_ENABLED</name>
       <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454dae340c466bc882f68657e4077d10e5250</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PWM_ACTION_EVENT_TOGGLEOC</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggadb0ac4dd4fa0f375b62eb9892bef454da0fc8c2a0a3e0ac4de8c55ae7b3b10b32</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>pwm_attr_flags_t</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>gaad9478ab24c5f2deba744bd6697c1cd1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PWM_ATTR_FLAGS_ACTIVE_HIGH</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggaad9478ab24c5f2deba744bd6697c1cd1a382322b0b1eeb3b35fce8d67b5d5e4fd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>PWM_ATTR_FLAGS_ACTIVE_LOW</name>
-      <anchorfile>group___p_w_m.html</anchorfile>
-      <anchor>ggaad9478ab24c5f2deba744bd6697c1cd1afc960faa75fd295af15350e500d299b1</anchor>
+      <anchor>gga7921b846c2d204e17ebfa2b312f991aea2ee281bf6bea17bb2aa9d00b34f55a70</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -11783,9 +7912,9 @@
     <class kind="struct">qei_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_QEI_GETATTR</name>
+      <name>I_QEI_GETINFO</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gafb53154cb3a8a0726c99dc0d20147e4e</anchor>
+      <anchor>ga231f6649e1b81107b97ca01185476846</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -11823,13 +7952,6 @@
       <anchor>ga0063233e3e292589f18bcb3b4fed2c8e</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_QEI_RESET</name>
-      <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga8062a40baffcb7dfcdfb120e0d70ef58</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="typedef">
       <type>mcu_action_t</type>
       <name>qei_action_t</name>
@@ -11839,83 +7961,110 @@
     </member>
     <member kind="enumeration">
       <type></type>
-      <name>qei_mode_t</name>
+      <name>qei_flag_t</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga0b9ae3fe9d097d35283efa54afad29b4</anchor>
+      <anchor>gabb337ae1680e0890cc5434bd84a3442f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_INVERT_DIR</name>
+      <name>QEI_FLAG_SET</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4ace874063956aa81e10e7fcb9e7f9e83c</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442faa08339c61be95a01765f28e3b7bc07c0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_SIGNAL_MODE</name>
+      <name>QEI_FLAG_IS_INVERT_DIR</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4a6bf8f789c9d068ab076433f0d0f43853</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa41d533ddaa259cbddeb29075b77940d8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_DOUBLE_EDGE</name>
+      <name>QEI_FLAG_IS_SIGNAL_MODE</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4a030f5acfb1ccdb62761c8af4d736463a</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa4d1ba0e4ba87c4ad0e512bd241d817eb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_MODE_INVERT_INDEX</name>
+      <name>QEI_FLAG_IS_DOUBLE_EDGE</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga0b9ae3fe9d097d35283efa54afad29b4a737b2d5a1053061549cbb89abe512797</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>qei_reset_mask_t</name>
-      <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga6dcb53fdb9caa7943bba45d545ad1290</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa0f4da161f48e6222249155f2d3cb5a1d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_POS</name>
+      <name>QEI_FLAG_IS_INVERT_INDEX</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290ab4a34c9fd60647b1873b02fde80a37c3</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa523e8cdc5c9933f4ccc33cb50a0293e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_VELOCITY</name>
+      <name>QEI_FLAG_RESET</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290a661846e489fd65bb36eb4eb695357581</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa0cc9bf789267b78a216376dafcd88d83</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_INDEX</name>
+      <name>QEI_FLAG_IS_RESET_POS</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290ab7854470e60ce02475815449c07b9ede</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fad2b725a5ef57e6be3603a42922a384ba</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_RESET_POS_ONINDEX</name>
+      <name>QEI_FLAG_IS_RESET_VELOCITY</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga6dcb53fdb9caa7943bba45d545ad1290a17aba7ea6a7d28645d675950c1387ac0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>qei_action_event_mask_t</name>
-      <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>ga579a2b499d0668b9d8743bfbd71a554a</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa69f85b6f278185f693d204873bf882aa</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_ACTION_EVENT_INDEX</name>
+      <name>QEI_FLAG_IS_RESET_INDEX</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga579a2b499d0668b9d8743bfbd71a554aaf127f1ad0df7d15e6e21a8e85ebce5aa</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fad723dc627b3615d138f39d830930961c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>QEI_ACTION_EVENT_DIRCHANGE</name>
+      <name>QEI_FLAG_IS_RESET_POS_ONINDEX</name>
       <anchorfile>group___q_e_i.html</anchorfile>
-      <anchor>gga579a2b499d0668b9d8743bfbd71a554aabcc7510f36a5502b62c144de87be56dc</anchor>
+      <anchor>ggabb337ae1680e0890cc5434bd84a3442fa4738e98cc9eeb33c4811e7b72712adf6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>RADIO</name>
+    <title>Radio</title>
+    <filename>group___r_a_d_i_o.html</filename>
+    <class kind="struct">radio_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_GETINFO</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>gaf0c3bc64fe2a7d12aa69406858d8ce20</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETATTR</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga56012bd20c8c3ccea29ea7eacb13bbd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETFREQUENCY</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga4b7c6dc4b3d08e471eb5c006da7f4b97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETMODE</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga502e4b09e1997fd58caa25d32146cb41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RADIO_SETPACKETSIZE</name>
+      <anchorfile>group___r_a_d_i_o.html</anchorfile>
+      <anchor>ga6c6c8c8b7754aa81c597f6496c1c4a93</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -11924,29 +8073,7 @@
     <title>Real Time Clock (RTC)</title>
     <filename>group___r_t_c.html</filename>
     <class kind="struct">rtc_time_t</class>
-    <class kind="struct">rtc_alarm_t</class>
     <class kind="struct">rtc_attr_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_SETALARM</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ga4e0edc05fb0c989c5acf8b4927ae5d6d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_GETALARM</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gac0187ffba6245e88b438e7c893c39b37</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_DISABLEALARM</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ga04d1d524a9262ad0fe5e91702c762a7a</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_RTC_SET</name>
@@ -11961,99 +8088,155 @@
       <anchor>gaeaf4abd917cc5d7b03ff96b2f563ed8c</anchor>
       <arglist></arglist>
     </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_RTC_SETCOUNTEVENT</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gac7ca674f40bdc951efb4355bc535655f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>rtc_action_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gaabcd0a7c862cfbdacac11a78f830cec0</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>rtc_clock_t</name>
+      <name>rtc_flag_t</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ga10606f83fcd2315eb36b2ae3c03602d0</anchor>
+      <anchor>gae814e9a42ebbf3a08561cf205c6fb7e5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_CLKSRC_EXTERNAL_32768</name>
+      <name>RTC_FLAG_ENABLE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gga10606f83fcd2315eb36b2ae3c03602d0a3818a99ab8ddd9d696ecc285a5faefc9</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ad5d2eb86026cd9303caff0cd622523e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_CLKSRC_INTERNAL_40000</name>
+      <name>RTC_FLAG_DISABLE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gga10606f83fcd2315eb36b2ae3c03602d0a665121a63cedc225f2865e70d5d16d2f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>rtc_event_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gad2e192ed9a33b6c005c2c19ccbd6a21b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>rtc_event_count_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gae2a9c3088277a56623c7d73f8e530702</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a6369632a74fc7643adb6c99a0a777313</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_NONE</name>
+      <name>RTC_FLAG_IS_SOURCE_EXTERNAL_32768</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a675a78d2a535580b6ad2005f582cc931</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a085a4c5b88118dcc8fc98d3567a90ae4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_SECOND</name>
+      <name>RTC_FLAG_IS_SOURCE_INTERNAL_40000</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5acd1284f5eeee917cfff700ae8c749781</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_MINUTE</name>
+      <name>RTC_FLAG_ENABLE_ALARM</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702adc0af148d93bba5ff96a7a4af9f99906</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a5598e66901b519c51adca369b5979268</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_HOUR</name>
+      <name>RTC_FLAG_DISABLE_ALARM</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a870fc262d71be6da443ff3b8f99af6ee</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab02f99dd110a1197eeb54411405309e6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_DAY</name>
+      <name>RTC_FLAG_IS_ALARM_ONCE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a0de9a98b6ea51a595601127b0a478e5b</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a35f5d79fc11ade6d254c2fcb8af50b47</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_WEEK</name>
+      <name>RTC_FLAG_IS_ALARM_MINUTE</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702af35802cceffa6243c496a1e14ae4dfe1</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a4631c30d98f06d43d2a93d8c489f6234</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_MONTH</name>
+      <name>RTC_FLAG_IS_ALARM_HOURLY</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702a249cf96b5a5ea7c8ddc8b2ef78c2d8bb</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a721b6a1f716ca7c09299bf8a608745ec</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>RTC_EVENT_COUNT_YEAR</name>
+      <name>RTC_FLAG_IS_ALARM_DAILY</name>
       <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae2a9c3088277a56623c7d73f8e530702ae764f4357ddc3122b7db17bd0583e41f</anchor>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a4d9a5f71f3d38fe031bcfee8715fb5ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_ALARM_WEEKLY</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a7302fcf5b68f3645154ee850f302a1cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_ALARM_MONTHLY</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a4b09815683541b237296c280b16fe140</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_ALARM_YEARLY</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aba62369d04b4996f6b8b0be3a3dbb428</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_ENABLE_COUNT_EVENT</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ae3a0bd1b7d8b3a56f259ec305ec77f89</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_SECOND</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aa1ab9b614408a975dc44fc309941baee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_MINUTE</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab092ce34bc7fcffc2e3928f3fd9ff23d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_HOUR</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a986202656bc35342862cd6a8f91d7536</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_DAY_OF_WEEK</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab12d9867e416d378529a56670cb45434</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_DAY_OF_MONTH</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aa6b4cd5e9f1cd65a23eaa74426c5c9cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_DAY_OF_YEAR</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a530d3e2adf401253a7afeaf0a3d9b66b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_WEEK</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5af079f9dd87aba9765ed57fcfa05612b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_MONTH</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5aa28e0a6a09009a2cff5b50805f729694</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_IS_COUNT_YEAR</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5a6dc83eb25f865dad92e1209d121b883e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RTC_FLAG_DISABLE_COUNT_EVENT</name>
+      <anchorfile>group___r_t_c.html</anchorfile>
+      <anchor>ggae814e9a42ebbf3a08561cf205c6fb7e5ab96a900bd80ebc85ba63bab2177451c6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -12178,55 +8361,6 @@
       <anchor>gga1352508ef17e1a342ef93ec92e79960ea04e1a4c8171b0af9e5287442dc3ccd75</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>rtc_alarm_type_t</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>gae65938264f8a116c77c92d7fab17ade2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_ONCE</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a976059f900a12b9f02432ed0b6a28892</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_MINUTE</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2abd4217b9c181fb80434b4b0e807af176</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_HOURLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2ae81ff75817eaa48f57cc3ce6b0b63c7f</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_DAILY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a378147facd1e8ab25c0387c6d0440d16</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_WEEKLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a6e6d0960e73f262cbd236e296491c850</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_MONTHLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a34d8089b1d93ba817b04bcfa61426236</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>RTC_ALARM_YEARLY</name>
-      <anchorfile>group___r_t_c.html</anchorfile>
-      <anchor>ggae65938264f8a116c77c92d7fab17ade2a1457b47302f3060cba5c2b71dfc94905</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>SCHED</name>
@@ -12285,8 +8419,8 @@
       <type>int</type>
       <name>sched_yield</name>
       <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga357cd4b34c13011749dfffb42b489f09</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gad35c30371efccc9ca7187cc8497770dd</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -12368,26 +8502,11 @@
     <name>SPI</name>
     <title>Serial Peripheral Interface (SPI) Master</title>
     <filename>group___s_p_i.html</filename>
-    <class kind="struct">spi_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>SPI_ATTR_MASTER</name>
+      <name>I_SPI_GETINFO</name>
       <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ga6faa4977e39f942b86a645da384e5583</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SPI_ATTR_SLAVE</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gac1457e15fdf08e9acf8d795988a21766</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_SPI_GETATTR</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gaae98e7ee7daf758e6b5df7dba87c9d04</anchor>
+      <anchor>ga9af95975cd0f8779447aa0c9b5918d82</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -12402,55 +8521,6 @@
       <name>I_SPI_SWAP</name>
       <anchorfile>group___s_p_i.html</anchorfile>
       <anchor>gab641415ca6596d88617661aaf2457739</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_SPI_SETDUPLEX</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ga889b7810c9c1f1bae770b150227fcd97</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE0</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a925f70e60e25311cab69bdd17751dad2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE1</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a2ab2ff89b36b85669b92107e6ad34be8</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE2</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a6d73e87183fc02e7da42175fa44f665d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_MODE3</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>ggaabfcbcb5ac86a1edac4035264bc7d2b8a2174a55e6163a71cbdb385461666376d</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_FORMAT_SPI</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gga5d76b81b0ad4c19007a781d4edb8181fad49c166c5feaf65c09e37436e5617404</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_FORMAT_TI</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gga5d76b81b0ad4c19007a781d4edb8181fa40e286f8948f9fbde964e42c67941398</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SPI_ATTR_FORMAT_MICROWIRE</name>
-      <anchorfile>group___s_p_i.html</anchorfile>
-      <anchor>gga5d76b81b0ad4c19007a781d4edb8181fa7e042162d6a2937d41b77a7dad80e72a</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12471,13 +8541,6 @@
       <anchorfile>group___s_i_g_n_a_l.html</anchorfile>
       <anchor>ga1d6d91c6a4d346ac99f80ca09cf3fb49</anchor>
       <arglist>(pid_t pid, int signo)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>signal_callback</name>
-      <anchorfile>group___s_i_g_n_a_l.html</anchorfile>
-      <anchor>ga4393cbea94379cda8f528b741b5d49c2</anchor>
-      <arglist>(void *context, const void *data)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -12573,12 +8636,11 @@
     <name>STFY</name>
     <title>Stratify OS</title>
     <filename>group___s_t_f_y.html</filename>
-    <class kind="struct">signal_callback_t</class>
+    <class kind="struct">sos_board_config_t</class>
     <subgroup>STDC</subgroup>
     <subgroup>IFACE_DEV</subgroup>
     <subgroup>LINK_LAYER</subgroup>
     <subgroup>POSIX</subgroup>
-    <subgroup>USB_DEV</subgroup>
     <member kind="define">
       <type>#define</type>
       <name>VERSION</name>
@@ -12602,10 +8664,10 @@
     </member>
     <member kind="function">
       <type>void *</type>
-      <name>initial_thread</name>
+      <name>sos_default_thread</name>
       <anchorfile>group___s_t_f_y.html</anchorfile>
-      <anchor>gad20ba7632740ffd6129845b9028a0d6b</anchor>
-      <arglist>(void *arg) 1</arglist>
+      <anchor>ga46e6c06dae5493d81b29faaf3b810b48</anchor>
+      <arglist>(void *arg)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -12649,66 +8711,16 @@
       <anchor>gace57c1587a1b9898b868e269d8a0e2ba</anchor>
       <arglist>(int request, void *data) 1</arglist>
     </member>
-    <member kind="function">
-      <type>int</type>
-      <name>signal_callback</name>
-      <anchorfile>group___s_t_f_y.html</anchorfile>
-      <anchor>ga4393cbea94379cda8f528b741b5d49c2</anchor>
-      <arglist>(void *context, const void *data)</arglist>
-    </member>
   </compound>
   <compound kind="group">
     <name>SYS_DEV</name>
     <title>System Devices</title>
     <filename>group___s_y_s___d_e_v.html</filename>
-    <class kind="struct">sys_attr_t</class>
+    <class kind="struct">sys_26_info_t</class>
     <class kind="struct">sys_taskattr_t</class>
     <class kind="struct">sys_killattr_t</class>
     <class kind="struct">sys_process_t</class>
     <class kind="struct">sys_sudo_t</class>
-    <class kind="struct">led_req_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>SYS_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga6e627ad6f9d2d7e08e75612917db2ffc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>NULL_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga05d9e85ca6c6f2d354e0ff7d66ad1279</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>ZERO_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gad91dbbd3c0bef76b5b6f86a1b3c0cb3b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>FULL_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga147b4f9304705097a1bd75ba47070d97</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>LED_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga35ecbbd6edb8e55c7d6841ba5b3f4546</anchor>
-      <arglist>(dev_name, active_level, pio_port0, pio_pin0, pio_port1, pio_pin1, pio_port2, pio_pin2, pio_port3, pio_pin3)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_SYS_GETATTR</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gae5331e280386e4b946296b770c21869c</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="define">
       <type>#define</type>
       <name>I_SYS_GETTASK</name>
@@ -12732,6 +8744,13 @@
     </member>
     <member kind="define">
       <type>#define</type>
+      <name>I_SYS_GETID</name>
+      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
+      <anchor>ga4a76c61e7288d56c111bc6991c5140a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
       <name>I_SYS_GETPROCESS</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
       <anchor>gad8d831b99cd6f4396a939aaca76729b7</anchor>
@@ -12746,17 +8765,10 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_LED_SET</name>
+      <name>I_SYS_GETBOARDCONFIG</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga984e40321cd06b5f9674d79659e5b197</anchor>
+      <anchor>ga38e59452723362e21bfbc90043748fb1</anchor>
       <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>SDSPI_DEVICE</name>
-      <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ga98c40f68ce18efe96809c27ac330c7ae</anchor>
-      <arglist>(device_name, port_number, pin_assign_value, cs_port_value, cs_pin_value, bitrate_value, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -12772,9 +8784,9 @@
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_TTY_GETATTR</name>
+      <name>I_TTY_ATTR</name>
       <anchorfile>group___t_t_y.html</anchorfile>
-      <anchor>ga48cd753d9124466d5e17f480cea29cf1</anchor>
+      <anchor>ga41e23d688113169dea7c3b277f8cc291</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -12850,83 +8862,18 @@
     <name>TMR</name>
     <title>Timer (TMR)</title>
     <filename>group___t_m_r.html</filename>
-    <class kind="struct">tmr_reqattr_t</class>
-    <class kind="struct">tmr_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>TMR_MODE_SETCLKSRC</name>
+      <name>I_TMR_SETCHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gaeb94082355400363145390ae5efdda5c</anchor>
-      <arglist>(x)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>TMR_MODE_SETCOUNTER</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gac6a5a1545ae8f42d6457c33f96f01249</anchor>
-      <arglist>(x)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_GETATTR</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga019da11cefc626f1e3364bf33a170ee9</anchor>
+      <anchor>gaeb14eaf594e9c24ecee030e9f0e50642</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>I_TMR_SETATTR</name>
+      <name>I_TMR_GETCHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gaefe78a760425bd615ec9aae7c5c24166</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_SETACTION</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga6b2b84970c0419efbbaf1748b9e2d2c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_ON</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga3871e5d0dfcd5d2df1999bc7e731f167</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_OFF</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga061cffe54c3f7f31414dca0647c027c3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_SETOC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga1d1975c0f529d6cdc1e15c0de5740114</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_GETOC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga0fc056b76c426b5d4057e247e556a1b9</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_SETIC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gaa38dabc8bc8475b1a28f517522d9e9ca</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_TMR_GETIC</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga84e81c0e7c9fe916daa9e1f1d92fc495</anchor>
+      <anchor>ga724795f12465bd12f1a0be004e6b9ced</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -12943,127 +8890,118 @@
       <anchor>gab3dad8f32add45b25ab32f918b607d9e</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>tmr_action_t</name>
+    <member kind="enumvalue">
+      <name>TMR_FLAG_SET_TIMER</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga97a1456a718acfeb3ee21c9645384fd4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>tmr_clksrc_t</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga752e581dd80394311e122634680ece35</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa5dfdbe71ed150ae09e23615714eff2e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_CPU</name>
+      <name>TMR_FLAG_IS_SOURCE_CPU</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa742da0fb8db8c45acb6d4b018ba55d86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC0</name>
+      <name>TMR_FLAG_IS_SOURCE_IC0</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a3933e4497b943bc0722ef7033951fca4</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa794db5e17b3079ecadee20efc13044f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC1</name>
+      <name>TMR_FLAG_IS_SOURCE_IC1</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35ad2ea59fe333f27d6bdc9da487c4c72f6</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa28be26e249e69809e36f36dcc4096ebd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC2</name>
+      <name>TMR_FLAG_IS_SOURCE_IC2</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a2e5c982133dc1a6f795c84968cec1d01</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaaa3562f641363187babba77043975bac1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_IC3</name>
+      <name>TMR_FLAG_IS_SOURCE_IC3</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a015a3600ae46137f09d06fb113995783</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaab3a24764c7f9f968a79b10e034723e48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_EDGERISING</name>
+      <name>TMR_FLAG_IS_SOURCE_EDGERISING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a2297f0ee2c2197fe99729267865dd6a7</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_EDGEFALLING</name>
+      <name>TMR_FLAG_IS_SOURCE_EDGEFALLING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35abd5e50b4088f9422b84d5cdffe9e5777</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaad3639b3137158884e9122acaa46977c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_EDGEBOTH</name>
+      <name>TMR_FLAG_IS_SOURCE_EDGEBOTH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a9cc719060c8595411a6030bdabb77e89</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa22f41aef0b086c0a35ca94a3f22b4439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_CLKSRC_COUNTDOWN</name>
+      <name>TMR_FLAG_IS_SOURCE_COUNTDOWN</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga752e581dd80394311e122634680ece35a5042929f4e1bcc8634324edf0e267f15</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>tmr_action_event_t</name>
-      <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ga7d678038d5737ca6e05ef60e6ca788d6</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_NONE</name>
+      <name>TMR_FLAG_IS_AUTO_RELOAD</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a012f94da7c88cd58b06b09c96f3decc7</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaabcb1e623cc7755340f6020cb41c9f1b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_INTERRUPT</name>
+      <name>TMR_FLAG_SET_CHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a50bd71a86096a576520c8e7c4af61260</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa87040de7272d6c5d2196bf9dbcbe3a98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_RESET</name>
+      <name>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaad291f4ddca584ad66c7c02206e6dde9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_STOP</name>
+      <name>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a89ea0f12427c4cc7f129b55f7c98d1b4</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa918e8cde8248ff148f0b25a3965ce6f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_SETOC</name>
+      <name>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6adc37fbdb7862d00df403acad539acc43</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa449baa91a44c73260b6be430d09d173f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_CLROC</name>
+      <name>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6a226d7bac1d981225639c6c82fc532e4b</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa7576a21d5beca6f6e0bbc7058b418e02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_TOGGLEOC</name>
+      <name>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6ab566e6a0a36284f4f69b72c1a8757d12</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa2d188a2834cd81867a3eeb6a4a94e54a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>TMR_ACTION_EVENT_PWMMODE</name>
+      <name>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>gga7d678038d5737ca6e05ef60e6ca788d6ae8f09fda9578c5a6510d7bc9656845c0</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa25cd980f2a1ca52032547ad6b22d260b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TMR_FLAG_IS_CHANNEL_PWM_MODE</name>
+      <anchorfile>group___t_m_r.html</anchorfile>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaaece070a45d921ec85472633e8e924f4f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -13071,62 +9009,11 @@
     <name>SYS_UARTFIFO</name>
     <title>UART FIFO</title>
     <filename>group___s_y_s___u_a_r_t_f_i_f_o.html</filename>
-    <class kind="struct">uartfifo_cfg_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>UARTFIFO_DEVICE</name>
-      <anchorfile>group___s_y_s___u_a_r_t_f_i_f_o.html</anchorfile>
-      <anchor>gae961927cdb3c39941ee9947bac437316</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>USBDEFS</name>
-    <title>USB Definitions</title>
-    <filename>group___u_s_b_d_e_f_s.html</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>usb_declare_string</name>
-      <anchorfile>group___u_s_b_d_e_f_s.html</anchorfile>
-      <anchor>ga6e238f9644d228617188219d24c38592</anchor>
-      <arglist>(len)</arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>usb_assign_string</name>
-      <anchorfile>group___u_s_b_d_e_f_s.html</anchorfile>
-      <anchor>gad0e2b7245eff67f7e3586332a3ee760e</anchor>
-      <arglist>(len,...)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>USB_DEV</name>
-    <title>USB Device</title>
-    <filename>group___u_s_b___d_e_v.html</filename>
-    <subgroup>USB_DEV_ADC</subgroup>
-    <subgroup>USB_DEV_CDC</subgroup>
-    <subgroup>USB_DEV_HID</subgroup>
-    <subgroup>USB_DEV_MSC</subgroup>
-    <subgroup>USBDEFS</subgroup>
-    <subgroup>USB_DEV_STD</subgroup>
   </compound>
   <compound kind="group">
     <name>SYS_USBFIFO</name>
     <title>USB FIFO</title>
     <filename>group___s_y_s___u_s_b_f_i_f_o.html</filename>
-    <class kind="struct">usbfifo_cfg_t</class>
-    <member kind="define">
-      <type>#define</type>
-      <name>USBFIFO_DEVICE</name>
-      <anchorfile>group___s_y_s___u_s_b_f_i_f_o.html</anchorfile>
-      <anchor>ga4db272ec6c5801e3201d8319c9ab3fb3</anchor>
-      <arglist>(device_name, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
-    <name>USB_DEV_STD</name>
-    <title>USB Standard Device</title>
-    <filename>group___u_s_b___d_e_v___s_t_d.html</filename>
   </compound>
   <compound kind="group">
     <name>UART</name>
@@ -13135,44 +9022,16 @@
     <class kind="struct">uart_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>UART_ATTR_START_BITS_1</name>
+      <name>I_UART_GET</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gab74f38c5c9dc38d60858196e03b70064</anchor>
+      <anchor>gabaf6d86bf01ea58e1a77dc20b6e3a927</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
       <type>#define</type>
-      <name>UART_ATTR_START_BITS_2</name>
+      <name>I_UART_PUT</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gaf4157d28f4d2dda8c3d1d06b3c113016</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_GETATTR</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga9d4bf965f9a8be7593539fa30a3f43bb</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_SETATTR</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga2b70a7fe4a7e66651d66d45400c5a426</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_CLEAR</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gacdad9a7610a78f0dd2f7bde6b68756b1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_UART_GETBYTE</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga21aadf48f1923d3d8e3f38e5c42c1c41</anchor>
+      <anchor>gad1aa440bd35fcfd40b4c66be777d972b</anchor>
       <arglist></arglist>
     </member>
     <member kind="define">
@@ -13182,72 +9041,59 @@
       <anchor>gaf833617db8bf5b3655839e7306ce3aca</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>uart_action_t</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga33025c65120d2b9b8adaf3ecf8574979</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>uart_parity_t</name>
+      <name>uart_flag_t</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>ga6bcc37e31dd40c204b4ac6f6189e8878</anchor>
+      <anchor>ga836e09ffaa5767111e9d10b38a17fd75</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_PARITY_NONE</name>
+      <name>UART_FLAG_SET_CONTROL_LINE_STATE</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75af06f1a36599c883f32d94be73b023146</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_PARITY_ODD</name>
+      <name>UART_FLAG_IS_STOP1</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a2180bc10bf2b729d86ea09e8effdf159</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_PARITY_EVEN</name>
+      <name>UART_FLAG_IS_STOP2</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a196c77bb40bb4464f6fa17a50e86d456</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_1</name>
+      <name>UART_FLAG_IS_STOP0_5</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebba9cdf6533cdf2fa04d02403c12253884f</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a0a26939cf9910551b9dea139ff438f99</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_2</name>
+      <name>UART_FLAG_IS_STOP1_5</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebba4adb27df73696c5fe5cd0960367b04ea</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a7f18da32d69f698d3f8fa00952246818</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_0_5</name>
+      <name>UART_FLAG_IS_PARITY_NONE</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebba2230cced463779a586e0d310c6dd7131</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75aa5f6abbb08cda7052ace32ba7c3010ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_ATTR_STOP_BITS_1_5</name>
+      <name>UART_FLAG_IS_PARITY_ODD</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0ed680fdb405e7195d9f14032851eebbaeb592c3e505aa00bee9bb3eeae0c1055</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a6327afb078cd209182b8bb507bf80e6e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>UART_EVENT_DATA_READY</name>
+      <name>UART_FLAG_IS_PARITY_EVEN</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0944a4353780132eeab7b06e3e42291dac7c6ddcc663f8fac1ba66a679c598606</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>UART_EVENT_WRITE_COMPLETE</name>
-      <anchorfile>group___u_a_r_t.html</anchorfile>
-      <anchor>gga0944a4353780132eeab7b06e3e42291da270f0fc3a099a5f7a4432a031943a627</anchor>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a01d2df822a1c45a97bc5c63e09719f11</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -13258,261 +9104,40 @@
     <class kind="struct">usb_attr_t</class>
     <member kind="define">
       <type>#define</type>
-      <name>I_USB_GETATTR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga785d453825b98b0d07217b7038219f18</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_SETATTR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gad6f6c4daba62bacea67d686703974644</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_RESET</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga7561bd1047753ea4d31750a6e169dcb1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_ATTACH</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga01556db3ac51057a7b46248d3d82ebc3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_DETACH</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga1dad0e52179b7ec389712b592e70e9cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_CONFIGURE</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga14f78d39c2242b61c939abc54f8fbe99</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_SETADDR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga268ff33ef187038af7193f87b9fe9d8b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_RESETEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gaafdf6965129a7bc8daf67ad1f39f8cf6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_ENABLEEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gaaa0c78d4ec81f63b00f1812788d1fbdf</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_DISABLEEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga138790e1c9c34c1792e233f28bcd8225</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_STALLEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gac2174b37571a9c6aee5bb468583985cc</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_UNSTALLEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gac6fd7eda91dd24231db4459cc1520fd5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_CFGEP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gab8129187a9468244e2f1730808642e24</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
-      <name>I_USB_SETEVENTHANDLER</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gac6b890fbfcce430ca6ed3c175bac637c</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="define">
-      <type>#define</type>
       <name>I_USB_ISCONNECTED</name>
       <anchorfile>group___u_s_b.html</anchorfile>
       <anchor>gabc85c456d6ed233afeee0193d13ea005</anchor>
       <arglist></arglist>
     </member>
-    <member kind="typedef">
-      <type>mcu_action_t</type>
-      <name>usb_action_t</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga4d80bc3de464eccce2940d955448ef06</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="typedef">
-      <type>void(*</type>
-      <name>usb_event_handler_t</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gaa05b8bd2a1c73a12e168475b91c2139e</anchor>
-      <arglist>)(usb_spec_event_t)</arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SETUP_EVENT</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5acb6fd04450fad1154a28a34854d755f0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_OUT_EVENT</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a252da7a582f3e5ac441ce510ea534a70</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_IN_EVENT</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a8299ede3f5483b2f2fbf64361e7c9c21</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_OUT_EVENT_STALL</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a173cfc749e23847664dd24482653940a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_IN_EVENT_STALL</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga4790f45dcc812c1b00184a2edccdddf5a8305e7204f1523c4cb8114c7da5a50fb</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="enumeration">
       <type></type>
-      <name>usb_spec_event_t</name>
+      <name>usb_flag_t</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga64e493e34c1d014134234576ebf1d2b1</anchor>
+      <anchor>gab98f8d9f47d35e414c6fabeca9afe495</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_NONE</name>
+      <name>USB_FLAG_SET_UNCONFIGURED</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1ab25f25f85cf492bbd3103823d369918d</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a7677ef20be3476ecef501832d691a954</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_RESET</name>
+      <name>USB_FLAG_SET_DEVICE</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a25b63f6fb0cff997e788dea2efaba053</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a81cf5357682f48a1cbcbd64f3fdf4f61</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_POWER</name>
+      <name>USB_FLAG_SET_HOST</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a6b3e52ae311ae7611a065213426aae79</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a12b9f8be2cb11d58902203e93d38887f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_SUSPEND</name>
+      <name>USB_FLAG_SET_OTG</name>
       <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a01b514743987fc89d263e1a5f3df6d04</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_RESUME</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a4b09f1245f9ef9ff77c4cf3adf27aa3a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_DEBUG</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a440b047b717239298de57a137602028b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_WAKEUP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1aa64b8298343e08d09f7f3adc37218a14</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_WAKEUP_CFG</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1abb155db2e80a68e9d793f5535f672f4b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_DIR_CTRL_EP</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1af5c68635b605539c4a272085139161a5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_ERR</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1a39ed8d6613bba05453ba9adeb56722b5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_FIQ</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1aeb2df3e4403d96154002fa7446ac5de7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_SOF</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1ad89fce2cf7da52d07d9d5eaa58fb77da</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_SPEC_EVENT_TOTAL</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga64e493e34c1d014134234576ebf1d2b1ae461c3926187266c37d0d34e193858c0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>usb_attr_mode_t</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>ga578dcf8d54f14603f1fb0b0b1ce56713</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_ATTR_MODE_UNCONFIGURED</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga578dcf8d54f14603f1fb0b0b1ce56713ae4561e72ba2f4b40f92051ff4e025889</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_ATTR_MODE_HOST</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga578dcf8d54f14603f1fb0b0b1ce56713a04a5a05450d79146c435dbbf9e70168b</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>USB_ATTR_MODE_OTG</name>
-      <anchorfile>group___u_s_b.html</anchorfile>
-      <anchor>gga578dcf8d54f14603f1fb0b0b1ce56713a57c2667c533296d123c4f16b75202ba8</anchor>
+      <anchor>ggab98f8d9f47d35e414c6fabeca9afe495a50050d2fc5d468f9cabd0b907a3b2e2e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -13534,15 +9159,15 @@
       <type>pid_t</type>
       <name>getpid</name>
       <anchorfile>group___u_n_i_s_t_d.html</anchorfile>
-      <anchor>gac61b207337ca21b3b309593fd1a0cb82</anchor>
-      <arglist>(void)</arglist>
+      <anchor>gadd1dc6545057b7f1c7f91352536fb060</anchor>
+      <arglist>()</arglist>
     </member>
     <member kind="function">
       <type>pid_t</type>
       <name>getppid</name>
       <anchorfile>group___u_n_i_s_t_d.html</anchorfile>
-      <anchor>gac6d7f7ade00dcdc302b0da5664eee812</anchor>
-      <arglist>(void)</arglist>
+      <anchor>ga556b7b3c8a853a6c86d847da7f008fc0</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="page">

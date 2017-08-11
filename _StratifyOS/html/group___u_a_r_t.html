@@ -19,7 +19,6 @@ title: Stratify OS Docs
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Universal Asynchronous Receiver/Transmitter (UART)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
@@ -28,7 +27,7 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The UART submodule uses interrupts to send and receive data on the UART port through a circular buffer. Once the receive buffer is full, incoming bytes are dropped. More information about accessing peripheral IO is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
 <p>The following is an example of how to read/write the UART in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uart_8h.html">dev/uart.h</a>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> read_write_uart(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structuart__attr__t.html">uart_attr_t</a> attr;</div><div class="line">     <span class="keywordtype">char</span> buffer[16];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/uart0&quot;</span>, O_RDWR); <span class="comment">//Here O_RDWR could be OR&#39;d with O_NONBLOCK for non blocking operation</span></div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.<a class="code" href="structuart__attr__t.html#af4efa12669b6fc93d59d6c56b14e6fb5">baudrate</a> = 9600; <span class="comment">//9600 Baudrate</span></div><div class="line">          attr.<a class="code" href="structuart__attr__t.html#a64cf3d91b24039422d619b7599ef82ec">pin_assign</a> = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          attr.<a class="code" href="structuart__attr__t.html#a8d46535dcd0656a9cd48bc23afc2c929">parity</a> = <a class="code" href="group___u_a_r_t.html#gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d">UART_PARITY_NONE</a>; <span class="comment">//No parity</span></div><div class="line">          attr.<a class="code" href="structuart__attr__t.html#a8dd3d404818bf919611ef82988ac1916">start</a> = <a class="code" href="group___u_a_r_t.html#gab74f38c5c9dc38d60858196e03b70064">UART_ATTR_START_BITS_1</a>;</div><div class="line">          attr.<a class="code" href="structuart__attr__t.html#aba3bbb370d83ab9dc00145b4a4d9779b">stop</a> = <a class="code" href="group___u_a_r_t.html#gga4790f45dcc812c1b00184a2edccdddf5a9cdf6533cdf2fa04d02403c12253884f">UART_ATTR_STOP_BITS_1</a>;</div><div class="line">          attr.<a class="code" href="structuart__attr__t.html#a758774ba7eeb80a9697505278b547e14">width</a> = 8; <span class="comment">//8-bit widths</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;attr) &lt; 0 ){</div><div class="line">               perror(<span class="stringliteral">&quot;failed to set attr&quot;</span>);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now read or write the UART</span></div><div class="line">     strcpy(buffer, <span class="stringliteral">&quot;UART Test\n&quot;</span>);</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, buffer, strlen(buffer) &lt; 0 ){ <span class="comment">//returns after all bytes have been written</span></div><div class="line">          perror(<span class="stringliteral">&quot;failed to write UART&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, buffer, 16) &lt; 0 ){ <span class="comment">//doesn&#39;t return until at least 1 bytes arrives (use O_NONBLOCK to return with whatever is available)</span></div><div class="line">          perror(<span class="stringliteral">&quot;failed to read UART&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="uart_8h.html">dev/uart.h</a>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> read_write_uart(){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structuart__attr__t.html">uart_attr_t</a> attr;</div><div class="line">     <span class="keywordtype">char</span> buffer[16];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/uart0&quot;</span>, O_RDWR); <span class="comment">//Here O_RDWR could be OR&#39;d with O_NONBLOCK for non blocking operation</span></div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.baudrate = 9600; <span class="comment">//9600 Baudrate</span></div><div class="line">          attr.pin_assign = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          attr.parity = UART_PARITY_NONE; <span class="comment">//No parity</span></div><div class="line">          attr.start = UART_ATTR_START_BITS_1;</div><div class="line">          attr.stop = UART_ATTR_STOP_BITS_1;</div><div class="line">          attr.width = 8; <span class="comment">//8-bit widths</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;attr) &lt; 0 ){</div><div class="line">               perror(<span class="stringliteral">&quot;failed to set attr&quot;</span>);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now read or write the UART</span></div><div class="line">     strcpy(buffer, <span class="stringliteral">&quot;UART Test\n&quot;</span>);</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, buffer, strlen(buffer) &lt; 0 ){ <span class="comment">//returns after all bytes have been written</span></div><div class="line">          perror(<span class="stringliteral">&quot;failed to write UART&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, buffer, 16) &lt; 0 ){ <span class="comment">//doesn&#39;t return until at least 1 bytes arrives (use O_NONBLOCK to return with whatever is available)</span></div><div class="line">          perror(<span class="stringliteral">&quot;failed to read UART&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuart__attr__t.html">uart_attr_t</a></td></tr>
@@ -37,53 +36,20 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gab74f38c5c9dc38d60858196e03b70064"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab74f38c5c9dc38d60858196e03b70064"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#gab74f38c5c9dc38d60858196e03b70064">UART_ATTR_START_BITS_1</a></td></tr>
-<tr class="memdesc:gab74f38c5c9dc38d60858196e03b70064"><td class="mdescLeft">&#160;</td><td class="mdescRight">This specifies one start bit. <br /></td></tr>
-<tr class="separator:gab74f38c5c9dc38d60858196e03b70064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4157d28f4d2dda8c3d1d06b3c113016"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf4157d28f4d2dda8c3d1d06b3c113016"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#gaf4157d28f4d2dda8c3d1d06b3c113016">UART_ATTR_START_BITS_2</a></td></tr>
-<tr class="memdesc:gaf4157d28f4d2dda8c3d1d06b3c113016"><td class="mdescLeft">&#160;</td><td class="mdescRight">This specifies two start bits. <br /></td></tr>
-<tr class="separator:gaf4157d28f4d2dda8c3d1d06b3c113016"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f940c1677b1b7a561d41f6d9bfa26d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#ga1f940c1677b1b7a561d41f6d9bfa26d4">I_UART_ATTR</a></td></tr>
-<tr class="memdesc:ga1f940c1677b1b7a561d41f6d9bfa26d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the UART attributes.  <a href="#ga1f940c1677b1b7a561d41f6d9bfa26d4">More...</a><br /></td></tr>
-<tr class="separator:ga1f940c1677b1b7a561d41f6d9bfa26d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b70a7fe4a7e66651d66d45400c5a426"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2b70a7fe4a7e66651d66d45400c5a426"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#ga2b70a7fe4a7e66651d66d45400c5a426">I_UART_SETATTR</a></td></tr>
-<tr class="memdesc:ga2b70a7fe4a7e66651d66d45400c5a426"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the UART attributes. <br /></td></tr>
-<tr class="separator:ga2b70a7fe4a7e66651d66d45400c5a426"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdad9a7610a78f0dd2f7bde6b68756b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacdad9a7610a78f0dd2f7bde6b68756b1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#gacdad9a7610a78f0dd2f7bde6b68756b1">I_UART_CLEAR</a></td></tr>
-<tr class="memdesc:gacdad9a7610a78f0dd2f7bde6b68756b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request clears the receive buffer. <br /></td></tr>
-<tr class="separator:gacdad9a7610a78f0dd2f7bde6b68756b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21aadf48f1923d3d8e3f38e5c42c1c41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#ga21aadf48f1923d3d8e3f38e5c42c1c41">I_UART_GETBYTE</a></td></tr>
-<tr class="memdesc:ga21aadf48f1923d3d8e3f38e5c42c1c41"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga21aadf48f1923d3d8e3f38e5c42c1c41">More...</a><br /></td></tr>
-<tr class="separator:ga21aadf48f1923d3d8e3f38e5c42c1c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabaf6d86bf01ea58e1a77dc20b6e3a927"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#gabaf6d86bf01ea58e1a77dc20b6e3a927">I_UART_GET</a></td></tr>
+<tr class="memdesc:gabaf6d86bf01ea58e1a77dc20b6e3a927"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gabaf6d86bf01ea58e1a77dc20b6e3a927">More...</a><br /></td></tr>
+<tr class="separator:gabaf6d86bf01ea58e1a77dc20b6e3a927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1aa440bd35fcfd40b4c66be777d972b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#gad1aa440bd35fcfd40b4c66be777d972b">I_UART_PUT</a></td></tr>
+<tr class="memdesc:gad1aa440bd35fcfd40b4c66be777d972b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gad1aa440bd35fcfd40b4c66be777d972b">More...</a><br /></td></tr>
+<tr class="separator:gad1aa440bd35fcfd40b4c66be777d972b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf833617db8bf5b3655839e7306ce3aca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#gaf833617db8bf5b3655839e7306ce3aca">I_UART_FLUSH</a></td></tr>
 <tr class="memdesc:gaf833617db8bf5b3655839e7306ce3aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gaf833617db8bf5b3655839e7306ce3aca">More...</a><br /></td></tr>
 <tr class="separator:gaf833617db8bf5b3655839e7306ce3aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga33025c65120d2b9b8adaf3ecf8574979"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___u_a_r_t.html#ga33025c65120d2b9b8adaf3ecf8574979">uart_action_t</a></td></tr>
-<tr class="separator:ga33025c65120d2b9b8adaf3ecf8574979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga1f940c1677b1b7a561d41f6d9bfa26d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_UART_ATTR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="gaf833617db8bf5b3655839e7306ce3aca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -97,101 +63,63 @@ Enumerations</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/uart.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(uart_fd, I_UART_FLUSH);</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ga21aadf48f1923d3d8e3f38e5c42c1c41"></a>
+<a class="anchor" id="gabaf6d86bf01ea58e1a77dc20b6e3a927"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_UART_GETBYTE</td>
+          <td class="memname">#define I_UART_GET</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This gets a single byte from the UART. The request returns -1 if no bytes are available to get. Otherwise, 0 is returned and the character is written to the ctl argument. Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/uart.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;char c;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(uart_fd, I_UART_GETBYTE, &amp;c) == 0 ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //one byte from the UART was written to c</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --> 
+<p>This gets a single byte from the UART. The request returns -1 if no bytes are available to get. Otherwise, 0 is returned and the character is written to the ctl argument. Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/uart.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;char c;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(uart_fd, I_UART_GET, &amp;c) == 0 ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //one byte from the UART was written to c</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --> 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga33025c65120d2b9b8adaf3ecf8574979"></a>
+<a class="anchor" id="gad1aa440bd35fcfd40b4c66be777d972b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a> <a class="el" href="group___u_a_r_t.html#ga33025c65120d2b9b8adaf3ecf8574979">uart_action_t</a></td>
+          <td class="memname">#define I_UART_PUT</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This defines a UART action. </p>
-
+<p>This gets a single byte from the UART. The request returns -1 if no bytes are available to get. Otherwise, 0 is returned and the character is written to the ctl argument. Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/uart.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;char c = &#39;j&#39;;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(uart_fd, I_UART_PUT, c) == 0 ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //one byte from the UART was written to c</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga4790f45dcc812c1b00184a2edccdddf5"></a>
+<a class="anchor" id="ga836e09ffaa5767111e9d10b38a17fd75"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">enum <a class="el" href="group___u_a_r_t.html#ga836e09ffaa5767111e9d10b38a17fd75">uart_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga4790f45dcc812c1b00184a2edccdddf5a9cdf6533cdf2fa04d02403c12253884f"></a>UART_ATTR_STOP_BITS_1&#160;</td><td class="fielddoc">
-<p>One stop bit </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75af06f1a36599c883f32d94be73b023146"></a>UART_FLAG_SET_CONTROL_LINE_STATE&#160;</td><td class="fielddoc">
+<p>Set the control line state (baudrate, stop bits, etc) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4790f45dcc812c1b00184a2edccdddf5a4adb27df73696c5fe5cd0960367b04ea"></a>UART_ATTR_STOP_BITS_2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75a2180bc10bf2b729d86ea09e8effdf159"></a>UART_FLAG_IS_STOP1&#160;</td><td class="fielddoc">
+<p>One stop bit (default behavior) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75a196c77bb40bb4464f6fa17a50e86d456"></a>UART_FLAG_IS_STOP2&#160;</td><td class="fielddoc">
 <p>Two stop bits </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4790f45dcc812c1b00184a2edccdddf5a2230cced463779a586e0d310c6dd7131"></a>UART_ATTR_STOP_BITS_0_5&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75a0a26939cf9910551b9dea139ff438f99"></a>UART_FLAG_IS_STOP0_5&#160;</td><td class="fielddoc">
 <p>0.5 stop bits </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4790f45dcc812c1b00184a2edccdddf5aeb592c3e505aa00bee9bb3eeae0c1055"></a>UART_ATTR_STOP_BITS_1_5&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75a7f18da32d69f698d3f8fa00952246818"></a>UART_FLAG_IS_STOP1_5&#160;</td><td class="fielddoc">
 <p>1.5 stop bits </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga4caf8d8f829279fba122163d961608a4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>details This list the available UART events when setting custom actions for the UART callbacks. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga4caf8d8f829279fba122163d961608a4aae2fc1d23154dce6ac2d07cacfd28a45"></a>UART_EVENT_NONE&#160;</td><td class="fielddoc">
-<p>No Event (used to adjust priority only) </p>
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75aa5f6abbb08cda7052ace32ba7c3010ad"></a>UART_FLAG_IS_PARITY_NONE&#160;</td><td class="fielddoc">
+<p>Indicates no parity (default behavior) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4caf8d8f829279fba122163d961608a4ac7c6ddcc663f8fac1ba66a679c598606"></a>UART_EVENT_DATA_READY&#160;</td><td class="fielddoc">
-<p>Data is ready to be read </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga4caf8d8f829279fba122163d961608a4a270f0fc3a099a5f7a4432a031943a627"></a>UART_EVENT_WRITE_COMPLETE&#160;</td><td class="fielddoc">
-<p>A write has completed </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga6bcc37e31dd40c204b4ac6f6189e8878"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___u_a_r_t.html#ga6bcc37e31dd40c204b4ac6f6189e8878">uart_parity_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the valid values for UART parity. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6bcc37e31dd40c204b4ac6f6189e8878aa80d2d8ea61454045ebe71d155e85b3d"></a>UART_PARITY_NONE&#160;</td><td class="fielddoc">
-<p>Indicates no parity </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6bcc37e31dd40c204b4ac6f6189e8878ad90cc425f5ba447773a44a75be6593e2"></a>UART_PARITY_ODD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75a6327afb078cd209182b8bb507bf80e6e"></a>UART_FLAG_IS_PARITY_ODD&#160;</td><td class="fielddoc">
 <p>Indicates odd parity </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6bcc37e31dd40c204b4ac6f6189e8878ad908a637b1dd23f93b149dd2d8bdfdb8"></a>UART_PARITY_EVEN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga836e09ffaa5767111e9d10b38a17fd75a01d2df822a1c45a97bc5c63e09719f11"></a>UART_FLAG_IS_PARITY_EVEN&#160;</td><td class="fielddoc">
 <p>Indicates even parity </p>
 </td></tr>
 </table>

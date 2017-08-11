@@ -28,7 +28,7 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html">sys_attr_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__26__info__t.html">sys_26_info_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__taskattr__t.html">sys_taskattr_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task Attributes.  <a href="structsys__taskattr__t.html#details">More...</a><br /></td></tr>
@@ -42,33 +42,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__sudo__t.html">sys_sudo_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure to unlock the security word features.  <a href="structsys__sudo__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structled__req__t.html">led_req_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga6e627ad6f9d2d7e08e75612917db2ffc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6e627ad6f9d2d7e08e75612917db2ffc"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga6e627ad6f9d2d7e08e75612917db2ffc">SYS_DEVICE</a></td></tr>
-<tr class="memdesc:ga6e627ad6f9d2d7e08e75612917db2ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the system device (/dev/sys) device in the device table. <br /></td></tr>
-<tr class="separator:ga6e627ad6f9d2d7e08e75612917db2ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05d9e85ca6c6f2d354e0ff7d66ad1279"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga05d9e85ca6c6f2d354e0ff7d66ad1279"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga05d9e85ca6c6f2d354e0ff7d66ad1279">NULL_DEVICE</a></td></tr>
-<tr class="memdesc:ga05d9e85ca6c6f2d354e0ff7d66ad1279"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the null device (/dev/null) device in the device table. <br /></td></tr>
-<tr class="separator:ga05d9e85ca6c6f2d354e0ff7d66ad1279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#gad91dbbd3c0bef76b5b6f86a1b3c0cb3b">ZERO_DEVICE</a></td></tr>
-<tr class="memdesc:gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the null device (/dev/null) device in the device table. <br /></td></tr>
-<tr class="separator:gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga147b4f9304705097a1bd75ba47070d97"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga147b4f9304705097a1bd75ba47070d97"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga147b4f9304705097a1bd75ba47070d97">FULL_DEVICE</a></td></tr>
-<tr class="memdesc:ga147b4f9304705097a1bd75ba47070d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the full device (/dev/full) device in the device table. <br /></td></tr>
-<tr class="separator:ga147b4f9304705097a1bd75ba47070d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35ecbbd6edb8e55c7d6841ba5b3f4546"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga35ecbbd6edb8e55c7d6841ba5b3f4546">LED_DEVICE</a>(dev_name,  active_level,  pio_port0,  pio_pin0,  pio_port1,  pio_pin1,  pio_port2,  pio_pin2,  pio_port3,  pio_pin3)</td></tr>
-<tr class="memdesc:ga35ecbbd6edb8e55c7d6841ba5b3f4546"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga35ecbbd6edb8e55c7d6841ba5b3f4546">More...</a><br /></td></tr>
-<tr class="separator:ga35ecbbd6edb8e55c7d6841ba5b3f4546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga295dab31fd0969ac753ce5b3e85dd3f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga295dab31fd0969ac753ce5b3e85dd3f5">I_SYS_ATTR</a></td></tr>
-<tr class="memdesc:ga295dab31fd0969ac753ce5b3e85dd3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga295dab31fd0969ac753ce5b3e85dd3f5">More...</a><br /></td></tr>
-<tr class="separator:ga295dab31fd0969ac753ce5b3e85dd3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0cfb1333526bc4de1ca199d516b96d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga0cfb1333526bc4de1ca199d516b96d9a">I_SYS_GETTASK</a></td></tr>
 <tr class="memdesc:ga0cfb1333526bc4de1ca199d516b96d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga0cfb1333526bc4de1ca199d516b96d9a">More...</a><br /></td></tr>
 <tr class="separator:ga0cfb1333526bc4de1ca199d516b96d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -78,43 +54,43 @@ Macros</h2></td></tr>
 <tr class="memitem:ga6303d85184e2ac7c2a7272db86a7240c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga6303d85184e2ac7c2a7272db86a7240c">I_SYS_PTHREADKILL</a></td></tr>
 <tr class="memdesc:ga6303d85184e2ac7c2a7272db86a7240c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga6303d85184e2ac7c2a7272db86a7240c">More...</a><br /></td></tr>
 <tr class="separator:ga6303d85184e2ac7c2a7272db86a7240c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a76c61e7288d56c111bc6991c5140a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga4a76c61e7288d56c111bc6991c5140a1">I_SYS_GETID</a></td></tr>
+<tr class="memdesc:ga4a76c61e7288d56c111bc6991c5140a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga4a76c61e7288d56c111bc6991c5140a1">More...</a><br /></td></tr>
+<tr class="separator:ga4a76c61e7288d56c111bc6991c5140a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad8d831b99cd6f4396a939aaca76729b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#gad8d831b99cd6f4396a939aaca76729b7">I_SYS_GETPROCESS</a></td></tr>
 <tr class="memdesc:gad8d831b99cd6f4396a939aaca76729b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gad8d831b99cd6f4396a939aaca76729b7">More...</a><br /></td></tr>
 <tr class="separator:gad8d831b99cd6f4396a939aaca76729b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c621ec59132edcfea3e0c7403380d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga4c621ec59132edcfea3e0c7403380d21">I_SYS_SUDO</a></td></tr>
 <tr class="memdesc:ga4c621ec59132edcfea3e0c7403380d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga4c621ec59132edcfea3e0c7403380d21">More...</a><br /></td></tr>
 <tr class="separator:ga4c621ec59132edcfea3e0c7403380d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga984e40321cd06b5f9674d79659e5b197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">I_LED_SET</a></td></tr>
-<tr class="memdesc:ga984e40321cd06b5f9674d79659e5b197"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga984e40321cd06b5f9674d79659e5b197">More...</a><br /></td></tr>
-<tr class="separator:ga984e40321cd06b5f9674d79659e5b197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98c40f68ce18efe96809c27ac330c7ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga98c40f68ce18efe96809c27ac330c7ae">SDSPI_DEVICE</a>(device_name,  port_number,  pin_assign_value,  cs_port_value,  cs_pin_value,  bitrate_value,  cfg_ptr,  state_ptr,  mode_value,  uid_value,  gid_value)</td></tr>
-<tr class="separator:ga98c40f68ce18efe96809c27ac330c7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38e59452723362e21bfbc90043748fb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga38e59452723362e21bfbc90043748fb1">I_SYS_GETBOARDCONFIG</a></td></tr>
+<tr class="memdesc:ga38e59452723362e21bfbc90043748fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga38e59452723362e21bfbc90043748fb1">More...</a><br /></td></tr>
+<tr class="separator:ga38e59452723362e21bfbc90043748fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga984e40321cd06b5f9674d79659e5b197"></a>
+<a class="anchor" id="ga38e59452723362e21bfbc90043748fb1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_LED_SET</td>
+          <td class="memname">#define I_SYS_GETBOARDCONFIG</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This sets the state of the specified LED.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;unistd.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#include &lt;dev/sys.h&gt;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;...</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;led_req_t req;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;req.channel = 0;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;req.on = 1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;ioctl(led_fd, I_LED_SET, &amp;req); //turns LED on channel 1 on</div></div><!-- fragment --> 
+<p>This copies the <a class="el" href="structsos__board__config__t.html" title="Stratify Board Configuration Structure. ">sos_board_config_t</a> data that is set by the board support package. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;sos_board_config_t config;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(core_fd, I_SYS_GETBOARDCONFIG, &amp;config);</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ga295dab31fd0969ac753ce5b3e85dd3f5"></a>
+<a class="anchor" id="ga4a76c61e7288d56c111bc6991c5140a1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_SYS_ATTR</td>
+          <td class="memname">#define I_SYS_GETID</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This request applies the software write protect to the entire device.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/sys.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;#include &lt;uinstd.h&gt;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;#include &lt;stdio.h&gt;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;sys_attr_t attr;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ioctl(fildes, I_SYS_ATTR, &amp;attr);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;printf(&quot;Version is %s\n&quot;, attr.version);</div></div><!-- fragment --> 
+<p>Read the system ID's globally unique cloud identifier </p>
+
 </div>
 </div>
 <a class="anchor" id="gad8d831b99cd6f4396a939aaca76729b7"></a>
@@ -179,193 +155,6 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <p>This request temporarily changes the effective user ID to root. As root certain system functions are available that would not available to the user. For example, as root, an application can set an interrupt callback that is executed in privileged mode.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;sys_sudo_t passwd;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;strcpy(passwd.key, &quot;the password&quot;);</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;if( ioctl(fd, I_SYS_SUDO, &amp;passwd) &lt; 0 ){</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;     //failed to accept password</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;}</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga35ecbbd6edb8e55c7d6841ba5b3f4546"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define LED_DEVICE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">dev_name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">active_level, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_port0, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_pin0, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_port1, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_pin1, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_port2, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_pin2, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_port3, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pio_pin3&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines the configuration values for an LED device that can drive up to 4 LEDs.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dev_name</td><td>The name of the led device </td></tr>
-    <tr><td class="paramname">active_level</td><td>LED_ACTIVE_LOW or LED_ACTIVE_HIGH </td></tr>
-    <tr><td class="paramname">pio_port0</td><td>The port for channel 0 </td></tr>
-    <tr><td class="paramname">pio_pin0</td><td>The pin for channel 0 </td></tr>
-    <tr><td class="paramname">pio_port1</td><td>The port for channel 1 (use LED_DEVICE_UNUSED if not used) </td></tr>
-    <tr><td class="paramname">pio_pin1</td><td>The pin for channel 1 (use LED_DEVICE_UNUSED if not used) </td></tr>
-    <tr><td class="paramname">pio_port2</td><td>The port for channel 2 (use LED_DEVICE_UNUSED if not used) </td></tr>
-    <tr><td class="paramname">pio_pin2</td><td>The pin for channel 2 (use LED_DEVICE_UNUSED if not used) </td></tr>
-    <tr><td class="paramname">pio_port3</td><td>The port for channel 3 (use LED_DEVICE_UNUSED if not used) </td></tr>
-    <tr><td class="paramname">pio_pin3</td><td>The pin for channel 3 (use LED_DEVICE_UNUSED if not used) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga98c40f68ce18efe96809c27ac330c7ae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SDSPI_DEVICE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">device_name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">port_number, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pin_assign_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cs_port_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cs_pin_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">bitrate_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cfg_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">state_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">mode_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">uid_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">gid_value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines the configuration values for a SD SPI device in the device table.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device_name</td><td>The name of the device (e.g "disk0") </td></tr>
-    <tr><td class="paramname">port_number</td><td>The SPI peripheral port number </td></tr>
-    <tr><td class="paramname">pin_assign_value</td><td>The GPIO configuration to use with the SPI bus </td></tr>
-    <tr><td class="paramname">cs_port_value</td><td>The GPIO port used for the chip select </td></tr>
-    <tr><td class="paramname">cs_pin_value</td><td>The GPIO pin used for the chip select </td></tr>
-    <tr><td class="paramname">bitrate_value</td><td>The maximum allowable bitrate for the SST25VF </td></tr>
-    <tr><td class="paramname">cfg_ptr</td><td>A pointer to the configuration structure (const sst25vf_cfg_t *) </td></tr>
-    <tr><td class="paramname">state_ptr</td><td>A pointer to the state structure (sst25vf_state_t *) </td></tr>
-    <tr><td class="paramname">mode_value</td><td>The access mode (usually 0666) </td></tr>
-    <tr><td class="paramname">uid_value</td><td>The User ID </td></tr>
-    <tr><td class="paramname">gid_value</td><td>The Group ID </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
 </div><!-- contents -->

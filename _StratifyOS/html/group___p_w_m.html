@@ -17,9 +17,7 @@ title: Stratify OS Docs
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Pulse Width Modulation (PWM)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
@@ -28,110 +26,65 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module controls the PWM peripherals on a microcontroller. More information about accessing peripheral IO is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
 <p>The following is an example of how to write the PWM in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> write_pwm(<a class="code" href="group___p_w_m.html#ga82037ba081ef769691ce4436c2fc8abc">pwm_duty_t</a> * src, <span class="keywordtype">int</span> samples){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structpwm__attr__t.html">pwm_attr_t</a> ctl;</div><div class="line">     <span class="keywordtype">int</span> i;</div><div class="line">     <a class="code" href="group___p_w_m.html#ga82037ba081ef769691ce4436c2fc8abc">pwm_duty_t</a> profile[50];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/pwm0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     ctl.<a class="code" href="structpwm__attr__t.html#a8218dff5ae2da7f49ed5fc75fee3567a">enabled_channels</a> = (1&lt;&lt;1)|(1&lt;&lt;0); <span class="comment">//enable channel zero and 1 -- auto-configures the GPIO for PWM use</span></div><div class="line">          ctl.<a class="code" href="structpwm__attr__t.html#a28fe5b1ea4338cfe28611672951c6ac4">freq</a> = 200000; <span class="comment">//200KHz output</span></div><div class="line">          ctl.<a class="code" href="structpwm__attr__t.html#abef1ea5b29606b756e293d9cb64e4e9a">top</a> = 10000; <span class="comment">//The PWM period is this values divided by the frequency (10K /200K = 50ms)</span></div><div class="line">          ctl.<a class="code" href="structpwm__attr__t.html#a02f18d82e658b3792d3c93926afe90a6">pin_assign</a> = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;ctl) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Create a ramp-up profile</span></div><div class="line">     <span class="keywordflow">for</span>(i=0; i &lt; 50; i++){</div><div class="line">          profile[i] = i*2;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//now write a profile to the PWM</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 0, SEEK_SET); <span class="comment">//this sets the channel to 0 -- since this is a &#39;B&#39; device the file offset is unchanged by read/write</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, profile, <span class="keyword">sizeof</span>(<a class="code" href="group___p_w_m.html#ga82037ba081ef769691ce4436c2fc8abc">pwm_duty_t</a>)*50) &lt; 0 ){ <span class="comment">//This function won&#39;t return for 2.5s (50 samples * 50ms period)</span></div><div class="line">          printf(<span class="stringliteral">&quot;Error writing peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpwm__attr__t.html">pwm_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM Attribute Data Structure.  <a href="structpwm__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpwm__reqattr__t.html">pwm_reqattr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to set the duty cycle of a channel.  <a href="structpwm__reqattr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> write_pwm(pwm_duty_t * src, <span class="keywordtype">int</span> samples){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     pwm_attr_t ctl;</div><div class="line">     <span class="keywordtype">int</span> i;</div><div class="line">     pwm_duty_t profile[50];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/pwm0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     ctl.enabled_channels = (1&lt;&lt;1)|(1&lt;&lt;0); <span class="comment">//enable channel zero and 1 -- auto-configures the GPIO for PWM use</span></div><div class="line">          ctl.freq = 200000; <span class="comment">//200KHz output</span></div><div class="line">          ctl.top = 10000; <span class="comment">//The PWM period is this values divided by the frequency (10K /200K = 50ms)</span></div><div class="line">          ctl.pin_assign = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;ctl) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Create a ramp-up profile</span></div><div class="line">     <span class="keywordflow">for</span>(i=0; i &lt; 50; i++){</div><div class="line">          profile[i] = i*2;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//now write a profile to the PWM</span></div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_d_e_s.html#ga33a233f3e6cc9e1a2b8b3f6aaea2c808">lseek</a>(fd, 0, SEEK_SET); <span class="comment">//this sets the channel to 0 -- since this is a &#39;B&#39; device the file offset is unchanged by read/write</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, profile, <span class="keyword">sizeof</span>(pwm_duty_t)*50) &lt; 0 ){ <span class="comment">//This function won&#39;t return for 2.5s (50 samples * 50ms period)</span></div><div class="line">          printf(<span class="stringliteral">&quot;Error writing peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac0347908b25a8cef29b1bb9cd9a24130"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac0347908b25a8cef29b1bb9cd9a24130"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#gac0347908b25a8cef29b1bb9cd9a24130">I_PWM_ATTR</a></td></tr>
-<tr class="memdesc:gac0347908b25a8cef29b1bb9cd9a24130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PWM attributes (<a class="el" href="structpwm__attr__t.html">pwm_attr_t</a>) <br /></td></tr>
-<tr class="separator:gac0347908b25a8cef29b1bb9cd9a24130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf911a3bb4a0b0b2c39d7f3406dbe8af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaaf911a3bb4a0b0b2c39d7f3406dbe8af"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#gaaf911a3bb4a0b0b2c39d7f3406dbe8af">I_PWM_GETINFO</a></td></tr>
+<tr class="memdesc:gaaf911a3bb4a0b0b2c39d7f3406dbe8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PWM attributes (pwm_attr_t) <br /></td></tr>
+<tr class="separator:gaaf911a3bb4a0b0b2c39d7f3406dbe8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa75d927353da20de158da094d1db2419"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa75d927353da20de158da094d1db2419"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#gaa75d927353da20de158da094d1db2419">I_PWM_SETATTR</a></td></tr>
-<tr class="memdesc:gaa75d927353da20de158da094d1db2419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the PWM attributes (<a class="el" href="structpwm__attr__t.html">pwm_attr_t</a>) <br /></td></tr>
+<tr class="memdesc:gaa75d927353da20de158da094d1db2419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the PWM attributes (pwm_attr_t) <br /></td></tr>
 <tr class="separator:gaa75d927353da20de158da094d1db2419"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9d07b82e0695639d6ecbbc061b83314"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#gac9d07b82e0695639d6ecbbc061b83314">I_PWM_SET</a></td></tr>
-<tr class="memdesc:gac9d07b82e0695639d6ecbbc061b83314"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gac9d07b82e0695639d6ecbbc061b83314">More...</a><br /></td></tr>
-<tr class="separator:gac9d07b82e0695639d6ecbbc061b83314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga82037ba081ef769691ce4436c2fc8abc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga82037ba081ef769691ce4436c2fc8abc"></a>
-typedef u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#ga82037ba081ef769691ce4436c2fc8abc">pwm_duty_t</a></td></tr>
-<tr class="memdesc:ga82037ba081ef769691ce4436c2fc8abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the type for the PWM duty cycle read/write operations. This definition is MCU specific. <br /></td></tr>
-<tr class="separator:ga82037ba081ef769691ce4436c2fc8abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga090028c2fa62a95140c1d5221ef6e988"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga090028c2fa62a95140c1d5221ef6e988"></a>
-typedef <a class="el" href="group___p_w_m.html#ga82037ba081ef769691ce4436c2fc8abc">pwm_duty_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#ga090028c2fa62a95140c1d5221ef6e988">pwm_sample_t</a></td></tr>
-<tr class="memdesc:ga090028c2fa62a95140c1d5221ef6e988"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines a PWM sample type. <br /></td></tr>
-<tr class="separator:ga090028c2fa62a95140c1d5221ef6e988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0439f661deed5f58cd21908dfd25bb0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_w_m.html#ga0439f661deed5f58cd21908dfd25bb0b">I_PWM_SETCHANNEL</a></td></tr>
+<tr class="memdesc:ga0439f661deed5f58cd21908dfd25bb0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga0439f661deed5f58cd21908dfd25bb0b">More...</a><br /></td></tr>
+<tr class="separator:ga0439f661deed5f58cd21908dfd25bb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gac9d07b82e0695639d6ecbbc061b83314"></a>
+<a class="anchor" id="ga0439f661deed5f58cd21908dfd25bb0b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_PWM_SET</td>
+          <td class="memname">#define I_PWM_SETCHANNEL</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This IOCTL request sets the channel. The ctl argument is the channel to use. For example, </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;pwm_reqattr_t req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;req.channel = 0;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;req.duty = 100;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;ioctl(pwm_fd, I_PWM_SET, &amp;req); //write 100 to channel 0</div></div><!-- fragment --> 
+<p>This IOCTL request sets the channel. The ctl argument is the channel to use. For example, </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_channel_t value;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;value.channel = 0;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;value.value = 100;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;ioctl(pwm_fd, I_PWM_SET, &amp;value); //write 100 to channel 0</div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gadb0ac4dd4fa0f375b62eb9892bef454d"></a>
+<a class="anchor" id="ga7921b846c2d204e17ebfa2b312f991ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___p_w_m.html#gadb0ac4dd4fa0f375b62eb9892bef454d">pwm_action_event_t</a></td>
+          <td class="memname">enum <a class="el" href="group___p_w_m.html#ga7921b846c2d204e17ebfa2b312f991ae">pwm_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This defines the events for a PWM action. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454dae7f9a88f48882ed3bea0e97471032ffb"></a>PWM_ACTION_EVENT_NONE&#160;</td><td class="fielddoc">
-<p>no action </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga7921b846c2d204e17ebfa2b312f991aea5b53251b434dbe3b9613bcedef48c836"></a>PWM_FLAG_SET_TIMER&#160;</td><td class="fielddoc">
+<p>Set to configure the frequency and period (implies PWM_FLAG_SET_CHANNEL) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454dabd38c51940b756c66419f1e67d28cb98"></a>PWM_ACTION_EVENT_INTERRUPT&#160;</td><td class="fielddoc">
-<p>enable interrupt on event and execute callback </p>
+<tr><td class="fieldname"><a class="anchor" id="gga7921b846c2d204e17ebfa2b312f991aea33af3b58a7b2c0c8af07e68a6106c127"></a>PWM_FLAG_IS_ACTIVE_HIGH&#160;</td><td class="fielddoc">
+<p>Set to configure the outputs as active high </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454dab3b89d3b5dda63db98e2ef5d290c7777"></a>PWM_ACTION_EVENT_RESET&#160;</td><td class="fielddoc">
-<p>reset the PWM timer on channel event </p>
+<tr><td class="fieldname"><a class="anchor" id="gga7921b846c2d204e17ebfa2b312f991aea1a9f1bde450a22a5dcbaf58bed9dc55d"></a>PWM_FLAG_IS_ACTIVE_LOW&#160;</td><td class="fielddoc">
+<p>Set to configure the outputs as active low </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454da446afa9e95d740843b13987d732360b7"></a>PWM_ACTION_EVENT_STOP&#160;</td><td class="fielddoc">
-<p>stop the PWM timer on channel event </p>
+<tr><td class="fieldname"><a class="anchor" id="gga7921b846c2d204e17ebfa2b312f991aea05bfc5555dd143d9163460c110e3e022"></a>PWM_FLAG_SET_CHANNELS&#160;</td><td class="fielddoc">
+<p>Set to just configure channels and leave the timer alone </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454da4cf1cc05b6bcb1f19efb1fb1a354dd21"></a>PWM_ACTION_EVENT_SETOC&#160;</td><td class="fielddoc">
-<p>set the OC channel pin to logic 1 </p>
+<tr><td class="fieldname"><a class="anchor" id="gga7921b846c2d204e17ebfa2b312f991aea80b9ef7770a1b1115beb44696e0af2d9"></a>PWM_FLAG_CLEAR_CHANNELS&#160;</td><td class="fielddoc">
+<p>Set to clear all channels; may be with with PWM_FLAG_SET_CHANNELS or PMW_FLAG_SET_TIMER </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454dae340c466bc882f68657e4077d10e5250"></a>PWM_ACTION_EVENT_CLROC&#160;</td><td class="fielddoc">
-<p>clear the OC channel pin to logic 0 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadb0ac4dd4fa0f375b62eb9892bef454da0fc8c2a0a3e0ac4de8c55ae7b3b10b32"></a>PWM_ACTION_EVENT_TOGGLEOC&#160;</td><td class="fielddoc">
-<p>toggle the OC channel pin </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="gaad9478ab24c5f2deba744bd6697c1cd1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___p_w_m.html#gaad9478ab24c5f2deba744bd6697c1cd1">pwm_attr_flags_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the flags that can be set when assigning the flags member of <a class="el" href="structpwm__attr__t.html">pwm_attr_t</a>. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaad9478ab24c5f2deba744bd6697c1cd1a382322b0b1eeb3b35fce8d67b5d5e4fd"></a>PWM_ATTR_FLAGS_ACTIVE_HIGH&#160;</td><td class="fielddoc">
-<p>PWM output is high until a match and then goes low (default) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaad9478ab24c5f2deba744bd6697c1cd1afc960faa75fd295af15350e500d299b1"></a>PWM_ATTR_FLAGS_ACTIVE_LOW&#160;</td><td class="fielddoc">
-<p>PWM output is low until a match and then goes high </p>
+<tr><td class="fieldname"><a class="anchor" id="gga7921b846c2d204e17ebfa2b312f991aea2ee281bf6bea17bb2aa9d00b34f55a70"></a>PWM_FLAG_IS_ENABLED&#160;</td><td class="fielddoc">
+<p>Set with PMW_FLAG_SET_TIMER to enable the timer </p>
 </td></tr>
 </table>
 

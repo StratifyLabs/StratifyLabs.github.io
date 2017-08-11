@@ -37,25 +37,66 @@ title: Stratify OS Docs
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:af37fc1b6d5b4c87ea411e5da2de1ab0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af37fc1b6d5b4c87ea411e5da2de1ab0b"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#af37fc1b6d5b4c87ea411e5da2de1ab0b">channel</a></td></tr>
-<tr class="memdesc:af37fc1b6d5b4c87ea411e5da2de1ab0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The channel (a GPIO pin or timer channel) <br /></td></tr>
+<tr class="memitem:af37fc1b6d5b4c87ea411e5da2de1ab0b"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#af37fc1b6d5b4c87ea411e5da2de1ab0b">channel</a></td></tr>
 <tr class="separator:af37fc1b6d5b4c87ea411e5da2de1ab0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5db8181227918a36530a76aa87689d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc5db8181227918a36530a76aa87689d"></a>
-s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#afc5db8181227918a36530a76aa87689d">prio</a></td></tr>
-<tr class="memdesc:afc5db8181227918a36530a76aa87689d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interrupt priority. <br /></td></tr>
+<tr class="memitem:afc5db8181227918a36530a76aa87689d"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#afc5db8181227918a36530a76aa87689d">prio</a></td></tr>
 <tr class="separator:afc5db8181227918a36530a76aa87689d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88f1b1bb5d3c5b39394ae6c28ffead80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88f1b1bb5d3c5b39394ae6c28ffead80"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#a88f1b1bb5d3c5b39394ae6c28ffead80">event</a></td></tr>
-<tr class="memdesc:a88f1b1bb5d3c5b39394ae6c28ffead80"><td class="mdescLeft">&#160;</td><td class="mdescRight">The peripheral specific event. <br /></td></tr>
-<tr class="separator:a88f1b1bb5d3c5b39394ae6c28ffead80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af00441ab337efaad213ee78aed9f15b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af00441ab337efaad213ee78aed9f15b4"></a>
-mcu_callback_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#af00441ab337efaad213ee78aed9f15b4">callback</a></td></tr>
-<tr class="memdesc:af00441ab337efaad213ee78aed9f15b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function to call. First argument is the context, second argument is peripheral specific. <br /></td></tr>
-<tr class="separator:af00441ab337efaad213ee78aed9f15b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a431c0e5c65b90315ac5f53eb739eb576"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a431c0e5c65b90315ac5f53eb739eb576"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#a431c0e5c65b90315ac5f53eb739eb576">context</a></td></tr>
-<tr class="memdesc:a431c0e5c65b90315ac5f53eb739eb576"><td class="mdescLeft">&#160;</td><td class="mdescRight">The context to execute the callback in. <br /></td></tr>
-<tr class="separator:a431c0e5c65b90315ac5f53eb739eb576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b024ebb989b08788f8a6c4ffd3dd276"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#a4b024ebb989b08788f8a6c4ffd3dd276">o_events</a></td></tr>
+<tr class="separator:a4b024ebb989b08788f8a6c4ffd3dd276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65fea9f6b66220236da3b25e52b2459"><td class="memItemLeft" align="right" valign="top">mcu_event_handler_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmcu__action__t.html#aa65fea9f6b66220236da3b25e52b2459">handler</a></td></tr>
+<tr class="separator:aa65fea9f6b66220236da3b25e52b2459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="af37fc1b6d5b4c87ea411e5da2de1ab0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 mcu_action_t::channel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The channel (a GPIO pin or timer channel) </p>
+
+</div>
+</div>
+<a class="anchor" id="aa65fea9f6b66220236da3b25e52b2459"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mcu_event_handler_t mcu_action_t::handler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Event handler </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b024ebb989b08788f8a6c4ffd3dd276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 mcu_action_t::o_events</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The peripheral specific event </p>
+
+</div>
+</div>
+<a class="anchor" id="afc5db8181227918a36530a76aa87689d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">s8 mcu_action_t::prio</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The interrupt priority </p>
+
+</div>
+</div>
 </div><!-- contents -->

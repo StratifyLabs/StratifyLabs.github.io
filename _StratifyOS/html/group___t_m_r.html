@@ -17,9 +17,7 @@ title: Stratify OS Docs
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Timer (TMR)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
@@ -28,56 +26,15 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The Timer module contains functions to access an MCU's timer/counters as well as input capture and output compare units. More information about accessing peripheral IO is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
 <p>The following is an example of how to use the timer in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> my_tmr_action(<span class="keywordtype">void</span> * context, u32 value){</div><div class="line">     <span class="comment">//take some action on an eint event -- this runs in priveleged, handler mode, it should be fast and short</span></div><div class="line">     <span class="keywordflow">return</span> 1; <span class="comment">//return non-zero to keep the action between successive events</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> tmr_example(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structtmr__attr__t.html">tmr_attr_t</a> attr;</div><div class="line">     <a class="code" href="structmcu__action__t.html">tmr_action_t</a> action;</div><div class="line">     <a class="code" href="structtmr__reqattr__t.html">tmr_reqattr_t</a> chan_req;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/tmr0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          perror(<span class="stringliteral">&quot;Failed to open timer&quot;</span>);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line"></div><div class="line">          <span class="comment">//This configuration sets a timer at 1MHz using the CPU as the clock source</span></div><div class="line">     attr.<a class="code" href="structtmr__attr__t.html#a78384ccd357c85f5ff7cbdeccca776ce">pin_assign</a> = 0;</div><div class="line">     attr.<a class="code" href="structtmr__attr__t.html#a2618812290f235d044d24c3004dbf37c">freq</a> = 1000000; <span class="comment">//Run the timer at 1MHz (if CPU is fast enough) -- this is not applicable in counter mode</span></div><div class="line">     attr.<a class="code" href="structtmr__attr__t.html#a868fd68d660ca45eddf5661d386a3d0d">clksrc</a> = <a class="code" href="group___t_m_r.html#gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35">TMR_CLKSRC_CPU</a>;</div><div class="line">     attr.<a class="code" href="structtmr__attr__t.html#a6be77d70cba756795d4061471e229ca3">enabled_ic_chans</a> = 0; <span class="comment">//Setting bits here will configure the GPIO for input capture (depending on pin_assign)</span></div><div class="line">     attr.<a class="code" href="structtmr__attr__t.html#ad6d3f93e081dd9588207cf292d871a7d">enabled_oc_chans</a> = 0; <span class="comment">//Setting bits here will configure the GPIO for output compare (depending on pin_assign)</span></div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;attr) &lt; 0 ){</div><div class="line">               perror(<span class="stringliteral">&quot;Failed to set attr&quot;</span>);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now we will set up the counter to reset at 1 million counts using an output compare unit (no GPIO is affected)</span></div><div class="line">     chan_req.<a class="code" href="structtmr__reqattr__t.html#ace2cca6590717a3c4980a9d438f59c8d">channel</a> = TMR_ACTION_CHANNEL_OC0;</div><div class="line">     chan_req.<a class="code" href="structtmr__reqattr__t.html#a914d8521536a6abe0a7283d47458c932">value</a> = 1000000;</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_TMR_SET_OC, &amp;chan_req) ){ <span class="comment">//sets the value of OC0 to 1 million</span></div><div class="line">          perror(<span class="stringliteral">&quot;failed to set OC&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line">     action.<a class="code" href="structmcu__action__t.html#af37fc1b6d5b4c87ea411e5da2de1ab0b">channel</a> = TMR_ACTION_CHANNEL_OC0; <span class="comment">//This will output compare 0 -- MCU specific definition</span></div><div class="line">     action.<a class="code" href="structmcu__action__t.html#a88f1b1bb5d3c5b39394ae6c28ffead80">event</a> = <a class="code" href="group___t_m_r.html#gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62">TMR_ACTION_EVENT_RESET</a>;</div><div class="line">     action.<a class="code" href="structmcu__action__t.html#af00441ab337efaad213ee78aed9f15b4">callback</a> = NULL;</div><div class="line">     action.<a class="code" href="structmcu__action__t.html#a431c0e5c65b90315ac5f53eb739eb576">context</a> = NULL;</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETACTION, &amp;action) ){ <span class="comment">//cause the timer to reset to zero when it hits 1 million</span></div><div class="line">          perror(<span class="stringliteral">&quot;failed to set action&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Have the timer start counting</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___t_m_r.html#ga3871e5d0dfcd5d2df1999bc7e731f167">I_TMR_ON</a>) ){</div><div class="line">           perror(<span class="stringliteral">&quot;failed to enable timer&quot;</span>);</div><div class="line">     }</div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd); <span class="comment">//This turns off power to the timer</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtmr__reqattr__t.html">tmr_reqattr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Timer Channel (OC or IC) Request Data.  <a href="structtmr__reqattr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structtmr__attr__t.html">tmr_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timer Attribute Data Structure.  <a href="structtmr__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="fragment"></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaeb94082355400363145390ae5efdda5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaeb94082355400363145390ae5efdda5c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaeb94082355400363145390ae5efdda5c">TMR_MODE_SETCLKSRC</a>(x)</td></tr>
-<tr class="memdesc:gaeb94082355400363145390ae5efdda5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the timer clock source as part of the mode. <br /></td></tr>
-<tr class="separator:gaeb94082355400363145390ae5efdda5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6a5a1545ae8f42d6457c33f96f01249"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gac6a5a1545ae8f42d6457c33f96f01249">TMR_MODE_SETCOUNTER</a>(x)</td></tr>
-<tr class="memdesc:gac6a5a1545ae8f42d6457c33f96f01249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is used to specify the timer counter mode when opening a timer port.  <a href="#gac6a5a1545ae8f42d6457c33f96f01249">More...</a><br /></td></tr>
-<tr class="separator:gac6a5a1545ae8f42d6457c33f96f01249"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49ae0f8adb3b15f7c8f4737b8300f95f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga49ae0f8adb3b15f7c8f4737b8300f95f">I_TMR_ATTR</a></td></tr>
-<tr class="memdesc:ga49ae0f8adb3b15f7c8f4737b8300f95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the timer attributes.  <a href="#ga49ae0f8adb3b15f7c8f4737b8300f95f">More...</a><br /></td></tr>
-<tr class="separator:ga49ae0f8adb3b15f7c8f4737b8300f95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefe78a760425bd615ec9aae7c5c24166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaefe78a760425bd615ec9aae7c5c24166"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaefe78a760425bd615ec9aae7c5c24166">I_TMR_SETATTR</a></td></tr>
-<tr class="memdesc:gaefe78a760425bd615ec9aae7c5c24166"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the timer attributes. <br /></td></tr>
-<tr class="separator:gaefe78a760425bd615ec9aae7c5c24166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b2b84970c0419efbbaf1748b9e2d2c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga6b2b84970c0419efbbaf1748b9e2d2c3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga6b2b84970c0419efbbaf1748b9e2d2c3">I_TMR_SETACTION</a></td></tr>
-<tr class="memdesc:ga6b2b84970c0419efbbaf1748b9e2d2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the timer interrupt action. <br /></td></tr>
-<tr class="separator:ga6b2b84970c0419efbbaf1748b9e2d2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3871e5d0dfcd5d2df1999bc7e731f167"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3871e5d0dfcd5d2df1999bc7e731f167"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga3871e5d0dfcd5d2df1999bc7e731f167">I_TMR_ON</a></td></tr>
-<tr class="memdesc:ga3871e5d0dfcd5d2df1999bc7e731f167"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request turns the timer on. After a timer is opened it must be turned on before it starts running. The ctl argument is NULL. <br /></td></tr>
-<tr class="separator:ga3871e5d0dfcd5d2df1999bc7e731f167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga061cffe54c3f7f31414dca0647c027c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga061cffe54c3f7f31414dca0647c027c3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga061cffe54c3f7f31414dca0647c027c3">I_TMR_OFF</a></td></tr>
-<tr class="memdesc:ga061cffe54c3f7f31414dca0647c027c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request turns the timer off. After a timer is opened it is off. <br /></td></tr>
-<tr class="separator:ga061cffe54c3f7f31414dca0647c027c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d1975c0f529d6cdc1e15c0de5740114"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga1d1975c0f529d6cdc1e15c0de5740114">I_TMR_SETOC</a></td></tr>
-<tr class="memdesc:ga1d1975c0f529d6cdc1e15c0de5740114"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga1d1975c0f529d6cdc1e15c0de5740114">More...</a><br /></td></tr>
-<tr class="separator:ga1d1975c0f529d6cdc1e15c0de5740114"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0fc056b76c426b5d4057e247e556a1b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga0fc056b76c426b5d4057e247e556a1b9">I_TMR_GETOC</a></td></tr>
-<tr class="memdesc:ga0fc056b76c426b5d4057e247e556a1b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga0fc056b76c426b5d4057e247e556a1b9">More...</a><br /></td></tr>
-<tr class="separator:ga0fc056b76c426b5d4057e247e556a1b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa38dabc8bc8475b1a28f517522d9e9ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaa38dabc8bc8475b1a28f517522d9e9ca">I_TMR_SETIC</a></td></tr>
-<tr class="memdesc:gaa38dabc8bc8475b1a28f517522d9e9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gaa38dabc8bc8475b1a28f517522d9e9ca">More...</a><br /></td></tr>
-<tr class="separator:gaa38dabc8bc8475b1a28f517522d9e9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84e81c0e7c9fe916daa9e1f1d92fc495"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga84e81c0e7c9fe916daa9e1f1d92fc495">I_TMR_GETIC</a></td></tr>
-<tr class="memdesc:ga84e81c0e7c9fe916daa9e1f1d92fc495"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga84e81c0e7c9fe916daa9e1f1d92fc495">More...</a><br /></td></tr>
-<tr class="separator:ga84e81c0e7c9fe916daa9e1f1d92fc495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb14eaf594e9c24ecee030e9f0e50642"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gaeb14eaf594e9c24ecee030e9f0e50642">I_TMR_SETCHANNEL</a></td></tr>
+<tr class="memdesc:gaeb14eaf594e9c24ecee030e9f0e50642"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gaeb14eaf594e9c24ecee030e9f0e50642">More...</a><br /></td></tr>
+<tr class="separator:gaeb14eaf594e9c24ecee030e9f0e50642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga724795f12465bd12f1a0be004e6b9ced"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga724795f12465bd12f1a0be004e6b9ced">I_TMR_GETCHANNEL</a></td></tr>
+<tr class="memdesc:ga724795f12465bd12f1a0be004e6b9ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga724795f12465bd12f1a0be004e6b9ced">More...</a><br /></td></tr>
+<tr class="separator:ga724795f12465bd12f1a0be004e6b9ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5917be06a3069c73fec5b2efbe094fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#gad5917be06a3069c73fec5b2efbe094fd">I_TMR_SET</a></td></tr>
 <tr class="memdesc:gad5917be06a3069c73fec5b2efbe094fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gad5917be06a3069c73fec5b2efbe094fd">More...</a><br /></td></tr>
 <tr class="separator:gad5917be06a3069c73fec5b2efbe094fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,27 +42,10 @@ Macros</h2></td></tr>
 <tr class="memdesc:gab3dad8f32add45b25ab32f918b607d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gab3dad8f32add45b25ab32f918b607d9e">More...</a><br /></td></tr>
 <tr class="separator:gab3dad8f32add45b25ab32f918b607d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga97a1456a718acfeb3ee21c9645384fd4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___t_m_r.html#ga97a1456a718acfeb3ee21c9645384fd4">tmr_action_t</a></td></tr>
-<tr class="separator:ga97a1456a718acfeb3ee21c9645384fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga49ae0f8adb3b15f7c8f4737b8300f95f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_TMR_ATTR</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="gab3dad8f32add45b25ab32f918b607d9e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -118,28 +58,16 @@ Enumerations</h2></td></tr>
 <p>This request reads the value of the timer. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;u32 value;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;value = ioctl(tmr_fd, I_TMR_GET);</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ga84e81c0e7c9fe916daa9e1f1d92fc495"></a>
+<a class="anchor" id="ga724795f12465bd12f1a0be004e6b9ced"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_TMR_GETIC</td>
+          <td class="memname">#define I_TMR_GETCHANNEL</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This request reads the value of the input capture using the current channel. The ctl argument is a pointer to the <a class="el" href="structtmr__reqattr__t.html" title="A Timer Channel (OC or IC) Request Data. ">tmr_reqattr_t</a> structure. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tmr_reqattr_t chan_req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;int ic_value;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;chan_req.channel = 1;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(tmr_fd, I_TMR_GETIC, &amp;chan_req ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //There was an error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     return -1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;ic_value = chan_req.value;</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga0fc056b76c426b5d4057e247e556a1b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_TMR_GETOC</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request reads the value of the current output compare channel. The ctl argument is a pointer to a <a class="el" href="structtmr__reqattr__t.html" title="A Timer Channel (OC or IC) Request Data. ">tmr_reqattr_t</a> structure. tmr_ioctl() will return zero on success. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tmr_reqattr_t chan_req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;int oc_value;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;chan_req.channel = 1;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(tmr_fd, I_TMR_GETOC, &amp;chan_req ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //There was an error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     return -1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;oc_value = chan_req.value;</div></div><!-- fragment --> 
+<p>This request reads the value of the current output compare channel. The ctl argument is a pointer to a mcu_channel_t structure. tmr_ioctl() will return zero on success. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_channel_t chan_req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;int oc_value;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;chan_req.channel = 1;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(tmr_fd, I_TMR_GETOC, &amp;chan_req ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //There was an error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     return -1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;oc_value = chan_req.value;</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="gad5917be06a3069c73fec5b2efbe094fd"></a>
@@ -154,151 +82,88 @@ Enumerations</h2></td></tr>
 <p>This request writes the value of the timer. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;u32 value = 1000000;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(tmr_fd, I_TMR_SET, value);</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="gaa38dabc8bc8475b1a28f517522d9e9ca"></a>
+<a class="anchor" id="gaeb14eaf594e9c24ecee030e9f0e50642"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_TMR_SETIC</td>
+          <td class="memname">#define I_TMR_SETCHANNEL</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This request writes the value of the input capture using the current channel. The ctl argument is a pointer to the <a class="el" href="structtmr__reqattr__t.html" title="A Timer Channel (OC or IC) Request Data. ">tmr_reqattr_t</a> structure. For example:</p><ul>
-<li>For example:</li>
-<li><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tmr_reqattr_t chan_req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;chan_req.channel = 1; //write to OC channel 1</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;chan_req.value = 1; //write 1 to the IC channel</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(tmr_fd, I_TMR_SETIC, &amp;chan_req ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //There was an error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     return -1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div></div><!-- fragment --> </li>
+<p>This request writes the value of the current output compare channel. The ctl argument is a pointer to the mcu_channel_t structure. For example:</p><ul>
+<li><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_channel_t chan_req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;chan_req.channel = 1; //write to OC channel 1</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;chan_req.value = 1000000; //write 1 million to the OC channel</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(tmr_fd, I_TMR_SETCHANNEL, &amp;chan_req ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //There was an error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     return -1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div></div><!-- fragment --> </li>
 </ul>
-
-</div>
-</div>
-<a class="anchor" id="ga1d1975c0f529d6cdc1e15c0de5740114"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_TMR_SETOC</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request writes the value of the current output compare channel. The ctl argument is a pointer to the <a class="el" href="structtmr__reqattr__t.html" title="A Timer Channel (OC or IC) Request Data. ">tmr_reqattr_t</a> structure. For example:</p><ul>
-<li><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;tmr_reqattr_t chan_req;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;chan_req.channel = 1; //write to OC channel 1</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;chan_req.value = 1000000; //write 1 million to the OC channel</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;if ( ioctl(tmr_fd, I_TMR_SETOC, &amp;chan_req ){</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     //There was an error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;     return -1;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div></div><!-- fragment --> </li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="gac6a5a1545ae8f42d6457c33f96f01249"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define TMR_MODE_SETCOUNTER</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga97a1456a718acfeb3ee21c9645384fd4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a> <a class="el" href="group___t_m_r.html#ga97a1456a718acfeb3ee21c9645384fd4">tmr_action_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines the timer action structure.</p>
-<p>See <a class="el" href="group___t_m_r.html#ga7d678038d5737ca6e05ef60e6ca788d6">tmr_action_event_t</a> for event values.</p>
-<p>See the following for channel information:</p><ul>
-<li>lpc17xx_tmr_action_channel_t</li>
-<li>lpc13xx_tmr_action_channel_t</li>
-</ul>
-<p>for action channel information.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structmcu__action__t.html">mcu_action_t</a> </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga7d678038d5737ca6e05ef60e6ca788d6"></a>
+<a class="anchor" id="ga6b7b47dd702d9e331586d485013fd1ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___t_m_r.html#ga7d678038d5737ca6e05ef60e6ca788d6">tmr_action_event_t</a></td>
+          <td class="memname">anonymous enum</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This defines no action for an OC/IC event. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6a012f94da7c88cd58b06b09c96f3decc7"></a>TMR_ACTION_EVENT_NONE&#160;</td><td class="fielddoc">
-<p>no action </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa5dfdbe71ed150ae09e23615714eff2e9"></a>TMR_FLAG_SET_TIMER&#160;</td><td class="fielddoc">
+<p>Configure the timer attributes </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6a50bd71a86096a576520c8e7c4af61260"></a>TMR_ACTION_EVENT_INTERRUPT&#160;</td><td class="fielddoc">
-<p>enable interrupt on IC/OC event </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62"></a>TMR_ACTION_EVENT_RESET&#160;</td><td class="fielddoc">
-<p>reset the timer on IC/OC event </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6a89ea0f12427c4cc7f129b55f7c98d1b4"></a>TMR_ACTION_EVENT_STOP&#160;</td><td class="fielddoc">
-<p>stop the timer on OC/IC event </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6adc37fbdb7862d00df403acad539acc43"></a>TMR_ACTION_EVENT_SETOC&#160;</td><td class="fielddoc">
-<p>set the OC channel pin to logic 1 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6a226d7bac1d981225639c6c82fc532e4b"></a>TMR_ACTION_EVENT_CLROC&#160;</td><td class="fielddoc">
-<p>clear the OC channel pin to logic 0 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6ab566e6a0a36284f4f69b72c1a8757d12"></a>TMR_ACTION_EVENT_TOGGLEOC&#160;</td><td class="fielddoc">
-<p>toggle the OC channel pin </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga7d678038d5737ca6e05ef60e6ca788d6ae8f09fda9578c5a6510d7bc9656845c0"></a>TMR_ACTION_EVENT_PWMMODE&#160;</td><td class="fielddoc">
-<p>Execute OC channel in PWM Mode </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga752e581dd80394311e122634680ece35"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___t_m_r.html#ga752e581dd80394311e122634680ece35">tmr_clksrc_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the valid values for the clk_src member of the <a class="el" href="structtmr__attr__t.html" title="Timer Attribute Data Structure. ">tmr_attr_t</a> data structure. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35"></a>TMR_CLKSRC_CPU&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa742da0fb8db8c45acb6d4b018ba55d86"></a>TMR_FLAG_IS_SOURCE_CPU&#160;</td><td class="fielddoc">
 <p>Use the CPU as the source for the clock (timer mode) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a3933e4497b943bc0722ef7033951fca4"></a>TMR_CLKSRC_IC0&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa794db5e17b3079ecadee20efc13044f4"></a>TMR_FLAG_IS_SOURCE_IC0&#160;</td><td class="fielddoc">
 <p>Use input capture channel 0 for the clock source (counter mode) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35ad2ea59fe333f27d6bdc9da487c4c72f6"></a>TMR_CLKSRC_IC1&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa28be26e249e69809e36f36dcc4096ebd"></a>TMR_FLAG_IS_SOURCE_IC1&#160;</td><td class="fielddoc">
 <p>Use input capture channel 1 for the clock source (counter mode) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a2e5c982133dc1a6f795c84968cec1d01"></a>TMR_CLKSRC_IC2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaaa3562f641363187babba77043975bac1"></a>TMR_FLAG_IS_SOURCE_IC2&#160;</td><td class="fielddoc">
 <p>Use input capture channel 2 for the clock source (counter mode) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a015a3600ae46137f09d06fb113995783"></a>TMR_CLKSRC_IC3&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaab3a24764c7f9f968a79b10e034723e48"></a>TMR_FLAG_IS_SOURCE_IC3&#160;</td><td class="fielddoc">
 <p>Use input capture channel 3 for the clock source (counter mode) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a2297f0ee2c2197fe99729267865dd6a7"></a>TMR_CLKSRC_EDGERISING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa31b18d945d80cdc8ce40cb7fc8b3cb0a"></a>TMR_FLAG_IS_SOURCE_EDGERISING&#160;</td><td class="fielddoc">
 <p>Count rising edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35abd5e50b4088f9422b84d5cdffe9e5777"></a>TMR_CLKSRC_EDGEFALLING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaad3639b3137158884e9122acaa46977c2"></a>TMR_FLAG_IS_SOURCE_EDGEFALLING&#160;</td><td class="fielddoc">
 <p>Count falling edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a9cc719060c8595411a6030bdabb77e89"></a>TMR_CLKSRC_EDGEBOTH&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa22f41aef0b086c0a35ca94a3f22b4439"></a>TMR_FLAG_IS_SOURCE_EDGEBOTH&#160;</td><td class="fielddoc">
 <p>Count both edges </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga752e581dd80394311e122634680ece35a5042929f4e1bcc8634324edf0e267f15"></a>TMR_CLKSRC_COUNTDOWN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa975a8ba0e108ec81883e2fdaadbfcb3b"></a>TMR_FLAG_IS_SOURCE_COUNTDOWN&#160;</td><td class="fielddoc">
 <p>Count down (not up) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaabcb1e623cc7755340f6020cb41c9f1b0"></a>TMR_FLAG_IS_AUTO_RELOAD&#160;</td><td class="fielddoc">
+<p>Auto reload the timer </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa87040de7272d6c5d2196bf9dbcbe3a98"></a>TMR_FLAG_SET_CHANNEL&#160;</td><td class="fielddoc">
+<p>Configure channel characteristics </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaad291f4ddca584ad66c7c02206e6dde9b"></a>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET&#160;</td><td class="fielddoc">
+<p>Stop when the timer resets </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa918e8cde8248ff148f0b25a3965ce6f3"></a>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH&#160;</td><td class="fielddoc">
+<p>Reset when the timer finds a match </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa449baa91a44c73260b6be430d09d173f"></a>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH&#160;</td><td class="fielddoc">
+<p>Stop when the timer finds a match </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa7576a21d5beca6f6e0bbc7058b418e02"></a>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH&#160;</td><td class="fielddoc">
+<p>Set the output to 1 on a match </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa2d188a2834cd81867a3eeb6a4a94e54a"></a>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH&#160;</td><td class="fielddoc">
+<p>Clear the output to 0 on a match </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa25cd980f2a1ca52032547ad6b22d260b"></a>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH&#160;</td><td class="fielddoc">
+<p>Toggle the output on a match </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaaece070a45d921ec85472633e8e924f4f"></a>TMR_FLAG_IS_CHANNEL_PWM_MODE&#160;</td><td class="fielddoc">
+<p>Put the timer in PWM mode </p>
 </td></tr>
 </table>
 

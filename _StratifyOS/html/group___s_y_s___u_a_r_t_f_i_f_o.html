@@ -16,87 +16,10 @@ title: Stratify OS Docs
   </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">UART FIFO<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This device driver is used to add a FIFO read buffer to a UART port. </p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structuartfifo__cfg__t.html">uartfifo_cfg_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gae961927cdb3c39941ee9947bac437316"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___u_a_r_t_f_i_f_o.html#gae961927cdb3c39941ee9947bac437316">UARTFIFO_DEVICE</a>(device_name,  cfg_ptr,  state_ptr,  mode_value,  uid_value,  gid_value)</td></tr>
-<tr class="separator:gae961927cdb3c39941ee9947bac437316"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gae961927cdb3c39941ee9947bac437316"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define UARTFIFO_DEVICE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">device_name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cfg_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">state_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">mode_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">uid_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">gid_value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines the configuration values for a FIFO that is connected to an underlying device.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device_name</td><td>The name of the device (e.g "uart-fifo") </td></tr>
-    <tr><td class="paramname">cfg_ptr</td><td>A pointer to the const <a class="el" href="structdevfifo__cfg__t.html">devfifo_cfg_t</a> data structure </td></tr>
-    <tr><td class="paramname">state_ptr</td><td>A pointer to the state structure (see devfifo_state_t) </td></tr>
-    <tr><td class="paramname">mode_value</td><td>The access mode (usually 0666) </td></tr>
-    <tr><td class="paramname">uid_value</td><td>The User ID </td></tr>
-    <tr><td class="paramname">gid_value</td><td>The Group ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;const device_t devices[DEVICES_TOTAL+1] = {</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  DEVICE_PERIPH(&quot;uart0&quot;, uart, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  DEVFIFO_DEVICE(&quot;uart0-fifo&quot;, &amp;devices[0], 0666, USER_ROOT, GROUP_ROOT),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;     ...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     DEVICE_TERMINATOR</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --> 
-</div>
-</div>
 </div><!-- contents -->

@@ -16,7 +16,7 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -27,14 +27,12 @@ title: Stratify OS Docs
 <div class="title">sys.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___s_y_s___d_e_v.html">System Devices</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="iface_2link_8h.html">iface/link.h</a>&quot;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/types.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;mcu/types.h&quot;</code><br />
+<code>#include &quot;sos/link/types.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html">sys_attr_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__26__info__t.html">sys_26_info_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__taskattr__t.html">sys_taskattr_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task Attributes.  <a href="structsys__taskattr__t.html#details">More...</a><br /></td></tr>
@@ -48,33 +46,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__sudo__t.html">sys_sudo_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure to unlock the security word features.  <a href="structsys__sudo__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structled__req__t.html">led_req_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga6e627ad6f9d2d7e08e75612917db2ffc"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga6e627ad6f9d2d7e08e75612917db2ffc">SYS_DEVICE</a></td></tr>
-<tr class="memdesc:ga6e627ad6f9d2d7e08e75612917db2ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the system device (/dev/sys) device in the device table. <br /></td></tr>
-<tr class="separator:ga6e627ad6f9d2d7e08e75612917db2ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05d9e85ca6c6f2d354e0ff7d66ad1279"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga05d9e85ca6c6f2d354e0ff7d66ad1279">NULL_DEVICE</a></td></tr>
-<tr class="memdesc:ga05d9e85ca6c6f2d354e0ff7d66ad1279"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the null device (/dev/null) device in the device table. <br /></td></tr>
-<tr class="separator:ga05d9e85ca6c6f2d354e0ff7d66ad1279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#gad91dbbd3c0bef76b5b6f86a1b3c0cb3b">ZERO_DEVICE</a></td></tr>
-<tr class="memdesc:gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the null device (/dev/null) device in the device table. <br /></td></tr>
-<tr class="separator:gad91dbbd3c0bef76b5b6f86a1b3c0cb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga147b4f9304705097a1bd75ba47070d97"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga147b4f9304705097a1bd75ba47070d97">FULL_DEVICE</a></td></tr>
-<tr class="memdesc:ga147b4f9304705097a1bd75ba47070d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">This defines the configuration values for the full device (/dev/full) device in the device table. <br /></td></tr>
-<tr class="separator:ga147b4f9304705097a1bd75ba47070d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35ecbbd6edb8e55c7d6841ba5b3f4546"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga35ecbbd6edb8e55c7d6841ba5b3f4546">LED_DEVICE</a>(dev_name,  active_level,  pio_port0,  pio_pin0,  pio_port1,  pio_pin1,  pio_port2,  pio_pin2,  pio_port3,  pio_pin3)</td></tr>
-<tr class="memdesc:ga35ecbbd6edb8e55c7d6841ba5b3f4546"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="group___s_y_s___d_e_v.html#ga35ecbbd6edb8e55c7d6841ba5b3f4546">More...</a><br /></td></tr>
-<tr class="separator:ga35ecbbd6edb8e55c7d6841ba5b3f4546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga295dab31fd0969ac753ce5b3e85dd3f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga295dab31fd0969ac753ce5b3e85dd3f5">I_SYS_ATTR</a></td></tr>
-<tr class="memdesc:ga295dab31fd0969ac753ce5b3e85dd3f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="group___s_y_s___d_e_v.html#ga295dab31fd0969ac753ce5b3e85dd3f5">More...</a><br /></td></tr>
-<tr class="separator:ga295dab31fd0969ac753ce5b3e85dd3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0cfb1333526bc4de1ca199d516b96d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga0cfb1333526bc4de1ca199d516b96d9a">I_SYS_GETTASK</a></td></tr>
 <tr class="memdesc:ga0cfb1333526bc4de1ca199d516b96d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___s_y_s___d_e_v.html#ga0cfb1333526bc4de1ca199d516b96d9a">More...</a><br /></td></tr>
 <tr class="separator:ga0cfb1333526bc4de1ca199d516b96d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,16 +58,17 @@ Macros</h2></td></tr>
 <tr class="memitem:ga6303d85184e2ac7c2a7272db86a7240c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga6303d85184e2ac7c2a7272db86a7240c">I_SYS_PTHREADKILL</a></td></tr>
 <tr class="memdesc:ga6303d85184e2ac7c2a7272db86a7240c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___s_y_s___d_e_v.html#ga6303d85184e2ac7c2a7272db86a7240c">More...</a><br /></td></tr>
 <tr class="separator:ga6303d85184e2ac7c2a7272db86a7240c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a76c61e7288d56c111bc6991c5140a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga4a76c61e7288d56c111bc6991c5140a1">I_SYS_GETID</a></td></tr>
+<tr class="memdesc:ga4a76c61e7288d56c111bc6991c5140a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___s_y_s___d_e_v.html#ga4a76c61e7288d56c111bc6991c5140a1">More...</a><br /></td></tr>
+<tr class="separator:ga4a76c61e7288d56c111bc6991c5140a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad8d831b99cd6f4396a939aaca76729b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#gad8d831b99cd6f4396a939aaca76729b7">I_SYS_GETPROCESS</a></td></tr>
 <tr class="memdesc:gad8d831b99cd6f4396a939aaca76729b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___s_y_s___d_e_v.html#gad8d831b99cd6f4396a939aaca76729b7">More...</a><br /></td></tr>
 <tr class="separator:gad8d831b99cd6f4396a939aaca76729b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c621ec59132edcfea3e0c7403380d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga4c621ec59132edcfea3e0c7403380d21">I_SYS_SUDO</a></td></tr>
 <tr class="memdesc:ga4c621ec59132edcfea3e0c7403380d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___s_y_s___d_e_v.html#ga4c621ec59132edcfea3e0c7403380d21">More...</a><br /></td></tr>
 <tr class="separator:ga4c621ec59132edcfea3e0c7403380d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga984e40321cd06b5f9674d79659e5b197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">I_LED_SET</a></td></tr>
-<tr class="memdesc:ga984e40321cd06b5f9674d79659e5b197"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">More...</a><br /></td></tr>
-<tr class="separator:ga984e40321cd06b5f9674d79659e5b197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga98c40f68ce18efe96809c27ac330c7ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga98c40f68ce18efe96809c27ac330c7ae">SDSPI_DEVICE</a>(device_name,  port_number,  pin_assign_value,  cs_port_value,  cs_pin_value,  bitrate_value,  cfg_ptr,  state_ptr,  mode_value,  uid_value,  gid_value)</td></tr>
-<tr class="separator:ga98c40f68ce18efe96809c27ac330c7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38e59452723362e21bfbc90043748fb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga38e59452723362e21bfbc90043748fb1">I_SYS_GETBOARDCONFIG</a></td></tr>
+<tr class="memdesc:ga38e59452723362e21bfbc90043748fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___s_y_s___d_e_v.html#ga38e59452723362e21bfbc90043748fb1">More...</a><br /></td></tr>
+<tr class="separator:ga38e59452723362e21bfbc90043748fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

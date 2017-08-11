@@ -36,9 +36,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gab2f7ef0e087761a395117ca890b1d36d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___d_e_v.html#gab2f7ef0e087761a395117ca890b1d36d">I_ETH_ATTR</a></td></tr>
-<tr class="memdesc:gab2f7ef0e087761a395117ca890b1d36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gab2f7ef0e087761a395117ca890b1d36d">More...</a><br /></td></tr>
-<tr class="separator:gab2f7ef0e087761a395117ca890b1d36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73b01f9134d45a23de3eb104e0e78a6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___d_e_v.html#ga73b01f9134d45a23de3eb104e0e78a6b">I_ETH_GETINFO</a></td></tr>
+<tr class="memdesc:ga73b01f9134d45a23de3eb104e0e78a6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga73b01f9134d45a23de3eb104e0e78a6b">More...</a><br /></td></tr>
+<tr class="separator:ga73b01f9134d45a23de3eb104e0e78a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba9bc550be16b7fce1fcba528f915d26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_t_h___d_e_v.html#gaba9bc550be16b7fce1fcba528f915d26">I_ETH_SETATTR</a></td></tr>
 <tr class="memdesc:gaba9bc550be16b7fce1fcba528f915d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gaba9bc550be16b7fce1fcba528f915d26">More...</a><br /></td></tr>
 <tr class="separator:gaba9bc550be16b7fce1fcba528f915d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -64,17 +64,17 @@ Macros</h2></td></tr>
 <tr class="separator:ga3f92bb99197ca9ce688d4a8b2c54059e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gab2f7ef0e087761a395117ca890b1d36d"></a>
+<a class="anchor" id="ga73b01f9134d45a23de3eb104e0e78a6b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_ETH_ATTR</td>
+          <td class="memname">#define I_ETH_GETINFO</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This requests reads the ADC attributes.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/eth.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;eth_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int eth_fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(eth_fd, I_ETH_GETATTR, &amp;attr);</div></div><!-- fragment --> 
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;#include &lt;dev/eth.h&gt;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;eth_attr_t attr;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;int eth_fd;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;ioctl(eth_fd, I_ETH_GETINFO, &amp;attr);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="gaba9bc550be16b7fce1fcba528f915d26"></a>

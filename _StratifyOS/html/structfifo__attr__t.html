@@ -35,21 +35,25 @@ title: Stratify OS Docs
 
 <p><code>#include &lt;fifo.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This structure defines the attributes of a FIFO. The attributes are read-only using <a class="el" href="group___s_y_s___f_i_f_o.html#ga30ff48c79763bdd7c003eb41184c7d65">I_FIFO_ATTR</a>. </p>
+<div class="textblock"><p>This structure defines the attributes of a FIFO. The attributes are read-only using I_FIFO_ATTR. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a02d2f450eda3a15e89e1c8e6626dbe69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02d2f450eda3a15e89e1c8e6626dbe69"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__attr__t.html#a02d2f450eda3a15e89e1c8e6626dbe69">size</a></td></tr>
-<tr class="memdesc:a02d2f450eda3a15e89e1c8e6626dbe69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The total number of bytes in the FIFO. <br /></td></tr>
-<tr class="separator:a02d2f450eda3a15e89e1c8e6626dbe69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c698e0ef8f3817376245aad4a667ae1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c698e0ef8f3817376245aad4a667ae1"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__attr__t.html#a7c698e0ef8f3817376245aad4a667ae1">used</a></td></tr>
-<tr class="memdesc:a7c698e0ef8f3817376245aad4a667ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes ready to be read from the FIFO. <br /></td></tr>
-<tr class="separator:a7c698e0ef8f3817376245aad4a667ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86b72ff8d46855169812eeb80297707c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86b72ff8d46855169812eeb80297707c"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__attr__t.html#a86b72ff8d46855169812eeb80297707c">overflow</a></td></tr>
-<tr class="memdesc:a86b72ff8d46855169812eeb80297707c"><td class="mdescLeft">&#160;</td><td class="mdescRight">If non-zero, indicates data received in the buffer was discarded. <br /></td></tr>
-<tr class="separator:a86b72ff8d46855169812eeb80297707c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa018def9d0d38f485fc2589d13ac552e"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfifo__attr__t.html#aa018def9d0d38f485fc2589d13ac552e">o_flags</a></td></tr>
+<tr class="separator:aa018def9d0d38f485fc2589d13ac552e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aa018def9d0d38f485fc2589d13ac552e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 fifo_attr_t::o_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Use to set the write block </p>
+
+</div>
+</div>
 </div><!-- contents -->

@@ -30,7 +30,7 @@ sections:
 				</center>
 			</p>
 
-				<p><b>Stratify Labs</b> is a blend of full and part-time freelance designers and engineers as well as the technology we have created to help us build smart products faster. We provide full service product development consulting services including industrial design, mechanical engineering, electrical engineering, as well as firmware and software development.</p>
+				<p><b>Stratify Labs</b> is a technology company that is building the tools that enabling building the next generation of smart products. Stratify OS is our flagship product that makes it easy to build sophisticated products on simple microcontroller hardware.</p>
 
 
 		<hr>

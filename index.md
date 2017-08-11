@@ -13,7 +13,7 @@ tagline: Rapid Embedded Development
 		</div>
 		<div class="col-md-9">
 			<h1><b>Stratify Labs</b></h1>
-			<h3>An engineering and design firm building the next generation of smart products</h3>
+			<h3>Building the tools to create the next generation of smart products</h3>
 		</div>
 	</div>
 </div>

@@ -16,14 +16,12 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">pio.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___p_i_o.html">Pin Input/Output (PIO)</a></div></div>  </div>
@@ -32,29 +30,14 @@ title: Stratify OS Docs
 
 <p>General Purpose Input/Output Header File.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;mcu/types.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpio__t.html">pio_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO port and pin.  <a href="structpio__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpio__attr__t.html">pio_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PIO Attribute Data Structure.  <a href="structpio__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpio__action__data__t.html">pio_action_data_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data struct for passing data to callbacks.  <a href="structpio__action__data__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga24c3a3828dccf4b615bcdc73285a5c23"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga24c3a3828dccf4b615bcdc73285a5c23">I_PIO_ATTR</a></td></tr>
-<tr class="memdesc:ga24c3a3828dccf4b615bcdc73285a5c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get the attributes. <br /></td></tr>
-<tr class="separator:ga24c3a3828dccf4b615bcdc73285a5c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c9082b2c58d070d2c65e3490b24246b"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga7c9082b2c58d070d2c65e3490b24246b">I_PIO_GETINFO</a></td></tr>
+<tr class="memdesc:ga7c9082b2c58d070d2c65e3490b24246b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get the attributes. <br /></td></tr>
+<tr class="separator:ga7c9082b2c58d070d2c65e3490b24246b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae851f29f89a1b7d8450f38a76ac0eed1"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#gae851f29f89a1b7d8450f38a76ac0eed1">I_PIO_SETATTR</a></td></tr>
 <tr class="memdesc:gae851f29f89a1b7d8450f38a76ac0eed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to set the attributes. <br /></td></tr>
@@ -75,13 +58,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga39c300857261b172b08d471e1586a261"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga39c300857261b172b08d471e1586a261">I_PIO_SET</a></td></tr>
 <tr class="memdesc:ga39c300857261b172b08d471e1586a261"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="group___p_i_o.html#ga39c300857261b172b08d471e1586a261">More...</a><br /></td></tr>
 <tr class="separator:ga39c300857261b172b08d471e1586a261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gafca6496338c7821c25bd946055328197"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a></td></tr>
-<tr class="separator:gafca6496338c7821c25bd946055328197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5364eeae1649d633e476aedff241eaf8"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_i_o.html#ga5364eeae1649d633e476aedff241eaf8">pio_action_t</a></td></tr>
-<tr class="separator:ga5364eeae1649d633e476aedff241eaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>

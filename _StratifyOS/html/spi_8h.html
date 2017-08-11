@@ -16,14 +16,12 @@ title: Stratify OS Docs
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_9bec7083027963d9f9ceae2cc7474de5.html">git</a></li><li class="navelem"><a class="el" href="dir_42c65b96289ce002559c225cdd9ffb5a.html">StratifyOS</a></li><li class="navelem"><a class="el" href="dir_23594ef76b269e5de9c1bdb0ec8e2c09.html">include</a></li><li class="navelem"><a class="el" href="dir_8c4c6e56d26c701174a4c37f4ba8b23d.html">iface</a></li><li class="navelem"><a class="el" href="dir_dd644b634b1f3ff8310dc4bddeee19ab.html">dev</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_8022ce17bb22b47658e0fbaf02f1dd77.html">sos</a></li><li class="navelem"><a class="el" href="dir_d0f8cdae885e68148867bdd8984d7b3a.html">dev</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">spi.h File Reference<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> &raquo; <a class="el" href="group___s_p_i.html">Serial Peripheral Interface (SPI) Master</a></div></div>  </div>
 </div><!--header-->
@@ -32,27 +30,14 @@ title: Stratify OS Docs
 <p>Serial Peripheral Interface Header File.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;ioctl.h&quot;</code><br />
-<code>#include &quot;mcu/arch.h&quot;</code><br />
+<code>#include &quot;mcu/types.h&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspi__attr__t.html">spi_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI Attribute Data Structure.  <a href="structspi__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga6faa4977e39f942b86a645da384e5583"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga6faa4977e39f942b86a645da384e5583">SPI_ATTR_MASTER</a></td></tr>
-<tr class="memdesc:ga6faa4977e39f942b86a645da384e5583"><td class="mdescLeft">&#160;</td><td class="mdescRight">This specifies the attribute master value for SPI master.  <a href="group___s_p_i.html#ga6faa4977e39f942b86a645da384e5583">More...</a><br /></td></tr>
-<tr class="separator:ga6faa4977e39f942b86a645da384e5583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1457e15fdf08e9acf8d795988a21766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#gac1457e15fdf08e9acf8d795988a21766">SPI_ATTR_SLAVE</a></td></tr>
-<tr class="memdesc:gac1457e15fdf08e9acf8d795988a21766"><td class="mdescLeft">&#160;</td><td class="mdescRight">This specifies the attribute master value for SPI slave. This value can't be used with spi_ioctl(). It must be used with spi_slave_ioctl().  <a href="group___s_p_i.html#gac1457e15fdf08e9acf8d795988a21766">More...</a><br /></td></tr>
-<tr class="separator:gac1457e15fdf08e9acf8d795988a21766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad2728d9ebb71afdabe3381dd55f0bb8"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#gaad2728d9ebb71afdabe3381dd55f0bb8">I_SPI_ATTR</a></td></tr>
-<tr class="memdesc:gaad2728d9ebb71afdabe3381dd55f0bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the SPI attributes. <br /></td></tr>
-<tr class="separator:gaad2728d9ebb71afdabe3381dd55f0bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9af95975cd0f8779447aa0c9b5918d82"><td class="memItemLeft" align="right" valign="top">
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga9af95975cd0f8779447aa0c9b5918d82">I_SPI_GETINFO</a></td></tr>
+<tr class="memdesc:ga9af95975cd0f8779447aa0c9b5918d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the SPI attributes. <br /></td></tr>
+<tr class="separator:ga9af95975cd0f8779447aa0c9b5918d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c48de01f44d809e504b02d420ce66e2"><td class="memItemLeft" align="right" valign="top">
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga3c48de01f44d809e504b02d420ce66e2">I_SPI_SETATTR</a></td></tr>
 <tr class="memdesc:ga3c48de01f44d809e504b02d420ce66e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the SPI attributes. <br /></td></tr>
@@ -60,11 +45,5 @@ Macros</h2></td></tr>
 <tr class="memitem:gab641415ca6596d88617661aaf2457739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#gab641415ca6596d88617661aaf2457739">I_SPI_SWAP</a></td></tr>
 <tr class="memdesc:gab641415ca6596d88617661aaf2457739"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___s_p_i.html#gab641415ca6596d88617661aaf2457739">More...</a><br /></td></tr>
 <tr class="separator:gab641415ca6596d88617661aaf2457739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga889b7810c9c1f1bae770b150227fcd97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga889b7810c9c1f1bae770b150227fcd97">I_SPI_SETDUPLEX</a></td></tr>
-<tr class="memdesc:ga889b7810c9c1f1bae770b150227fcd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="group___s_p_i.html#ga889b7810c9c1f1bae770b150227fcd97">More...</a><br /></td></tr>
-<tr class="separator:ga889b7810c9c1f1bae770b150227fcd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
 </table>
 </div><!-- contents -->

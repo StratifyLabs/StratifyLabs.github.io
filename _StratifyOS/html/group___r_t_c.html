@@ -19,7 +19,6 @@ title: Stratify OS Docs
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">Real Time Clock (RTC)<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
@@ -34,56 +33,23 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__time__t.html">rtc_time_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTC Time Structure (compatible with struct tm from time.h)  <a href="structrtc__time__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__alarm__t.html">rtc_alarm_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTC Alarm including Time and Alarm Type.  <a href="structrtc__alarm__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structrtc__attr__t.html">rtc_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTC IO Attributes.  <a href="structrtc__attr__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RTC Attributes.  <a href="structrtc__attr__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga4e0edc05fb0c989c5acf8b4927ae5d6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#ga4e0edc05fb0c989c5acf8b4927ae5d6d">I_RTC_SETALARM</a></td></tr>
-<tr class="memdesc:ga4e0edc05fb0c989c5acf8b4927ae5d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga4e0edc05fb0c989c5acf8b4927ae5d6d">More...</a><br /></td></tr>
-<tr class="separator:ga4e0edc05fb0c989c5acf8b4927ae5d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac0187ffba6245e88b438e7c893c39b37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#gac0187ffba6245e88b438e7c893c39b37">I_RTC_GETALARM</a></td></tr>
-<tr class="memdesc:gac0187ffba6245e88b438e7c893c39b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gac0187ffba6245e88b438e7c893c39b37">More...</a><br /></td></tr>
-<tr class="separator:gac0187ffba6245e88b438e7c893c39b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04d1d524a9262ad0fe5e91702c762a7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#ga04d1d524a9262ad0fe5e91702c762a7a">I_RTC_DISABLEALARM</a></td></tr>
-<tr class="memdesc:ga04d1d524a9262ad0fe5e91702c762a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga04d1d524a9262ad0fe5e91702c762a7a">More...</a><br /></td></tr>
-<tr class="separator:ga04d1d524a9262ad0fe5e91702c762a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d22fa73857a304762f6776fae261078"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#ga3d22fa73857a304762f6776fae261078">I_RTC_SET</a></td></tr>
 <tr class="memdesc:ga3d22fa73857a304762f6776fae261078"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga3d22fa73857a304762f6776fae261078">More...</a><br /></td></tr>
 <tr class="separator:ga3d22fa73857a304762f6776fae261078"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeaf4abd917cc5d7b03ff96b2f563ed8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#gaeaf4abd917cc5d7b03ff96b2f563ed8c">I_RTC_GET</a></td></tr>
 <tr class="memdesc:gaeaf4abd917cc5d7b03ff96b2f563ed8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gaeaf4abd917cc5d7b03ff96b2f563ed8c">More...</a><br /></td></tr>
 <tr class="separator:gaeaf4abd917cc5d7b03ff96b2f563ed8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac7ca674f40bdc951efb4355bc535655f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#gac7ca674f40bdc951efb4355bc535655f">I_RTC_SETCOUNTEVENT</a></td></tr>
-<tr class="memdesc:gac7ca674f40bdc951efb4355bc535655f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gac7ca674f40bdc951efb4355bc535655f">More...</a><br /></td></tr>
-<tr class="separator:gac7ca674f40bdc951efb4355bc535655f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaabcd0a7c862cfbdacac11a78f830cec0"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_t_c.html#gaabcd0a7c862cfbdacac11a78f830cec0">rtc_action_t</a></td></tr>
-<tr class="separator:gaabcd0a7c862cfbdacac11a78f830cec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga04d1d524a9262ad0fe5e91702c762a7a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_RTC_DISABLEALARM</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request disable the alarm. The ctl argument is NULL.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;ioctl(rtc_fd, I_RTC_DISABLEALARM);</div></div><!-- fragment --> 
-</div>
-</div>
 <a class="anchor" id="gaeaf4abd917cc5d7b03ff96b2f563ed8c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -94,19 +60,6 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>This request reads the value of the timer. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;rtc_time_t current_time;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(rtc_fd, I_RTC_GET, &amp;current_time );</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="gac0187ffba6245e88b438e7c893c39b37"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_RTC_GETALARM</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request reads the alarm value. The ctl argument is a pointer to memory where the <a class="el" href="structrtc__alarm__t.html" title="RTC Alarm including Time and Alarm Type. ">rtc_alarm_t</a> will be stored.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;rtc_alarm_t alarm;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(rtc_fd, I_RTC_GETALARM, &amp;alarm);</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;//alarm is populated with the current alarm values</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga3d22fa73857a304762f6776fae261078"></a>
@@ -121,104 +74,7 @@ Enumerations</h2></td></tr>
 <p>This request writes the value of the timer. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;rtc_time_t the_time;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(rtc_fd, I_RTC_SET, &amp;the_time);</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="ga4e0edc05fb0c989c5acf8b4927ae5d6d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_RTC_SETALARM</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request writes the alarm value. The ctl argument is a pointer to an <a class="el" href="structrtc__alarm__t.html" title="RTC Alarm including Time and Alarm Type. ">rtc_alarm_t</a> which contains the alarm.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;rtc_alarm_t alarm;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;//set alarm members</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;ioctl(rtc_fd, I_RTC_SETALARM, &amp;alarm);</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="gac7ca674f40bdc951efb4355bc535655f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_RTC_SETCOUNTEVENT</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request controls when the count action is triggered. The ctl argument is a <a class="el" href="group___r_t_c.html#gae2a9c3088277a56623c7d73f8e530702">rtc_event_count_t</a>.</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;ioctl(rtc_fd, I_RTC_SETCOUNTEVENT, (void*)RTC_EVENT_COUNT_SECOND );</div></div><!-- fragment --> 
-</div>
-</div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gaabcd0a7c862cfbdacac11a78f830cec0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a> <a class="el" href="group___r_t_c.html#gaabcd0a7c862cfbdacac11a78f830cec0">rtc_action_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines a RTC action. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gae65938264f8a116c77c92d7fab17ade2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___r_t_c.html#gae65938264f8a116c77c92d7fab17ade2">rtc_alarm_type_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This enumerates the valid alarm types. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2a976059f900a12b9f02432ed0b6a28892"></a>RTC_ALARM_ONCE&#160;</td><td class="fielddoc">
-<p>One time alarm </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2abd4217b9c181fb80434b4b0e807af176"></a>RTC_ALARM_MINUTE&#160;</td><td class="fielddoc">
-<p>Alarm every minute </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2ae81ff75817eaa48f57cc3ce6b0b63c7f"></a>RTC_ALARM_HOURLY&#160;</td><td class="fielddoc">
-<p>Alarm every hour </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2a378147facd1e8ab25c0387c6d0440d16"></a>RTC_ALARM_DAILY&#160;</td><td class="fielddoc">
-<p>Daily alarm </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2a6e6d0960e73f262cbd236e296491c850"></a>RTC_ALARM_WEEKLY&#160;</td><td class="fielddoc">
-<p>Weekly alarm </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2a34d8089b1d93ba817b04bcfa61426236"></a>RTC_ALARM_MONTHLY&#160;</td><td class="fielddoc">
-<p>Monthly alarm </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae65938264f8a116c77c92d7fab17ade2a1457b47302f3060cba5c2b71dfc94905"></a>RTC_ALARM_YEARLY&#160;</td><td class="fielddoc">
-<p>Yearly alarm </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga10606f83fcd2315eb36b2ae3c03602d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___r_t_c.html#ga10606f83fcd2315eb36b2ae3c03602d0">rtc_clock_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>These are the values for <em>clock</em> of <a class="el" href="structrtc__attr__t.html">rtc_attr_t</a>. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga10606f83fcd2315eb36b2ae3c03602d0a3818a99ab8ddd9d696ecc285a5faefc9"></a>RTC_CLKSRC_EXTERNAL_32768&#160;</td><td class="fielddoc">
-<p>External 32.768KHz Crystal </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga10606f83fcd2315eb36b2ae3c03602d0a665121a63cedc225f2865e70d5d16d2f"></a>RTC_CLKSRC_INTERNAL_40000&#160;</td><td class="fielddoc">
-<p>Internal 40KHz Oscillator </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a class="anchor" id="ga70998fb17a899127e3b7544f053b89ba"></a>
 <div class="memitem">
 <div class="memproto">
@@ -255,55 +111,89 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae2a9c3088277a56623c7d73f8e530702"></a>
+<a class="anchor" id="gae814e9a42ebbf3a08561cf205c6fb7e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___r_t_c.html#gae2a9c3088277a56623c7d73f8e530702">rtc_event_count_t</a></td>
+          <td class="memname">enum <a class="el" href="group___r_t_c.html#gae814e9a42ebbf3a08561cf205c6fb7e5">rtc_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This lists the times when the count interrupt can be set. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702a675a78d2a535580b6ad2005f582cc931"></a>RTC_EVENT_COUNT_NONE&#160;</td><td class="fielddoc">
-<p>Do not interrupt based on the count (default) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5ad5d2eb86026cd9303caff0cd622523e1"></a>RTC_FLAG_ENABLE&#160;</td><td class="fielddoc">
+<p>Set the alarm </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3"></a>RTC_EVENT_COUNT_SECOND&#160;</td><td class="fielddoc">
-<p>Interrupt every second </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a6369632a74fc7643adb6c99a0a777313"></a>RTC_FLAG_DISABLE&#160;</td><td class="fielddoc">
+<p>Set the alarm </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702adc0af148d93bba5ff96a7a4af9f99906"></a>RTC_EVENT_COUNT_MINUTE&#160;</td><td class="fielddoc">
-<p>Interrupt every minute </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a085a4c5b88118dcc8fc98d3567a90ae4"></a>RTC_FLAG_IS_SOURCE_EXTERNAL_32768&#160;</td><td class="fielddoc">
+<p>External 32.768KHz Crystal </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702a870fc262d71be6da443ff3b8f99af6ee"></a>RTC_EVENT_COUNT_HOUR&#160;</td><td class="fielddoc">
-<p>Interrupt every hour </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5acd1284f5eeee917cfff700ae8c749781"></a>RTC_FLAG_IS_SOURCE_INTERNAL_40000&#160;</td><td class="fielddoc">
+<p>Internal 40KHz Oscillator </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702a0de9a98b6ea51a595601127b0a478e5b"></a>RTC_EVENT_COUNT_DAY&#160;</td><td class="fielddoc">
-<p>Interrupt every day </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a5598e66901b519c51adca369b5979268"></a>RTC_FLAG_ENABLE_ALARM&#160;</td><td class="fielddoc">
+<p>Enable the alarm </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702af35802cceffa6243c496a1e14ae4dfe1"></a>RTC_EVENT_COUNT_WEEK&#160;</td><td class="fielddoc">
-<p>Interrupt every week </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5ab02f99dd110a1197eeb54411405309e6"></a>RTC_FLAG_DISABLE_ALARM&#160;</td><td class="fielddoc">
+<p>Enable the alarm </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702a249cf96b5a5ea7c8ddc8b2ef78c2d8bb"></a>RTC_EVENT_COUNT_MONTH&#160;</td><td class="fielddoc">
-<p>Interrupt every month </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a35f5d79fc11ade6d254c2fcb8af50b47"></a>RTC_FLAG_IS_ALARM_ONCE&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae2a9c3088277a56623c7d73f8e530702ae764f4357ddc3122b7db17bd0583e41f"></a>RTC_EVENT_COUNT_YEAR&#160;</td><td class="fielddoc">
-<p>Interrupt every year </p>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a4631c30d98f06d43d2a93d8c489f6234"></a>RTC_FLAG_IS_ALARM_MINUTE&#160;</td><td class="fielddoc">
+<p>Alarm every minute </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a721b6a1f716ca7c09299bf8a608745ec"></a>RTC_FLAG_IS_ALARM_HOURLY&#160;</td><td class="fielddoc">
+<p>Alarm every hour </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a4d9a5f71f3d38fe031bcfee8715fb5ec"></a>RTC_FLAG_IS_ALARM_DAILY&#160;</td><td class="fielddoc">
+<p>Daily alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a7302fcf5b68f3645154ee850f302a1cb"></a>RTC_FLAG_IS_ALARM_WEEKLY&#160;</td><td class="fielddoc">
+<p>Weekly alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a4b09815683541b237296c280b16fe140"></a>RTC_FLAG_IS_ALARM_MONTHLY&#160;</td><td class="fielddoc">
+<p>Monthly alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5aba62369d04b4996f6b8b0be3a3dbb428"></a>RTC_FLAG_IS_ALARM_YEARLY&#160;</td><td class="fielddoc">
+<p>Yearly alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5ae3a0bd1b7d8b3a56f259ec305ec77f89"></a>RTC_FLAG_ENABLE_COUNT_EVENT&#160;</td><td class="fielddoc">
+<p>Enable a count event </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5aa1ab9b614408a975dc44fc309941baee"></a>RTC_FLAG_IS_COUNT_SECOND&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5ab092ce34bc7fcffc2e3928f3fd9ff23d"></a>RTC_FLAG_IS_COUNT_MINUTE&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a986202656bc35342862cd6a8f91d7536"></a>RTC_FLAG_IS_COUNT_HOUR&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5ab12d9867e416d378529a56670cb45434"></a>RTC_FLAG_IS_COUNT_DAY_OF_WEEK&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5aa6b4cd5e9f1cd65a23eaa74426c5c9cb"></a>RTC_FLAG_IS_COUNT_DAY_OF_MONTH&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a530d3e2adf401253a7afeaf0a3d9b66b"></a>RTC_FLAG_IS_COUNT_DAY_OF_YEAR&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5af079f9dd87aba9765ed57fcfa05612b0"></a>RTC_FLAG_IS_COUNT_WEEK&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5aa28e0a6a09009a2cff5b50805f729694"></a>RTC_FLAG_IS_COUNT_MONTH&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5a6dc83eb25f865dad92e1209d121b883e"></a>RTC_FLAG_IS_COUNT_YEAR&#160;</td><td class="fielddoc">
+<p>One time alarm </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggae814e9a42ebbf3a08561cf205c6fb7e5ab96a900bd80ebc85ba63bab2177451c6"></a>RTC_FLAG_DISABLE_COUNT_EVENT&#160;</td><td class="fielddoc">
+<p>Enable a count event </p>
 </td></tr>
 </table>
-
-</div>
-</div>
-<a class="anchor" id="gad2e192ed9a33b6c005c2c19ccbd6a21b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___r_t_c.html#gad2e192ed9a33b6c005c2c19ccbd6a21b">rtc_event_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the bit assignments when using the RTC interrupt callback. </p>
 
 </div>
 </div>

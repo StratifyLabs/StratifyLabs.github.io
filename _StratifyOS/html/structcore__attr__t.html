@@ -39,21 +39,36 @@ title: Stratify OS Docs
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a0e363fe0631965ec7774888f45ed3492"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e363fe0631965ec7774888f45ed3492"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html#a0e363fe0631965ec7774888f45ed3492">serial_number</a> [4]</td></tr>
-<tr class="memdesc:a0e363fe0631965ec7774888f45ed3492"><td class="mdescLeft">&#160;</td><td class="mdescRight">The serial number of the device (from the silicon) <br /></td></tr>
-<tr class="separator:a0e363fe0631965ec7774888f45ed3492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe35c463d004bcc8a49db20db1736baa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe35c463d004bcc8a49db20db1736baa"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html#afe35c463d004bcc8a49db20db1736baa">clock</a></td></tr>
-<tr class="memdesc:afe35c463d004bcc8a49db20db1736baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current clock speed. <br /></td></tr>
-<tr class="separator:afe35c463d004bcc8a49db20db1736baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4df3ec946574ce5a9654a258f6a1b5df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4df3ec946574ce5a9654a258f6a1b5df"></a>
-u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html#a4df3ec946574ce5a9654a258f6a1b5df">signature</a></td></tr>
-<tr class="memdesc:a4df3ec946574ce5a9654a258f6a1b5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The software signature. <br /></td></tr>
-<tr class="separator:a4df3ec946574ce5a9654a258f6a1b5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a155d5a68feb0a78beb951aa3afa0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6a155d5a68feb0a78beb951aa3afa0f"></a>
-u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html#ae6a155d5a68feb0a78beb951aa3afa0f">reset_type</a></td></tr>
-<tr class="memdesc:ae6a155d5a68feb0a78beb951aa3afa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source of the last reset. <br /></td></tr>
-<tr class="separator:ae6a155d5a68feb0a78beb951aa3afa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b0a8e30814bed2bcc9b4feb06e87b2"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html#a88b0a8e30814bed2bcc9b4feb06e87b2">o_flags</a></td></tr>
+<tr class="separator:a88b0a8e30814bed2bcc9b4feb06e87b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1719dc5af395c6d73499cc22b8b89b6"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html#ae1719dc5af395c6d73499cc22b8b89b6">freq</a></td></tr>
+<tr class="separator:ae1719dc5af395c6d73499cc22b8b89b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="ae1719dc5af395c6d73499cc22b8b89b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 core_attr_t::freq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is used with the clock out flags to set the output frequency </p>
+
+</div>
+</div>
+<a class="anchor" id="a88b0a8e30814bed2bcc9b4feb06e87b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 core_attr_t::o_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Setting certain flags will configure the core as described </p>
+
+</div>
+</div>
 </div><!-- contents -->

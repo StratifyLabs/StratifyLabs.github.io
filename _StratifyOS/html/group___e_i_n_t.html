@@ -28,7 +28,7 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The External Interrupt API allows the user to configure how the external interrupts pins trigger IRQs.</p>
 <p>The following is an example of how to use the EINT in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> my_eint_action(<span class="keywordtype">void</span> * context, uint32_t value){</div><div class="line">     <span class="comment">//take some action on an eint event -- this runs in priveleged, handler mode, it should be fast and short</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> configure_eint(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structeint__attr__t.html">eint_attr_t</a> attr;</div><div class="line">     <a class="code" href="structmcu__action__t.html">eint_action_t</a> action;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/eint0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.<a class="code" href="structeint__attr__t.html#a9612696d9bad4b346e15c94c4c4bb399">pin_assign</a> = 0;</div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;ctl) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now set an action to take when a falling edge occurs on eint0</span></div><div class="line">     action.<a class="code" href="structmcu__action__t.html#af37fc1b6d5b4c87ea411e5da2de1ab0b">channel</a> = 0; <span class="comment">//unused</span></div><div class="line">     action.<a class="code" href="structmcu__action__t.html#a88f1b1bb5d3c5b39394ae6c28ffead80">event</a> = <a class="code" href="group___e_i_n_t.html#ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81">EINT_ACTION_EVENT_FALLING</a>; <span class="comment">//no events are defined for the EINT</span></div><div class="line">     action.<a class="code" href="structmcu__action__t.html#af00441ab337efaad213ee78aed9f15b4">callback</a> = my_eint_action;</div><div class="line">     action.<a class="code" href="structmcu__action__t.html#a431c0e5c65b90315ac5f53eb739eb576">context</a> = NULL;</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETACTION, &amp;action) ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error setting action for peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>The Ethernet interface</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">void</span> my_eint_action(<span class="keywordtype">void</span> * context, uint32_t value){</div><div class="line">     <span class="comment">//take some action on an eint event -- this runs in priveleged, handler mode, it should be fast and short</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> configure_eint(){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structeint__attr__t.html">eint_attr_t</a> attr;</div><div class="line">     eint_action_t action;</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/eint0&quot;</span>, O_RDWR);</div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.pin_assign = 0;</div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;ctl) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now set an action to take when a falling edge occurs on eint0</span></div><div class="line">     action.channel = 0; <span class="comment">//unused</span></div><div class="line">     action.o_events = EINT_ACTION_EVENT_FALLING; <span class="comment">//no events are defined for the EINT</span></div><div class="line">     action.handler.callback = my_eint_action;</div><div class="line">     action.handler.context = NULL;</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETACTION, &amp;action) ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error setting action for peripheral (%d)\n&quot;</span>, errno);</div><div class="line">          <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>The Ethernet interface</p>
 <div class="fragment"></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -41,10 +41,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga9f588d8bf40c97bd09a4bf82a7b802d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9f588d8bf40c97bd09a4bf82a7b802d5"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#ga9f588d8bf40c97bd09a4bf82a7b802d5">I_EINT_ATTR</a></td></tr>
-<tr class="memdesc:ga9f588d8bf40c97bd09a4bf82a7b802d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get attributes. <br /></td></tr>
-<tr class="separator:ga9f588d8bf40c97bd09a4bf82a7b802d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5628820b86ce1abde7f4fa28795f8abd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5628820b86ce1abde7f4fa28795f8abd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#ga5628820b86ce1abde7f4fa28795f8abd">I_EINT_GETINFO</a></td></tr>
+<tr class="memdesc:ga5628820b86ce1abde7f4fa28795f8abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get info. <br /></td></tr>
+<tr class="separator:ga5628820b86ce1abde7f4fa28795f8abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8ffe868c1b9a048d4a422102bb0d0494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8ffe868c1b9a048d4a422102bb0d0494"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#ga8ffe868c1b9a048d4a422102bb0d0494">I_EINT_SETATTR</a></td></tr>
 <tr class="memdesc:ga8ffe868c1b9a048d4a422102bb0d0494"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to set the attributes (set pin assignment) <br /></td></tr>
@@ -52,10 +52,10 @@ Macros</h2></td></tr>
 <tr class="memitem:gafafdc3233a44f8e060b32de3560ffae8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#gafafdc3233a44f8e060b32de3560ffae8">I_EINT_SETACTION</a></td></tr>
 <tr class="memdesc:gafafdc3233a44f8e060b32de3560ffae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gafafdc3233a44f8e060b32de3560ffae8">More...</a><br /></td></tr>
 <tr class="separator:gafafdc3233a44f8e060b32de3560ffae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee7e05b2c0ee2aca611f692109b3d917"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaee7e05b2c0ee2aca611f692109b3d917"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#gaee7e05b2c0ee2aca611f692109b3d917">I_ENET_ATTR</a></td></tr>
-<tr class="memdesc:gaee7e05b2c0ee2aca611f692109b3d917"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get attributes. <br /></td></tr>
-<tr class="separator:gaee7e05b2c0ee2aca611f692109b3d917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb9f80afef01ffc6c69fcadb5b5d8400"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafb9f80afef01ffc6c69fcadb5b5d8400"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#gafb9f80afef01ffc6c69fcadb5b5d8400">I_ENET_GETINFO</a></td></tr>
+<tr class="memdesc:gafb9f80afef01ffc6c69fcadb5b5d8400"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to get attributes. <br /></td></tr>
+<tr class="separator:gafb9f80afef01ffc6c69fcadb5b5d8400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa550b00b7ec2d91a6bc88afea774a3af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa550b00b7ec2d91a6bc88afea774a3af"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#gaa550b00b7ec2d91a6bc88afea774a3af">I_ENET_SETATTR</a></td></tr>
 <tr class="memdesc:gaa550b00b7ec2d91a6bc88afea774a3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOCTL request to set the attributes (set pin assignment) <br /></td></tr>
@@ -66,9 +66,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga0cc94e61cd3d7732766b249dc30b9ba9"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#ga0cc94e61cd3d7732766b249dc30b9ba9">eint_action_t</a></td></tr>
-<tr class="memdesc:ga0cc94e61cd3d7732766b249dc30b9ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga0cc94e61cd3d7732766b249dc30b9ba9">More...</a><br /></td></tr>
-<tr class="separator:ga0cc94e61cd3d7732766b249dc30b9ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga79ffe5b971974a4223b91cde49464d9b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___e_i_n_t.html#ga79ffe5b971974a4223b91cde49464d9b">enet_action_t</a></td></tr>
 <tr class="memdesc:ga79ffe5b971974a4223b91cde49464d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga79ffe5b971974a4223b91cde49464d9b">More...</a><br /></td></tr>
 <tr class="separator:ga79ffe5b971974a4223b91cde49464d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,7 +83,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This sets the action for an EINT channel. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;eint_action_t action;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;action.channel = 0; //channel if used on the architecture</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;action.callback = my_callback; //function to execute when event happens</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;action.context = NULL;  //passed to my_callback as first argument</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;action.event = EINT_ACTION_EVENT_RISING; //Trigger on rising edge</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ioctl(eint_fd, I_EINT_SETACTION, &amp;action);</div></div><!-- fragment --> 
+<p>This sets the action for an EINT channel. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_action_t action;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;action.channel = 0; //channel if used on the architecture</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;action.handler.callback = my_callback; //function to execute when event happens</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;action.handler.context = NULL;  //passed to action.handler.callback as first argument</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;action.o_events = EINT_ACTION_EVENT_RISING; //Trigger on rising edge</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ioctl(eint_fd, I_EINT_SETACTION, &amp;action);</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="ga9f45e2172486af8abfd680db498de404"></a>
@@ -98,24 +95,10 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This sets the action for an EINT channel. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;enet_action_t action;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;action.channel = 0; //channel if used on the architecture</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;action.callback = my_callback; //function to execute when event happens</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;action.context = NULL;  //passed to my_callback as first argument</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;action.event = ENET_ACTION_EVENT_RISING; //Trigger on rising edge</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ioctl(enet_fd, I_ENET_SETACTION, &amp;action);</div></div><!-- fragment --> 
+<p>This sets the action for an EINT channel. For example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_action_t action;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;action.channel = 0; //channel if used on the architecture</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;action.handler.callback = my_callback; //function to execute when event happens</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;action.handler.context = NULL;  //passed to my_callback as first argument</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;action.o_events = ENET_ACTION_EVENT_RISING; //Trigger on rising edge</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ioctl(enet_fd, I_ENET_SETACTION, &amp;action);</div></div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga0cc94e61cd3d7732766b249dc30b9ba9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="structmcu__action__t.html">mcu_action_t</a> <a class="el" href="group___e_i_n_t.html#ga0cc94e61cd3d7732766b249dc30b9ba9">eint_action_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines a EINT action.</p>
-<p>See <a class="el" href="group___e_i_n_t.html#gadd1257260f1ba401df43dd34fa2d28d5">eint_action_event_t</a> for events. There are no channel specific definitions for the EINT. </p>
-
-</div>
-</div>
 <a class="anchor" id="ga79ffe5b971974a4223b91cde49464d9b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +114,7 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga6b7b47dd702d9e331586d485013fd1ea"></a>
+<a class="anchor" id="gabed82baf7f470b522273a3e37c24c600"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -141,48 +124,14 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaae63959e536664571d59dd5b313b26dae"></a>ENET_FLAGS_USERMII&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggabed82baf7f470b522273a3e37c24c600ae63959e536664571d59dd5b313b26dae"></a>ENET_FLAGS_USERMII&#160;</td><td class="fielddoc">
 <p>Use RMII. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaad8fb14a32b90abe4c0d9128ca416d969"></a>ENET_FLAGS_FULLDUPLEX&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabed82baf7f470b522273a3e37c24c600ad8fb14a32b90abe4c0d9128ca416d969"></a>ENET_FLAGS_FULLDUPLEX&#160;</td><td class="fielddoc">
 <p>Use Full Duplex. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaaa582a4f418d27604aeef4293b85151d4"></a>ENET_FLAGS_HALFDUPLEX&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="ggabed82baf7f470b522273a3e37c24c600aa582a4f418d27604aeef4293b85151d4"></a>ENET_FLAGS_HALFDUPLEX&#160;</td><td class="fielddoc">
 <p>Use Half Duplex (default) </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="gadd1257260f1ba401df43dd34fa2d28d5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___e_i_n_t.html#gadd1257260f1ba401df43dd34fa2d28d5">eint_action_event_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This list defines the valid values for the external interrupt trigger value. </p><dl class="section return"><dt>Returns</dt><dd>An HWPL Error code </dd></dl>
-<dl class="section see"><dt>See also</dt><dd>ERR </dd></dl>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggadd1257260f1ba401df43dd34fa2d28d5a7f362899eaa0583dccbdea0bbaf8f5a1"></a>EINT_ACTION_EVENT_UNCONFIGURED&#160;</td><td class="fielddoc">
-<p>The trigger has not been set </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848"></a>EINT_ACTION_EVENT_RISING&#160;</td><td class="fielddoc">
-<p>Trigger on the rising edge </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81"></a>EINT_ACTION_EVENT_FALLING&#160;</td><td class="fielddoc">
-<p>Trigger on the falling edge </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadd1257260f1ba401df43dd34fa2d28d5aaab3f9601e94feb16265e6512ff683f4"></a>EINT_ACTION_EVENT_BOTH&#160;</td><td class="fielddoc">
-<p>Trigger on both edges </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadd1257260f1ba401df43dd34fa2d28d5ac72b8d7c05b72a3917fd88c51a084146"></a>EINT_ACTION_EVENT_LOW&#160;</td><td class="fielddoc">
-<p>Trigger while low </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggadd1257260f1ba401df43dd34fa2d28d5aa169884effda9ecad418a5dab0f1ec40"></a>EINT_ACTION_EVENT_HIGH&#160;</td><td class="fielddoc">
-<p>Trigger while high </p>
 </td></tr>
 </table>
 

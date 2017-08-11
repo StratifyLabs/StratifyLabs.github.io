@@ -29,9 +29,6 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__clkout__t.html">core_clkout_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used with I_CORE_SETCLKOUT.  <a href="structcore__clkout__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcore__attr__t.html">core_attr_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Core IO Attributes.  <a href="structcore__attr__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -44,10 +41,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaf53f2c68c35f0bd4c048c212c859510e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf53f2c68c35f0bd4c048c212c859510e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gaf53f2c68c35f0bd4c048c212c859510e">I_CORE_ATTR</a></td></tr>
-<tr class="memdesc:gaf53f2c68c35f0bd4c048c212c859510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This requests reads the core attributes. <br /></td></tr>
-<tr class="separator:gaf53f2c68c35f0bd4c048c212c859510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8430d6f739b43666a9f7d67b0ed08cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae8430d6f739b43666a9f7d67b0ed08cb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gae8430d6f739b43666a9f7d67b0ed08cb">I_CORE_GETINFO</a></td></tr>
+<tr class="memdesc:gae8430d6f739b43666a9f7d67b0ed08cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This requests reads the core attributes. <br /></td></tr>
+<tr class="separator:gae8430d6f739b43666a9f7d67b0ed08cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5098e31f3fc6c096f1b30d6d88a73ad9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5098e31f3fc6c096f1b30d6d88a73ad9"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga5098e31f3fc6c096f1b30d6d88a73ad9">I_CORE_SETATTR</a></td></tr>
 <tr class="memdesc:ga5098e31f3fc6c096f1b30d6d88a73ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This requests writes the core attributes. <br /></td></tr>
@@ -55,29 +52,32 @@ Macros</h2></td></tr>
 <tr class="memitem:ga553cd81816094decf23ffd7070c3a274"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga553cd81816094decf23ffd7070c3a274">I_CORE_SETPINFUNC</a></td></tr>
 <tr class="memdesc:ga553cd81816094decf23ffd7070c3a274"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga553cd81816094decf23ffd7070c3a274">More...</a><br /></td></tr>
 <tr class="separator:ga553cd81816094decf23ffd7070c3a274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f1705b30be917a00886af84a60f3e0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8f1705b30be917a00886af84a60f3e0c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga8f1705b30be917a00886af84a60f3e0c">I_CORE_SLEEP</a></td></tr>
-<tr class="memdesc:ga8f1705b30be917a00886af84a60f3e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request powersdown the device. <br /></td></tr>
-<tr class="separator:ga8f1705b30be917a00886af84a60f3e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4680cb894578ddd4242691d727e49654"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4680cb894578ddd4242691d727e49654"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga4680cb894578ddd4242691d727e49654">I_CORE_RESET</a></td></tr>
-<tr class="memdesc:ga4680cb894578ddd4242691d727e49654"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request resets the device. <br /></td></tr>
-<tr class="separator:ga4680cb894578ddd4242691d727e49654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3e7592889371a041783fdc713dafe54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae3e7592889371a041783fdc713dafe54"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gae3e7592889371a041783fdc713dafe54">I_CORE_INVOKEBOOTLOADER</a></td></tr>
-<tr class="memdesc:gae3e7592889371a041783fdc713dafe54"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request invokes the bootloader. <br /></td></tr>
-<tr class="separator:gae3e7592889371a041783fdc713dafe54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab18399788c0a6653e37c6b51ab2fa796"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gab18399788c0a6653e37c6b51ab2fa796">I_CORE_SETCLKOUT</a></td></tr>
 <tr class="memdesc:gab18399788c0a6653e37c6b51ab2fa796"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gab18399788c0a6653e37c6b51ab2fa796">More...</a><br /></td></tr>
 <tr class="separator:gab18399788c0a6653e37c6b51ab2fa796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad37592d62d290851b1a3d7d402f744bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gad37592d62d290851b1a3d7d402f744bb">I_CORE_SETCLKDIVIDE</a></td></tr>
 <tr class="memdesc:gad37592d62d290851b1a3d7d402f744bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gad37592d62d290851b1a3d7d402f744bb">More...</a><br /></td></tr>
 <tr class="separator:gad37592d62d290851b1a3d7d402f744bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d2334e3f8e0ffa23c341c70a5cda580"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#ga4d2334e3f8e0ffa23c341c70a5cda580">I_CORE_GETMCUBOARDCONFIG</a></td></tr>
+<tr class="memdesc:ga4d2334e3f8e0ffa23c341c70a5cda580"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga4d2334e3f8e0ffa23c341c70a5cda580">More...</a><br /></td></tr>
+<tr class="separator:ga4d2334e3f8e0ffa23c341c70a5cda580"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga4d2334e3f8e0ffa23c341c70a5cda580"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_CORE_GETMCUBOARDCONFIG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This copies the mcu_board_config_t data that is set by the board support package. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mcu_board_config_t config;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(core_fd, I_CORE_GETMCUBOARDCONFIG, &amp;config);</div></div><!-- fragment --> 
+</div>
+</div>
 <a class="anchor" id="gad37592d62d290851b1a3d7d402f744bb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -115,31 +115,69 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga865263eb03a43700297f3eba0c085b88"></a>
+<a class="anchor" id="ga64fcd23e7657832c6cd5f4e2d92bf2df"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___c_o_r_e.html#ga865263eb03a43700297f3eba0c085b88">core_clkout_src_t</a></td>
+          <td class="memname">enum <a class="el" href="group___c_o_r_e.html#ga64fcd23e7657832c6cd5f4e2d92bf2df">core_flag_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>THis lists the valid values for the clock output source clock. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga865263eb03a43700297f3eba0c085b88a3160a6cbffbdee1b81ce7d569da99d4d"></a>CORE_CLKOUT_CPU&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa6b1ef7ed5af8c29842a5893d7b1f3c86"></a>CORE_FLAG_IS_RESET_SOFTWARE&#160;</td><td class="fielddoc">
+<p>Software Reset (default if hardware reset cannot be determined) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa30db832962b1fe3ac718ba069e84ee88"></a>CORE_FLAG_IS_RESET_POR&#160;</td><td class="fielddoc">
+<p>Power on Reset </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa2e8f1ccfd817a6741ba951649b88b517"></a>CORE_FLAG_IS_RESET_EXTERNAL&#160;</td><td class="fielddoc">
+<p>External Reset signal </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa815ce8c047bdf7abeade7fe1cb64a74e"></a>CORE_FLAG_IS_RESET_WDT&#160;</td><td class="fielddoc">
+<p>Watchdog Timer Reset </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfaaa057420fddebda905b2eddfc012af5c"></a>CORE_FLAG_IS_RESET_BOR&#160;</td><td class="fielddoc">
+<p>Brown Out Reset </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfab6948fd774147a3ebca2b36b3ce66509"></a>CORE_FLAG_IS_RESET_SYSTEM&#160;</td><td class="fielddoc">
+<p>Software System Reset </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa26ed5b14790a844b051cf92710bf637f"></a>CORE_FLAG_SET_CLKOUT&#160;</td><td class="fielddoc">
 <p>Use the CPU Clock </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga865263eb03a43700297f3eba0c085b88af167725ce9ad98ead0a3d3871b326592"></a>CORE_CLKOUT_MAIN_OSC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa9c58afa6e2cbe9eb61a13c5620b32bab"></a>CORE_FLAG_IS_CLKOUT_CPU&#160;</td><td class="fielddoc">
+<p>Use the CPU Clock </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa8b58ace79141afab1fb22cd6ce0fdd76"></a>CORE_FLAG_IS_CLKOUT_MAIN_OSC&#160;</td><td class="fielddoc">
 <p>Use the Main Oscillator </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga865263eb03a43700297f3eba0c085b88a08b98eb799bf5d81adac50c3b196fe3c"></a>CORE_CLKOUT_INTERNAL_OSC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa2162f8a368fc3151f2a358c0152d3dff"></a>CORE_FLAG_IS_CLKOUT_INTERNAL_OSC&#160;</td><td class="fielddoc">
 <p>Use the Internal Oscillator </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga865263eb03a43700297f3eba0c085b88aa154acb89b22a02a8e5cfa751692862b"></a>CORE_CLKOUT_USB&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dface05669bff392c983fceb672885beda0"></a>CORE_FLAG_IS_CLKOUT_USB&#160;</td><td class="fielddoc">
 <p>Use the USB Clock </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga865263eb03a43700297f3eba0c085b88a8a2942f4d7646b06229be812913b1917"></a>CORE_CLKOUT_RTC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfacdb31ed58788072825c7e630c75c9577"></a>CORE_FLAG_IS_CLKOUT_RTC&#160;</td><td class="fielddoc">
 <p>Use the RTC Clock </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfaf139c3a3d78a9a456c62bcba19edf906"></a>CORE_FLAG_EXEC_SLEEP&#160;</td><td class="fielddoc">
+<p>Sleep </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfae1c3e498ed42a767e541a2d0ffdb3f90"></a>CORE_FLAG_EXEC_DEEPSLEEP&#160;</td><td class="fielddoc">
+<p>Deep sleep (preserve SRAM) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa0f40b4e525e0f70cdef37399fb67eeae"></a>CORE_FLAG_EXEC_DEEPSLEEP_STOP&#160;</td><td class="fielddoc">
+<p>Deep sleep (preserve SRAM, stop clocks) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa92351dc405b19c007e001ef6c9a9f862"></a>CORE_FLAG_EXEC_DEEPSLEEP_STANDBY&#160;</td><td class="fielddoc">
+<p>Turn the device off (lose SRAM) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa660c0c8be411e093188d4441db273780"></a>CORE_FLAG_EXEC_RESET&#160;</td><td class="fielddoc">
+<p>Set this flag with I_CORE_SETATTR to reset the device </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga64fcd23e7657832c6cd5f4e2d92bf2dfa74eee9244f726b295dd6037a9568ef0f"></a>CORE_FLAG_EXEC_INVOKE_BOOTLOADER&#160;</td><td class="fielddoc">
+<p>Set this flag with I_CORE_SETATTR to reset the device and start the bootloader </p>
 </td></tr>
 </table>
 
@@ -154,7 +192,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This enumerates the valid peripherals supported by HWPL. </p>
+<p>This enumerates the valid peripherals supported by Stratify OS. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99baf43dbbcbfe5569ed2e872592cef13df4"></a>CORE_PERIPH_RESERVED&#160;</td><td class="fielddoc">
 <p>RESERVED </p>
@@ -261,65 +299,17 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba215d008a1cf5b84c0e60fa3d9d3505c5"></a>CORE_PERIPH_TRACE&#160;</td><td class="fielddoc">
 <p>Trace data </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="gaf04fba81a1f0a6d59e921ebc87e8d5f8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___c_o_r_e.html#gaf04fba81a1f0a6d59e921ebc87e8d5f8">core_reset_src_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>These are the possible values for <em>reset_type</em> in <a class="el" href="structcore__attr__t.html">core_attr_t</a>. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaf04fba81a1f0a6d59e921ebc87e8d5f8aa0bbb4b9d5b607b43a1b0f9e8dcb2cdb"></a>CORE_RESET_SRC_SOFTWARE&#160;</td><td class="fielddoc">
-<p>Software Reset (default if hardware reset cannot be determined) </p>
+<tr><td class="fieldname"><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba83b871fc07c09371f45a3d23dc66595a"></a>CORE_PERIPH_SYS&#160;</td><td class="fielddoc">
+<p>System data </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf04fba81a1f0a6d59e921ebc87e8d5f8ac6f2aef9da1ce5b696dad040f8bcbab6"></a>CORE_RESET_SRC_POR&#160;</td><td class="fielddoc">
-<p>Power on Reset </p>
+<tr><td class="fieldname"><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba79aa948f1b5e4b3b55b3f46a503489cd"></a>CORE_PERIPH_QSPI&#160;</td><td class="fielddoc">
+<p>Quad SPI </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf04fba81a1f0a6d59e921ebc87e8d5f8a018feec3645bf1bf424bfa28724fe1ca"></a>CORE_RESET_SRC_EXTERNAL&#160;</td><td class="fielddoc">
-<p>External Reset signal </p>
+<tr><td class="fieldname"><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba4c921426a5922acca3d9077eb7704bb4"></a>CORE_PERIPH_USART&#160;</td><td class="fielddoc">
+<p>USART </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf04fba81a1f0a6d59e921ebc87e8d5f8a4d630cff829eda2bb6a4b6c7bfafc61b"></a>CORE_RESET_SRC_WDT&#160;</td><td class="fielddoc">
-<p>Watchdog Timer Reset </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf04fba81a1f0a6d59e921ebc87e8d5f8a209b5045149f90eaac04b725e3810711"></a>CORE_RESET_SRC_BOR&#160;</td><td class="fielddoc">
-<p>Brown Out Reset </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaf04fba81a1f0a6d59e921ebc87e8d5f8ad0efde405a00c0036dbd92e6bc30be65"></a>CORE_RESET_SRC_SYSTEM&#160;</td><td class="fielddoc">
-<p>Software System Reset </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="gae362c5b04fb1b6ea07f8bdaa21bc51f7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___c_o_r_e.html#gae362c5b04fb1b6ea07f8bdaa21bc51f7">core_sleep_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the sleep modes supported by HWPL </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggae362c5b04fb1b6ea07f8bdaa21bc51f7af823b996b773f6ba9f25335667bb0028"></a>CORE_SLEEP&#160;</td><td class="fielddoc">
-<p>Sleep mode </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae362c5b04fb1b6ea07f8bdaa21bc51f7a1a9f202f4a02d51817564ecb64883330"></a>CORE_DEEPSLEEP&#160;</td><td class="fielddoc">
-<p>Deep sleep (preserve SRAM) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae362c5b04fb1b6ea07f8bdaa21bc51f7abdec31630a7b2a46bb60344530b8b9d9"></a>CORE_DEEPSLEEP_STOP&#160;</td><td class="fielddoc">
-<p>Deep sleep (preserve SRAM, stop clocks) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggae362c5b04fb1b6ea07f8bdaa21bc51f7a373788321a29fb5f9e3a3a5e6d838943"></a>CORE_DEEPSLEEP_STANDBY&#160;</td><td class="fielddoc">
-<p>Turn the device off (lose SRAM) </p>
+<tr><td class="fieldname"><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99bad2ca4ca434157076af27187ac0070106"></a>CORE_PERIPH_SDIO&#160;</td><td class="fielddoc">
+<p>SD Input/output </p>
 </td></tr>
 </table>
 

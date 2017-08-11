@@ -1,7 +1,0 @@
-<map id="include/iface/dev/pio.h" name="include/iface/dev/pio.h">
-<area shape="rect" id="node2" href="$core_8h.html" title="Analog to Digital Converter Header File. " alt="" coords="111,81,272,106"/>
-<area shape="rect" id="node3" href="$iface_2link_8h.html" title="Link Layer Header. " alt="" coords="186,155,315,181"/>
-<area shape="rect" id="node4" href="$__exit_8c.html" title="src/sys/unistd/_exit.c" alt="" coords="5,230,149,255"/>
-<area shape="rect" id="node5" href="$sys_8h.html" title="include/iface/dev/sys.h" alt="" coords="173,230,328,255"/>
-<area shape="rect" id="node6" href="$__open_8c.html" title="src/sys/unistd/_open.c" alt="" coords="174,305,327,330"/>
-</map>

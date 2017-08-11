@@ -17,9 +17,7 @@ title: Stratify OS Docs
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Serial Peripheral Interface (SPI) Master<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
 </div><!--header-->
@@ -27,25 +25,13 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This module implements a hardware SPI master. The chip select functionality is not part of this module and must be implemented separately. This allows the application to use the SPI bus to access multiple devices. More information about accessing peripheral IO is in the <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a> section.</p>
 <p>The following is an example of how to read/write the SPI in an OS environment:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;fcntl.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;errno.h&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><span class="preprocessor">#include &quot;mcu/mcu.h&quot;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> read_write_spi(<span class="keywordtype">void</span>){</div><div class="line">     <span class="keywordtype">int</span> fd;</div><div class="line">     <a class="code" href="structspi__attr__t.html">spi_attr_t</a> attr;</div><div class="line">     <span class="keywordtype">char</span> buffer[16];</div><div class="line">     <span class="keywordtype">char</span> duplex_buffer[16];</div><div class="line"></div><div class="line">     fd = <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="stringliteral">&quot;/dev/spi0&quot;</span>, O_RDWR); <span class="comment">//Here O_RDWR could be OR&#39;d with O_NONBLOCK for non blocking operation</span></div><div class="line">     <span class="keywordflow">if</span> ( fd &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Error opening peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     } <span class="keywordflow">else</span> {</div><div class="line">     attr.<a class="code" href="structspi__attr__t.html#aac37374cb5e1d4287049ecfbaea4990d">bitrate</a> = 1000000; <span class="comment">//1MHz bitrate</span></div><div class="line">          attr.<a class="code" href="structspi__attr__t.html#a7bade17516e57cce47d220c0f0c175e1">format</a> = <a class="code" href="group___s_p_i.html#gga0ed680fdb405e7195d9f14032851eebbad49c166c5feaf65c09e37436e5617404">SPI_ATTR_FORMAT_SPI</a>;</div><div class="line">          attr.<a class="code" href="structspi__attr__t.html#a9963d531b0bd415fea88ceb0fbf2a761">pin_assign</a> = 0; <span class="comment">//Use GPIO configuration zero (see device specific documentation for details)</span></div><div class="line">          attr.<a class="code" href="structspi__attr__t.html#a3e43b924c441fb5b7fb78d6345a5cb9f">master</a> = <a class="code" href="group___s_p_i.html#ga6faa4977e39f942b86a645da384e5583">SPI_ATTR_MASTER</a>;</div><div class="line">          attr.<a class="code" href="structspi__attr__t.html#aad2cae831b3a1f36b6c5f926f1f5d25d">mode</a> = <a class="code" href="group___s_p_i.html#ggaac34dfe6c6b73b43a4656c9dce041034a925f70e60e25311cab69bdd17751dad2">SPI_ATTR_MODE0</a>;</div><div class="line">          attr.<a class="code" href="structspi__attr__t.html#a190b1f3aa35b559a723658f430343b24">width</a> = 8;</div><div class="line">          <span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_SETATTR, &amp;attr) &lt; 0 ){</div><div class="line">               printf(<span class="stringliteral">&quot;Failed to set peripheral configuration (%d)\n&quot;</span>, errno);</div><div class="line">               <span class="keywordflow">return</span> -1;</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now read or write the SPI in half duplex mode</span></div><div class="line">     strcpy(buffer, <span class="stringliteral">&quot;1/2 Duplex Test\n&quot;</span>);</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, buffer, strlen(buffer) &lt; 0 ){ <span class="comment">//returns after all bytes have been written</span></div><div class="line">          printf(<span class="stringliteral">&quot;Failed to write peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, buffer, 16) &lt; 0 ){ <span class="comment">//Return after all bytes have been read</span></div><div class="line">          printf(<span class="stringliteral">&quot;Failed to read peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//Now read or write the SPI in full duplex mode</span></div><div class="line"></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___s_p_i.html#ga889b7810c9c1f1bae770b150227fcd97">I_SPI_SETDUPLEX</a>, duplex_buffer) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to configure duplex buffer (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     strcpy(buffer, <span class="stringliteral">&quot;Full Duplex Test\n&quot;</span>);</div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write</a>(fd, buffer, strlen(buffer) &lt; 0 ){ <span class="comment">//returns after all bytes have been written</span></div><div class="line">          printf(<span class="stringliteral">&quot;Failed to write peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read</a>(fd, buffer, 16) &lt; 0 ){ <span class="comment">//doesn&#39;t return until 16 bytes arrive (use O_NONBLOCK to return with whatever is available)</span></div><div class="line">          printf(<span class="stringliteral">&quot;Failed to read peripheral (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//This puts the SPI back in half-duplex mode</span></div><div class="line">     <span class="keywordflow">if</span> ( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___s_p_i.html#ga889b7810c9c1f1bae770b150227fcd97">I_SPI_SETDUPLEX</a>, NULL) &lt; 0 ){</div><div class="line">          printf(<span class="stringliteral">&quot;Failed to configure duplex buffer (%d)\n&quot;</span>, errno);</div><div class="line">     }</div><div class="line"></div><div class="line">     }</div><div class="line">     <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(fd);</div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structspi__attr__t.html">spi_attr_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">SPI Attribute Data Structure.  <a href="structspi__attr__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="fragment"></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga6faa4977e39f942b86a645da384e5583"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga6faa4977e39f942b86a645da384e5583">SPI_ATTR_MASTER</a></td></tr>
-<tr class="memdesc:ga6faa4977e39f942b86a645da384e5583"><td class="mdescLeft">&#160;</td><td class="mdescRight">This specifies the attribute master value for SPI master.  <a href="#ga6faa4977e39f942b86a645da384e5583">More...</a><br /></td></tr>
-<tr class="separator:ga6faa4977e39f942b86a645da384e5583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1457e15fdf08e9acf8d795988a21766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#gac1457e15fdf08e9acf8d795988a21766">SPI_ATTR_SLAVE</a></td></tr>
-<tr class="memdesc:gac1457e15fdf08e9acf8d795988a21766"><td class="mdescLeft">&#160;</td><td class="mdescRight">This specifies the attribute master value for SPI slave. This value can't be used with spi_ioctl(). It must be used with spi_slave_ioctl().  <a href="#gac1457e15fdf08e9acf8d795988a21766">More...</a><br /></td></tr>
-<tr class="separator:gac1457e15fdf08e9acf8d795988a21766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaad2728d9ebb71afdabe3381dd55f0bb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaad2728d9ebb71afdabe3381dd55f0bb8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#gaad2728d9ebb71afdabe3381dd55f0bb8">I_SPI_ATTR</a></td></tr>
-<tr class="memdesc:gaad2728d9ebb71afdabe3381dd55f0bb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the SPI attributes. <br /></td></tr>
-<tr class="separator:gaad2728d9ebb71afdabe3381dd55f0bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9af95975cd0f8779447aa0c9b5918d82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9af95975cd0f8779447aa0c9b5918d82"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga9af95975cd0f8779447aa0c9b5918d82">I_SPI_GETINFO</a></td></tr>
+<tr class="memdesc:ga9af95975cd0f8779447aa0c9b5918d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request gets the SPI attributes. <br /></td></tr>
+<tr class="separator:ga9af95975cd0f8779447aa0c9b5918d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3c48de01f44d809e504b02d420ce66e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3c48de01f44d809e504b02d420ce66e2"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga3c48de01f44d809e504b02d420ce66e2">I_SPI_SETATTR</a></td></tr>
 <tr class="memdesc:ga3c48de01f44d809e504b02d420ce66e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This request sets the SPI attributes. <br /></td></tr>
@@ -53,27 +39,8 @@ Macros</h2></td></tr>
 <tr class="memitem:gab641415ca6596d88617661aaf2457739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#gab641415ca6596d88617661aaf2457739">I_SPI_SWAP</a></td></tr>
 <tr class="memdesc:gab641415ca6596d88617661aaf2457739"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#gab641415ca6596d88617661aaf2457739">More...</a><br /></td></tr>
 <tr class="separator:gab641415ca6596d88617661aaf2457739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga889b7810c9c1f1bae770b150227fcd97"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_p_i.html#ga889b7810c9c1f1bae770b150227fcd97">I_SPI_SETDUPLEX</a></td></tr>
-<tr class="memdesc:ga889b7810c9c1f1bae770b150227fcd97"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ga889b7810c9c1f1bae770b150227fcd97">More...</a><br /></td></tr>
-<tr class="separator:ga889b7810c9c1f1bae770b150227fcd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga889b7810c9c1f1bae770b150227fcd97"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_SPI_SETDUPLEX</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This tells the SPI bus to perform full or half duplex operations. The ctl argument to spi_ioctl() is the pointer to the buffer where the duplex memory is stored. If the ctl argument is NULL, half duplex operation is enabled. Otherwise, reads and writes are full duplex. For example, on <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read()</a> operations, the SPI bus will be written with the contents of the duplex pointer. </p>
-
-</div>
-</div>
 <a class="anchor" id="gab641415ca6596d88617661aaf2457739"></a>
 <div class="memitem">
 <div class="memproto">
@@ -83,83 +50,8 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This tells the SPI bus to get a swap a byte from the bus. spi_ioctl() returns the word read from the bus; The ctl argument to spi_ioctl() is the word to put (not a pointer to <a class="el" href="structspi__attr__t.html" title="SPI Attribute Data Structure. ">spi_attr_t</a>).</p>
+<p>This tells the SPI bus to get a swap a byte from the bus. spi_ioctl() returns the word read from the bus; The ctl argument to spi_ioctl() is the word to put (not a pointer to spi_attr_t).</p>
 <p>The following example puts 0xAC on the bus and stores whatever is read from the bus in swapped_word. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;int swapped_word;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;swapped_word = ioctl(spi_fd, I_SPI_SWAP, 0xAC);</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga6faa4977e39f942b86a645da384e5583"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPI_ATTR_MASTER</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="gac1457e15fdf08e9acf8d795988a21766"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SPI_ATTR_SLAVE</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gaac34dfe6c6b73b43a4656c9dce041034"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This lists the valid SPI mode types. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggaac34dfe6c6b73b43a4656c9dce041034a925f70e60e25311cab69bdd17751dad2"></a>SPI_ATTR_MODE0&#160;</td><td class="fielddoc">
-<p>SPI Mode 0 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaac34dfe6c6b73b43a4656c9dce041034a2ab2ff89b36b85669b92107e6ad34be8"></a>SPI_ATTR_MODE1&#160;</td><td class="fielddoc">
-<p>SPI Mode 1 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaac34dfe6c6b73b43a4656c9dce041034a6d73e87183fc02e7da42175fa44f665d"></a>SPI_ATTR_MODE2&#160;</td><td class="fielddoc">
-<p>SPI Mode 2 </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="ggaac34dfe6c6b73b43a4656c9dce041034a2174a55e6163a71cbdb385461666376d"></a>SPI_ATTR_MODE3&#160;</td><td class="fielddoc">
-<p>SPI Mode 3 </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a class="anchor" id="ga0ed680fdb405e7195d9f14032851eebb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga0ed680fdb405e7195d9f14032851eebbad49c166c5feaf65c09e37436e5617404"></a>SPI_ATTR_FORMAT_SPI&#160;</td><td class="fielddoc">
-<p>SPI Format </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga0ed680fdb405e7195d9f14032851eebba40e286f8948f9fbde964e42c67941398"></a>SPI_ATTR_FORMAT_TI&#160;</td><td class="fielddoc">
-<p>TI Format </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga0ed680fdb405e7195d9f14032851eebba7e042162d6a2937d41b77a7dad80e72a"></a>SPI_ATTR_FORMAT_MICROWIRE&#160;</td><td class="fielddoc">
-<p>Microwire Format </p>
-</td></tr>
-</table>
-
 </div>
 </div>
 </div><!-- contents -->

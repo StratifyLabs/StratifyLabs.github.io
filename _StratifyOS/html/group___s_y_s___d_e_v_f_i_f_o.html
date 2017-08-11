@@ -28,92 +28,28 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdevfifo__attr__t.html">devfifo_attr_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdevfifo__info__t.html">devfifo_info_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdevfifo__cfg__t.html">devfifo_cfg_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdevfifo__config__t.html">devfifo_config_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga7380b90b4a5446ee9431e75b27943a38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v_f_i_f_o.html#ga7380b90b4a5446ee9431e75b27943a38">DEVFIFO_DEVICE</a>(device_name,  cfg_ptr,  state_ptr,  mode_value,  uid_value,  gid_value)</td></tr>
-<tr class="separator:ga7380b90b4a5446ee9431e75b27943a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga800e5006bcde23a873adb87feb08c160"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v_f_i_f_o.html#ga800e5006bcde23a873adb87feb08c160">I_DEVFIFO_ATTR</a></td></tr>
-<tr class="separator:ga800e5006bcde23a873adb87feb08c160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9457a6d30f19447deef334bfae345bc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v_f_i_f_o.html#ga9457a6d30f19447deef334bfae345bc5">I_DEVFIFO_GETINFO</a></td></tr>
+<tr class="separator:ga9457a6d30f19447deef334bfae345bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga7380b90b4a5446ee9431e75b27943a38"></a>
+<a class="anchor" id="ga9457a6d30f19447deef334bfae345bc5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DEVFIFO_DEVICE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">device_name, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cfg_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">state_ptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">mode_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">uid_value, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">gid_value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This defines the configuration values for a FIFO that is connected to an underlying device.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">device_name</td><td>The name of the device (e.g "uart-fifo") </td></tr>
-    <tr><td class="paramname">cfg_ptr</td><td>A pointer to the const <a class="el" href="structdevfifo__cfg__t.html">devfifo_cfg_t</a> data structure </td></tr>
-    <tr><td class="paramname">state_ptr</td><td>A pointer to the state structure (see devfifo_state_t) </td></tr>
-    <tr><td class="paramname">mode_value</td><td>The access mode (usually 0666) </td></tr>
-    <tr><td class="paramname">uid_value</td><td>The User ID </td></tr>
-    <tr><td class="paramname">gid_value</td><td>The Group ID</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;const device_t devices[DEVICES_TOTAL+1] = {</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  DEVICE_PERIPH(&quot;uart0&quot;, uart, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;  DEVFIFO_DEVICE(&quot;uart0-fifo&quot;, &amp;devices[0], 0666, USER_ROOT, GROUP_ROOT),</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;     ...</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     DEVICE_TERMINATOR</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --> 
-</div>
-</div>
-<a class="anchor" id="ga800e5006bcde23a873adb87feb08c160"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_DEVFIFO_ATTR</td>
+          <td class="memname">#define I_DEVFIFO_GETINFO</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>This request gets the size of the FIFO in bytes.</p>
-<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;devfifo_attr_t attr;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(fifo_fd, I_DEVFIFO_GETATTR, &amp;attr);</div></div><!-- fragment --> 
+<p>Example: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;devfifo_attr_t attr;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;ioctl(fifo_fd, I_DEVFIFO_GETINFO, &amp;attr);</div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->
