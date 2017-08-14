@@ -35,7 +35,7 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class allows access to kernel attributes and functions. </p>
+<div class="textblock"><p>This class allows access to system attributes and functions. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -138,7 +138,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2"></a>
+<a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -148,23 +148,23 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2a80485094e44d80af136f8e29592f90cc"></a>LAUNCH_OPTIONS_FLASH&#160;</td><td class="fielddoc">
-<p>Install in flash memory. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a80485094e44d80af136f8e29592f90cc"></a>LAUNCH_OPTIONS_FLASH&#160;</td><td class="fielddoc">
+<p>Install in flash memory </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2ab1841e095848c67d38ca6f16d74acf57"></a>LAUNCH_OPTIONS_STARTUP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710ab1841e095848c67d38ca6f16d74acf57"></a>LAUNCH_OPTIONS_STARTUP&#160;</td><td class="fielddoc">
 <p>Run at startup (must be in flash) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2ad6ca31ec84ba7ae236a62d436c73373c"></a>LAUNCH_OPTIONS_ROOT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710ad6ca31ec84ba7ae236a62d436c73373c"></a>LAUNCH_OPTIONS_ROOT&#160;</td><td class="fielddoc">
 <p>Run as root (if applicable) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2a1927718f55e1533de245405f317c958d"></a>LAUNCH_OPTIONS_REPLACE&#160;</td><td class="fielddoc">
-<p>Delete if application exists. </p>
+<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a1927718f55e1533de245405f317c958d"></a>LAUNCH_OPTIONS_REPLACE&#160;</td><td class="fielddoc">
+<p>Delete if application exists </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2a27cc09cab159612ff58b933f0ba73475"></a>LAUNCH_OPTIONS_ORPHAN&#160;</td><td class="fielddoc">
-<p>Allow app to become an orphan. </p>
+<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a27cc09cab159612ff58b933f0ba73475"></a>LAUNCH_OPTIONS_ORPHAN&#160;</td><td class="fielddoc">
+<p>Allow app to become an orphan </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2c4fd69d049ecb634bf69421089bbeb2a8a5d28e823493d94d207eed07aef1286"></a>LAUNCH_OPTIONS_UNIQUE_NAMES&#160;</td><td class="fielddoc">
-<p>Create a unique name on install. </p>
+<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a8a5d28e823493d94d207eed07aef1286"></a>LAUNCH_OPTIONS_UNIQUE_NAMES&#160;</td><td class="fielddoc">
+<p>Create a unique name on install </p>
 </td></tr>
 </table>
 
@@ -226,10 +226,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Frees the RAM associated with the app without deleting the code from flash. This should not be called when the app is currently running.</p>
+<p>Frees the RAM associated with the app without deleting the code from flash (should not be called when the app is currently running).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>The path to the app (use <em>exec_dest</em> from <a class="el" href="classsys_1_1_sys.html#a04a093cc9c64b589e6a7ecd391427717">launch()</a>) </td></tr>
+    <tr><td class="paramname">path</td><td>The path to the app (use <em>exec_dest</em> from launcheight()) </td></tr>
   </table>
   </dd>
 </dl>
@@ -303,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Loads the current kernel attributes.</p>
+<p>Loads the current system info.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">attr</td><td>A reference to where the data should be stored </td></tr>
@@ -508,7 +508,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Launches a new application</p>
+<p>Launches a new application.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the application </td></tr>
@@ -613,7 +613,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reclaims RAM that was freed using <a class="el" href="classsys_1_1_sys.html#a763c36d9129fb99f1d317c7fe165fee0">free_ram()</a></p>
+<p>Reclaims RAM that was freed using <a class="el" href="classsys_1_1_sys.html#a763c36d9129fb99f1d317c7fe165fee0">free_ram()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the app </td></tr>
@@ -656,7 +656,7 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Executes a kernel request. The kernel request must be defined and implemented by the board support package.</p>
+<p>Executes a kernel request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">req</td><td>The request number </td></tr>
@@ -664,7 +664,8 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of the execution of the request. (-1 if request is not available) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of the execution of the request. (-1 if request is not available)</dd></dl>
+<p>The kernel request must be defined and implemented by the board support package. </p>
 
 </div>
 </div>

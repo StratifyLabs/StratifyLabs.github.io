@@ -81,6 +81,33 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bec52ab1d2233a0f791562165cc54d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a4bec52ab1d2233a0f791562165cc54d9">yield</a> ()</td></tr>
 <tr class="separator:a4bec52ab1d2233a0f791562165cc54d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="ad8457187e0d4b1cbdf2d5e4e7775b157"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ad8457187e0d4b1cbdf2d5e4e7775b157ab3a54e152cecd84310927eb4eb6f203e"></a>ID_ERROR&#160;</td><td class="fielddoc">
+<p>ID is an error </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8457187e0d4b1cbdf2d5e4e7775b157a950152386ef10c731cfff6db5219ceae"></a>ID_UNINITIALIZED&#160;</td><td class="fielddoc">
+<p>ID is uninitialized </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8457187e0d4b1cbdf2d5e4e7775b157a6f9fe45ac05f3b7f95cfaeb6057a907c"></a>JOINABLE&#160;</td><td class="fielddoc">
+<p>Joinable thread </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ad8457187e0d4b1cbdf2d5e4e7775b157a09f29c06b80b39c943b5416c8c90077a"></a>DETACHED&#160;</td><td class="fielddoc">
+<p>Detacthed thread </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a467bd45ac6734704477c13f9d6892b14"></a>
 <div class="memitem">
@@ -105,7 +132,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This constructs a new thread object</p>
+<p>Constructs a new thread object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stack_size</td><td>The stack size of the new thread (default is 4096) </td></tr>
@@ -137,7 +164,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Allows read only access to the thread attributes </p>
+<p>Allows read only access to the thread attributes. </p>
 
 </div>
 </div>
@@ -176,7 +203,18 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Start the thread </p>
+<p>Starts the thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>The function to execute as a new thread </td></tr>
+    <tr><td class="paramname">args</td><td>The arguments to pass to the new thread </td></tr>
+    <tr><td class="paramname">prio</td><td>The priority to set for the new thread </td></tr>
+    <tr><td class="paramname">policy</td><td>The new thread's scheduling policy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>This method creates a new thread. The <a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> object only manages one thread at a time. To create multiple threads, you will need multiple instances of the <a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> object. </p>
 
 </div>
 </div>
@@ -192,7 +230,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the detach state (Thread::JOINABLE or Thread::DETACHED) </p>
+<p>Gets the detach state (<a class="el" href="classsys_1_1_thread.html#ad8457187e0d4b1cbdf2d5e4e7775b157a6f9fe45ac05f3b7f95cfaeb6057a907c">Thread::JOINABLE</a> or <a class="el" href="classsys_1_1_thread.html#ad8457187e0d4b1cbdf2d5e4e7775b157a09f29c06b80b39c943b5416c8c90077a">Thread::DETACHED</a>). </p>
 
 </div>
 </div>
@@ -208,7 +246,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the thread policy </p>
+<p>Get the thread policy. </p>
 
 </div>
 </div>
@@ -224,7 +262,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the thread priority </p>
+<p>Gets the thread priority. </p>
 
 </div>
 </div>
@@ -240,7 +278,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the stacksize </p>
+<p>Gets the stacksize. </p>
 
 </div>
 </div>
@@ -264,7 +302,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the ID of the thread </p>
+<p>Gets the ID of the thread. </p>
 
 </div>
 </div>
@@ -296,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if the thread is running </p>
+<p>Checks if the thread is running. </p>
 
 </div>
 </div>
@@ -331,7 +369,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Join the current thread to the specified thread</p>
+<p>Joins the current thread to the specified thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ident</td><td>the ID of the target thread </td></tr>
@@ -356,7 +394,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The calling thread will joing the thread with id <a class="el" href="classsys_1_1_thread.html#a858cae77f4590d279c2110b4843bc4ea">Thread::id()</a></p>
+<p>Joins the calling thread with id <a class="el" href="classsys_1_1_thread.html#a858cae77f4590d279c2110b4843bc4ea">Thread::id()</a></p>
 <dl class="section return"><dt>Returns</dt><dd>0 if joined, -1 if couldn't join (doesn't exist or is detached) </dd></dl>
 
 </div>
@@ -405,7 +443,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reset the object (thread must not be running) </p>
+<p>Resets the object (thread must not be running).</p>
+<p>After a thread has been created (using <a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create()</a>) and terminated, this method can be used to reset the object so that <a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create()</a> can be called again. </p>
 
 </div>
 </div>
@@ -432,7 +471,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the thread priority </p>
+<p>Sets the thread priority. </p>
 
 </div>
 </div>
@@ -473,7 +512,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the scheduler</p>
+<p>Sets the scheduler.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pid</td><td>The process ID </td></tr>
@@ -499,7 +538,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the stacksize (no effect after create) </p>
+<p>Sets the stacksize (no effect after <a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create()</a> method). </p>
 
 </div>
 </div>
@@ -526,7 +565,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Wait for the thread to complete (joins thread if it is not detached) </p>
+<p>Waits for the thread to complete (joins thread if it is not detached).</p>
+<p>If the thread is joinable, this method will join the thread which blocks until the thread returns. If the thread is not-joinable, this method will poll <a class="el" href="classsys_1_1_thread.html#a7e630baedf218bcdc9c97cd04ee98575">is_running()</a> until the thread completes. </p>
 
 </div>
 </div>
@@ -550,7 +590,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Yield the processor to another thread </p>
+<p>Yields the processor to another thread </p>
 
 </div>
 </div>

@@ -35,16 +35,16 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class is for accessing the current time. </p>
-</div><table class="memberdecls">
+<div class="textblock"><p>This class is for accessing the current time as well as adding and subtracting times and dates.</p>
+<div class="fragment"><div class="line"><a class="code" href="classsys_1_1_time.html#a1e6ea80c4ea924a8430ef44bd6c72846">Time</a> now; <span class="comment">//current time</span></div><div class="line"><a class="code" href="classsys_1_1_time.html#a1e6ea80c4ea924a8430ef44bd6c72846">Time</a> ten_minutes(0, 10, 0); <span class="comment">//duration of 10 minutes</span></div><div class="line"></div><div class="line">now += ten_minutes; <span class="comment">//adds ten minutes to now</span></div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af78064c64bd2aa7b8dca3dc21537991a"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#af78064c64bd2aa7b8dca3dc21537991a">get_day</a> () const </td></tr>
 <tr class="separator:af78064c64bd2aa7b8dca3dc21537991a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019e012b00ba9e260ec294e849f583d6"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#a019e012b00ba9e260ec294e849f583d6">get_month</a> () const </td></tr>
-<tr class="separator:a019e012b00ba9e260ec294e849f583d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa3546595ac9f149e77998a6bbbb039c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#afa3546595ac9f149e77998a6bbbb039c">get_month_name</a> () const </td></tr>
 <tr class="separator:afa3546595ac9f149e77998a6bbbb039c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaacdbfc5ef39940a68105cbfb430fda6"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#aaacdbfc5ef39940a68105cbfb430fda6">get_montheight</a> () const </td></tr>
+<tr class="separator:aaacdbfc5ef39940a68105cbfb430fda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac435172645b2da78ee5422a259369266"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#ac435172645b2da78ee5422a259369266">get_time_of_day</a> ()</td></tr>
 <tr class="separator:ac435172645b2da78ee5422a259369266"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad8cb079dbed9dc079116ea7778c6c1"><td class="memItemLeft" align="right" valign="top">struct tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#a4ad8cb079dbed9dc079116ea7778c6c1">get_tm</a> () const </td></tr>
@@ -59,6 +59,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab6ef5b6de2175e3df24d19a7c7c4421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa42b31436be4dd04805fe0c0a75cf6d"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#afa42b31436be4dd04805fe0c0a75cf6d">minute</a> () const </td></tr>
 <tr class="separator:afa42b31436be4dd04805fe0c0a75cf6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bd155af49f8e3b8543f288ddb5899f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#a1bd155af49f8e3b8543f288ddb5899f7">operator u32</a> ()</td></tr>
+<tr class="separator:a1bd155af49f8e3b8543f288ddb5899f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bacc5eb104aee7e5e5cc07efc9bf2ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsys_1_1_time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#a7bacc5eb104aee7e5e5cc07efc9bf2ea">operator+=</a> (const <a class="el" href="classsys_1_1_time.html">Time</a> &amp;a)</td></tr>
 <tr class="separator:a7bacc5eb104aee7e5e5cc07efc9bf2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7f3d79598414535f6ebafcc46e2a42f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsys_1_1_time.html">Time</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_time.html#af7f3d79598414535f6ebafcc46e2a42f">operator-=</a> (const <a class="el" href="classsys_1_1_time.html">Time</a> &amp;a)</td></tr>
@@ -100,7 +102,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct using current time </p>
+<p>Constructs using current time. </p>
 
 </div>
 </div>
@@ -133,7 +135,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct using an amount of time </p>
+<p>Constructs using an amount of time. </p>
 
 </div>
 </div>
@@ -150,23 +152,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Day of Month (from 1 to 31) </p>
-
-</div>
-</div>
-<a class="anchor" id="a019e012b00ba9e260ec294e849f583d6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">u32 sys::Time::get_month </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Month (from 1 to 12) </p>
+<p>Returns the day of month (from 1 to 31). </p>
 
 </div>
 </div>
@@ -182,7 +168,23 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the name of the month </p>
+<p>Gets the name of the month. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaacdbfc5ef39940a68105cbfb430fda6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 sys::Time::get_montheight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the month (from 1 to 12). </p>
 
 </div>
 </div>
@@ -198,7 +200,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assign the system time of day to the time stored in this object and return the current system time. </p>
+<p>Assigns the system time of day to the time stored in this object and returns the current system time. </p>
 
 </div>
 </div>
@@ -214,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Convert the time to a struct tm </p>
+<p>Converts the time to a struct tm. </p>
 
 </div>
 </div>
@@ -230,7 +232,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Day of Week (from 1 to 7) </p>
+<p>Returns the day of week (from 1 to 7). </p>
 
 </div>
 </div>
@@ -246,7 +248,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Year (e.g. 2014) </p>
+<p>Returns the year (e.g. 2014) </p>
 
 </div>
 </div>
@@ -262,7 +264,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Day of the year (1 to 366) </p>
+<p>Returns the day of the year (1 to 366). </p>
 
 </div>
 </div>
@@ -278,7 +280,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hours (from 0 to 23) </p>
+<p>Returns hours (from 0 to 23). </p>
 
 </div>
 </div>
@@ -294,7 +296,31 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Minutes (from 0 to 59) </p>
+<p>Returns minutes (from 0 to 59). </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bd155af49f8e3b8543f288ddb5899f7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sys::Time::operator u32 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the time (time_t). </p>
 
 </div>
 </div>
@@ -311,7 +337,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add to the current value </p>
+<p>Adds to the current value. </p>
 
 </div>
 </div>
@@ -328,7 +354,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Subtract from the current value </p>
+<p>Subtracts from the current value. </p>
 
 </div>
 </div>
@@ -345,7 +371,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Subtract another time value </p>
+<p>Assigns another <a class="el" href="classsys_1_1_time.html" title="Time Class. ">Time</a>. </p>
 
 </div>
 </div>
@@ -362,7 +388,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Assign another time value </p>
+<p>Assigns another time value (time_t). </p>
 
 </div>
 </div>
@@ -378,7 +404,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Seconds (from 0 to 59) </p>
+<p>Returns seconds (from 0 to 59). </p>
 
 </div>
 </div>
@@ -403,7 +429,13 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the system time </p>
+<p>Sets the system time</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td><a class="el" href="classsys_1_1_time.html" title="Time Class. ">Time</a> to use to set the system time </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -419,7 +451,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the system time to the time stored in this object </p>
+<p>Sets the system time to the time stored in this object. </p>
 
 </div>
 </div>
@@ -452,17 +484,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Set the time. </p>
-<p>This method is for setting a finite time rather than an absolute time.</p>
+<p>Sets the value in <a class="el" href="classsys_1_1_time.html" title="Time Class. ">Time</a> to a number of seconds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hour</td><td>Number of hours </td></tr>
     <tr><td class="paramname">min</td><td>Number of minutes </td></tr>
-    <tr><td class="paramname">sec</td><td>Number of seconds </td></tr>
+    <tr><td class="paramname">sec</td><td>Number of seconds</td></tr>
   </table>
   </dd>
 </dl>
+<p>This <a class="el" href="classsys_1_1_time.html" title="Time Class. ">Time</a> object will hold a duration of time rather than a calendar time. </p>
 
 </div>
 </div>
@@ -487,7 +518,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set the current value</p>
+<p>Sets the current value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tm</td><td>Number of seconds since epoch </td></tr>
@@ -517,7 +548,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>The time value (number of seconds since epoch) </p>
+<p>Returns the time value (number of seconds since epoch). </p>
 
 </div>
 </div>

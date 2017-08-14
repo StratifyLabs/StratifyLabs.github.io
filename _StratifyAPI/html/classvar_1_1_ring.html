@@ -81,7 +81,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Construct a new ring buffer</p>
+<p>Constructs a new ring buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>A pointer to the data </td></tr>
@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the number fo free bytes in the buffer </p>
+<p>Calculates the number of free bytes in the buffer. </p>
 
 </div>
 </div>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calculate the number of bytes calc_used in the buffer </p>
+<p>Calculates the number of bytes calc_used in the buffer. </p>
 
 </div>
 </div>
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Empty the buffer </p>
+<p>Flushes the buffer. </p>
 
 </div>
 </div>
@@ -162,7 +162,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Access whether or not buffer allows overwriting The default value for overflow allowed is true. Use set_overflow_allowed(false) to disable overflow. </p>
+<p>Accesses whether or not buffer allows overwriting The default value for overflow allowed is true. Use set_overflow_allowed(false) to disable overflow. </p>
 
 </div>
 </div>
@@ -189,7 +189,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read data from the ring buffer</p>
+<p>Reads data from the ring buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>A pointer to the destination data buffer </td></tr>
@@ -222,7 +222,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Set whether or not overflow is allowed in the buffer</p>
+<p>Sets whether or not overflow is allowed in the buffer.</p>
 <p>If overflow is allowed, <a class="el" href="classvar_1_1_ring.html#a62be7ea877cb075a9bb094ca8e3b4006">write()</a> will always write and return <em>nbytes</em> as specified. If overflow is not allowed, <a class="el" href="classvar_1_1_ring.html#a62be7ea877cb075a9bb094ca8e3b4006">write()</a> will only write until the buffer is full.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -253,7 +253,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Access the size of the buffer </p>
+<p>Accesses the size of the buffer. </p>
 
 </div>
 </div>
@@ -280,7 +280,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Write data to the ring buffer</p>
+<p>Writes data to the ring buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>Pointer to the data to write </td></tr>

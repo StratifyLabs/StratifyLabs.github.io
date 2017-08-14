@@ -38,14 +38,14 @@ title: Stratify OS Docs
 <div class="textblock"></div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8b833c4ce993e6b64cb302b16f872b1f"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a8b833c4ce993e6b64cb302b16f872b1f">bitmap</a> (char c, bool ascii=true) const  =0</td></tr>
-<tr class="separator:a8b833c4ce993e6b64cb302b16f872b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77a85ff4e3be063c4b781b37752450a6"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a77a85ff4e3be063c4b781b37752450a6">bitmap</a> () const  =0</td></tr>
+<tr class="separator:a77a85ff4e3be063c4b781b37752450a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad49fd609d0d9855b93e44884ceaa0cf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#ad49fd609d0d9855b93e44884ceaa0cf0">calc_len</a> (const char *str) const </td></tr>
 <tr class="separator:ad49fd609d0d9855b93e44884ceaa0cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac619518d2744d39a76dc66452a779b34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#ac619518d2744d39a76dc66452a779b34">draw_str</a> (const char *str, <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;<a class="el" href="classsgfx_1_1_font.html#a8b833c4ce993e6b64cb302b16f872b1f">bitmap</a>, sg_point_t point) const </td></tr>
-<tr class="separator:ac619518d2744d39a76dc66452a779b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53e2102aee09704bc738338ac03230f0"><td class="memItemLeft" align="right" valign="top">virtual sg_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a53e2102aee09704bc738338ac03230f0">get_h</a> () const  =0</td></tr>
-<tr class="separator:a53e2102aee09704bc738338ac03230f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b8e8ded45e57eb6e995ecf6991cf0ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a5b8e8ded45e57eb6e995ecf6991cf0ee">draw_str</a> (const char *str, <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;dest, sg_point_t point) const </td></tr>
+<tr class="separator:a5b8e8ded45e57eb6e995ecf6991cf0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd99bd562a82b546f341a00e16197c19"><td class="memItemLeft" align="right" valign="top">virtual sg_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#abd99bd562a82b546f341a00e16197c19">get_height</a> () const  =0</td></tr>
+<tr class="separator:abd99bd562a82b546f341a00e16197c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d156823e63bd4da001d31d54d90834e"><td class="memItemLeft" align="right" valign="top">sg_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a4d156823e63bd4da001d31d54d90834e">letter_spacing</a> () const </td></tr>
 <tr class="separator:a4d156823e63bd4da001d31d54d90834e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8090bfc68c3a33a98ad58c6cd55f3a25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_font.html#a8090bfc68c3a33a98ad58c6cd55f3a25">set_letter_spacing</a> (sg_size_t spacing)</td></tr>
@@ -63,7 +63,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a013ee3a82476ea0c34e22fd36a1c7435"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8b833c4ce993e6b64cb302b16f872b1f"></a>
+<a class="anchor" id="a77a85ff4e3be063c4b781b37752450a6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -73,19 +73,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a>&amp; sgfx::Font::bitmap </td>
           <td>(</td>
-          <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>c</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>ascii</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -103,7 +92,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a bitmap or zero if the character could not be loaded </dd></dl>
 
-<p>Implemented in <a class="el" href="classsgfx_1_1_font_memory.html#a77e080d5f8af398d1e6f5cc6581ddd83">sgfx::FontMemory</a>.</p>
+<p>Implemented in <a class="el" href="classsgfx_1_1_font_memory.html#a4bedec344f7fe875b8d71fa30aa151e7">sgfx::FontMemory</a>.</p>
 
 </div>
 </div>
@@ -148,7 +137,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac619518d2744d39a76dc66452a779b34"></a>
+<a class="anchor" id="a5b8e8ded45e57eb6e995ecf6991cf0ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -162,7 +151,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;&#160;</td>
-          <td class="paramname"><em>bitmap</em>, </td>
+          <td class="paramname"><em>dest</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -190,7 +179,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a53e2102aee09704bc738338ac03230f0"></a>
+<a class="anchor" id="abd99bd562a82b546f341a00e16197c19"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -198,7 +187,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual sg_size_t sgfx::Font::get_h </td>
+          <td class="memname">virtual sg_size_t sgfx::Font::get_height </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -212,7 +201,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>The maximum height of the font. </p>
 
-<p>Implemented in <a class="el" href="classsgfx_1_1_font_memory.html#a5f857aab55142520a70e65b8e20505ac">sgfx::FontMemory</a>.</p>
+<p>Implemented in <a class="el" href="classsgfx_1_1_font_memory.html#a669cc8a0fb79b285aca82f00466e2cc4">sgfx::FontMemory</a>.</p>
 
 </div>
 </div>

@@ -258,10 +258,11 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">loc</td><td>The channel number </td></tr>
+    <tr><td class="paramname">value</td><td>The value to assign to the channel </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The value of the channel or (u32)-1 if the IOCTL request fails</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
 <p>The <em>loc</em> parameter is the input or output channel. Input channels should be or'd with the MCU_CHANNEL_FLAG_IS_INPUT value. </p>
 
 </div>

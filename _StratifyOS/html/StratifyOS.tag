@@ -2155,6 +2155,79 @@
       <anchor>gab641415ca6596d88617661aaf2457739</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>spi_flag_t</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>ga1345813b5f798947ef33053642ed97dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FORMAT_SPI</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda7d35814556b0e3749326c685d1c0f6cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FORMAT_TI</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddace99e504f07be46acf9b61143d68f6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FORMAT_MICROWIRE</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddabb04160604b03bc02126107726dd084a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE0</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddaffd80b535b20edba54443437e906a464</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE1</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda2f53939ea750e1e7da188b6c972f07bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE2</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddacddc5aaf0f144e4be5171772d541e698</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE3</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda81253fda7d12b0e1c5f6c4e77f7d0699</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_SET_MASTER</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddac74aa61f57a88bb01266cf315be8e97c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_SET_SLAVE</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda98b290b9ea223a8f9d3004bf7cd0c369</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FULL_DUPLEX</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda5c04d12f91e8ffeceba64916df16d613</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_HALF_DUPLEX</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddaf57a97576df64360a8aa9f012d046e74</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>sys.h</name>
@@ -3950,11 +4023,6 @@
       <anchor>ga69c97039c9ec10a30e5edbdf365e3bbd</anchor>
       <arglist>(unsigned int seconds)</arglist>
     </member>
-  </compound>
-  <compound kind="file">
-    <name>unistd_data_transfer.c</name>
-    <path>/Users/tgil/git/StratifyOS/src/sys/unistd/</path>
-    <filename>unistd__data__transfer_8c</filename>
   </compound>
   <compound kind="file">
     <name>usleep.c</name>
@@ -8521,6 +8589,79 @@
       <name>I_SPI_SWAP</name>
       <anchorfile>group___s_p_i.html</anchorfile>
       <anchor>gab641415ca6596d88617661aaf2457739</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>spi_flag_t</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>ga1345813b5f798947ef33053642ed97dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FORMAT_SPI</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda7d35814556b0e3749326c685d1c0f6cb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FORMAT_TI</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddace99e504f07be46acf9b61143d68f6ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FORMAT_MICROWIRE</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddabb04160604b03bc02126107726dd084a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE0</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddaffd80b535b20edba54443437e906a464</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE1</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda2f53939ea750e1e7da188b6c972f07bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE2</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddacddc5aaf0f144e4be5171772d541e698</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_MODE3</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda81253fda7d12b0e1c5f6c4e77f7d0699</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_SET_MASTER</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddac74aa61f57a88bb01266cf315be8e97c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_SET_SLAVE</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda98b290b9ea223a8f9d3004bf7cd0c369</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_FULL_DUPLEX</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97dda5c04d12f91e8ffeceba64916df16d613</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SPI_FLAG_IS_HALF_DUPLEX</name>
+      <anchorfile>group___s_p_i.html</anchorfile>
+      <anchor>gga1345813b5f798947ef33053642ed97ddaf57a97576df64360a8aa9f012d046e74</anchor>
       <arglist></arglist>
     </member>
   </compound>

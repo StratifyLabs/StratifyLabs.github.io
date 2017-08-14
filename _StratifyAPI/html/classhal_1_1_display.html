@@ -42,6 +42,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a417bd3877f564970e911bbb004da204b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac329934fbbbd4822f154ddc4e30d9791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#ac329934fbbbd4822f154ddc4e30d9791">Display</a> (sg_bmap_data_t *mem, sg_size_t w, sg_size_t h)</td></tr>
 <tr class="separator:ac329934fbbbd4822f154ddc4e30d9791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c621ab2b3e53493e13db829a1cb591d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#a9c621ab2b3e53493e13db829a1cb591d">Display</a> (sg_size_t w, sg_size_t h)</td></tr>
+<tr class="separator:a9c621ab2b3e53493e13db829a1cb591d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a575ab5ee8e339b66b0ba4fcc7d77ac45"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#a575ab5ee8e339b66b0ba4fcc7d77ac45">init</a> (const char *name=0)=0</td></tr>
 <tr class="separator:a575ab5ee8e339b66b0ba4fcc7d77ac45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4f277c1e2fde326a776b9ec24603028"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display.html#ae4f277c1e2fde326a776b9ec24603028">off</a> ()</td></tr>
@@ -137,8 +139,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a060559392918bf5eecb6aa71de18f335 inherit pub_static_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a060559392918bf5eecb6aa71de18f335">calc_size</a> (int w, int h)</td></tr>
 <tr class="separator:a060559392918bf5eecb6aa71de18f335 inherit pub_static_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classvar_1_1_data"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classvar_1_1_data')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classvar_1_1_data.html">var::Data</a></td></tr>
-<tr class="memitem:a8558f9cab2aea9ac6112a46a66d50876 inherit pub_static_methods_classvar_1_1_data"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a8558f9cab2aea9ac6112a46a66d50876">min_size</a> ()</td></tr>
-<tr class="separator:a8558f9cab2aea9ac6112a46a66d50876 inherit pub_static_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6772dc7cde274e334c01b47c2c0684 inherit pub_static_methods_classvar_1_1_data"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#acc6772dc7cde274e334c01b47c2c0684">minimum_size</a> ()</td></tr>
+<tr class="separator:acc6772dc7cde274e334c01b47c2c0684 inherit pub_static_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a417bd3877f564970e911bbb004da204b"></a>
@@ -168,6 +170,9 @@ Additional Inherited Members</h2></td></tr>
 <a class="anchor" id="ac329934fbbbd4822f154ddc4e30d9791"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">hal::Display::Display </td>
@@ -193,6 +198,11 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Constructs a new object with the provided memory buffer</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -200,6 +210,48 @@ Additional Inherited Members</h2></td></tr>
     <tr><td class="paramname">mem</td><td>A pointer to the bitmap memory </td></tr>
     <tr><td class="paramname">w</td><td>The width of the memory area in pixels </td></tr>
     <tr><td class="paramname">h</td><td>The height of the memory area in pixels </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c621ab2b3e53493e13db829a1cb591d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hal::Display::Display </td>
+          <td>(</td>
+          <td class="paramtype">sg_size_t&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_size_t&#160;</td>
+          <td class="paramname"><em>h</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a new object and dynamically allocates memory for the buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>The width of the display </td></tr>
+    <tr><td class="paramname">h</td><td>The height of the display </td></tr>
   </table>
   </dd>
 </dl>

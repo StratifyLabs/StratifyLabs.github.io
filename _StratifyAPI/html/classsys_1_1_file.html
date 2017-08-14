@@ -36,7 +36,7 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class is used to file access. It uses the POSIX functions <a class="el" href="classsys_1_1_file.html#aae68f8cd9f7836d3763bcd8313e36856">open()</a>, <a class="el" href="classsys_1_1_file.html#a0bd19cf99d6d352d46105a51f07b2576">read()</a>, <a class="el" href="classsys_1_1_file.html#a9b0d5e9b4b31bb51fbd2478cda2a44e4">write()</a>, <a class="el" href="classsys_1_1_file.html#a11ede04e8abe24db9df3c6dc14e858aa">close()</a>, etc. You can always call these functions directly or use the standard C library to access files (fopen(), fread(), fwrite()&ndash; these use more memory than this class or the POSIX functions).</p>
+<div class="textblock"><p>This class is used to access files (and devices). It uses the POSIX functions <a class="el" href="classsys_1_1_file.html#aae68f8cd9f7836d3763bcd8313e36856">open()</a>, <a class="el" href="classsys_1_1_file.html#a0bd19cf99d6d352d46105a51f07b2576">read()</a>, <a class="el" href="classsys_1_1_file.html#a9b0d5e9b4b31bb51fbd2478cda2a44e4">write()</a>, <a class="el" href="classsys_1_1_file.html#a11ede04e8abe24db9df3c6dc14e858aa">close()</a>, etc. You can always call these functions directly or use the standard C library to access files (fopen(), fread(), fwrite()&ndash; these use more memory than this class or the POSIX functions).</p>
 <p>Here is an example of using this class:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     File f;</div><div class="line">     String str;</div><div class="line"></div><div class="line"> <span class="comment">//create a new file and write a string to it</span></div><div class="line">     f.create(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">     str = <span class="stringliteral">&quot;Hello New File!\n&quot;</span>;</div><div class="line">     f.write(str.c_str(), str.size());</div><div class="line">     f.close();</div><div class="line"></div><div class="line"> <span class="comment">//Now open the file we just closed</span></div><div class="line">     f.open(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">     str = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line">     f.read(str.data(), str.capacity());</div><div class="line">     f.close();</div><div class="line"></div><div class="line"> <span class="comment">//This is what was read from the file</span></div><div class="line">     printf(<span class="stringliteral">&quot;The String is %s\n&quot;</span>, str.c_str());</div><div class="line"></div><div class="line">     <a class="code" href="classsys_1_1_file.html#aac40dffd27552b2facaa0e07e1b89e38">File::remove</a>(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>); <span class="comment">//delete the file</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -105,7 +105,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a061dde35654b80c671dbc558081d7f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35"></a>
+<a class="anchor" id="a2151aab1ba53bf7034c827b988545117"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -116,59 +116,59 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>These values are used as flags when opening devices or files </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35aab5956e3052d01bfe6b0e1a548bf5b0d"></a>RDONLY&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117aab5956e3052d01bfe6b0e1a548bf5b0d"></a>RDONLY&#160;</td><td class="fielddoc">
 <p>Open as read-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35ae78d15b60014a448ce7ceb28d8f68675"></a>READONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ae78d15b60014a448ce7ceb28d8f68675"></a>READONLY&#160;</td><td class="fielddoc">
 <p>Open as read-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a2e2e94a6417958e222b8c59bfd8b8f10"></a>WRONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a2e2e94a6417958e222b8c59bfd8b8f10"></a>WRONLY&#160;</td><td class="fielddoc">
 <p>Open as write-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35aa75ac97b10832706efa6833f0143e8cb"></a>WRITEONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117aa75ac97b10832706efa6833f0143e8cb"></a>WRITEONLY&#160;</td><td class="fielddoc">
 <p>Open as write-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a4899f3ffdc8fc8ebb328b80eef5ea570"></a>CREATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a4899f3ffdc8fc8ebb328b80eef5ea570"></a>CREATE&#160;</td><td class="fielddoc">
 <p>Create when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35ab661c22c22306be37b3c8444bb33117d"></a>CREAT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ab661c22c22306be37b3c8444bb33117d"></a>CREAT&#160;</td><td class="fielddoc">
 <p>Create when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a4072b10334fa7e9308575c6be96f8bec"></a>TRUNCATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a4072b10334fa7e9308575c6be96f8bec"></a>TRUNCATE&#160;</td><td class="fielddoc">
 <p>Truncate when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35ae5c870410ec842ac484b141fb9a83a23"></a>TRUNC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ae5c870410ec842ac484b141fb9a83a23"></a>TRUNC&#160;</td><td class="fielddoc">
 <p>Truncate when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35aafd76b19a5e96af812ba41e52cf33258"></a>APPEND&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117aafd76b19a5e96af812ba41e52cf33258"></a>APPEND&#160;</td><td class="fielddoc">
 <p>Append when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a37aab34c23243e464be006c668692e51"></a>EXCLUSIVE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a37aab34c23243e464be006c668692e51"></a>EXCLUSIVE&#160;</td><td class="fielddoc">
 <p>Create exclusively (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35ab507f6a41b4ded9ecce37af5b1eb5f3d"></a>EXCL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ab507f6a41b4ded9ecce37af5b1eb5f3d"></a>EXCL&#160;</td><td class="fielddoc">
 <p>Create exclusively (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a83038e64d6d3ebb8b58d7b81cf094ff8"></a>READWRITE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a83038e64d6d3ebb8b58d7b81cf094ff8"></a>READWRITE&#160;</td><td class="fielddoc">
 <p>Open as read-write </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a4889aa3b3d449f988dd2c5f34ae13791"></a>RDWR&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a4889aa3b3d449f988dd2c5f34ae13791"></a>RDWR&#160;</td><td class="fielddoc">
 <p>Open as read-write </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35ad36616dd55762c66d6f9d110d7e6d980"></a>NONBLOCK&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ad36616dd55762c66d6f9d110d7e6d980"></a>NONBLOCK&#160;</td><td class="fielddoc">
 <p>Open as non-blocking </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35abf6bc95d057e3180b514234a32e2fb0e"></a>NDELAY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117abf6bc95d057e3180b514234a32e2fb0e"></a>NDELAY&#160;</td><td class="fielddoc">
 <p>Open as non-blocking </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a854288bbbd93aa39dae6f22c40581c35a79167987839f57209a72a0ba54d0abda"></a>ACCMODE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a79167987839f57209a72a0ba54d0abda"></a>ACCMODE&#160;</td><td class="fielddoc">
 <p>Access mode mask </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="a0fd28308253242d4d23a71dba5141772"></a>
+<a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -179,13 +179,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>List of options for <em>whence</em> argument of <a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek()</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0fd28308253242d4d23a71dba5141772a21f22adedd7716405eea451a1c30757c"></a>SET&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a21f22adedd7716405eea451a1c30757c"></a>SET&#160;</td><td class="fielddoc">
 <p>Set the location of the file descriptor </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a0fd28308253242d4d23a71dba5141772ab2b9235a9f9c40b4999d46974125ba82"></a>CURRENT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ab2b9235a9f9c40b4999d46974125ba82"></a>CURRENT&#160;</td><td class="fielddoc">
 <p>Set the location relative to the current location </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a0fd28308253242d4d23a71dba5141772ae70ee9d33241a1d22bd4c881e1b5f29b"></a>END&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ae70ee9d33241a1d22bd4c881e1b5f29b"></a>END&#160;</td><td class="fielddoc">
 <p>Set the location relative to the end of the file or device </p>
 </td></tr>
 </table>
@@ -213,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Close the file or device </p>
+<p>Closes the file or device. </p>
 
 <p>Reimplemented in <a class="el" href="classfmt_1_1_xml.html#ae6a5b37a831a8a9901de68ebcd7e0c1e">fmt::Xml</a>.</p>
 
@@ -272,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the file number for accessing the file or device </p>
+<p>Return the file number for accessing the file or device. </p>
 
 </div>
 </div>
@@ -288,7 +288,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Return the current flags for the file </p>
+<p>Return the current flags for the file. </p>
 
 </div>
 </div>
@@ -321,7 +321,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read up to n-1 bytes to <em>s</em> until end-of-file or <em>term</em> is reached. </p>
+<p>Reads up to n-1 bytes to <em>s</em> until end-of-file or <em>term</em> is reached. </p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Read a line in to the string </p>
+<p>Reads a line in to the <a class="el" href="classvar_1_1_string.html" title="String class. ">var::String</a> until end-of-file or <em>term</em> is reached. </p>
 
 </div>
 </div>
@@ -391,14 +391,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Executes an IO control request</p>
+<p>Executes an IO control request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">req</td><td>The request value </td></tr>
-    <tr><td class="paramname">arg</td><td>A pointer to the arguments </td></tr>
+    <tr><td class="paramname">arg</td><td>A pointer to the arguments</td></tr>
   </table>
   </dd>
 </dl>
+<p>This method is typically only implemented for devices and other special file systems. </p>
 
 </div>
 </div>
@@ -433,7 +434,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and const arg pointer </p>
+<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and const arg pointer. </p>
 
 </div>
 </div>
@@ -458,7 +459,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with just a request </p>
+<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with just a request. </p>
 
 </div>
 </div>
@@ -493,7 +494,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and integer arg </p>
+<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and integer arg. </p>
 
 </div>
 </div>
@@ -509,7 +510,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the location of the cursor in the device or file </p>
+<p>Returns the location of the cursor in the device or file. </p>
 
 </div>
 </div>
@@ -534,8 +535,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the name of the file from a given path </p>
-
+<p>Gets the name of the file from a given path.</p>
+<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> * path = /app/flash/HelloWord</div><div class="line">printf(<span class="stringliteral">&quot;Name is %s\n&quot;</span>, <a class="code" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">File::name</a>(path));</div></div><!-- fragment --><p>The above code will output: </p><div class="fragment"><div class="line">Name is HelloWorld</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="aae68f8cd9f7836d3763bcd8313e36856"></a>
@@ -742,7 +743,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>reads the device. </p>
+<p>Reads the file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>A pointer to the destination buffer </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read or less than zero on an error </dd></dl>
 
 </div>
 </div>
@@ -775,7 +784,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>reads the device at the location </p>
+<p>Reads the file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loc</td><td>The location of the file to read </td></tr>
+    <tr><td class="paramname">buf</td><td>A pointer to the destination buffer </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read or less than zero on an error </dd></dl>
 
 </div>
 </div>
@@ -814,7 +832,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Read a line from the device or file </p>
+<p>Reads a line from the file. </p>
 
 </div>
 </div>
@@ -849,7 +867,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Deletes a file</p>
+<p>Deletes a file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the file </td></tr>
@@ -890,7 +908,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Seek to a location in the file or on the device </p>
+<p>Seeks to a location in the file or on the device. </p>
 
 </div>
 </div>
@@ -988,7 +1006,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets file stat data</p>
+<p>Gets file stat data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the file </td></tr>
@@ -1030,7 +1048,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>writes data to the device </p>
+<p>Write the file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>A pointer to the source buffer </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes to read </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes read or less than zero on an error </dd></dl>
 
 </div>
 </div>
@@ -1066,7 +1092,7 @@ Static Public Member Functions</h2></td></tr>
 <p>writes the device at the location</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">loc</td><td>Location to read (not application to character devices) </td></tr>
+    <tr><td class="paramname">loc</td><td>Location to write (not application to character devices) </td></tr>
     <tr><td class="paramname">buf</td><td>Pointer to the source data </td></tr>
     <tr><td class="paramname">nbyte</td><td>Number of bytes to write </td></tr>
   </table>
@@ -1097,7 +1123,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Write a Var::String to the file</p>
+<p>Writes a <a class="el" href="classvar_1_1_string.html" title="String class. ">var::String</a> to the file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">str</td><td>The string to write </td></tr>

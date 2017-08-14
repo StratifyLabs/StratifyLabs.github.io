@@ -39,8 +39,8 @@ title: Stratify OS Docs
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classhal_1_1_pin.html#ad35b76a0d9b574e124924e10352af97e">Pin</a> pin(1,0); <span class="comment">//control pin P1.0</span></div><div class="line"> <span class="comment">//Or if working with the pinmask Pin  pin(1, 1&lt;&lt;0, true);</span></div><div class="line"></div><div class="line">pin.init(Pin::OUTPUT); <span class="comment">//initialize as an output</span></div><div class="line"></div><div class="line"> <span class="comment">//These three all set the pin high</span></div><div class="line">pin = <span class="keyword">true</span>;</div><div class="line">pin.set();</div><div class="line"></div><div class="line"> <span class="comment">//These turn the pin off</span></div><div class="line">pin = <span class="keyword">false</span>;</div><div class="line">pin.clr();</div><div class="line"></div><div class="line"> <span class="comment">//now convert to an input</span></div><div class="line">pin.set_attr(Pin::INPUT | Pin::PULLUP); <span class="comment">//or use Pin::FLOAT, Pin::PULLDOWN, etc</span></div><div class="line"> <span class="comment">//or to init as an input use pin.init(Pin::INPUT);</span></div><div class="line"></div><div class="line"> <span class="comment">//now check to see if the value is high or low</span></div><div class="line"> <span class="keywordflow">if</span>( pin.value() == true ){</div><div class="line">     <span class="comment">//pin is high</span></div><div class="line"> } <span class="keywordflow">else</span> {</div><div class="line">     <span class="comment">//pin is low</span></div><div class="line"> }</div><div class="line"></div><div class="line"> pin.close(); <span class="comment">//close the associated file descriptor (pin keeps its IO properties and state)</span></div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a531b9f6c9f61a0e283bda717c56998c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a531b9f6c9f61a0e283bda717c56998c9">clear</a> ()</td></tr>
-<tr class="separator:a531b9f6c9f61a0e283bda717c56998c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61673647bee66d093910dceb306fa25d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a61673647bee66d093910dceb306fa25d">clear</a> () const </td></tr>
+<tr class="separator:a61673647bee66d093910dceb306fa25d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29478afd10dd63920a7c926f826bb5e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a29478afd10dd63920a7c926f826bb5e5">get_value</a> () const </td></tr>
 <tr class="separator:a29478afd10dd63920a7c926f826bb5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ab2b82b7fefb2afa3164950ca1343e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a2ab2b82b7fefb2afa3164950ca1343e2">init</a> (u32 o_flags)</td></tr>
@@ -53,12 +53,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab621f9a5075280d9ae005913e8eafeee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26e41ac890ac51da0bf3bf910ee8a3b"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#aa26e41ac890ac51da0bf3bf910ee8a3b">pinmask</a> () const </td></tr>
 <tr class="separator:aa26e41ac890ac51da0bf3bf910ee8a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b100075db189f565e6655ada9c3f609"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a9b100075db189f565e6655ada9c3f609">set</a> ()</td></tr>
-<tr class="separator:a9b100075db189f565e6655ada9c3f609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee647bb1dcfc0db5ad1794f70029b63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a7ee647bb1dcfc0db5ad1794f70029b63">set_attr</a> (u32 o_flags)</td></tr>
-<tr class="separator:a7ee647bb1dcfc0db5ad1794f70029b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ba651c9f87d7f14a24537dc67f2d054"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a3ba651c9f87d7f14a24537dc67f2d054">set_value</a> (bool value)</td></tr>
-<tr class="separator:a3ba651c9f87d7f14a24537dc67f2d054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5848ac6d6cdf2181fdb4d9936d06e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#aec5848ac6d6cdf2181fdb4d9936d06e4">set</a> () const </td></tr>
+<tr class="separator:aec5848ac6d6cdf2181fdb4d9936d06e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33cea80b8adf116688dd3cdaa4303c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#aa33cea80b8adf116688dd3cdaa4303c8">set_attr</a> (u32 o_flags) const </td></tr>
+<tr class="separator:aa33cea80b8adf116688dd3cdaa4303c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84cd4c5b9840c8e25d9d37592b857151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a84cd4c5b9840c8e25d9d37592b857151">set_value</a> (bool value) const </td></tr>
+<tr class="separator:a84cd4c5b9840c8e25d9d37592b857151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhal_1_1_pio"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1_pio')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1_pio.html">hal::Pio</a></td></tr>
 <tr class="memitem:a2efc83f9542a10d69f16cd00363be497 inherit pub_methods_classhal_1_1_pio"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pio.html#a2efc83f9542a10d69f16cd00363be497">assign</a> (u32 mask) const </td></tr>
 <tr class="separator:a2efc83f9542a10d69f16cd00363be497 inherit pub_methods_classhal_1_1_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -72,8 +72,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67dd7265ec0477ecc86313221fd05fa9 inherit pub_methods_classhal_1_1_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80dce2c2b865c6c72d36e71cb91881d1 inherit pub_methods_classhal_1_1_pio"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pio.html#a80dce2c2b865c6c72d36e71cb91881d1">set_mask</a> (u32 mask) const </td></tr>
 <tr class="separator:a80dce2c2b865c6c72d36e71cb91881d1 inherit pub_methods_classhal_1_1_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3a3ca0b4e5d0db98c2e322c7fe8729d inherit pub_methods_classhal_1_1_pio"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pio.html#ae3a3ca0b4e5d0db98c2e322c7fe8729d">set_value</a> (unsigned int value)</td></tr>
-<tr class="separator:ae3a3ca0b4e5d0db98c2e322c7fe8729d inherit pub_methods_classhal_1_1_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ddad1c81d07550cd2b1c85a0d73120 inherit pub_methods_classhal_1_1_pio"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pio.html#a97ddad1c81d07550cd2b1c85a0d73120">set_value</a> (unsigned int value) const </td></tr>
+<tr class="separator:a97ddad1c81d07550cd2b1c85a0d73120 inherit pub_methods_classhal_1_1_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhal_1_1_periph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1_periph')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1_periph.html">hal::Periph&lt; pio_info_t, pio_attr_t, &#39;p&#39;&gt;</a></td></tr>
 <tr class="memitem:a17c27286b8dd2642232bde4c3ee3774f inherit pub_methods_classhal_1_1_periph"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph.html#a17c27286b8dd2642232bde4c3ee3774f">get_version</a> () const</td></tr>
 <tr class="separator:a17c27286b8dd2642232bde4c3ee3774f inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +152,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a531b9f6c9f61a0e283bda717c56998c9"></a>
+<a class="anchor" id="a61673647bee66d093910dceb306fa25d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">int hal::Pin::clear </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -224,13 +224,13 @@ Public Member Functions</h2></td></tr>
 <p>Initializes the pin with the specified mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>The mode to start the pin (e.g., Pin::INPUT | Pin::PULLUP)</td></tr>
+    <tr><td class="paramname">o_flags</td><td>The mode to start the pin (e.g., Pin::INPUT | Pin::PULLUP)</td></tr>
   </table>
   </dd>
 </dl>
 <p>Hardware intialization opens the device for reading/writing and then sets the device attributes as specified.</p>
 <p>The following is an example of initializing a pin.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classhal_1_1_pin.html#ad35b76a0d9b574e124924e10352af97e">Pin</a> p(0,1); <span class="comment">//Port 0, pin 1</span></div><div class="line"></div><div class="line">p.init(Pin::INPUT | Pin::PULLUP);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( p.get_value() == 0 ){</div><div class="line">  <span class="comment">//this means something is driving the pin low</span></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open()</a>, <a class="el" href="classhal_1_1_pin.html#a7ee647bb1dcfc0db5ad1794f70029b63">set_attr()</a> </dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classhal_1_1_pin.html#ad35b76a0d9b574e124924e10352af97e">Pin</a> p(0,1); <span class="comment">//Port 0, pin 1</span></div><div class="line"></div><div class="line">p.init(Pin::INPUT | Pin::PULLUP);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( p.get_value() == 0 ){</div><div class="line">  <span class="comment">//this means something is driving the pin low</span></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open()</a>, <a class="el" href="classhal_1_1_pin.html#aa33cea80b8adf116688dd3cdaa4303c8">set_attr()</a> </dd></dl>
 
 </div>
 </div>
@@ -283,7 +283,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9b100075db189f565e6655ada9c3f609"></a>
+<a class="anchor" id="aec5848ac6d6cdf2181fdb4d9936d06e4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -294,7 +294,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">int hal::Pin::set </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -307,7 +307,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7ee647bb1dcfc0db5ad1794f70029b63"></a>
+<a class="anchor" id="aa33cea80b8adf116688dd3cdaa4303c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -319,7 +319,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">u32&#160;</td>
           <td class="paramname"><em>o_flags</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -331,7 +331,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the pin attributes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>The pin mode (e.g., Pin::INPUT) </td></tr>
+    <tr><td class="paramname">o_flags</td><td>The pin mode (e.g., Pin::INPUT) </td></tr>
   </table>
   </dd>
 </dl>
@@ -339,7 +339,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3ba651c9f87d7f14a24537dc67f2d054"></a>
+<a class="anchor" id="a84cd4c5b9840c8e25d9d37592b857151"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -351,7 +351,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>

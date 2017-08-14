@@ -76,8 +76,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8558f9cab2aea9ac6112a46a66d50876"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a8558f9cab2aea9ac6112a46a66d50876">min_size</a> ()</td></tr>
-<tr class="separator:a8558f9cab2aea9ac6112a46a66d50876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc6772dc7cde274e334c01b47c2c0684"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#acc6772dc7cde274e334c01b47c2c0684">minimum_size</a> ()</td></tr>
+<tr class="separator:acc6772dc7cde274e334c01b47c2c0684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5c380aa39498ff3d92cd5addc540fc8f"></a>
@@ -427,7 +427,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a8558f9cab2aea9ac6112a46a66d50876"></a>
+<a class="anchor" id="acc6772dc7cde274e334c01b47c2c0684"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -435,7 +435,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static u32 var::Data::min_size </td>
+          <td class="memname">static u32 var::Data::minimum_size </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -473,14 +473,14 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Resizes the data (equivalent to <a class="el" href="classvar_1_1_data.html#a35facff2497b4ac3320d581f4f31d62e">alloc()</a>).</p>
-<p>This is the same as <a class="el" href="classvar_1_1_data.html#a35facff2497b4ac3320d581f4f31d62e">alloc()</a> with <em>resize</em> set to true</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>The number of new bytes </td></tr>
+    <tr><td class="paramname">size</td><td>The number of new bytes </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success or -1 with errno set </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success or -1 with errno set</dd></dl>
+<p>This is the same as <a class="el" href="classvar_1_1_data.html#a35facff2497b4ac3320d581f4f31d62e">alloc()</a> with <em>resize</em> set to true </p>
 
 </div>
 </div>

@@ -36,7 +36,7 @@ title: Stratify OS Docs
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This is the base class for creating drawings. A <a class="el" href="classdraw_1_1_drawing.html" title="Drawing Class. ">Drawing</a> class allows for nesting and positioning of graphics within a bitmap.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyObject::draw(<span class="keyword">const</span> <a class="code" href="classdraw_1_1_drawing_attr.html#a2f1c37629069b0a53c9771061e069bac">DrawingAttr::attr</a>){</div><div class="line">   Icon my_icon;</div><div class="line">   drawing_dim_t square;</div><div class="line"></div><div class="line">   square = attr.square_w(500);</div><div class="line"></div><div class="line">   <span class="comment">//this will draw my icon centered in the bitmap specified by attr</span></div><div class="line">   <span class="comment">//adding drawing_point(250, 250) offset the icon by 25% of the bitmap in both x and y</span></div><div class="line">   <span class="comment">//adding a drawing_dim_t will then scale icon to fit in a square that is half the width of the bitmap (see square_w())</span></div><div class="line">   <span class="comment">//draw will call the underlying draw_to_scale() method unless Icon re-implements draw</span></div><div class="line">   my_icon.draw(attr + <a class="code" href="namespacedraw.html#a104b78244b66746834670a93f0aca4d2">drawing_point</a>(250, 250) + square);</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyObject::draw(<span class="keyword">const</span> <a class="code" href="classdraw_1_1_drawing_attr.html#a2f1c37629069b0a53c9771061e069bac">DrawingAttr::attr</a>){</div><div class="line">   Icon my_icon;</div><div class="line">   drawing_dim_t square;</div><div class="line"></div><div class="line">   square = attr.square_w(500);</div><div class="line"></div><div class="line">   <span class="comment">//this will draw my icon centered in the bitmap specified by attr</span></div><div class="line">   <span class="comment">//adding drawing_point(250, 250) offset the icon by 25% of the bitmap in both x and y</span></div><div class="line">   <span class="comment">//adding a drawing_dim_t will then scale icon to fit in a square that is half the width of the bitmap (see square_width())</span></div><div class="line">   <span class="comment">//draw will call the underlying draw_to_scale() method unless Icon re-implements draw</span></div><div class="line">   my_icon.draw(attr + <a class="code" href="namespacedraw.html#a104b78244b66746834670a93f0aca4d2">drawing_point</a>(250, 250) + square);</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a072503c6304a819a2545877d5afe15d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a072503c6304a819a2545877d5afe15d4">draw</a> (const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;attr)</td></tr>
@@ -52,8 +52,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad41941cbf4df2b997ed6a1c3282c679a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a550716d0568491e9655979dfdbbdbbe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a550716d0568491e9655979dfdbbdbbe6">invert</a> (const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;attr, sg_bmap_data_t v=0xFF)</td></tr>
 <tr class="separator:a550716d0568491e9655979dfdbbdbbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e9a2ad4b607a08784f1eb3928ac6587"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedraw.html#ac61d5939a81014a866af9642133fcf15">drawing_u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a0e9a2ad4b607a08784f1eb3928ac6587">scale</a> ()</td></tr>
-<tr class="separator:a0e9a2ad4b607a08784f1eb3928ac6587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31afb36718f204fb92593e391a4e37cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a31afb36718f204fb92593e391a4e37cc">scale</a> ()</td></tr>
+<tr class="separator:a31afb36718f204fb92593e391a4e37cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34791bc53da791048b955c1cfbaa56b7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a34791bc53da791048b955c1cfbaa56b7">set</a> (const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;attr, sg_bmap_data_t v=0xFF)</td></tr>
 <tr class="separator:a34791bc53da791048b955c1cfbaa56b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -228,7 +228,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0e9a2ad4b607a08784f1eb3928ac6587"></a>
+<a class="anchor" id="a31afb36718f204fb92593e391a4e37cc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -236,7 +236,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="namespacedraw.html#ac61d5939a81014a866af9642133fcf15">drawing_u32</a> draw::Drawing::scale </td>
+          <td class="memname">static <a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a> draw::Drawing::scale </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

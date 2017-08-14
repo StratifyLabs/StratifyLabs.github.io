@@ -40,14 +40,14 @@ title: Stratify OS Docs
 <li>Buffering serial I/O from SPI, I2S, USB, etc</li>
 </ul>
 <p>For example, the default STDIO is implemented as two fifo buffers: one for input and one for output. A typical application will write the STDOUT fifo while the USB protocol will read the fifo and display it on the screen. Alternatively, a separate application or the kernel could read the STDOUT and print it on a display or send it out the UART.</p>
-<p><a class="el" href="classhal_1_1_fifo.html" title="FIFO Class. ">Fifo</a>'s can be opened in blocking and non-blocking modes when both reading and writing. If <a class="el" href="classhal_1_1_fifo.html#ace0769ef7d2738faeafacc798321ab39">Fifo::set_writeblock()</a> is called, a write will block when the <a class="el" href="classhal_1_1_fifo.html" title="FIFO Class. ">Fifo</a> is full. Otherwise, the <a class="el" href="classhal_1_1_fifo.html" title="FIFO Class. ">Fifo</a> will overflow and <a class="el" href="classhal_1_1_fifo_info.html#a11036b910df1268dd26a889de3d29005">FifoInfo::is_overflow()</a> will return true.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">Fifo fifo;</div><div class="line">FifoInfo attr;</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( fifo.open(<span class="stringliteral">&quot;/dev/fifo&quot;</span>, <a class="code" href="classsys_1_1_file.html#a854288bbbd93aa39dae6f22c40581c35a4889aa3b3d449f988dd2c5f34ae13791">Fifo::RDWR</a>) &lt; 0 ){</div><div class="line">     perror(<span class="stringliteral">&quot;failed to open fifo&quot;</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( fifo.attr().used() &gt; 0){</div><div class="line">     <span class="comment">//fifo is not empty</span></div><div class="line">}</div><div class="line"></div><div class="line">  <span class="comment">//write some data to the fifo</span></div><div class="line">fifo.write(<span class="stringliteral">&quot;Testing fifo write\n&quot;</span>);</div><div class="line"></div><div class="line">fifo.close();</div></div><!-- fragment --> </div><table class="memberdecls">
+<p><a class="el" href="classhal_1_1_fifo.html" title="FIFO Class. ">Fifo</a>'s can be opened in blocking and non-blocking modes when both reading and writing. If <a class="el" href="classhal_1_1_fifo.html#ace0769ef7d2738faeafacc798321ab39">Fifo::set_writeblock()</a> is called, a write will block when the <a class="el" href="classhal_1_1_fifo.html" title="FIFO Class. ">Fifo</a> is full. Otherwise, the <a class="el" href="classhal_1_1_fifo.html" title="FIFO Class. ">Fifo</a> will overflow and <a class="el" href="classhal_1_1_fifo_info.html#ab31e8b376d6a8947dbb6d9f33e1c48ad">FifoInfo::is_overflowidth()</a> will return true.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cstdio&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">Fifo fifo;</div><div class="line">FifoInfo attr;</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( fifo.open(<span class="stringliteral">&quot;/dev/fifo&quot;</span>, <a class="code" href="classsys_1_1_file.html#a2151aab1ba53bf7034c827b988545117a4889aa3b3d449f988dd2c5f34ae13791">Fifo::RDWR</a>) &lt; 0 ){</div><div class="line">     perror(<span class="stringliteral">&quot;failed to open fifo&quot;</span>);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( fifo.attr().used() &gt; 0){</div><div class="line">     <span class="comment">//fifo is not empty</span></div><div class="line">}</div><div class="line"></div><div class="line">  <span class="comment">//write some data to the fifo</span></div><div class="line">fifo.write(<span class="stringliteral">&quot;Testing fifo write\n&quot;</span>);</div><div class="line"></div><div class="line">fifo.close();</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a32ea467e37d25e909d0377a42934794f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#a32ea467e37d25e909d0377a42934794f">exit</a> () const </td></tr>
 <tr class="separator:a32ea467e37d25e909d0377a42934794f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1e802b98dde86ffe5845661a8caf21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#aff1e802b98dde86ffe5845661a8caf21">flush</a> () const </td></tr>
-<tr class="separator:aff1e802b98dde86ffe5845661a8caf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19e527eeaf4fff1ef83b71bb01758e30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#a19e527eeaf4fff1ef83b71bb01758e30">flusheight</a> () const </td></tr>
+<tr class="separator:a19e527eeaf4fff1ef83b71bb01758e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a192338d884bd7081aa01c8c583326bbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#a192338d884bd7081aa01c8c583326bbc">get_info</a> (fifo_info_t &amp;info) const </td></tr>
 <tr class="separator:a192338d884bd7081aa01c8c583326bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3fc3a4f15c23c0d13ad26f4428b6e61"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classhal_1_1_fifo_info.html">FifoInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#aa3fc3a4f15c23c0d13ad26f4428b6e61">get_info</a> () const </td></tr>
@@ -141,12 +141,12 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aff1e802b98dde86ffe5845661a8caf21"></a>
+<a class="anchor" id="a19e527eeaf4fff1ef83b71bb01758e30"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hal::Fifo::flush </td>
+          <td class="memname">int hal::Fifo::flusheight </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

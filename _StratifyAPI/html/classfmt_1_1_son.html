@@ -139,6 +139,80 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a196c650b78eb750eba74720fee5a7148"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a196c650b78eb750eba74720fee5a7148">write_open_data</a> (const void *v, son_size_t size)</td></tr>
 <tr class="separator:a196c650b78eb750eba74720fee5a7148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int stacksize&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classfmt_1_1_son.html#a3bf008c61aacf4d6fba2f99c334003c6">fmt::Son::son_err_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6acfc6e142cf48b6f408cb1e726c63b9b5"></a>ERR_NONE&#160;</td><td class="fielddoc">
+<p>This value indicates no error has occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6aac21d2174f167040e230a7151f2879af"></a>ERR_NO_ROOT&#160;</td><td class="fielddoc">
+<p>This error happens when a top level object or array is not created. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6ad8d1c3d04165c1a94eccc3fa169a3f0f"></a>ERR_OPEN_IO&#160;</td><td class="fielddoc">
+<p>This error happens if there is an IO failure to create or open a file (run perror() for more info). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6ae0ce8059096d926514ec65d7d0866688"></a>ERR_READ_IO&#160;</td><td class="fielddoc">
+<p>This error happens when an IO read operation fails (run perror() for more info). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a0b3aa8323cb15cd67fb86913056a29b7"></a>ERR_WRITE_IO&#160;</td><td class="fielddoc">
+<p>This error happens when an IO write operation fails (run perror() for more info). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6ab7c8c98171e4ed61c851fb825d083bef"></a>ERR_CLOSE_IO&#160;</td><td class="fielddoc">
+<p>This error happens when an IO close operation fails (run perror() for more info). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6af928ea5286b7b4f84d9bf2b201eba841"></a>ERR_SEEK_IO&#160;</td><td class="fielddoc">
+<p>This error happens when an IO seek operation fails (run perror() for more info). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a4d3535108dbb903e0107503c41b3e75f"></a>ERR_READ_CHECKSUM&#160;</td><td class="fielddoc">
+<p>This error happens when the data in the file has a invalid checksum which indicates a corrupted file or bad file format. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a25488bd2f026833917a5a077ce039814"></a>ERR_CANNOT_APPEND&#160;</td><td class="fielddoc">
+<p>This error happens when an append is attempted on a file that has not been saved for appending </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6ae8a0f24c60bc59e13b2ed31c61620ee6"></a>ERR_CANNOT_WRITE&#160;</td><td class="fielddoc">
+<p>This error happens if a write is attempted on a file that has been opened for reading </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a3777c14ac5df61e330c31db6cf35791e"></a>ERR_CANNOT_READ&#160;</td><td class="fielddoc">
+<p>This error happens if a read is attempted on a file that has been opened for writing or appending </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a4a0ff49688810e6f537ef4fb6be1b386"></a>ERR_INVALID_ROOT&#160;</td><td class="fielddoc">
+<p>This error happens when the root object is not valid (usually a bad file format or corrupted file). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a2e42e8f602c0ed7813ff02832b09074f"></a>ERR_ARRAY_INDEX_NOT_FOUND&#160;</td><td class="fielddoc">
+<p>This error happens when an array index could not be found </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a734707d70746a979bdacceff675ee2eb"></a>ERR_ACCESS_TOO_LONG&#160;</td><td class="fielddoc">
+<p>This error happens if the <em>access</em> parameter len exceeds <em>SON_ACCESS_MAX_USER_SIZE</em>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a259072a38fc02c143b638768318d9674"></a>ERR_KEY_NOT_FOUND&#160;</td><td class="fielddoc">
+<p>This error happens when the key specified by the <em>access</em> parameter could not be found. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a845434a79ae59d48feda908b8a5a8755"></a>ERR_STACK_OVERFLOW&#160;</td><td class="fielddoc">
+<p>This error happens if the depth (son_open_array() or son_open_obj()) exceeds, the handle's stack size. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6ae145460cd189f66fdcc25c3b119f5f3b"></a>ERR_INVALID_KEY&#160;</td><td class="fielddoc">
+<p>This happens if an empty key is passed to anything but the root object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6a1da4a4514ae5ce4c114f61e609e7ddd8"></a>ERR_CANNOT_CONVERT&#160;</td><td class="fielddoc">
+<p>This happens if a read is tried by the base data can't be converted </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a3bf008c61aacf4d6fba2f99c334003c6ab65865e5dda7bacf3db76f86a4ac6ef3"></a>ERR_EDIT_TYPE_MISMATCH&#160;</td><td class="fielddoc">
+<p>This happens if a value is edited with a function that doesn't match the base type </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab2959b3d3236c10e666421abdf525cd7"></a>
 <div class="memitem">
@@ -215,7 +289,9 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Closes an array while writing or appending. </p>
+<p>Closes an array while writing or appending.</p>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>To proper operation, this a call to this method must correspond to a call to <a class="el" href="classfmt_1_1_son.html#a1ba2d1c71b5a4c3afbe84d00ca9e12ee">open_data()</a>. </p>
 
 </div>
 </div>
@@ -241,7 +317,9 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Closes a data object. </p>
+<p>Closes a data object.</p>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>To proper operation, this a call to this method must correspond to a call to <a class="el" href="classfmt_1_1_son.html#a1ba2d1c71b5a4c3afbe84d00ca9e12ee">open_data()</a>. </p>
 
 </div>
 </div>
@@ -486,7 +564,7 @@ template&lt;int stacksize&gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">access</td><td>The acces for for the value </td></tr>
-    <tr><td class="paramname">str</td><td>The new string </td></tr>
+    <tr><td class="paramname">v</td><td>The new string </td></tr>
   </table>
   </dd>
 </dl>
@@ -704,8 +782,9 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the current error value. The current error value is returned. This method will clear the error value such that if it is called twice it will return the error then it will return SON_ERR_NONE.</p>
-<dl class="section return"><dt>Returns</dt><dd>The error value </dd></dl>
+<p>Gets the current error value.</p>
+<dl class="section return"><dt>Returns</dt><dd>The SON error value</dd></dl>
+<p>The current error value is returned. This method will clear the error value such that if it is called twice it will return the error then it will return SON_ERR_NONE. </p>
 
 </div>
 </div>
@@ -766,7 +845,14 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens a new array while writing or appending. </p>
+<p>Opens a new array while writing or appending.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to use for the new array </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -793,7 +879,14 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens a data object while writing or appending. </p>
+<p>Opens a data object while writing or appending.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to use for the new data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -854,7 +947,14 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens a new object while writing or appending. </p>
+<p>Opens a new object while writing or appending.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key to use for the new object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -915,7 +1015,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads the specified key as a bool</p>
+<p>Reads the specified key as a bool.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">access</td><td>Key parameters </td></tr>
@@ -1001,14 +1101,15 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Reads the specified key as a number (float). If the original key was not written as a s32, it will be converted to one. A string of "100" will be converted to (float)100. Objects that cannot be converted will return 0.</p>
+<p>Reads the specified key as a number (float).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">access</td><td>Key parameters </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The number </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The number</dd></dl>
+<p>If the original key was not written as a float, it will be converted to one. A string of "100" will be converted to (float)100. Objects that cannot be converted will return 0. </p>
 
 </div>
 </div>
@@ -1271,7 +1372,14 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Converts the data file to JSON </p>
+<p>Converts the data file to JSON</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to a file to create with the JSON data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -1308,7 +1416,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/string pair to the file</p>
+<p>Writes a key/string pair to the file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1353,7 +1461,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/string pair to the file</p>
+<p>Writes a key/string pair to the file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1398,7 +1506,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/number pair to the file (s32)</p>
+<p>Writes a key/number pair to the file (s32).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1443,7 +1551,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/number pair to the file (u32)</p>
+<p>Writes a key/number pair to the file (u32).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1488,7 +1596,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/number pair to the file (float)</p>
+<p>Writes a key/number pair to the file (float).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1533,7 +1641,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/bool pair to the file</p>
+<p>Writes a key/bool pair to the file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1584,7 +1692,7 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Writes a key/data pair to the file. The data is stored in the file in binary format</p>
+<p>Writes a key/data pair to the file. The data is stored in the file in binary format.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">key</td><td>The value key </td></tr>
@@ -1630,17 +1738,17 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds data to an open key. This is used with <a class="el" href="classfmt_1_1_son.html#a1ba2d1c71b5a4c3afbe84d00ca9e12ee">open_data()</a> and <a class="el" href="classfmt_1_1_son.html#a2b0d8b468db08ef8b6cf87b6c2428bc6">close_data()</a>. These methods are useful for writing data to the file when the amount of data to be written is unknown when writing begins.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/Var.hpp&gt;</span></div><div class="line"><a class="code" href="classfmt_1_1_son.html#ab2959b3d3236c10e666421abdf525cd7">Son</a> son&lt;4&gt;;</div><div class="line"></div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.create(<span class="stringliteral">&quot;/home/data.son&quot;</span>);</div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_data(<span class="stringliteral">&quot;datakey&quot;</span>);</div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write_open_data(buffer, 32);</div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close_data();</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds data to an open key.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>The value key </td></tr>
     <tr><td class="paramname">v</td><td>A pointer to the data to be written </td></tr>
     <tr><td class="paramname">size</td><td>The number of bytes to write </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes stored (4) if successful </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes stored (4) if successful</dd></dl>
+<p>This is used with <a class="el" href="classfmt_1_1_son.html#a1ba2d1c71b5a4c3afbe84d00ca9e12ee">open_data()</a> and <a class="el" href="classfmt_1_1_son.html#a2b0d8b468db08ef8b6cf87b6c2428bc6">close_data()</a>. These methods are useful for writing data to the file when the amount of data to be written is unknown when writing begins.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/Var.hpp&gt;</span></div><div class="line"><a class="code" href="classfmt_1_1_son.html#ab2959b3d3236c10e666421abdf525cd7">Son</a> son&lt;4&gt;;</div><div class="line"></div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.create(<span class="stringliteral">&quot;/home/data.son&quot;</span>);</div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_data(<span class="stringliteral">&quot;datakey&quot;</span>);</div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write_open_data(buffer, 32);</div><div class="line"><a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close_data();</div></div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->
