@@ -40,8 +40,8 @@ title: Stratify OS Docs
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0);</div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.open(<a class="code" href="classsys_1_1_file.html#a2151aab1ba53bf7034c827b988545117ad36616dd55762c66d6f9d110d7e6d980">Uart::NONBLOCK</a>|<a class="code" href="classsys_1_1_file.html#a2151aab1ba53bf7034c827b988545117a4889aa3b3d449f988dd2c5f34ae13791">Uart::RDWR</a>);</div><div class="line"> <span class="comment">//now set the attributes</span></div><div class="line">     uart.set_attr(<a class="code" href="classhal_1_1_uart.html#a5b0cc6759e273648a9155f6554d3360bacc7b3b22d5bb174b3f81a3cecb235bde">Uart::FLAG_IS_STOP1</a>|<a class="code" href="classhal_1_1_uart.html#a5b0cc6759e273648a9155f6554d3360ba2a90c4831f17b88e32a0a5c2daa386ae">Uart::FLAG_IS_PARITY_NONE</a>,</div><div class="line">     115200, <span class="comment">//115200 baud rate</span></div><div class="line"> 8);</div><div class="line">     uart.read(buffer, 256); <span class="comment">//returns immediately even if no data is available (errno is set to EAGAIN if no data)</span></div><div class="line">     uart.close(); <span class="comment">//free the resources</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a01e9c05c5861d9277ceb9ccc71b0116f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart.html#a01e9c05c5861d9277ceb9ccc71b0116f">flusheight</a> ()</td></tr>
-<tr class="separator:a01e9c05c5861d9277ceb9ccc71b0116f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead32dca98bb432398250a1ee9d88a1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart.html#aead32dca98bb432398250a1ee9d88a1d">flush</a> ()</td></tr>
+<tr class="separator:aead32dca98bb432398250a1ee9d88a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d1af864dbf1c519a00a2aaa0e871ba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart.html#a8d1af864dbf1c519a00a2aaa0e871ba1">get</a> (char &amp;c)</td></tr>
 <tr class="separator:a8d1af864dbf1c519a00a2aaa0e871ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49258169b9d7a5dfc057ee27a3b1ab84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart.html#a49258169b9d7a5dfc057ee27a3b1ab84">init</a> (u32 o_flags, u32 freq, u32 width=8, const uart_pin_assignment_t *pin_assignment=0)</td></tr>
@@ -100,12 +100,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a01e9c05c5861d9277ceb9ccc71b0116f"></a>
+<a class="anchor" id="aead32dca98bb432398250a1ee9d88a1d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hal::Uart::flusheight </td>
+          <td class="memname">int hal::Uart::flush </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
