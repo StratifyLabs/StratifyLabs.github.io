@@ -79,13 +79,13 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.6.0/Stratify-Labs-SDK-Installer-2.6.0.exe">ARM Compiler with Stratify SDK</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.0.0/Stratify-Labs-SDK-Installer-3.0.0.exe">ARM Compiler with Stratify SDK</a>
     </p>
   </center>
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.0/Stratify-Link-Installer-3.0.exe">Stratify Link</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.1/Stratify-Link-Installer-3.1.exe">Stratify Link</a>
     </p>
   </center>
 
@@ -105,13 +105,13 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v2.6.0/StratifyLabs-SDK-2.6.0.dmg">ARM Compiler with Stratify SDK</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.0.0/StratifyLabs-SDK-3.0.0.dmg">ARM Compiler with Stratify SDK</a>
     </p>
   </center>
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.0/StratifyLink-3.0.dmg">Stratify Link</a>
+      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.1/StratifyLink-3.1.dmg">Stratify Link</a>
     </p>
   </center>
 
