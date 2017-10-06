@@ -5,7 +5,7 @@ tagline: Contact Form
 sections:
  intro: New Client
  brief: Contact Form
- icon: fa fa-envelope-square fa-5x
+ icon: fa fa-envelope-square fa-3x
 ---
 
 <div style="background: #344555; color: #fff;">
@@ -15,7 +15,7 @@ sections:
 			<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 		</div>
 		<div class="col-md-9">
-			<h1><b>{{ page.sections['intro'] }}</b></h1>
+			<h2><b>{{ page.sections['intro'] }}</b></h2>
 			<h3>{{ page.sections['brief'] }}</h3>
 		</div>
 	</div>

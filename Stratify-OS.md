@@ -15,10 +15,10 @@ $(function () {
 <div class="container">
 <div class="row header_row">
 		<div class="col-md-3">
-			<img class="post_image" src="{{ BASE_PATH }}/images/Stratify-OS-Logo-Cog.svg" />
+			<img class="post_image" height="150px"  src="{{ BASE_PATH }}/images/Stratify-OS-Logo-Cog.svg" />
 		</div>
 		<div class="col-md-9">
-			<h1><b>Stratify OS</b></h1>
+			<h2><b>Stratify OS</b></h2>
 			<h3>A real-time operating system designed to drastically reduce development time</h3>
 		</div>
 	</div>

@@ -5,7 +5,7 @@ tagline: About
 sections:
  intro: About
  brief: All about Stratify Labs
- icon: fa fa-info-circle fa-5x
+ icon: fa fa-info-circle fa-3x
 ---
 
 <div style="background: #344555; color: #fff;">
@@ -15,7 +15,7 @@ sections:
 			<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 		</div>
 		<div class="col-md-9">
-			<h1><b>{{ page.sections['intro'] }}</b></h1>
+			<h2><b>{{ page.sections['intro'] }}</b></h2>
 			<h3>{{ page.sections['brief'] }}</h3>
 		</div>
 	</div>

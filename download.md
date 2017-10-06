@@ -5,7 +5,7 @@ tagline: License and Download
 sections:
  intro: Downloads
  brief: Open source code licensing and download options
- icon: fa fa-arrow-circle-down fa-5x
+ icon: fa fa-arrow-circle-down fa-3x
 ---
 
 <div style="background: #344555; color: #fff;">
@@ -15,7 +15,7 @@ sections:
 			<h2><i class="{{ page.sections['icon'] }}"></i></h2>
 		</div>
 		<div class="col-md-9">
-			<h1><b>{{ page.sections['intro'] }}</b></h1>
+			<h2><b>{{ page.sections['intro'] }}</b></h2>
 			<h3>{{ page.sections['brief'] }}</h3>
 		</div>
 	</div>
