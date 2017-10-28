@@ -50,6 +50,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7ea93dc08b0fb7ed051519b43b863146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c00f0a022c44ba1d300960d048ec82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a28c00f0a022c44ba1d300960d048ec82">get_option_value</a> (const char *option) const </td></tr>
 <tr class="separator:a28c00f0a022c44ba1d300960d048ec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0396c03b6161a84cc76866e42a41c819"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a0396c03b6161a84cc76866e42a41c819">handle_uart</a> (hal::UartAttr &amp;attr)</td></tr>
+<tr class="separator:a0396c03b6161a84cc76866e42a41c819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73872a1f39aceae7a956d5b294bf308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#af73872a1f39aceae7a956d5b294bf308">handle_version</a> () const </td></tr>
 <tr class="separator:af73872a1f39aceae7a956d5b294bf308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7286485e6948f334410cc10f131b59fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a7286485e6948f334410cc10f131b59fe">is_option</a> (const char *value) const </td></tr>
@@ -251,6 +253,41 @@ Public Member Functions</h2></td></tr>
 <p>program -i 10 </p>
 </blockquote>
 <p><code>get_option_value("-i")</code> will return 10. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0396c03b6161a84cc76866e42a41c819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::Cli::handle_uart </td>
+          <td>(</td>
+          <td class="paramtype">hal::UartAttr &amp;&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handles arguments for setting UART attributes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attr</td><td>A reference to the destination attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if UART attributes were parsed</dd></dl>
+<p>The arguments are</p><ul>
+<li>"-uart [port]" (required)</li>
+<li>"-freq [bitrate]" (optional, default is 115200)</li>
+<li>"-width [byte width]" (optional, default is 8)</li>
+<li>"-stop1" (optional, default is 1 stop bit)</li>
+<li>"-stop2" (optional)</li>
+<li>"-tx [X.Y]" (optional port.pin, uses system default otherwise)</li>
+<li>"-rx [X.Y]" (optional port.pin, uses system default otherwise)</li>
+<li>"-rts [X.Y]" (optional port.pin, uses system default otherwise)</li>
+<li>"-cts [X.Y]" (optional port.pin, uses system default otherwise) </li>
+</ul>
 
 </div>
 </div>

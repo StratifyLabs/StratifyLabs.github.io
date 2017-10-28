@@ -10,6 +10,7 @@ title: Stratify OS Docs
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
@@ -22,36 +23,41 @@ title: Stratify OS Docs
   </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">son_stack_t Struct Reference</div>  </div>
+<div class="title">sg_dim_t Union Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>SON Stack Type.  
- <a href="structson__stack__t.html#details">More...</a></p>
+<p>Graphics Dimension.  
+ <a href="unionsg__dim__t.html#details">More...</a></p>
 
-<p><code>#include &lt;son.h&gt;</code></p>
+<p><code>#include &lt;sg_types.h&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The SON stack type is used when creating new SON files. </p>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:ae2926ee10afc4e362e4492919053ddff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="son_8h.html#af216182088d7ee4189680920c62d34fd">son_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structson__stack__t.html#ae2926ee10afc4e362e4492919053ddff">pos</a></td></tr>
-<tr class="separator:ae2926ee10afc4e362e4492919053ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="ae2926ee10afc4e362e4492919053ddff"></a>
+<div class="textblock"><p>This is the data structure for a dimension on a bitmap. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="af733290f80ce68373d45da3b75b79bc7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="son_8h.html#af216182088d7ee4189680920c62d34fd">son_size_t</a> son_stack_t::pos</td>
+          <td class="memname">sg_size_t sg_dim_t::height</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Internal use only </p>
+<p>Height </p>
+
+</div>
+</div>
+<a class="anchor" id="a81196a771eaee217bdeadf3e841e4c80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sg_size_t sg_dim_t::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Width </p>
 
 </div>
 </div>

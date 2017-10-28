@@ -28,6 +28,18 @@ title: Stratify OS Docs
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionsg__point__t.html">sg_point_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics Point.  <a href="unionsg__point__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionsg__dim__t.html">sg_dim_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics Dimension.  <a href="unionsg__dim__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsg__pen__t.html">sg_pen_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics Pen.  <a href="structsg__pen__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsg__bmap__t.html">sg_bmap_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics Bitmap.  <a href="structsg__bmap__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsg__bounds__t.html">sg_bounds_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Graphics Bounds Structure.  <a href="structsg__bounds__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,11 +102,32 @@ Enumerations</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04ac5f47e68723a3ee16190103fb78952b2"></a>SG_PEN_FLAG_TRANSPARENT_BACKGROUND&#160;</td><td class="fielddoc">
-<p>When set, the pen will not operate when the source color is zero </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a82f03b17340adce16025cbab6c513ed3"></a>SG_PEN_FLAG_IS_SOLID&#160;</td><td class="fielddoc">
+<p>Assigns color when drawing (default) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a56e218c4de37a5c1a284b909d0eda892"></a>SG_PEN_FLAG_FILL&#160;</td><td class="fielddoc">
-<p>When set, the icon will be drawn filled </p>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04adc5a5ef0f4e3726a04ffaa16dfeb1313"></a>SG_PEN_FLAG_IS_ASSIGN&#160;</td><td class="fielddoc">
+<p>Alias for SG_PEN_FLAG_IS_SOLID </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a6ee09220bd41d3536d2449cb73eca7e7"></a>SG_PEN_FLAG_IS_BLEND&#160;</td><td class="fielddoc">
+<p>Blends colors using logical OR </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04ae86e2d410243618eab2c001f603f5f1d"></a>SG_PEN_FLAG_IS_OR&#160;</td><td class="fielddoc">
+<p>Alias for SG_PEN_FLAG_IS_BLEND </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04ad63b3cf07d62d478b30f0484715ca7fb"></a>SG_PEN_FLAG_IS_INVERT&#160;</td><td class="fielddoc">
+<p>Draws colors using logical XOR </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a63fa873cd8423f776019595ac175f545"></a>SG_PEN_FLAG_IS_XOR&#160;</td><td class="fielddoc">
+<p>Alias for SG_PEN_FLAG_IS_INVERT </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04ae02a1cfbd09e989fb7bf14ed1a3f1e87"></a>SG_PEN_FLAG_IS_ERASE&#160;</td><td class="fielddoc">
+<p>Erases the colors that are set in the pen (logical AND of inverse color) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04a30d4673f12e01711e4c208d717ba704d"></a>SG_PEN_FLAG_IS_AND&#160;</td><td class="fielddoc">
+<p>Alias for SG_PEN_FLAG_IS_ERASE </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abc6126af1d45847bc59afa0aa3216b04aff91d4c7c1d5be98465ef2062e484b8b"></a>SG_PEN_FLAG_IS_FILL&#160;</td><td class="fielddoc">
+<p>When drawing vector icons, this flag enables fill points specified by the icon </p>
 </td></tr>
 </table>
 

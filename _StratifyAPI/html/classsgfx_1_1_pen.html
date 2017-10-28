@@ -34,14 +34,43 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>The pen defines the color, thickness and mode when drawing on bitmaps. </p>
+<div class="textblock"><p>The pen defines the color, thickness and mode when drawing on bitmaps.</p>
+<p>Whenever drawing on bitmaps, a pen is associated with the bitmap. The current state of the pen determines how primitives are drawn.</p>
+<p>First, pens have a color value that is represented by the number of bits linked to the graphics library. For example, when using 1bpp, valid colors values are 0 and 1.</p>
+<p>Pens can operate in four modes:</p><ul>
+<li>Solid: pen color is assigned to bitmap</li>
+<li>Blend: pen color is OR'd with bitmap color</li>
+<li>Invert: pen color is XOR'd with bitmap color</li>
+<li>Erase: pen color is inverted when AND'd with the bitmap color</li>
+</ul>
+<p>When drawing a source bitmap on a destination bitmap, the pen mode is determined by the destination bitmap's pen. The pen color is ignored and the source bitmap pixel color is used. The source bitmap's pen is not used in bitmap to bitmap drawing operations.</p>
+<p>Icon vector graphics sometimes include fill points. The destination bitmap's pen determines whether or not the fill operations are performed based on the pen's fill flag (see <a class="el" href="classsgfx_1_1_pen.html#a09dfb7a57cf473beffc8d88c26b84eea">is_fill()</a> and <a class="el" href="classsgfx_1_1_pen.html#aef0b5d8c58724b486dd626da2cc8fdfb">set_fill()</a>).</p>
+<p>The pen can also specify a thickness which applies to drawing lines and arcs on bitmaps. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a262a28e26443067048f2009c128a08d3"><td class="memItemLeft" align="right" valign="top">sg_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#a262a28e26443067048f2009c128a08d3">color</a> () const </td></tr>
 <tr class="separator:a262a28e26443067048f2009c128a08d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f1dfc232d85994fe2dde795db36c4a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#ab2f1dfc232d85994fe2dde795db36c4a">is_blend</a> () const </td></tr>
+<tr class="separator:ab2f1dfc232d85994fe2dde795db36c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cbf330bdfff39d7b4849d952b91dde7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#a7cbf330bdfff39d7b4849d952b91dde7">is_erase</a> () const </td></tr>
+<tr class="separator:a7cbf330bdfff39d7b4849d952b91dde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09dfb7a57cf473beffc8d88c26b84eea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#a09dfb7a57cf473beffc8d88c26b84eea">is_fill</a> () const </td></tr>
+<tr class="separator:a09dfb7a57cf473beffc8d88c26b84eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57f63f05a560d8e6a9a3d00e24b806aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#a57f63f05a560d8e6a9a3d00e24b806aa">is_invert</a> () const </td></tr>
+<tr class="separator:a57f63f05a560d8e6a9a3d00e24b806aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae7bccf182e99115c26581eacf9592b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#aae7bccf182e99115c26581eacf9592b3">set_blend</a> ()</td></tr>
+<tr class="separator:aae7bccf182e99115c26581eacf9592b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b62190a6e06a4aa1ea605bddd11f4ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#a0b62190a6e06a4aa1ea605bddd11f4ce">set_color</a> (sg_color_t <a class="el" href="classsgfx_1_1_pen.html#a262a28e26443067048f2009c128a08d3">color</a>)</td></tr>
 <tr class="separator:a0b62190a6e06a4aa1ea605bddd11f4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa60a729d7cd32691c310cbba17a9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#acaa60a729d7cd32691c310cbba17a9c6">set_erase</a> ()</td></tr>
+<tr class="separator:acaa60a729d7cd32691c310cbba17a9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0b5d8c58724b486dd626da2cc8fdfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#aef0b5d8c58724b486dd626da2cc8fdfb">set_fill</a> (bool v=true)</td></tr>
+<tr class="separator:aef0b5d8c58724b486dd626da2cc8fdfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd8dca5352f687cb85eda7346a9577b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#afbd8dca5352f687cb85eda7346a9577b">set_invert</a> ()</td></tr>
+<tr class="separator:afbd8dca5352f687cb85eda7346a9577b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59df3a6578a81f47b37032683558d61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#ab59df3a6578a81f47b37032683558d61">set_solid</a> ()</td></tr>
+<tr class="separator:ab59df3a6578a81f47b37032683558d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab151bc3acf460208b7e771ed90f0b043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#ab151bc3acf460208b7e771ed90f0b043">set_thickness</a> (u8 v)</td></tr>
 <tr class="separator:ab151bc3acf460208b7e771ed90f0b043"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38f0619da7c18b88ee1a0fa0338f7551"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_pen.html#a38f0619da7c18b88ee1a0fa0338f7551">thickness</a> () const </td></tr>
@@ -94,6 +123,126 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab2f1dfc232d85994fe2dde795db36c4a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sgfx::Pen::is_blend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if pen is in blend mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7cbf330bdfff39d7b4849d952b91dde7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sgfx::Pen::is_erase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if pen is in erase mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09dfb7a57cf473beffc8d88c26b84eea"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sgfx::Pen::is_fill </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if fill is enabled for pen (used with icons). </p>
+
+</div>
+</div>
+<a class="anchor" id="a57f63f05a560d8e6a9a3d00e24b806aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sgfx::Pen::is_invert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if pen is in invert mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="aae7bccf182e99115c26581eacf9592b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Pen::set_blend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the pen to a blending mode (OR). </p>
+
+</div>
+</div>
 <a class="anchor" id="a0b62190a6e06a4aa1ea605bddd11f4ce"></a>
 <div class="memitem">
 <div class="memproto">
@@ -122,6 +271,103 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="acaa60a729d7cd32691c310cbba17a9c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Pen::set_erase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the pen to a clearing mode (AND). </p>
+
+</div>
+</div>
+<a class="anchor" id="aef0b5d8c58724b486dd626da2cc8fdfb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Pen::set_fill </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>v</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the pen to fill when drawing vector icons. </p>
+
+</div>
+</div>
+<a class="anchor" id="afbd8dca5352f687cb85eda7346a9577b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Pen::set_invert </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the pen to inverting color mode (XOR). </p>
+
+</div>
+</div>
+<a class="anchor" id="ab59df3a6578a81f47b37032683558d61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Pen::set_solid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the pen to a solid color mode (assign value). </p>
 
 </div>
 </div>

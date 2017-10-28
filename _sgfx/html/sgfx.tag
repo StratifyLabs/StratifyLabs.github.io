@@ -142,20 +142,6 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sg_cursor_invert_hline</name>
-      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
-      <anchor>ga9b0235abcb38aaafe824725e511bce2c</anchor>
-      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sg_cursor_clear_hline</name>
-      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
-      <anchor>ga517b565a2bad8d671cc4971e3e1c40c0</anchor>
-      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
       <name>sg_cursor_draw_cursor</name>
       <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
       <anchor>ga03fa44c5c35ef1815c1de27fbe2dc9e5</anchor>
@@ -226,24 +212,17 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sg_invert_rectangle</name>
+      <name>sg_draw_arc</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>gadce059bb7c834c2cfd612b3dd3654657</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sg_clear_rectangle</name>
-      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga6617a2636d95f8477d66d97ba1ffc90e</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+      <anchor>ga1f41cd3b96f6b445c6d4b1c7d41de66f</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, s16 start, s16 end)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_pour</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga996c613dc71d9544dc1a63418029d88a</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+      <anchor>ga318f6563c2f9fc65929f6cfc0a0428c6</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_bounds_t bounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -303,9 +282,20 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>sg_font_types.h</name>
+    <path>/Users/tgil/git/sgfx/include/</path>
+    <filename>sg__font__types_8h</filename>
+    <class kind="struct">sg_font_header_t</class>
+    <class kind="struct">sg_font_char_t</class>
+  </compound>
+  <compound kind="file">
     <name>sg_types.h</name>
     <path>/Users/tgil/git/sgfx/include/</path>
     <filename>sg__types_8h</filename>
+    <class kind="union">sg_point_t</class>
+    <class kind="union">sg_dim_t</class>
+    <class kind="struct">sg_pen_t</class>
+    <class kind="struct">sg_bmap_t</class>
     <class kind="struct">sg_bounds_t</class>
     <class kind="struct">sg_region_t</class>
     <class kind="struct">sg_vector_primitive_t</class>
@@ -348,15 +338,57 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>SG_PEN_FLAG_TRANSPARENT_BACKGROUND</name>
+      <name>SG_PEN_FLAG_IS_SOLID</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04ac5f47e68723a3ee16190103fb78952b2</anchor>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04a82f03b17340adce16025cbab6c513ed3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>SG_PEN_FLAG_FILL</name>
+      <name>SG_PEN_FLAG_IS_ASSIGN</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04a56e218c4de37a5c1a284b909d0eda892</anchor>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04adc5a5ef0f4e3726a04ffaa16dfeb1313</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_BLEND</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04a6ee09220bd41d3536d2449cb73eca7e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_OR</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04ae86e2d410243618eab2c001f603f5f1d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_INVERT</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04ad63b3cf07d62d478b30f0484715ca7fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_XOR</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04a63fa873cd8423f776019595ac175f545</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_ERASE</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04ae02a1cfbd09e989fb7bf14ed1a3f1e87</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_AND</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04a30d4673f12e01711e4c208d717ba704d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_PEN_FLAG_IS_FILL</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abc6126af1d45847bc59afa0aa3216b04aff91d4c7c1d5be98465ef2062e484b8b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -379,6 +411,52 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>sg_bmap_t</name>
+    <filename>structsg__bmap__t.html</filename>
+    <member kind="variable">
+      <type>sg_bmap_data_t *</type>
+      <name>data</name>
+      <anchorfile>structsg__bmap__t.html</anchorfile>
+      <anchor>a0161047ac2efe3325367fb33b9c32d13</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_pen_t</type>
+      <name>pen</name>
+      <anchorfile>structsg__bmap__t.html</anchorfile>
+      <anchor>a760dccca14b29f7d7f272c7252ac1df8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_dim_t</type>
+      <name>dim</name>
+      <anchorfile>structsg__bmap__t.html</anchorfile>
+      <anchor>abfe4099c3c97bceb1c2131b090c74fe9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_dim_t</type>
+      <name>margin_top_left</name>
+      <anchorfile>structsg__bmap__t.html</anchorfile>
+      <anchor>aceb4a9803531e68285bb13545b1d8870</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_dim_t</type>
+      <name>margin_bottom_right</name>
+      <anchorfile>structsg__bmap__t.html</anchorfile>
+      <anchor>aef0863a0579537cfa43c8699cbcc255b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_size_t</type>
+      <name>columns</name>
+      <anchorfile>structsg__bmap__t.html</anchorfile>
+      <anchor>a737cade9457749542d3297c27186be7a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>sg_bounds_t</name>
     <filename>structsg__bounds__t.html</filename>
     <member kind="variable">
@@ -396,56 +474,156 @@
       <arglist></arglist>
     </member>
   </compound>
-  <compound kind="struct">
-    <name>sg_font_hdr_t</name>
-    <filename>structsg__font__hdr__t.html</filename>
+  <compound kind="union">
+    <name>sg_dim_t</name>
+    <filename>unionsg__dim__t.html</filename>
     <member kind="variable">
-      <type>u8</type>
-      <name>num_chars</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>a7fe2683ebee121f2928bec98c5c4dada</anchor>
+      <type>sg_size_t</type>
+      <name>width</name>
+      <anchorfile>unionsg__dim__t.html</anchorfile>
+      <anchor>a81196a771eaee217bdeadf3e841e4c80</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_size_t</type>
+      <name>height</name>
+      <anchorfile>unionsg__dim__t.html</anchorfile>
+      <anchor>af733290f80ce68373d45da3b75b79bc7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sg_font_char_t</name>
+    <filename>structsg__font__char__t.html</filename>
+    <member kind="variable">
+      <type>u16</type>
+      <name>offset</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>ab7432beb7e38890dc11500dc424781f6</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u8</type>
-      <name>max_byte_width</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>a0e8b38131cf1c7073b5ae05216bf3764</anchor>
+      <name>width</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>a0996d8e0cf9a806f355eeb5929e210b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>height</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>a400f9a647a6fa43232e712942461cec0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s16</type>
+      <name>xoffset</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>aeb47a3383ac0aff173b30ed2e22876d9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s16</type>
+      <name>yoffset</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>aa37f3c3acb00600ac78b67fb09f6f559</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sg_font_header_t</name>
+    <filename>structsg__font__header__t.html</filename>
+    <member kind="variable">
+      <type>u8</type>
+      <name>num_chars</name>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>a6675b97bd44f7e796e9c805720d80ad2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>max_word_width</name>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>a9d49210824ce1373415c0c4d25bfd53c</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u8</type>
       <name>max_height</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>ae13e9fcf4ed2a14b35b6459ebb6e13b4</anchor>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>a715f45a2a865b9dec8974298c199e2b3</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u8</type>
       <name>bits_per_pixel</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>add1016d92d7ca252b24df9a73eb4cacd</anchor>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>aecfbfb3e5770d6d1561186d565fd662a</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u32</type>
       <name>size</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>a91dec7e779ad7182901e7d5ed77eea74</anchor>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>a741702c6a927e4034ffe7d993f04536e</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u16</type>
       <name>kerning_pairs</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>ae72a69b22bd6d714e8a79ac04a87b86d</anchor>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>a96ffa5e1a4b40cbb78f2bd4e10a854e2</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
       <type>u16</type>
       <name>version</name>
-      <anchorfile>structsg__font__hdr__t.html</anchorfile>
-      <anchor>adf92043cf3cd4ad79c247f386cb16291</anchor>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>adbc35f5db867d8afe79a782b35de1cf7</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sg_pen_t</name>
+    <filename>structsg__pen__t.html</filename>
+    <member kind="variable">
+      <type>u16</type>
+      <name>o_flags</name>
+      <anchorfile>structsg__pen__t.html</anchorfile>
+      <anchor>a5af423f420b31b17f098e572c32b020a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>thickness</name>
+      <anchorfile>structsg__pen__t.html</anchorfile>
+      <anchor>a37a15fa9b9459234dbf1201d7112bd57</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_color_t</type>
+      <name>color</name>
+      <anchorfile>structsg__pen__t.html</anchorfile>
+      <anchor>a938fc3e8f9378beec55decd995db2c11</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="union">
+    <name>sg_point_t</name>
+    <filename>unionsg__point__t.html</filename>
+    <member kind="variable">
+      <type>sg_int_t</type>
+      <name>x</name>
+      <anchorfile>unionsg__point__t.html</anchorfile>
+      <anchor>abf18e3c2f3694dcbea5c4c271c0428b4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_int_t</type>
+      <name>y</name>
+      <anchorfile>unionsg__point__t.html</anchorfile>
+      <anchor>a32008eeee17ae6c2f58fcd062089979e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -672,20 +850,6 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sg_cursor_invert_hline</name>
-      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
-      <anchor>ga9b0235abcb38aaafe824725e511bce2c</anchor>
-      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sg_cursor_clear_hline</name>
-      <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
-      <anchor>ga517b565a2bad8d671cc4971e3e1c40c0</anchor>
-      <arglist>(sg_cursor_t *cursor, sg_size_t width)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
       <name>sg_cursor_draw_cursor</name>
       <anchorfile>group___c_u_r_s_o_r.html</anchorfile>
       <anchor>ga03fa44c5c35ef1815c1de27fbe2dc9e5</anchor>
@@ -773,24 +937,17 @@
     </member>
     <member kind="function">
       <type>void</type>
-      <name>sg_invert_rectangle</name>
+      <name>sg_draw_arc</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>gadce059bb7c834c2cfd612b3dd3654657</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
-    </member>
-    <member kind="function">
-      <type>void</type>
-      <name>sg_clear_rectangle</name>
-      <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga6617a2636d95f8477d66d97ba1ffc90e</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+      <anchor>ga1f41cd3b96f6b445c6d4b1c7d41de66f</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, s16 start, s16 end)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_pour</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga996c613dc71d9544dc1a63418029d88a</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p)</arglist>
+      <anchor>ga318f6563c2f9fc65929f6cfc0a0428c6</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_bounds_t bounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
