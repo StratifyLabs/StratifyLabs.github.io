@@ -64,61 +64,61 @@ Functions</h2></td></tr>
 <p>These are the values returned by <a class="el" href="group___f_i_l_e_s.html#ga55014cbf786748cff374286963610386">son_get_error()</a>. The value is set when a son_* function does not complete successfully. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea745c8812407b57a377954070484f7aab"></a>SON_ERR_NONE&#160;</td><td class="fielddoc">
-<p>This value indicates no error has occurred. </p>
+<p>0: This value indicates no error has occurred. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4feaad14b56bdacac7564f69d63019079d66"></a>SON_ERR_NO_ROOT&#160;</td><td class="fielddoc">
-<p>This error happens when a top level object or array is not created. </p>
+<p>1: This error happens when a top level object or array is not created. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea7110edd81d1090157fd04a20464abce5"></a>SON_ERR_OPEN_IO&#160;</td><td class="fielddoc">
-<p>This error happens if there is an IO failure to create or open a file (run perror() for more info). </p>
+<p>2: This error happens if there is an IO failure to create or open a file (run perror() for more info). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea1828f9c4b800ca209e457845c83a220a"></a>SON_ERR_READ_IO&#160;</td><td class="fielddoc">
-<p>This error happens when an IO read operation fails (run perror() for more info). </p>
+<p>3: This error happens when an IO read operation fails (run perror() for more info). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea0e2f6fa493884cad7f1fb32b6c48a3a7"></a>SON_ERR_WRITE_IO&#160;</td><td class="fielddoc">
-<p>This error happens when an IO write operation fails (run perror() for more info). </p>
+<p>4: This error happens when an IO write operation fails (run perror() for more info). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea8b8d05f21f2a38e4fe0e8e3c547cb158"></a>SON_ERR_CLOSE_IO&#160;</td><td class="fielddoc">
-<p>This error happens when an IO close operation fails (run perror() for more info). </p>
+<p>5: This error happens when an IO close operation fails (run perror() for more info). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea2f9fce559b090c30dd8bfef2224c0ae1"></a>SON_ERR_SEEK_IO&#160;</td><td class="fielddoc">
-<p>This error happens when an IO seek operation fails (run perror() for more info). </p>
+<p>6: This error happens when an IO seek operation fails (run perror() for more info). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea5a4fe30fba4b4bfcc053f71ea9c13a88"></a>SON_ERR_READ_CHECKSUM&#160;</td><td class="fielddoc">
-<p>This error happens when the data in the file has a invalid checksum which indicates a corrupted file or bad file format. </p>
+<p>7: This error happens when the data in the file has a invalid checksum which indicates a corrupted file or bad file format. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4feae46e9a09111ea56a2390ede67f3d43d3"></a>SON_ERR_CANNOT_APPEND&#160;</td><td class="fielddoc">
-<p>This error happens when an append is attempted on a file that has not been saved for appending </p>
+<p>8: This error happens when an append is attempted on a file that has not been saved for appending </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea5b0700fde3ed39ae438a810bdf9f7fc0"></a>SON_ERR_CANNOT_WRITE&#160;</td><td class="fielddoc">
-<p>This error happens if a write is attempted on a file that has been opened for reading </p>
+<p>9: This error happens if a write is attempted on a file that has been opened for reading </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea17323d7e861eef85d12cc018254b40d4"></a>SON_ERR_CANNOT_READ&#160;</td><td class="fielddoc">
-<p>This error happens if a read is attempted on a file that has been opened for writing or appending </p>
+<p>10: This error happens if a read is attempted on a file that has been opened for writing or appending </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea62724900e6de99c48db33133e4afe0f2"></a>SON_ERR_INVALID_ROOT&#160;</td><td class="fielddoc">
-<p>This error happens when the root object is not valid (usually a bad file format or corrupted file). </p>
+<p>11: This error happens when the root object is not valid (usually a bad file format or corrupted file). </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea807b62ce0a6bd5dbd1da2c437032debd"></a>SON_ERR_ARRAY_INDEX_NOT_FOUND&#160;</td><td class="fielddoc">
-<p>This error happens when an array index could not be found </p>
+<p>12: This error happens when an array index could not be found </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea31004e3ba25008b63d21b7182b019cb6"></a>SON_ERR_ACCESS_TOO_LONG&#160;</td><td class="fielddoc">
-<p>This error happens if the <em>access</em> parameter len exceeds <em>SON_ACCESS_MAX_USER_SIZE</em>. </p>
+<p>13: This error happens if the <em>access</em> parameter len exceeds <em>SON_ACCESS_MAX_USER_SIZE</em>. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4feaa3170defb0a6c2ca6a1f5f6446d4f988"></a>SON_ERR_KEY_NOT_FOUND&#160;</td><td class="fielddoc">
-<p>This error happens when the key specified by the <em>access</em> parameter could not be found. </p>
+<p>14: This error happens when the key specified by the <em>access</em> parameter could not be found. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea19d9b9c8ffd16b6954a0cf7f2b9a85dd"></a>SON_ERR_STACK_OVERFLOW&#160;</td><td class="fielddoc">
-<p>This error happens if the depth (<a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array()</a> or <a class="el" href="group___w_r_i_t_e.html#gae96f2c99a8480d89ca75c02cf58ec366">son_open_obj()</a>) exceeds, the handle's stack size. </p>
+<p>15: This error happens if the depth (<a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array()</a> or <a class="el" href="group___w_r_i_t_e.html#gae96f2c99a8480d89ca75c02cf58ec366">son_open_obj()</a>) exceeds, the handle's stack size. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea34cc3c8896f650599659477b5001ad97"></a>SON_ERR_INVALID_KEY&#160;</td><td class="fielddoc">
-<p>This happens if an empty key is passed to anything but the root object. </p>
+<p>16: This happens if an empty key is passed to anything but the root object. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea3ba92da96e38b6accfb27ec40d2b1277"></a>SON_ERR_CANNOT_CONVERT&#160;</td><td class="fielddoc">
-<p>This happens if a read is tried by the base data can't be converted </p>
+<p>17: This happens if a read is tried by the base data can't be converted </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300"></a>SON_ERR_EDIT_TYPE_MISMATCH&#160;</td><td class="fielddoc">
-<p>This happens if a value is edited with a function that doesn't match the base type </p>
+<p>18: This happens if a value is edited with a function that doesn't match the base type </p>
 </td></tr>
 </table>
 
