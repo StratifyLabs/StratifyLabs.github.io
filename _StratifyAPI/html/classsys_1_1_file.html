@@ -80,8 +80,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0bd19cf99d6d352d46105a51f07b2576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad2599aeae6f709eb63552bd4c0beae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adad2599aeae6f709eb63552bd4c0beae">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, void *buf, int nbyte) const </td></tr>
 <tr class="separator:adad2599aeae6f709eb63552bd4c0beae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b81b398425f8c9fac012f6cdaacac3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a39b81b398425f8c9fac012f6cdaacac3">readline</a> (char *buf, int nbyte, int timeout, char term) const </td></tr>
-<tr class="separator:a39b81b398425f8c9fac012f6cdaacac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693e66e72c3f51466289aecf5a669d83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a693e66e72c3f51466289aecf5a669d83">readline</a> (char *buf, int nbyte, int timeout, char term= '\n') const </td></tr>
+<tr class="separator:a693e66e72c3f51466289aecf5a669d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeadfbb00ef0acb3309d5b57bfb9e697"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence=LINK_SEEK_SET) const </td></tr>
 <tr class="separator:adeadfbb00ef0acb3309d5b57bfb9e697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
@@ -105,7 +105,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a061dde35654b80c671dbc558081d7f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a2151aab1ba53bf7034c827b988545117"></a>
+<a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -116,59 +116,59 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>These values are used as flags when opening devices or files </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117aab5956e3052d01bfe6b0e1a548bf5b0d"></a>RDONLY&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85aab5956e3052d01bfe6b0e1a548bf5b0d"></a>RDONLY&#160;</td><td class="fielddoc">
 <p>Open as read-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ae78d15b60014a448ce7ceb28d8f68675"></a>READONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ae78d15b60014a448ce7ceb28d8f68675"></a>READONLY&#160;</td><td class="fielddoc">
 <p>Open as read-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a2e2e94a6417958e222b8c59bfd8b8f10"></a>WRONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a2e2e94a6417958e222b8c59bfd8b8f10"></a>WRONLY&#160;</td><td class="fielddoc">
 <p>Open as write-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117aa75ac97b10832706efa6833f0143e8cb"></a>WRITEONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85aa75ac97b10832706efa6833f0143e8cb"></a>WRITEONLY&#160;</td><td class="fielddoc">
 <p>Open as write-only </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a4899f3ffdc8fc8ebb328b80eef5ea570"></a>CREATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a4899f3ffdc8fc8ebb328b80eef5ea570"></a>CREATE&#160;</td><td class="fielddoc">
 <p>Create when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ab661c22c22306be37b3c8444bb33117d"></a>CREAT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ab661c22c22306be37b3c8444bb33117d"></a>CREAT&#160;</td><td class="fielddoc">
 <p>Create when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a4072b10334fa7e9308575c6be96f8bec"></a>TRUNCATE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a4072b10334fa7e9308575c6be96f8bec"></a>TRUNCATE&#160;</td><td class="fielddoc">
 <p>Truncate when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ae5c870410ec842ac484b141fb9a83a23"></a>TRUNC&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ae5c870410ec842ac484b141fb9a83a23"></a>TRUNC&#160;</td><td class="fielddoc">
 <p>Truncate when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117aafd76b19a5e96af812ba41e52cf33258"></a>APPEND&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85aafd76b19a5e96af812ba41e52cf33258"></a>APPEND&#160;</td><td class="fielddoc">
 <p>Append when opening (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a37aab34c23243e464be006c668692e51"></a>EXCLUSIVE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a37aab34c23243e464be006c668692e51"></a>EXCLUSIVE&#160;</td><td class="fielddoc">
 <p>Create exclusively (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ab507f6a41b4ded9ecce37af5b1eb5f3d"></a>EXCL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ab507f6a41b4ded9ecce37af5b1eb5f3d"></a>EXCL&#160;</td><td class="fielddoc">
 <p>Create exclusively (files) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a83038e64d6d3ebb8b58d7b81cf094ff8"></a>READWRITE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a83038e64d6d3ebb8b58d7b81cf094ff8"></a>READWRITE&#160;</td><td class="fielddoc">
 <p>Open as read-write </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a4889aa3b3d449f988dd2c5f34ae13791"></a>RDWR&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a4889aa3b3d449f988dd2c5f34ae13791"></a>RDWR&#160;</td><td class="fielddoc">
 <p>Open as read-write </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117ad36616dd55762c66d6f9d110d7e6d980"></a>NONBLOCK&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ad36616dd55762c66d6f9d110d7e6d980"></a>NONBLOCK&#160;</td><td class="fielddoc">
 <p>Open as non-blocking </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117abf6bc95d057e3180b514234a32e2fb0e"></a>NDELAY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85abf6bc95d057e3180b514234a32e2fb0e"></a>NDELAY&#160;</td><td class="fielddoc">
 <p>Open as non-blocking </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2151aab1ba53bf7034c827b988545117a79167987839f57209a72a0ba54d0abda"></a>ACCMODE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a79167987839f57209a72a0ba54d0abda"></a>ACCMODE&#160;</td><td class="fielddoc">
 <p>Access mode mask </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85"></a>
+<a class="anchor" id="a93c731c942c7f9d83b4e56125e7a6ce6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -179,13 +179,13 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>List of options for <em>whence</em> argument of <a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek()</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85a21f22adedd7716405eea451a1c30757c"></a>SET&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a93c731c942c7f9d83b4e56125e7a6ce6a21f22adedd7716405eea451a1c30757c"></a>SET&#160;</td><td class="fielddoc">
 <p>Set the location of the file descriptor </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ab2b9235a9f9c40b4999d46974125ba82"></a>CURRENT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a93c731c942c7f9d83b4e56125e7a6ce6ab2b9235a9f9c40b4999d46974125ba82"></a>CURRENT&#160;</td><td class="fielddoc">
 <p>Set the location relative to the current location </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a2771979e0e1a879dc85f8d55a131ea85ae70ee9d33241a1d22bd4c881e1b5f29b"></a>END&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a93c731c942c7f9d83b4e56125e7a6ce6ae70ee9d33241a1d22bd4c881e1b5f29b"></a>END&#160;</td><td class="fielddoc">
 <p>Set the location relative to the end of the file or device </p>
 </td></tr>
 </table>
@@ -434,7 +434,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and const arg pointer. </p>
+<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and const arg pointer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The request value </td></tr>
+    <tr><td class="paramname">arg</td><td>A pointer to the arguments </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Depends on request </dd></dl>
 
 </div>
 </div>
@@ -459,7 +467,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with just a request. </p>
+<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with just a request.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The request value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Depends on request</dd></dl>
+<p>The arg value for the ioctl is set to NULL. </p>
 
 </div>
 </div>
@@ -494,7 +510,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and integer arg. </p>
+<p>Executes an <a class="el" href="classsys_1_1_file.html#a0ad61b5f1e7de0892a7de5f015b52b35">ioctl()</a> with request and integer arg.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>The request value </td></tr>
+    <tr><td class="paramname">arg</td><td>An integer value (used with some requests) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Depends on request </dd></dl>
 
 </div>
 </div>
@@ -570,7 +594,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Open the specified file or device </p>
+<p>Opens a file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The path to the file </td></tr>
+    <tr><td class="paramname">flags</td><td>The flags used to open the flag (e.g. <a class="el" href="classsys_1_1_file.html#a2771979e0e1a879dc85f8d55a131ea85ae78d15b60014a448ce7ceb28d8f68675">File::READONLY</a>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classfmt_1_1_bmp.html#a26ebec8dfa1b7a4e43f68fae38cfa15c">fmt::Bmp</a>.</p>
 
@@ -797,7 +829,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a39b81b398425f8c9fac012f6cdaacac3"></a>
+<a class="anchor" id="a693e66e72c3f51466289aecf5a669d83"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -823,7 +855,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>term</em>&#160;</td>
+          <td class="paramname"><em>term</em> = <code>'\n'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -832,7 +864,17 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Reads a line from the file. </p>
+<p>Reads a line from a file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Destination buffer </td></tr>
+    <tr><td class="paramname">nbyte</td><td>Number of bytes available in buffer </td></tr>
+    <tr><td class="paramname">timeout</td><td>Timeout in ms if line does not arrive </td></tr>
+    <tr><td class="paramname">term</td><td>Terminating character of the line (default is newline) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes received </dd></dl>
 
 </div>
 </div>
@@ -871,9 +913,11 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the file </td></tr>
+    <tr><td class="paramname">driver</td><td>Used only with link protocol </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -947,9 +991,11 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the file </td></tr>
+    <tr><td class="paramname">driver</td><td>Used only with link protocol </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes in the file or less than zero for an error </dd></dl>
 
 </div>
 </div>
@@ -1011,9 +1057,11 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the file </td></tr>
     <tr><td class="paramname">st</td><td>A pointer to the stat structure </td></tr>
+    <tr><td class="paramname">driver</td><td>Used only with link protocol </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>

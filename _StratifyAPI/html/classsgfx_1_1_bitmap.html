@@ -43,8 +43,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a22de864bfdbc3ba4ff5ec06c2164884f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe26836f5f9d0a3d3d1a9b34cf9ea91c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#afe26836f5f9d0a3d3d1a9b34cf9ea91c">Bitmap</a> ()</td></tr>
 <tr class="separator:afe26836f5f9d0a3d3d1a9b34cf9ea91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb26905411b8870182468dcc843a0105"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#abb26905411b8870182468dcc843a0105">Bitmap</a> (sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
-<tr class="separator:abb26905411b8870182468dcc843a0105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319c93bf90e990bcafdfc7140511a5e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a319c93bf90e990bcafdfc7140511a5e2">Bitmap</a> (const sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
+<tr class="separator:a319c93bf90e990bcafdfc7140511a5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f0ce3d99dd2b99e3ebb1baebb086b3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a1f0ce3d99dd2b99e3ebb1baebb086b3a">Bitmap</a> (sg_bmap_data_t *mem, sg_size_t w, sg_size_t h, bool readonly=false)</td></tr>
 <tr class="separator:a1f0ce3d99dd2b99e3ebb1baebb086b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73439205da4c165ca094da5cdbf3154b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a73439205da4c165ca094da5cdbf3154b">Bitmap</a> (sg_size_t w, sg_size_t h)</td></tr>
@@ -63,6 +63,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72637c672676ed5e512775900020cc3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec9acb305277a41f54886b82b9c932c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#abec9acb305277a41f54886b82b9c932c">draw_pixel</a> (sg_point_t p) const </td></tr>
 <tr class="separator:abec9acb305277a41f54886b82b9c932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9b7c2bf07d96da4d0d061bff5258ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a1f9b7c2bf07d96da4d0d061bff5258ff">draw_pour</a> (const sg_point_t &amp;point, const sg_bounds_t &amp;bounds) const </td></tr>
+<tr class="separator:a1f9b7c2bf07d96da4d0d061bff5258ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b921e3dfa7a7fcf0de0975b39f216f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae5b921e3dfa7a7fcf0de0975b39f216f">draw_rectangle</a> (sg_point_t p, sg_dim_t d) const </td></tr>
 <tr class="separator:ae5b921e3dfa7a7fcf0de0975b39f216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf290288f3d27dd2ccea29273168920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a6cf290288f3d27dd2ccea29273168920">draw_sub_bitmap</a> (sg_point_t p_dest, const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;src, sg_point_t p_src, sg_dim_t d_src) const </td></tr>
@@ -77,22 +79,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac03f30c952c2e55e1c0998b2ebf44e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23bd14f06b52ad333d53324efe0d44ea"><td class="memItemLeft" align="right" valign="top">sg_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a23bd14f06b52ad333d53324efe0d44ea">pen_color</a> () const </td></tr>
 <tr class="separator:a23bd14f06b52ad333d53324efe0d44ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a65339220341e327f5862d8e04868cf"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a6a65339220341e327f5862d8e04868cf">pen_flags</a> () const </td></tr>
+<tr class="separator:a6a65339220341e327f5862d8e04868cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae136a9067cbda170a19a3997219c7acc"><td class="memItemLeft" align="right" valign="top">sg_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae136a9067cbda170a19a3997219c7acc">pen_thickness</a> () const </td></tr>
 <tr class="separator:ae136a9067cbda170a19a3997219c7acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bbce417565555014ae9f811ba38dc78"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh</a> () const </td></tr>
 <tr class="separator:a7bbce417565555014ae9f811ba38dc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f611d5bc7c0c2ffd7170c702221e3e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a2f611d5bc7c0c2ffd7170c702221e3e1">restore_pen</a> ()</td></tr>
+<tr class="separator:a2f611d5bc7c0c2ffd7170c702221e3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a091ec6420eb5c8dc74245ba2ab8551"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a4a091ec6420eb5c8dc74245ba2ab8551">save</a> (const char *path) const </td></tr>
 <tr class="separator:a4a091ec6420eb5c8dc74245ba2ab8551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15b479f2d0bf27d903e3a3bba4cb9a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#af15b479f2d0bf27d903e3a3bba4cb9a1">set_data</a> (sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
-<tr class="separator:af15b479f2d0bf27d903e3a3bba4cb9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92ed3f25f82de971d94a7d32b5aae5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae92ed3f25f82de971d94a7d32b5aae5c">set_data</a> (const sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
+<tr class="separator:ae92ed3f25f82de971d94a7d32b5aae5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a79f065b3288a96e207eadd42f1991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a69a79f065b3288a96e207eadd42f1991">set_pen</a> (const <a class="el" href="classsgfx_1_1_pen.html">Pen</a> &amp;<a class="el" href="classsgfx_1_1_bitmap.html#ac03f30c952c2e55e1c0998b2ebf44e4a">pen</a>)</td></tr>
 <tr class="separator:a69a79f065b3288a96e207eadd42f1991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb195dd77fb5117f4c3ae7f9a709c881"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#acb195dd77fb5117f4c3ae7f9a709c881">set_pen_color</a> (sg_color_t color)</td></tr>
 <tr class="separator:acb195dd77fb5117f4c3ae7f9a709c881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce16ddc67e9ca52fbed9820ac3cfcf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a2ce16ddc67e9ca52fbed9820ac3cfcf7">set_pen_flags</a> (u16 o_flags)</td></tr>
+<tr class="separator:a2ce16ddc67e9ca52fbed9820ac3cfcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad43eddfbba925da34bb3a9d96de7ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#aad43eddfbba925da34bb3a9d96de7ac4">set_pen_thickness</a> (sg_size_t thickness)</td></tr>
 <tr class="separator:aad43eddfbba925da34bb3a9d96de7ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45a7c3f9c86bbb9d9cf490b3640803a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ab45a7c3f9c86bbb9d9cf490b3640803a">set_size</a> (sg_size_t w, sg_size_t h, sg_size_t offset=0)</td></tr>
 <tr class="separator:ab45a7c3f9c86bbb9d9cf490b3640803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239996930ed489e7b42f7b6747dbe5b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a239996930ed489e7b42f7b6747dbe5b5">show</a> () const </td></tr>
+<tr class="separator:a239996930ed489e7b42f7b6747dbe5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2302f864f81f9ba5759c19cb4a5a0e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a2302f864f81f9ba5759c19cb4a5a0e3f">store_pen</a> ()</td></tr>
+<tr class="separator:a2302f864f81f9ba5759c19cb4a5a0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bc310e553d607ed9a1ff139ef999d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a45bc310e553d607ed9a1ff139ef999d6">transform_shift</a> (sg_point_t shift, sg_point_t p, sg_dim_t d) const </td></tr>
+<tr class="separator:a45bc310e553d607ed9a1ff139ef999d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95554ced06dc14cfd6d6e2b432a7057"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ab95554ced06dc14cfd6d6e2b432a7057">wait</a> (u16 resolution) const </td></tr>
 <tr class="separator:ab95554ced06dc14cfd6d6e2b432a7057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd655caddb636dfd1874b1bf8b47f160"><td class="memItemLeft" align="right" valign="top">sg_int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#afd655caddb636dfd1874b1bf8b47f160">x_max</a> () const </td></tr>
@@ -160,14 +174,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abb26905411b8870182468dcc843a0105"></a>
+<a class="anchor" id="a319c93bf90e990bcafdfc7140511a5e2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">sgfx::Bitmap::Bitmap </td>
           <td>(</td>
-          <td class="paramtype">sg_bmap_header_t *&#160;</td>
+          <td class="paramtype">const sg_bmap_header_t *&#160;</td>
           <td class="paramname"><em>hdr</em>, </td>
         </tr>
         <tr>
@@ -351,6 +365,8 @@ Static Public Member Functions</h2></td></tr>
 <p>The bitmap should not be modified while a refresh is in progress to prevent a frame from being partially copied.</p>
 <p>See <a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh()</a> for an example.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh()</a> is still in progress, false if the bitmap can be modified again </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#ad0fac222ac04d29ced0beaf710c60f21">hal::DisplayDev</a>.</p>
 
 </div>
 </div>
@@ -602,6 +618,49 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a1f9b7c2bf07d96da4d0d061bff5258ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::draw_pour </td>
+          <td>(</td>
+          <td class="paramtype">const sg_point_t &amp;&#160;</td>
+          <td class="paramname"><em>point</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sg_bounds_t &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pours an area on the bitmap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>Center of the pour </td></tr>
+    <tr><td class="paramname">bounds</td><td>Bounds for the pour</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The pour will seek boundaries going outward until it hits a non-zero color or hits the bounding box. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae5b921e3dfa7a7fcf0de0975b39f216f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -822,6 +881,30 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a6a65339220341e327f5862d8e04868cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 sgfx::Bitmap::pen_flags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the pen flags. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae136a9067cbda170a19a3997219c7acc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -842,7 +925,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retursn the pen thickness. </p>
+<p>Returns the pen thickness. </p>
 
 </div>
 </div>
@@ -866,8 +949,34 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is designated as an interface for classes that inherit <a class="el" href="classsgfx_1_1_bitmap.html" title="Bitmap Class. ">Bitmap</a> to copy the bitmap to a physical device (such as hal::DisplayDev). The implementation in this class is simple an empty method. Here is an example:</p>
+<p>This method is designated as an interface for classes that inherit <a class="el" href="classsgfx_1_1_bitmap.html" title="Bitmap Class. ">Bitmap</a> to copy the bitmap to a physical device (such as <a class="el" href="classhal_1_1_display_dev.html" title="Display Device. ">hal::DisplayDev</a>). The implementation in this class is simple an empty method. Here is an example:</p>
 <div class="fragment"><div class="line">DisplayDev display; <span class="comment">//this class inherits bitmap and re-implments refresh()</span></div><div class="line"></div><div class="line">display.clear(); <span class="comment">//clear the bitmap in memory</span></div><div class="line">display.refresh(); <span class="comment">//copy the memory to the physical device (or notify the underlying driver that it is time to copy)</span></div></div><!-- fragment --> 
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#aa0f7c1912c8944a9957410b2c54d9926">hal::DisplayDev</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f611d5bc7c0c2ffd7170c702221e3e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::restore_pen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Restores the stored pen. </p>
+
 </div>
 </div>
 <a class="anchor" id="a4a091ec6420eb5c8dc74245ba2ab8551"></a>
@@ -895,14 +1004,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af15b479f2d0bf27d903e3a3bba4cb9a1"></a>
+<a class="anchor" id="ae92ed3f25f82de971d94a7d32b5aae5c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void sgfx::Bitmap::set_data </td>
           <td>(</td>
-          <td class="paramtype">sg_bmap_header_t *&#160;</td>
+          <td class="paramtype">const sg_bmap_header_t *&#160;</td>
           <td class="paramname"><em>hdr</em>, </td>
         </tr>
         <tr>
@@ -943,7 +1052,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the pen to <em>pen</em>. </p>
+<p>Sets the bitmap's pen by making a copy of the <em>pen</em> parameter. </p>
 
 </div>
 </div>
@@ -983,6 +1092,31 @@ Static Public Member Functions</h2></td></tr>
 </ul>
 <p>For example, for 4bpp, there are 16 colors so <em>color</em> can be from 0 to 15 (inclusive). The actual color that displays on the screen depends on the DisplayPalette associated with the Display.</p>
 <dl class="section see"><dt>See also</dt><dd>DisplayPalette, Display </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ce16ddc67e9ca52fbed9820ac3cfcf7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::set_pen_flags </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>o_flags</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Set the pen flags. </p>
 
 </div>
 </div>
@@ -1050,6 +1184,97 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a239996930ed489e7b42f7b6747dbe5b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Shows the bitmap on the standard output. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2302f864f81f9ba5759c19cb4a5a0e3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::store_pen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stores the current pen.</p>
+<p>Only one pen can be stored with the object. This can be used to temporarily draw with another pen type then restore the original pen (see <a class="el" href="classsgfx_1_1_bitmap.html#a2f611d5bc7c0c2ffd7170c702221e3e1">restore_pen()</a>).</p>
+<div class="fragment"><div class="line"><a class="code" href="classsgfx_1_1_bitmap.html#afe26836f5f9d0a3d3d1a9b34cf9ea91c">Bitmap</a> bmap(16,16);</div><div class="line"></div><div class="line">bmap.store_pen(); <span class="comment">//saves the pen</span></div><div class="line">bmap.set_pen_color(4);</div><div class="line">bmap.draw_line(sg_point(0,0), sg_point(10,10)); <span class="comment">//draw with color 4</span></div><div class="line">bmap.restore_pen(); <span class="comment">//restores the pen</span></div><div class="line">bmap.draw_line(sg_point(10,0), sg_point(0,10)); <span class="comment">//draw with original color</span></div></div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="a45bc310e553d607ed9a1ff139ef999d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sgfx::Bitmap::transform_shift </td>
+          <td>(</td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>shift</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_point_t&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sg_dim_t&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Performs a shift operation on an area of the bitmap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shift</td><td>The amount to shift in each direction </td></tr>
+    <tr><td class="paramname">p</td><td>The point on the top left of the area to shift </td></tr>
+    <tr><td class="paramname">d</td><td>The dimensions to shift</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The shifting must respect the dimensions of the bitmap. If you want to shift the entire bitmap to the left 8 pixels, do this:</p>
+<div class="fragment"><div class="line"><a class="code" href="classsgfx_1_1_bitmap.html#afe26836f5f9d0a3d3d1a9b34cf9ea91c">Bitmap</a> bmap(64,64);</div><div class="line">bmap.transform_shift(sg_point(-8,0), sg_point(8,0), sg_dim(bmap.width() - 8, bmap.height));</div></div><!-- fragment --> 
+</div>
+</div>
 <a class="anchor" id="ab95554ced06dc14cfd6d6e2b432a7057"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1072,6 +1297,8 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>This method will block until the refresh operation is complete </p>
+
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#a8efa48aa4f92cbed69d6712ad67c43bc">hal::DisplayDev</a>.</p>
 
 </div>
 </div>

@@ -55,8 +55,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a22de864bfdbc3ba4ff5ec06c2164884f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe26836f5f9d0a3d3d1a9b34cf9ea91c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#afe26836f5f9d0a3d3d1a9b34cf9ea91c">Bitmap</a> ()</td></tr>
 <tr class="separator:afe26836f5f9d0a3d3d1a9b34cf9ea91c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb26905411b8870182468dcc843a0105 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#abb26905411b8870182468dcc843a0105">Bitmap</a> (sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
-<tr class="separator:abb26905411b8870182468dcc843a0105 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319c93bf90e990bcafdfc7140511a5e2 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a319c93bf90e990bcafdfc7140511a5e2">Bitmap</a> (const sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
+<tr class="separator:a319c93bf90e990bcafdfc7140511a5e2 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f0ce3d99dd2b99e3ebb1baebb086b3a inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a1f0ce3d99dd2b99e3ebb1baebb086b3a">Bitmap</a> (sg_bmap_data_t *mem, sg_size_t w, sg_size_t h, bool readonly=false)</td></tr>
 <tr class="separator:a1f0ce3d99dd2b99e3ebb1baebb086b3a inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73439205da4c165ca094da5cdbf3154b inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a73439205da4c165ca094da5cdbf3154b">Bitmap</a> (sg_size_t w, sg_size_t h)</td></tr>
@@ -75,6 +75,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a72637c672676ed5e512775900020cc3d inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abec9acb305277a41f54886b82b9c932c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#abec9acb305277a41f54886b82b9c932c">draw_pixel</a> (sg_point_t p) const </td></tr>
 <tr class="separator:abec9acb305277a41f54886b82b9c932c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9b7c2bf07d96da4d0d061bff5258ff inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a1f9b7c2bf07d96da4d0d061bff5258ff">draw_pour</a> (const sg_point_t &amp;point, const sg_bounds_t &amp;bounds) const </td></tr>
+<tr class="separator:a1f9b7c2bf07d96da4d0d061bff5258ff inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b921e3dfa7a7fcf0de0975b39f216f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae5b921e3dfa7a7fcf0de0975b39f216f">draw_rectangle</a> (sg_point_t p, sg_dim_t d) const </td></tr>
 <tr class="separator:ae5b921e3dfa7a7fcf0de0975b39f216f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf290288f3d27dd2ccea29273168920 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a6cf290288f3d27dd2ccea29273168920">draw_sub_bitmap</a> (sg_point_t p_dest, const <a class="el" href="classsgfx_1_1_bitmap.html">Bitmap</a> &amp;src, sg_point_t p_src, sg_dim_t d_src) const </td></tr>
@@ -89,22 +91,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac03f30c952c2e55e1c0998b2ebf44e4a inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23bd14f06b52ad333d53324efe0d44ea inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">sg_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a23bd14f06b52ad333d53324efe0d44ea">pen_color</a> () const </td></tr>
 <tr class="separator:a23bd14f06b52ad333d53324efe0d44ea inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a65339220341e327f5862d8e04868cf inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a6a65339220341e327f5862d8e04868cf">pen_flags</a> () const </td></tr>
+<tr class="separator:a6a65339220341e327f5862d8e04868cf inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae136a9067cbda170a19a3997219c7acc inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">sg_color_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae136a9067cbda170a19a3997219c7acc">pen_thickness</a> () const </td></tr>
 <tr class="separator:ae136a9067cbda170a19a3997219c7acc inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bbce417565555014ae9f811ba38dc78 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh</a> () const </td></tr>
 <tr class="separator:a7bbce417565555014ae9f811ba38dc78 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f611d5bc7c0c2ffd7170c702221e3e1 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a2f611d5bc7c0c2ffd7170c702221e3e1">restore_pen</a> ()</td></tr>
+<tr class="separator:a2f611d5bc7c0c2ffd7170c702221e3e1 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a091ec6420eb5c8dc74245ba2ab8551 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a4a091ec6420eb5c8dc74245ba2ab8551">save</a> (const char *path) const </td></tr>
 <tr class="separator:a4a091ec6420eb5c8dc74245ba2ab8551 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15b479f2d0bf27d903e3a3bba4cb9a1 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#af15b479f2d0bf27d903e3a3bba4cb9a1">set_data</a> (sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
-<tr class="separator:af15b479f2d0bf27d903e3a3bba4cb9a1 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92ed3f25f82de971d94a7d32b5aae5c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae92ed3f25f82de971d94a7d32b5aae5c">set_data</a> (const sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
+<tr class="separator:ae92ed3f25f82de971d94a7d32b5aae5c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a79f065b3288a96e207eadd42f1991 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a69a79f065b3288a96e207eadd42f1991">set_pen</a> (const <a class="el" href="classsgfx_1_1_pen.html">Pen</a> &amp;<a class="el" href="classsgfx_1_1_bitmap.html#ac03f30c952c2e55e1c0998b2ebf44e4a">pen</a>)</td></tr>
 <tr class="separator:a69a79f065b3288a96e207eadd42f1991 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb195dd77fb5117f4c3ae7f9a709c881 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#acb195dd77fb5117f4c3ae7f9a709c881">set_pen_color</a> (sg_color_t color)</td></tr>
 <tr class="separator:acb195dd77fb5117f4c3ae7f9a709c881 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ce16ddc67e9ca52fbed9820ac3cfcf7 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a2ce16ddc67e9ca52fbed9820ac3cfcf7">set_pen_flags</a> (u16 o_flags)</td></tr>
+<tr class="separator:a2ce16ddc67e9ca52fbed9820ac3cfcf7 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad43eddfbba925da34bb3a9d96de7ac4 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#aad43eddfbba925da34bb3a9d96de7ac4">set_pen_thickness</a> (sg_size_t thickness)</td></tr>
 <tr class="separator:aad43eddfbba925da34bb3a9d96de7ac4 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45a7c3f9c86bbb9d9cf490b3640803a inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ab45a7c3f9c86bbb9d9cf490b3640803a">set_size</a> (sg_size_t w, sg_size_t h, sg_size_t offset=0)</td></tr>
 <tr class="separator:ab45a7c3f9c86bbb9d9cf490b3640803a inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239996930ed489e7b42f7b6747dbe5b5 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a239996930ed489e7b42f7b6747dbe5b5">show</a> () const </td></tr>
+<tr class="separator:a239996930ed489e7b42f7b6747dbe5b5 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2302f864f81f9ba5759c19cb4a5a0e3f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a2302f864f81f9ba5759c19cb4a5a0e3f">store_pen</a> ()</td></tr>
+<tr class="separator:a2302f864f81f9ba5759c19cb4a5a0e3f inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45bc310e553d607ed9a1ff139ef999d6 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a45bc310e553d607ed9a1ff139ef999d6">transform_shift</a> (sg_point_t shift, sg_point_t p, sg_dim_t d) const </td></tr>
+<tr class="separator:a45bc310e553d607ed9a1ff139ef999d6 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab95554ced06dc14cfd6d6e2b432a7057 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ab95554ced06dc14cfd6d6e2b432a7057">wait</a> (u16 resolution) const </td></tr>
 <tr class="separator:ab95554ced06dc14cfd6d6e2b432a7057 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd655caddb636dfd1874b1bf8b47f160 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">sg_int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#afd655caddb636dfd1874b1bf8b47f160">x_max</a> () const </td></tr>
@@ -296,6 +310,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Initializes the display. </p>
 
+<p>Implemented in <a class="el" href="classhal_1_1_display_dev.html#a051c6aed578dcbf956af83c45916d9e4">hal::DisplayDev</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="ae4f277c1e2fde326a776b9ec24603028"></a>
@@ -320,6 +336,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Turns the display off. </p>
 
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#a99202c1e6c06ca812e3ffdeb164387c1">hal::DisplayDev</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a78a636b45bffe9a15a7432173e15116a"></a>
@@ -343,6 +361,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Turns the display on. </p>
+
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#afbfa9bef1f8757c2086b044283578fa2">hal::DisplayDev</a>.</p>
 
 </div>
 </div>

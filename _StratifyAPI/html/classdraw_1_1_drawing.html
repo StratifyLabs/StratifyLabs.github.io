@@ -54,8 +54,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a550716d0568491e9655979dfdbbdbbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31afb36718f204fb92593e391a4e37cc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a31afb36718f204fb92593e391a4e37cc">scale</a> ()</td></tr>
 <tr class="separator:a31afb36718f204fb92593e391a4e37cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34791bc53da791048b955c1cfbaa56b7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a34791bc53da791048b955c1cfbaa56b7">set</a> (const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;attr, sg_bmap_data_t v=0xFF)</td></tr>
-<tr class="separator:a34791bc53da791048b955c1cfbaa56b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850ff361da7978ce4470eb2db916c739"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing.html#a850ff361da7978ce4470eb2db916c739">set</a> (const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;attr, sg_color_t color=0xffff)</td></tr>
+<tr class="separator:a850ff361da7978ce4470eb2db916c739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="abbe06f691c6caf93c6e091bc2ed6c212"></a>
@@ -149,8 +149,6 @@ Static Public Member Functions</h2></td></tr>
 <p>This method draws the object using the specified drawing attributes.</p>
 <p>The attributes specify which bitmap to draw on, what size to draw, and where to draw. The dimensions and position are scaled to fit on the bitmap. </p>
 
-<p>Reimplemented in <a class="el" href="classui_1_1_tab_bar.html#abc4d2fbda5904295a76cdc45e1ed996b">ui::TabBar</a>, <a class="el" href="classui_1_1_menu.html#ab91fd3e6531422e8afaae0d98f76d681">ui::Menu</a>, <a class="el" href="classui_1_1_tab_text.html#a094bba4005663af0eeb9a66e4a8047c2">ui::TabText</a>, <a class="el" href="classui_1_1_tab_icon.html#a1d68f746d19fcc2a0b67fc48184958ff">ui::TabIcon</a>, <a class="el" href="classui_1_1_tab_progress.html#aa2aa2b45e2857681248e88563ee19841">ui::TabProgress</a>, and <a class="el" href="classui_1_1_tab_time.html#a77891639643b41e6f7292b3e4747183d">ui::TabTime</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab09464d38b3763af38a7434acc7599c8"></a>
@@ -182,7 +180,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classdraw_1_1_icon.html#aca126a9c1aa521355b3f537cdb0ced83">draw::Icon</a>, <a class="el" href="classdraw_1_1_text_box.html#a376295a2f57d03415837e2fa32eca7a9">draw::TextBox</a>, <a class="el" href="classui_1_1_list.html#a16496056bb84377651e71e62c0ab9b23">ui::List</a>, <a class="el" href="classui_1_1_list_item_info.html#ade96ba004d9f43baa7efcacd573fba40">ui::ListItemInfo</a>, <a class="el" href="classdraw_1_1_panel.html#a8b0c792c7939a772373099126c3de2ed">draw::Panel</a>, <a class="el" href="classdraw_1_1_text.html#a07ae8d5983780ef544b3ed0642e41e97">draw::Text</a>, <a class="el" href="classui_1_1_list_item.html#a9ea8ac66c3b3d8684115e82d3c0e66f8">ui::ListItem</a>, <a class="el" href="classdraw_1_1_image.html#a0692ecfa25db9dc2a41ac14aee6a4712">draw::Image</a>, <a class="el" href="classdraw_1_1_progress_bar.html#ad66d382765393095914b5cc4ed15af71">draw::ProgressBar</a>, <a class="el" href="classdraw_1_1_progress_arc.html#a0d3923ad2a2abcb36b10a86188841079">draw::ProgressArc</a>, <a class="el" href="classdraw_1_1_progress_circle.html#a3eae58e4f243abcfb1185a0954a91098">draw::ProgressCircle</a>, and <a class="el" href="classdraw_1_1_rect.html#a79aa1fcbea2ce5d510c7d313a449fea6">draw::Rect</a>.</p>
+<p>Reimplemented in <a class="el" href="classdraw_1_1_icon.html#aca126a9c1aa521355b3f537cdb0ced83">draw::Icon</a>, <a class="el" href="classdraw_1_1_text_box.html#a376295a2f57d03415837e2fa32eca7a9">draw::TextBox</a>, <a class="el" href="classdraw_1_1_panel.html#a8b0c792c7939a772373099126c3de2ed">draw::Panel</a>, <a class="el" href="classdraw_1_1_text.html#a07ae8d5983780ef544b3ed0642e41e97">draw::Text</a>, <a class="el" href="classdraw_1_1_image.html#a0692ecfa25db9dc2a41ac14aee6a4712">draw::Image</a>, <a class="el" href="classdraw_1_1_progress_bar.html#ad66d382765393095914b5cc4ed15af71">draw::ProgressBar</a>, <a class="el" href="classdraw_1_1_progress_arc.html#a0d3923ad2a2abcb36b10a86188841079">draw::ProgressArc</a>, <a class="el" href="classdraw_1_1_progress_circle.html#a3eae58e4f243abcfb1185a0954a91098">draw::ProgressCircle</a>, and <a class="el" href="classdraw_1_1_rect.html#a79aa1fcbea2ce5d510c7d313a449fea6">draw::Rect</a>.</p>
 
 </div>
 </div>
@@ -248,11 +246,12 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This value determines how all objects are scaled. The default value is 1000. This means a value of 500 is half the target bitmap. </p>
+<p>This value determines how all objects are scaled.</p>
+<p>The default value is 1000. This means a value of 500 is half the target bitmap. </p>
 
 </div>
 </div>
-<a class="anchor" id="a34791bc53da791048b955c1cfbaa56b7"></a>
+<a class="anchor" id="a850ff361da7978ce4470eb2db916c739"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -268,8 +267,8 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sg_bmap_data_t&#160;</td>
-          <td class="paramname"><em>v</em> = <code>0xFF</code>&#160;</td>
+          <td class="paramtype">sg_color_t&#160;</td>
+          <td class="paramname"><em>color</em> = <code>0xffff</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -287,7 +286,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">attr</td><td>Specifies the bitmap and area </td></tr>
-    <tr><td class="paramname">v</td><td>Specifies the fill pattern </td></tr>
+    <tr><td class="paramname">color</td><td>Specifies the fill pattern </td></tr>
   </table>
   </dd>
 </dl>

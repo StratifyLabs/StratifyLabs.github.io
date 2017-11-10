@@ -90,8 +90,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0bd19cf99d6d352d46105a51f07b2576 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adad2599aeae6f709eb63552bd4c0beae">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, void *buf, int nbyte) const </td></tr>
 <tr class="separator:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39b81b398425f8c9fac012f6cdaacac3 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a39b81b398425f8c9fac012f6cdaacac3">readline</a> (char *buf, int nbyte, int timeout, char term) const </td></tr>
-<tr class="separator:a39b81b398425f8c9fac012f6cdaacac3 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693e66e72c3f51466289aecf5a669d83 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a693e66e72c3f51466289aecf5a669d83">readline</a> (char *buf, int nbyte, int timeout, char term= '\n') const </td></tr>
+<tr class="separator:a693e66e72c3f51466289aecf5a669d83 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeadfbb00ef0acb3309d5b57bfb9e697 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence=LINK_SEEK_SET) const </td></tr>
 <tr class="separator:adeadfbb00ef0acb3309d5b57bfb9e697 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
@@ -138,7 +138,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710"></a>
+<a class="anchor" id="a233053a8572fb55e847043c5259b929a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -148,22 +148,22 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a80485094e44d80af136f8e29592f90cc"></a>LAUNCH_OPTIONS_FLASH&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a233053a8572fb55e847043c5259b929aa80485094e44d80af136f8e29592f90cc"></a>LAUNCH_OPTIONS_FLASH&#160;</td><td class="fielddoc">
 <p>Install in flash memory </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710ab1841e095848c67d38ca6f16d74acf57"></a>LAUNCH_OPTIONS_STARTUP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a233053a8572fb55e847043c5259b929aab1841e095848c67d38ca6f16d74acf57"></a>LAUNCH_OPTIONS_STARTUP&#160;</td><td class="fielddoc">
 <p>Run at startup (must be in flash) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710ad6ca31ec84ba7ae236a62d436c73373c"></a>LAUNCH_OPTIONS_ROOT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a233053a8572fb55e847043c5259b929aad6ca31ec84ba7ae236a62d436c73373c"></a>LAUNCH_OPTIONS_ROOT&#160;</td><td class="fielddoc">
 <p>Run as root (if applicable) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a1927718f55e1533de245405f317c958d"></a>LAUNCH_OPTIONS_REPLACE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a233053a8572fb55e847043c5259b929aa1927718f55e1533de245405f317c958d"></a>LAUNCH_OPTIONS_REPLACE&#160;</td><td class="fielddoc">
 <p>Delete if application exists </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a27cc09cab159612ff58b933f0ba73475"></a>LAUNCH_OPTIONS_ORPHAN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a233053a8572fb55e847043c5259b929aa27cc09cab159612ff58b933f0ba73475"></a>LAUNCH_OPTIONS_ORPHAN&#160;</td><td class="fielddoc">
 <p>Allow app to become an orphan </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a116918ad4c9c97a5a77f082d3a89c710a8a5d28e823493d94d207eed07aef1286"></a>LAUNCH_OPTIONS_UNIQUE_NAMES&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a233053a8572fb55e847043c5259b929aa8a5d28e823493d94d207eed07aef1286"></a>LAUNCH_OPTIONS_UNIQUE_NAMES&#160;</td><td class="fielddoc">
 <p>Create a unique name on install </p>
 </td></tr>
 </table>
@@ -230,6 +230,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the app (use <em>exec_dest</em> from <a class="el" href="classsys_1_1_sys.html#a04a093cc9c64b589e6a7ecd391427717">launch()</a>) </td></tr>
+    <tr><td class="paramname">driver</td><td>Used with link protocol only </td></tr>
   </table>
   </dd>
 </dl>
@@ -281,7 +282,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Loads the cloud kernel ID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">A</td><td>reference to the destination data </td></tr>
+    <tr><td class="paramname">id</td><td>A reference to the destination data </td></tr>
   </table>
   </dd>
 </dl>
@@ -617,6 +618,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the app </td></tr>
+    <tr><td class="paramname">driver</td><td>Used with link protocol only </td></tr>
   </table>
   </dd>
 </dl>

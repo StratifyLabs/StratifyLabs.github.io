@@ -50,8 +50,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7ea93dc08b0fb7ed051519b43b863146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c00f0a022c44ba1d300960d048ec82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a28c00f0a022c44ba1d300960d048ec82">get_option_value</a> (const char *option) const </td></tr>
 <tr class="separator:a28c00f0a022c44ba1d300960d048ec82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0396c03b6161a84cc76866e42a41c819"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a0396c03b6161a84cc76866e42a41c819">handle_uart</a> (hal::UartAttr &amp;attr)</td></tr>
-<tr class="separator:a0396c03b6161a84cc76866e42a41c819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9185f22789ab033a030df81a349b4b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#ab9185f22789ab033a030df81a349b4b6">handle_i2c</a> (hal::I2CAttr &amp;attr) const </td></tr>
+<tr class="separator:ab9185f22789ab033a030df81a349b4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae991f816b6f5da03db0e1dea1c6425ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#ae991f816b6f5da03db0e1dea1c6425ba">handle_uart</a> (hal::UartAttr &amp;attr) const </td></tr>
+<tr class="separator:ae991f816b6f5da03db0e1dea1c6425ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af73872a1f39aceae7a956d5b294bf308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#af73872a1f39aceae7a956d5b294bf308">handle_version</a> () const </td></tr>
 <tr class="separator:af73872a1f39aceae7a956d5b294bf308"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7286485e6948f334410cc10f131b59fe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a7286485e6948f334410cc10f131b59fe">is_option</a> (const char *value) const </td></tr>
@@ -72,7 +74,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5130f90aba83d8c5757cb9f376a22969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aeb51d46ff67b6668ed585fdeeb2cc843"></a>
+<a class="anchor" id="a131221baee67f68d3b486eb96dee3678"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -82,10 +84,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aeb51d46ff67b6668ed585fdeeb2cc843a9c368fa6029c4edbc6b20c784999dbb1"></a>FORMAT_TEXT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a131221baee67f68d3b486eb96dee3678a9c368fa6029c4edbc6b20c784999dbb1"></a>FORMAT_TEXT&#160;</td><td class="fielddoc">
 <p>Displays messages as plain text </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aeb51d46ff67b6668ed585fdeeb2cc843a06fbc2ec9392e061b0fb725b0360fdf5"></a>FORMAT_JSON&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a131221baee67f68d3b486eb96dee3678a06fbc2ec9392e061b0fb725b0360fdf5"></a>FORMAT_JSON&#160;</td><td class="fielddoc">
 <p>Display messages as JSON formatted strings </p>
 </td></tr>
 </table>
@@ -256,7 +258,39 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0396c03b6161a84cc76866e42a41c819"></a>
+<a class="anchor" id="ab9185f22789ab033a030df81a349b4b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::Cli::handle_i2c </td>
+          <td>(</td>
+          <td class="paramtype">hal::I2CAttr &amp;&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Handles arguments for setting I2C attributes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attr</td><td>A reference to the destination attributes </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if I2C attributes were parsed</dd></dl>
+<p>The arguments are</p><ul>
+<li>"-i2c [port]" (required)</li>
+<li>"-freq [bitrate]" (optional, default is 100000)</li>
+<li>"-slave_addr" (optional, default is 0)</li>
+<li>"-scl [X.Y]" (optional port.pin, uses system default otherwise)</li>
+<li>"-sda [X.Y]" (optional port.pin, uses system default otherwise)</li>
+<li>"-pu" (optional flag, use internal pullup resistors) </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ae991f816b6f5da03db0e1dea1c6425ba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -265,7 +299,7 @@ Public Member Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">hal::UartAttr &amp;&#160;</td>
           <td class="paramname"><em>attr</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
