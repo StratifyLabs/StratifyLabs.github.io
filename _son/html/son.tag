@@ -215,6 +215,12 @@
       <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_HANDLE_CHECKSUM</name>
+      <anchorfile>group___f_i_l_e_s.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>son_get_error</name>
@@ -228,6 +234,13 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>gaba466edaea5fd61eb673075f8fa34264</anchor>
       <arglist>(son_t *h, const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_create_image</name>
+      <anchorfile>group___f_i_l_e_s.html</anchorfile>
+      <anchor>gadfc3b19d341d640852d51059f6e6ce8e</anchor>
+      <arglist>(son_t *h, void *image, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -249,6 +262,13 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>ga90e32cf4df5579114312635e3593e24f</anchor>
       <arglist>(son_t *h, const char *name)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_open_image</name>
+      <anchorfile>group___f_i_l_e_s.html</anchorfile>
+      <anchor>ga1df2da84aae43e6e592b121501568755</anchor>
+      <arglist>(son_t *h, void *image, int nbyte)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -420,6 +440,13 @@
     </member>
     <member kind="function">
       <type>int</type>
+      <name>son_edit_image</name>
+      <anchorfile>group___e_d_i_t.html</anchorfile>
+      <anchor>gaf2ed588c802ecde77ce1218c5dffc396</anchor>
+      <arglist>(son_t *h, void *image, int nbyte)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
       <name>son_edit_float</name>
       <anchorfile>group___e_d_i_t.html</anchorfile>
       <anchor>gab2569f4b1bddef4132a447dcc5731015</anchor>
@@ -479,6 +506,13 @@
       <anchorfile>group___e_d_i_t.html</anchorfile>
       <anchor>gafc92783893a66579f4f6afbdbf9d976c</anchor>
       <arglist>(son_t *h, const char *name)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_edit_image</name>
+      <anchorfile>group___e_d_i_t.html</anchorfile>
+      <anchor>gaf2ed588c802ecde77ce1218c5dffc396</anchor>
+      <arglist>(son_t *h, void *image, int nbyte)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -650,6 +684,12 @@
       <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_HANDLE_CHECKSUM</name>
+      <anchorfile>group___f_i_l_e_s.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="function">
       <type>int</type>
       <name>son_get_error</name>
@@ -663,6 +703,13 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>gaba466edaea5fd61eb673075f8fa34264</anchor>
       <arglist>(son_t *h, const char *path)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_create_image</name>
+      <anchorfile>group___f_i_l_e_s.html</anchorfile>
+      <anchor>gadfc3b19d341d640852d51059f6e6ce8e</anchor>
+      <arglist>(son_t *h, void *image, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -684,6 +731,13 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>ga90e32cf4df5579114312635e3593e24f</anchor>
       <arglist>(son_t *h, const char *name)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_open_image</name>
+      <anchorfile>group___f_i_l_e_s.html</anchorfile>
+      <anchor>ga1df2da84aae43e6e592b121501568755</anchor>
+      <arglist>(son_t *h, void *image, int nbyte)</arglist>
     </member>
     <member kind="function">
       <type>int</type>

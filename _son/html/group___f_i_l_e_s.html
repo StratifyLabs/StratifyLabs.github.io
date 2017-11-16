@@ -42,12 +42,16 @@ Functions</h2></td></tr>
 <tr class="separator:ga55014cbf786748cff374286963610386"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaba466edaea5fd61eb673075f8fa34264"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#gaba466edaea5fd61eb673075f8fa34264">son_to_json</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *path)</td></tr>
 <tr class="separator:gaba466edaea5fd61eb673075f8fa34264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfc3b19d341d640852d51059f6e6ce8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#gadfc3b19d341d640852d51059f6e6ce8e">son_create_image</a> (<a class="el" href="structson__t.html">son_t</a> *h, void *image, int nbyte, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, size_t stack_size)</td></tr>
+<tr class="separator:gadfc3b19d341d640852d51059f6e6ce8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga699ec52045b7a22744c99107d26d8122"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, size_t stack_size)</td></tr>
 <tr class="separator:ga699ec52045b7a22744c99107d26d8122"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c13c1667377122f578eec24d1f733dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga4c13c1667377122f578eec24d1f733dc">son_append</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, size_t stack_size)</td></tr>
 <tr class="separator:ga4c13c1667377122f578eec24d1f733dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90e32cf4df5579114312635e3593e24f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga90e32cf4df5579114312635e3593e24f">son_open</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name)</td></tr>
 <tr class="separator:ga90e32cf4df5579114312635e3593e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1df2da84aae43e6e592b121501568755"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga1df2da84aae43e6e592b121501568755">son_open_image</a> (<a class="el" href="structson__t.html">son_t</a> *h, void *image, int nbyte)</td></tr>
+<tr class="separator:ga1df2da84aae43e6e592b121501568755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f217dcfa00977986c15b3daae675677"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga1f217dcfa00977986c15b3daae675677">son_close</a> (<a class="el" href="structson__t.html">son_t</a> *h)</td></tr>
 <tr class="separator:ga1f217dcfa00977986c15b3daae675677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -88,7 +92,7 @@ Functions</h2></td></tr>
 <p>7: This error happens when the data in the file has a invalid checksum which indicates a corrupted file or bad file format. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4feae46e9a09111ea56a2390ede67f3d43d3"></a>SON_ERR_CANNOT_APPEND&#160;</td><td class="fielddoc">
-<p>8: This error happens when an append is attempted on a file that has not been saved for appending </p>
+<p>8: This error happens when an append is attempted on a file that has not been opened for appending </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea5b0700fde3ed39ae438a810bdf9f7fc0"></a>SON_ERR_CANNOT_WRITE&#160;</td><td class="fielddoc">
 <p>9: This error happens if a write is attempted on a file that has been opened for reading </p>
@@ -115,10 +119,13 @@ Functions</h2></td></tr>
 <p>16: This happens if an empty key is passed to anything but the root object. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea3ba92da96e38b6accfb27ec40d2b1277"></a>SON_ERR_CANNOT_CONVERT&#160;</td><td class="fielddoc">
-<p>17: This happens if a read is tried by the base data can't be converted </p>
+<p>17: This happens if a read is tried by the base data can't be converted. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300"></a>SON_ERR_EDIT_TYPE_MISMATCH&#160;</td><td class="fielddoc">
-<p>18: This happens if a value is edited with a function that doesn't match the base type </p>
+<p>18: This happens if a value is edited with a function that doesn't match the base type. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02"></a>SON_ERR_HANDLE_CHECKSUM&#160;</td><td class="fielddoc">
+<p>19: This happens if the handle is modified outside of a call to the SON library. </p>
 </td></tr>
 </table>
 
@@ -171,7 +178,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Less than zero if there was an error</dd></dl>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;son_stack_t son_stack[10];</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;son_t son;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;son_append(&amp;son, &quot;/home/append.son&quot;, son_stack, 10);</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;son_write_str(&amp;son, &quot;str&quot;, &quot;World&quot;); //this will be appended to the root object or array</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;son_close(&amp;son, 1); //close out all structures -- no more appending</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___w_r_i_t_e.html">Writing/Appending Values to Files</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;son_stack_t son_stack[10];</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;son_t son;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;son_append(&amp;son, &quot;/home/append.son&quot;, son_stack, 10);</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;son_write_str(&amp;son, &quot;str&quot;, &quot;World&quot;); //this will be appended to the root object or array</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;son_close(&amp;son); //close out all structures -- no more appending</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___w_r_i_t_e.html">Writing/Appending Values to Files</a> </dd></dl>
 
 </div>
 </div>
@@ -252,6 +259,61 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gadfc3b19d341d640852d51059f6e6ce8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int son_create_image </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structson__t.html">son_t</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbyte</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structson__stack__t.html">son_stack_t</a> *&#160;</td>
+          <td class="paramname"><em>stack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>stack_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates a memory area where SON objects can be stored.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>A pointer to the handle </td></tr>
+    <tr><td class="paramname">image</td><td>A pointer to the memory image </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes in the memory image </td></tr>
+    <tr><td class="paramname">stack</td><td>The SON stack </td></tr>
+    <tr><td class="paramname">stack_size</td><td>The number of entries in the SON stack </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga55014cbf786748cff374286963610386"></a>
 <div class="memitem">
 <div class="memproto">
@@ -310,6 +372,47 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Less than zero if there was an error</dd></dl>
 <p>Here is an example of how to read key data from a file.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;son_t son;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;u32 unum;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;son_open(&amp;son, &quot;/home/data.son&quot;);</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;unum = son_read_unum(&amp;son, &quot;key.unum&quot;);</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;son_close(&amp;son);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___r_e_a_d.html">Reading Values</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1df2da84aae43e6e592b121501568755"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int son_open_image </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structson__t.html">son_t</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbyte</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Opens a memory image for reading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>A pointer to the handle </td></tr>
+    <tr><td class="paramname">image</td><td>A pointer to the memory image </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes in the memory image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
