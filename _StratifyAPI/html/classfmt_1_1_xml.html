@@ -306,8 +306,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Get the value of the XML element. </p>
 <p>The gets the value of an XML element based on the string that describes it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dest</td><td>The destination string to write the value of the specified attribute </td></tr>
+    <tr><td class="paramname">key</td><td>The string describing the element; 0 to get the value of the current element.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>The following XML (GPX file) is used as an example.</p>
-<p>The following <em>str</em> values will grab the associated strings from the XML file:</p>
+<p>The following <em>key</em> values will grab the associated strings from the XML file:</p>
 <ul>
 <li>"gpx(version)" = 1.0</li>
 <li>"gpx.wpt.ele" = 44.586548</li>
@@ -315,14 +322,8 @@ Additional Inherited Members</h2></td></tr>
 <li>"gpx.wpt[1].name" = 5067</li>
 <li>"gpx.wpt[1](lat)" = 42.439227</li>
 <li><p class="startli">"gpx.time" = 2002-02-27T17:18:33Z</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dest</td><td>The destination string to write the value of the specified attribute </td></tr>
-    <tr><td class="paramname">str</td><td>The string describing the element; 0 to get the value of the current element. This values is relative to the current position.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero if str is successfully fetched </dd></dl>
+<p class="startli">This values is relative to the current position.</p>
+<dl class="section return"><dt>Returns</dt><dd>Zero if <em>key</em> is successfully fetched </dd></dl>
 </li>
 </ul>
 

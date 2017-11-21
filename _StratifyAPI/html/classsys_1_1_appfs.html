@@ -42,6 +42,8 @@ title: Stratify OS Docs
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad61a616fb6ef9b3ca51a2283657d1a07"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#ad61a616fb6ef9b3ca51a2283657d1a07">create</a> (const char *name, const void *buf, int nbyte, const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_t_f_y.html#ga03c0afc4d1b734bd2edfc7e5937b716a">mount</a>=&quot;/app&quot;, bool(*update)(void *, int, int)=0, void *context=0, link_transport_mdriver_t *driver=0)</td></tr>
 <tr class="separator:ad61a616fb6ef9b3ca51a2283657d1a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc17be1b070eab93e4c6170cd82f55a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#a4cc17be1b070eab93e4c6170cd82f55a">get_id</a> (const char *path, char *id, u32 capacity)</td></tr>
+<tr class="separator:a4cc17be1b070eab93e4c6170cd82f55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a778079f40c7ed72b9c804ac0b0bcd581"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#a778079f40c7ed72b9c804ac0b0bcd581">get_info</a> (const char *path, appfs_info_t &amp;info)</td></tr>
 <tr class="separator:a778079f40c7ed72b9c804ac0b0bcd581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab41e22586a40b7a85d5459655e0b0667"><td class="memItemLeft" align="right" valign="top">static u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#ab41e22586a40b7a85d5459655e0b0667">get_version</a> (const char *path)</td></tr>
@@ -122,6 +124,54 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success or -1 with errno set accordingly </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4cc17be1b070eab93e4c6170cd82f55a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int sys::Appfs::get_id </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>capacity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the application ID value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to the file (must be in the /app folder) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>

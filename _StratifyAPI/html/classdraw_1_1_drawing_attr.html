@@ -28,7 +28,8 @@ title: Stratify OS Docs
 <div class="header">
   <div class="summary">
 <a href="classdraw_1_1_drawing_attr-members.html">List of all members</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">draw::DrawingAttr Class Reference</div>  </div>
 </div><!--header-->
@@ -91,6 +92,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad85253c9a07773e92db0fd43348c0a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d40f88a29f80ad16543dfe498bb9e0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedraw.html#af2d311eed2215464055d2c7c49cbfc63">drawing_int_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing_attr.html#a1d40f88a29f80ad16543dfe498bb9e0e">y</a> () const </td></tr>
 <tr class="separator:a1d40f88a29f80ad16543dfe498bb9e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a80a2ad97df960fd211422e9f51ffe648"><td class="memItemLeft" align="right" valign="top">static sg_dim_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing_attr.html#a80a2ad97df960fd211422e9f51ffe648">calc_dim_on_bitmap</a> (const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;<a class="el" href="classdraw_1_1_drawing_attr.html#a2f1c37629069b0a53c9771061e069bac">attr</a>)</td></tr>
+<tr class="separator:a80a2ad97df960fd211422e9f51ffe648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26530f35ecf92dd2e597a4b0e1e2b7e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing_attr.html#a26530f35ecf92dd2e597a4b0e1e2b7e3">scale</a> ()</td></tr>
+<tr class="separator:a26530f35ecf92dd2e597a4b0e1e2b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3ae1c2dd9731d69902da45107c4d8b48"></a>
@@ -172,6 +180,31 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Access the bitmap </p>
+
+</div>
+</div>
+<a class="anchor" id="a80a2ad97df960fd211422e9f51ffe648"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static sg_dim_t draw::DrawingAttr::calc_dim_on_bitmap </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdraw_1_1_drawing_attr.html">DrawingAttr</a> &amp;&#160;</td>
+          <td class="paramname"><em>attr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the dimensions (in pixels) if any Element is drawn on the specified bitmap </p>
 
 </div>
 </div>
@@ -408,6 +441,31 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Access the position (point) </p>
+
+</div>
+</div>
+<a class="anchor" id="a26530f35ecf92dd2e597a4b0e1e2b7e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a> draw::DrawingAttr::scale </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This value determines how all objects are scaled.</p>
+<p>The default value is 1000. This means a value of 500 is half the target bitmap. </p>
 
 </div>
 </div>
