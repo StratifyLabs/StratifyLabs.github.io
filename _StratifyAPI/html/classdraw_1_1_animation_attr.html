@@ -44,12 +44,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aced1ccc1ff47c053456d2d06d2786a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9128e5d21e8284f64f480b5b69f18df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#af9128e5d21e8284f64f480b5b69f18df">drawing_motion_total</a> () const </td></tr>
 <tr class="separator:af9128e5d21e8284f64f480b5b69f18df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ce5ea80f4a523fa58673b42e628df63"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#a9ce5ea80f4a523fa58673b42e628df63">frame_delay</a> () const </td></tr>
+<tr class="separator:a9ce5ea80f4a523fa58673b42e628df63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8f31f358722ac278a63fa3080d01e67"><td class="memItemLeft" align="right" valign="top">sg_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#ae8f31f358722ac278a63fa3080d01e67">motion_total</a> () const </td></tr>
 <tr class="separator:ae8f31f358722ac278a63fa3080d01e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c3eb2d40b330dce72c757441b4cda3"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#a20c3eb2d40b330dce72c757441b4cda3">path</a> () const </td></tr>
 <tr class="separator:a20c3eb2d40b330dce72c757441b4cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a198abb22ec48ea95bc6f9827f9b02e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#a198abb22ec48ea95bc6f9827f9b02e6e">set_drawing_motion_total</a> (<a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a> v)</td></tr>
 <tr class="separator:a198abb22ec48ea95bc6f9827f9b02e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca3917b8d4e4de2969818057e01725dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#aca3917b8d4e4de2969818057e01725dc">set_frame_delay</a> (u16 value)</td></tr>
+<tr class="separator:aca3917b8d4e4de2969818057e01725dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e821aebd66013957748dbc978f556f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#a5e821aebd66013957748dbc978f556f4">set_motion_total</a> (sg_size_t v)</td></tr>
 <tr class="separator:a5e821aebd66013957748dbc978f556f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac63d5db1c9223ae94b1d58fc187b8584"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_animation_attr.html#ac63d5db1c9223ae94b1d58fc187b8584">set_path</a> (u8 v)</td></tr>
@@ -142,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <p>Accelerating animation </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ad340f3bb93f98ec75766c0876a4ec452a0dd86ccb87781b30fa0c977c7ceb8ac9"></a>SQUARED_UNDO&#160;</td><td class="fielddoc">
-<p>Deaccelerating animation </p>
+<p>De-accelerating animation </p>
 </td></tr>
 </table>
 
@@ -238,6 +242,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9ce5ea80f4a523fa58673b42e628df63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 draw::AnimationAttr::frame_delay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Accesses the frame delay of the animation. </p>
+
+</div>
+</div>
 <a class="anchor" id="ae8f31f358722ac278a63fa3080d01e67"></a>
 <div class="memitem">
 <div class="memproto">
@@ -308,6 +336,38 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Sets the total amount of motion as a ratio to the drawing scale. </p>
+
+</div>
+</div>
+<a class="anchor" id="aca3917b8d4e4de2969818057e01725dc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw::AnimationAttr::set_frame_delay </td>
+          <td>(</td>
+          <td class="paramtype">u16&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the frame delay (in ms) of the animation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The number of milliseconds to wait between frames.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The animation will at least wait the amount of time required to refresh the display. This delay will only have an effect if it is longer than the time required to update the display. </p>
 
 </div>
 </div>

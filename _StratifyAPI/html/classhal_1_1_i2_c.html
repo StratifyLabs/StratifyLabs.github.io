@@ -35,7 +35,7 @@ title: Stratify OS Docs
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class implements <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> device peripherals.</p>
-<p>An <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> ptr/data transfer (<a class="el" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa2dcd6350939596b7089822c3b720ca81">I2C::FLAG_PREPARE_PTR_DATA</a>) updates the register pointer and then either reads or writes data. For example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">u16 data;</div><div class="line"><a class="code" href="classhal_1_1_i2_c.html#a01a9595603690335b507955765537589">I2C</a> i2c(0); <span class="comment">//use I2C port 0</span></div><div class="line">i2c.init(<a class="code" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa14b4e51c27e622bb0b6bb9ff96e4b1cb">I2C::FLAG_SET_MASTER</a>); <span class="comment">//Init as a master using default pin assignment</span></div><div class="line"></div><div class="line">i2c.prepare(0x4C); <span class="comment">//slave addr is 0x4C - operation is 8-bit ptr plus data</span></div><div class="line">i2c.read(5, &amp;data, <span class="keyword">sizeof</span>(data)); <span class="comment">//read 2 bytes from register 5</span></div><div class="line">i2c.close();</div></div><!-- fragment --><p>The code above will execute 2 <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> transactions. It will write 5 to the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> slave device register pointer. It will then read 2 bytes from the slave device. </p>
+<p>An <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> ptr/data transfer (<a class="el" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba2dcd6350939596b7089822c3b720ca81">I2C::FLAG_PREPARE_PTR_DATA</a>) updates the register pointer and then either reads or writes data. For example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">u16 data;</div><div class="line"><a class="code" href="classhal_1_1_i2_c.html#a01a9595603690335b507955765537589">I2C</a> i2c(0); <span class="comment">//use I2C port 0</span></div><div class="line">i2c.init(<a class="code" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba14b4e51c27e622bb0b6bb9ff96e4b1cb">I2C::FLAG_SET_MASTER</a>); <span class="comment">//Init as a master using default pin assignment</span></div><div class="line"></div><div class="line">i2c.prepare(0x4C); <span class="comment">//slave addr is 0x4C - operation is 8-bit ptr plus data</span></div><div class="line">i2c.read(5, &amp;data, <span class="keyword">sizeof</span>(data)); <span class="comment">//read 2 bytes from register 5</span></div><div class="line">i2c.close();</div></div><!-- fragment --><p>The code above will execute 2 <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> transactions. It will write 5 to the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> slave device register pointer. It will then read 2 bytes from the slave device. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -47,7 +47,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a01a9595603690335b507955765537589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12443971e89a32f9ee3a50c0058e981"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#aa12443971e89a32f9ee3a50c0058e981">init</a> (u32 o_flags, u32 freq, const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structi2c__pin__assignment__t.html">i2c_pin_assignment_t</a> *pin_assignment=0)</td></tr>
 <tr class="separator:aa12443971e89a32f9ee3a50c0058e981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6a8b2e11d26542e3736f88baa568d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a9d6a8b2e11d26542e3736f88baa568d8">prepare</a> (u8 slave_addr, u32 o_flags=<a class="el" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa2dcd6350939596b7089822c3b720ca81">FLAG_PREPARE_PTR_DATA</a>) const </td></tr>
+<tr class="memitem:a9d6a8b2e11d26542e3736f88baa568d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#a9d6a8b2e11d26542e3736f88baa568d8">prepare</a> (u8 slave_addr, u32 o_flags=<a class="el" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba2dcd6350939596b7089822c3b720ca81">FLAG_PREPARE_PTR_DATA</a>) const </td></tr>
 <tr class="separator:a9d6a8b2e11d26542e3736f88baa568d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afae42089713f7b7a96b1e9a5b0e76bf1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c.html#afae42089713f7b7a96b1e9a5b0e76bf1">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, u8 &amp;reg)</td></tr>
 <tr class="separator:afae42089713f7b7a96b1e9a5b0e76bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -70,44 +70,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15d999d0dc780f6a82231adc7afea6a4 inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">anonymous enum</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aa2eb132eaeca7174a42756c3b6a1e01d9"></a>ERROR_NONE&#160;</td><td class="fielddoc">
-<p>No errors </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aa0f2acc602c110ac3541585a5d2e7641c"></a>ERROR_START&#160;</td><td class="fielddoc">
-<p>Error while starting </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aaa855cb0d5545721c336948cc9a466bbb"></a>ERROR_WRITE&#160;</td><td class="fielddoc">
-<p>Error while writing </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aa40bf2ce4eacbb86d8ccaac42f35da644"></a>ERROR_ACK&#160;</td><td class="fielddoc">
-<p>Ack Error (most common error for a mis-wired hardware) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aa1b1b5885976e4c4d41158af810eab55e"></a>ERROR_STOP&#160;</td><td class="fielddoc">
-<p>Error while stopping </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aa08330ac0448195abbad2e71b05cda518"></a>ERROR_MASTER_ACK&#160;</td><td class="fielddoc">
-<p>The master could not create an ACK </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aa1cbbe675460e2dbe512d9a1187e9f99a"></a>ERROR_BUS_BUSY&#160;</td><td class="fielddoc">
-<p>The Bus is busy (happens with multi-masters on bus) </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a6a39af3a996ee4d2616b743a3c9a7a1aadac479a8314589634a544595c9914f65"></a>ERROR_ARBITRATION_LOST&#160;</td><td class="fielddoc">
-<p>Arbitration lost on multi-master bus </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <a class="anchor" id="a13cc2034cca26879fae5ece66013847a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -118,52 +80,90 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa14b4e51c27e622bb0b6bb9ff96e4b1cb"></a>FLAG_SET_MASTER&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa2eb132eaeca7174a42756c3b6a1e01d9"></a>ERROR_NONE&#160;</td><td class="fielddoc">
+<p>No errors </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa0f2acc602c110ac3541585a5d2e7641c"></a>ERROR_START&#160;</td><td class="fielddoc">
+<p>Error while starting </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aaa855cb0d5545721c336948cc9a466bbb"></a>ERROR_WRITE&#160;</td><td class="fielddoc">
+<p>Error while writing </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa40bf2ce4eacbb86d8ccaac42f35da644"></a>ERROR_ACK&#160;</td><td class="fielddoc">
+<p>Ack Error (most common error for a mis-wired hardware) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa1b1b5885976e4c4d41158af810eab55e"></a>ERROR_STOP&#160;</td><td class="fielddoc">
+<p>Error while stopping </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa08330ac0448195abbad2e71b05cda518"></a>ERROR_MASTER_ACK&#160;</td><td class="fielddoc">
+<p>The master could not create an ACK </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa1cbbe675460e2dbe512d9a1187e9f99a"></a>ERROR_BUS_BUSY&#160;</td><td class="fielddoc">
+<p>The Bus is busy (happens with multi-masters on bus) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aadac479a8314589634a544595c9914f65"></a>ERROR_ARBITRATION_LOST&#160;</td><td class="fielddoc">
+<p>Arbitration lost on multi-master bus </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba14b4e51c27e622bb0b6bb9ff96e4b1cb"></a>FLAG_SET_MASTER&#160;</td><td class="fielddoc">
 <p>Operate as a master <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> bus </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa842ba78f7a33fd589315f89210c6f3a7"></a>FLAG_SET_SLAVE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba842ba78f7a33fd589315f89210c6f3a7"></a>FLAG_SET_SLAVE&#160;</td><td class="fielddoc">
 <p>Operate as a slave (ignored if master is set) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aaf52215d2b4e1255108e507a38ee4c086"></a>FLAG_IS_SLAVE_ACK_GENERAL_CALL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5baf52215d2b4e1255108e507a38ee4c086"></a>FLAG_IS_SLAVE_ACK_GENERAL_CALL&#160;</td><td class="fielddoc">
 <p>If slave operation, ack general call </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa39c558572dcad16ef2252f33f90dacbc"></a>FLAG_IS_PULLUP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba39c558572dcad16ef2252f33f90dacbc"></a>FLAG_IS_PULLUP&#160;</td><td class="fielddoc">
 <p>Enable internal pullups if available (ignore otherwise) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa2dcd6350939596b7089822c3b720ca81"></a>FLAG_PREPARE_PTR_DATA&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba2dcd6350939596b7089822c3b720ca81"></a>FLAG_PREPARE_PTR_DATA&#160;</td><td class="fielddoc">
 <p>This prepares the driver to write the ptr then read/write data </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aae77032f87673f9183bb1a45863040b32"></a>FLAG_IS_PTR_16&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5bae77032f87673f9183bb1a45863040b32"></a>FLAG_IS_PTR_16&#160;</td><td class="fielddoc">
 <p>This prepares the driver to write a 16-bit ptr then read/write data </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aaf28160b34a75cf1768b320bcadccb48f"></a>FLAG_PREPARE_PTR&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5baf28160b34a75cf1768b320bcadccb48f"></a>FLAG_PREPARE_PTR&#160;</td><td class="fielddoc">
 <p>This will write the ptr value only without writing or reading any data. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aad2d4c90de8ed39b7af6902088051b54d"></a>FLAG_PREPARE_DATA&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5bad2d4c90de8ed39b7af6902088051b54d"></a>FLAG_PREPARE_DATA&#160;</td><td class="fielddoc">
 <p>This will read/write data without first writing the pointer information </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa43b1c1b74c6dbdd9ee48be09f86aa793"></a>FLAG_IS_SLAVE_ADDR0&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba43b1c1b74c6dbdd9ee48be09f86aa793"></a>FLAG_IS_SLAVE_ADDR0&#160;</td><td class="fielddoc">
 <p>If hardware supports multiple slave addrs, use the first slot (default) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aaeccc2e63279563116b7e226680249e8b"></a>FLAG_IS_SLAVE_ADDR1&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5baeccc2e63279563116b7e226680249e8b"></a>FLAG_IS_SLAVE_ADDR1&#160;</td><td class="fielddoc">
 <p>If hardware supports multiple slave addrs, use the second slot </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa7725fd0bf020fece2840a2818f15f367"></a>FLAG_IS_SLAVE_ADDR2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba7725fd0bf020fece2840a2818f15f367"></a>FLAG_IS_SLAVE_ADDR2&#160;</td><td class="fielddoc">
 <p>If hardware supports multiple slave addrs, use the third slot </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa009493c8a5079850c269ebd960633c02"></a>FLAG_IS_SLAVE_ADDR3&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba009493c8a5079850c269ebd960633c02"></a>FLAG_IS_SLAVE_ADDR3&#160;</td><td class="fielddoc">
 <p>If hardware supports multiple slave addrs, use the fourth slot </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aae860d9eae118c0164355c9d5a59e17fb"></a>FLAG_IS_SLAVE_PTR_8&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5bae860d9eae118c0164355c9d5a59e17fb"></a>FLAG_IS_SLAVE_PTR_8&#160;</td><td class="fielddoc">
 <p>Use a 8-bit address pointer when accessing data (default) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa791a5ab766a79ff20718aeac943bbea1"></a>FLAG_IS_SLAVE_PTR_16&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba791a5ab766a79ff20718aeac943bbea1"></a>FLAG_IS_SLAVE_PTR_16&#160;</td><td class="fielddoc">
 <p>Use a 16-bit address pointer when accessing data (set automatically is size &gt; 255) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aa6709c5cb5ebcc961768e42f93f214c98"></a>FLAG_RESET&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5ba6709c5cb5ebcc961768e42f93f214c98"></a>FLAG_RESET&#160;</td><td class="fielddoc">
 <p>Reset the state of the <a class="el" href="classhal_1_1_i2_c.html" title="I2C Peripheral Class. ">I2C</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a13cc2034cca26879fae5ece66013847aab82ec27aef1e2b737104184746de402c"></a>FLAG_IS_NO_STOP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aeddf8e642d1cf161485f4a000ba7ae5bab82ec27aef1e2b737104184746de402c"></a>FLAG_IS_NO_STOP&#160;</td><td class="fielddoc">
 <p>Don't issue a stop condition when complete (use with I2C_FLAG_PREPARE_DATA) </p>
 </td></tr>
 </table>
@@ -305,7 +305,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">u32&#160;</td>
-          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classhal_1_1_i2_c.html#a13cc2034cca26879fae5ece66013847aa2dcd6350939596b7089822c3b720ca81">FLAG_PREPARE_PTR_DATA</a></code>&#160;</td>
+          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classhal_1_1_i2_c.html#aeddf8e642d1cf161485f4a000ba7ae5ba2dcd6350939596b7089822c3b720ca81">FLAG_PREPARE_PTR_DATA</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>

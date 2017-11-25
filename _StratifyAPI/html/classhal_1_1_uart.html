@@ -37,7 +37,7 @@ title: Stratify OS Docs
 <div class="textblock"><p>This class implements a serial UART port.</p>
 <p>Here is an example of how to use the UART.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0); <span class="comment">//use UART0</span></div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.init(); <span class="comment">//initializes using default parameters</span></div><div class="line">     uart.read(buffer, 256); <span class="comment">//this will block until at least one byte arrives</span></div><div class="line">     uart.close(); <span class="comment">//free the file descriptors and power down the device</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>The above example opens using the UART in blocking mode. If you want to be able to read the UART without blocking until a byte arrives, you can use non-blocking mode.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0);</div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.open(<a class="code" href="classsys_1_1_file.html#a2771979e0e1a879dc85f8d55a131ea85ad36616dd55762c66d6f9d110d7e6d980">Uart::NONBLOCK</a>|<a class="code" href="classsys_1_1_file.html#a2771979e0e1a879dc85f8d55a131ea85a4889aa3b3d449f988dd2c5f34ae13791">Uart::RDWR</a>);</div><div class="line"> <span class="comment">//now set the attributes</span></div><div class="line">     uart.set_attr(<a class="code" href="classhal_1_1_uart.html#a5b0cc6759e273648a9155f6554d3360bacc7b3b22d5bb174b3f81a3cecb235bde">Uart::FLAG_IS_STOP1</a>|<a class="code" href="classhal_1_1_uart.html#a5b0cc6759e273648a9155f6554d3360ba2a90c4831f17b88e32a0a5c2daa386ae">Uart::FLAG_IS_PARITY_NONE</a>,</div><div class="line">     115200, <span class="comment">//115200 baud rate</span></div><div class="line"> 8);</div><div class="line">     uart.read(buffer, 256); <span class="comment">//returns immediately even if no data is available (errno is set to EAGAIN if no data)</span></div><div class="line">     uart.close(); <span class="comment">//free the resources</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     Uart uart(0);</div><div class="line">     <span class="keywordtype">char</span> buffer[256];</div><div class="line">     uart.open(<a class="code" href="classsys_1_1_file.html#a93c731c942c7f9d83b4e56125e7a6ce6ad36616dd55762c66d6f9d110d7e6d980">Uart::NONBLOCK</a>|<a class="code" href="classsys_1_1_file.html#a93c731c942c7f9d83b4e56125e7a6ce6a4889aa3b3d449f988dd2c5f34ae13791">Uart::RDWR</a>);</div><div class="line"> <span class="comment">//now set the attributes</span></div><div class="line">     uart.set_attr(<a class="code" href="classhal_1_1_uart.html#a9fecf8000f3feecca2ac606674307250acc7b3b22d5bb174b3f81a3cecb235bde">Uart::FLAG_IS_STOP1</a>|<a class="code" href="classhal_1_1_uart.html#a9fecf8000f3feecca2ac606674307250a2a90c4831f17b88e32a0a5c2daa386ae">Uart::FLAG_IS_PARITY_NONE</a>,</div><div class="line">     115200, <span class="comment">//115200 baud rate</span></div><div class="line"> 8);</div><div class="line">     uart.read(buffer, 256); <span class="comment">//returns immediately even if no data is available (errno is set to EAGAIN if no data)</span></div><div class="line">     uart.close(); <span class="comment">//free the resources</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aead32dca98bb432398250a1ee9d88a1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart.html#aead32dca98bb432398250a1ee9d88a1d">flush</a> ()</td></tr>
@@ -61,7 +61,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15d999d0dc780f6a82231adc7afea6a4 inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a5b0cc6759e273648a9155f6554d3360b"></a>
+<a class="anchor" id="a9fecf8000f3feecca2ac606674307250"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -71,28 +71,28 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba8159a5a219cbca97ba0d9e6c5143b130"></a>FLAG_SET_LINE_CODING&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a8159a5a219cbca97ba0d9e6c5143b130"></a>FLAG_SET_LINE_CODING&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a02052cb2c13529635be1d7cce1577a01">UART_FLAG_SET_LINE_CODING</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360bacc7b3b22d5bb174b3f81a3cecb235bde"></a>FLAG_IS_STOP1&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250acc7b3b22d5bb174b3f81a3cecb235bde"></a>FLAG_IS_STOP1&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a2180bc10bf2b729d86ea09e8effdf159">UART_FLAG_IS_STOP1</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba165faa8a5b6cc04e957337f787efd73b"></a>FLAG_IS_STOP2&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a165faa8a5b6cc04e957337f787efd73b"></a>FLAG_IS_STOP2&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a196c77bb40bb4464f6fa17a50e86d456">UART_FLAG_IS_STOP2</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba01b99bdc2dad2129f54f1ed83ff0b1e7"></a>FLAG_IS_STOP0_5&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a01b99bdc2dad2129f54f1ed83ff0b1e7"></a>FLAG_IS_STOP0_5&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a0a26939cf9910551b9dea139ff438f99">UART_FLAG_IS_STOP0_5</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba2e8b69c2ab90b8eff55cb78280fb68e8"></a>FLAG_IS_STOP1_5&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a2e8b69c2ab90b8eff55cb78280fb68e8"></a>FLAG_IS_STOP1_5&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a7f18da32d69f698d3f8fa00952246818">UART_FLAG_IS_STOP1_5</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba2a90c4831f17b88e32a0a5c2daa386ae"></a>FLAG_IS_PARITY_NONE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a2a90c4831f17b88e32a0a5c2daa386ae"></a>FLAG_IS_PARITY_NONE&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75aa5f6abbb08cda7052ace32ba7c3010ad">UART_FLAG_IS_PARITY_NONE</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba4e21ef5f4ae554d8b9de128b8350f832"></a>FLAG_IS_PARITY_ODD&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a4e21ef5f4ae554d8b9de128b8350f832"></a>FLAG_IS_PARITY_ODD&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a6327afb078cd209182b8bb507bf80e6e">UART_FLAG_IS_PARITY_ODD</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b0cc6759e273648a9155f6554d3360ba641ea5ec8cbe31432fb4b9a41092f433"></a>FLAG_IS_PARITY_EVEN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a9fecf8000f3feecca2ac606674307250a641ea5ec8cbe31432fb4b9a41092f433"></a>FLAG_IS_PARITY_EVEN&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_a_r_t.html#gga836e09ffaa5767111e9d10b38a17fd75a01d2df822a1c45a97bc5c63e09719f11">UART_FLAG_IS_PARITY_EVEN</a> </p>
 </td></tr>
 </table>

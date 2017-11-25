@@ -38,24 +38,26 @@ title: Stratify OS Docs
 class fmt::Son&lt; stacksize &gt;</h3>
 
 <p>The SON (Stratify Object Notation) is an important class to be familiar with. It is closely related to JSON (and very closely related to BSON). It allows you to store, access, and modify data in the same way but is designed for use on resource constrained systems.</p>
+<p>SON data can be easily converted to JSON data using the <a class="el" href="classfmt_1_1_son.html#a7d95d5ff5c76b490f96e9f6f69210e1e">to_json()</a> method.</p>
 <p>Important things to note:</p><ul>
-<li>Key names are limited to 7 characters (longer names are truncated)</li>
+<li>Key names are limited to 15 (SON_KEY_NAME_SIZE) characters (longer names are truncated)</li>
 <li>The stacksize template value is the depth limit when creating files</li>
-<li>You can only append to files that are left with an open ended array</li>
 <li>You can't modify the length of strings or data objects within a file</li>
 <li>You must create root ("") as the first object or array</li>
 </ul>
 <p>Creation example:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/fmt.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#ab2959b3d3236c10e666421abdf525cd7">Son</a> son&lt;4&gt;; <span class="comment">//depth is limited to 4</span></div><div class="line"></div><div class="line">  <span class="comment">//tabs are added to help visualize the parallel to JSON</span></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.create(<span class="stringliteral">&quot;/home/settings.son&quot;</span>);</div><div class="line">          <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_obj(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;Stratify&quot;</span>); <span class="comment">//create a string</span></div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;date&quot;</span>, <span class="stringliteral">&quot;today&quot;</span>); <span class="comment">//create another string</span></div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;value&quot;</span>, (u32)100); <span class="comment">//write a number);</span></div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_obj(<span class="stringliteral">&quot;time&quot;</span>); <span class="comment">//create a new object</span></div><div class="line">                    <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;hour&quot;</span>, 12); <span class="comment">//add some values</span></div><div class="line">                    <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;min&quot;</span>, 00);</div><div class="line">                    <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;sec&quot;</span>, 59);</div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close_obj(); <span class="comment">//close &#39;time&#39;</span></div><div class="line">          <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close_obj(); <span class="comment">//close root &quot;&quot;</span></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close();</div><div class="line"></div><div class="line">     <span class="keywordtype">char</span> buffer[32];</div><div class="line">     u32 value;</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open(<span class="stringliteral">&quot;/home/settings.son&quot;</span>); <span class="comment">//opens read-only</span></div><div class="line"></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.read_str(<span class="stringliteral">&quot;name&quot;</span>, buffer, 32);</div><div class="line">     <span class="comment">//buffer holds &quot;Stratify&quot;</span></div><div class="line"></div><div class="line">     value = <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.read_unum(<span class="stringliteral">&quot;hour&quot;</span>);</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.read_str(<span class="stringliteral">&quot;sec&quot;</span>, buffer, 32);</div><div class="line">     <span class="comment">//buffer holds &quot;59&quot;</span></div><div class="line"></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.to_json(<span class="stringliteral">&quot;/home.settings.json&quot;</span>);</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close();</div><div class="line"></div><div class="line">     }</div></div><!-- fragment --><p>The settings.json files looks like: </p><pre class="fragment">{
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/fmt.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#ab2959b3d3236c10e666421abdf525cd7">Son</a> son&lt;4&gt;; <span class="comment">//depth is limited to 4</span></div><div class="line"></div><div class="line">  <span class="comment">//tabs are added to help visualize the data in JSON format</span></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.create(<span class="stringliteral">&quot;/home/settings.son&quot;</span>);</div><div class="line">          <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_obj(<span class="stringliteral">&quot;&quot;</span>);</div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;Stratify&quot;</span>); <span class="comment">//create a string</span></div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;date&quot;</span>, <span class="stringliteral">&quot;today&quot;</span>); <span class="comment">//create another string</span></div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;value&quot;</span>, (u32)100); <span class="comment">//write a number);</span></div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_obj(<span class="stringliteral">&quot;time&quot;</span>); <span class="comment">//create a new object</span></div><div class="line">                    <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;hour&quot;</span>, 12); <span class="comment">//add some values</span></div><div class="line">                    <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;min&quot;</span>, 00);</div><div class="line">                    <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.write(<span class="stringliteral">&quot;sec&quot;</span>, 59);</div><div class="line">               <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close_obj(); <span class="comment">//close &#39;time&#39;</span></div><div class="line">          <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close_obj(); <span class="comment">//close root &quot;&quot;</span></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close();</div><div class="line"></div><div class="line">     <span class="keywordtype">char</span> buffer[32];</div><div class="line">     u32 value;</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.open_read(<span class="stringliteral">&quot;/home/settings.son&quot;</span>); <span class="comment">//opens read-only</span></div><div class="line"></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.read_str(<span class="stringliteral">&quot;name&quot;</span>, buffer, 32);</div><div class="line">     <span class="comment">//buffer holds &quot;Stratify&quot;</span></div><div class="line"></div><div class="line">     value = <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.read_unum(<span class="stringliteral">&quot;hour&quot;</span>);</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.read_str(<span class="stringliteral">&quot;sec&quot;</span>, buffer, 32);</div><div class="line">     <span class="comment">//buffer holds &quot;59&quot;</span></div><div class="line"></div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.to_json(<span class="stringliteral">&quot;/home.settings.json&quot;</span>);</div><div class="line">     <a class="code" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a>.close();</div><div class="line"></div><div class="line">     }</div></div><!-- fragment --><p>The home/settings.json files looks like: </p><pre class="fragment">{
     "name": "Stratify",
     "date": "today",
-    "value": "100",
-    "stuff": {
-        "hour": "12",
-        "min": "0",
-        "sec": "59"
+    "value": 100,
+    "time": {
+        "hour": 12,
+        "min": 0,
+        "sec": 59
      }
-}</pre> </div><table class="memberdecls">
+}
+</pre><p>Note that JSON numbers are always in floating point format. So unum and num values get converted to float value. If the JSON data is converted to SON, all numbers will be in float format. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a713d64733ab1e2184ea42e19704bcb36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a713d64733ab1e2184ea42e19704bcb36">close</a> ()</td></tr>
@@ -68,10 +70,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9d26da6943b70570cc4f33aef51f1667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438e464305576b5db6e7486f3bbc6666"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a438e464305576b5db6e7486f3bbc6666">create</a> (const char *name)</td></tr>
 <tr class="separator:a438e464305576b5db6e7486f3bbc6666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77ba6837e50ad029d4fb3053ee0abac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#ac77ba6837e50ad029d4fb3053ee0abac">create_image</a> (void *image, int nbyte)</td></tr>
-<tr class="separator:ac77ba6837e50ad029d4fb3053ee0abac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad843b7842976cd441dfb467a88f2a15e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#ad843b7842976cd441dfb467a88f2a15e">create_image</a> (int nbyte)</td></tr>
-<tr class="separator:ad843b7842976cd441dfb467a88f2a15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a796bda185a2592b0154b7be08a38ca76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a796bda185a2592b0154b7be08a38ca76">create_message</a> (void *message, int nbyte)</td></tr>
+<tr class="separator:a796bda185a2592b0154b7be08a38ca76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5409fe0f0c22e4ab959e48ba162f3463"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a5409fe0f0c22e4ab959e48ba162f3463">create_message</a> (int nbyte)</td></tr>
+<tr class="separator:a5409fe0f0c22e4ab959e48ba162f3463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf687e0d6625eaf28d13403aea64512e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#aaf687e0d6625eaf28d13403aea64512e">edit</a> (const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>, float v)</td></tr>
 <tr class="separator:aaf687e0d6625eaf28d13403aea64512e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9048240e5d3c734773c2d10f0d763325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a9048240e5d3c734773c2d10f0d763325">edit</a> (const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>, const void *data, son_size_t size)</td></tr>
@@ -92,6 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af8f102505b0810be6eeffb53d26eb52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f671993cea11fbba8d0b5da592d0f80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a3f671993cea11fbba8d0b5da592d0f80">get_error</a> ()</td></tr>
 <tr class="separator:a3f671993cea11fbba8d0b5da592d0f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4967bbcb276768beb814562b0ac279ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a4967bbcb276768beb814562b0ac279ea">get_message_size</a> ()</td></tr>
+<tr class="separator:a4967bbcb276768beb814562b0ac279ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa19d790ae9d4003ed198f00bfe79c99e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#aa19d790ae9d4003ed198f00bfe79c99e">open_append</a> (const char *name)</td></tr>
 <tr class="separator:aa19d790ae9d4003ed198f00bfe79c99e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e5a7b05f1b96a356b49858121e8f80"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a55e5a7b05f1b96a356b49858121e8f80">open_array</a> (const char *key)</td></tr>
@@ -100,14 +104,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ba2d1c71b5a4c3afbe84d00ca9e12ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a526c5f5aa16017fb0f5ef24c21057657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a526c5f5aa16017fb0f5ef24c21057657">open_edit</a> (const char *name)</td></tr>
 <tr class="separator:a526c5f5aa16017fb0f5ef24c21057657"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb81564c196ed2be33f6baefaad58ae9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#acb81564c196ed2be33f6baefaad58ae9">open_edit_image</a> (void *image, int nbyte)</td></tr>
-<tr class="separator:acb81564c196ed2be33f6baefaad58ae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e01adafa1007b4a82b5a919a6e6f672"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a1e01adafa1007b4a82b5a919a6e6f672">open_edit_message</a> (void *message, int nbyte)</td></tr>
+<tr class="separator:a1e01adafa1007b4a82b5a919a6e6f672"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfd63b0572c84c3e65be0cb0399eae7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#adfd63b0572c84c3e65be0cb0399eae7e">open_obj</a> (const char *key)</td></tr>
 <tr class="separator:adfd63b0572c84c3e65be0cb0399eae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2662512a4e495f0581e5a5af41bb9845"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a2662512a4e495f0581e5a5af41bb9845">open_read</a> (const char *name)</td></tr>
 <tr class="separator:a2662512a4e495f0581e5a5af41bb9845"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e21710c9fff81f760b671f617e15a6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a0e21710c9fff81f760b671f617e15a6a">open_read_image</a> (void *image, int nbyte)</td></tr>
-<tr class="separator:a0e21710c9fff81f760b671f617e15a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfbb7b661125787f4baa5c118a4d0ff1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#adfbb7b661125787f4baa5c118a4d0ff1">open_read_message</a> (void *message, int nbyte)</td></tr>
+<tr class="separator:adfbb7b661125787f4baa5c118a4d0ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c254e7432e852aabd5384b91cf120d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#ad0c254e7432e852aabd5384b91cf120d">read_bool</a> (const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>)</td></tr>
 <tr class="separator:ad0c254e7432e852aabd5384b91cf120d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df4b387b34da1d939320ecf15ab2d89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a5df4b387b34da1d939320ecf15ab2d89">read_data</a> (const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>, void *data, son_size_t size)</td></tr>
@@ -122,8 +126,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8cf4d75d4f194817f1a7db1b12d725ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a168e14593a6d653e6c25048c6c4af22e"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a168e14593a6d653e6c25048c6c4af22e">read_unum</a> (const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>)</td></tr>
 <tr class="separator:a168e14593a6d653e6c25048c6c4af22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6276d25be20cf2ba9e914465def1fce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#ae6276d25be20cf2ba9e914465def1fce">recv_message</a> (int fd, int timeout)</td></tr>
+<tr class="separator:ae6276d25be20cf2ba9e914465def1fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af363e3dc48e6966840a0a4ff2b9fbfa9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#af363e3dc48e6966840a0a4ff2b9fbfa9">seek</a> (const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>, son_size_t *data_size)</td></tr>
 <tr class="separator:af363e3dc48e6966840a0a4ff2b9fbfa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad635000687e6b27756f27e6149d4e303"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#ad635000687e6b27756f27e6149d4e303">send_message</a> (int fd, int timeout)</td></tr>
+<tr class="separator:ad635000687e6b27756f27e6149d4e303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2959b3d3236c10e666421abdf525cd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#ab2959b3d3236c10e666421abdf525cd7">Son</a> ()</td></tr>
 <tr class="separator:ab2959b3d3236c10e666421abdf525cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f141bab012492bdfa3876c41aeb6aa"><td class="memItemLeft" align="right" valign="top">son_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfmt_1_1_son.html#a17f141bab012492bdfa3876c41aeb6aa">son</a> ()</td></tr>
@@ -391,7 +399,7 @@ template&lt;int stacksize&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac77ba6837e50ad029d4fb3053ee0abac"></a>
+<a class="anchor" id="a796bda185a2592b0154b7be08a38ca76"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -401,10 +409,10 @@ template&lt;int stacksize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::create_image </td>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::create_message </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -424,11 +432,11 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a memory image SON object.</p>
+<p>Creates a memory message SON object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The memory image </td></tr>
-    <tr><td class="paramname">nbyte</td><td>The number of bytes in the image</td></tr>
+    <tr><td class="paramname">message</td><td>The memory message </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes in the message</td></tr>
   </table>
   </dd>
 </dl>
@@ -436,7 +444,7 @@ template&lt;int stacksize&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad843b7842976cd441dfb467a88f2a15e"></a>
+<a class="anchor" id="a5409fe0f0c22e4ab959e48ba162f3463"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -446,7 +454,7 @@ template&lt;int stacksize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::create_image </td>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::create_message </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>nbyte</em></td><td>)</td>
@@ -459,10 +467,10 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a memory image SON object using dynamic memory allocation.</p>
+<p>Creates a memory message SON object using dynamic memory allocation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nbyte</td><td>The number of bytes in the image</td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes in the message</td></tr>
   </table>
   </dd>
 </dl>
@@ -875,6 +883,33 @@ template&lt;int stacksize&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a4967bbcb276768beb814562b0ac279ea"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int stacksize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::get_message_size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the size of the message in bytes.</p>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes that will be sent is <a class="el" href="classfmt_1_1_son.html#ad635000687e6b27756f27e6149d4e303">send_message()</a> is called or less than zero for an error. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="aa19d790ae9d4003ed198f00bfe79c99e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1011,7 +1046,7 @@ template&lt;int stacksize&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="acb81564c196ed2be33f6baefaad58ae9"></a>
+<a class="anchor" id="a1e01adafa1007b4a82b5a919a6e6f672"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1021,10 +1056,10 @@ template&lt;int stacksize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::open_edit_image </td>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::open_edit_message </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1044,11 +1079,11 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens a SON image for editing.</p>
+<p>Opens a SON message for editing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The memory image </td></tr>
-    <tr><td class="paramname">nbyte</td><td>The number of bytes in the image </td></tr>
+    <tr><td class="paramname">message</td><td>The memory message </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes in the message </td></tr>
   </table>
   </dd>
 </dl>
@@ -1124,7 +1159,7 @@ template&lt;int stacksize&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0e21710c9fff81f760b671f617e15a6a"></a>
+<a class="anchor" id="adfbb7b661125787f4baa5c118a4d0ff1"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1134,10 +1169,10 @@ template&lt;int stacksize&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::open_read_image </td>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::open_read_message </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>image</em>, </td>
+          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1157,11 +1192,11 @@ template&lt;int stacksize&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Opens a SON image for reading.</p>
+<p>Opens a SON message for reading.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">image</td><td>The memory image </td></tr>
-    <tr><td class="paramname">nbyte</td><td>The number of bytes in the image </td></tr>
+    <tr><td class="paramname">message</td><td>The memory message </td></tr>
+    <tr><td class="paramname">nbyte</td><td>The number of bytes in the message </td></tr>
   </table>
   </dd>
 </dl>
@@ -1455,6 +1490,51 @@ template&lt;int stacksize&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="ae6276d25be20cf2ba9e914465def1fce"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int stacksize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::recv_message </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Receives a message on the specified file descriptor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>The file descriptor to listen for the message on. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The max number of milliseconds to wait between bytes before aborting. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes received or less than zero for an error </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="af363e3dc48e6966840a0a4ff2b9fbfa9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1497,6 +1577,51 @@ template&lt;int stacksize&gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad635000687e6b27756f27e6149d4e303"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int stacksize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classfmt_1_1_son.html">fmt::Son</a>&lt; stacksize &gt;::send_message </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sends a message on the specified file descriptor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td>The file descriptor to write the message to. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The max number of milliseconds to wait between bytes before aborting. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of bytes sent or less then zero for an error </dd></dl>
 
 </div>
 </div>

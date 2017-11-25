@@ -29,6 +29,157 @@
     </member>
     <member kind="enumeration">
       <type></type>
+      <name>son_err_t</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>ga672a94c859b0d260bb3a04d0851ad4fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NONE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea745c8812407b57a377954070484f7aab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NO_ROOT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaad14b56bdacac7564f69d63019079d66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_OPEN_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea7110edd81d1090157fd04a20464abce5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_READ_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea1828f9c4b800ca209e457845c83a220a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_WRITE_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0e2f6fa493884cad7f1fb32b6c48a3a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CLOSE_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea8b8d05f21f2a38e4fe0e8e3c547cb158</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_SEEK_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2f9fce559b090c30dd8bfef2224c0ae1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_READ_CHECKSUM</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5a4fe30fba4b4bfcc053f71ea9c13a88</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_APPEND</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feae46e9a09111ea56a2390ede67f3d43d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_WRITE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5b0700fde3ed39ae438a810bdf9f7fc0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_READ</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea17323d7e861eef85d12cc018254b40d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_INVALID_ROOT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea62724900e6de99c48db33133e4afe0f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_ARRAY_INDEX_NOT_FOUND</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea807b62ce0a6bd5dbd1da2c437032debd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_ACCESS_TOO_LONG</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea31004e3ba25008b63d21b7182b019cb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_KEY_NOT_FOUND</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaa3170defb0a6c2ca6a1f5f6446d4f988</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_STACK_OVERFLOW</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea19d9b9c8ffd16b6954a0cf7f2b9a85dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_INVALID_KEY</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea34cc3c8896f650599659477b5001ad97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_CONVERT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea3ba92da96e38b6accfb27ec40d2b1277</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_EDIT_TYPE_MISMATCH</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_HANDLE_CHECKSUM</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_MESSAGE_TIMEOUT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea50fd640dd2ec2b095d3f845cd33a77d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_MESSAGE_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feac5c96db251c93f601a44754dae57d62b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NO_MESSAGE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea288afc349b96a60559bc4620cb0d53a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_INCOMPLETE_MESSAGE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2385276d3ca321793f8e2abeebd5360c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
       <name>son_value_t</name>
       <anchorfile>group___s_o_n.html</anchorfile>
       <anchor>ga803f627d5226bd3c8aaadd672a934f66</anchor>
@@ -94,132 +245,47 @@
       <anchor>gga803f627d5226bd3c8aaadd672a934f66a297ba45de41b5b81033e88e146401638</anchor>
       <arglist></arglist>
     </member>
-    <member kind="enumeration">
-      <type></type>
-      <name>son_err_t</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga672a94c859b0d260bb3a04d0851ad4fe</anchor>
-      <arglist></arglist>
+    <member kind="function">
+      <type>int</type>
+      <name>son_create_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga32ea1184d1c45cec0a8b686df64c2dc5</anchor>
+      <arglist>(son_t *h, void *message, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_NONE</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea745c8812407b57a377954070484f7aab</anchor>
-      <arglist></arglist>
+    <member kind="function">
+      <type>int</type>
+      <name>son_open_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga04c537f65e82f4e842d08f3171b156ef</anchor>
+      <arglist>(son_t *h, void *message, int nbyte)</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_NO_ROOT</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaad14b56bdacac7564f69d63019079d66</anchor>
-      <arglist></arglist>
+    <member kind="function">
+      <type>int</type>
+      <name>son_edit_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>gabeecdd19a6116505b4eb333225223665</anchor>
+      <arglist>(son_t *h, void *message, int nbyte)</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_OPEN_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea7110edd81d1090157fd04a20464abce5</anchor>
-      <arglist></arglist>
+    <member kind="function">
+      <type>int</type>
+      <name>son_send_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga70fbec922a68ae006015b6a7672f7dbe</anchor>
+      <arglist>(son_t *h, int fd, int timeout)</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_READ_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea1828f9c4b800ca209e457845c83a220a</anchor>
-      <arglist></arglist>
+    <member kind="function">
+      <type>int</type>
+      <name>son_recv_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga8d0df630dbd28410fa390aa077dde878</anchor>
+      <arglist>(son_t *h, int fd, int timeout)</arglist>
     </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_WRITE_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0e2f6fa493884cad7f1fb32b6c48a3a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CLOSE_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea8b8d05f21f2a38e4fe0e8e3c547cb158</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_SEEK_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2f9fce559b090c30dd8bfef2224c0ae1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_READ_CHECKSUM</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5a4fe30fba4b4bfcc053f71ea9c13a88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_APPEND</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feae46e9a09111ea56a2390ede67f3d43d3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_WRITE</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5b0700fde3ed39ae438a810bdf9f7fc0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_READ</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea17323d7e861eef85d12cc018254b40d4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_INVALID_ROOT</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea62724900e6de99c48db33133e4afe0f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_ARRAY_INDEX_NOT_FOUND</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea807b62ce0a6bd5dbd1da2c437032debd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_ACCESS_TOO_LONG</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea31004e3ba25008b63d21b7182b019cb6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_KEY_NOT_FOUND</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaa3170defb0a6c2ca6a1f5f6446d4f988</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_STACK_OVERFLOW</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea19d9b9c8ffd16b6954a0cf7f2b9a85dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_INVALID_KEY</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea34cc3c8896f650599659477b5001ad97</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_CONVERT</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea3ba92da96e38b6accfb27ec40d2b1277</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_EDIT_TYPE_MISMATCH</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_HANDLE_CHECKSUM</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02</anchor>
-      <arglist></arglist>
+    <member kind="function">
+      <type>int</type>
+      <name>son_get_message_size</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga2649d167927a17432a84d9d4a6bc6b1d</anchor>
+      <arglist>(son_t *h)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -234,13 +300,6 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>gaba466edaea5fd61eb673075f8fa34264</anchor>
       <arglist>(son_t *h, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>son_create_image</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gadfc3b19d341d640852d51059f6e6ce8e</anchor>
-      <arglist>(son_t *h, void *image, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -262,13 +321,6 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>ga90e32cf4df5579114312635e3593e24f</anchor>
       <arglist>(son_t *h, const char *name)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>son_open_image</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga1df2da84aae43e6e592b121501568755</anchor>
-      <arglist>(son_t *h, void *image, int nbyte)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -440,13 +492,6 @@
     </member>
     <member kind="function">
       <type>int</type>
-      <name>son_edit_image</name>
-      <anchorfile>group___e_d_i_t.html</anchorfile>
-      <anchor>gaf2ed588c802ecde77ce1218c5dffc396</anchor>
-      <arglist>(son_t *h, void *image, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
       <name>son_edit_float</name>
       <anchorfile>group___e_d_i_t.html</anchorfile>
       <anchor>gab2569f4b1bddef4132a447dcc5731015</anchor>
@@ -509,13 +554,6 @@
     </member>
     <member kind="function">
       <type>int</type>
-      <name>son_edit_image</name>
-      <anchorfile>group___e_d_i_t.html</anchorfile>
-      <anchor>gaf2ed588c802ecde77ce1218c5dffc396</anchor>
-      <arglist>(son_t *h, void *image, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
       <name>son_edit_float</name>
       <anchorfile>group___e_d_i_t.html</anchorfile>
       <anchor>gab2569f4b1bddef4132a447dcc5731015</anchor>
@@ -561,135 +599,6 @@
     <name>FILES</name>
     <title>File Handling (Create/Append/Open/Close)</title>
     <filename>group___f_i_l_e_s.html</filename>
-    <class kind="struct">son_stack_t</class>
-    <class kind="struct">son_t</class>
-    <member kind="enumeration">
-      <type></type>
-      <name>son_err_t</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga672a94c859b0d260bb3a04d0851ad4fe</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_NONE</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea745c8812407b57a377954070484f7aab</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_NO_ROOT</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaad14b56bdacac7564f69d63019079d66</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_OPEN_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea7110edd81d1090157fd04a20464abce5</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_READ_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea1828f9c4b800ca209e457845c83a220a</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_WRITE_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0e2f6fa493884cad7f1fb32b6c48a3a7</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CLOSE_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea8b8d05f21f2a38e4fe0e8e3c547cb158</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_SEEK_IO</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2f9fce559b090c30dd8bfef2224c0ae1</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_READ_CHECKSUM</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5a4fe30fba4b4bfcc053f71ea9c13a88</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_APPEND</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feae46e9a09111ea56a2390ede67f3d43d3</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_WRITE</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5b0700fde3ed39ae438a810bdf9f7fc0</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_READ</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea17323d7e861eef85d12cc018254b40d4</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_INVALID_ROOT</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea62724900e6de99c48db33133e4afe0f2</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_ARRAY_INDEX_NOT_FOUND</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea807b62ce0a6bd5dbd1da2c437032debd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_ACCESS_TOO_LONG</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea31004e3ba25008b63d21b7182b019cb6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_KEY_NOT_FOUND</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaa3170defb0a6c2ca6a1f5f6446d4f988</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_STACK_OVERFLOW</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea19d9b9c8ffd16b6954a0cf7f2b9a85dd</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_INVALID_KEY</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea34cc3c8896f650599659477b5001ad97</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_CANNOT_CONVERT</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea3ba92da96e38b6accfb27ec40d2b1277</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_EDIT_TYPE_MISMATCH</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="enumvalue">
-      <name>SON_ERR_HANDLE_CHECKSUM</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>int</type>
       <name>son_get_error</name>
@@ -703,13 +612,6 @@
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>gaba466edaea5fd61eb673075f8fa34264</anchor>
       <arglist>(son_t *h, const char *path)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>son_create_image</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gadfc3b19d341d640852d51059f6e6ce8e</anchor>
-      <arglist>(son_t *h, void *image, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -734,16 +636,56 @@
     </member>
     <member kind="function">
       <type>int</type>
-      <name>son_open_image</name>
-      <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga1df2da84aae43e6e592b121501568755</anchor>
-      <arglist>(son_t *h, void *image, int nbyte)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
       <name>son_close</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
       <anchor>ga1f217dcfa00977986c15b3daae675677</anchor>
+      <arglist>(son_t *h)</arglist>
+    </member>
+  </compound>
+  <compound kind="group">
+    <name>MESSAGE</name>
+    <title>Messaging</title>
+    <filename>group___m_e_s_s_a_g_e.html</filename>
+    <member kind="function">
+      <type>int</type>
+      <name>son_create_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga32ea1184d1c45cec0a8b686df64c2dc5</anchor>
+      <arglist>(son_t *h, void *message, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_open_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga04c537f65e82f4e842d08f3171b156ef</anchor>
+      <arglist>(son_t *h, void *message, int nbyte)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_edit_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>gabeecdd19a6116505b4eb333225223665</anchor>
+      <arglist>(son_t *h, void *message, int nbyte)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_send_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga70fbec922a68ae006015b6a7672f7dbe</anchor>
+      <arglist>(son_t *h, int fd, int timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_recv_message</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga8d0df630dbd28410fa390aa077dde878</anchor>
+      <arglist>(son_t *h, int fd, int timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_get_message_size</name>
+      <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
+      <anchor>ga2649d167927a17432a84d9d4a6bc6b1d</anchor>
       <arglist>(son_t *h)</arglist>
     </member>
   </compound>
@@ -812,8 +754,11 @@
     <name>SON</name>
     <title>Stratify Object Notation</title>
     <filename>group___s_o_n.html</filename>
+    <class kind="struct">son_stack_t</class>
+    <class kind="struct">son_t</class>
     <subgroup>EDIT</subgroup>
     <subgroup>FILES</subgroup>
+    <subgroup>MESSAGE</subgroup>
     <subgroup>READ</subgroup>
     <subgroup>WRITE</subgroup>
     <member kind="define">
@@ -828,6 +773,157 @@
       <name>son_size_t</name>
       <anchorfile>group___s_o_n.html</anchorfile>
       <anchor>gaf216182088d7ee4189680920c62d34fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>son_err_t</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>ga672a94c859b0d260bb3a04d0851ad4fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NONE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea745c8812407b57a377954070484f7aab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NO_ROOT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaad14b56bdacac7564f69d63019079d66</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_OPEN_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea7110edd81d1090157fd04a20464abce5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_READ_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea1828f9c4b800ca209e457845c83a220a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_WRITE_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0e2f6fa493884cad7f1fb32b6c48a3a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CLOSE_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea8b8d05f21f2a38e4fe0e8e3c547cb158</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_SEEK_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2f9fce559b090c30dd8bfef2224c0ae1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_READ_CHECKSUM</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5a4fe30fba4b4bfcc053f71ea9c13a88</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_APPEND</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feae46e9a09111ea56a2390ede67f3d43d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_WRITE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea5b0700fde3ed39ae438a810bdf9f7fc0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_READ</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea17323d7e861eef85d12cc018254b40d4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_INVALID_ROOT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea62724900e6de99c48db33133e4afe0f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_ARRAY_INDEX_NOT_FOUND</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea807b62ce0a6bd5dbd1da2c437032debd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_ACCESS_TOO_LONG</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea31004e3ba25008b63d21b7182b019cb6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_KEY_NOT_FOUND</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaa3170defb0a6c2ca6a1f5f6446d4f988</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_STACK_OVERFLOW</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea19d9b9c8ffd16b6954a0cf7f2b9a85dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_INVALID_KEY</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea34cc3c8896f650599659477b5001ad97</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_CANNOT_CONVERT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea3ba92da96e38b6accfb27ec40d2b1277</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_EDIT_TYPE_MISMATCH</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea0be1e30f5fe1a3ff88a2e44c0b2ac300</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_HANDLE_CHECKSUM</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feaaeff3e210360b018cefcab389d291a02</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_MESSAGE_TIMEOUT</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea50fd640dd2ec2b095d3f845cd33a77d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_MESSAGE_IO</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feac5c96db251c93f601a44754dae57d62b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NO_MESSAGE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea288afc349b96a60559bc4620cb0d53a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_INCOMPLETE_MESSAGE</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2385276d3ca321793f8e2abeebd5360c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
