@@ -38,7 +38,7 @@ tagline: Rapid Embedded Development
   </div>
   <div class="col-md-3">
     <h3><b>BSP</b></h3>
-    <a href = "../stratifyos/html" class="btn btn-primary btn-lg">Browse Docs</a>
+    <a href = "../StratifyOS/html" class="btn btn-primary btn-lg">Browse Docs</a>
     <p> </p>
     <p>Board support packages are built in C. The best way to get started is to look at existing BSP's on <a href="https://github.com/StratifyLabs" target="_blank">Github</a>. The Stratify OS documentation is helpful in developing your own device drivers.</p>
   </div>
