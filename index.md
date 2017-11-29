@@ -4,7 +4,6 @@ title: Stratify Labs
 tagline: Rapid Embedded Development
 ---
 
-
 <div style="background: #344555; color: #fff;">
 <div class="container">
 <div class="row" style="margin-top: 25px; margin-bottom: 20px">

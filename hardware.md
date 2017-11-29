@@ -22,10 +22,11 @@ sections:
 	</div>
 </div>
 
-<div style="background: #ddd;">
-	<div class="container">
-		{% include themes/twitter/signup.html %}
-	</div>
+<div style="background: #ddd; height: auto">
+<div class="container">
+  <h2>Getting <b>Started</b></h2>
+  </div>
+  {% include JB/stratify-os-resource-links.html %}
 </div>
 
 

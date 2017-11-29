@@ -20,8 +20,8 @@ $(function () {
     $.ajax({
       type: 'POST',
       url: "https://docs.google.com/forms/d/e/1FAIpQLSf5ld1m0cUPM_x519m1q9vQYgxLj50U8h6ZTNnGbOgOWSXJbw/formResponse",
-      data: $("#ciForm").serialize().replace(/[^&]+=&/g, '').replace(/&[^&]+=$/g, '') + pgHistory + 
-        '&draftResponse=[[[,1443226713,["'+ $('#entry\\.1443226713').val() + '"]] ,[,32778454,["'+ 
+      data: $("#ciForm").serialize().replace(/[^&]+=&/g, '').replace(/&[^&]+=$/g, '') + pgHistory +
+        '&draftResponse=[[[,1443226713,["'+ $('#entry\\.1443226713').val() + '"]] ,[,32778454,["'+
         $('#entry\\.32778454').val() + '"]] ,[,182110896,["'+ $("input[name='entry.182110896']:checked").val() + '"]] ]]',
       complete: function() {
       	window.location.href="/thank-you/";
@@ -101,7 +101,7 @@ function maxCheckboxes() {
   }
 
   if (chkErrMsg !== "") {
-    // parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" + 
+    // parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" +
     //     chkErrMsg +
     //     "</div>" );
     parent.append("<div class='error-message'>" + chkErrMsg + "</div>");
@@ -125,7 +125,8 @@ function replaceValidationUI( form ) {
         }
     });
 
-    var submitButton = form.querySelector( ".submitbtn" );
+    var submitButton = form.querySelector( ".submitbtnform" );
+		if( submitButton !== null ){
     submitButton.addEventListener( "click", function( event ) {
       var invalidFields = form.querySelectorAll( ":invalid" ),
           errorMessages = form.querySelectorAll( ".error-message" ),
@@ -149,10 +150,10 @@ function replaceValidationUI( form ) {
             radioErrorArr.push(invalidFields[i].name);
             if (!radioError) {
               parent = invalidFields[ i ].parentNode.parentNode;
-              parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" + 
+              parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" +
                   invalidFields[ i ].validationMessage +
                   "</div>" );
-              $(invalidFields[ i ].parentNode.parentNode.parentNode.parentNode).addClass("invalid-row");  
+              $(invalidFields[ i ].parentNode.parentNode.parentNode.parentNode).addClass("invalid-row");
               radioError = true;
             }
           } else if (invalidFields[ i ].type == "checkbox") {
@@ -168,7 +169,7 @@ function replaceValidationUI( form ) {
               radioErrorArr.push(invalidFields[i].name);
               if (!radioError) {
                 parent = invalidFields[ i ].parentNode.parentNode;
-                parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" + 
+                parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" +
                     invalidFields[ i ].validationMessage +
                     "</div>" );
                 $(invalidFields[ i ].parentNode.parentNode.parentNode.parentNode).addClass("invalid-row");
@@ -178,7 +179,7 @@ function replaceValidationUI( form ) {
             }
           } else {
             parent = invalidFields[ i ].parentNode;
-            parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" + 
+            parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" +
                 invalidFields[ i ].validationMessage +
                 "</div>" );
             $(invalidFields[ i ].parentNode.parentNode.parentNode).addClass("invalid-row");
@@ -196,6 +197,7 @@ function replaceValidationUI( form ) {
           invalidFields[ 0 ].focus();
         }
     });
+	}
 }
 
 $(function() {
@@ -317,4 +319,3 @@ $(function() {
   }
 
 });
-

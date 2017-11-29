@@ -23,6 +23,11 @@
           <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
           <div class="clear">
             <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info submitbtn" style="margin-top:20px;">Sign me up!</button>
+            <script>
+            $("body").on('click','#mc-embedded-subscribe',function(){
+              ouibounce_object.disable();
+            });
+            </script>
           </div>
         </div>
       </form>

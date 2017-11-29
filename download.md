@@ -23,47 +23,18 @@ sections:
 </div>
 
 
-<div style="background: #ddd;">
-	<div class="container" style="padding-top: 50px; padding-bottom: 50px">
-		<center>
-			<h2>Getting Started</h2>
-		</center>
-	</div>
+<div style="background: #ddd; height: auto">
+<div class="container">
+  <h2>Getting <b>Started</b></h2>
+  </div>
+  {% include JB/stratify-os-resource-links.html %}
 </div>
 
 <div class="container">
 
-<center>
-<h3><i class="fa fa-cogs"></i> The Hardware</h3>
-<p>Powerful ARM Cortex-M Development Boards</p>
-</center>
-
-<div class="row">
-
-  <div class="col-md-6">
-    <center>
-      <p>
-        <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/hardware/coaction-hero/">CoAction Hero</a>
-      </p>
-    </center>
-  </div>
-
-  <div class="col-md-6">
-  <center>
-    <p>
-      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/hardware/mbed-lpc1768/">MBED LPC1768</a>
-    </p>
-  </center>
-  </div>
-
-</div>
+<h2><i class="fa fa-wrench"></i> The <b>Tools</b> <small>free cross-platform development tools</small></h2>
 
 <hr>
-
-<center>
-<h3><i class="fa fa-wrench"></i> The Tools</h3>
-<p>Free Cross-Platform Development Tools</p>
-</center>
 
 <div class="row">
   <div class="col-md-6">
@@ -119,29 +90,7 @@ sections:
   </div>
 </div>
 
-<hr>
 
-<center>
-<h3><i class="fa fa-code-fork"></i> The Code</h3>
-<p>Start by forking on Github</p>
-</center>
-
-<div class="row">
-  <div class="col-md-6">
-    <center>
-      <p>
-        <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/HelloWorld"  target="_blank">Hello World</a>
-      </p>
-    </center>
-  </div>
-  <div class="col-md-6">
-  <center>
-    <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs" target="_blank">Much More</a>
-    </p>
-  </center>
-  </div>
-</div>
 </div>
 
 <p>
