@@ -29,9 +29,27 @@ sections:
   {% include JB/stratify-os-resource-links.html %}
 </div>
 
+<div style="background: #fff;">
+	<div class="container">
+  <h2>Stratify <b>Toolbox</b> <small>all-in-one debugging tool</small></h2>
+  <div class="row" style="margin-top: 1.5em; margin-bottom: 2.0em">
+		<div class="col-md-6">
 
-<div class="container">
-<h2>Stratify <b>Hardware</b> <small>microcontroller development boards</small></h2>
+		<h3><i class="fa fa-desktop"></i> In-place <b>Customizable UI</b></h3>
+		<h3><i class="fa fa-bar-chart"></i> High Speed USB <b>Logic</b> Analyzer</h3>
+		<h3><i class="fa fa-download"></i> <b>Flash</b> Programmer</h3>
+		<h3><i class="fa fa-search"></i> I2C/SPI/UART Probe <b>Analyzer</b></h3>
+		<h3><i class="fa fa-cloud"></i> SDK to <b>Build and Share</b> your own tools</h3>
+		<a class="btn btn-lg btn-success" href="{{ BASE_PATH }}/Toolbox/">Learn More</a>
+		</div>
+		<div class="col-md-6" style="margin-bottom: 2.0em">
+		<iframe width="100%" height="315" src="https://www.youtube.com/embed/K5sfHB4SMpI" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
+
+<hr>
+<h2>Development <b>Hardware</b> <small>microcontroller boards</small></h2>
 
 <div class="row">
 
@@ -80,95 +98,12 @@ sections:
     </div>  
   </div>
 
+  </div>
 
 </div>
 </div>
 
-<div style="background: #fff;">
-	<div class="container">
-	<h2>Coming soon</h2>
-		<div class="row text-center" style="margin-top: 20px; margin-bottom: 20px;">
-			<div class="col-md-12">
-				<div class="table-responsive">
-					<table class="table table-striped" style="font-size: 1.4em;">
-					  <tr>
-					    <td></td>
-					    <td><b>Stratify Alpha</b></td>
-					    <td><b>Stratify Iota</b></td>
-					    <td><b>Stratify Mu</b></td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-bluetooth-b"></i> <b>Bluetooth</b></td>
-					    <td></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-arrows"></i> <b>9-axis Motion Sensor</b></td>
-					    <td></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-microphone"></i> <b>Audio</b></td>
-					    <td></td>
-					    <td></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-usb"></i> <b>USB</b></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					    <td></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-wifi"></i> <b>Wifi</b></td>
-					    <td></td>
-					    <td></td>
-					    <td><i class="fa fa-2x fa-check"></i></td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-toggle-on"></i> <b>IO</b></td>
-					    <td>35 Pins (SPI/I2C/UART)</td>
-					    <td>24 Pins (SPI/I2C/UART)</td>
-					    <td>64 Pins (SPI/I2C/UART/Ethernet)</td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-exchange"></i> <b>RAM</b></td>
-					    <td>96KB</td>
-					    <td>96KB</td>
-					    <td>256KB</td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-folder"></i> <b>Internal Flash</b></td>
-					    <td>512KB</td>
-					    <td>512KB</td>
-					    <td>1MB</td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-download"></i> <b>External Flash</b></td>
-					    <td>2MB</td>
-					    <td>32MB</td>
-					    <td>256MB</td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-flash"></i> <b>Processor</b></td>
-					    <td>120MHz ARM CM4F</td>
-					    <td>120MHz ARM CM4F</td>
-					    <td>200MHz ARM CM4F</td>
-					  </tr>
-					  <tr>
-					    <td class="text-left"><i class="fa fa-square-o"></i> <b>Form Factor</b></td>
-					    <td>Breadboard Proto</td>
-					    <td>Module 14mm x 9mm</td>
-					    <td>Module 25mm x 14mm</td>
-					  </tr>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 <div style="background: #ddd;">
 	<div class="container">
