@@ -5,7 +5,7 @@ tagline: Hardware
 sections:
  intro: Stratify Toolbox
  brief: all-in-one debugging tool powered by Stratify OS
- icon: fa fa-gears fa-3x
+ icon: fa fa-wrench fa-3x
 ---
 
 <div style="background: #344555; color: #fff;">
@@ -42,7 +42,7 @@ sections:
 </div>
 
 <h3>Beta Program Launching Soon</h3>
-<p>During the first part of 2018, we will be launching a beta program of the Stratify Toolbox. The program will will be giving away <b>free beta units</b> to well-motivated testers.</p>
+<p>During the first part of 2018, we will be launching a beta program of the Stratify Toolbox. We will be giving away <b>free beta units</b> to well-motivated testers.</p>
 
 {% include themes/twitter/toolbox-signup.html %}
 
