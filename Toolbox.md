@@ -9,17 +9,19 @@ sections:
 ---
 
 <div style="background: #344555; color: #fff;">
-	<div class="container">
-  <div class="row header_row">
-			<div class="col-md-3 text-center">
-				<h2><i class="{{ page.sections['icon'] }}"></i></h2>
-			</div>
-			<div class="col-md-9">
-				<h2><b>{{ page.sections['intro'] }}</b></h2>
-				<h3>{{ page.sections['brief'] }}</h3>
-			</div>
+<div class="container">
+<div class="row" style="margin-top: 25px; margin-bottom: 20px">
+		<div class="col-md-3">
+    <center>
+			<img width="200px" src="{{ BASE_PATH }}/images/toolbox-icon.png" />
+    </center>
+		</div>
+		<div class="col-md-9">
+			<h1><b>Stratify Toolbox</b></h1>
+			<h3>All-in-one debugging tool powered by Stratify OS</h3>
 		</div>
 	</div>
+</div>
 </div>
 
 <div class="container">
@@ -52,18 +54,41 @@ sections:
 <div id="carousel-product-images" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-product-images" data-slide-to="0" class="active"></li>
+  <li data-target="#carousel-product-images" data-slide-to="0" class="active"></li>
+  <li data-target="#carousel-product-images" data-slide-to="1" class="active"></li>
+  <li data-target="#carousel-product-images" data-slide-to="2" class="active"></li>
+  <li data-target="#carousel-product-images" data-slide-to="3" class="active"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
 
   <div class="item active">
-    <img src="{{ BASE_PATH }}/images/Toolbox-coming-soon.png" alt="CoAction Hero Microcontroller Development Board">
+    <img src="{{ BASE_PATH }}/images/toolbox-1.jpg" alt="Stratify Toolbox all-in-one debugging tool">
   </div>
 
-
+  <div class="item">
+    <img src="{{ BASE_PATH }}/images/toolbox-2.jpg" alt="Stratify Toolbox all-in-one debugging tool">
   </div>
+
+  <div class="item">
+    <img src="{{ BASE_PATH }}/images/toolbox-3.jpg" alt="Stratify Toolbox all-in-one debugging tool">
+  </div>
+
+  <div class="item">
+    <img src="{{ BASE_PATH }}/images/toolbox-4.jpg" alt="Stratify Toolbox all-in-one debugging tool">
+  </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-product-images" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><i class="fa fa-chevron-left"></i></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-product-images" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><i class="fa fa-chevron-right"></i></span>
+    <span class="sr-only">Next</span>
+  </a>
 
 </div>
 

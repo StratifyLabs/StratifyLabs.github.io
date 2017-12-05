@@ -28,7 +28,8 @@ title: Stratify OS Docs
 <div class="header">
   <div class="summary">
 <a href="classsys_1_1_dir-members.html">List of all members</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sys::Dir Class Reference</div>  </div>
 </div><!--header-->
@@ -46,6 +47,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a18f0d838ab67cdf4cb1f1c77d308b43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a205187c26e1df808239be2b88e91772c"><td class="memItemLeft" align="right" valign="top">DIR *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#a205187c26e1df808239be2b88e91772c">dirp</a> ()</td></tr>
 <tr class="separator:a205187c26e1df808239be2b88e91772c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa0178cfe17b9850a091d706f8835b20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#aaa0178cfe17b9850a091d706f8835b20">get_entry</a> (<a class="el" href="classvar_1_1_string.html">var::String</a> &amp;path_dest)</td></tr>
+<tr class="separator:aaa0178cfe17b9850a091d706f8835b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d0c74c4179e1d2d2c660ec757a76c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#ae7d0c74c4179e1d2d2c660ec757a76c6">ino</a> ()</td></tr>
 <tr class="separator:ae7d0c74c4179e1d2d2c660ec757a76c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6f78244025154863be0035e57c89a2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#adf6f78244025154863be0035e57c89a2">is_open</a> () const </td></tr>
@@ -62,6 +65,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0a0e439c5217c5f70d74733dd57bce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5a35be67e19883487cb3db488c01ab5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#af5a35be67e19883487cb3db488c01ab5">tell</a> ()</td></tr>
 <tr class="separator:af5a35be67e19883487cb3db488c01ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a507260f83a083541d8b6f6a43f92e3f0"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_dir.html#a507260f83a083541d8b6f6a43f92e3f0">remove</a> (const char *path, bool recursive=false)</td></tr>
+<tr class="separator:a507260f83a083541d8b6f6a43f92e3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a18f0d838ab67cdf4cb1f1c77d308b43b"></a>
@@ -158,6 +166,30 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the directory handle pointer. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa0178cfe17b9850a091d706f8835b20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::Dir::get_entry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvar_1_1_string.html">var::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path_dest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the next entry and writes the full path of the entry to the given string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path_dest</td><td>The <a class="el" href="classvar_1_1_string.html" title="String class. ">var::String</a> that will hold the full path of the next entry. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if an entry was read or false for an error or no more entries </dd></dl>
 
 </div>
 </div>
@@ -263,6 +295,49 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns a pointer to the next entry or 0 if no more entries exist. </p>
+
+</div>
+</div>
+<a class="anchor" id="a507260f83a083541d8b6f6a43f92e3f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int sys::Dir::remove </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes a directory.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to remove </td></tr>
+    <tr><td class="paramname">recursive</td><td>If true will remove all subdirectories and files </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success or -1 for an error </dd></dl>
 
 </div>
 </div>

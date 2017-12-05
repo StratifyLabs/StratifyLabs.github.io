@@ -35,15 +35,22 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class defines actionable events (such as button presses) that occur within and <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class. ">EventLoop</a> and are handled by <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">Element::handle_event()</a>. </p>
+<div class="textblock"><p>This class defines action-able events (such as button presses) that occur within <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class. ">ui::EventLoop</a> and are handled by <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">ui::Element::handle_event()</a>.</p>
+<p>The event includes the type and a pointer to an object associated with the event. For example, events of type <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9a433f96f5f19b6d7f137354afd43bd290">Event::SIGNAL</a> will include a pointer to a sys:Signal object. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa363d02d231ca86531909db7d0224ccc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classui_1_1_button.html">ui::Button</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event.html#aa363d02d231ca86531909db7d0224ccc">button</a> () const </td></tr>
+<tr class="separator:aa363d02d231ca86531909db7d0224ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d4083dcde43a14c7e6a5ab5cc530094"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event.html#a3d4083dcde43a14c7e6a5ab5cc530094">Event</a> (enum <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9">event_type</a> type, void *object=0)</td></tr>
 <tr class="separator:a3d4083dcde43a14c7e6a5ab5cc530094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0250ab37ebfa7af33f411374bf366e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event.html#af0250ab37ebfa7af33f411374bf366e3">Event</a> (enum <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9">event_type</a> type, <a class="el" href="classui_1_1_button.html">ui::Button</a> *<a class="el" href="classui_1_1_event.html#aa363d02d231ca86531909db7d0224ccc">button</a>)</td></tr>
+<tr class="separator:af0250ab37ebfa7af33f411374bf366e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96596785739ca88764e4b5d331a6a8d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsys_1_1_signal.html">sys::Signal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event.html#a96596785739ca88764e4b5d331a6a8d3">signal</a> () const </td></tr>
+<tr class="separator:a96596785739ca88764e4b5d331a6a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a7a63f9d9e4e884e15022b1520aeb06d3"></a>
@@ -154,25 +161,25 @@ Public Member Functions</h2></td></tr>
 <p>This event is called in a loop while the element is active </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9af564a11e2a1266d34f7df8f3521043ee"></a>BUTTON_ACTUATED&#160;</td><td class="fielddoc">
-<p>This event is called when a button is actuated (pressed and released). Use button() to access button details. </p>
+<p>This event is called when a button is actuated (pressed and released). Use <a class="el" href="classui_1_1_event.html#aa363d02d231ca86531909db7d0224ccc">button()</a> to access button details. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9ae1e43cc93a7f972ebb66d5a4b47e0211"></a>BUTTON_HELD&#160;</td><td class="fielddoc">
-<p>This event is called when a button is held. Use button() to access button details. </p>
+<p>This event is called when a button is held. Use <a class="el" href="classui_1_1_event.html#aa363d02d231ca86531909db7d0224ccc">button()</a> to access button details. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9abaaffaa00ebea0ebe1357dbc89c17858"></a>BUTTON_PRESSED&#160;</td><td class="fielddoc">
-<p>This event is called when a button is pressed. Use button() to access button details. </p>
+<p>This event is called when a button is pressed. Use <a class="el" href="classui_1_1_event.html#aa363d02d231ca86531909db7d0224ccc">button()</a> to access button details. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9ac867c58de796b09c67061d49844f3d5a"></a>BUTTON_RELEASED&#160;</td><td class="fielddoc">
-<p>This event is called when a button is released. Use button() to access button details. </p>
+<p>This event is called when a button is released. Use <a class="el" href="classui_1_1_event.html#aa363d02d231ca86531909db7d0224ccc">button()</a> to access button details. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a98905f43afe550806a48c0f178fb24ca"></a>NETWORK_DATA&#160;</td><td class="fielddoc">
 <p>This event is called when data arrives on the network </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a433f96f5f19b6d7f137354afd43bd290"></a>SIGNAL&#160;</td><td class="fielddoc">
-<p>This event is called when data arrives on the network </p>
+<p>This event is called when the process receives a signal </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a307c84ff21015985a55b22211ffe1585"></a>APPLICATION&#160;</td><td class="fielddoc">
-<p>This event is an application specific where the data is specified by the application </p>
+<p>This event is application specific where the data is specified by the application </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a3a452888e7bfe25f7c8dfd5172499b0e"></a>LIST_ITEM_SELECTED&#160;</td><td class="fielddoc">
 <p>Select an item in a list </p>
@@ -247,6 +254,99 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Construct a new event with the specified type and object </p>
+
+</div>
+</div>
+<a class="anchor" id="af0250ab37ebfa7af33f411374bf366e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ui::Event::Event </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9">event_type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classui_1_1_button.html">ui::Button</a> *&#160;</td>
+          <td class="paramname"><em>button</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a new event referencing a button.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of event (should be one of BUTTON_* events) </td></tr>
+    <tr><td class="paramname">button</td><td>A pointer to the button which caused the event. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa363d02d231ca86531909db7d0224ccc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classui_1_1_button.html">ui::Button</a>* ui::Event::button </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Accesses the button associated with the event.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the button or zero if the event is not a button event. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a96596785739ca88764e4b5d331a6a8d3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classsys_1_1_signal.html">sys::Signal</a>* ui::Event::signal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Accesses the signal associated with the event.</p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the signal if type is <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9a433f96f5f19b6d7f137354afd43bd290">Event::SIGNAL</a> or zero if not. </dd></dl>
 
 </div>
 </div>
