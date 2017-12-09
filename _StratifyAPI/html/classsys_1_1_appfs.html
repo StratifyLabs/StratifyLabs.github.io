@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stratify OS Docs
+page_source: Doxygen
 ---
 {% include JB/setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
@@ -36,12 +37,12 @@ title: Stratify OS Docs
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class provides an interface for creating data files in flash memory.</p>
 <p>The following is a basic example of creating a data file in flash and then reading from it.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <span class="keywordtype">char</span> my_user_data[16];</div><div class="line">     <span class="comment">//populate my_user_data as you please here</span></div><div class="line">     sprintf(my_user_data, <span class="stringliteral">&quot;Hello World!&quot;</span>);</div><div class="line">     <a class="code" href="classsys_1_1_appfs.html#ad61a616fb6ef9b3ca51a2283657d1a07">Appfs::create</a>(<span class="stringliteral">&quot;my_data&quot;</span>, my_user_data, 16); <span class="comment">//creates /app/flash/my_data as read only data</span></div><div class="line">}</div></div><!-- fragment --><p>Now the file can be read just like any other file would be. Of course, reading files from /app/flash is very fast compared to filesystems built on external chips.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <span class="keywordtype">char</span> my_user_data[16];</div><div class="line">     <span class="comment">//populate my_user_data as you please here</span></div><div class="line">     sprintf(my_user_data, <span class="stringliteral">&quot;Hello World!&quot;</span>);</div><div class="line">     <a class="code" href="classsys_1_1_appfs.html#ae4a25fa17e49b3b5cdeac034b915630e">Appfs::create</a>(<span class="stringliteral">&quot;my_data&quot;</span>, my_user_data, 16); <span class="comment">//creates /app/flash/my_data as read only data</span></div><div class="line">}</div></div><!-- fragment --><p>Now the file can be read just like any other file would be. Of course, reading files from /app/flash is very fast compared to filesystems built on external chips.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <span class="keywordtype">char</span> my_user_data[16];</div><div class="line">     File f;</div><div class="line">     f.open(<span class="stringliteral">&quot;/app/flash/my_data&quot;</span>, <a class="code" href="classsys_1_1_file.html#a2771979e0e1a879dc85f8d55a131ea85aab5956e3052d01bfe6b0e1a548bf5b0d">File::RDONLY</a>); <span class="comment">//only the file read only</span></div><div class="line">     f.read(my_user_data, 16); <span class="comment">//read 16 bytes of user data</span></div><div class="line">     f.close();  <span class="comment">//free resources</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad61a616fb6ef9b3ca51a2283657d1a07"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#ad61a616fb6ef9b3ca51a2283657d1a07">create</a> (const char *name, const void *buf, int nbyte, const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_t_f_y.html#ga03c0afc4d1b734bd2edfc7e5937b716a">mount</a>=&quot;/app&quot;, bool(*update)(void *, int, int)=0, void *context=0, link_transport_mdriver_t *driver=0)</td></tr>
-<tr class="separator:ad61a616fb6ef9b3ca51a2283657d1a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a25fa17e49b3b5cdeac034b915630e"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#ae4a25fa17e49b3b5cdeac034b915630e">create</a> (const char *name, const void *buf, int nbyte, const char *<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_t_f_y.html#ga03c0afc4d1b734bd2edfc7e5937b716a">mount</a>=&quot;/app&quot;, bool(*update)(void *, int, int)=0, void *context=0)</td></tr>
+<tr class="separator:ae4a25fa17e49b3b5cdeac034b915630e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cc17be1b070eab93e4c6170cd82f55a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#a4cc17be1b070eab93e4c6170cd82f55a">get_id</a> (const char *path, char *id, u32 capacity)</td></tr>
 <tr class="separator:a4cc17be1b070eab93e4c6170cd82f55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b0115f4a160045d6fc123490f1e862"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_appfs.html#a98b0115f4a160045d6fc123490f1e862">get_id</a> (const char *path, <a class="el" href="classvar_1_1_string.html">var::String</a> &amp;id)</td></tr>
@@ -54,7 +55,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a17c15e3c03e7a5383cadf4e8c12d9040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad61a616fb6ef9b3ca51a2283657d1a07"></a>
+<a class="anchor" id="ae4a25fa17e49b3b5cdeac034b915630e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -95,13 +96,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>context</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">link_transport_mdriver_t *&#160;</td>
-          <td class="paramname"><em>driver</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>context</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -326,3 +321,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div style="background: #fff;">
+	<div class="container">
+		{% include themes/twitter/signup.html %}
+	</div>
+</div>

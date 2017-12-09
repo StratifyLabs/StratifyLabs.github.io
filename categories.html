@@ -3,6 +3,7 @@ layout: page-tags
 title: Categories
 header: Posts By Category
 group: navigation
+page_source: CategoriesBlog
 ---
 {% include JB/setup %}
 
@@ -14,11 +15,10 @@ group: navigation
 </ul>
 
 
-{% for category in site.categories %} 
+{% for category in site.categories %}
   <h2 id="{{ category[0] }}-ref" class="anchor">{{ category[0] | join: "/" }}</h2>
   <ul>
-    {% assign pages_list = category[1] | sort:"name" %}  
+    {% assign pages_list = category[1] | sort:"name" %}
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
-

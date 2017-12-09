@@ -4,6 +4,7 @@ title: Effective Use of ARM Cortex-M3 SVCall
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, cortex-m3]
+page_source: MicrocontrollerBlog
 ---
 
 The ARM Cortex-M3 service call (SVCall) can be a tricky feature to integrate in to your system software. It is useful for two things:
@@ -27,7 +28,7 @@ To effectively use the service call interrupt, we pass two arguments to a functi
 //we need to decrease the optimization so the the compiler
 //does not ignore func and args
 void service_call(void (*func)(void*), void* args) __attribute__((optimize("1"));
- 
+
 void service_call(void (*func)(void*), void* args){
      //by convention func is in r0 and args is in r1
      asm volatile("svc 0");
@@ -38,7 +39,7 @@ When SVC is executed, the NVIC immediately stacks various registers including r0
 
 {% highlight CPP %}
 typedef void (*svcall_t)(void*);
- 
+
 void svcall_handler(void){
   register uint32_t * frame;
   register svcall_t call;
@@ -60,7 +61,7 @@ void my_priv_func(void * data){
         *my_int = 0;
     }
 }
- 
+
 int main(void){
     int var;
     var = 10;

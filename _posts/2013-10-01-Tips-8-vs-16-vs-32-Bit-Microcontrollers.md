@@ -3,6 +3,7 @@ layout: post
 title: 8 vs 16 vs 32 Bit Microcontrollers--A Case Study
 category : Embedded Design Tips
 tagline: Embedded Design
+page_source: MicrocontrollerBlog
 tags : [embedded, microcontroller, popular]
 ---
 
@@ -81,33 +82,32 @@ The table abobe offers a simple comparison between several microcontroller archi
 
 ## Flash Memory
 
-As far as flash memory goes, each microcontroller above has a comparable amount. The LPC1765 (ARM Cortex-CM3) offers 
-the best value especially when compared to the other 32-bit microcontroller samples. However, because code densities 
-can vary greatly across 8-bit/16-bit/32-bit architectures, it is difficult to determine which has the best value 
+As far as flash memory goes, each microcontroller above has a comparable amount. The LPC1765 (ARM Cortex-CM3) offers
+the best value especially when compared to the other 32-bit microcontroller samples. However, because code densities
+can vary greatly across 8-bit/16-bit/32-bit architectures, it is difficult to determine which has the best value
 overall. RAM requirements are more easily compared.
 
 ## RAM
 
-Since RAM is not typically associated with code densities, we can assume the RAM requirements for an application 
-are roughly the same for different MCUs. With this assumption, the LPC1765 offers the best value for RAM 
+Since RAM is not typically associated with code densities, we can assume the RAM requirements for an application
+are roughly the same for different MCUs. With this assumption, the LPC1765 offers the best value for RAM
 at 64KB. The 8-bit and 16-bit systems simply do not have comparable RAM sizes to the 32-bit microcontroller samples.
 
 ## CPU Speeds
 
-For clock speeds, the 32-bit microcontroller systems offer significantly better performance. They can run 
-at higher clock speeds and do more per cycle with a 32-bit instruction set and data bus. The ARM 
-Cortex-CM3 (LPC1765), again, has a great value with a maximum clock speed of 100MHz. The drawback is that 
+For clock speeds, the 32-bit microcontroller systems offer significantly better performance. They can run
+at higher clock speeds and do more per cycle with a 32-bit instruction set and data bus. The ARM
+Cortex-CM3 (LPC1765), again, has a great value with a maximum clock speed of 100MHz. The drawback is that
 a higher clock speed means more power is consumed.
 
 ## Power Consumption
 
-To save power, the microcontroller can run at a lower clock speed. The mA/MHz ratio in the table is the 
-current consumption at max speed divided by the max speed. This gives a general idea of how efficient the 
-microcontroller is. The MSP430, which is specifically designed for ultra-low power consumption, has the 
+To save power, the microcontroller can run at a lower clock speed. The mA/MHz ratio in the table is the
+current consumption at max speed divided by the max speed. This gives a general idea of how efficient the
+microcontroller is. The MSP430, which is specifically designed for ultra-low power consumption, has the
 best Current/MHz ratio followed closely by the ARM Cortex CM3 designs (STM32 and LPC1765).
 
 ## Conclusion
 
-Though brief, this case study illustrates that 32-bit microcontroller architectures can, from a practical 
+Though brief, this case study illustrates that 32-bit microcontroller architectures can, from a practical
 standpoint, replace 8-bit systems without a cost increase and with a boost in RAM size and performance.
-

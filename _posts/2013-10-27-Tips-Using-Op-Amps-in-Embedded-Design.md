@@ -3,10 +3,11 @@ layout: post
 title: Using Op Amps in Embedded Design
 tagline: Embedded Design Tips
 category: Embedded Design Tips
+page_source: PcbBlog
 tags : [embedded, circuit]
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/inverting-opamp.svg" />
-Op-amps are very useful devices in electronics and can be very helpful when 
+Op-amps are very useful devices in electronics and can be very helpful when
 interfacing analog and digital technologies in embedded systems.
 
 {{ excerpt_separator }}
@@ -39,9 +40,9 @@ If Ohm's law is combined with Kirchhoff's current law, the equation then becomes
 
 <img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-1.svg" />
 
-The equation is simplified further by applying the rules of an ideal op-am.  First, 
-infinite input impedance means that current i3 is zero. Second, the 
-voltage difference on the inputs is zero means V<sub>n</sub> = V<sub>p</sub> = 0V. 
+The equation is simplified further by applying the rules of an ideal op-am.  First,
+infinite input impedance means that current i3 is zero. Second, the
+voltage difference on the inputs is zero means V<sub>n</sub> = V<sub>p</sub> = 0V.
 The resulting equation is as follows.
 
 <img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-2.svg" />
@@ -79,5 +80,3 @@ The first stage of the circuit adjusts the sine wave to be centered around Vcc/2
 ## Conclusion
 
 Op-amps are great for analog signals in digital designs (especially rail-to-rail op-amps). The ideal op-amp as well as knowledge of basic electrical principles greatly simplify designing and integrating op-amps in your embedded designs.
-
-

@@ -2,6 +2,7 @@
 layout: post
 title: Ohms Law and Microcontroller GPIO
 category : Embedded Design Tips
+page_source: PcbBlog
 tagline: Understanding Current and Voltage
 tags : [microcontroller, GPIO, PIO]
 ---

@@ -2,18 +2,19 @@
 layout: post
 title: Building and Installing a Cortex-M Compiler on Mac, Windows or Linux
 category : Embedded Design Tips
+page_source: OpenSourceBlog
 tagline: Embedded Design
 tags : [embedded, gcc, compiler, macosx, windows, ubuntu]
 ---
 
-GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X.  It is 
+GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X.  It is
 the compiler of choice for Stratify OS, and an excellent general purpose ARM Cortex-M3 compiler.
 
 Before buidling GCC, you need to install the prerequisites.
 
 <div class="alert alert-success"><b>Mac OS X.</b> You must have XCode installed to build GCC.</div>
 <div class="alert alert-info"><b>Windows.</b> You must have MinGW installed.  You can get a copy by installing the latest version of Qt.</div>
-<div class="alert alert-warning"><b>Ubuntu.</b> Ensure the following packages are installed using apt-get: flex, 
+<div class="alert alert-warning"><b>Ubuntu.</b> Ensure the following packages are installed using apt-get: flex,
 bison, libgmp3, libppl, libmpfr, autoconf, automake, texinfo, libmpc, and  build-essential.</div>
 
 Before building GCC, several pre-requisites must be built. The GMP, PPL, MPFR, and MPC libraries may be installed from source. The latest versions can be downloaded from:
@@ -23,7 +24,7 @@ Before building GCC, several pre-requisites must be built. The GMP, PPL, MPFR, a
 - [MPFR](http://www.mpfr.org/)
 - [MPC](http://www.multiprecision.org/)
 
-Once you download the source, enter the following commands in the Terminal. Replace the version 
+Once you download the source, enter the following commands in the Terminal. Replace the version
 values with the version you download.
 
 Specify the target directory for the compiler:
@@ -69,7 +70,7 @@ cd ..
 
 Now specify the program to download the sources (or use a browser).
 
-<div class="alert alert-success"><b>Mac OS X.</b> 
+<div class="alert alert-success"><b>Mac OS X.</b>
 <pre>
 export GET=ftp
 </pre>
@@ -116,7 +117,7 @@ tar -zxvf gcc-$GCC_VERSION.tar.gz
 $GET ftp://sources.redhat.com/pub/newlib/newlib-$NEWLIB_VERSION.tar.gz
 tar -zxvf newlib-$NEWLIB_VERSION.tar.gz
 </pre>
- 
+
 The binutils source needs to be built first.  Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:
 
 <div class="alert alert-success"><b>Mac OS X.</b> The final option "CC=clang" is only used on Mac OS X.</div>
@@ -139,7 +140,7 @@ make
 sudo make install
 export PATH=$TOOLSPATH/bin:$PATH
 </pre>
- 
+
 After binutils is built, GCC is next:
 
 <div class="alert alert-success"><b>Mac OS X.</b> The final option "CC=clang" is only used on Mac OS X.</div>
@@ -160,12 +161,12 @@ cd ../gcc
      --with-gmp=$TOOLSPATH \
      --enable-target-optspace \
      --disable-libssp \
-     CC=clang 
+     CC=clang
 make CXXFLAGS="-fbracket-depth=1024" all-gcc
 #dont use sudo on Windows
 sudo make install-gcc
 </pre>
- 
+
 Now, we need to build newlib.  In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions.  The __BUFSIZ__ definition specifies what size buffer to use with printf() and file I/O.  Smaller values mean slower performance using less RAM.  To build newlib, type (or copy and paste) the following in a terminal window:
 
 <pre>
@@ -199,4 +200,3 @@ sudo make install
 </pre>
 
 That's it.  If all went well, a dedicated ARM Cortex M compiler is now installed in $TOOLSPATH folder.  To uninstall the compiler tools, delete the $TOOLSPATH folder.
-

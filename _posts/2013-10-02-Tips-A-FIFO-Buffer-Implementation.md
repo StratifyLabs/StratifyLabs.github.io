@@ -3,6 +3,7 @@ layout: post
 title: A FIFO Buffer Implementation
 category : Embedded Design Tips
 tagline: Embedded Design
+page_source: MicrocontrollerBlog
 tags : [embedded, fifo, uart, serial, microcontroller, programming, popular]
 ad:
   title: "Get the CoAction Hero with Stratify OS pre-installed"

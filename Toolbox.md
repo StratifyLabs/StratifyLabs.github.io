@@ -2,6 +2,7 @@
 layout: homepage
 title: Toolbox from Stratify Labs
 tagline: Hardware
+page_source: Toolbox
 sections:
  intro: Stratify Toolbox
  brief: all-in-one debugging tool powered by Stratify OS

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stratify OS Docs
+page_source: Doxygen
 ---
 {% include JB/setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
@@ -51,6 +52,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab78ef458e6a43ab75ad00e46b51dcd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f1f26c81a2bfec373538f03fd75ef38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_core.html#a6f1f26c81a2bfec373538f03fd75ef38">reset</a> ()</td></tr>
 <tr class="separator:a6f1f26c81a2bfec373538f03fd75ef38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1788fc4f3a739c676a917816068dfa79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_core.html#a1788fc4f3a739c676a917816068dfa79">set_clock_divide</a> (u32 value)</td></tr>
+<tr class="separator:a1788fc4f3a739c676a917816068dfa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb31bdede43ad4b40be9483583d18f16"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_core.html#abb31bdede43ad4b40be9483583d18f16">set_pin_function</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structcore__pinfunc__t.html">core_pinfunc_t</a> &amp;req)</td></tr>
 <tr class="separator:abb31bdede43ad4b40be9483583d18f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71b9fab4826993457f5ae2d664293ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_core.html#af71b9fab4826993457f5ae2d664293ce">set_pin_function</a> (int port, int pin, int <a class="el" href="classhal_1_1_core.html#ab99e985f54b20f9a5cc9ebe395a69121">func</a>, int func_port)</td></tr>
@@ -244,7 +247,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Invokes the device's bootloader. If no bootloader is availble, a normal reset will occur. </p>
+<p>Invokes the device's bootloader. If no bootloader is available, a normal reset will occur. </p>
 
 </div>
 </div>
@@ -262,6 +265,31 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Resets the device. </p>
 
+</div>
+</div>
+<a class="anchor" id="a1788fc4f3a739c676a917816068dfa79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::Core::set_clock_divide </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the core CPU clock divider.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The amount to divide the clock by </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>This method will change the CPU clock speed (if supported). If the native clock speed is 120MHz the following code will make it 60MHz</p>
+<div class="fragment"><div class="line"><a class="code" href="classhal_1_1_core.html#a1f217705a48123838e445a2bcee1538d">Core</a> core(0);</div><div class="line">core.open();</div><div class="line">core.set_clock_divide(2); <span class="comment">//set to 60MHz</span></div><div class="line">core.set_clock_divide(1); <span class="comment">//restore to 120MHz</span></div><div class="line">core.close();</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="abb31bdede43ad4b40be9483583d18f16"></a>
@@ -340,3 +368,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div style="background: #fff;">
+	<div class="container">
+		{% include themes/twitter/signup.html %}
+	</div>
+</div>

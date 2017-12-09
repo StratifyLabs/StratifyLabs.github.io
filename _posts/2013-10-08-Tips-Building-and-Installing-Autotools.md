@@ -4,9 +4,10 @@ title: Building and Installing Autotools
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, compiler, gcc]
+page_source: OpenSourceBlog
 ---
 
-Autotools is a set of tools used to build and manage software builds on 
+Autotools is a set of tools used to build and manage software builds on
 multiple platforms.
 
 To build and install, first use ftp (on Mac OS X) or wget (on Windows Mingw) to download the sources.
@@ -26,8 +27,8 @@ ftp http://ftp.gnu.org/gnu/autoconf/autoconf-$AUTOCONF_VERSION.tar.gz
 tar -zxvf autoconf-$AUTOCONF_VERSION.tar.gz
 ftp http://ftp.gnu.org/gnu/libtool/libtool-$LIBTOOL_VERSION.tar.gz
 tar -zxvf libtool-$LIBTOOL_VERSION.tar.gz
-{% endhighlight %} 
- 
+{% endhighlight %}
+
 Now configure and build the sources. For Windows Mingw, the "sudo" is not used. Autoconf must be built first.
 
 {% highlight BASH %}cd autoconf
@@ -35,16 +36,16 @@ Now configure and build the sources. For Windows Mingw, the "sudo" is not used. 
   --prefix=$TOOLSPATH
 make
 sudo make install
-{% endhighlight %} 
- 
+{% endhighlight %}
+
 Now build Automake. The configure script may complain that the correct version of Autoconf is not installed. If this is the case, the PATH variable needs to be updated to include TOOLSPATH before any other directories that might have an older version of Autoconf.
 
 {% highlight BASH %}cd ../automake../automake-$AUTOMAKE_VERSION/configure \
   --prefix=$TOOLSPATH
 make
 sudo make install
-{% endhighlight %} 
- 
+{% endhighlight %}
+
 The following commands are used to build libtool.
 
 {% highlight BASH %}cd ../libtool
@@ -53,6 +54,5 @@ The following commands are used to build libtool.
 make
 sudo make install
 {% endhighlight %}
- 
-The Autotools binaries should now be available in TOOLSPATH/bin.
 
+The Autotools binaries should now be available in TOOLSPATH/bin.

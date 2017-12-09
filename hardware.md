@@ -2,6 +2,7 @@
 layout: homepage
 title: Hardware
 tagline: Hardware
+page_source: Hardware
 sections:
  intro: Hardware
  brief: Stratify OS pre-installed for rapid development

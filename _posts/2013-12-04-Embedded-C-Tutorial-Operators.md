@@ -3,6 +3,7 @@ layout: post
 title: Operators
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags : [embedded, tutorial]
 number: 04
 ---
@@ -16,9 +17,9 @@ number: 04
 * \- subtract
 * <span>=</span> assign value
 
-These are straightforward operators with three quirks: first, the order of operations is 
-imperative; second, divide does not do any rounding; third, the operators may 
-cause an overflow depending on the data type. The code below illustrates these 
+These are straightforward operators with three quirks: first, the order of operations is
+imperative; second, divide does not do any rounding; third, the operators may
+cause an overflow depending on the data type. The code below illustrates these
 operators and their quirks as well as introduces formatted number printing using printf().
 
 {% highlight CPP %}
@@ -43,7 +44,7 @@ int main(int argc, char * argv[]){
      exit(0);
 }
 {% endhighlight %}
- 
+
 The output of the above program is:
 
 {% highlight BASH %}
@@ -62,11 +63,11 @@ The program output illustrates how these operators work.
 4. Because z is an unsigned 8-bit number (0 to 255), assigning five minus six to it causes the number to overflow to 255 (see the diagram below).
 5. z is assigned the remainder of 13 divided by two. This operation is very handy for identifying even and odd numbers.
 
-Lines one and two both illustrate the order of operations. The operations are 
-generally executed from left to right with multiply and divide always happening 
-before add and subtract. The assign operator (<span>=</span>) has the lowest precedence 
-and is executed last. Parentheses always override the default order of operations; 
-for example, z=(x+y) times 10 will first add x and y then multiply the result 
+Lines one and two both illustrate the order of operations. The operations are
+generally executed from left to right with multiply and divide always happening
+before add and subtract. The assign operator (<span>=</span>) has the lowest precedence
+and is executed last. Parentheses always override the default order of operations;
+for example, z=(x+y) times 10 will first add x and y then multiply the result
 by 10 and assign the value to z.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/overflow-diagram.svg" />
@@ -77,9 +78,9 @@ In addition to the easily recognizable operators, C has addition operators that 
 
 A binary number uses just two symbols (0 and 1) to represent a value. This is why it is known as a base-2 numbering system. The classical number system most people are familiar with uses ten symbols (0 to 9) known as base-10 or decimal numbering. To understand binary, we need to take a closer look at the decimal system.
 
-When we count in the decimal system, we go through each of the ten symbols 
-(usually skipping zero). When we hit the last symbol (the number 9), 
-we go back to zero and add another column. Each symbol in the new column 
+When we count in the decimal system, we go through each of the ten symbols
+(usually skipping zero). When we hit the last symbol (the number 9),
+we go back to zero and add another column. Each symbol in the new column
 represents a number ten times greater than the last column. The counting below illustrates this:
 
 0, 1, 2 ... 9, 10 (add a column and restart the symbols), ... 98, 99, 100 (add a column and restart), 998, 999, 1000 (add a column and restart)
@@ -117,8 +118,8 @@ int main(int argc, char * argv[]){
 The above program produces the following output.
 
 {% highlight BASH %}
-1. 5>>1 is 2 
-2. 2<<3 is 16 
+1. 5>>1 is 2
+2. 2<<3 is 16
 3. 128<<2 is 0
 {% endhighlight %}
 
@@ -128,13 +129,13 @@ Five (0101) shifted to the right drops the one's column to get binary 2 (010). S
 Two (010) becomes 16 (010000) when shifted to the left 3 bits. Since shift to the right is the same as dividing, shifting one bit to the left multiplies by 2; two bits multiplies by 4; three bits multiplies by 8; and so on. In this example, 2 shifted left 3 bits is equal to 2 times 8 or 16.
 If a bit is shifted out of the data type, it is dropped. 128 (10000000) shifted left one becomes zero because the bit shifts out of the 8 bits because z is a uint8_t. If z were a uint16_t, the new value for z would be 256.
 
-The next operators are the bit-wise and logical "or", "and", "xor", and "not". 
-The bit-wise "or" operator is represented by | (it is the one on the same key as \). 
-If any of the inputs are one, the output is one. The bit-wise "and" operator is 
-represented by the & symbol. For each bit, if both input are one, then the output 
-is one. If any of the input is zero, the output is zero. For "xor", represented by ^, 
-the output is one if exactly one input is one. A truth table is typically used to 
-document the output of binary bit-wise operators. The following is the truth table 
+The next operators are the bit-wise and logical "or", "and", "xor", and "not".
+The bit-wise "or" operator is represented by | (it is the one on the same key as \).
+If any of the inputs are one, the output is one. The bit-wise "and" operator is
+represented by the & symbol. For each bit, if both input are one, then the output
+is one. If any of the input is zero, the output is zero. For "xor", represented by ^,
+the output is one if exactly one input is one. A truth table is typically used to
+document the output of binary bit-wise operators. The following is the truth table
 for & where x and y are inputs and z is the output.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/binary-truth.svg" />
@@ -184,14 +185,14 @@ The output of the above program is:
 1. For the logical "and" operation, the output is always zero or one. The inputs are considered non-zero or zero. A non-zero input acts as a one where a zero input acts as a zero. # # # Since x is zero, the output is zero.
 1. The logical "or" treats the inputs in the same manner as the logical "and" but outputs a one because y is a non-zero input.
 
-For logical "not", the output is zero if the input is non-zero; the opposite is also 
+For logical "not", the output is zero if the input is non-zero; the opposite is also
 true.
 
 ## Comparison Operators
 
-We are going back to some basic operators with which you are already familiar. 
-These operators (like logical "and"/"or") only output a one or a zero. They are 
-typically used in program flow control, which is covered later, rather than just 
+We are going back to some basic operators with which you are already familiar.
+These operators (like logical "and"/"or") only output a one or a zero. They are
+typically used in program flow control, which is covered later, rather than just
 doing math. Here are the operators:
 
 - <span>==</span> is one if the two arguments are equal; zero otherwise
@@ -200,7 +201,7 @@ doing math. Here are the operators:
 - <span>&lt;</span> is one if the left argument is less than the right
 - <span>&lt;=</span> is one if the left argument is less than or equal to the right
 
-<div class="alert alert-info"><span class="label label-danger">Note</span> A single equal sign 
+<div class="alert alert-info"><span class="label label-danger">Note</span> A single equal sign
 (=) is an assignment operator and a double equal sign (==) is a comparison operator.</div>
 
 The following program demonstrates how these work.
@@ -229,7 +230,7 @@ int main(int argc, char * argv[]){
      exit(0);
 }
 {% endhighlight %}
- 
+
 The output of the program is:
 {% highlight BASH %}
 1.  5==10 is 0
@@ -240,23 +241,23 @@ The output of the program is:
 6.  5>=10 is 0
 {% endhighlight %}
 
-These operators should be pretty straightforward. There is one thing to remember. 
-It is bad practice to use == with a floating point value. It is better to bound 
+These operators should be pretty straightforward. There is one thing to remember.
+It is bad practice to use == with a floating point value. It is better to bound
 the range using something like
 
-{% highlight CPP %} 
-((x > 2.0) && (x < 4.0)) 
+{% highlight CPP %}
+((x > 2.0) && (x < 4.0))
 {% endhighlight %}
 
-Notice how the logical 
-"and" is used in conjuction with the other operators. Combining operators is 
+Notice how the logical
+"and" is used in conjuction with the other operators. Combining operators is
 really where these become powerful tools to programmers.
 
 
 ## Combining Operators
 
-When combining operators, the order of execution is critical for getting the 
-desired result. The order of operations is mentioned briefly above in the 
+When combining operators, the order of execution is critical for getting the
+desired result. The order of operations is mentioned briefly above in the
 \*\/ and \+\- section and is equally important for the binary and comparison operators.
 
 When combining operators, things can get confusing when trying to deduce the order of operations. It is good programming practice to use copious amount of parentheses to make things clear both to you and to future maintainers of your code. The program below illustrates both good and bad use of parentheses when combining operators.
@@ -332,8 +333,7 @@ x<<=y; //equivalent to x = x << y
 
 ## Take Away
 
-The C language includes many mathematical operators for doing basic arithmetic, comparisons, 
-and binary operations. The order of operations is critical in C for correctly evaluating 
-expressions. Sometimes understanding this order can be difficult when skimming through code, 
+The C language includes many mathematical operators for doing basic arithmetic, comparisons,
+and binary operations. The order of operations is critical in C for correctly evaluating
+expressions. Sometimes understanding this order can be difficult when skimming through code,
 but adding parentheses can help to make code easier to read and avoid unintended evaluation orders.
-

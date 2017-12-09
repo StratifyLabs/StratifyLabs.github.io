@@ -2,6 +2,7 @@
 layout: post
 title: Including Arbitrary Binary Data in Embedded Applications
 category : Embedded Design Tips
+page_source: MicrocontrollerBlog
 tagline:
 tags : [embedded, C++, microcontroller]
 ---

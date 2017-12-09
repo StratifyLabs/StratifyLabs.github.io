@@ -2,6 +2,7 @@
 layout: post
 title: Analyzing Op Amps
 category : Embedded Design Tips
+page_source: PcbBlog
 tagline:
 tags : [embedded, microcontroller, adc, sensor]
 ---

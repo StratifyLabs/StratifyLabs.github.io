@@ -4,27 +4,28 @@ title: Decoupling Capacitors (and Other Power Rules of Thumb)
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, circuit, power, popular]
+page_source: PcbBlog
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/decouple-caps.svg" />
-It is ubiquitous in the digital electronics industry to use small capacitors 
-next to power pins.  These capacitors stabilize the power delivered to 
-digital devices and reduce noise.  They are not the only good idea in 
-embedded systems power supply design.  Ferrite beads further attenuate 
-noise on the power supply line while diodes prevent reverse voltage and 
+It is ubiquitous in the digital electronics industry to use small capacitors
+next to power pins.  These capacitors stabilize the power delivered to
+digital devices and reduce noise.  They are not the only good idea in
+embedded systems power supply design.  Ferrite beads further attenuate
+noise on the power supply line while diodes prevent reverse voltage and
 overvoltage conditions.
 
 Digital circuitry, especially a microcontroller, typically draws high current in response to an event (such as a clock edge) and uses minimal current between events.  The graph below illustrates hypothetical current spikes on dual clock edges of a 1MHz clock signal.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/current-clock.svg" />
 
-To prevent the current spikes in the graph above from propagating through the entire board, a decoupling capacitor is placed close to the digital device.  The capacitor does two things:  1) ensures enough current is delivered to the digital device and 2) reduces the noise on the power and ground planes by minimizing the current loop path. 
+To prevent the current spikes in the graph above from propagating through the entire board, a decoupling capacitor is placed close to the digital device.  The capacitor does two things:  1) ensures enough current is delivered to the digital device and 2) reduces the noise on the power and ground planes by minimizing the current loop path.
 
 The schematic below shows a decoupling capacitor next to a digital accelerometer.  The red arrows show the loop where the current spikes travel.  Without the capacitor, the high current loop extents all the way back to VCC and ground.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/bma150-decouple.svg" />
 
-<div class="alert alert-info"><span class="label label-danger">Important</span> Always 
-place capacitors as close as possible to the power and ground pins of all digital 
+<div class="alert alert-info"><span class="label label-danger">Important</span> Always
+place capacitors as close as possible to the power and ground pins of all digital
 devices.</div>
 
 On the PCB layout, the high current loop should be made as small as practical.  Decoupling capacitors are only effective if the impedance between the capacitor and the device is significantly smaller than the impedance between the capacitor and the power source.  The impedances are directly proportional to the length of the traces.  The impedance mismatch allows the capacitor to quickly discharge when the device needs high current then charge at a slower rate with current delivered from the power supply.
@@ -59,5 +60,3 @@ While the above bridges use traditional diodes to protect against reverse polari
 ## Conclusion
 
 Decoupling capacitors, ferrite beads, and diodes are vital components to embedded systems power supplies.  Decoupling capacitors ensure steady power is delivered to digital chips and help reduce noise on the power supply lines.  Ferrite beads act to further reduce noise while diodes offer both reverse polarity and over voltage protection.
-
-

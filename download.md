@@ -2,6 +2,7 @@
 layout: homepage
 title: License and Download
 tagline: License and Download
+page_source: Download
 sections:
  intro: Downloads
  brief: Open source code licensing and download options

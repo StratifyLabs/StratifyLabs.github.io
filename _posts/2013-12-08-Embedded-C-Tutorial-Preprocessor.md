@@ -3,6 +3,7 @@ layout: post
 title: Preprocessor Directives
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags : [embedded, tutorial]
 number: 07
 ---
@@ -21,8 +22,8 @@ The C language preprocesses all code before compilation. Within the program, pre
 When the preprocessor encounters the #include directive, it replaces the #include line with the contents of the included file. Local files are included using quotation marks while system files are included using less/greater than symbols.
 
 {% highlight CPP %}
-#include <stdlib.h>//This is a system file 
-#include "local.h" //This is a local include file 
+#include <stdlib.h>//This is a system file
+#include "local.h" //This is a local include file
 {% endhighlight %}
 
 ### #define and #undef
@@ -32,13 +33,13 @@ When the preprocessor encounters the #define directive, it replaces the symbol w
 {% highlight CPP %}
 #include <stdio.h>
 #include <stdlib.h>
-#define INIT_X_VALUE 10 
-#define INIT_Y_VALUE 100 
-int main(int argc, char * argv[]){ 
-     int x, y; 
-     x = INIT_X_VALUE; 
-     y = INIT_Y_VALUE; 
-     printf("X is %d, Y is %d\n", x, y); 
+#define INIT_X_VALUE 10
+#define INIT_Y_VALUE 100
+int main(int argc, char * argv[]){
+     int x, y;
+     x = INIT_X_VALUE;
+     y = INIT_Y_VALUE;
+     printf("X is %d, Y is %d\n", x, y);
      exit(0);
 }
 {% endhighlight %}
@@ -52,13 +53,13 @@ The conditional directives tell the compiler to omit or include certain code sni
 #include <stdlib.h>
 #define DEBUG 1
 #ifdef DEBUG
-#define debug_printf(...) printf(__VA_ARGS) 
-#else 
-#define debug_printf(...) 
-#endif 
-int main(int argc, char * argv[]){ 
-     debug_printf("This is a debug message\n"); 
-     exit(0); 
+#define debug_printf(...) printf(__VA_ARGS)
+#else
+#define debug_printf(...)
+#endif
+int main(int argc, char * argv[]){
+     debug_printf("This is a debug message\n");
+     exit(0);
 }
 {% endhighlight %}
 
@@ -73,7 +74,7 @@ typedef int my_int_type;
 int my_function_prototype(void);
 #endif //end if for MY_HEADER_FILE_H_
 {% endhighlight %}
- 
+
 ### #error and #warning
 
 The #error and #warning directives allow for user defined errors and warnings that the compiler picks uThe utility of these directives is in making sure the program is configured correctly if there are limits on what conditions the program may compile. The following program illustrates how these directives may be used.
@@ -81,15 +82,15 @@ The #error and #warning directives allow for user defined errors and warnings th
 {% highlight CPP %}
 #include <stdio.h>
 #include <stdlib.h>
-#define DEBUG 1 
-#if DEBUG != 0 
-#define debug_printf(...) printf(__VA_ARGS) 
-#warning "Debugging is turned on" 
-#else #define debug_printf(...) 
-#endif 
-int main(int argc, char * argv[]){ 
-     debug_printf("This is a debug message\n"); 
-     exit(0); 
+#define DEBUG 1
+#if DEBUG != 0
+#define debug_printf(...) printf(__VA_ARGS)
+#warning "Debugging is turned on"
+#else #define debug_printf(...)
+#endif
+int main(int argc, char * argv[]){
+     debug_printf("This is a debug message\n");
+     exit(0);
 }
 {% endhighlight %}
 
@@ -104,4 +105,3 @@ The GNU GCC compiler, which is a popular compiler for various embedded architect
 ### Take Away
 
 C language compilers always preprocess the code and execute any preprocessor directives during that stage. The most commonly used preprocessor directives (especially among beginners) are #include and #define. #include is simple to use; you just need to remember quotes for local files and less/greater than symbols for system files. #define is handy for code maintenance. If a value is fixed, it should be defined as a macro so that if it needs to be changed, it only needs to be changed in one location. Lastly, if you create your own header file, it is imperative that you use a header guard of the form: #ifndef NAME_H_, #define NAME_H_, ... #endif.
-

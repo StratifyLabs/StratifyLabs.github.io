@@ -2,6 +2,7 @@
 layout: homepage
 title: ARM Development Board from Stratify Labs
 tagline: Hardware
+page_source: CoActionHero
 sections:
  intro: CoAction Hero
  brief: arm cortex-m3 development board with Stratify OS

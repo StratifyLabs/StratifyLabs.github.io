@@ -2,6 +2,7 @@
 layout: post
 title: Three Mistakes Companies Make When Developing Products
 category : Product Management
+page_source: ProductDevBlog
 tagline: And What to Learn from Them
 tags : [product development, business, market research]
 ---
@@ -33,4 +34,3 @@ Final Thoughts
 When you are ready to develop your product, you should [give us a call]({{ BASE_PATH }}/contact-us/). We can talk through your marketing requirements and available resources and help you define your minimum viable product with an accompanying test plan.  We can then work with you to design, build, test and evaluate it until you are ready to launch it in the marketplace.
 
 <small>Photos by <a target="_blank" href="https://www.flickr.com/photos/frederickhomesforsale/">Chris & Karen Highland</a></small>
-

@@ -3,6 +3,7 @@ layout: post
 title: Installing Windows Device Drivers
 category: User Guides
 tagline: Stratify OS User Guide
+page_source: StratifyOSBlog
 tags : [stratify, user-guide, windows]
 ad:
   title: "Let's Build Together"

@@ -3,6 +3,7 @@ layout: post
 title: Pointers and Arrays
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags : [embedded, tutorial]
 number: 06
 ---
@@ -21,7 +22,7 @@ An array in C is declared using brackets after the variable. In the declaration,
 int main(int argc, char * argv[]){
      int xlist[5];  //declares an array of ten integers
      int i;
- 
+
      for(i=0; i < 5; i++){
           xlist[i] = i*2; //assign i to the xlist
      }
@@ -31,7 +32,7 @@ int main(int argc, char * argv[]){
      exit(0);
 }
 {% endhighlight %}
- 
+
 The above program has the following output:
 
 {% highlight BASH %}
@@ -92,26 +93,26 @@ a[1][4] = 10
 
 
 Notice that when the 2x5 array is declared, it is a[rows][columns].  
-We use a pointer (explained below) to show where in memory each element 
-is stored.  The first row is stored in the first 20 bytes (four bytes per integer), 
+We use a pointer (explained below) to show where in memory each element
+is stored.  The first row is stored in the first 20 bytes (four bytes per integer),
 and the second row occupies the next 20 bytes which is defined as row-major order.
 
 ### Pointers
 
-The value of a pointer is the memory address of the pointed-to variable. 
-A pointer type is declared by inserting an asterisk between the type 
+The value of a pointer is the memory address of the pointed-to variable.
+A pointer type is declared by inserting an asterisk between the type
 and the variable declaration.
 
 {% highlight CPP %}
 int x; //x is an integer type
 int * ptr; //ptr is a pointer to an integer type
 {% endhighlight %}
- 
-When using pointers, the asterisk is prepended to the pointer to operate 
-on the pointed-to variable. This is referred to as "de-referencing" 
-in pointer jargon. In order to assign a pointer to an existing non-pointer 
-variable, the ampersand (&) is placed in front of the to-be-pointed-to variable. 
-Ampersand in this context is read "address of". It is known as the "referencing" 
+
+When using pointers, the asterisk is prepended to the pointer to operate
+on the pointed-to variable. This is referred to as "de-referencing"
+in pointer jargon. In order to assign a pointer to an existing non-pointer
+variable, the ampersand (&) is placed in front of the to-be-pointed-to variable.
+Ampersand in this context is read "address of". It is known as the "referencing"
 operator. The program below shows examples of these operators.
 
 {% highlight CPP %}
@@ -206,7 +207,7 @@ int main(int argc, char * argv[]){
      printf("My strings is:%s\n", my_string);
 }
 {% endhighlight %}
- 
+
 In the program above, an array of char's is declared. Any array of char's that ends with a zero is a valid string in C. We also introduce the %s escape sequence, which is used to insert a string when using printf(). Additionally, the C standard library contains a string module with many commonly used string manipulation functions.
 
 ## Pointers and Struct's
@@ -229,7 +230,7 @@ void few_parameters(struct xyzabc * params);
 int main(int argc, char * argv[]){
      struct xyzabc var1;
      int result;
- 
+
      result = many_parameters(1, 2, 3, 7, 8, 9);
      var1.a = 7;
      var1.b = 8;
@@ -239,7 +240,7 @@ int main(int argc, char * argv[]){
      var1.z = 3;
      few_parameters(&var1);
      result = var1.c;
- 
+
      return 0;
 }
 int many_parameters(int x, int y, int z, int a, int b){
@@ -253,4 +254,3 @@ void few_parameters(struct xyzabc * params){
 ### Take Away
 
 Arrays and pointers are powerful tools in C. Arrays store lists or matrices of data while pointers access the memory of a variable rather than the variable itself. Though pointers can be difficult to master; it is very important that new programmers take the time to learn them for two reasons. First, they are used a lot in the standard C library and through many available libraries. Second, they can cause problems (crashing) if used incorrectly.
-

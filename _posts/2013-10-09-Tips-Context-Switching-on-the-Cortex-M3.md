@@ -4,6 +4,7 @@ title: Context Switching on the Cortex-M3
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, cortex-m3, threads, popular]
+page_source: MicrocontrollerBlog
 ad:
   title: "Get the CoAction Hero with Stratify OS pre-installed"
   description: "The CoAction Hero is an ARM Cortex M3 development board. It has Stratify OS pre-installed which gives you easy-to-use multi-threading, hardware abstraction and debugging all by simply connecting a USB cable."

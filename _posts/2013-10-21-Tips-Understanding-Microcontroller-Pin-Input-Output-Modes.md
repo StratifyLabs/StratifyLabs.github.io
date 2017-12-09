@@ -4,6 +4,7 @@ title: Understanding Microcontroller Pin Input/Output Modes
 category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, microcontroller, gpio, programming, pio]
+page_source: MicrocontrollerBlog
 ad:
   title: "Get the CoAction Hero with Stratify OS pre-installed"
   description: "The CoAction Hero is an ARM Cortex M3 development board. It has Stratify OS pre-installed which gives you easy-to-use multi-threading, hardware abstraction and debugging all by simply connecting a USB cable."

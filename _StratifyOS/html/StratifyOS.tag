@@ -2674,13 +2674,6 @@
     <name>config.h</name>
     <path>/Users/tgil/git/StratifyOS/src/</path>
     <filename>config_8h</filename>
-    <member kind="define">
-      <type>#define</type>
-      <name>VERSION</name>
-      <anchorfile>group___s_t_f_y.html</anchorfile>
-      <anchor>ga1c6d5de492ac61ad29aec7aa9a436bbf</anchor>
-      <arglist></arglist>
-    </member>
   </compound>
   <compound kind="file">
     <name>dirent.c</name>
@@ -3147,13 +3140,6 @@
     <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
     <member kind="function">
       <type>int</type>
-      <name>pthread_mutex_init</name>
-      <anchorfile>group___p_t_h_r_e_a_d___m_u_t_e_x.html</anchorfile>
-      <anchor>ga7454d249ed94ad5d5e57ba1529d7a7f2</anchor>
-      <arglist>(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
       <name>pthread_mutex_lock</name>
       <anchorfile>group___p_t_h_r_e_a_d___m_u_t_e_x.html</anchorfile>
       <anchor>ga12809c44718c21544ceb280dc1a53573</anchor>
@@ -3367,68 +3353,6 @@
       <name>endpwent</name>
       <anchorfile>group___p_w_d.html</anchorfile>
       <anchor>ga70fd2517d9f12a9bbed870c911950414</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="file">
-    <name>sched_posix.c</name>
-    <path>/Users/tgil/git/StratifyOS/src/sys/sched/</path>
-    <filename>sched__posix_8c</filename>
-    <includes id="config_8h" name="config.h" local="yes" imported="no">config.h</includes>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_get_priority_max</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>gafaebd1698caeb9b9b9e614ad84edd609</anchor>
-      <arglist>(int policy)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_get_priority_min</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>gaf1f370fc36ea6b22ed42b5ee3cf82a81</anchor>
-      <arglist>(int policy)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_getparam</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga563c7ac53bac2c1b51379147e66c44ec</anchor>
-      <arglist>(pid_t pid, struct sched_param *param)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_getscheduler</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga99fcb2532b1482d236dc04495a3f194d</anchor>
-      <arglist>(pid_t pid)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_rr_get_interval</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga99a3b9b823d4b20bf111719ccd1b59bd</anchor>
-      <arglist>(pid_t pid, struct timespec *ts)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_setparam</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga06b497c4ea6bbabd2b62ba1a8a848a1b</anchor>
-      <arglist>(pid_t pid, const struct sched_param *param)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_setscheduler</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga84ad29a6f2ad27370df09c664ac65eac</anchor>
-      <arglist>(pid_t pid, int policy, const struct sched_param *param)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_yield</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>gad35c30371efccc9ca7187cc8497770dd</anchor>
       <arglist>()</arglist>
     </member>
   </compound>
@@ -7438,13 +7362,6 @@
     <filename>group___p_t_h_r_e_a_d___m_u_t_e_x.html</filename>
     <member kind="function">
       <type>int</type>
-      <name>pthread_mutex_init</name>
-      <anchorfile>group___p_t_h_r_e_a_d___m_u_t_e_x.html</anchorfile>
-      <anchor>ga7454d249ed94ad5d5e57ba1529d7a7f2</anchor>
-      <arglist>(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
       <name>pthread_mutex_lock</name>
       <anchorfile>group___p_t_h_r_e_a_d___m_u_t_e_x.html</anchorfile>
       <anchor>ga12809c44718c21544ceb280dc1a53573</anchor>
@@ -7593,7 +7510,6 @@
     <subgroup>MQUEUE</subgroup>
     <subgroup>PWD</subgroup>
     <subgroup>PTHREAD</subgroup>
-    <subgroup>SCHED</subgroup>
     <subgroup>SEMAPHORE</subgroup>
     <subgroup>SIGNAL</subgroup>
     <subgroup>TIME</subgroup>
@@ -8450,67 +8366,6 @@
     </member>
   </compound>
   <compound kind="group">
-    <name>SCHED</name>
-    <title>Scheduler</title>
-    <filename>group___s_c_h_e_d.html</filename>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_get_priority_max</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>gafaebd1698caeb9b9b9e614ad84edd609</anchor>
-      <arglist>(int policy)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_get_priority_min</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>gaf1f370fc36ea6b22ed42b5ee3cf82a81</anchor>
-      <arglist>(int policy)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_getparam</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga563c7ac53bac2c1b51379147e66c44ec</anchor>
-      <arglist>(pid_t pid, struct sched_param *param)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_getscheduler</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga99fcb2532b1482d236dc04495a3f194d</anchor>
-      <arglist>(pid_t pid)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_rr_get_interval</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga99a3b9b823d4b20bf111719ccd1b59bd</anchor>
-      <arglist>(pid_t pid, struct timespec *ts)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_setparam</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga06b497c4ea6bbabd2b62ba1a8a848a1b</anchor>
-      <arglist>(pid_t pid, const struct sched_param *param)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_setscheduler</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>ga84ad29a6f2ad27370df09c664ac65eac</anchor>
-      <arglist>(pid_t pid, int policy, const struct sched_param *param)</arglist>
-    </member>
-    <member kind="function">
-      <type>int</type>
-      <name>sched_yield</name>
-      <anchorfile>group___s_c_h_e_d.html</anchorfile>
-      <anchor>gad35c30371efccc9ca7187cc8497770dd</anchor>
-      <arglist>()</arglist>
-    </member>
-  </compound>
-  <compound kind="group">
     <name>SEMAPHORE</name>
     <title>Semaphore</title>
     <filename>group___s_e_m_a_p_h_o_r_e.html</filename>
@@ -8801,13 +8656,6 @@
     <subgroup>IFACE_DEV</subgroup>
     <subgroup>LINK_LAYER</subgroup>
     <subgroup>POSIX</subgroup>
-    <member kind="define">
-      <type>#define</type>
-      <name>VERSION</name>
-      <anchorfile>group___s_t_f_y.html</anchorfile>
-      <anchor>ga1c6d5de492ac61ad29aec7aa9a436bbf</anchor>
-      <arglist></arglist>
-    </member>
     <member kind="function">
       <type>int</type>
       <name>hibernate</name>

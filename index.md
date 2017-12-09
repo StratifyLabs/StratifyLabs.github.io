@@ -2,6 +2,7 @@
 layout: homepage
 title: Stratify Labs
 tagline: Rapid Embedded Development
+page_source: Home
 ---
 
 <div style="background: #344555; color: #fff;">

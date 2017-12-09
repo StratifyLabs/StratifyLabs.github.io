@@ -3,6 +3,7 @@ layout: post
 title: Compound Data Types
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags : [embedded, tutorial]
 number: 08
 ---
@@ -38,14 +39,14 @@ The program below shows how to access (read and write) members of a struct using
 {% highlight CPP %}
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>  //"struct tm" is defined here 
-int main(int argc, char * argv[]){ 
-     struct tm t; //declare t as a struct tm 
-     t.tm_sec = 30; //assign 30 to the tm_sec member 
-     t.tm_min = 5; //assign 5 to the tm_min member 
-     t.tm_hour = 10; //assign 10 to the tm_hour member 
-     printf("time is %d:%d:%d\n", t.tm_hour, t.tm_min, t.tm_sec); 
-     exit(0); 
+#include <time.h>  //"struct tm" is defined here
+int main(int argc, char * argv[]){
+     struct tm t; //declare t as a struct tm
+     t.tm_sec = 30; //assign 30 to the tm_sec member
+     t.tm_min = 5; //assign 5 to the tm_min member
+     t.tm_hour = 10; //assign 10 to the tm_hour member
+     printf("time is %d:%d:%d\n", t.tm_hour, t.tm_min, t.tm_sec);
+     exit(0);
 }
 {% endhighlight %}
 
@@ -70,31 +71,31 @@ Compound data types (specifically, unions and structs) can be combined in variou
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
-struct point { 
-     //This structure has location and color data 
-     int x; 
-     int y; 
-     int z; 
-     union color_union { //The color data can be accesses as elements or one number               struct rgb_struct { 
-                uint8_t r; //red element 
-                uint8_t g; //green element 
-                uint8_t b; //blue element 
-                uint8_t alpha; //transparency element 
-          } rgb; 
-          uint32_t rgba; //rgb and transparency elements 
-     } color; }; 
- 
-int main(int argc, char * argv[]){ 
-     struct point p0; 
-     p0.x = 100; 
-     p0.y = 200; 
-     p0.z = 500; 
-     p0.color.rgb.r = 255; 
-     p0.color.rgb.g = 0; 
-     p0.color.rgb.b = 0; 
-     p0.color.rgb.alpha = 8; 
-     printf("%d,%d,%d %d\n", p0.x, p0.y, p0.z, p0.color.rgba); 
-     exit(0); 
+struct point {
+     //This structure has location and color data
+     int x;
+     int y;
+     int z;
+     union color_union { //The color data can be accesses as elements or one number               struct rgb_struct {
+                uint8_t r; //red element
+                uint8_t g; //green element
+                uint8_t b; //blue element
+                uint8_t alpha; //transparency element
+          } rgb;
+          uint32_t rgba; //rgb and transparency elements
+     } color; };
+
+int main(int argc, char * argv[]){
+     struct point p0;
+     p0.x = 100;
+     p0.y = 200;
+     p0.z = 500;
+     p0.color.rgb.r = 255;
+     p0.color.rgb.g = 0;
+     p0.color.rgb.b = 0;
+     p0.color.rgb.alpha = 8;
+     printf("%d,%d,%d %d\n", p0.x, p0.y, p0.z, p0.color.rgba);
+     exit(0);
 }
 {% endhighlight %}
 
@@ -124,13 +125,13 @@ Since this is a header file, the first thing is the header guard as mentioned in
 #include <stdlib.h>
 #include <stdio.h>  
 #include <stdint.h
-int main(int argc, char * argv[]){ 
+int main(int argc, char * argv[]){
 	unsigned char x;
-	uint8_t y; //x and y are the same type on most processors 
-	int w; 
-	int32_t z; //show the sizes (number of bytes in memory) used by each variable 
-	printf("sizeof(x) is %d, sizeof(y) is %d\n", sizeof(x), sizeof(y)); 
-	printf("sizeof(w) is %d, sizeof(z) is %d\n", sizeof(w), sizeof(z)); 
+	uint8_t y; //x and y are the same type on most processors
+	int w;
+	int32_t z; //show the sizes (number of bytes in memory) used by each variable
+	printf("sizeof(x) is %d, sizeof(y) is %d\n", sizeof(x), sizeof(y));
+	printf("sizeof(w) is %d, sizeof(z) is %d\n", sizeof(w), sizeof(z));
 	exit(0);
 }
 {% endhighlight %}
@@ -147,4 +148,3 @@ The sizeof keyword can operate both on types and variables. The example above us
 ## Take Away
 
 Compound data types in C give the programmer a powerful set of tools for organizing data. The C struct is the most common compound data type and organizes data contiguously in memory. A union allows the same place in memory to be treated as different types. An enum defines a list of values but acts more like a macro (see #define) than a compound data type. Users can also create customized types using the typedef keyword. Finally, the sizeof keyword determines the amount of memory used by a variable or type.
-

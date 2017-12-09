@@ -3,6 +3,7 @@ layout: post
 title: Flow Control
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags : [embedded, tutorial]
 number: 05
 ---
@@ -32,7 +33,7 @@ if ( x == 5 ){
 } else {
      printf("x is NOT equal to 5\n");
 }
-{% endhighlight %}	
+{% endhighlight %}
 
 The first if clause will print "x is equal to 5" if the variable x is equal to five. Otherwise, it will not output anything. The second if clause appends a statement to execute if x is not equal to five. The else portion of an if clause is always optional. If you are only executing one statement within an if clause, the curly brackets ({}) are also optional. Though, many programmers always include them to make the code more readable and to avoid ambiguous situations. Here are a few more examples.
 
@@ -44,7 +45,7 @@ if(x>5)
           printf("x is greater than 5 and x less than 10\n");
      else
           printf("x is not less than 10 but it might be greater than 5\n);
-{% endhighlight %}	
+{% endhighlight %}
 
 In the snippet above, it is not clear whether the else statement is attached to the first or second if statement. Using the curly brackets fixes the ambiguity.
 
@@ -60,7 +61,7 @@ if( (x > 5) &amp;&amp;
      ((y  200)) ){
      //statement
 }
-{% endhighlight %}	
+{% endhighlight %}
 
 ## Switch, Case
 
@@ -73,7 +74,7 @@ if( x == 0 ){
      //case 1
 } else if ( x == 2 ){
      //case 2
-} else if ( x == 10 ){ 
+} else if ( x == 10 ){
      //case 10
 } else {
      //default
@@ -135,7 +136,7 @@ int main(int argc, char * argv[]){
      printf("start here\n");
      goto the_end;
      printf("skip over this part\n");
- 
+
      the_end: //this is the label, it is following by a colon like case labels
      printf("the end\n");
      exit(0);

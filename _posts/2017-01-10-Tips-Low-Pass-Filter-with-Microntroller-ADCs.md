@@ -2,6 +2,7 @@
 layout: post
 title: Low Pass Filters with Microcontroller ADCs
 category: Embedded Design Tips
+page_source: PcbBlog
 tagline: Embedded Design
 tags : [embedded, microcontroller, adc]
 ---

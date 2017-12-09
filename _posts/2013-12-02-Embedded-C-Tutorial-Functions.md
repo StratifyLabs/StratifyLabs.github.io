@@ -3,6 +3,7 @@ layout: post
 title: Functions
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags: [embedded, tutorial]
 number: 02
 ---
@@ -30,15 +31,15 @@ int my_first_function(int x, int y){
      return sum; //tells the compiler to return the int x+y to the caller
 }
 {% endhighlight %}
- 
+
 The code above demonstrates my_first_function(). The prototype is always the return type, name, and parameters followed by a semi-colon. In most cases, the prototype is part of a header file so that the function can be used in many different source files. This is the case for printf() whose prototype is part of the stdio.h header file. The compiler gives a warning if a function is used, but a prototype is not found. It is important for the compiler to know function prototypes so that it can verify the number and types of the parameters passed to a function are compatible. It also checks that the return type is used correctly.
 
 ## Name
 
 The name of the function must be a valid C identifier. By convention, user-defined identifiers should not start with an underscore. It is good practice to use descriptive identifiers. Actually, my_first_function() is a poor name because it does not inform the programmer what the function does. A better name is add_xy() because the function returns the sum of the two parameters.
 
-<div class="alert alert-info"><span class="label label-danger">Note</span> Valid C identifiers must start with a letter or 
-underscore and be composed of case-sensitive letters, numbers, and underscores as 
+<div class="alert alert-info"><span class="label label-danger">Note</span> Valid C identifiers must start with a letter or
+underscore and be composed of case-sensitive letters, numbers, and underscores as
 well as not be a <a href="{% post_url 2013-12-10-Embedded-C-Tutorial-Keyword-Reference %}">C keyword</a>.</div>
 
 ## Parameters
@@ -61,7 +62,7 @@ int sum_abc(int a, int b, int c){
      return a + b + c; //return the sum (as an int)
 }
 {% endhighlight %}    
- 
+
 ## Take Away
 
 A function is a primary building block in C. A function consists of a prototype, name, return type, parameters, and body. The function name as well as the parameters must be valid C identifiers consisting only of letters, numbers, and underscores. They cannot start with a number and should not start with an underscore. As a programmer, you will create, use, and re-use many, many functions.

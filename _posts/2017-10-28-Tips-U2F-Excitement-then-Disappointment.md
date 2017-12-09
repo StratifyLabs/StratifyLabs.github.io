@@ -2,6 +2,7 @@
 layout: post
 title: U2F Excitement then Disappointment
 category : Product Management
+page_source: ProductDevBlog
 tagline:
 tags : [programming, macosx]
 ---

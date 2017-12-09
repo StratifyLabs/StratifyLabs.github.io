@@ -2,6 +2,7 @@
 layout: homepage
 title: FAQ
 tagline: Frequently Asked Questions
+page_source: FAQ
 sections:
  intro: FAQ
  brief: Quick questions and answers about Stratify OS.

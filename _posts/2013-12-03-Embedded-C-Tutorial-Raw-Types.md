@@ -3,6 +3,7 @@ layout: post
 title: Raw Types
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
+page_source: EmbeddedC
 tags : [embedded, tutorial]
 number: 03
 ---
@@ -16,13 +17,13 @@ Programs are created to do something useful--in embedded systems, to make a devi
 #include <unistd.h> //this contains usleep()
 #include "motor.h" //this is a fictitious header than contains get_motor_position()
 int main(int argc, char * argv[]){
-     /* This is where the data variables are declared--All 
-     variables must be declared before use Since they are 
-     declared inside main's {}, they are local to the 
+     /* This is where the data variables are declared--All
+     variables must be declared before use Since they are
+     declared inside main's {}, they are local to the
      main function */
      int motor_pos0, motor_pos1;  //commas can separate variables
      int motor_speed; //or just use a new statement
- 
+
      motor_pos0 = get_motor_position();  //assign position to motor_pos0
      usleep(1000);	//wait for 1ms (1000 microseconds)
      motor_pos1 = get_motor_position();  //assign the updated motor position

@@ -3,18 +3,19 @@ layout: post
 title: Using LEDs in Embedded Designs
 category : Embedded Design Tips
 tagline: Embedded Design
+page_source: PcbBlog
 tags : [embedded, circuit, led, control]
 ---
 
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-circuit.svg" />
-LEDs are a common element of many embedded designs.  Though the devices are 
-simple; their implementation is not always simplistic.  Optimizing LED cost 
-and performance includes ensuring the driving circuitry is providing the 
+LEDs are a common element of many embedded designs.  Though the devices are
+simple; their implementation is not always simplistic.  Optimizing LED cost
+and performance includes ensuring the driving circuitry is providing the
 correct voltage and current.
 
-The brightness of an LED is determined by the current that runs through it.  Typical 
-applications use a current limiting resistor in series with an LED to set the 
-brightness at a fixed level.  The following diagram shows a circuit that powers 
+The brightness of an LED is determined by the current that runs through it.  Typical
+applications use a current limiting resistor in series with an LED to set the
+brightness at a fixed level.  The following diagram shows a circuit that powers
 an LED using such a resistor.
 
 To optimize the performance of the LED, the resistor must be sized correctly (note the resistor can be either above or below the LED without affecting the operation or performance of the circuit).  The LED manufacturer provides the rated current and forward voltage values that are essential to calculating the resistor size.  The rated current is the optimal current value for the LED, and the forward voltage is the drop in voltage across the LED when the rated current is applied.  The following diagram shows fictitious but typical values for VCC, the forward voltage, and the rated current.
@@ -63,4 +64,3 @@ If the period is set to a relatively large value, such as several seconds, the L
 ## Conclusion
 
 Using LEDs in embedded designs is relatively simple (and thus a good starting point for beginners).  It is important to use a current limiting resistor in-line with LEDs to prevent damage.  To optimize the performance of the LED, careful sizing of the resistor is necessary.  However, to just get the LED to turn on and off a broad range of resistors will work.  Depending on the current requirements of the LED and the capabilites of the MCU, LEDs may be driven directly using GPIO or, for high current applications, may require the use of a transistor.  Firmware can then be used to simply blink the LED or use PWM to adjust the brightness.
-

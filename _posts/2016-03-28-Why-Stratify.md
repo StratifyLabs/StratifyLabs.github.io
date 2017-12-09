@@ -2,6 +2,7 @@
 layout: post
 title: Why Stratify OS?
 category : FAQ
+page_source: StratifyOSBlog
 tagline: Why not?
 tags : [stratify]
 ---
@@ -79,5 +80,3 @@ We want to enable people to build smart products faster. There is already a huge
 		</div>
 	</div>
 </div>
-
-

@@ -2,6 +2,7 @@
 layout: homepage
 title: Services
 tagline: Services
+page_source: Services
 sections:
  intro: Design Services
  brief: Build your next product with our engineering, design, and management consulting services

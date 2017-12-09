@@ -3,31 +3,32 @@ layout: post
 title: How Microcontrollers Work
 category : Embedded Design Tips
 tagline: Embedded Design
+page_source: MicrocontrollerBlog
 tags : [embedded, microcontroller, circuit]
 ---
 
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/sili-atom.svg" />
-Microcontrollers are small computers that contain a central processor, memory, 
-and input/output circuitry all on one integrated chiComputers in general 
-contain all these components with varying degrees of integration. Most people 
-are familiar with the CPU acronym which refers to the central processing 
-unit. The core of a microcontroller is also a central processing unit and is 
+Microcontrollers are small computers that contain a central processor, memory,
+and input/output circuitry all on one integrated chiComputers in general
+contain all these components with varying degrees of integration. Most people
+are familiar with the CPU acronym which refers to the central processing
+unit. The core of a microcontroller is also a central processing unit and is
 also the focus of this article.
 
 {{ excerpt_separator }}
 
-Microcontroller processors are built on a silicon base. The silicon has 
-extra elements added in a controlled manner to create millions of semiconductor 
-devices on a small piece of silicon. The devices are arranged and connected--basically 
-with tiny integrated wires--to form logic gate circuits that use boolean algebra 
-to perform mathematical operations such as addition, subtraction, et cetera. This 
-type of logic is called combinational logic. The semiconductor devices are also 
-arranged to form memory (such as RAM) using sequential logic. These logical 
-building blocks are used by microcontroller designers to create the various 
-parts of a microcontroller CPU such as the arithmetic logic unit (ALU), CPU 
+Microcontroller processors are built on a silicon base. The silicon has
+extra elements added in a controlled manner to create millions of semiconductor
+devices on a small piece of silicon. The devices are arranged and connected--basically
+with tiny integrated wires--to form logic gate circuits that use boolean algebra
+to perform mathematical operations such as addition, subtraction, et cetera. This
+type of logic is called combinational logic. The semiconductor devices are also
+arranged to form memory (such as RAM) using sequential logic. These logical
+building blocks are used by microcontroller designers to create the various
+parts of a microcontroller CPU such as the arithmetic logic unit (ALU), CPU
 registers, buses, and memory.
 
-From the atomic level to the CPU architecture, here is an overview of how 
+From the atomic level to the CPU architecture, here is an overview of how
 microcontrollers work:
 
 1. Semiconductor Physics: silicon is doped to create semiconductor properties
@@ -38,21 +39,21 @@ microcontrollers work:
 
 ## Semiconductor Physics
 
-Modern semiconductors are made primarily from silicon. Silicon, per se, does 
-not conduct electricity; however when impurities are introduced, silicon 
-semi-conducts electricity. To understand how silicon is transformed from a 
-non-conductor to a semi-conductor, it is important to be familiar with the 
+Modern semiconductors are made primarily from silicon. Silicon, per se, does
+not conduct electricity; however when impurities are introduced, silicon
+semi-conducts electricity. To understand how silicon is transformed from a
+non-conductor to a semi-conductor, it is important to be familiar with the
 Lewis octet rule.
 
-The Lewis octet rule is a rule of thumb in chemistry that says atoms with a 
-low number of electrons (low atomic number) tend to bond with other atoms in 
-such a way to produce eight valence electrons. A valence electron is one in 
-the outer regions of the atom that is used to bond with other atoms. A single 
+The Lewis octet rule is a rule of thumb in chemistry that says atoms with a
+low number of electrons (low atomic number) tend to bond with other atoms in
+such a way to produce eight valence electrons. A valence electron is one in
+the outer regions of the atom that is used to bond with other atoms. A single
 silicon atom has four valence electrons (as shown in the image at the top of the page).
 
-When silicon atoms are around other silicon atoms, they share valence electrons 
-such that each has eight--thus fulfilling the Lewis octet rule. The following 
-diagram illustrates this in two dimensions, but in real life, the bonding happens 
+When silicon atoms are around other silicon atoms, they share valence electrons
+such that each has eight--thus fulfilling the Lewis octet rule. The following
+diagram illustrates this in two dimensions, but in real life, the bonding happens
 in three dimensions.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/sili-atom-group.svg" />
@@ -60,55 +61,55 @@ in three dimensions.
 <div class="alert alert-info"><span class="label label-danger">Note</span>  This model
 inspired the Stratify Labs logo.  The symbol inside the gear is a silicon atom.</div>
 
-<div class="alert alert-info"><span class="label label-danger">Note</span> The 
-center atom has four valence electrons of its own and shares one from each of 
+<div class="alert alert-info"><span class="label label-danger">Note</span> The
+center atom has four valence electrons of its own and shares one from each of
 four surrounding atoms.</div>
 
-With pure silicon, the Lewis octet rule holds up nicely. When impurities are 
-introduced, instead of four valence electrons, there might be only three 
-valence electrons on some atoms; this is the case when Boron is added. Other 
+With pure silicon, the Lewis octet rule holds up nicely. When impurities are
+introduced, instead of four valence electrons, there might be only three
+valence electrons on some atoms; this is the case when Boron is added. Other
 impurities, such as nitrogen add an additional electron.
 
-<div class="alert alert-info"><span class="label label-danger">Note</span> When a 
+<div class="alert alert-info"><span class="label label-danger">Note</span> When a
 material has extra valence electrons, it is more negative and called N-type.</div>
 
 A material that has fewer valence electrons is more positive and called P-type.
 
-With extra electrons bouncing around, current is able to flow through the material 
-when a potential is applied. In the diagram below, new electrons are injected from 
-the "-" site while being attracted to the "+" site. The extra electrons provided by 
+With extra electrons bouncing around, current is able to flow through the material
+when a potential is applied. In the diagram below, new electrons are injected from
+the "-" site while being attracted to the "+" site. The extra electrons provided by
 the nitrogen atoms allow the electrons to flow across the material.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/sili-nit-group.svg" />
 
-Silicon can also be doped with Boron. Instead of having extra electrons, it 
-has "holes" (less than eight valence electrons). These holes provide a place 
-for electrons to jump across when a voltage is applied. The resulting 
+Silicon can also be doped with Boron. Instead of having extra electrons, it
+has "holes" (less than eight valence electrons). These holes provide a place
+for electrons to jump across when a voltage is applied. The resulting
 material (Silicon doped with Boron) also conducts current.
 
-Thus far, the materials mentioned are still conductors rather then 
-semiconductors. It is only when the above materials are combined do they 
+Thus far, the materials mentioned are still conductors rather then
+semiconductors. It is only when the above materials are combined do they
 become semiconductors.
 
 ## Diodes, the PN Junction
 
-The diode is the most basic semiconductor device. It permits current to flow 
-in one direction and prevents it from flowing in the opposite direction. It 
-essentially acts as a one way valve. A diode is created by juxtaposing a P-type 
-material and an N-type material (known as the PN junction). The diagram below 
-shows a PN junction with N-type doping on the left using Nitrogen and P-type 
-doping on the right using Boron. The red electrons represent the extra valence 
-electrons provided by the Nitrogen atoms, and the empty electrons represent 
+The diode is the most basic semiconductor device. It permits current to flow
+in one direction and prevents it from flowing in the opposite direction. It
+essentially acts as a one way valve. A diode is created by juxtaposing a P-type
+material and an N-type material (known as the PN junction). The diagram below
+shows a PN junction with N-type doping on the left using Nitrogen and P-type
+doping on the right using Boron. The red electrons represent the extra valence
+electrons provided by the Nitrogen atoms, and the empty electrons represent
 the "holes" introduced by the Boron atoms.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/p-n-junction.svg" />
 
-When a positive voltage is applied to the P-type side of a PN junction, current 
-flows. The extra electrons on the N-type side are pulled over to the P-type side 
+When a positive voltage is applied to the P-type side of a PN junction, current
+flows. The extra electrons on the N-type side are pulled over to the P-type side
 while the negative potential injects electrons.
 
-<div class="alert alert-info"><span class="label label-danger">Note</span> Current 
-flows from positive to negative, but electrons flow from 
+<div class="alert alert-info"><span class="label label-danger">Note</span> Current
+flows from positive to negative, but electrons flow from
 negative to positive because electrons have a negative charge value.</div>
 
 The diagram below illustrates how electrons are pulled across a PN junction.
@@ -145,14 +146,14 @@ CMOS stands for complementary metal-oxide-semiconductor and is the result of usi
 
 ## Boolean Algebra
 
-Boolean algebra is named after George Boole who published a book called An Investigation of the 
-Laws of Thought in 1854. In this book, he defined an algebraic system based on the values of 0 
-and 1. The operations defined are distinct to decimal number operations such as plus and minus 
-as well as multiply and divide. Nonetheless, these boolean operations are the building blocks 
+Boolean algebra is named after George Boole who published a book called An Investigation of the
+Laws of Thought in 1854. In this book, he defined an algebraic system based on the values of 0
+and 1. The operations defined are distinct to decimal number operations such as plus and minus
+as well as multiply and divide. Nonetheless, these boolean operations are the building blocks
 for implementing traditional algebraic operations using CMOS circuitry.
 
-The basic boolean operators are NOT, AND, and OR. While AND as well as OR have two or more 
-inputs, NOT operates on a single input value. Boolean operations are typically expressed 
+The basic boolean operators are NOT, AND, and OR. While AND as well as OR have two or more
+inputs, NOT operates on a single input value. Boolean operations are typically expressed
 using a truth table (a table of inputs and outputs). Here is the truth table for x NOT equals z.
 
 <table class="table table-striped table-bordered center">
@@ -312,21 +313,21 @@ For a microcontroller to execute an instruction, it goes through three basic ste
 * Decode
 * Execute
 
-When an instruction is fetched, the CPU grabs an instruction from the flash memory using the instruction 
-bus (see <span class="badge">1</span> above). The CPU uses a special register called the program counter (part of CPU registers above) to 
-keep track of what instruction should be loaded next. The program counter automatically increments--meaning it 
-has special digital circuitry designed using logic to make it increment--each time an instruction is 
-executed. Microcontrollers use branching instructions to make the program counter jump around in the case 
+When an instruction is fetched, the CPU grabs an instruction from the flash memory using the instruction
+bus (see <span class="badge">1</span> above). The CPU uses a special register called the program counter (part of CPU registers above) to
+keep track of what instruction should be loaded next. The program counter automatically increments--meaning it
+has special digital circuitry designed using logic to make it increment--each time an instruction is
+executed. Microcontrollers use branching instructions to make the program counter jump around in the case
 of executing a loop or an "if" statement.
 
-Once the instruction is fetched, the CPU executes it. For load instructions, this means loading data from 
-RAM or the peripheral registers to the CPU registers using the data bus (see <span class="badge">2</span> above). Sometimes with 
-load instructions that use indirect addressing, the ALU is used to calculate the address to load. Store 
-instructions work similarly except that data from the CPU registers is stored in RAM or peripheral memory. Math 
-based instructions pass one or two registers (see <span class="badge">3</span> above) to the ALU which then performs a 
+Once the instruction is fetched, the CPU executes it. For load instructions, this means loading data from
+RAM or the peripheral registers to the CPU registers using the data bus (see <span class="badge">2</span> above). Sometimes with
+load instructions that use indirect addressing, the ALU is used to calculate the address to load. Store
+instructions work similarly except that data from the CPU registers is stored in RAM or peripheral memory. Math
+based instructions pass one or two registers (see <span class="badge">3</span> above) to the ALU which then performs a
 calculation (such as addition) and stores the result in a CPU register (see <span class="badge">4</span> above).
 
-The above described architecture is not all encompassing. It is more specifically a Harvard architecture 
+The above described architecture is not all encompassing. It is more specifically a Harvard architecture
 with a load-store instruction set. Many other architectures exist each with various advantages and disadvantages.
 
 ## Conclusion

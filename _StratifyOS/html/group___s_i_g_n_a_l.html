@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stratify OS Docs
+page_source: Doxygen
 ---
 {% include JB/setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
@@ -75,7 +76,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add permission error checking </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Add permission error checking </dd></dl>
 
 </div>
 </div>
@@ -301,7 +302,7 @@ Functions</h2></td></tr>
 <li>EINVAL: <em>how</em> is not one of SIG_BLOCK, SIG_SETMASK, or SIG_UNBLOCK </li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>the calling thread must be a process (thread 0 of the process) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>the calling thread must be a process (thread 0 of the process) </dd></dl>
 
 </div>
 </div>
@@ -380,7 +381,7 @@ Functions</h2></td></tr>
 <li>EINTR: a signal, not in <em>set</em>, was caught </li>
 </ul>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo:</a></b></dt><dd>the sigcault flag should not be in a protected area of memory </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo:</a></b></dt><dd>the sigcault flag should not be in a protected area of memory </dd></dl>
 
 </div>
 </div>
@@ -442,7 +443,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This function checks to see if any signals in set are pending. If a signal is pending, it is cleared and the signal info is written to info, and the function returns without blocking.</p>
 <p>If no signals in set are pending, the task is blocked until a signal becomes pending.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo:</a></b></dt><dd>Add error checking</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo:</a></b></dt><dd>Add error checking</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero or -1 with errno (see <a class="el" href="group___e_r_r_n_o.html">Error Numbers</a>) set to:<ul>
 <li>EINVAL: <em>set</em> contains an invalid or unsupported signal</li>
 <li>EINTR: a signal, not in <em>set</em>, was caught </li>
@@ -452,3 +453,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div style="background: #fff;">
+	<div class="container">
+		{% include themes/twitter/signup.html %}
+	</div>
+</div>

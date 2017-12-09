@@ -2,6 +2,7 @@
 layout: post
 title: Understanding Memory using Embedded C++
 category : Embedded Design Tips
+page_source: MicrocontrollerBlog
 tagline:
 tags : [embedded, C++, microcontroller]
 ---

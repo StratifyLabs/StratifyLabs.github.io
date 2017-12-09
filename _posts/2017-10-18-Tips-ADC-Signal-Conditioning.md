@@ -2,6 +2,7 @@
 layout: post
 title: ADC Signal Conditioning
 category : Embedded Design Tips
+page_source: PcbBlog
 tagline:
 tags : [embedded, microcontroller, adc, sensor]
 ---

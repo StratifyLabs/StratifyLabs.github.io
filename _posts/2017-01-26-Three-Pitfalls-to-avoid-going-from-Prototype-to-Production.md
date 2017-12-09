@@ -2,6 +2,7 @@
 layout: post
 title: Three Pitfalls to avoid going from Prototype to Production
 category : Product Management
+page_source: ProductDevBlog
 tagline:
 tags : [product development, business]
 ---

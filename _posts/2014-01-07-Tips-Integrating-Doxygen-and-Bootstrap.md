@@ -2,6 +2,7 @@
 layout: post
 title: Integrating Doxygen and Bootstrap
 category : Embedded Design Tips
+page_source: OpenSourceBlog
 tagline: Embedded Design
 tags : [doxygen, javascript, bootstrap]
 ---
@@ -23,11 +24,11 @@ Doxygen allows you to customize the HTML output by modifying the master HTML hea
 stylesheet.  The following command will generate the default Doxygen HTML files.
 
 {% highlight BASH %}
-doxygen -w html header.html footer.html customdoxygen.css 
+doxygen -w html header.html footer.html customdoxygen.css
 {% endhighlight %}
 
-Modifying these files alone is not enough to get good Twitter Bootstrap integration.  Bootstrap 
-requires that certain classes be applied within the body of the HTML.  For example, 
+Modifying these files alone is not enough to get good Twitter Bootstrap integration.  Bootstrap
+requires that certain classes be applied within the body of the HTML.  For example,
 a Bootstrap "table" needs to have a class called "table" in order
 to apply the Bootstrap table formatting.  Doxygen does a good job of applying classes
 to different objects.  We just need to augment those classes with the Bootstrap classes.  To
@@ -38,14 +39,14 @@ to various Doxygen tables.
 $( document ).ready(function() {
 	$("table.params").addClass("table");
 	$("table.directory").addClass("table table-striped");
-	$("table.fieldtable").addClass("table");	
+	$("table.fieldtable").addClass("table");
 });
 {% endhighlight %}
 
 For this to work well, we need to modify doxygen's default stylesheet and remove almost all
 formatting.  We leave the code highlighting formatting in place since this doesn't affect
 any of the Bootstrap formatting, but pretty much all other Doxygen formatting is removed.  
-We also modify the HTML header or footer to load the Bootstrap css/javascript and 
+We also modify the HTML header or footer to load the Bootstrap css/javascript and
 our custom javascript (doxy-boot.js).
 
 {% highlight HTML %}

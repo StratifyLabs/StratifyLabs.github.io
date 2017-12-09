@@ -2,6 +2,7 @@
 layout: homepage
 title: About
 tagline: About
+page_source: About
 sections:
  intro: About
  brief: All about Stratify Labs

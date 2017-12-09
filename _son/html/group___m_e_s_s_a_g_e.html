@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stratify OS Docs
+page_source: Doxygen
 ---
 {% include JB/setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
@@ -23,8 +24,9 @@ title: Stratify OS Docs
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>SON Messaging enables storing object notation objects in RAM as well as sending and receiving the the objects over serial connections like device FIFOs/SPI/UART, etc. The allows objects to be quickly and easily shared between processes or over the network. </p>
-<table class="memberdecls">
+<p>SON Messaging enables storing object notation objects in RAM as well as sending and receiving the the objects over serial connections like device FIFOs/SPI/UART, etc. The allows objects to be quickly and easily shared between processes or over the network.</p>
+<p>Here is an example of creating a message:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> fd;</div><div class="line"><a class="code" href="structson__t.html">son_t</a> handle;</div><div class="line"><a class="code" href="structson__stack__t.html">son_stack_t</a> stack[4];</div><div class="line"><span class="keywordtype">char</span> buffer[512]</div><div class="line"><a class="code" href="group___m_e_s_s_a_g_e.html#ga32ea1184d1c45cec0a8b686df64c2dc5">son_create_message</a>(&amp;handle, buffer, 512, stack, 4);</div><div class="line"><a class="code" href="group___w_r_i_t_e.html#ga8f72ec385aab6af9d845ff2d3c02cfe4">son_write_str</a>(&amp;handle, <span class="stringliteral">&quot;first&quot;</span>, <span class="stringliteral">&quot;John&quot;</span>);</div><div class="line"><a class="code" href="group___w_r_i_t_e.html#ga8f72ec385aab6af9d845ff2d3c02cfe4">son_write_str</a>(&amp;handle, <span class="stringliteral">&quot;last&quot;</span>, <span class="stringliteral">&quot;Doe&quot;</span>);</div><div class="line"><a class="code" href="group___f_i_l_e_s.html#ga1f217dcfa00977986c15b3daae675677">son_close</a>(&amp;handle);</div><div class="line"></div><div class="line">fd = open(<span class="stringliteral">&quot;/dev/uart0&quot;</span>, O_RDWR | O_NONBLOCK);</div><div class="line"></div><div class="line">son_read_message(&amp;handle, buffer, 512);</div><div class="line"><a class="code" href="group___m_e_s_s_a_g_e.html#ga70fbec922a68ae006015b6a7672f7dbe">son_send_message</a>(&amp;handle, fd, 1000); <span class="comment">//send the message on the UART</span></div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga32ea1184d1c45cec0a8b686df64c2dc5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_e_s_s_a_g_e.html#ga32ea1184d1c45cec0a8b686df64c2dc5">son_create_message</a> (<a class="el" href="structson__t.html">son_t</a> *h, void *message, int nbyte, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, size_t stack_size)</td></tr>
@@ -290,3 +292,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div style="background: #fff;">
+	<div class="container">
+		{% include themes/twitter/signup.html %}
+	</div>
+</div>

@@ -74,8 +74,8 @@
       <type>void</type>
       <name>sg_transform_shift</name>
       <anchorfile>group___b_m_a_p_o_p.html</anchorfile>
-      <anchor>ga907cbe87538d9953abec4d7a74b47be2</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t shift, sg_point_t p, sg_dim_t d)</arglist>
+      <anchor>gabe1e0358d9df327ef7fb271659e9e6f5</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t shift, const sg_region_t *region)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -193,43 +193,43 @@
       <type>void</type>
       <name>sg_draw_quadtratic_bezier</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga9b2f58b3a76cc85d1019eb79534d0ef4</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3)</arglist>
+      <anchor>ga05c9c6e9c818fc8873acb0abd0973f2c</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t *corners)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_cubic_bezier</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga9b890ef640d67abe8b055b851ced74f5</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t p4)</arglist>
+      <anchor>gaee16e85d644d52b3c96834370c1d9a69</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t p4, sg_point_t *corners)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_rectangle</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>gabde219207564397ffc71399d59741d11</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+      <anchor>ga0462326c38ff47302d3a85bcb0f423c1</anchor>
+      <arglist>(const sg_bmap_t *bmap, const sg_region_t *region)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_arc</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga1f41cd3b96f6b445c6d4b1c7d41de66f</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, s16 start, s16 end)</arglist>
+      <anchor>ga8a9a1f2993688e3c032bdc20ad11fd19</anchor>
+      <arglist>(const sg_bmap_t *bmap, const sg_region_t *region, s16 start, s16 end, s16 rotation, sg_point_t *corners)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_pour</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga318f6563c2f9fc65929f6cfc0a0428c6</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_bounds_t bounds)</arglist>
+      <anchor>ga925e1704172637e4fa23164ea03d5a1b</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, const sg_region_t *region)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_pattern</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga10cb8e965e4f9da2090c318d26c3c388</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, sg_bmap_data_t odd_pattern, sg_bmap_data_t even_pattern, sg_size_t pattern_height)</arglist>
+      <anchor>ga1e1873c4eff9f1c1cc69f9344941fac2</anchor>
+      <arglist>(const sg_bmap_t *bmap, const sg_region_t *region, sg_bmap_data_t odd_pattern, sg_bmap_data_t even_pattern, sg_size_t pattern_height)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -242,29 +242,29 @@
       <type>void</type>
       <name>sg_draw_sub_bitmap</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga259cc3ef2cc9e1130701f38b3bed4e7c</anchor>
-      <arglist>(const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src, sg_point_t p_src, sg_dim_t d_src)</arglist>
+      <anchor>ga695e98741867665d8a3fc3aa79fd1c0f</anchor>
+      <arglist>(const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src, const sg_region_t *region_src)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_vector_draw_primitive</name>
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
-      <anchor>gad0989bd2fb30e58304f75f0ce8f6d10d</anchor>
-      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t *prim, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+      <anchor>gac7a37e6170c7d8d415c47f6c11e41a03</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t *prim, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_vector_draw_primitive_list</name>
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
-      <anchor>ga5416f94ad7cc1c372b2ed5654777c13f</anchor>
-      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t prim_list[], unsigned int total, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+      <anchor>ga7fab812c334b92df3f9b4ea271f8baf3</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t prim_list[], unsigned int total, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_vector_draw_icon</name>
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
-      <anchor>ga9cd0b66cb5730d08f235d6d8b87fd33e</anchor>
-      <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+      <anchor>gaea5d02ac292b789d87f60b114817e864</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -296,7 +296,6 @@
     <class kind="union">sg_dim_t</class>
     <class kind="struct">sg_pen_t</class>
     <class kind="struct">sg_bmap_t</class>
-    <class kind="struct">sg_bounds_t</class>
     <class kind="struct">sg_region_t</class>
     <class kind="struct">sg_vector_primitive_t</class>
     <class kind="struct">sg_vector_icon_t</class>
@@ -409,6 +408,18 @@
       <anchor>adc29c2ff13d900c2f185ee95427fb06ca01ed935ddeddc26061ca738d93069d62</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>SG_QUADRATIC_BEZIER</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06ca9baa776f2072a6f154089ffa1ebd366a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_CUBIC_BEZIER</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06ca4fd36127091fbb35b0a2fe10c7ffd2bf</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>sg_bmap_t</name>
@@ -453,24 +464,6 @@
       <name>columns</name>
       <anchorfile>structsg__bmap__t.html</anchorfile>
       <anchor>a737cade9457749542d3297c27186be7a</anchor>
-      <arglist></arglist>
-    </member>
-  </compound>
-  <compound kind="struct">
-    <name>sg_bounds_t</name>
-    <filename>structsg__bounds__t.html</filename>
-    <member kind="variable">
-      <type>sg_point_t</type>
-      <name>top_left</name>
-      <anchorfile>structsg__bounds__t.html</anchorfile>
-      <anchor>ab7d423845e46fe3975c4fe2f90606dd6</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>sg_point_t</type>
-      <name>bottom_right</name>
-      <anchorfile>structsg__bounds__t.html</anchorfile>
-      <anchor>a12f156ae535980c6766508d68052b6da</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -678,20 +671,6 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>s16</type>
-      <name>rotation</name>
-      <anchorfile>structsg__vector__primitive__t.html</anchorfile>
-      <anchor>ada8743adbbbd328cb3e0930ae2b1f534</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
-      <type>sg_point_t</type>
-      <name>shift</name>
-      <anchorfile>structsg__vector__primitive__t.html</anchorfile>
-      <anchor>a19e6ee80beb3033ba913176bf6525881</anchor>
-      <arglist></arglist>
-    </member>
-    <member kind="variable">
       <type>sg_vector_arc_t</type>
       <name>arc</name>
       <anchorfile>structsg__vector__primitive__t.html</anchorfile>
@@ -717,6 +696,13 @@
       <name>cubic_bezier</name>
       <anchorfile>structsg__vector__primitive__t.html</anchorfile>
       <anchor>a6232ab28331f971004ad19b2b87b80c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_vector_pour_t</type>
+      <name>pour</name>
+      <anchorfile>structsg__vector__primitive__t.html</anchorfile>
+      <anchor>a8c03589c02c429dafb5ed6d649846df2</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -918,43 +904,43 @@
       <type>void</type>
       <name>sg_draw_quadtratic_bezier</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga9b2f58b3a76cc85d1019eb79534d0ef4</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3)</arglist>
+      <anchor>ga05c9c6e9c818fc8873acb0abd0973f2c</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t *corners)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_cubic_bezier</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga9b890ef640d67abe8b055b851ced74f5</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t p4)</arglist>
+      <anchor>gaee16e85d644d52b3c96834370c1d9a69</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p1, sg_point_t p2, sg_point_t p3, sg_point_t p4, sg_point_t *corners)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_rectangle</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>gabde219207564397ffc71399d59741d11</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d)</arglist>
+      <anchor>ga0462326c38ff47302d3a85bcb0f423c1</anchor>
+      <arglist>(const sg_bmap_t *bmap, const sg_region_t *region)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_arc</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga1f41cd3b96f6b445c6d4b1c7d41de66f</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, s16 start, s16 end)</arglist>
+      <anchor>ga8a9a1f2993688e3c032bdc20ad11fd19</anchor>
+      <arglist>(const sg_bmap_t *bmap, const sg_region_t *region, s16 start, s16 end, s16 rotation, sg_point_t *corners)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_pour</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga318f6563c2f9fc65929f6cfc0a0428c6</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_bounds_t bounds)</arglist>
+      <anchor>ga925e1704172637e4fa23164ea03d5a1b</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t p, const sg_region_t *region)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_draw_pattern</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga10cb8e965e4f9da2090c318d26c3c388</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t p, sg_dim_t d, sg_bmap_data_t odd_pattern, sg_bmap_data_t even_pattern, sg_size_t pattern_height)</arglist>
+      <anchor>ga1e1873c4eff9f1c1cc69f9344941fac2</anchor>
+      <arglist>(const sg_bmap_t *bmap, const sg_region_t *region, sg_bmap_data_t odd_pattern, sg_bmap_data_t even_pattern, sg_size_t pattern_height)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -967,8 +953,8 @@
       <type>void</type>
       <name>sg_draw_sub_bitmap</name>
       <anchorfile>group___b_m_a_p_p_r_i_m_o_p.html</anchorfile>
-      <anchor>ga259cc3ef2cc9e1130701f38b3bed4e7c</anchor>
-      <arglist>(const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src, sg_point_t p_src, sg_dim_t d_src)</arglist>
+      <anchor>ga695e98741867665d8a3fc3aa79fd1c0f</anchor>
+      <arglist>(const sg_bmap_t *bmap_dest, sg_point_t p_dest, const sg_bmap_t *bmap_src, const sg_region_t *region_src)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -1000,8 +986,8 @@
       <type>void</type>
       <name>sg_transform_shift</name>
       <anchorfile>group___b_m_a_p_o_p.html</anchorfile>
-      <anchor>ga907cbe87538d9953abec4d7a74b47be2</anchor>
-      <arglist>(const sg_bmap_t *bmap, sg_point_t shift, sg_point_t p, sg_dim_t d)</arglist>
+      <anchor>gabe1e0358d9df327ef7fb271659e9e6f5</anchor>
+      <arglist>(const sg_bmap_t *bmap, sg_point_t shift, const sg_region_t *region)</arglist>
     </member>
   </compound>
   <compound kind="group">
@@ -1012,22 +998,22 @@
       <type>void</type>
       <name>sg_vector_draw_primitive</name>
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
-      <anchor>gad0989bd2fb30e58304f75f0ce8f6d10d</anchor>
-      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t *prim, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+      <anchor>gac7a37e6170c7d8d415c47f6c11e41a03</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t *prim, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_vector_draw_primitive_list</name>
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
-      <anchor>ga5416f94ad7cc1c372b2ed5654777c13f</anchor>
-      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t prim_list[], unsigned int total, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+      <anchor>ga7fab812c334b92df3f9b4ea271f8baf3</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_primitive_t prim_list[], unsigned int total, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
       <name>sg_vector_draw_icon</name>
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
-      <anchor>ga9cd0b66cb5730d08f235d6d8b87fd33e</anchor>
-      <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_bounds_t *bounds)</arglist>
+      <anchor>gaea5d02ac292b789d87f60b114817e864</anchor>
+      <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
   </compound>
   <compound kind="page">

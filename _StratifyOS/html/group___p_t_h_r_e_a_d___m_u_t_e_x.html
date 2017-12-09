@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Stratify OS Docs
+page_source: Doxygen
 ---
 {% include JB/setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
@@ -26,8 +27,6 @@ title: Stratify OS Docs
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7454d249ed94ad5d5e57ba1529d7a7f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_t_h_r_e_a_d___m_u_t_e_x.html#ga7454d249ed94ad5d5e57ba1529d7a7f2">pthread_mutex_init</a> (pthread_mutex_t *mutex, const pthread_mutexattr_t *attr)</td></tr>
-<tr class="separator:ga7454d249ed94ad5d5e57ba1529d7a7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga12809c44718c21544ceb280dc1a53573"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_t_h_r_e_a_d___m_u_t_e_x.html#ga12809c44718c21544ceb280dc1a53573">pthread_mutex_lock</a> (pthread_mutex_t *mutex)</td></tr>
 <tr class="separator:ga12809c44718c21544ceb280dc1a53573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga27da386211db1a7e9a3b2a0db4d22144"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___p_t_h_r_e_a_d___m_u_t_e_x.html#ga27da386211db1a7e9a3b2a0db4d22144">pthread_mutex_trylock</a> (pthread_mutex_t *mutex)</td></tr>
@@ -110,36 +109,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This function gets the mutex priority ceiling from <em>mutex</em> and stores it in <em>prioceiling</em>. </p><dl class="section return"><dt>Returns</dt><dd>Zero on success or -1 with <em>errno</em> (see <a class="el" href="group___e_r_r_n_o.html">Error Numbers</a>) set to:<ul>
 <li>EINVAL: mutex or prioceiling is NULL </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga7454d249ed94ad5d5e57ba1529d7a7f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int pthread_mutex_init </td>
-          <td>(</td>
-          <td class="paramtype">pthread_mutex_t *&#160;</td>
-          <td class="paramname"><em>mutex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const pthread_mutexattr_t *&#160;</td>
-          <td class="paramname"><em>attr</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This function initializes <em>mutex</em> with <em>attr</em>. </p><dl class="section return"><dt>Returns</dt><dd>Zero on success or -1 with <em>errno</em> (see <a class="el" href="group___e_r_r_n_o.html">Error Numbers</a>) set to:<ul>
-<li>EINVAL: mutex is NULL </li>
 </ul>
 </dd></dl>
 
@@ -633,3 +602,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div style="background: #fff;">
+	<div class="container">
+		{% include themes/twitter/signup.html %}
+	</div>
+</div>

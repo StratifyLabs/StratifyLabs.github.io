@@ -2,6 +2,7 @@
 layout: post
 title: Applications without an MMU
 category : Embedded Design Tips
+page_source: MicrocontrollerBlog
 tagline: Embedded Design
 tags : [embedded, microcontroller, arm, cortex-m3, cortex-m4, stratify]
 ---
@@ -64,7 +65,3 @@ uint32_t world_population_1970 = 3733996830; //0xDE90451E
 ## Conclusion
 
 Implementing an embedded installer that can dynamically relocate code has been well worth it.  Users can easily compile and install Stratify OS applications without worrying about compiling or installing the OS.  It also allows firmware application portability between different boards running Stratify OS.
-
-
-
-

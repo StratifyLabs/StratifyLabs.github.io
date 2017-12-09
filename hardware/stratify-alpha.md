@@ -2,6 +2,7 @@
 layout: homepage
 title: ARM Development Board from Stratify Labs
 tagline: Hardware
+page_source: StratifyAlpha
 sections:
  intro: Stratify Alpha
  brief: arm cortex-m4 development board with Stratify OS

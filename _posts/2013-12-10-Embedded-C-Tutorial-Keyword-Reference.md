@@ -2,6 +2,7 @@
 layout: post
 title: Keywords Reference
 category: Embedded C Tutorial
+page_source: EmbeddedC
 tagline: Embedded C Tutorial
 tags : [embedded, tutorial]
 number: 09
@@ -11,7 +12,7 @@ This tutorial (part of the embedded C tutorial) is a list of the C keywords for 
 
 ### Data Types
 
-* char 
+* char
 * int
 * long
 * float
@@ -57,4 +58,3 @@ This tutorial (part of the embedded C tutorial) is a list of the C keywords for 
 ### Utility
 
 * sizeof
-
