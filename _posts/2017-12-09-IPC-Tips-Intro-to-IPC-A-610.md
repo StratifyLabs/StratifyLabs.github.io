@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to IPC-A-610
-page_source: PcbIPC
+page_source: DFM
 category: PCB Design for Manufacturing
 tags : [circuit, tutorial, dfm, product development]
 number: 1

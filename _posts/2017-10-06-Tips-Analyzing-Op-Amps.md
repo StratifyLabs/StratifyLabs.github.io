@@ -4,7 +4,7 @@ title: Analyzing Op Amps
 category : Embedded Design Tips
 page_source: PcbBlog
 tagline:
-tags : [embedded, microcontroller, adc, sensor]
+tags : [embedded, microcontroller, adc, sensor, circuit]
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/analyzing-op-amps-ohm-circuit.jpg" />

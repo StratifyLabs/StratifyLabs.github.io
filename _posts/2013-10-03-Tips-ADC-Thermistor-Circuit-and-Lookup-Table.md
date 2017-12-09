@@ -4,7 +4,7 @@ title: ADC Thermistor Circuit and Lookup Table
 category : Embedded Design Tips
 tagline: Embedded Design
 page_source: MicrocontrollerBlog
-tags : [embedded, adc, lookup-table, c, programming]
+tags : [embedded, adc, lookup-table, c, programming, circuit]
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/thermistor-circuit.svg" />

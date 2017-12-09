@@ -3,7 +3,7 @@ layout: post
 title: Understanding Microcontroller Pin Input/Output Modes
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, microcontroller, gpio, programming, pio]
+tags : [embedded, microcontroller, gpio, programming, pio, circuit]
 page_source: MicrocontrollerBlog
 ad:
   title: "Get the CoAction Hero with Stratify OS pre-installed"
