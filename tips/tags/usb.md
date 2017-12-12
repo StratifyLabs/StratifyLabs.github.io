@@ -5,6 +5,7 @@ permalink: /tips/tag/usb/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: USB
+page_source: BlogTagUSB
 sections:
  intro: Blog
  brief: USB Tag

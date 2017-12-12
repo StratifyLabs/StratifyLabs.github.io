@@ -5,6 +5,7 @@ permalink: /tips/tag/doxygen/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Doxygen
+page_source: BlogTagDoxygen
 sections:
  intro: Blog
  brief: Doxygen Tag

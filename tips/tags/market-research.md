@@ -5,6 +5,7 @@ permalink: /tips/tag/market-research/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Market Research
+page_source: BlogTagMarketResearch
 sections:
  intro: Blog
  brief: Market Research Tag

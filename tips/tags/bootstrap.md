@@ -5,6 +5,7 @@ permalink: /tips/tag/bootstrap/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Bootstrap
+page_source: BlogTagBootstrap
 sections:
  intro: Blog
  brief: Bootstrap Tag

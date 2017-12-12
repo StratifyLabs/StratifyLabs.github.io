@@ -5,6 +5,7 @@ permalink: /tips/tag/arm/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: ARM
+page_source: BlogTagARM
 sections:
  intro: Blog
  brief: ARM Tag

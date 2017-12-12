@@ -5,6 +5,7 @@ permalink: /tips/tag/freelancer/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Freelancer
+page_source: BlogTagFreelancer
 sections:
  intro: Blog
  brief: Freelancer Tag

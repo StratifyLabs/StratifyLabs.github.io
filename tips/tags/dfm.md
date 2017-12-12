@@ -5,6 +5,7 @@ permalink: /tips/tag/dfm/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: dfm
+page_source: BlogTagDfm
 sections:
  intro: Blog
  brief: DFM Tag

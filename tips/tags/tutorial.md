@@ -5,6 +5,7 @@ permalink: /tips/tag/tutorial/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Tutorial
+page_source: BlogTagTutorial
 sections:
  intro: Blog
  brief: Tutorial Tag

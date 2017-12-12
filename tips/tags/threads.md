@@ -5,6 +5,7 @@ permalink: /tips/tag/threads/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Threads
+page_source: BlogTagThreads
 sections:
  intro: Blog
  brief: Threads Tag

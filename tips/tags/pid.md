@@ -5,6 +5,7 @@ permalink: /tips/tag/pid/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: PID
+page_source: BlogTagPid
 sections:
  intro: Blog
  brief: PID Tag

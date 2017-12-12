@@ -5,6 +5,7 @@ permalink: /tips/tag/embedded/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Embedded
+page_source: BlogTagEmbedded
 sections:
  intro: Blog
  brief: Embedded Tag

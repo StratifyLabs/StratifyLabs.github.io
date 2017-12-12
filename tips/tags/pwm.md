@@ -5,6 +5,7 @@ permalink: /tips/tag/pwm/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: PWM
+page_source: BlogTagPWM
 sections:
  intro: Blog
  brief: PWM Tag

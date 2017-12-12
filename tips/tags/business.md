@@ -5,6 +5,7 @@ permalink: /tips/tag/business/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Business
+page_source: BlogTagBusiness
 sections:
  intro: Blog
  brief: Business Tag

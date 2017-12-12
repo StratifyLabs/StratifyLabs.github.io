@@ -5,6 +5,7 @@ permalink: /tips/tag/sensor/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Sensor
+page_source: BlogTagSensor
 sections:
  intro: Blog
  brief: Sensor Tag

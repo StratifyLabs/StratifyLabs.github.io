@@ -5,6 +5,7 @@ permalink: /tips/tag/gcc/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: GCC
+page_source: BlogTagGcc
 sections:
  intro: Blog
  brief: GCC Tag

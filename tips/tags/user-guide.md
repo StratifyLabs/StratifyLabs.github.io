@@ -5,6 +5,7 @@ permalink: /tips/tag/user-guide/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: User-Guide
+page_source: BlogTagUserGuide
 sections:
  intro: Blog
  brief: User-Guide Tag

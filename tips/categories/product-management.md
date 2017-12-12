@@ -4,6 +4,7 @@ title: Product Management Tips from Stratify Labs
 permalink: /tips/category/product-management/
 breadcrumb: tips
 archive-type: Category
+page_source: ProductManagement
 archive-keyword: Product Management
 sections:
  intro: Blog

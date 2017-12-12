@@ -5,6 +5,7 @@ permalink: /tips/tag/javascript/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Javascript
+page_source: BlogTagJavascript
 sections:
  intro: Blog
  brief: Javascript Tag

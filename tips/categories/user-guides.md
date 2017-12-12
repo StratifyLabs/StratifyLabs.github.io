@@ -5,6 +5,7 @@ permalink: /tips/category/user-guides/
 breadcrumb: tips
 archive-type: Category
 archive-keyword: User Guides
+page_source: UserGuides
 sections:
  intro: Blog
  brief: User Guides Category

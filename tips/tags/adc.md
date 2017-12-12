@@ -5,6 +5,7 @@ permalink: /tips/tag/adc/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: ADC
+page_source: BlogTagADC
 sections:
  intro: Blog
  brief: ADC Tag

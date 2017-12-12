@@ -5,6 +5,7 @@ permalink: /tips/tag/fifo/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: FIFO
+page_source: BlogTagFIFO
 sections:
  intro: Blog
  brief: FIFO Tag

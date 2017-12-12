@@ -5,6 +5,7 @@ permalink: /tips/tag/motor/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Motor
+page_source: BlogTagMotor
 sections:
  intro: Blog
  brief: Motor Control Tag

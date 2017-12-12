@@ -5,6 +5,7 @@ permalink: /tips/tag/serial/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Serial
+page_source: BlogTagSerial
 sections:
  intro: Blog
  brief: Serial Tag

@@ -5,6 +5,7 @@ permalink: /tips/tag/uart/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: UART
+page_source: BlogTagUART
 sections:
  intro: Blog
  brief: UART Tag

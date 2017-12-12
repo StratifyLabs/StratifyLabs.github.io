@@ -5,6 +5,7 @@ permalink: /tips/tag/stratify/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Stratify
+page_source: BlogTagStratify
 sections:
  intro: Blog
  brief: Stratify Tag

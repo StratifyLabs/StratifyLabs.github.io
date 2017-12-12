@@ -4,7 +4,7 @@ title: Compound Data Types
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
 page_source: EmbeddedC
-tags : [embedded, tutorial]
+tags : [embedded, tutorial, C]
 number: 08
 ---
 

@@ -5,6 +5,7 @@ permalink: /tips/tag/power/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Power
+page_source: BlogTagPower
 sections:
  intro: Blog
  brief: Power Tag

@@ -5,6 +5,7 @@ permalink: /tips/tag/macosx/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: MacOSX
+page_source: BlogTagMacOSX
 sections:
  intro: Blog
  brief: MacOSX Tag

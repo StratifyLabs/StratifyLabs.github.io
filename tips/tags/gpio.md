@@ -5,6 +5,7 @@ permalink: /tips/tag/gpio/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: GPIO
+page_source: BlogTagGpio
 sections:
  intro: Blog
  brief: GPIO Tag

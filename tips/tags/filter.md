@@ -5,6 +5,7 @@ permalink: /tips/tag/filter/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Filter
+page_source: BlogTagFilter
 sections:
  intro: Blog
  brief: Filter Tag

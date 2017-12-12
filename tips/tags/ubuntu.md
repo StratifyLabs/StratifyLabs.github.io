@@ -5,6 +5,7 @@ permalink: /tips/tag/ubuntu/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Ubuntu
+page_source: BlogTagUbuntu
 sections:
  intro: Blog
  brief: Ubuntu Tag

@@ -5,6 +5,7 @@ permalink: /tips/tag/c/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: C
+page_source: BlogTagC
 sections:
  intro: Blog
  brief: C Tag

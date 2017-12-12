@@ -5,6 +5,7 @@ permalink: /tips/tag/cortex-m3/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Cortex-M3
+page_source: BlogTagCortexM3
 sections:
  intro: Blog
  brief: Cortex-M3 Tag

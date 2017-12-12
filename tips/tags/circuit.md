@@ -5,6 +5,7 @@ permalink: /tips/tag/circuit/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Circuit
+page_source: BlogTagCircuit
 sections:
  intro: Blog
  brief: Circuit Tag

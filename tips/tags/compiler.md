@@ -5,6 +5,7 @@ permalink: /tips/tag/compiler/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Compiler
+page_source: BlogTagCompiler
 sections:
  intro: Blog
  brief: Compiler Tag

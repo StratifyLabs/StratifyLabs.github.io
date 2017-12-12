@@ -5,6 +5,7 @@ permalink: /tips/tag/programming/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Programming
+page_source: BlogTagProgramming
 sections:
  intro: Blog
  brief: Programming Tag

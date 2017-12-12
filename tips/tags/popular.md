@@ -5,6 +5,7 @@ permalink: /tips/tag/popular/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Popular
+page_source: BlogTagPopular
 sections:
  intro: Blog
  brief: Popular Tag

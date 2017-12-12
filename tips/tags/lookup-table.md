@@ -5,6 +5,7 @@ permalink: /tips/tag/lookup-table/
 breadcrumb: tips
 archive-type: Tag
 archive-keyword: Lookup-Table
+page_source: BlogTagLookupTable
 sections:
  intro: Blog
  brief: Lookup-Table Tag
