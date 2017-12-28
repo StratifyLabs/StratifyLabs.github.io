@@ -81,8 +81,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0bd19cf99d6d352d46105a51f07b2576"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad2599aeae6f709eb63552bd4c0beae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adad2599aeae6f709eb63552bd4c0beae">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, void *buf, int nbyte) const </td></tr>
 <tr class="separator:adad2599aeae6f709eb63552bd4c0beae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a693e66e72c3f51466289aecf5a669d83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a693e66e72c3f51466289aecf5a669d83">readline</a> (char *buf, int nbyte, int timeout, char term= '\n') const </td></tr>
-<tr class="separator:a693e66e72c3f51466289aecf5a669d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c18026cb42020b52fd9f356e1e26a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a742c18026cb42020b52fd9f356e1e26a">readline</a> (char *buf, int nbyte, int timeout_msec, char terminator= '\n') const </td></tr>
+<tr class="separator:a742c18026cb42020b52fd9f356e1e26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeadfbb00ef0acb3309d5b57bfb9e697"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence=LINK_SEEK_SET) const </td></tr>
 <tr class="separator:adeadfbb00ef0acb3309d5b57bfb9e697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
@@ -832,7 +832,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a693e66e72c3f51466289aecf5a669d83"></a>
+<a class="anchor" id="a742c18026cb42020b52fd9f356e1e26a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -852,13 +852,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
+          <td class="paramname"><em>timeout_msec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char&#160;</td>
-          <td class="paramname"><em>term</em> = <code>'\n'</code>&#160;</td>
+          <td class="paramname"><em>terminator</em> = <code>'\n'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -872,8 +872,8 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">buf</td><td>Destination buffer </td></tr>
     <tr><td class="paramname">nbyte</td><td>Number of bytes available in buffer </td></tr>
-    <tr><td class="paramname">timeout</td><td>Timeout in ms if line does not arrive </td></tr>
-    <tr><td class="paramname">term</td><td>Terminating character of the line (default is newline) </td></tr>
+    <tr><td class="paramname">timeout_msec</td><td>Timeout in ms if line does not arrive </td></tr>
+    <tr><td class="paramname">terminator</td><td>Terminating character of the line (default is newline) </td></tr>
   </table>
   </dd>
 </dl>

@@ -97,8 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0bd19cf99d6d352d46105a51f07b2576 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adad2599aeae6f709eb63552bd4c0beae">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, void *buf, int nbyte) const </td></tr>
 <tr class="separator:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a693e66e72c3f51466289aecf5a669d83 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a693e66e72c3f51466289aecf5a669d83">readline</a> (char *buf, int nbyte, int timeout, char term= '\n') const </td></tr>
-<tr class="separator:a693e66e72c3f51466289aecf5a669d83 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c18026cb42020b52fd9f356e1e26a inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a742c18026cb42020b52fd9f356e1e26a">readline</a> (char *buf, int nbyte, int timeout_msec, char terminator= '\n') const </td></tr>
+<tr class="separator:a742c18026cb42020b52fd9f356e1e26a inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeadfbb00ef0acb3309d5b57bfb9e697 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence=LINK_SEEK_SET) const </td></tr>
 <tr class="separator:adeadfbb00ef0acb3309d5b57bfb9e697 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
@@ -214,7 +214,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the FIFO in write block mode.</p>
-<p>If a write is attempted that won't fit in the unused space in the FIFO, the FIFO will block until there is space available. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>True to enable write block or false to disable it</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If write blocking is enabled, the FIFO will block (or return EAGAIN is O_NONBLOCK is on) if no bytes can be written to the FIFO. If a single byte can be written, <a class="el" href="classhal_1_1_dev.html#ac8284718090654a5d143962d009cd7e7">write()</a> will return 1.</p>
+<p>With write blocking disable, <a class="el" href="classhal_1_1_dev.html#ac8284718090654a5d143962d009cd7e7">write()</a> will never block. It will simply overwrite the data that is already in the FIFO. </p>
 
 </div>
 </div>

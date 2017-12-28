@@ -91,8 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0bd19cf99d6d352d46105a51f07b2576 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adad2599aeae6f709eb63552bd4c0beae">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, void *buf, int nbyte) const </td></tr>
 <tr class="separator:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a693e66e72c3f51466289aecf5a669d83 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a693e66e72c3f51466289aecf5a669d83">readline</a> (char *buf, int nbyte, int timeout, char term= '\n') const </td></tr>
-<tr class="separator:a693e66e72c3f51466289aecf5a669d83 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c18026cb42020b52fd9f356e1e26a inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a742c18026cb42020b52fd9f356e1e26a">readline</a> (char *buf, int nbyte, int timeout_msec, char terminator= '\n') const </td></tr>
+<tr class="separator:a742c18026cb42020b52fd9f356e1e26a inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeadfbb00ef0acb3309d5b57bfb9e697 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence=LINK_SEEK_SET) const </td></tr>
 <tr class="separator:adeadfbb00ef0acb3309d5b57bfb9e697 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
@@ -112,12 +112,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6f0de416124d21c32b05cb0112a1c1b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bdcff175528a3615d243cc63f26848c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#a6bdcff175528a3615d243cc63f26848c">get_version</a> (<a class="el" href="classvar_1_1_string.html">var::String</a> &amp;version)</td></tr>
 <tr class="separator:a6bdcff175528a3615d243cc63f26848c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6313adf3b73a6ae09d08f45803c380"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#aeb6313adf3b73a6ae09d08f45803c380">hibernate</a> (int timeout_ms=0)</td></tr>
-<tr class="separator:aeb6313adf3b73a6ae09d08f45803c380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f51b0b1e098f01e1cb8425d78828d3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#ad7f51b0b1e098f01e1cb8425d78828d3">hibernate</a> (int timeout_msec=0)</td></tr>
+<tr class="separator:ad7f51b0b1e098f01e1cb8425d78828d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04a093cc9c64b589e6a7ecd391427717"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#a04a093cc9c64b589e6a7ecd391427717">launch</a> (const char *path, char *exec_dest=0, const char *args=0, int options=0, int ram_size=LAUNCH_RAM_SIZE_DEFAULT, int(*update_progress)(int, int)=0, char *const envp[]=0)</td></tr>
 <tr class="separator:a04a093cc9c64b589e6a7ecd391427717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ba5efae3a79c7213beb225431b5c3e9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#a5ba5efae3a79c7213beb225431b5c3e9">powerdown</a> (int timeout_ms=0)</td></tr>
-<tr class="separator:a5ba5efae3a79c7213beb225431b5c3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69044872e0f721920011be23a8e7a4b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#ab69044872e0f721920011be23a8e7a4b">powerdown</a> (int timeout_msec=0)</td></tr>
+<tr class="separator:ab69044872e0f721920011be23a8e7a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a781597052568356cddeed89c3a5b21e9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#a781597052568356cddeed89c3a5b21e9">reclaim_ram</a> (const char *path, link_transport_mdriver_t *driver=0)</td></tr>
 <tr class="separator:a781597052568356cddeed89c3a5b21e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71fcf7212be8f1725994161dd9e61f71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_sys.html#a71fcf7212be8f1725994161dd9e61f71">redirect_stderr</a> (int fd)</td></tr>
@@ -426,7 +426,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aeb6313adf3b73a6ae09d08f45803c380"></a>
+<a class="anchor" id="ad7f51b0b1e098f01e1cb8425d78828d3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -437,7 +437,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">static int sys::Sys::hibernate </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout_ms</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>timeout_msec</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -450,7 +450,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Puts the kernel in hibernate mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds before the device will wake up from hibernation. If this isn't supported, the device will stay in hibernation until woken up externally </td></tr>
+    <tr><td class="paramname">timeout_msec</td><td>The number of milliseconds before the device will wake up from hibernation. If this isn't supported, the device will stay in hibernation until woken up externally </td></tr>
   </table>
   </dd>
 </dl>
@@ -561,7 +561,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5ba5efae3a79c7213beb225431b5c3e9"></a>
+<a class="anchor" id="ab69044872e0f721920011be23a8e7a4b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -572,7 +572,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">static void sys::Sys::powerdown </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout_ms</em> = <code>0</code></td><td>)</td>
+          <td class="paramname"><em>timeout_msec</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -585,7 +585,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Puts the kernel in powerdown mode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout_ms</td><td>The number of milliseconds before the device will power on (reset). If this isn't supported, the device will power off until reset by an external signal </td></tr>
+    <tr><td class="paramname">timeout_msec</td><td>The number of milliseconds before the device will power on (reset). If this isn't supported, the device will power off until reset by an external signal </td></tr>
   </table>
   </dd>
 </dl>
