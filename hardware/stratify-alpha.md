@@ -1,11 +1,11 @@
 ---
 layout: homepage
-title: ARM Development Board from Stratify Labs
+title: Dev Board | Stratify Labs
 tagline: Hardware
 page_source: StratifyAlpha
 sections:
  intro: Stratify Alpha
- brief: arm cortex-m4 development board with Stratify OS
+ brief: Arm Cortex-M4 development board with Stratify OS
  icon: fa fa-gears fa-3x
 ---
 

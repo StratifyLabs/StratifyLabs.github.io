@@ -51,6 +51,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a03620af31242b61ceab6821378564422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9469b90e0a8a7e770685ed8e5e5fa6c8"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_tmr.html#a9469b90e0a8a7e770685ed8e5e5fa6c8">get_value</a> () const </td></tr>
 <tr class="separator:a9469b90e0a8a7e770685ed8e5e5fa6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f8fe7880bf266dc3065d73b70dc051"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_tmr.html#af0f8fe7880bf266dc3065d73b70dc051">init</a> (u32 o_flags, u32 freq, u32 period, const tmr_pin_assignment_t *pin_assignment=0)</td></tr>
+<tr class="separator:af0f8fe7880bf266dc3065d73b70dc051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed1c441f6c559d57ff8fa2baa5a2727a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_tmr.html#aed1c441f6c559d57ff8fa2baa5a2727a">set_attr</a> (u32 o_flags, u32 freq, u32 period, const tmr_pin_assignment_t *pin_assignment=0)</td></tr>
+<tr class="separator:aed1c441f6c559d57ff8fa2baa5a2727a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c6d697096bf9d8b54cd2273517de7bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_tmr.html#a8c6d697096bf9d8b54cd2273517de7bb">set_channel</a> (u32 <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, u32 value)</td></tr>
 <tr class="separator:a8c6d697096bf9d8b54cd2273517de7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86829172cf346d37af980191f825084f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_tmr.html#a86829172cf346d37af980191f825084f">set_value</a> (u32 value) const </td></tr>
@@ -236,6 +240,121 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the value of the timer. </p>
+
+</div>
+</div>
+<a class="anchor" id="af0f8fe7880bf266dc3065d73b70dc051"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::Tmr::init </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>o_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const tmr_pin_assignment_t *&#160;</td>
+          <td class="paramname"><em>pin_assignment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the hardware timer as specified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_flags</td><td>The <a class="el" href="classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. ">Tmr</a> flags </td></tr>
+    <tr><td class="paramname">freq</td><td>The timer frequency (if applicable) </td></tr>
+    <tr><td class="paramname">period</td><td>The timer period (if applicable and supported) </td></tr>
+    <tr><td class="paramname">pin_assignment</td><td>A pointer to the pin assignment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>This method will first open the port and then set the timer attributes. </p>
+
+</div>
+</div>
+<a class="anchor" id="aed1c441f6c559d57ff8fa2baa5a2727a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::Tmr::set_attr </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>o_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const tmr_pin_assignment_t *&#160;</td>
+          <td class="paramname"><em>pin_assignment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the hardware timer attributes as specified.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_flags</td><td>The <a class="el" href="classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. ">Tmr</a> flags </td></tr>
+    <tr><td class="paramname">freq</td><td>The timer frequency (if applicable) </td></tr>
+    <tr><td class="paramname">period</td><td>The timer period (if applicable and supported) </td></tr>
+    <tr><td class="paramname">pin_assignment</td><td>A pointer to the pin assignment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: ARM Development Board from Stratify Labs
+title: Dev Board | Stratify Labs
 tagline: Hardware
 page_source: CoActionHero
 sections:

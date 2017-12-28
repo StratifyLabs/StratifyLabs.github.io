@@ -26,76 +26,86 @@ $(function () {
 </div>
 </div>
 
-<div style="background: #ddd; height: auto">
 <div class="container">
-  <h2>Getting <b>Started</b></h2>
-  </div>
-  {% include JB/stratify-os-resource-links.html %}
+<center><h2>Develop <b>Faster!</b></h2></center>
+
+<hr />
+  <p>Stratify OS is a microcontroller operating system designed to bring the <b>software innovation</b> model that has made computers and smartphones enormously successful to <b>microcontroller hardware</b>. This means application-based development on easy-to-use, inexpensive microcontroller hardware!</p>
+<hr />
+
+<div class="row">
+
+{% include JB/youtube-video.html
+  url="https://www.youtube.com/embed/e7PNh4W0tAA?rel=0&hd=1"
+  cc="col-md-12"
+  dim_md='width="600" height="338"'
+  dim_lg='width="750" height="422"'
+%}
+
+</div>
 </div>
 
 <div style="background: #fff;">
 	<div class="container">
-	<h1>Develop <b>Faster</b></h1>
-  <p>Stratify OS is a microcontroller operating system designed to bring the <b>software innovation</b> model that has made computers and smartphones enormously successful to <b>microcontroller hardware</b>. Typically, microcontrollers require all the code to be integrated at the source or object code level which is a big pain when developing sophisticated products.</p>
+
 		<div class="row" style="margin-top: 20px; margin-bottom: 20px; text-align: center">
 			<div class="col-md-4">
 				<div class="alert alert-warning" style="height:180px">
 					<h4>Stratify OS Pre-Installed</h4>
-					<h1><b>1</b></h1>
+					<h1><i class="fa fa-microchip"></i></h1>
 					<p>Kernel is already built and ready to run on your board.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="alert alert-info" style="height:180px">
 					<h4>Download Middleware Apps</h4>
-					<h1><b>2</b></h1>
+					<h1><i class="fa fa-download"></i></h1>
 					<p>Middleware is distributed as pre-compiled applications.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="alert alert-success" style="height:180px">
 					<h4>Write your application</h4>
-					<h1><b>3</b></h1>
+					<h1><i class="fa fa-pencil"></i></h1>
 					<p>Develop your application in C/C++ and POSIX.</p>
 				</div>
 			</div>
 		</div>
-    <p>Stratify OS is fully-featured including.</p>
+
+    <div class="panel panel-default">
+    <div class="panel-heading">
+    <h2 class="panel-title">Features</h2>
+    </div>
+    <div class="panel-body" style="font-size: 1.25em">
+
     <div class="row">
 			<div class="col-md-4">
-          <ul>
-            <li>Task Management</li>
-            <li>Memory Protected Processes</li>
-            <li>Multi-threaded Applications</li>
-            <li>Interprocess Signaling</li>
+      <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Task Management</li>
+            <li><i class="fa-li fa fa-check-square"></i>Memory Protected Processes</li>
+            <li><i class="fa-li fa fa-check-square"></i>Multi-threaded Applications</li>
+            <li><i class="fa-li fa fa-check-square"></i>Interprocess Signaling</li>
           </ul>
 			</div>
 			<div class="col-md-4">
-        <ul>
-          <li>Standard C Library API</li>
-          <li>Posix API</li>
-          <li>Socket API</li>
-          <li>C++ Application Library</li>
+      <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check-square"></i>Standard C Library API</li>
+          <li><i class="fa-li fa fa-check-square"></i>Posix API</li>
+          <li><i class="fa-li fa fa-check-square"></i>Socket API</li>
+          <li><i class="fa-li fa fa-check-square"></i>C++ Application Library</li>
         </ul>
 			</div>
 			<div class="col-md-4">
-        <ul>
-          <li>Filesystem Integration</li>
-          <li>Device Tree Hardware Abstraction</li>
-          <li>Portable Applications</li>
-          <li>Seamless IoT Integration</li>
+        <ul class="fa-ul">
+          <li><i class="fa-li fa fa-check-square"></i>Filesystem Integration</li>
+          <li><i class="fa-li fa fa-check-square"></i>Device Filesystem</li>
+          <li><i class="fa-li fa fa-check-square"></i>Portable Applications</li>
+          <li><i class="fa-li fa fa-check-square"></i>Seamless IoT Integration</li>
         </ul>
 			</div>
 		</div>
-
-
-  <div class="row" style="margin-top: 1.5em; margin-bottom: 2.0em">
-    <div class="col-md-12" style="margin-bottom: 2.0em">
-    <center>
-    <iframe width="75%" height="400px" src="https://www.youtube.com/embed/K5sfHB4SMpI" frameborder="0" allowfullscreen></iframe>
-    </center>
     </div>
-  </div>
+    </div>
   </div>
 
 </div>
@@ -206,13 +216,15 @@ $(function () {
 	</div>
 </div>
 
-{% include JB/stratify-os-maker-case.html %}
-{% include JB/stratify-os-feature-compare.html %}
-
-
-
 <div style="background: #fff;">
 	<div class="container">
 		{% include themes/twitter/signup.html %}
 	</div>
+</div>
+
+<div style="background: #ddd; height: auto">
+<div class="container">
+  <h3><b>Developer</b> Links</h3>
+</div>
+  {% include JB/stratify-os-resource-links.html %}
 </div>

@@ -39,14 +39,14 @@ page_source: Doxygen
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0fac222ac04d29ced0beaf710c60f21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#ad0fac222ac04d29ced0beaf710c60f21">busy</a> () const </td></tr>
-<tr class="separator:ad0fac222ac04d29ced0beaf710c60f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72747f98a67e7e35edb95d5d1d3ff36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#ae72747f98a67e7e35edb95d5d1d3ff36">disable</a> () const </td></tr>
+<tr class="separator:ae72747f98a67e7e35edb95d5d1d3ff36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2133c67075545f26a4d98cfd57a03f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#acc2133c67075545f26a4d98cfd57a03f">enable</a> () const </td></tr>
+<tr class="separator:acc2133c67075545f26a4d98cfd57a03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051c6aed578dcbf956af83c45916d9e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#a051c6aed578dcbf956af83c45916d9e4">init</a> (const char *<a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a>)</td></tr>
 <tr class="separator:a051c6aed578dcbf956af83c45916d9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99202c1e6c06ca812e3ffdeb164387c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#a99202c1e6c06ca812e3ffdeb164387c1">off</a> ()</td></tr>
-<tr class="separator:a99202c1e6c06ca812e3ffdeb164387c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbfa9bef1f8757c2086b044283578fa2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#afbfa9bef1f8757c2086b044283578fa2">on</a> ()</td></tr>
-<tr class="separator:afbfa9bef1f8757c2086b044283578fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b96c50684a12eedca0de483dd45017"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#a55b96c50684a12eedca0de483dd45017">is_busy</a> () const </td></tr>
+<tr class="separator:a55b96c50684a12eedca0de483dd45017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0f7c1912c8944a9957410b2c54d9926"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#aa0f7c1912c8944a9957410b2c54d9926">refresh</a> () const </td></tr>
 <tr class="separator:aa0f7c1912c8944a9957410b2c54d9926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8efa48aa4f92cbed69d6712ad67c43bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_display_dev.html#a8efa48aa4f92cbed69d6712ad67c43bc">wait</a> (u16 resolution) const </td></tr>
@@ -107,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a091ec6420eb5c8dc74245ba2ab8551 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae92ed3f25f82de971d94a7d32b5aae5c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ae92ed3f25f82de971d94a7d32b5aae5c">set_data</a> (const sg_bmap_header_t *hdr, bool readonly=false)</td></tr>
 <tr class="separator:ae92ed3f25f82de971d94a7d32b5aae5c inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8cfc4785f8c016fcbbfdcb7243d5b68 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#ad8cfc4785f8c016fcbbfdcb7243d5b68">set_data</a> (sg_bmap_data_t *mem, sg_size_t w, sg_size_t h, bool readonly=false)</td></tr>
+<tr class="separator:ad8cfc4785f8c016fcbbfdcb7243d5b68 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69a79f065b3288a96e207eadd42f1991 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#a69a79f065b3288a96e207eadd42f1991">set_pen</a> (const <a class="el" href="classsgfx_1_1_pen.html">Pen</a> &amp;<a class="el" href="classsgfx_1_1_bitmap.html#ac03f30c952c2e55e1c0998b2ebf44e4a">pen</a>)</td></tr>
 <tr class="separator:a69a79f065b3288a96e207eadd42f1991 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb195dd77fb5117f4c3ae7f9a709c881 inherit pub_methods_classsgfx_1_1_bitmap"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsgfx_1_1_bitmap.html#acb195dd77fb5117f4c3ae7f9a709c881">set_pen_color</a> (sg_color_t color)</td></tr>
@@ -239,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a0643162cd5dfa837999a95cf7fabf6be inherit pub_static_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad0fac222ac04d29ced0beaf710c60f21"></a>
+<a class="anchor" id="ae72747f98a67e7e35edb95d5d1d3ff36"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -247,7 +249,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool hal::DisplayDev::busy </td>
+          <td class="memname">int hal::DisplayDev::disable </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -259,10 +261,35 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if the display is actively copying the video buffer to the display</p>
-<dl class="section return"><dt>Returns</dt><dd>True if the LCD is busy </dd></dl>
+<p>Turns the display off. </p>
 
-<p>Reimplemented from <a class="el" href="classsgfx_1_1_bitmap.html#a9a2678a42e94cc53b4d488f294057028">sgfx::Bitmap</a>.</p>
+<p>Implements <a class="el" href="classhal_1_1_display.html#ac79a1393ba9cb11a20e93f7d06b79fde">hal::Display</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc2133c67075545f26a4d98cfd57a03f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hal::DisplayDev::enable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Turns the display on. </p>
+
+<p>Implements <a class="el" href="classhal_1_1_display.html#a9d937b7e032d61d9bfbbe3b32a228095">hal::Display</a>.</p>
 
 </div>
 </div>
@@ -293,7 +320,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99202c1e6c06ca812e3ffdeb164387c1"></a>
+<a class="anchor" id="a55b96c50684a12eedca0de483dd45017"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -301,10 +328,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int hal::DisplayDev::off </td>
+          <td class="memname">bool hal::DisplayDev::is_busy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -313,35 +340,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Turns the display off. </p>
+<p>Returns true if the display is actively copying the video buffer to the display</p>
+<dl class="section return"><dt>Returns</dt><dd>True if the LCD is busy </dd></dl>
 
-<p>Reimplemented from <a class="el" href="classhal_1_1_display.html#ae4f277c1e2fde326a776b9ec24603028">hal::Display</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afbfa9bef1f8757c2086b044283578fa2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int hal::DisplayDev::on </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Turns the display on. </p>
-
-<p>Reimplemented from <a class="el" href="classhal_1_1_display.html#a78a636b45bffe9a15a7432173e15116a">hal::Display</a>.</p>
+<p>Reimplemented from <a class="el" href="classsgfx_1_1_bitmap.html#a7a1279f612b57df6d3c406118e419f3a">sgfx::Bitmap</a>.</p>
 
 </div>
 </div>

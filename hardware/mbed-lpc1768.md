@@ -1,11 +1,11 @@
 ---
 layout: homepage
-title: ARM Development Board from Stratify Labs
+title: Dev Board | Stratify Labs
 tagline: Hardware
 page_source: mbedLPC1768
 sections:
  intro: mbed LPC1768
- brief: arm cortex-m3 development board compatible with Stratify OS
+ brief: Arm Cortex-M3 development board compatible with Stratify OS
  icon: fa fa-gears fa-3x
 ---
 

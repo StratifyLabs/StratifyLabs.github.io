@@ -32,27 +32,25 @@ sections:
 
 <div style="background: #fff;">
 	<div class="container">
-  <h2>Stratify <b>Toolbox</b> <small>all-in-one debugging tool</small></h2>
-  <div class="row" style="margin-top: 1.5em; margin-bottom: 2.0em">
-		<div class="col-md-6">
 
-		<h3><i class="fa fa-desktop"></i> In-place <b>Customizable UI</b></h3>
-		<h3><i class="fa fa-bar-chart"></i> High Speed USB <b>Logic</b> Analyzer</h3>
-		<h3><i class="fa fa-download"></i> <b>Flash</b> Programmer</h3>
-		<h3><i class="fa fa-search"></i> I2C/SPI/UART Probe <b>Analyzer</b></h3>
-		<h3><i class="fa fa-cloud"></i> SDK to <b>Build and Share</b> your own tools</h3>
-		<a class="btn btn-lg btn-success" href="{{ BASE_PATH }}/Toolbox/">Learn More</a>
-		</div>
-		<div class="col-md-6" style="margin-bottom: 2.0em">
-		<iframe width="100%" height="315" src="https://www.youtube.com/embed/K5sfHB4SMpI" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
+  <h2>Development <b>Hardware</b> <small>microcontroller boards</small></h2>
 
+  <div class="row">
 
-<hr>
-<h2>Development <b>Hardware</b> <small>microcontroller boards</small></h2>
-
-<div class="row">
+<div class="col-md-4">
+  <div class="panel panel-default">
+    <div class="panel-heading"><h4>Stratify Toolbox</h4></div>
+    <div class="panel-body">
+      <a href="{{ BASE_PATH }}/hardware/stratify-alpha/">
+      <img class="post_image" src="{{ BASE_PATH }}/images/toolbox-angle.jpg" />
+      </a>
+      <p>All-in-one USB Debugging and Development Tool</p>
+    </div>
+    <div class="panel-footer">
+      <a href="{{ BASE_PATH }}/Stratify-Toolbox/" class="btn btn-success">Learn More</a>
+    </div>
+  </div>  
+</div>
 
   <div class="col-md-4">
     <div class="panel panel-default">
@@ -61,13 +59,14 @@ sections:
         <a href="{{ BASE_PATH }}/hardware/stratify-alpha/">
         <img class="post_image" src="{{ BASE_PATH }}/images/stratify-alpha-angle.png" />
         </a>
-        <p>arm cortex-m4 development board with Stratify OS</p>
+        <p>ARM Cortex-M4 Microcontroller Development Board</p>
       </div>
       <div class="panel-footer">
         <a href="{{ BASE_PATH }}/hardware/stratify-alpha/" class="btn btn-success">Learn More</a>
       </div>
     </div>  
   </div>
+
 
   <div class="col-md-4">
     <div class="panel panel-default">
@@ -76,7 +75,7 @@ sections:
       <a href="{{ BASE_PATH }}/hardware/coaction-hero/">
         <img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero-angle.png" />
         </a>
-        <p>arm cortex-m3 development board with Stratify OS</p>
+        <p>ARM Cortex-M3 Microcontroller Development Board</p>
       </div>
       <div class="panel-footer">
         <a href="{{ BASE_PATH }}/hardware/coaction-hero/" class="btn btn-success">Learn More</a>
@@ -91,10 +90,25 @@ sections:
       <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/">
         <img class="post_image" src="{{ BASE_PATH }}/images/mbedLPC1768-1.png" />
         </a>
-        <p>arm cortex-m3 development board compatible with Stratify OS</p>
+        <p>ARM Cortex-M3 Microcontroller Development Board</p>
       </div>
       <div class="panel-footer">
         <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/" class="btn btn-success">Learn More</a>
+      </div>
+    </div>  
+  </div>
+
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><h4>Nucleo-F446ZE</h4></div>
+      <div class="panel-body">
+      <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/">
+        <img class="post_image" src="{{ BASE_PATH }}/images/nucleo-f446ze.png" />
+        </a>
+        <p>STM32 ARM Cortex M4 Microcontroller Development Board</p>
+      </div>
+      <div class="panel-footer">
+        <a href="{{ BASE_PATH }}/hardware/nucleo-f446ze/" class="btn btn-success">Learn More</a>
       </div>
     </div>  
   </div>

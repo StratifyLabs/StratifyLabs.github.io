@@ -34,7 +34,8 @@ page_source: Doxygen
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class allows simple manipulation of the uart_pin_assignment_t. </p>
+<div class="textblock"><p>This class allows simple manipulation of the uart_pin_assignment_t.</p>
+<div class="fragment"><div class="line">UartPinAssignment pin_assignment;</div><div class="line">pin_assignment-&gt;tx = mcu_pin(0,1);</div><div class="line">pin_assignment-&gt;rx = mcu_pin(0,1);</div><div class="line"></div><div class="line">Uart uart(0);</div><div class="line">uart.set_attr(<a class="code" href="classhal_1_1_uart.html#a9fecf8000f3feecca2ac606674307250a8159a5a219cbca97ba0d9e6c5143b130">Uart::FLAG_SET_LINE_CODING</a>, 115200, 8, pin_assignment);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classhal_1_1_uart.html" title="UART Class. ">hal::Uart</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>

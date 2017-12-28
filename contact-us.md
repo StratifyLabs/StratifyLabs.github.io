@@ -26,7 +26,7 @@ sections:
 	<div class="container">
 		<h2 class="section-heading">{{ page.form_title }}</h2>
 		<div class="row">
-			<div class="col-md-12 col-lg-offset-3 col-lg-6">
+			<div class="col-md-8 col-md-offset-2">
         {% include JB/contact-us-form.html %}
 			</div>
 		</div>
