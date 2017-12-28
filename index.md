@@ -33,7 +33,7 @@ page_source: HomeToolbox
 			<p>Program, debug, probe, and analyze using one simple tool.</p>
 			<h4><i class="fa fa-cloud"></i><b>Build and Share</b> your own Tools</h4>
 			<p>Create your own UI/firmware tools and share them instantly in the Cloud.</p>
-			<a class="btn btn-lg btn-success" href="{{ BASE_PATH }}/Stratify-Toolbox/">Learn More</a>
+			<a class="btn btn-lg btn-info" href="{{ BASE_PATH }}/Stratify-Toolbox/">Learn More</a>
 			<p> </p>
 		</div>
 		{% include JB/youtube-video.html
@@ -96,9 +96,9 @@ page_source: HomeToolbox
 				<li><i class="fa fa-chevron-right"></i>Prototyping, Debugging, and Testing</li>
 				</ul>
 				<p>We specialize in building smart products and can save you a lot of time and money using Stratify OS which is designed for rapid development of sophisticated microcontroller products.</p>
-				<a class="btn btn-lg btn-info" href="{{ BASE_PATH }}/services/">
+				<p><a class="btn btn-lg btn-info" href="{{ BASE_PATH }}/services/">
 					Learn More
-				</a>
+				</a></p>
 			</div>
 			<div class="col-md-5">
 				<img class="post_image" src="{{ BASE_PATH }}/images/PCB-layout-screen.png" />

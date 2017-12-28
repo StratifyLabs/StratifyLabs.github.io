@@ -163,7 +163,8 @@ sections:
           <h3>Fogo: the Ultimate Adventure Gadget</h3>
           <p>We helped take the Fogo all the way from concept to market including
           market research, development and engineering, factory selection, production and shipping. It is powered by Stratify OS which enables the Fogo to run different apps such as an fitness monitor, compass, and walkie-talkie.</p>
-          <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+          <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+
 			</div>
 		</div>
 
@@ -173,7 +174,7 @@ sections:
       <div class="col-md-7">
         <h3>Apiqe Commercial Water Appliance</h3>
         <p>The Apiqe water dispenser is powered by Stratify OS which made for a very smooth PCB and firmware design effort and a great product. We designed the schematic, did the PCB layout and developed the firmware to control various industrial devices such as solenoids and heaters.</p>
-        <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
       </div>
       <div class="col-md-5">
         <img class="post_image" src="{{ BASE_PATH }}/images/apiqe-work.png" />
@@ -200,7 +201,7 @@ sections:
       <div class="col-md-7">
         <h3>Industrial Control Board</h3>
         <p>This PCB is for an industrial control product utilizing motor control, fan control, temperature sensing, USB connectivity, and an LCD based user interface.</p>
-        <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
       </div>
       <div class="col-md-5">
         <img class="post_image" src="{{ BASE_PATH }}/images/tinyjohn-lcd-picture.png" />
@@ -227,7 +228,8 @@ sections:
       <div class="col-md-7">
         <h3>Smart Headphones PCB</h3>
         <p>This board implemented USB audio connected to an single board Android computer. The board took USB audio to a USB to I2S controller to a DAC to a headphone amplifier. It also implemented a OLED display and button input using a microcontroller.</p>
-        <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+
       </div>
       <div class="col-md-5">
         <img class="post_image" src="{{ BASE_PATH }}/images/headphones-board.png" />
@@ -246,7 +248,8 @@ sections:
         <h3>Stratify Toolbox</h3>
         <p>The Stratify Toolbox is an internal product that we are taking from concept to production. It is a development and debugging tool. Our industrial design and mechanical engineering partners did provided the design the machined aluminum chassis while we designed the PCB and firmware.</p>
         <p>The Toolbox uses just about every embedded serial protocol available: USB, UART, SPI, I2S, I2C, SDIO, H-bridge driver, and advanced timer capture. The user interface is the Stratify App built using QML/Qt. <a class="btn btn-default btn-sm" href="{{ BASE_PATH }}/Stratify-Toolbox">Learn More</a></p>
-        <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+
 
       </div>
     </div>
@@ -257,7 +260,8 @@ sections:
       <div class="col-md-7">
         <h3>Scientific/Industrial Control Board</h3>
         <p>This control board drives a 320x240 color LCD and controls various heaters and temperature sensors in order to apply a temperature profile to scientific liquids.</p>
-        <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+
       </div>
 
       <div class="col-md-5">
@@ -276,7 +280,8 @@ sections:
       <div class="col-md-7">
         <h3>Medical Instrumentation Prototype Board</h3>
         <p>This PCB was designed to measure high fidelity audio signals for medical instrumentation. It makes use of multi-channel audio codecs plus a speaker output.</p>
-        <a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+      
 
       </div>
     </div>
