@@ -19,22 +19,40 @@ page_source: HomeToolbox
 </div>
 </div>
 
+<div style="background: #ddd;">
+	<div class="container" style="padding-top: 10px; padding-bottom: 10px">
+		{% include themes/twitter/toolbox-signup.html %}
+		<center>
+		<p>Signup now for a chance to win a free Stratify Toolbox beta</p>
+		</center>
+	</div>
+</div>
+
 <div style="background: #fff;">
 	<div class="container" style="padding-top: 10px; padding-bottom: 10px">
 
-	<h2>Coming Soon: Stratify <b>Toolbox</b> <small>All-in-One Development and Debugging Tool</small></h2>
+	<h2>Stratify <b>Toolbox</b> <small>Coming Soon</small></h2>
   <div class="row" style="margin-top: 1.5em; margin-bottom: 2.0em">
 		<div class="col-md-4">
-			<h4><i class="fa fa-desktop"></i> Real-Time <b>UI Customization</b></h4>
-			<p>Customize the UI in real-time to optimize <i>your</i> workflow.</p>
-			<h4><i class="fa fa-bar-chart"></i> High Speed USB <b>Logic</b> Analyzer</h4>
-			<p>Analyze signals at over 100MHz with a high speed USB connection.</p>
-			<h4><i class="fa fa-download"></i> <b>Flash</b> Programmer</h4>
-			<p>Program, debug, probe, and analyze using one simple tool.</p>
-			<h4><i class="fa fa-cloud"></i><b>Build and Share</b> your own Tools</h4>
-			<p>Create your own UI/firmware tools and share them instantly in the Cloud.</p>
-			<a class="btn btn-lg btn-info" href="{{ BASE_PATH }}/Stratify-Toolbox/">Learn More</a>
-			<p> </p>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h5><i class="fa fa-wrench"></i> <b>All-in-One</b> Debugging Tool</h5>
+					<p>Program, debug, probe, and analyze using one simple tool.</p>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h5><i class="fa fa-desktop"></i> Real-Time <b>UI Customization</b></h5>
+					<p>Customize the UI in real-time to optimize <i>your</i> workflow. with buttons, gauges, sliders, etc.</p>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<h5><i class="fa fa-cloud"></i><b>Build and Share</b> your own Tools</h5>
+					<p>Create and share logic and protocol analysis and data acquisition tools.</p>
+				</div>
+			</div>
+
 		</div>
 		{% include JB/youtube-video.html
 		  url="https://www.youtube.com/embed/WXo7_Qmv_sY?rel=0&hd=1"
@@ -44,13 +62,10 @@ page_source: HomeToolbox
 		%}
 	</div>
 
-	<hr />
+<center>
+	<a class="btn btn-lg btn-info" href="{{ BASE_PATH }}/Stratify-Toolbox/">Learn More</a>
+</center>
 
-	<center>
-	<h3>Signup now for a chance to win a free Beta Toolbox</h3>
-	</center>
-
-	{% include themes/twitter/toolbox-signup.html %}
 	</div>
 
 </div>

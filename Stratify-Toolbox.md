@@ -40,26 +40,27 @@ sections:
 %}
 
 <div class="col-md-4">
-<div class="panel panel-default" style="height: 422px">
-<div class="panel-body">
-<h3>How it <b>Works</b></h3>
-<ol>
-<li>Connect to your Mac or PC using USB</li>
-<li>Open the Stratify App</li>
-<li>Select your Tool
-<ul>
-<li>Serial Protocol Analyzers</li>
-<li>Flash Programmers</li>
-<li>Logic Analyzers</li>
-<li>Data Loggers</li>
-<li>Many more</li>
-</ul>
-
-</li>
-<li>Start working your Magic</li>
-</ol>
-</div>
-</div>
+  <h3>How it <b>Works</b></h3>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      1. Connect to your Mac or PC using USB
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      2. Open the Stratify App
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      3. Select the tool you want from the Toolbox or browse tools in the Stratify Cloud.
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      4. Build and share your own tools using <a href="{{ BASE_URL }}/Stratify-Link">Stratify Link</a>
+    </div>
+  </div>
 </div>
 
 </div>
