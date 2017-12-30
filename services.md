@@ -284,8 +284,51 @@ sections:
         <h3>Medical Instrumentation Prototype Board</h3>
         <p>This PCB was designed to measure high fidelity audio signals for medical instrumentation. It makes use of multi-channel audio codecs plus a speaker output.</p>
         <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+      </div>
+    </div>
 
+    <hr>
 
+    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+      <div class="col-md-7">
+        <h3>Microcontroller Prosthetic Knee Prototype</h3>
+        <p>This control board precisely controlled three motors using QEI encoders. An additional QEI encoder was used for measuring the angle of the knee. The QEI encoders were processed using a the microcontroller plus a CPLD. The microcontroller implemented an algorithm that could store and release energy that aided gait and high energy activities.</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+
+      </div>
+
+      <div class="col-md-5">
+        <img class="post_image" src="{{ BASE_PATH }}/images/knee-image.jpeg" />
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+      <div class="col-md-5">
+        <center>
+        <img class="post_image" src="{{ BASE_PATH }}/images/4-axis-motor-control.png" />
+        </center>
+      </div>
+      <div class="col-md-7">
+        <h3>4-axis Motor Control Medical Instrumentation Prototype</h3>
+        <p>This prototype board controlled 8 brushless DC motors! There was a microcontroller for each group of four motors. The firmware also sensed the motor location using encoders and potentiometers.</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+      <div class="col-md-7">
+        <h3>Portable Security Camera Prototype</h3>
+        <p>For this project, we used a microcontroller to interface with a small CMOS camera and LCD. The device could take snap shots and send them to a mobile phone or computer over bluetooth.</p>
+        <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
+
+      </div>
+
+      <div class="col-md-5">
+        <img class="post_image" src="{{ BASE_PATH }}/images/portable-security-camera.jpg" />
       </div>
     </div>
 
