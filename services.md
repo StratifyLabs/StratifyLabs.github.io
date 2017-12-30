@@ -29,7 +29,6 @@ sections:
 			<center>
 				<a class="btn btn-lg btn-success" href="{{ BASE_PATH }}/contact-us">Request a Free Consultation</a>
 			</center>
-
 		</p>
 	</div>
 </div>
@@ -76,9 +75,13 @@ sections:
 				</div>
 			</div>
 		</div>
-
 </div>
 
+<p>
+  <center>
+    <a class="btn btn-lg btn-primary" href="{{ BASE_PATH }}/product%20management/2017/12/29/Engineering-Process/">Read About Our Process</a>
+  </center>
+</p>
 
 </div>
 
@@ -281,7 +284,7 @@ sections:
         <h3>Medical Instrumentation Prototype Board</h3>
         <p>This PCB was designed to measure high fidelity audio signals for medical instrumentation. It makes use of multi-channel audio codecs plus a speaker output.</p>
         <p><a class="btn btn-primary btn-lg" href="{{ BASE_PATH }}/Stratify-OS">Powered by Stratify OS</a></p>
-      
+
 
       </div>
     </div>
