@@ -740,7 +740,7 @@
 		<text transform="matrix(1 0 0 1 281.2733 447.5892)" class="st3 st4 st5">B</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 391.4779 302.7024)"><tspan x="0" y="0" class="st3 st4 st5">00 = 1</tspan><tspan x="0" y="18.6" class="st3 st4 st5">01 = 1</tspan><tspan x="0" y="37.2" class="st3 st4 st5">10 = 1</tspan><tspan x="0" y="55.8" class="st3 st4 st5">11 = 0 </tspan></text>
+		<text transform="matrix(1 0 0 1 391.4779 302.7024)"><tspan x="0" y="0" class="st3 st4 st5">00 = 1</tspan><tspan x="0" y="18.6" class="st3 st4 st5">01 = 0</tspan><tspan x="0" y="37.2" class="st3 st4 st5">10 = 0</tspan><tspan x="0" y="55.8" class="st3 st4 st5">11 = 0 </tspan></text>
 	</g>
 	<g>
 		<text transform="matrix(1 0 0 1 281.8529 434.2055)" class="st3 st4 st5">1</text>
@@ -767,16 +767,16 @@
 		<text transform="matrix(1 0 0 1 368.769 464.583)" class="st3 st4 st5">OFF</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 218.3056 280.5214)" class="st3 st4 st5">ON</text>
+		<text transform="matrix(1 0 0 1 218.3056 280.5214)" class="st3 st4 st5">OFF</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 217.269 296.583)" class="st3 st4 st5">OFF</text>
+		<text transform="matrix(1 0 0 1 217.269 296.583)" class="st3 st4 st5">ON</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 219.8056 151.9756)" class="st3 st4 st5">ON</text>
+		<text transform="matrix(1 0 0 1 219.8056 151.9756)" class="st3 st4 st5">OFF</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 218.769 168.037)" class="st3 st4 st5">OFF</text>
+		<text transform="matrix(1 0 0 1 218.769 168.037)" class="st3 st4 st5">ON</text>
 	</g>
 	<line class="st6" x1="390.6" y1="484.6" x2="239.2" y2="485.3"/>
 	<line class="st6" x1="239" y1="413.5" x2="391" y2="413.5"/>
@@ -785,7 +785,6 @@
 	<line class="st7" x1="356" y1="450.5" x2="343" y2="450.5"/>
 	<line class="st6" x1="341" y1="450.5" x2="267" y2="450.5"/>
 	<line class="st7" x1="346" y1="450.5" x2="341" y2="450.5"/>
-	<circle class="st8" cx="351.3" cy="451" r="4"/>
 </g>
 <g id="Layer_4">
 	<line class="st6" x1="238.5" y1="480" x2="238.5" y2="501"/>

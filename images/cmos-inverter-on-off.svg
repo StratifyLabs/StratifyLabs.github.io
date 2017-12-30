@@ -740,10 +740,10 @@
 		<text transform="matrix(1 0 0 1 356.6455 295.5822)" class="st3 st4 st5">1</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 261.3336 193.6667)" class="st3 st4 st5">ON</text>
+		<text transform="matrix(1 0 0 1 261.3336 193.6667)" class="st3 st4 st5">OFF</text>
 	</g>
 	<g>
-		<text transform="matrix(1 0 0 1 259.9997 214.3335)" class="st3 st4 st5">OFF</text>
+		<text transform="matrix(1 0 0 1 259.9997 214.3335)" class="st3 st4 st5">ON</text>
 	</g>
 	<g>
 		<text transform="matrix(1 0 0 1 261.3336 357.6667)" class="st3 st4 st5">ON</text>
