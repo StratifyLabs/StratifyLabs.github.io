@@ -3,8 +3,8 @@ layout: homepage
 title: Contact Form
 tagline: Contact Form
 sections:
- intro: New Client
- brief: Contact Form
+ intro: Contact Us
+ brief: PCB Design and Firmware Development Services
  icon: fa fa-envelope-square fa-3x
 ---
 
@@ -26,6 +26,15 @@ sections:
 	<div class="container">
 		<h2 class="section-heading">{{ page.form_title }}</h2>
 		<div class="row">
+      <div class="col-md-3 col-md-offset-2">
+        <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/services">Our Services</a>
+      </div>  
+      <div class="col-md-2">
+        <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/product%20management/2017/12/29/Engineering-Process/">Our Process</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-lg btn-primary pull-right" href="{{ BASE_URL }}/Stratify-OS">Our Technology</a>
+      </div>   
 			<div class="col-md-8 col-md-offset-2">
         {% include JB/contact-us-form.html %}
 			</div>
