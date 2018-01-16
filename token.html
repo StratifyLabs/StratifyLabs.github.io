@@ -50,21 +50,23 @@
 		<input type="password" class="form-control" name="pass" id="pass" placeholder="password">
 	</div>
 </form>
-<button class="btn btn-default" onclick="signInFunction()">Sign In</button>
+<button class="btn btn-default" onclick="signInFunction()">Submit</button>
 
 <p> </p>
-<form>
-	<div class="form-group">
-		<label for="token">Token</label>
-		<input class="form-control" type="text" id="token" name="token" placeholder="copy entire contents as token">
-	</div>
-</form>
+
+<button id="signin-button" class="btn btn-default" style="visibility:hidden" data-clipboard-action="copy" data-clipboard-text='{ "type": "error" }'>Click to Complete Signin</button>
 
 </div>
 
 <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script src="/assets/clipboard.min.js"></script>
 <script>
+
+var loginToken;
 var isFirebaseInitialized = false;
+
+new Clipboard("#signin-button");
+
 
 
 function initializeFirebase(){
@@ -121,8 +123,14 @@ function signInFunction() {
     		result.getToken().then(function(token){
         var userId = firebase.auth().currentUser.uid;
 
-        console.log("{  \"status\": \"success\", \"uid\": \"" + userId + "\", \"token\": \"" + token + "\"}");
-        document.getElementById("token").value = "{  \"status\": \"success\", \"uid\": \"" + userId + "\", \"token\": \"" + token + "\"}";
+        var json = '{  "type": "StratifyToken", "status": "success", "uid": "' + userId + '", "token": "' + token + '"}';
+
+        console.log(json);
+
+        document.getElementById("signin-button").style.visibility = "visible";
+        document.getElementById("signin-button").setAttribute('data-clipboard-text', json);
+
+
     });
     });
 	}
