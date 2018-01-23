@@ -9,8 +9,9 @@
   <Version>3.8.1</Version>
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
-  <UpdateFile UncompressedSize="87263754" CompressedSize="21876440" OS="Any"/>
+  <Script>installscript.qs</Script>
+  <UpdateFile UncompressedSize="87263754" OS="Any" CompressedSize="21876444"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>f0fddb8e7c922f476d5ed46df1a025105a1bc60f</SHA1>
+  <SHA1>2198f5ec5d1fda412dc2f70765b4b216e1a07331</SHA1>
  </PackageUpdate>
 </Updates>
