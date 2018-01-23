@@ -9,8 +9,8 @@
   <Version>3.8.1</Version>
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
-  <UpdateFile CompressedSize="21876829" OS="Any" UncompressedSize="87263754"/>
+  <UpdateFile UncompressedSize="87263754" CompressedSize="21876441" OS="Any"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>29c78ad2cbd05af1ef46ed459a882a03f357c7af</SHA1>
+  <SHA1>efe2a017b68ea7a885944edd402c1ea1c0e905b4</SHA1>
  </PackageUpdate>
 </Updates>
