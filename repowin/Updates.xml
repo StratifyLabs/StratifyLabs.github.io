@@ -1,0 +1,63 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>co.stratifylabs.compiler</Name>
+  <DisplayName>Stratify Compiler</DisplayName>
+  <Description>GCC arm-none-eabi compiler and tools</Description>
+  <Version>5.4.1</Version>
+  <ReleaseDate>2018-01-04</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile UncompressedSize="42200770" OS="Any" CompressedSize="3899481"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <Licenses>
+   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
+  </Licenses>
+  <SHA1>be88b1812eb39143d42547eff97bb63dfaf8358b</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.sdk</Name>
+  <DisplayName>Stratify SDK</DisplayName>
+  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
+  <Version>3.3</Version>
+  <ReleaseDate>2018-01-04</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile UncompressedSize="369954020" OS="Any" CompressedSize="27623044"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <SHA1>8839002acf71849f7f1a5e97a5439b91849b4276</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.slui</Name>
+  <DisplayName>SL.UI</DisplayName>
+  <Description>SL.UI is documentation/reference application for the Stratify Labs UI framework.</Description>
+  <Version>1.0</Version>
+  <ReleaseDate>2018-01-04</ReleaseDate>
+  <Default>true</Default>
+  <UpdateFile UncompressedSize="40" OS="Any" CompressedSize="154"/>
+  <DownloadableArchives>Apps.7z</DownloadableArchives>
+  <SHA1>f160d7ca348880785c83a9f46fa4def7cd66630b</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.stratifyapp</Name>
+  <DisplayName>Stratify App</DisplayName>
+  <Description>Stratify App connects hardware, users, and the cloud in a seamless way.</Description>
+  <Version>1.4</Version>
+  <ReleaseDate>2018-01-04</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile UncompressedSize="40" OS="Any" CompressedSize="154"/>
+  <DownloadableArchives>Apps.7z</DownloadableArchives>
+  <SHA1>f26b501a02b08851d12634b63ca919add6fc03a3</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.stratifylink</Name>
+  <DisplayName>Stratify Link</DisplayName>
+  <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
+  <Version>3.8.1</Version>
+  <ReleaseDate>2018-01-19</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile UncompressedSize="87077186" OS="Any" CompressedSize="21861593"/>
+  <DownloadableArchives>Apps.7z</DownloadableArchives>
+  <SHA1>e9c8ea7fa01e61842ffca531f22052f467a8fce2</SHA1>
+ </PackageUpdate>
+</Updates>
