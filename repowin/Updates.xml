@@ -1,0 +1,16 @@
+<Updates>
+ <ApplicationName>{AnyApplication}</ApplicationName>
+ <ApplicationVersion>1.0.0</ApplicationVersion>
+ <Checksum>true</Checksum>
+ <PackageUpdate>
+  <Name>co.stratifylabs.stratifylink</Name>
+  <DisplayName>Stratify Link</DisplayName>
+  <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
+  <Version>3.8.1</Version>
+  <ReleaseDate>2018-01-23</ReleaseDate>
+  <Default>true</Default>
+  <UpdateFile UncompressedSize="87263754" CompressedSize="21876440" OS="Any"/>
+  <DownloadableArchives>Apps.7z</DownloadableArchives>
+  <SHA1>f0fddb8e7c922f476d5ed46df1a025105a1bc60f</SHA1>
+ </PackageUpdate>
+</Updates>
