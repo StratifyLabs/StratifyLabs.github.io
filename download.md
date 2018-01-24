@@ -45,19 +45,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/oxygenr" target="_blank">Eclipse C/C++ Development Toolkit</a>
-    </p>
-  </center>
-
-  <center>
-    <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.0.0/Stratify-Labs-SDK-Installer-3.0.0.exe">ARM Compiler with Stratify SDK</a>
-    </p>
-  </center>
-
-  <center>
-    <p>
-      <a class="btn btn-lg btn-primary" href="https://github.com/StratifyLabs/StratifyLabs.github.io/releases/download/v3.1/Stratify-Link-Installer-3.1.exe">Stratify Link</a>
+      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer-Win.zip">Windows Installer</a>
     </p>
   </center>
 
@@ -71,7 +59,7 @@ sections:
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer.zip">Online Installer</a>
+      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer-Mac.zip">Mac Installer</a>
     </p>
   </center>
 

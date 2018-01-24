@@ -9,12 +9,12 @@
   <Version>5.4.1</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="42415300" CompressedSize="3995101" OS="Any"/>
+  <UpdateFile OS="Any" CompressedSize="3995139" UncompressedSize="42415300"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <Licenses>
    <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
   </Licenses>
-  <SHA1>0ade3f94f953ef0b47ec237480e902cdb6636853</SHA1>
+  <SHA1>7583f6b038bce30bff9b4ceef8e7a53eaf5f15b2</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.sdk</Name>
@@ -23,9 +23,9 @@
   <Version>3.3</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="188573404" CompressedSize="21929679" OS="Any"/>
+  <UpdateFile OS="Any" CompressedSize="21929538" UncompressedSize="188573404"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <SHA1>9892a55b6e823f082b959bed5cde11c7b3a1b065</SHA1>
+  <SHA1>b59b32796c40eaac8dbd340224a61dcb5972a3d5</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.slui</Name>
@@ -35,9 +35,9 @@
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile UncompressedSize="85619628" CompressedSize="21519605" OS="Any"/>
+  <UpdateFile OS="Any" CompressedSize="21519776" UncompressedSize="85619628"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>8b11645c1b45096964cc667b4a43f791facbfaa0</SHA1>
+  <SHA1>d31c0745c8878a686b180f11b32779f248691b16</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifyapp</Name>
@@ -47,9 +47,9 @@
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile UncompressedSize="87267414" CompressedSize="21889335" OS="Any"/>
+  <UpdateFile OS="Any" CompressedSize="21889557" UncompressedSize="87267414"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>b9d28fb592e43f06b74f121e01a93aef65894d2b</SHA1>
+  <SHA1>a6d88ca0d1bf50e4a87922ca4b0688cef8345d71</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifylink</Name>
@@ -59,8 +59,8 @@
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile UncompressedSize="87271950" CompressedSize="21877990" OS="Any"/>
+  <UpdateFile OS="Any" CompressedSize="21878116" UncompressedSize="87271950"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>87ebc367827ad3ecf32ffbbc02682d29b9523946</SHA1>
+  <SHA1>af6cd5ee0b0f81f45a4bb4dea4bda68ee7f41045</SHA1>
  </PackageUpdate>
 </Updates>
