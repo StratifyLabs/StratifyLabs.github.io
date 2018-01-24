@@ -39,13 +39,10 @@ sections:
 
 <div class="row">
   <div class="col-md-6">
-  <center>
-  <h4>Download for <b>Windows</b></h4>
-  </center>
 
   <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer-Win.zip">Windows Installer</a>
+      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer-Win.zip"><i class="fa fa-download"></i> Windows Installer</a>
     </p>
   </center>
 
@@ -54,12 +51,8 @@ sections:
   <div class="col-md-6">
 
   <center>
-  <h4>Download for <b>Mac</b></h4>
-  </center>
-
-  <center>
     <p>
-      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer-Mac.zip">Mac Installer</a>
+      <a class="btn btn-lg btn-primary" href="{{ BASE_URL }}/files/StratifyLabs-Installer-Mac.zip"><i class="fa fa-download"></i> Mac OS X Installer</a>
     </p>
   </center>
 
