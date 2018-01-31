@@ -783,7 +783,7 @@ Static Public Member Functions</h2></td></tr>
 <p>See <a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh()</a> for an example.</p>
 <dl class="section return"><dt>Returns</dt><dd>True if the <a class="el" href="classsgfx_1_1_bitmap.html#a7bbce417565555014ae9f811ba38dc78">refresh()</a> is still in progress, false if the bitmap can be modified again </dd></dl>
 
-<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#a55b96c50684a12eedca0de483dd45017">hal::DisplayDev</a>.</p>
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_device.html#aa15916592a259d9f238c2ce50e3c9285">hal::DisplayDevice</a>.</p>
 
 </div>
 </div>
@@ -927,9 +927,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method is designated as an interface for classes that inherit <a class="el" href="classsgfx_1_1_bitmap.html" title="Bitmap Class. ">Bitmap</a> to copy the bitmap to a physical device (such as <a class="el" href="classhal_1_1_display_dev.html" title="Display Device. ">hal::DisplayDev</a>). The implementation in this class is simple an empty method. Here is an example:</p>
+<p>This method is designated as an interface for classes that inherit <a class="el" href="classsgfx_1_1_bitmap.html" title="Bitmap Class. ">Bitmap</a> to copy the bitmap to a physical device (such as hal::DisplayDev). The implementation in this class is simple an empty method. Here is an example:</p>
 <div class="fragment"><div class="line">DisplayDev display; <span class="comment">//this class inherits bitmap and re-implments refresh()</span></div><div class="line"></div><div class="line">display.clear(); <span class="comment">//clear the bitmap in memory</span></div><div class="line">display.refresh(); <span class="comment">//copy the memory to the physical device (or notify the underlying driver that it is time to copy)</span></div></div><!-- fragment --> 
-<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#aa0f7c1912c8944a9957410b2c54d9926">hal::DisplayDev</a>.</p>
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_device.html#a5a3dc669c44fe5c8614678d2d1380d53">hal::DisplayDevice</a>.</p>
 
 </div>
 </div>
@@ -1317,7 +1317,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>This method will block until the refresh operation is complete </p>
 
-<p>Reimplemented in <a class="el" href="classhal_1_1_display_dev.html#a8efa48aa4f92cbed69d6712ad67c43bc">hal::DisplayDev</a>.</p>
+<p>Reimplemented in <a class="el" href="classhal_1_1_display_device.html#a035a959118c76e404388ccf2037a42b0">hal::DisplayDevice</a>.</p>
 
 </div>
 </div>

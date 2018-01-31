@@ -31,7 +31,7 @@ page_source: Doxygen
 <a href="classsys_1_1_messenger-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">sys::Messenger Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">sys::Messenger Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
@@ -39,8 +39,8 @@ page_source: Doxygen
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a189d97e350ac253bdba47a998ca0f89e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_messenger.html#a189d97e350ac253bdba47a998ca0f89e">handle_message</a> (<a class="el" href="classfmt_1_1_son.html">fmt::Son</a> &amp;message)=0</td></tr>
-<tr class="separator:a189d97e350ac253bdba47a998ca0f89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d49d8277cb3ae3f2a513e5bd8116fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_messenger.html#a92d49d8277cb3ae3f2a513e5bd8116fe">handle_message</a> (<a class="el" href="classfmt_1_1_son.html">fmt::Son</a> &amp;message)</td></tr>
+<tr class="separator:a92d49d8277cb3ae3f2a513e5bd8116fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba47071c47fe9ef7944e9839550fba2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_messenger.html#abba47071c47fe9ef7944e9839550fba2">is_running</a> () const </td></tr>
 <tr class="separator:abba47071c47fe9ef7944e9839550fba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43c78c7d304e36e83aa7459c79368723"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_messenger.html#a43c78c7d304e36e83aa7459c79368723">Messenger</a> (int stack_size=2048)</td></tr>
@@ -77,7 +77,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a189d97e350ac253bdba47a998ca0f89e"></a>
+<a class="anchor" id="a92d49d8277cb3ae3f2a513e5bd8116fe"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -94,7 +94,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -105,7 +105,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>This method is called within the context of the messenger thread. It is a pure vitual method that must be implemented by the class that inherits <a class="el" href="classsys_1_1_messenger.html" title="Messenger Class. ">Messenger</a>. </p>
+<p>The default action for this method simply ignores all incoming messages. You can re-implement this method using an inherited class to handle messages. </p>
 
 </div>
 </div>

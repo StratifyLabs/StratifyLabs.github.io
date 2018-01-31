@@ -9,10 +9,10 @@
   <Version>5.4.1</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="4589509" OS="Any" UncompressedSize="44744172"/>
+  <UpdateFile OS="Any" CompressedSize="4589509" UncompressedSize="44744172"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <Licenses>
-   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
+   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
   </Licenses>
   <SHA1>061322d30b91de92a9d8e8ed6144607bded16d56</SHA1>
  </PackageUpdate>
@@ -23,7 +23,7 @@
   <Version>3.3</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="28565540" OS="Any" UncompressedSize="292955705"/>
+  <UpdateFile OS="Any" CompressedSize="28565540" UncompressedSize="292955705"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <SHA1>0a74961f72d551b000901cb49dcadc4598754a0a</SHA1>
  </PackageUpdate>
@@ -34,7 +34,7 @@
   <Version>1.0</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>true</Default>
-  <UpdateFile CompressedSize="12501977" OS="Any" UncompressedSize="54824072"/>
+  <UpdateFile OS="Any" CompressedSize="12501977" UncompressedSize="54824072"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>f41248c48d213b62b3fe2f6ef8353574836de466</SHA1>
  </PackageUpdate>
@@ -45,7 +45,7 @@
   <Version>1.4</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="12823155" OS="Any" UncompressedSize="56179683"/>
+  <UpdateFile OS="Any" CompressedSize="12823155" UncompressedSize="56179683"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>38eb937d1774ecbb7887c9b97aa0f20391ce3ca8</SHA1>
  </PackageUpdate>
@@ -53,11 +53,11 @@
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.8.1</Version>
-  <ReleaseDate>2018-01-19</ReleaseDate>
+  <Version>3.9</Version>
+  <ReleaseDate>2018-01-30</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="12824513" OS="Any" UncompressedSize="56444209"/>
+  <UpdateFile OS="Any" UncompressedSize="56573217" CompressedSize="12842121"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>23b33ce5133517e61a9ba47d44f313a84b3e11c1</SHA1>
+  <SHA1>7b25e383840dd3464d607f21c3b886d3016a2daf</SHA1>
  </PackageUpdate>
 </Updates>

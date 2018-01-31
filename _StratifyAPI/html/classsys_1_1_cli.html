@@ -47,6 +47,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3adbc683d1ed70056fdff16e9165fceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f111ed466af40b73867d8feea253c1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar_1_1_string.html">var::String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a1f111ed466af40b73867d8feea253c1a">get_option_argument</a> (const char *option) const </td></tr>
 <tr class="separator:a1f111ed466af40b73867d8feea253c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf143f38921a55321b34444854a4275d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#acf143f38921a55321b34444854a4275d">get_option_hex_value</a> (const char *option) const </td></tr>
+<tr class="separator:acf143f38921a55321b34444854a4275d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ea93dc08b0fb7ed051519b43b863146"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a7ea93dc08b0fb7ed051519b43b863146">get_option_pin</a> (const char *option) const </td></tr>
 <tr class="separator:a7ea93dc08b0fb7ed051519b43b863146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28c00f0a022c44ba1d300960d048ec82"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_cli.html#a28c00f0a022c44ba1d300960d048ec82">get_option_value</a> (const char *option) const </td></tr>
@@ -201,6 +203,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acf143f38921a55321b34444854a4275d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sys::Cli::get_option_hex_value </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>option</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the argument of an option as a <a class="el" href="classvar_1_1_string.html" title="String class. ">var::String</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">option</td><td>The option to match </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the argument or 0 if the option wasn't found</dd></dl>
+<p>For example, take the given command line</p>
+<blockquote class="doxtable">
+<p>program -i 0x40 </p>
+</blockquote>
+<p><code>get_option_hex_value("-i")</code> will return 0x40 (64 decimal). </p>
+
+</div>
+</div>
 <a class="anchor" id="a7ea93dc08b0fb7ed051519b43b863146"></a>
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +314,7 @@ Public Member Functions</h2></td></tr>
 <p>The arguments are</p><ul>
 <li>"-i2c [port]" (required)</li>
 <li>"-freq [bitrate]" (optional, default is 100000)</li>
-<li>"-slave_addr" (optional, default is 0)</li>
+<li>"-slave" (optional, default is 0)</li>
 <li>"-scl [X.Y]" (optional port.pin, uses system default otherwise)</li>
 <li>"-sda [X.Y]" (optional port.pin, uses system default otherwise)</li>
 <li>"-pu" (optional flag, use internal pullup resistors) </li>
