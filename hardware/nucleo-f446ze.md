@@ -35,12 +35,14 @@ sections:
 <div class="col-md-7">
 
 <ul>
-<li>Stratify OS BSP In Progress</li>
+<li><a href="https://github.com/StratifyLabs/Nucleo-F446ZE" target="_blank">Stratify OS BSP</a></li>
 <li>STM32F4 Microcontroller Development Board</li>
 <li>168MHz, 512KB flash, 128KB RAM</li>
+<li>Arduino Compatible Pinout</li>
+<li>Download and Install in less the one minute</li>
 </ul>
 
-<a href="https://github.com/StratifyLabs/Nucleo-F446ZE" target="_blank" class="btn btn-success btn-lg">Learn more</a>
+<a href="{{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-Nucleo-F446ZE/" class="btn btn-success btn-lg">Install Now</a>
 
 </div>
 </div>

@@ -5,11 +5,6 @@ category: User Guides
 tagline: Stratify OS User Guide
 page_source: StratifyOSBlog
 tags : [stratify, user-guide, windows]
-ad:
-  title: "Let's Build Together"
-  description: "Stratify Labs can help you build your next product with our expert engineering and consulting services."
-  image: "services-ad-image.png"
-  link: "/services/"
 ---
 
 ## Windows XP/Vista/7

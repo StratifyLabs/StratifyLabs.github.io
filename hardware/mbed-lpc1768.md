@@ -41,10 +41,11 @@ sections:
 <li>On board ethernet PHY</li>
 <li>1MB serial flash chip for storing user files</li>
 <li>Rapid prototyping form factor</li>
+<li>Download and Install in less the one minute</li>
 <li><a href="https://developer.mbed.org/platforms/mbed-LPC1768/" target="_blank">Docs</a></li>
 </ul>
 
-<a href="https://www.hackster.io/tgil/stratity-os-running-on-mbed-lpc1768-1679d7" target="_blank" class="btn btn-success btn-lg">Learn more</a>
+<a href="{{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-mbedLPC1768/" class="btn btn-success btn-lg">Install Now</a>
 
 </div>
 </div>

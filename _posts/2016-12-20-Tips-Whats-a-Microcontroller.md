@@ -19,4 +19,4 @@ From a software development perspective, the big difference between a microcontr
 
 In contrast, microcontrollers run all code in the same address space (no MMU, no virtual memory) making it difficult for anyone but the OEM to build innovative software for the device. This is where Stratify OS comes in. Stratify OS is a microcontroller operating system that simulates an MMU using developer tools and a memory protection unit (MPU). Stratify OS allows microcontroller systems to use the microprocessor developer paradigam which makes firmware projects much easier. It also allows you to build microcontroller based products that are easy for any developer to innovate on.
 
-Learn more about [Stratify OS]({{ BASE_PATH }}/stratifyos/).
+Learn more about [Stratify OS]({{ BASE_PATH }}/Stratify-OS/).

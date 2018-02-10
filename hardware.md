@@ -102,7 +102,7 @@ sections:
     <div class="panel panel-default">
       <div class="panel-heading"><h4>Nucleo-F446ZE</h4></div>
       <div class="panel-body">
-      <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/">
+      <a href="{{ BASE_PATH }}/hardware/nucleo-f446ze/">
         <img class="post_image" src="{{ BASE_PATH }}/images/nucleo-f446ze.png" />
         </a>
         <p>STM32 ARM Cortex M4 Microcontroller Development Board</p>
