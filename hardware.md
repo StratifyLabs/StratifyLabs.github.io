@@ -113,6 +113,23 @@ sections:
     </div>  
   </div>
 
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading"><h4>STM32F411 DISCO</h4></div>
+      <div class="panel-body">
+      <a href="{{ BASE_PATH }}/hardware/stm32f411-disco/">
+        <img class="post_image" src="{{ BASE_PATH }}/images/stm32f411e-disco.jpg" />
+        </a>
+        <p>STM32 ARM Cortex M4 Microcontroller Development Board</p>
+      </div>
+      <div class="panel-footer">
+        <a href="{{ BASE_PATH }}/hardware/stm32f411-disco/" class="btn btn-success">Learn More</a>
+      </div>
+    </div>  
+  </div>
+
+  
+
   </div>
 
 </div>
