@@ -13,8 +13,8 @@ tags : [c, c++, user-guide, development, windows, macosx, Stratify, gcc]
 
 First download the online installer.
 
-- [Windows]({{ BASE_URL }}/files/Stratify-Installer-Win.zip)
-- [Mac]({{ BASE_URL }}/files/Stratify-Installer-Win.zip)
+- [Windows]({{ BASE_URL }}/files/StratifyLabs-Installer-Win.zip)
+- [Mac]({{ BASE_URL }}/files/StratifyLabs-Installer-Mac.zip)
 
 Unzip the installer in any directory then double click the exe (windows) or app bundle (macosx).
 
