@@ -99,7 +99,7 @@
   background-color: transparent;
 }
 
-input[type="text"].form-control, input[type="email"].form-control  {
+input[type="text"].form-control, input[type="email"].form-control, input[type="password"].form-control  {
   padding: 6px 0px;
   border-bottom: 1px solid #ccc;
 }

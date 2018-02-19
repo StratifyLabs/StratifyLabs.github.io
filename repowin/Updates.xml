@@ -3,20 +3,6 @@
  <ApplicationVersion>1.0.0</ApplicationVersion>
  <Checksum>true</Checksum>
  <PackageUpdate>
-  <Name>co.stratifylabs.compiler</Name>
-  <DisplayName>Stratify Compiler</DisplayName>
-  <Description>GCC arm-none-eabi compiler and tools</Description>
-  <Version>5.4.1</Version>
-  <ReleaseDate>2018-01-04</ReleaseDate>
-  <Default>false</Default>
-  <UpdateFile OS="Any" UncompressedSize="42415300" CompressedSize="3995091"/>
-  <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <Licenses>
-   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
-  </Licenses>
-  <SHA1>e9496367eb7a3fc9d078c2d7afadd71e4b7bbfe6</SHA1>
- </PackageUpdate>
- <PackageUpdate>
   <Name>co.stratifylabs.slui</Name>
   <DisplayName>SL.UI</DisplayName>
   <Description>SL.UI is documentation/reference application for the Stratify Labs UI framework.</Description>
@@ -24,20 +10,9 @@
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile OS="Any" UncompressedSize="85619628" CompressedSize="21520063"/>
+  <UpdateFile OS="Any" CompressedSize="21520063" UncompressedSize="85619628"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>e8aede4907fe97b765c919b339cc5bc8a024c2f8</SHA1>
- </PackageUpdate>
- <PackageUpdate>
-  <Name>co.stratifylabs.sdk</Name>
-  <DisplayName>Stratify SDK</DisplayName>
-  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
-  <Version>3.3.3</Version>
-  <ReleaseDate>2018-02-09</ReleaseDate>
-  <Default>false</Default>
-  <UpdateFile OS="Any" UncompressedSize="188745152" CompressedSize="21943086"/>
-  <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <SHA1>b8f842a1fa6a3c7be114e4cefcfb92f4cf1b5f52</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifyapp</Name>
@@ -47,20 +22,45 @@
   <ReleaseDate>2018-02-11</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile OS="Any" UncompressedSize="87274134" CompressedSize="21894988"/>
+  <UpdateFile OS="Any" CompressedSize="21894988" UncompressedSize="87274134"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>986396a34e175902da0677855eee202562a7376b</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.compiler</Name>
+  <DisplayName>Stratify Compiler</DisplayName>
+  <Description>GCC arm-none-eabi compiler and tools</Description>
+  <Version>7.2.1</Version>
+  <ReleaseDate>2018-01-04</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile OS="Any" CompressedSize="5115756" UncompressedSize="52497092"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <Licenses>
+   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
+  </Licenses>
+  <SHA1>e0518ef933ee4431d560592d5c09bdc47f016b3a</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.sdk</Name>
+  <DisplayName>Stratify SDK</DisplayName>
+  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
+  <Version>3.4.0</Version>
+  <ReleaseDate>2018-02-18</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile OS="Any" CompressedSize="51095974" UncompressedSize="531178491"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <SHA1>96c0c157d8f03d98ad8a20694f44e85a5130d1e3</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.11</Version>
+  <Version>3.12</Version>
   <ReleaseDate>2018-02-11</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile OS="Any" UncompressedSize="87284302" CompressedSize="21883808"/>
+  <UpdateFile OS="Any" CompressedSize="21885562" UncompressedSize="87293510"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>6bcf3ba83f654a6c7c134dcd573b23df5a685a7a</SHA1>
+  <SHA1>792d08fe5f05898641a2edd229f99b003229a8c0</SHA1>
  </PackageUpdate>
 </Updates>

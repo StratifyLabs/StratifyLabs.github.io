@@ -3,40 +3,15 @@
  <ApplicationVersion>1.0.0</ApplicationVersion>
  <Checksum>true</Checksum>
  <PackageUpdate>
-  <Name>co.stratifylabs.compiler</Name>
-  <DisplayName>Stratify Compiler</DisplayName>
-  <Description>GCC arm-none-eabi compiler and tools</Description>
-  <Version>5.4.1</Version>
-  <ReleaseDate>2018-01-04</ReleaseDate>
-  <Default>false</Default>
-  <UpdateFile OS="Any" CompressedSize="4589509" UncompressedSize="44744172"/>
-  <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <Licenses>
-   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
-  </Licenses>
-  <SHA1>061322d30b91de92a9d8e8ed6144607bded16d56</SHA1>
- </PackageUpdate>
- <PackageUpdate>
   <Name>co.stratifylabs.slui</Name>
   <DisplayName>SL.UI</DisplayName>
   <Description>SL.UI is documentation/reference application for the Stratify Labs UI framework.</Description>
   <Version>1.0</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>true</Default>
-  <UpdateFile OS="Any" CompressedSize="12501977" UncompressedSize="54824072"/>
+  <UpdateFile CompressedSize="12501977" OS="Any" UncompressedSize="54824072"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>f41248c48d213b62b3fe2f6ef8353574836de466</SHA1>
- </PackageUpdate>
- <PackageUpdate>
-  <Name>co.stratifylabs.sdk</Name>
-  <DisplayName>Stratify SDK</DisplayName>
-  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
-  <Version>3.3.3</Version>
-  <ReleaseDate>2018-02-09</ReleaseDate>
-  <Default>false</Default>
-  <UpdateFile OS="Any" CompressedSize="30716899" UncompressedSize="319838846"/>
-  <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <SHA1>74810d6721999b42b5545e17886c30b61cb38862</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifyapp</Name>
@@ -45,19 +20,44 @@
   <Version>1.6</Version>
   <ReleaseDate>2018-02-11</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile OS="Any" CompressedSize="12836006" UncompressedSize="56278578"/>
+  <UpdateFile CompressedSize="12836006" OS="Any" UncompressedSize="56278578"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>cb4bf09ba85ec7ebf7b34b3ccf014a7e27b26507</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.sdk</Name>
+  <DisplayName>Stratify SDK</DisplayName>
+  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
+  <Version>3.4.0</Version>
+  <ReleaseDate>2018-02-09</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile CompressedSize="55540439" OS="Any" UncompressedSize="475746409"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <SHA1>b1e063355913212bc828b2bc938914bbf7904390</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.11</Version>
-  <ReleaseDate>2018-02-11</ReleaseDate>
+  <Version>3.12</Version>
+  <ReleaseDate>2018-02-18</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile OS="Any" CompressedSize="12842252" UncompressedSize="56574193"/>
+  <UpdateFile CompressedSize="12844765" OS="Any" UncompressedSize="56583537"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>a8ac6bc2ae602b0d006920e991e5767c3f505713</SHA1>
+  <SHA1>f20476a6ea1fb8739b37b0a8c6bf10889ac0a8a1</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.compiler</Name>
+  <DisplayName>Stratify Compiler</DisplayName>
+  <Description>GCC arm-none-eabi compiler and tools</Description>
+  <Version>7.2.1</Version>
+  <ReleaseDate>2018-02-19</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile CompressedSize="5939743" OS="Any" UncompressedSize="60525016"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <Licenses>
+   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
+  </Licenses>
+  <SHA1>d8065027fa73178947bed4ddd318bccb99fe1ebd</SHA1>
  </PackageUpdate>
 </Updates>
