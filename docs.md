@@ -79,6 +79,7 @@ page_source: Docs
 
 	<ul class="fa-ul">
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/SDK-Installation/">SDK Installation</a></li>
+	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/20/SDK-Qt-Creator-Setup/">Setting Up Qt Creator with the SDK</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-mbedLPC1768/">Running Stratify OS on the mbedLPC1768</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-Nucleo-F446ZE/">Running Stratify OS on the Nucleo-F446ZE</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/HelloWorld-Download-Build-Install/">Build, Install and Run Hello World</a></li>
