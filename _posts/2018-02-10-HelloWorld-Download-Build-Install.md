@@ -40,6 +40,11 @@ The video above will walk you through the following steps to get things going:
 - Now use Stratify Link to install the program
   - You need to make sure the install path is set to "/app/.install" in order to install directly to flash memory.
 
+## Notes
+
+- The video uses Atom with the "TerminalIO" plugin installed to launch the terminal. Both cmake and make are available on the path environment variable.
+- On Windows, you need to use: 'cmake -G "MinGW Makefiles" ..' then 'cmake --build . --target all'.
+
 
 
 
