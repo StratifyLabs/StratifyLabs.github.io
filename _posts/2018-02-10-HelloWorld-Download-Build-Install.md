@@ -20,6 +20,9 @@ Before you can install and run HelloWorld on some hardware you will need to inst
 
 With the SDK installed on your machine and Stratify OS installed on your board, you can now start building, installing and running programs.
 
+If you don't have an IDE setup, you can use [Qt Creator]({{ BASE_URL }}/user%20guides/2018/02/20/SDK-Qt-Creator-Setup/) (Atom is used in the video).
+
+
 ## Download, Build, Install, Run HelloWorld
 
 {% include JB/youtube-video.html
