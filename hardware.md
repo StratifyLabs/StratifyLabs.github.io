@@ -37,96 +37,96 @@ sections:
 
   <div class="row">
 
-<div class="col-md-4">
-  <div class="panel panel-default">
-    <div class="panel-heading"><h4>Stratify Toolbox</h4></div>
-    <div class="panel-body">
-      <a href="{{ BASE_PATH }}/hardware/stratify-alpha/">
-      <img class="post_image" src="{{ BASE_PATH }}/images/toolbox-angle.jpg" />
-      </a>
-      <p>All-in-one USB Debugging and Development Tool</p>
-    </div>
-    <div class="panel-footer">
-      <a href="{{ BASE_PATH }}/Stratify-Toolbox/" class="btn btn-success">Learn More</a>
-    </div>
-  </div>  
-</div>
+    {% include JB/hardware-item.html
+          name="Stratify Toolbox"
+          page="Stratify-Toolbox"
+          description="All-in-one USB Debugging and Development Tool"
+          image="toolbox-angle.jpg"
+    %}
 
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading"><h4>Stratify Alpha</h4></div>
-      <div class="panel-body">
-        <a href="{{ BASE_PATH }}/hardware/stratify-alpha/">
-        <img class="post_image" src="{{ BASE_PATH }}/images/stratify-alpha-angle.png" />
-        </a>
-        <p>ARM Cortex-M4 Microcontroller Development Board</p>
-      </div>
-      <div class="panel-footer">
-        <a href="{{ BASE_PATH }}/hardware/stratify-alpha/" class="btn btn-success">Learn More</a>
-      </div>
-    </div>  
-  </div>
+    {% include JB/hardware-item.html
+          name="Stratify Alpha"
+          page="hardware/stratify-alpha/"
+          description="ARM Cortex-M4 Microcontroller Development Board"
+          image="stratify-alpha-angle.png"
+    %}
 
+    {% include JB/hardware-item.html
+          name="CoAction Hero"
+          page="hardware/coaction-hero/"
+          description="ARM Cortex-M3 Microcontroller Development Board"
+          image="coaction-hero-angle.png"
+    %}
 
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading"><h4>CoAction Hero</h4></div>
-      <div class="panel-body">
-      <a href="{{ BASE_PATH }}/hardware/coaction-hero/">
-        <img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero-angle.png" />
-        </a>
-        <p>ARM Cortex-M3 Microcontroller Development Board</p>
-      </div>
-      <div class="panel-footer">
-        <a href="{{ BASE_PATH }}/hardware/coaction-hero/" class="btn btn-success">Learn More</a>
-      </div>
-    </div>  
-  </div>
+    {% include JB/hardware-item.html
+          name="mbed LPC1768"
+          page="hardware/mbed-lpc1768/"
+          description="ARM Cortex-M3 Microcontroller Development Board"
+          image="mbedLPC1768-1.png"
+    %}
 
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading"><h4>mbed LPC1768</h4></div>
-      <div class="panel-body">
-      <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/">
-        <img class="post_image" src="{{ BASE_PATH }}/images/mbedLPC1768-1.png" />
-        </a>
-        <p>ARM Cortex-M3 Microcontroller Development Board</p>
-      </div>
-      <div class="panel-footer">
-        <a href="{{ BASE_PATH }}/hardware/mbed-lpc1768/" class="btn btn-success">Learn More</a>
-      </div>
-    </div>  
-  </div>
+    {% include JB/hardware-item.html
+          name="Nucleo-F446ZE"
+          page="hardware/nucleo-f446ze/"
+          description="STM32 ARM CM4 512KB Flash 128KB RAM 168MHz"
+          image="nucleo-f446ze.png"
+    %}
 
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading"><h4>Nucleo-F446ZE</h4></div>
-      <div class="panel-body">
-      <a href="{{ BASE_PATH }}/hardware/nucleo-f446ze/">
-        <img class="post_image" src="{{ BASE_PATH }}/images/nucleo-f446ze.png" />
-        </a>
-        <p>STM32 ARM Cortex M4 Microcontroller Development Board</p>
-      </div>
-      <div class="panel-footer">
-        <a href="{{ BASE_PATH }}/hardware/nucleo-f446ze/" class="btn btn-success">Learn More</a>
-      </div>
-    </div>  
-  </div>
+    {% include JB/hardware-item.html
+          name="STM32F411 DISCO"
+          page="hardware/stm32f411-disco/"
+          description="STM32 ARM CM4 512KB Flash 128KB RAM 100MHz"
+          image="stm32f411e-disco.jpg"
+    %}
 
-  <div class="col-md-4">
-    <div class="panel panel-default">
-      <div class="panel-heading"><h4>STM32F411 DISCO</h4></div>
-      <div class="panel-body">
-      <a href="{{ BASE_PATH }}/hardware/stm32f411-disco/">
-        <img class="post_image" src="{{ BASE_PATH }}/images/stm32f411e-disco.jpg" />
-        </a>
-        <p>STM32 ARM Cortex M4 Microcontroller Development Board</p>
-      </div>
-      <div class="panel-footer">
-        <a href="{{ BASE_PATH }}/hardware/stm32f411-disco/" class="btn btn-success">Learn More</a>
-      </div>
-    </div>  
-  </div>
+    {% include JB/hardware-coming-soon.html
+          name="Nucleo-F412ZG"
+          page=""
+          description="STM32 ARM CM4F 1MB Flash 256KB RAM 100MHz"
+          image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-coming-soon.html
+          name="STM32F769I-DISCO"
+          page=""
+          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
+          image="stm32f769i-disco.jpg"
+    %}
+
+    {% include JB/hardware-coming-soon.html
+          name="Nucleo-F303ZE"
+          page=""
+          description="STM32 ARM CM4F 512KB Flash 64KB RAM 72MHz Ethernet"
+          image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-coming-soon.html
+          name="EA LPC4088"
+          page=""
+          description="ARM CM4F 512KB/128KB Flash/SRAM 120MHz Ethernet"
+          image="ea-lpc4088.jpg"
+    %}
+    
+    {% include JB/hardware-coming-soon.html
+          name="Nucleo-F746ZG"
+          page=""
+          description="STM32 ARM CM7 1MB Flash 320KB SRAM 216MHz Ethernet"
+          image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-coming-soon.html
+          name="STM32F723E-DISCO"
+          page=""
+          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
+          image="stm32f723e-disco-board.jpg"
+    %}
+
+    {% include JB/hardware-coming-soon.html
+          name="Nucleo-F767ZI"
+          page=""
+          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz Ethernet"
+          image="nucleo-f446ze.png"
+    %}
 
   
 
