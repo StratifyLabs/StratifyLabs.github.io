@@ -128,6 +128,13 @@ sections:
           image="nucleo-f446ze.png"
     %}
 
+        {% include JB/hardware-coming-soon.html
+          name="Nucleo-F429ZI"
+          page=""
+          description="STM32 ARM CM4F 2MB Flash 256KB SRAM 180MHz Ethernet"
+          image="nucleo-f446ze.png"
+    %}
+
   
 
   </div>
