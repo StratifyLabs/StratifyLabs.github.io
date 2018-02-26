@@ -96,7 +96,7 @@ sections:
     {% include JB/hardware-coming-soon.html
           name="Nucleo-F303ZE"
           page=""
-          description="STM32 ARM CM4F 512KB Flash 64KB RAM 72MHz Ethernet"
+          description="STM32 ARM CM4F 512KB Flash 64KB RAM 72MHz"
           image="nucleo-f446ze.png"
     %}
 
