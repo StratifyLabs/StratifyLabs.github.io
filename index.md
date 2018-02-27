@@ -3,21 +3,13 @@ layout: homepage
 title: Stratify Labs
 tagline: Rapid Embedded Development
 page_source: HomeToolbox
+sections:
+  intro: Stratify Labs
+  brief: Tools to create the next generation of smart products
 ---
 
-<div style="background: #344555; color: #fff;">
-<div class="container">
-<div class="row" style="margin-top: 25px; margin-bottom: 20px">
-		<div class="col-md-3">
-			<img class="post_image" height="150px" src="{{ BASE_PATH }}/images/Stratify-Labs-Logo-Icon.svg" />
-		</div>
-		<div class="col-md-9">
-			<h1><b>Stratify Labs</b></h1>
-			<h3>Tools to create the next generation of smart products</h3>
-		</div>
-	</div>
-</div>
-</div>
+{% include stratify-page-header.html %}
+
 
 <div style="background: #ddd;">
 	<div class="container" style="padding-top: 10px; padding-bottom: 10px">

@@ -7,6 +7,17 @@
         window.location.protocol = "https";
 </script>
 
+
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script type="text/javascript" src="{{ BASE_URL }}/assets/firebase-init.js"></script>
+
+<script type="text/javascript" src="{{ BASE_URL }}/assets/clipboard.min.js"></script>
+
+<script src="https://cdn.firebase.com/libs/firebaseui/2.6.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.1/firebaseui.css" />
+
+<script type="text/javascript" src="{{ BASE_URL }}/assets/firebase-catch-logged-in.js"></script>
 <meta charset="utf-8">
 <title>{{ page.title }}</title> {% if page.description %}
 <meta name="description" content="{{ page.description }}">
@@ -21,7 +32,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<!-- Le styles -->
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
 {% include bootstrap.html %}
@@ -44,12 +54,23 @@
 </head>
 <body style="min-height: 200px; padding-top: 50px;">
 	{% include navbar.html %}
+
 	<a class="anchor" id="top"></a>
+
+
 	<div class="content" id="content">
 		{{ content }}
 	</div>
 
-	{% include footer.html %}
-
+	<footer style="background: #344555; color: #fff;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</h4>
+				</div>
+			</div>
+		</div>
+	</footer>
+  {% include JB/analytics-providers/google %}
  </body>
 </html>

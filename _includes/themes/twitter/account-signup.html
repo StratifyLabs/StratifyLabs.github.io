@@ -7,10 +7,24 @@
         window.location.protocol = "https";
 </script>
 
+<script src="https://cdn.firebase.com/libs/firebaseui/2.6.1/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.6.1/firebaseui.css" />
+
+<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+<script type="text/javascript" src="{{ BASE_URL }}/assets/firebase-init.js"></script>
+
+
+<script type="text/javascript" src="{{ BASE_URL }}/assets/firebase-signin.js"></script>
+
+
 <meta charset="utf-8">
-<title>{{ page.title }}</title> {% if page.description %}
+
+<title>{{ page.title }}</title> 
+
+{% if page.description %}
 <meta name="description" content="{{ page.description }}">
 {% endif %}
+
 <meta name="author" content="{{ site.author.name }}">
 
 <!-- Enable responsive viewport -->
@@ -21,10 +35,10 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-<!-- Le styles -->
 <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
 {% include bootstrap.html %}
+
 
 
 <!-- Le fav and touch icons -->
@@ -44,12 +58,13 @@
 </head>
 <body style="min-height: 200px; padding-top: 50px;">
 	{% include navbar.html %}
+
+
 	<a class="anchor" id="top"></a>
 	<div class="content" id="content">
 		{{ content }}
 	</div>
 
 	{% include footer.html %}
-
- </body>
+</body>
 </html>

@@ -3,6 +3,9 @@ layout: homepage
 title: Stratify Labs
 tagline: Rapid Embedded Development
 page_source: StratifyApp
+sections:
+  intro: Stratify App
+  brief: Mobile Desktop App Connecting Users, Hardware, and the Cloud
 ---
 
 <script>
@@ -11,19 +14,7 @@ $(function () {
 })
 </script>
 
-<div style="background: #344555; color: #fff;">
-<div class="container">
-<div class="row header_row">
-		<div class="col-md-3">
-			<img class="post_image" height="150px"  src="{{ BASE_PATH }}/images/Stratify-Labs-Logo-Icon.svg" />
-		</div>
-		<div class="col-md-9">
-			<h2><b>Stratify App</b></h2>
-			<h3>Mobile Desktop App Connecting Users, Hardware, and the Cloud</h3>
-		</div>
-	</div>
-</div>
-</div>
+{% include stratify-page-header.html %}
 
 
 <div style="background: #fff;">
