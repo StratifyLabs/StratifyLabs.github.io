@@ -41,6 +41,8 @@ page_source: Doxygen
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5a4e220f1b0d68a7d66923b67c9b4e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_element.html#ad5a4e220f1b0d68a7d66923b67c9b4e1">Element</a> ()</td></tr>
 <tr class="separator:ad5a4e220f1b0d68a7d66923b67c9b4e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab310c5f4a2a6e31fcf07318a9a7c7e9e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classui_1_1_event_loop.html">EventLoop</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_element.html#ab310c5f4a2a6e31fcf07318a9a7c7e9e">event_loop</a> () const </td></tr>
+<tr class="separator:ab310c5f4a2a6e31fcf07318a9a7c7e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a017cb0a93a9d3a9902385ba6ca1df4a0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classui_1_1_element.html">Element</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">handle_event</a> (const <a class="el" href="classui_1_1_event.html">Event</a> &amp;event, const <a class="el" href="classdraw_1_1_drawing_attr.html">draw::DrawingAttr</a> &amp;attr)</td></tr>
 <tr class="separator:a017cb0a93a9d3a9902385ba6ca1df4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ecbf0c2cb9dad2c433964c98334ec09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_element.html#a5ecbf0c2cb9dad2c433964c98334ec09">is_bounce_left_enabled</a> () const </td></tr>
@@ -97,6 +99,31 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab310c5f4a2a6e31fcf07318a9a7c7e9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classui_1_1_event_loop.html">EventLoop</a>* ui::Element::event_loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a pointer to the element's event loop.</p>
+<p>If the element isn't running in an event loop, this method will return 0. </p>
+
+</div>
+</div>
 <a class="anchor" id="a017cb0a93a9d3a9902385ba6ca1df4a0"></a>
 <div class="memitem">
 <div class="memproto">

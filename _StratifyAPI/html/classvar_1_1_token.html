@@ -45,14 +45,14 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af5eeed47f32093c9a85bf1fbb56f6d1a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#af5eeed47f32093c9a85bf1fbb56f6d1a">at</a> (u32 n) const </td></tr>
 <tr class="separator:af5eeed47f32093c9a85bf1fbb56f6d1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2bef5c20139697d41e84666671ef641"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#af2bef5c20139697d41e84666671ef641">count</a> () const </td></tr>
+<tr class="separator:af2bef5c20139697d41e84666671ef641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1302ef52f45a4454427e396d5673e989"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a1302ef52f45a4454427e396d5673e989">is_count_empty_tokens</a> () const </td></tr>
 <tr class="separator:a1302ef52f45a4454427e396d5673e989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5859a776c004b9271d25d54a40caf022"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a5859a776c004b9271d25d54a40caf022">parse</a> (const char *delim, const char *ignore=0)</td></tr>
 <tr class="separator:a5859a776c004b9271d25d54a40caf022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14ede9851e9fce2e26db5a7569b29b36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a14ede9851e9fce2e26db5a7569b29b36">set_count_empty_tokens</a> (bool v=true)</td></tr>
 <tr class="separator:a14ede9851e9fce2e26db5a7569b29b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3a6ad1d8d72923681e4b6de490e7b5c"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#aa3a6ad1d8d72923681e4b6de490e7b5c">size</a> () const </td></tr>
-<tr class="separator:aa3a6ad1d8d72923681e4b6de490e7b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116d986608b29844a8fdfe6691ee1674"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a116d986608b29844a8fdfe6691ee1674">sort</a> (enum <a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8">sort_options</a> sort_option=<a class="el" href="classvar_1_1_token.html#a8ca956672decab5668cce811510d4ac8ae27d1242531f4af190ab63cbb1403598">SORT_NONE</a>)</td></tr>
 <tr class="separator:a116d986608b29844a8fdfe6691ee1674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a861e9dc5b89d855de37f11eea6105f4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_token.html#a861e9dc5b89d855de37f11eea6105f4d">Token</a> (const char *src, const char *delim, const char *ignore=0, bool count_empty=false)</td></tr>
@@ -297,6 +297,30 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="af2bef5c20139697d41e84666671ef641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 var::Token::count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the total number of tokens. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1302ef52f45a4454427e396d5673e989"></a>
 <div class="memitem">
 <div class="memproto">
@@ -379,30 +403,6 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Sets whether or not <a class="el" href="classvar_1_1_token.html#a5859a776c004b9271d25d54a40caf022">parse()</a> should include empty tokens. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa3a6ad1d8d72923681e4b6de490e7b5c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">u32 var::Token::size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the total number of tokens. </p>
 
 </div>
 </div>

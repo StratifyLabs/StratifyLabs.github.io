@@ -37,7 +37,7 @@ page_source: Doxygen
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class defines action-able events (such as button presses) that occur within <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class. ">ui::EventLoop</a> and are handled by <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">ui::Element::handle_event()</a>.</p>
-<p>The event includes the type and a pointer to an object associated with the event. For example, events of type <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9a433f96f5f19b6d7f137354afd43bd290">Event::SIGNAL</a> will include a pointer to a sys:Signal object. </p>
+<p>The event includes the type and a pointer to an object associated with the event. For example, events of type Event::SIGNAL will include a pointer to a <a class="el" href="classsys_1_1_signal.html" title="Class for sending Signal events (see SignalHandler for an example) ">sys::Signal</a> object. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -153,7 +153,7 @@ Public Member Functions</h2></td></tr>
 <p>The event type </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a769682c81ff8c21f942ca09f7e012563"></a>SETUP&#160;</td><td class="fielddoc">
-<p>This event is called at startup after all object have been constructed </p>
+<p>This event is called at startup after all objects have been constructed </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a42bd47935a58df9d64a55c6b6e904ff0"></a>ENTER&#160;</td><td class="fielddoc">
 <p>This event is called when the element becomes active </p>
@@ -176,7 +176,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a98905f43afe550806a48c0f178fb24ca"></a>NETWORK_DATA&#160;</td><td class="fielddoc">
 <p>This event is called when data arrives on the network </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a433f96f5f19b6d7f137354afd43bd290"></a>SIGNAL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a6bfd6670aa5c5b0cad68f91d54f6a59d"></a>SIGNAL_RECEIVED&#160;</td><td class="fielddoc">
 <p>This event is called when the process receives a signal </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a42a295550182c692e0b9ae2b0f5f28f9a307c84ff21015985a55b22211ffe1585"></a>APPLICATION&#160;</td><td class="fielddoc">
@@ -347,7 +347,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Accesses the signal associated with the event.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to the signal if type is <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9a433f96f5f19b6d7f137354afd43bd290">Event::SIGNAL</a> or zero if not. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the signal if type is Event::SIGNAL or zero if not. </dd></dl>
 
 </div>
 </div>

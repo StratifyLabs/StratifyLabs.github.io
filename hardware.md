@@ -59,6 +59,13 @@ sections:
     %}
 
     {% include JB/hardware-item.html
+          name="Nucleo-F446ZE"
+          page="hardware/nucleo144"
+          description="STM32 ARM CM4 512KB Flash 128KB RAM 168MHz"
+          image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-item.html
           name="mbed LPC1768"
           page="hardware/mbed-lpc1768/"
           description="ARM Cortex-M3 Microcontroller Development Board"
@@ -66,9 +73,9 @@ sections:
     %}
 
     {% include JB/hardware-item.html
-          name="Nucleo-F446ZE"
+          name="Nucleo-F412ZG"
           page="hardware/nucleo144"
-          description="STM32 ARM CM4 512KB Flash 128KB RAM 168MHz"
+          description="STM32 ARM CM4F 1MB Flash 256KB RAM 100MHz"
           image="nucleo-f446ze.png"
     %}
 
@@ -79,17 +86,10 @@ sections:
           image="stm32f411e-disco.jpg"
     %}
 
-        {% include JB/hardware-item.html
+    {% include JB/hardware-item.html
           name="Nucleo-F429ZI"
           page="hardware/nucleo144"
           description="STM32 ARM CM4F 2MB Flash 256KB SRAM 180MHz Ethernet"
-          image="nucleo-f446ze.png"
-    %}
-
-    {% include JB/hardware-coming-soon.html
-          name="Nucleo-F412ZG"
-          page=""
-          description="STM32 ARM CM4F 1MB Flash 256KB RAM 100MHz"
           image="nucleo-f446ze.png"
     %}
 

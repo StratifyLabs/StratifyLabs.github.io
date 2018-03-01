@@ -29,7 +29,8 @@ page_source: Doxygen
 <div class="header">
   <div class="summary">
 <a href="classui_1_1_event_loop-members.html">List of all members</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ui::EventLoop Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
@@ -46,6 +47,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1d43d8c07dbeee8539f3fc2bb0b00af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a86c1f2650bd0ad2dec878847508bcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a2a86c1f2650bd0ad2dec878847508bcd">EventLoop</a> (<a class="el" href="classui_1_1_element.html">ui::Element</a> &amp;start_element, <a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> &amp;bitmap, <a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> *scratch=0)</td></tr>
 <tr class="separator:a2a86c1f2650bd0ad2dec878847508bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664af7db4ec84fc2e8db91c1c004327e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a664af7db4ec84fc2e8db91c1c004327e">EventLoop</a> (<a class="el" href="classui_1_1_element.html">ui::Element</a> &amp;start_element)</td></tr>
+<tr class="separator:a664af7db4ec84fc2e8db91c1c004327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a9ec5bb313fffb39117c6295c7ff681"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a3a9ec5bb313fffb39117c6295c7ff681">execute</a> ()</td></tr>
 <tr class="separator:a3a9ec5bb313fffb39117c6295c7ff681"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79bd53f02f91e8e7940734db0bb38eed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a79bd53f02f91e8e7940734db0bb38eed">loop</a> ()</td></tr>
@@ -77,6 +80,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2718358fd89a2291fbb94ee919afd1a0 inherit pub_methods_classui_1_1_event_loop_attr"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d83860158d1cb2e7d8422f3a490e775 inherit pub_methods_classui_1_1_event_loop_attr"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop_attr.html#a1d83860158d1cb2e7d8422f3a490e775">update_period</a> () const </td></tr>
 <tr class="separator:a1d83860158d1cb2e7d8422f3a490e775 inherit pub_methods_classui_1_1_event_loop_attr"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a586939398642b9b0551dba9fefa448da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a586939398642b9b0551dba9fefa448da">handle_event</a> (const <a class="el" href="classui_1_1_event.html">ui::Event</a> &amp;event)</td></tr>
+<tr class="separator:a586939398642b9b0551dba9fefa448da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2a86c1f2650bd0ad2dec878847508bcd"></a>
@@ -117,6 +125,30 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a664af7db4ec84fc2e8db91c1c004327e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ui::EventLoop::EventLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classui_1_1_element.html">ui::Element</a> &amp;&#160;</td>
+          <td class="paramname"><em>start_element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructs a new headless (no display) event loop.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start_element</td><td>The initial element to process</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class. ">EventLoop</a> will typically update the display when the <a class="el" href="classui_1_1_event_loop.html#a2072ca70ed7df1e21b27787e2e36473b">current_element()</a> indicates that it should. By initializing an <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class. ">EventLoop</a> using this constructor the display is ignored. </p>
 
 </div>
 </div>
@@ -202,6 +234,38 @@ Public Member Functions</h2></td></tr>
 <p>The loop will then continue to <a class="el" href="classui_1_1_event_loop.html#a30711454cc82147995c9ccf1bf68f2dd">process_events()</a> and fire <a class="el" href="classui_1_1_event.html#a42a295550182c692e0b9ae2b0f5f28f9a34945a056d6fe9165aee760fe2b355c0">Event::UPDATE</a> as well as hibernate as appropriate for the new element.</p>
 <p>If <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">Element::handle_event()</a> returns 0 (null pointer), the event loop will stop executing. That is this method will return. </p>
 
+</div>
+</div>
+<a class="anchor" id="a586939398642b9b0551dba9fefa448da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ui::EventLoop::handle_event </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classui_1_1_event.html">ui::Event</a> &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handles the specified event.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td><a class="el" href="classui_1_1_event.html" title="Event Class. ">Event</a> to handle within the loop</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This method should be called by <a class="el" href="classui_1_1_event_loop.html#a30711454cc82147995c9ccf1bf68f2dd">process_events()</a> whenever the system triggers an event. For example, if the system needs to just handle an up button or down button press:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">ButtonPin up_button(0,0);</div><div class="line">ButtonPin down_button(0,1)</div><div class="line"></div><div class="line">void MyEventLoop::<a class="code" href="classui_1_1_event_loop.html#a30711454cc82147995c9ccf1bf68f2dd">process_events</a>(){</div><div class="line"> up_button.update(); <span class="comment">//refresh button status</span></div><div class="line"> down_button.update();</div><div class="line"></div><div class="line"> handle_event(up_button.event());</div><div class="line"> handle_event(down_button.event());</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a79bd53f02f91e8e7940734db0bb38eed"></a>
