@@ -7,7 +7,7 @@ tags : [c, c++, cortex-m3, user-guide, cortex-m4, development, windows, macosx, 
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/nucleo-f446ze.png" />
-Stratify OS can be installed from the cloud on the Nucleo-F446ZE board in less than one minute.
+Stratify OS can be installed from the cloud on the Nucleo-F446ZE board (and other Nucleo144 boards) in less than one minute.
 
 ## First Things First
 
@@ -24,7 +24,11 @@ Before you can install the BSP on the board, you need to install the [Stratify L
 
 The video above will walk you through the following steps to get things going:
 
-- Download the latest bootloader in the [Github Release section of the Nucleo-F446ZE BSP project](https://github.com/StratifyLabs/Nucleo-F446ZE/releases)
+- Download the latest bootloader from the Github release section
+  - [Nucleo-F446ZE BSP](https://github.com/StratifyLabs/Nucleo-F446ZE/releases)
+  - [Nucleo-F429ZI BSP](https://github.com/StratifyLabs/Nucleo-F429ZI/releases)
+  - Nucleo-F412ZG BSP (Coming Soon)
+  - Nucleo-F303ZE BSP (Coming Soon)
 - Install the bootloader using the mbed interface (drop it on the file mount)
 - Plug in a USB cable to the native USB port and connect to the bootloader using Stratify Link
 - Install the BSP directly from the cloud

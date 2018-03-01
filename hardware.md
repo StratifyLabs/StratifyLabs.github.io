@@ -67,16 +67,23 @@ sections:
 
     {% include JB/hardware-item.html
           name="Nucleo-F446ZE"
-          page="hardware/nucleo-f446ze/"
+          page="hardware/nucleo144"
           description="STM32 ARM CM4 512KB Flash 128KB RAM 168MHz"
           image="nucleo-f446ze.png"
     %}
 
     {% include JB/hardware-item.html
           name="STM32F411 DISCO"
-          page="hardware/stm32f411-disco/"
+          page="hardware/stm32f411-disco"
           description="STM32 ARM CM4 512KB Flash 128KB RAM 100MHz"
           image="stm32f411e-disco.jpg"
+    %}
+
+        {% include JB/hardware-item.html
+          name="Nucleo-F429ZI"
+          page="hardware/nucleo144"
+          description="STM32 ARM CM4F 2MB Flash 256KB SRAM 180MHz Ethernet"
+          image="nucleo-f446ze.png"
     %}
 
     {% include JB/hardware-coming-soon.html
@@ -125,13 +132,6 @@ sections:
           name="Nucleo-F767ZI"
           page=""
           description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz Ethernet"
-          image="nucleo-f446ze.png"
-    %}
-
-        {% include JB/hardware-coming-soon.html
-          name="Nucleo-F429ZI"
-          page=""
-          description="STM32 ARM CM4F 2MB Flash 256KB SRAM 180MHz Ethernet"
           image="nucleo-f446ze.png"
     %}
 
