@@ -7,7 +7,7 @@ tags : [c, c++, user-guide, development, windows, macosx, Stratify, gcc]
 ---
 
 
-Stratify OS is not like any other microcontroller operating system you have ever used. It was built from the ground up for the ARM Cortex M architecture to solve the challenge of increasingly complex hardware designs and software requirements. 
+Stratify OS is not like any other microcontroller operating system you have ever used. [It was built from the ground up for the ARM Cortex M architecture]({{ BASE_URL }}/user%20guides/2018/03/06/How-Stratify-OS-Levarages-ARM-Cortex-M/) to solve the challenge of increasingly complex hardware designs and software requirements. 
 
 It does this by:
 

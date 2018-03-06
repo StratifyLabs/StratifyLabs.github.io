@@ -111,7 +111,14 @@ if( (version & ~0xffff) != (UART_VERSION & ~0xffff) ){ //the minor and patch ver
 
 Reading and writing a device is done just like any other file using read() and write(). Operations on devices can be either synchronous or asynchronous. If they are synchronous, they can be blocking or non-blocking.
 
-Synchronous means a call to read() or write() will not return until the operation is complete. The file descriptor (when opened) determines whether calls to read() and write() are blocking or non-blocking.  A non-blocking call will return immediately if no data is available (that is it won't block for an indefinite amount of time, but it will block for a determinate amount of time when reading/writing). For example, if you read() the UART and the UART has no data, the function returns right away. A blocking call will wait until data becomes available.
+- Asynchronous: returns immediately and read/write happens in the background
+- Synchronous: returns when complete
+  - Blocking: complete when data has been read (at least 1 byte) or written
+  - Non-blocking: complete when data has been read or written or when do data is available to be read or written
+
+The file descriptor (when opened) determines whether calls to read() and write() are blocking or non-blocking.  
+
+A non-blocking call will return immediately if no data is available. For example, if you read() the UART and the UART has no data, the function returns right away. A blocking call will wait until data becomes available.
 
 ````c
 #include <unistd.h>
@@ -193,7 +200,7 @@ lseek(fd, 0, SEEK_SET); //set offset to zero
 printf("Offset is %d\n", lseek(fd, 0, SEEK_CURRENT)); //this returns the current position without changing it
 ````
 
-For character devices, the location is ignored. For special character devices, the lcoation determines the channel. The following devices have channels (not an exhaustive list).
+For character devices, the location is ignored. For special character devices, the location determines the channel. The following devices have channels (not an exhaustive list).
 
 - USB: channel is the endpoint
 - ADC: channel is the ADC input channel
@@ -201,13 +208,13 @@ For character devices, the location is ignored. For special character devices, t
 - DAC: channel is the DAC output channel
 - I2C: location determines register pointer (in some modes)
 
-These devices don't have channels and are pure character devices.
+These devices don't have channels and are pure character devices (location can be used with lseek() but is meaningless).
 
 - UART
 - SPI
 - PIO (also called GPIO)
 
-The following are block devices.
+These are block devices where the location is auto-updated on read/write.
 
 - EEPROM: location determines memory address to read/write
 - MEM: location determines memory address
@@ -226,10 +233,10 @@ The following code shows how the ADC (a special character) behaves then reading.
 int fd = open("/dev/adc0", O_RDWR);
 u32 samples[16];
 ioctl(fd, I_ADC_SETATTR); //default BSP settings and pins
-lseek(fd, 4, SEEK_SET); //read ADC channel 4
+lseek(fd, 4, SEEK_SET); //seek to ADC channel 4
 read(fd, samples, 16*sizeof(u32)); //read 16 samples on channel 4
 read(fd, samples, 16*sizeof(u32)); //read 16 samples on channel 4 -- offset stays the same
-lseek(fd, 2, SEEK_SET); //read ADC channel 4
+lseek(fd, 2, SEEK_SET); //seek to ADC channel 2
 read(fd, samples, 16*sizeof(u32)); //read 16 samples on channel 2
 close(fd);
 ````
@@ -258,11 +265,9 @@ close(fd);
 
 ### Closing Devices
 
-The Stratify OS drivers keep track of how many file descriptors have access to a device. If close() is called while other file descriptors are still open, it will leave the device enabled. If close() is called and there are no other referencing file descriptors, the device will be powered off.
+The Stratify OS drivers keep track of how many file descriptors have access to a device. If close() is called while other file descriptors are still open, it will leave the device enabled. If close() is called and there are no other referencing file descriptors, the device will be powered off (PIO--aka GPIO--devices are an exception to this behavior).
 
 For example, the PWM output will stop oscillating and power off when all PWM devices are closed as illustrated below.
-
-PIO (aka GPIO) devices are an exception to this behavior. PIO peripherals are always on and maintain their state even after all references are closed.
 
 ````c
 #include <unistd.h>
@@ -292,7 +297,7 @@ Keep in mind, when the program exits (return from main()), close() will be calle
 
 ### Stratify API hal namespace: C++ Classes for Hardware Access
 
-The [Stratify API hal namespace]({{ BASE_URL }}/StratifyAPI/html/namespacehal.html) provides C++ classes for accessing MCU peripherals.
+The [Stratify API hal namespace]({{ BASE_URL }}/StratifyAPI/html/namespacehal.html) provides C++ classes for accessing MCU peripherals as well as general devices.
 
 The classes provide a method for open(), close(), read(), write(), ioctl() plus a method for each ioctl request. For example, the PWM code above becomes:
 
@@ -313,12 +318,12 @@ pwm.close():
 ````
 
 The Stratify API manages the files descriptors internally and uses the same
-file descriptor for all objects. So if close() is called on one object, all objects lose access.
+file descriptor for all objects associated with a given device. So if close() is called on one PWM object, all PWM objects lose access.
 
 ````c++
 #include <sapi/hal.hpp> //uses namespace hal - sos/dev/pio.h
 
-Pin pin0(0,1);
+Pin pin0(0,1); //both of these pins access /dev/pio0 -- share a file descriptor
 Pin pin1(0,2);
 
 pin0.init(Pin::FLAG_SET_OUTPUT); //init() is a shortcut for open() then set_attr() and has the same args as set_attr()
