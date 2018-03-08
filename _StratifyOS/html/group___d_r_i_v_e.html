@@ -19,9 +19,10 @@ page_source: Doxygen
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
-<div class="title">Disk<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
+<div class="title">Drive<div class="ingroups"><a class="el" href="group___s_t_f_y.html">Stratify OS</a> &raquo; <a class="el" href="group___i_f_a_c_e___d_e_v.html">Device Interface</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -30,15 +31,53 @@ page_source: Doxygen
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrive__info__t.html">drive_info_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disk attributes.  <a href="structdrive__info__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive Info.  <a href="structdrive__info__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrive__attr__t.html">drive_attr_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive Attributes.  <a href="structdrive__attr__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga209c557ad171075f72d10b315cc923a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e.html#ga209c557ad171075f72d10b315cc923a0">I_DRIVE_GETVERSION</a></td></tr>
+<tr class="separator:ga209c557ad171075f72d10b315cc923a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga581a5b0ab01eda22c271f54352226ff7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e.html#ga581a5b0ab01eda22c271f54352226ff7">I_DRIVE_GETINFO</a></td></tr>
+<tr class="separator:ga581a5b0ab01eda22c271f54352226ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b0f3e7da22f9d831e49a8ad5d10d5ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e.html#ga4b0f3e7da22f9d831e49a8ad5d10d5ef">I_DRIVE_SETATTR</a></td></tr>
+<tr class="separator:ga4b0f3e7da22f9d831e49a8ad5d10d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb0780def5b2f452808f1dc5a8fdede4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_i_v_e.html#gabb0780def5b2f452808f1dc5a8fdede4">I_DRIVE_ISBUSY</a></td></tr>
 <tr class="separator:gabb0780def5b2f452808f1dc5a8fdede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga581a5b0ab01eda22c271f54352226ff7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DRIVE_GETINFO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the drive info (<a class="el" href="structdrive__info__t.html" title="Drive Info. ">drive_info_t</a>). </p>
+
+</div>
+</div>
+<a class="anchor" id="ga209c557ad171075f72d10b315cc923a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DRIVE_GETVERSION</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the driver version. </p>
+
+</div>
+</div>
 <a class="anchor" id="gabb0780def5b2f452808f1dc5a8fdede4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -49,6 +88,55 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>See if the drive is busy. This ioctl call will return greater than one if the device is busy and 0 if drive is not busy. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4b0f3e7da22f9d831e49a8ad5d10d5ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DRIVE_SETATTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the drive attributes (</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="structdrive__attr__t.html" title="Drive Attributes. ">drive_attr_t</a>). </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga0411cd49bb5b71852cecd93bcbf0ca2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2da422657f0f00f2bf1c6fc3002ef050b7e"></a>DRIVE_FLAG_PROTECT&#160;</td><td class="fielddoc">
+<p>Enables driver write protection. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2da6bcbe9631a8708469a4d46a478cc4a0d"></a>DRIVE_FLAG_UNPROTECT&#160;</td><td class="fielddoc">
+<p>Disables driver write protection. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2da7d5981de2ae2f1fdbfeb32fca6d39fc8"></a>DRIVE_FLAG_ERASE_BLOCKS&#160;</td><td class="fielddoc">
+<p>Erases blocks on disk (use start and end to specify which blocks). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2da4a12886daf5eb61c3bfd284fee3f1d17"></a>DRIVE_FLAG_ERASE_DEVICE&#160;</td><td class="fielddoc">
+<p>Erases the drive. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2daa46be422f12ec3975a38152f6894253b"></a>DRIVE_FLAG_POWERDOWN&#160;</td><td class="fielddoc">
+<p>Puts the drive in power down mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2da40086f3f05ee0571d9fb8a5a27e46229"></a>DRIVE_FLAG_POWERUP&#160;</td><td class="fielddoc">
+<p>Powers up the driver (after power down). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga0411cd49bb5b71852cecd93bcbf0ca2da4195f7a74e4c04ea072ae2c756d67759"></a>DRIVE_FLAG_INIT&#160;</td><td class="fielddoc">
+<p>Initializes the drive. </p>
+</td></tr>
+</table>
 
 </div>
 </div>

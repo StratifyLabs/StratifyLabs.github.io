@@ -50,8 +50,12 @@ Data Fields</h2></td></tr>
 <tr class="separator:a84426d15121ace18ed92381e3feabb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2afd22bec69a47e3268f80531a8e7dbb"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structusb__attr__t.html#a2afd22bec69a47e3268f80531a8e7dbb">max_packet_size</a></td></tr>
 <tr class="separator:a2afd22bec69a47e3268f80531a8e7dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4dd974b3e3dcc4297f352926a20caf"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structusb__attr__t.html#a6c4dd974b3e3dcc4297f352926a20caf">resd</a> [8]</td></tr>
-<tr class="separator:a6c4dd974b3e3dcc4297f352926a20caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e452f450e8dcf3eabe2088d1f7fea28"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structusb__attr__t.html#a8e452f450e8dcf3eabe2088d1f7fea28">type</a></td></tr>
+<tr class="separator:a8e452f450e8dcf3eabe2088d1f7fea28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3406305cac16dcf7648d5ecf0a41916a"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structusb__attr__t.html#a3406305cac16dcf7648d5ecf0a41916a">rx_fifo_word_size</a></td></tr>
+<tr class="separator:a3406305cac16dcf7648d5ecf0a41916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d155bc71ea602cfb3f71c1274368989"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structusb__attr__t.html#a0d155bc71ea602cfb3f71c1274368989">tx_fifo_word_size</a> [USB_TX_FIFO_WORD_SIZE_COUNT]</td></tr>
+<tr class="separator:a0d155bc71ea602cfb3f71c1274368989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a84426d15121ace18ed92381e3feabb67"></a>
@@ -119,12 +123,38 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6c4dd974b3e3dcc4297f352926a20caf"></a>
+<a class="anchor" id="a3406305cac16dcf7648d5ecf0a41916a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u32 usb_attr_t::resd[8]</td>
+          <td class="memname">u16 usb_attr_t::rx_fifo_word_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>RX FIFO word size for all endpoints (STM32) </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d155bc71ea602cfb3f71c1274368989"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u8 usb_attr_t::tx_fifo_word_size[USB_TX_FIFO_WORD_SIZE_COUNT]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>TX FIFO word size (used on STM32) </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e452f450e8dcf3eabe2088d1f7fea28"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 usb_attr_t::type</td>
         </tr>
       </table>
 </div><div class="memdoc">

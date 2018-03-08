@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How Stratify OS Leverages the ARM Cortex M Hardware
-page_source: UnderstandingStratifyOS
+page_source: HowStratifyOSLeveragesARMCortexMHardware
 category: User Guides
 tags : [user-guide, development, Stratify, arm, cortex-m3, cortex-m4, cortex-m7, programming]
 ---
