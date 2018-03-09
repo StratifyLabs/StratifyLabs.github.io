@@ -3,15 +3,40 @@
  <ApplicationVersion>1.0.0</ApplicationVersion>
  <Checksum>true</Checksum>
  <PackageUpdate>
+  <Name>co.stratifylabs.compiler</Name>
+  <DisplayName>Stratify Compiler</DisplayName>
+  <Description>GCC arm-none-eabi compiler and tools</Description>
+  <Version>6.3.1</Version>
+  <ReleaseDate>2018-03-08</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile UncompressedSize="51211826" CompressedSize="5058176" OS="Any"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <Licenses>
+   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
+  </Licenses>
+  <SHA1>52e233f17a827552039eadbf46f1a7afbceed9e0</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
+  <Name>co.stratifylabs.sdk</Name>
+  <DisplayName>Stratify SDK</DisplayName>
+  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
+  <Version>3.5.0</Version>
+  <ReleaseDate>2018-03-18</ReleaseDate>
+  <Default>false</Default>
+  <UpdateFile UncompressedSize="241128667" CompressedSize="29547355" OS="Any"/>
+  <DownloadableArchives>Tools.7z</DownloadableArchives>
+  <SHA1>7f218e962d7d0df2cc8ba10c06d183d6250a170b</SHA1>
+ </PackageUpdate>
+ <PackageUpdate>
   <Name>co.stratifylabs.slui</Name>
   <DisplayName>SL.UI</DisplayName>
   <Description>SL.UI is documentation/reference application for the Stratify Labs UI framework.</Description>
   <Version>1.0</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>true</Default>
-  <UpdateFile CompressedSize="12501977" OS="Any" UncompressedSize="54824072"/>
+  <UpdateFile UncompressedSize="54826445" CompressedSize="12503710" OS="Any"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>f41248c48d213b62b3fe2f6ef8353574836de466</SHA1>
+  <SHA1>95c601a041ffa92ce6f521455987d7fe6b19eba9</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifyapp</Name>
@@ -20,44 +45,19 @@
   <Version>1.6</Version>
   <ReleaseDate>2018-02-11</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="12836006" OS="Any" UncompressedSize="56278578"/>
+  <UpdateFile UncompressedSize="56244450" CompressedSize="12830220" OS="Any"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>cb4bf09ba85ec7ebf7b34b3ccf014a7e27b26507</SHA1>
- </PackageUpdate>
- <PackageUpdate>
-  <Name>co.stratifylabs.sdk</Name>
-  <DisplayName>Stratify SDK</DisplayName>
-  <Description>Stratify SDK installs pre-compiled libraries for Stratify OS.</Description>
-  <Version>3.4.0</Version>
-  <ReleaseDate>2018-02-09</ReleaseDate>
-  <Default>false</Default>
-  <UpdateFile CompressedSize="55540439" OS="Any" UncompressedSize="475746409"/>
-  <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <SHA1>b1e063355913212bc828b2bc938914bbf7904390</SHA1>
+  <SHA1>6c5d945e23c2e7f543dbbbc6a74708c588cb1dab</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.12</Version>
-  <ReleaseDate>2018-02-18</ReleaseDate>
+  <Version>3.13</Version>
+  <ReleaseDate>2018-03-08</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="12844765" OS="Any" UncompressedSize="56583537"/>
+  <UpdateFile UncompressedSize="56557761" CompressedSize="12838915" OS="Any"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>f20476a6ea1fb8739b37b0a8c6bf10889ac0a8a1</SHA1>
- </PackageUpdate>
- <PackageUpdate>
-  <Name>co.stratifylabs.compiler</Name>
-  <DisplayName>Stratify Compiler</DisplayName>
-  <Description>GCC arm-none-eabi compiler and tools</Description>
-  <Version>7.2.1</Version>
-  <ReleaseDate>2018-02-19</ReleaseDate>
-  <Default>false</Default>
-  <UpdateFile CompressedSize="5939743" OS="Any" UncompressedSize="60525016"/>
-  <DownloadableArchives>Tools.7z</DownloadableArchives>
-  <Licenses>
-   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
-  </Licenses>
-  <SHA1>d8065027fa73178947bed4ddd318bccb99fe1ebd</SHA1>
+  <SHA1>b27cd299f70bc9f24b4e1f0e5013b1f7e95aff6e</SHA1>
  </PackageUpdate>
 </Updates>
