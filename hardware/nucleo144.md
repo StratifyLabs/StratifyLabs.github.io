@@ -29,7 +29,9 @@ sections:
     <li><a href="https://github.com/StratifyLabs/Nucleo-F446ZE" target="_blank">Nucleo-F446ZE</a></li>
     <li><a href="https://github.com/StratifyLabs/Nucleo-F429ZI" target="_blank">Nucleo-F429ZI</a></li>
     <li><a href="https://github.com/StratifyLabs/Nucleo-F412ZG" target="_blank">Nucleo-F412ZG</a></li>
-    <li><a href="https://github.com/StratifyLabs/Nucleo-F303ZE" target="_blank">Nucleo-F303ZE</a> (Coming Soon</li>
+    <li><a href="https://github.com/StratifyLabs/Nucleo-F746ZG" target="_blank">Nucleo-F746ZG</a></li>
+    <li><a href="https://github.com/StratifyLabs/Nucleo-F767ZI" target="_blank">Nucleo-F767ZI</a></li>
+    <li><a href="https://github.com/StratifyLabs/Nucleo-F303ZE" target="_blank">Nucleo-F303ZE</a> (Coming Soon)</li>
 </ul>
 
 
