@@ -154,7 +154,7 @@ const sysfs_t const sysfs_list[] = {
 
 ### mbedLPC1768 Semi-hosted Filesystem
 
-Another example of porting a filesystem is the <a href="https://github.com/StratifyLabs/mbedLPC1768" target="_blank">mbed LPC1768]</a> <a href="https://github.com/StratifyLabs/mbedLPC1768/blob/master/src/localfs.h" target="_blank">semi-hosted filesystem</a>.
+Another example of porting a filesystem is the <a href="https://github.com/StratifyLabs/mbedLPC1768" target="_blank">mbed LPC1768</a> <a href="https://github.com/StratifyLabs/mbedLPC1768/blob/master/src/localfs.h" target="_blank">semi-hosted filesystem</a>.
 
 ## Wrap Up
 

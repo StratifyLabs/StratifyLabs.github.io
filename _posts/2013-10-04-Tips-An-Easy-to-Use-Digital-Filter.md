@@ -17,7 +17,7 @@ of RAM and computing power.
 Filters come in both analog and digital forms and exist to remove specific frequencies
 from a signal.  A common analog filter is the low pass RC filter shown below.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/lpf-1st-order.svg" />
+<img class="post_image_tall" src="{{ BASE_PATH }}/images/lpf-1st-order.png" />
 
 Analog filters are characterized by their frequency response; that is how much the
 frequencies are attenuated (magnitude response) and shifted (phase response).  The
