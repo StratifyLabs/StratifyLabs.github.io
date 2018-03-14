@@ -52,6 +52,13 @@ sections:
     %}
 
     {% include JB/hardware-item.html
+          name="Nucleo-F767ZI"
+          page="hardware/nucleo144"
+          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz Ethernet"
+          image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-item.html
           name="CoAction Hero"
           page="hardware/coaction-hero/"
           description="ARM Cortex-M3 Microcontroller Development Board"
@@ -62,6 +69,13 @@ sections:
           name="Nucleo-F446ZE"
           page="hardware/nucleo144"
           description="STM32 ARM CM4 512KB Flash 128KB RAM 168MHz"
+          image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-item.html
+          name="Nucleo-F746ZG"
+          page="hardware/nucleo144"
+          description="STM32 ARM CM7 1MB Flash 320KB SRAM 216MHz Ethernet"
           image="nucleo-f446ze.png"
     %}
 
@@ -94,6 +108,13 @@ sections:
     %}
 
     {% include JB/hardware-coming-soon.html
+          name="STM32F723E-DISCO"
+          page=""
+          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
+          image="stm32f723e-disco-board.jpg"
+    %}
+
+    {% include JB/hardware-coming-soon.html
           name="STM32F769I-DISCO"
           page=""
           description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
@@ -112,27 +133,6 @@ sections:
           page=""
           description="ARM CM4F 512KB/128KB Flash/SRAM 120MHz Ethernet"
           image="ea-lpc4088.jpg"
-    %}
-    
-    {% include JB/hardware-coming-soon.html
-          name="Nucleo-F746ZG"
-          page=""
-          description="STM32 ARM CM7 1MB Flash 320KB SRAM 216MHz Ethernet"
-          image="nucleo-f446ze.png"
-    %}
-
-    {% include JB/hardware-coming-soon.html
-          name="STM32F723E-DISCO"
-          page=""
-          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
-          image="stm32f723e-disco-board.jpg"
-    %}
-
-    {% include JB/hardware-coming-soon.html
-          name="Nucleo-F767ZI"
-          page=""
-          description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz Ethernet"
-          image="nucleo-f446ze.png"
     %}
 
   

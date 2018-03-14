@@ -28,6 +28,8 @@ The video above will walk you through the following steps to get things going:
   - [Nucleo-F446ZE BSP](https://github.com/StratifyLabs/Nucleo-F446ZE/releases)
   - [Nucleo-F429ZI BSP](https://github.com/StratifyLabs/Nucleo-F429ZI/releases)
   - [Nucleo-F412ZG BSP](https://github.com/StratifyLabs/Nucleo-F412ZG/releases)
+  - [Nucleo-F746ZG BSP](https://github.com/StratifyLabs/Nucleo-F746ZG/releases)
+  - [Nucleo-F767ZI BSP](https://github.com/StratifyLabs/Nucleo-F767ZI/releases)
   - Nucleo-F303ZE BSP (Coming Soon)
 - Install the bootloader using the mbed interface (drop it on the file mount)
 - Plug in a USB cable to the native USB port and connect to the bootloader using Stratify Link
