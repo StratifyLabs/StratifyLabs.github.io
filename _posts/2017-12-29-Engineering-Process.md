@@ -12,7 +12,7 @@ The first thing to understand about the engineering process is that it is iterat
 <div class="alert alert-info">
 <b>What is an iteration?</b>
 <p>
-An iteration in the engineering process is where you stop, take what you have learned to date and revert to an early step in the process. The quintessential iteration is going from product requirements to testing an initial prototype then jump back to requirements development based on what you have learned. The first iteration is typically the most expensive and time consuming.
+An iteration in the engineering process is where you stop, take what you have learned to date and revert to an earlier step in the process. The quintessential iteration is going from product requirements to testing an initial prototype then jump back to requirements development based on what you have learned. The first iteration is typically the most expensive and time consuming.
 </p>
 </div>
 
@@ -26,7 +26,7 @@ The engineering process starts with a product requirements document (PRD) typica
 
 #### Specifications Development
 
-The first engineering step is to take the PRD and clarify as many details as possible about the use and performance of the product. This is documented in an engineering specification (a specification is basically a requirement that is more "specific" than the product requirement). If we have a requirement of "all day battery life", the specification needs to define what "all day" means it terms of hours and usage of the product.
+The first engineering step is to take the PRD and clarify as many details as possible about the use and performance of the product. This is documented in an engineering specification (a specification is basically a requirement that is more "specific" than the product requirement). If we have a requirement of "all day battery life", the specification needs to define what "all day" means in terms of hours and usage of the product.
 
 #### Functional Test Plan Development
 
@@ -87,7 +87,7 @@ On the first pass of the architecture diagram, it may not be clear which compone
 
 Component selection is a big driver in balancing out development costs, time-to-market, and bill of materials costs.
 
-Let's take the development of a wifi router as an example. On one extreme, you could buy a fully functional wifi-router, put your logo, and minimize development costs and time to market. But, it would be expensive to produce.
+Let's take the development of a wifi router as an example. On one extreme, you could buy and re-brand a fully functional wifi-router. This minimizes development costs as well as time to market but is expensive to produce.
 
 On the other extreme, you could not use any off-the-shelf components and develop your own resistors, capacitors, processors, and radios which would have enormous development costs and take many years to complete but would produce a highly differentiated product that could be mass produced at the lowest possible cost.
 
@@ -129,7 +129,7 @@ Once the boards are basically working and the mechanical parts fit together, the
 <div class="alert alert-info">
 <b>This is Where Things Go Crazy!</b>
 <p>
-On the first iteration, there are always problems. The number and type of problems that you run into are so varied and numerous they are impossible to predict. Many problems can usually be solved by "hacking" the prototype. This involves modifying the circuit by hand to get things working and modifying the mechanical prototypes using a Dremel tool.
+On the first iteration, there are always problems. The number and type of problems that you run into are so varied and numerous they are impossible to predict. Many problems can usually be solved by "hacking" the prototype. This involves modifying the circuit by hand to get things working and modifying the mechanical prototypes using a Dremel-like tool.
 </p><p>
 The best approach is to methodically go through each point in the test plan and evaluate what is working and what is deficient.
 </p>
@@ -137,7 +137,9 @@ The best approach is to methodically go through each point in the test plan and 
 
 ## Iterate
 
-Based on the results from the first prototype, anything from the product requirements to the design may need to be updated.
+Once testing and integration is complete, it might be time to revert to an earlier step in the engineering process and continue forward based on the knowledge gained from testing.
+
+For example, if the battery life testing results in less than a full-day of battery life, the process reverts back to the design stage to modify the circuit and then continue to build and test new prototypes.
 
 ## Manufacturing
 

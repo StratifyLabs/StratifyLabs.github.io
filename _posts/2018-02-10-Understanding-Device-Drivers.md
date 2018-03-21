@@ -114,7 +114,7 @@ Reading and writing a device is done just like any other file using read() and w
 - Asynchronous: returns immediately and read/write happens in the background
 - Synchronous: returns when complete
   - Blocking: complete when data has been read (at least 1 byte) or written
-  - Non-blocking: complete when data has been read or written or when do data is available to be read or written
+  - Non-blocking: complete when data has been read or written or when no data is available to be read or written
 
 The file descriptor (when opened) determines whether calls to read() and write() are blocking or non-blocking.  
 
@@ -146,7 +146,7 @@ close(fd);
 
 char buffer[16];
 int ret;
-int fd = open("/dev/uart0", O_RDWR | O_NONBLOCK); //blocking
+int fd = open("/dev/uart0", O_RDWR | O_NONBLOCK); //non-blocking
 ioctl(fd, I_UART_SETATTR);
 ret = read(fd, buffer, 16); //this will return immediately
 if( ret < 0 ){
@@ -186,8 +186,8 @@ close(fd);
 
  Devices are accessed like files, but they don't necessarily behave like them. Devices are classified as:
 
-- Character: location is not updated on read/write
-- Special Character: location is not updated on read/write but can be set using lseek()
+- Character: location is not updated on read/write and has no meaning
+- Special Character: location is not updated on read/write, but it has meaning when set using lseek()
 - Block: location is updated on read/write
 
 All POSIX file descriptors keep track of the location or offset in a file. For character devices, this is typically ignored. For block devices (like files), it is used to specify the address and is auto-updated on read write. The position can be set manually using the following code.
@@ -222,7 +222,7 @@ These are block devices where the location is auto-updated on read/write.
 - DISK (abstraction for external flash devices): location is block or memory address
 - SDCARD: location is memory address
 
-The following code shows how the ADC (a special character) behaves then reading.
+The following code shows how the ADC (special character device) behaves when reading.
 
 ````c
 #include <unistd.h>
@@ -265,7 +265,7 @@ close(fd);
 
 ### Closing Devices
 
-The Stratify OS drivers keep track of how many file descriptors have access to a device. If close() is called while other file descriptors are still open, it will leave the device enabled. If close() is called and there are no other referencing file descriptors, the device will be powered off (PIO--aka GPIO--devices are an exception to this behavior).
+When closing a device, Stratify OS both release the file description and may also shut off the hardware. If close() is called while other file descriptors are still open, Stratify OS will leave the device enabled. If close() is called and there are no other referencing file descriptors, the device will be powered off (PIO--aka GPIO--devices are an exception to this behavior).
 
 For example, the PWM output will stop oscillating and power off when all PWM devices are closed as illustrated below.
 

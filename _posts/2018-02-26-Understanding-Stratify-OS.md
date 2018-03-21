@@ -34,13 +34,18 @@ The first thing to understand is that the OS is built and installed independent 
 - Board specific configuration tables
 - Any board specific code provided by the board manufacturer (such as custom drivers or kernel requests)
 - Stratify OS library (libsos_sys)
-- Stratify OS MCU family library such as STM32F446xx (libsos_mcu_family)
+- Stratify OS MCU family library (libsos_mcu_family) 
+  - e.g., STM32F446xx, STM32F723xx, LPC17xx, LPC40xx
 
 Stratify Labs provides BSPs for many popular microcontroller development boards including:
 
+- Nucleo-F412ZG
+- Nucleo-F429ZI
 - Nucleo-F446ZE
 - Mbed LPC1768
 - STM32F411E-DISCO
+- Nucleo-F746ZG
+- Nucleo-F767ZI
 - [And More]({{ BASE_URL }}/hardware/)
 
 To get started on Stratify OS, [you can install a pre-built bootloader and kernel image in a matter of minutes]({{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-Nucleo-F446ZE/).
@@ -56,7 +61,7 @@ For a custom BSP, you just have to change a few configuration tables which defin
 
 ### Stratify OS Library
 
-The Stratify OS library includes code that is developed for the ARM Cortex M architecture to accomplish context switching, filesystem abstraction, mutexes, threads, etc. The OS functionality is accessible via a POSIX API including:
+The Stratify OS library includes code that is developed for the ARM Cortex M architecture to accomplish context switching, filesystem abstraction, mutexes, threads, etc. The OS functionality is accessible via a [POSIX API]({{ BASE_URL }}/StratifyOS/html/group___p_o_s_i_x.html) including:
 
 - unistd: e.g., open(), close(), read(), write(), ioctl(), and usleep()
 - pthreads: e.g., pthread_create()
@@ -68,8 +73,10 @@ The Stratify OS library includes code that is developed for the ARM Cortex M arc
 The Stratify OS library is built per instruction set architecture and ABI:
 
 - armv7m (Cortex M3)
-- armv7e-m FPU hard (Cortex M4F)
-- armv8m (Cortex M7)
+- armv7e-m (Cortex M4)
+  - Hard Float v4 (Cortex M4F)
+  - Hard Float v5 single precision (Cortex M7)
+  - Hard Float v5 double precision (Cortex M7)
 
 ### Stratify OS MCU Library
 
@@ -93,7 +100,7 @@ int mcu_spi_write(const devfs_handle_t * handle, const void * buf, int nbyte);
 int mcu_spi_read(const devfs_handle_t * handle, void * buf, int byte);
 ```
 
-The file <sos/dev/spi.h> defines the IOCTL calls and data structures required to use and implement the driver. The application uses the following code for driver access:
+The file <sos/dev/spi.h> defines the IOCTL calls and data structures required to use and implement the driver. [The application uses the following code for driver access]({{ BASE_URL }}/user%20guides/2018/02/10/Understanding-Device-Drivers/):
 
 ```c
 #include <unistd.h>
@@ -149,7 +156,7 @@ When the application is built, it is linked to a CRT library (libsos_crt) that w
 
 ### Memory Protected Processes
 
-Stratify OS uses the ARM Cortex M memory protection unit (MPU) to prevent processes from clobbering memory in other applications. Because applications run in thread mode (unprivileged mode), they cannot directly access hardware resources ([they must use device drivers]({{ BASE_URL }}/user%20guides/2018/02/10/Understanding-Device-Drivers/)).
+Stratify OS uses the [ARM Cortex M memory protection unit (MPU)]({{ BASE_URL }}/user%20guides/2018/03/06/How-Stratify-OS-Levarages-ARM-Cortex-M/) to prevent processes from clobbering memory in other applications. Because applications run in thread mode (unprivileged mode), they cannot directly access hardware resources ([they must use device drivers]({{ BASE_URL }}/user%20guides/2018/02/10/Understanding-Device-Drivers/)).
 
 ### Relocatable Programs
 
@@ -167,7 +174,7 @@ int main(int argc, char * argv[](){
 }
 ```
 
-The program above launches "HelloWorld" that is installed in the local folder "/home". If "HelloWorld" exists in RAM or flash, it will be executed. If not it will be dynamically installed to flash and executed. 
+The program above launches "HelloWorld" that is installed in the local folder "/home". If "HelloWorld" exists in RAM or flash, it will be executed. If not, it will be dynamically installed to flash and executed. 
 
 Sys::launch() calls a Stratify OS function called launch(). Most system calls are based on the standard C library or POSIX API. However, because the Cortex M architecture does not have an MMU, launch() is used in lieu of the exec() and fork() function families.
 
