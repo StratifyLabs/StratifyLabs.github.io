@@ -12,13 +12,13 @@ page_source: Doxygen
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -28,7 +28,6 @@ page_source: Doxygen
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classsys_1_1_signal_handler-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">sys::SignalHandler Class Reference</div>  </div>
@@ -40,12 +39,12 @@ page_source: Doxygen
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">volatile</span> <span class="keywordtype">bool</span> wait_for_signal;</div><div class="line"><span class="keywordtype">void</span> my_handler(<span class="keywordtype">int</span> a){</div><div class="line">     <span class="comment">//do something</span></div><div class="line">     wait_for_signal = <span class="keyword">false</span>;</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <a class="code" href="classsys_1_1_signal_handler.html#a5e74fa2bcf973dbed54cd8b82645877e">SignalHandler</a> handler(my_handler);</div><div class="line">     Signal event(SIGINT);</div><div class="line"></div><div class="line">     wait_for_signal = <span class="keyword">true</span>;</div><div class="line"></div><div class="line">     <span class="comment">//this will cause my_handler() to be executed when SIGINT is received</span></div><div class="line">     <span class="keyword">event</span>.set_handler(handler);</div><div class="line"></div><div class="line">     <span class="comment">//the program will stay in this loop until SIGINT is received</span></div><div class="line">     <span class="keywordflow">while</span>( wait_for_signal == <span class="keyword">true</span> ){</div><div class="line">          <a class="code" href="classsys_1_1_timer.html#aaa7c6c03ff04eb6d8a19e33e23fe23bf">Timer::wait_msec</a>(1);</div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab2d834b53f989cb73b63afa98cbaf7d9"><td class="memItemLeft" align="right" valign="top">const struct sigaction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_handler.html#ab2d834b53f989cb73b63afa98cbaf7d9">sigaction</a> () const </td></tr>
-<tr class="separator:ab2d834b53f989cb73b63afa98cbaf7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e74fa2bcf973dbed54cd8b82645877e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_handler.html#a5e74fa2bcf973dbed54cd8b82645877e">SignalHandler</a> (void(*handler)(int))</td></tr>
 <tr class="separator:a5e74fa2bcf973dbed54cd8b82645877e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9fc5dc20bb7edba6d61db30a20defe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_handler.html#add9fc5dc20bb7edba6d61db30a20defe">SignalHandler</a> (void(*<a class="el" href="classsys_1_1_signal_handler.html#ab2d834b53f989cb73b63afa98cbaf7d9">sigaction</a>)(int, siginfo_t *, void *), int flags=0, sigset_t mask=0)</td></tr>
 <tr class="separator:add9fc5dc20bb7edba6d61db30a20defe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d834b53f989cb73b63afa98cbaf7d9"><td class="memItemLeft" align="right" valign="top">const struct sigaction *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal_handler.html#ab2d834b53f989cb73b63afa98cbaf7d9">sigaction</a> () const </td></tr>
+<tr class="separator:ab2d834b53f989cb73b63afa98cbaf7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5e74fa2bcf973dbed54cd8b82645877e"></a>

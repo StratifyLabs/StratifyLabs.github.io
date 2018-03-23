@@ -12,13 +12,13 @@ page_source: Doxygen
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -28,7 +28,6 @@ page_source: Doxygen
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classhal_1_1_uart_attr-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hal::UartAttr Class Reference</div>  </div>
@@ -37,34 +36,18 @@ page_source: Doxygen
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The <a class="el" href="classhal_1_1_uart.html" title="UART Class. ">Uart</a> Attributes Class can be used to configure the UART. The <a class="el" href="classsys_1_1_cli.html" title="Command Line Interface class. ">sys::Cli</a> classes can populate a <a class="el" href="classhal_1_1_uart_attr.html" title="Uart Attributes Class. ">UartAttr</a> object using arguments passed on the command line.</p>
 <p>For example, the following sample code will initialize a UART port based on parameters passed on the command line.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     <a class="code" href="classhal_1_1_uart_attr.html#a71c83945fcf722b2b9a49b436dcf2fc2">UartAttr</a> uart_attr;</div><div class="line">     Cli cli(argc, argv);</div><div class="line"></div><div class="line">     cli.handle_uart(uart_attr);</div><div class="line"></div><div class="line">     Uart uart(uart_attr.port());</div><div class="line">     uart.init(uart_attr);</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classhal_1_1_uart.html" title="UART Class. ">hal::Uart</a> </dd></dl>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     UartAttr uart_attr;</div><div class="line">     Cli cli(argc, argv);</div><div class="line"></div><div class="line">     cli.handle_uart(uart_attr);</div><div class="line"></div><div class="line">     Uart uart(uart_attr.port());</div><div class="line">     uart.init(uart_attr);</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classhal_1_1_uart.html" title="UART Class. ">hal::Uart</a> </dd></dl>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac42e226b912736455e940a26e40f4330"><td class="memItemLeft" align="right" valign="top">const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structuart__attr__t.html">uart_attr_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#ac42e226b912736455e940a26e40f4330">attr</a> () const </td></tr>
-<tr class="separator:ac42e226b912736455e940a26e40f4330"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df8d878a074591f190cd110654702e9"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a2df8d878a074591f190cd110654702e9">cts</a> () const </td></tr>
 <tr class="separator:a2df8d878a074591f190cd110654702e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a751693571e13d78bb73af3799d884492"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a751693571e13d78bb73af3799d884492">freq</a> () const </td></tr>
-<tr class="separator:a751693571e13d78bb73af3799d884492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec93c8321500f966f82f095a0e49e052"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#aec93c8321500f966f82f095a0e49e052">operator uart_attr_t</a> () const </td></tr>
-<tr class="separator:aec93c8321500f966f82f095a0e49e052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae36f936472b4968e39a521d232a5b1cb"><td class="memItemLeft" align="right" valign="top">const uart_pin_assignment_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#ae36f936472b4968e39a521d232a5b1cb">pin_assignment</a> () const </td></tr>
-<tr class="separator:ae36f936472b4968e39a521d232a5b1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e9bc3052204da9551f3887567b8fbf7"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a5e9bc3052204da9551f3887567b8fbf7">port</a> () const </td></tr>
-<tr class="separator:a5e9bc3052204da9551f3887567b8fbf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d7b5a9bf90c6657ceb2646118dae241"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a8d7b5a9bf90c6657ceb2646118dae241">rts</a> () const </td></tr>
 <tr class="separator:a8d7b5a9bf90c6657ceb2646118dae241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816b54248fb5fbf11854291bf0964401"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a816b54248fb5fbf11854291bf0964401">rx</a> () const </td></tr>
 <tr class="separator:a816b54248fb5fbf11854291bf0964401"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7a96c97d49570bed4b7bd82fd61ad7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#ae7a96c97d49570bed4b7bd82fd61ad7e">set_cts</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a> &amp;pin)</td></tr>
 <tr class="separator:ae7a96c97d49570bed4b7bd82fd61ad7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c7648fd79e570d309899b434d5d3c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a8c7648fd79e570d309899b434d5d3c9b">set_flags</a> (u32 flags)</td></tr>
-<tr class="separator:a8c7648fd79e570d309899b434d5d3c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a238c2205fd36ca1bda73820049966b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a1a238c2205fd36ca1bda73820049966b">set_freq</a> (u32 bitrate)</td></tr>
-<tr class="separator:a1a238c2205fd36ca1bda73820049966b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ed1b7520652302304201ec0a1680ece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a4ed1b7520652302304201ec0a1680ece">set_port</a> (u8 p)</td></tr>
-<tr class="separator:a4ed1b7520652302304201ec0a1680ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affcbab564dc7d57cabeb1d75fa880e8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#affcbab564dc7d57cabeb1d75fa880e8d">set_rts</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a> &amp;pin)</td></tr>
 <tr class="separator:affcbab564dc7d57cabeb1d75fa880e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79ff6815e760447f4766020afb253a0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a79ff6815e760447f4766020afb253a0f">set_rx</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a> &amp;pin)</td></tr>
@@ -75,61 +58,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af153157e4a4169d28561a713c2bf6258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b8d62418256665e2004bff761ea496"><td class="memItemLeft" align="right" valign="top"><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a15b8d62418256665e2004bff761ea496">tx</a> () const </td></tr>
 <tr class="separator:a15b8d62418256665e2004bff761ea496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71c83945fcf722b2b9a49b436dcf2fc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a71c83945fcf722b2b9a49b436dcf2fc2">UartAttr</a> ()</td></tr>
-<tr class="separator:a71c83945fcf722b2b9a49b436dcf2fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60651a9162c6a43748b94d4a2e0d41ad"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_uart_attr.html#a60651a9162c6a43748b94d4a2e0d41ad">width</a> () const </td></tr>
 <tr class="separator:a60651a9162c6a43748b94d4a2e0d41ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a71c83945fcf722b2b9a49b436dcf2fc2"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">hal::UartAttr::UartAttr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Constructs a new UART attributes object. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ac42e226b912736455e940a26e40f4330"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structuart__attr__t.html">uart_attr_t</a>&amp; hal::UartAttr::attr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a reference to the <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structuart__attr__t.html">uart_attr_t</a> object. </p>
-
-</div>
-</div>
 <a class="anchor" id="a2df8d878a074591f190cd110654702e9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -151,102 +83,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Accesses the cts pin assignment value. </p>
-
-</div>
-</div>
-<a class="anchor" id="a751693571e13d78bb73af3799d884492"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">u32 hal::UartAttr::freq </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Access the frequency (bitrate). </p>
-
-</div>
-</div>
-<a class="anchor" id="aec93c8321500f966f82f095a0e49e052"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">hal::UartAttr::operator <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structuart__attr__t.html">uart_attr_t</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a copy of the <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structuart__attr__t.html">uart_attr_t</a> object. </p>
-
-</div>
-</div>
-<a class="anchor" id="ae36f936472b4968e39a521d232a5b1cb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uart_pin_assignment_t* hal::UartAttr::pin_assignment </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets a copy of the pin assignment. </p>
-
-</div>
-</div>
-<a class="anchor" id="a5e9bc3052204da9551f3887567b8fbf7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">u8 hal::UartAttr::port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Accesses the port </p>
 
 </div>
 </div>
@@ -323,99 +159,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pin</td><td>The cts pin </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8c7648fd79e570d309899b434d5d3c9b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hal::UartAttr::set_flags </td>
-          <td>(</td>
-          <td class="paramtype">u32&#160;</td>
-          <td class="paramname"><em>flags</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the flags.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">flags</td><td>Flag bit-mask </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a1a238c2205fd36ca1bda73820049966b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hal::UartAttr::set_freq </td>
-          <td>(</td>
-          <td class="paramtype">u32&#160;</td>
-          <td class="paramname"><em>bitrate</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the bitrate.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bitrate</td><td>The bitrate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4ed1b7520652302304201ec0a1680ece"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void hal::UartAttr::set_port </td>
-          <td>(</td>
-          <td class="paramtype">u8&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the UART port.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>The UART port </td></tr>
   </table>
   </dd>
 </dl>

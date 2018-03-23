@@ -12,13 +12,13 @@ page_source: Doxygen
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -28,7 +28,6 @@ page_source: Doxygen
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classhal_1_1_pin_assignment-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hal::PinAssignment&lt; pin_assignment_type &gt; Class Template Reference</div>  </div>
@@ -43,6 +42,8 @@ class hal::PinAssignment&lt; pin_assignment_type &gt;</h3>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">SpiPinAssignment pin_assignment;</div><div class="line">pin_assignment-&gt;mosi = mcu_pin(2,0);</div><div class="line">pin_assignment-&gt;sck = mcu_pin(2,0);</div><div class="line">pin_assignment-&gt;miso = mcu_pin(2,0);</div><div class="line"></div><div class="line">Spi spi(0);</div><div class="line"></div><div class="line">spi.init(</div><div class="line"> <a class="code" href="classhal_1_1_spi.html#a9f9ffa0983da86a5f219fabf8dca6841a4d0fe2b9678ff7e2f297223f1326c3f9">Spi::FLAG_SET_MASTER</a>|<a class="code" href="classhal_1_1_spi.html#a9f9ffa0983da86a5f219fabf8dca6841a7ffbb81e590f846592fc973aa9c4c37e">Spi::FLAG_IS_MODE0</a>|<a class="code" href="classhal_1_1_spi.html#a9f9ffa0983da86a5f219fabf8dca6841a8df42dc9ecb44bf182f0af589a80f9d4">Spi::FLAG_IS_FORMAT_SPI</a>,</div><div class="line"> 10000000, 8, pin_assignment</div><div class="line">);</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa7ca805dac4e63aadc3450c3a28d58b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#aa7ca805dac4e63aadc3450c3a28d58b0">PinAssignment</a> ()</td></tr>
+<tr class="separator:aa7ca805dac4e63aadc3450c3a28d58b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a7820e9da271e297f9170539bec5aab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#a9a7820e9da271e297f9170539bec5aab">assign</a> (const pin_assignment_type &amp;pin_assignment)</td></tr>
 <tr class="separator:a9a7820e9da271e297f9170539bec5aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefef3aa69cbe35570ddab33a386983e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#aefef3aa69cbe35570ddab33a386983e8">clear</a> ()</td></tr>
@@ -55,8 +56,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b82797609626d2a4fc4374694d517b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367bf649202d19ffb8d7588eb2e5b457"><td class="memItemLeft" align="right" valign="top">pin_assignment_type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#a367bf649202d19ffb8d7588eb2e5b457">operator-&gt;</a> ()</td></tr>
 <tr class="separator:a367bf649202d19ffb8d7588eb2e5b457"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7ca805dac4e63aadc3450c3a28d58b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#aa7ca805dac4e63aadc3450c3a28d58b0">PinAssignment</a> ()</td></tr>
-<tr class="separator:aa7ca805dac4e63aadc3450c3a28d58b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c6b0ca3d1892d3a20aa985927dd546"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#aa7c6b0ca3d1892d3a20aa985927dd546">size</a> () const </td></tr>
 <tr class="separator:aa7c6b0ca3d1892d3a20aa985927dd546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

@@ -12,13 +12,13 @@ page_source: Doxygen
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -28,26 +28,27 @@ page_source: Doxygen
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classhal_1_1_spi-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">hal::Spi Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class gives access to a SPI port. </p>
-</div><table class="memberdecls">
+<div class="textblock"><p>This class gives access to a SPI port.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">  <span class="keywordtype">char</span> buffer[16];</div><div class="line">  <a class="code" href="classhal_1_1_spi.html#a0fda6ac162b10b3924f6146ac79ffd8e">Spi</a> spi(0);           <span class="comment">//access to SPI port 0</span></div><div class="line">  spi.init();           <span class="comment">//init SPI with default settings from BSP</span></div><div class="line">  spi.read(buffer, 16); <span class="comment">//read 16 bytes from the SPI</span></div><div class="line">  spi.close();          <span class="comment">//close the SPI (power it off)</span></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0fda6ac162b10b3924f6146ac79ffd8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_spi.html#a0fda6ac162b10b3924f6146ac79ffd8e">Spi</a> (<a class="el" href="classhal_1_1_periph_object.html#a03c48bc5daa52968496311fc30cf172e">port_t</a> port)</td></tr>
+<tr class="separator:a0fda6ac162b10b3924f6146ac79ffd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaf5929fbfbae5846d048f6491eeabf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_spi.html#adaf5929fbfbae5846d048f6491eeabf0">init</a> (u32 o_flags, u32 freq, u32 width=8, const spi_pin_assignment_t *pin_assignment=0)</td></tr>
 <tr class="separator:adaf5929fbfbae5846d048f6491eeabf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6664969542dd386b0b8050b0dadd56b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_spi.html#ac6664969542dd386b0b8050b0dadd56b">set_attr</a> (u32 o_flags, u32 freq, u32 width=8, const spi_pin_assignment_t *pin_assignment=0) const </td></tr>
 <tr class="separator:ac6664969542dd386b0b8050b0dadd56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fda6ac162b10b3924f6146ac79ffd8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_spi.html#a0fda6ac162b10b3924f6146ac79ffd8e">Spi</a> (port_t port)</td></tr>
-<tr class="separator:a0fda6ac162b10b3924f6146ac79ffd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bf103a6f83b95b15255289b7089d0cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_spi.html#a7bf103a6f83b95b15255289b7089d0cf">swap</a> (int byte) const </td></tr>
 <tr class="separator:a7bf103a6f83b95b15255289b7089d0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classhal_1_1_periph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1_periph')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1_periph.html">hal::Periph&lt; spi_info_t, spi_attr_t, &#39;s&#39;&gt;</a></td></tr>
+<tr class="memitem:a520e6d35ecaf6c4764dde402c95e19aa inherit pub_methods_classhal_1_1_periph"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph.html#a520e6d35ecaf6c4764dde402c95e19aa">get_info</a> (spi_info_t &amp;info) const</td></tr>
+<tr class="separator:a520e6d35ecaf6c4764dde402c95e19aa inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c27286b8dd2642232bde4c3ee3774f inherit pub_methods_classhal_1_1_periph"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph.html#a17c27286b8dd2642232bde4c3ee3774f">get_version</a> () const</td></tr>
 <tr class="separator:a17c27286b8dd2642232bde4c3ee3774f inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aade9206a4d8afb67de576c83ebb9a49e inherit pub_methods_classhal_1_1_periph"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph.html#aade9206a4d8afb67de576c83ebb9a49e">init</a> ()</td></tr>
@@ -56,6 +57,84 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a19407482e2602945f5342afc3c76c2f9 inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d999d0dc780f6a82231adc7afea6a4 inherit pub_methods_classhal_1_1_periph"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph.html#a15d999d0dc780f6a82231adc7afea6a4">set_attr</a> () const</td></tr>
 <tr class="separator:a15d999d0dc780f6a82231adc7afea6a4 inherit pub_methods_classhal_1_1_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhal_1_1_periph_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1_periph_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1_periph_object.html">hal::PeriphObject</a></td></tr>
+<tr class="memitem:a2779d035240b32cbc91face5729eb13d inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#a2779d035240b32cbc91face5729eb13d">close</a> ()</td></tr>
+<tr class="separator:a2779d035240b32cbc91face5729eb13d inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7661ba75dc75e44f16947a8efa0a0b9 inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#af7661ba75dc75e44f16947a8efa0a0b9">ioctl</a> (int req, void *arg) const </td></tr>
+<tr class="separator:af7661ba75dc75e44f16947a8efa0a0b9 inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e023b010c3d874bb048f584a0c2a1d inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#a42e023b010c3d874bb048f584a0c2a1d">open</a> (int o_mode=<a class="el" href="classsys_1_1_file.html#a93c731c942c7f9d83b4e56125e7a6ce6a83038e64d6d3ebb8b58d7b81cf094ff8">READWRITE</a>)</td></tr>
+<tr class="separator:a42e023b010c3d874bb048f584a0c2a1d inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dbb8c6fd9bf18fbf7f1e46f1b4b554d inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#a0dbb8c6fd9bf18fbf7f1e46f1b4b554d">read</a> (void *buf, int nbyte) const </td></tr>
+<tr class="separator:a0dbb8c6fd9bf18fbf7f1e46f1b4b554d inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e4da12f222a817244f1097b3c1af7a inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#ad0e4da12f222a817244f1097b3c1af7a">read</a> (<a class="el" href="classsys_1_1_aio.html">sys::Aio</a> &amp;aio) const </td></tr>
+<tr class="separator:ad0e4da12f222a817244f1097b3c1af7a inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd23c9364df35b77aff14c4e2917c478 inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#acd23c9364df35b77aff14c4e2917c478">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence) const </td></tr>
+<tr class="separator:acd23c9364df35b77aff14c4e2917c478 inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5c477deb15ed1e9e8b39c7fee8418c inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#abe5c477deb15ed1e9e8b39c7fee8418c">write</a> (const void *buf, int nbyte) const </td></tr>
+<tr class="separator:abe5c477deb15ed1e9e8b39c7fee8418c inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c766b46e3659038a986cce3bd040c3e inherit pub_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#a1c766b46e3659038a986cce3bd040c3e">write</a> (<a class="el" href="classsys_1_1_aio.html">sys::Aio</a> &amp;aio) const </td></tr>
+<tr class="separator:a1c766b46e3659038a986cce3bd040c3e inherit pub_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhal_1_1_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhal_1_1_device')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classhal_1_1_device.html">hal::Device</a></td></tr>
+<tr class="memitem:aeab36fe44a2044a2ca18232a2f2fca3c inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#aeab36fe44a2044a2ca18232a2f2fca3c">Device</a> ()</td></tr>
+<tr class="separator:aeab36fe44a2044a2ca18232a2f2fca3c inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
+<tr class="memitem:a64b62a04482a2e3aa7ffde84e1a089cb inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a64b62a04482a2e3aa7ffde84e1a089cb">create</a> (const char *path, bool overwrite=true, int perms=0666)</td></tr>
+<tr class="separator:a64b62a04482a2e3aa7ffde84e1a089cb inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c124eb71e5b6e392591b57ce4ee8ba inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a11c124eb71e5b6e392591b57ce4ee8ba">fileno</a> () const </td></tr>
+<tr class="separator:a11c124eb71e5b6e392591b57ce4ee8ba inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae249875dc748c887a844d58aad1ad9cf inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ae249875dc748c887a844d58aad1ad9cf">flags</a> () const </td></tr>
+<tr class="separator:ae249875dc748c887a844d58aad1ad9cf inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af442ef278fcc4b0a7feb3c51154e2dc4 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#af442ef278fcc4b0a7feb3c51154e2dc4">gets</a> (char *s, int n, char term= '\n') const </td></tr>
+<tr class="separator:af442ef278fcc4b0a7feb3c51154e2dc4 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a682451ba45a4788aefa0133d438ceffd inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a682451ba45a4788aefa0133d438ceffd">gets</a> (<a class="el" href="classvar_1_1_string.html">var::String</a> &amp;s, char term= '\n') const </td></tr>
+<tr class="separator:a682451ba45a4788aefa0133d438ceffd inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad811b47884d7952d67428c27c8bc311b inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ad811b47884d7952d67428c27c8bc311b">ioctl</a> (int req, const void *arg) const </td></tr>
+<tr class="separator:ad811b47884d7952d67428c27c8bc311b inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28331db27ade9524fa79eb21129e8ea inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ad28331db27ade9524fa79eb21129e8ea">ioctl</a> (int req) const </td></tr>
+<tr class="separator:ad28331db27ade9524fa79eb21129e8ea inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51eefa4f1de10402090f33b1ff68ee80 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a51eefa4f1de10402090f33b1ff68ee80">ioctl</a> (int req, int arg) const </td></tr>
+<tr class="separator:a51eefa4f1de10402090f33b1ff68ee80 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50caf9fa33c99ca3c3537d4a8eeff4ee inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a> () const </td></tr>
+<tr class="separator:a50caf9fa33c99ca3c3537d4a8eeff4ee inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd24b513cc460e9e7d1e83c1bea05034 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#afd24b513cc460e9e7d1e83c1bea05034">open</a> (const char *<a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a>, int <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>, int perms)</td></tr>
+<tr class="separator:afd24b513cc460e9e7d1e83c1bea05034 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b71cff33f87a0e668595d9279458e60 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a2b71cff33f87a0e668595d9279458e60">open_append</a> (const char *path)</td></tr>
+<tr class="separator:a2b71cff33f87a0e668595d9279458e60 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae51014b99493162b2887404b118438a3 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ae51014b99493162b2887404b118438a3">open_readonly</a> (const char *path)</td></tr>
+<tr class="separator:ae51014b99493162b2887404b118438a3 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae046c2109b629629a44f09e7da5c9726 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ae046c2109b629629a44f09e7da5c9726">open_readwrite</a> (const char *path)</td></tr>
+<tr class="separator:ae046c2109b629629a44f09e7da5c9726 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adad2599aeae6f709eb63552bd4c0beae">read</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, void *buf, int nbyte) const </td></tr>
+<tr class="separator:adad2599aeae6f709eb63552bd4c0beae inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a742c18026cb42020b52fd9f356e1e26a inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a742c18026cb42020b52fd9f356e1e26a">readline</a> (char *buf, int nbyte, int timeout_msec, char terminator= '\n') const </td></tr>
+<tr class="separator:a742c18026cb42020b52fd9f356e1e26a inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
+<tr class="separator:a29ccfa0078ff1f1d4158d54c3b0ed2e7 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15523277aedfcd456fcfe0976f4e3409 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a15523277aedfcd456fcfe0976f4e3409">write</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, const void *buf, int nbyte) const </td></tr>
+<tr class="separator:a15523277aedfcd456fcfe0976f4e3409 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a897e6aea611ec462ad23288c107b08 inherit pub_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a9a897e6aea611ec462ad23288c107b08">write</a> (const <a class="el" href="classvar_1_1_string.html">var::String</a> &amp;str) const </td></tr>
+<tr class="separator:a9a897e6aea611ec462ad23288c107b08 inherit pub_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classhal_1_1_periph_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classhal_1_1_periph_object')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classhal_1_1_periph_object.html">hal::PeriphObject</a></td></tr>
+<tr class="memitem:a03c48bc5daa52968496311fc30cf172e inherit pub_types_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#a03c48bc5daa52968496311fc30cf172e">port_t</a></td></tr>
+<tr class="separator:a03c48bc5daa52968496311fc30cf172e inherit pub_types_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
+<tr class="inherit_header pub_static_methods_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
+<tr class="memitem:a9d09b5d81f8397c2822e672756058fad inherit pub_static_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a> (const char *path)</td></tr>
+<tr class="separator:a9d09b5d81f8397c2822e672756058fad inherit pub_static_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae22e053ba2df2ae14a882d091a19dd3f inherit pub_static_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ae22e053ba2df2ae14a882d091a19dd3f">remove</a> (const char *path)</td></tr>
+<tr class="separator:ae22e053ba2df2ae14a882d091a19dd3f inherit pub_static_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ade551f063fba523d94620170d89885 inherit pub_static_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a4ade551f063fba523d94620170d89885">size</a> (const char *path)</td></tr>
+<tr class="separator:a4ade551f063fba523d94620170d89885 inherit pub_static_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae546645f8d29b7114cfeed7407d04b72 inherit pub_static_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ae546645f8d29b7114cfeed7407d04b72">stat</a> (const char *path, struct stat *st)</td></tr>
+<tr class="separator:ae546645f8d29b7114cfeed7407d04b72 inherit pub_static_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0643162cd5dfa837999a95cf7fabf6be inherit pub_static_methods_classsys_1_1_file"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a0643162cd5dfa837999a95cf7fabf6be">suffix</a> (const char *path)</td></tr>
+<tr class="separator:a0643162cd5dfa837999a95cf7fabf6be inherit pub_static_methods_classsys_1_1_file"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classhal_1_1_periph_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classhal_1_1_periph_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classhal_1_1_periph_object.html">hal::PeriphObject</a></td></tr>
+<tr class="memitem:a386daf7c52194e199afb0149c181ee8c inherit pro_methods_classhal_1_1_periph_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_periph_object.html#a386daf7c52194e199afb0149c181ee8c">open</a> (const char *<a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a>, int <a class="el" href="classsys_1_1_file.html#ae249875dc748c887a844d58aad1ad9cf">flags</a>)</td></tr>
+<tr class="separator:a386daf7c52194e199afb0149c181ee8c inherit pro_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="a9f9ffa0983da86a5f219fabf8dca6841"></a>
@@ -113,7 +192,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">hal::Spi::Spi </td>
           <td>(</td>
-          <td class="paramtype">port_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classhal_1_1_periph_object.html#a03c48bc5daa52968496311fc30cf172e">port_t</a>&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>

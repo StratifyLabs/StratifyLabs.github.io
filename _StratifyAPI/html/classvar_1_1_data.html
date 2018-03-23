@@ -12,13 +12,13 @@ page_source: Doxygen
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
-      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
     </ul>
   </div>
 <div id="nav-path" class="navpath">
@@ -28,7 +28,6 @@ page_source: Doxygen
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="classvar_1_1_data-members.html">List of all members</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
@@ -40,6 +39,14 @@ page_source: Doxygen
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> buffer_const[16];</div><div class="line"><span class="keywordtype">char</span> buffer[16];</div><div class="line"></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> empty; <span class="comment">//the size of the data is zero. data_const() will return a pointer to a zero-length null-terminated string</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_dynamic(16); <span class="comment">//this will dynamically allocate 16 bytes (see alloc())</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_static(buffer, 16); <span class="comment">//will use buffer and consider it statically allocated (see set())</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_readonly(buffer_const, 16, <span class="keyword">true</span>); <span class="comment">//this will consider the data read only -- calls to data() will return 0</span></div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( data_readonly.data() == 0 ){</div><div class="line">     printf(<span class="stringliteral">&quot;Data is read only\n&quot;</span>); <span class="comment">//this will print</span></div><div class="line">}</div><div class="line"></div><div class="line">printf(<span class="stringliteral">&quot;This is empty data %s\n&quot;</span>, empty.cdata_const()); <span class="comment">//this is OK because empty data will return a valid string pointer</span></div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> ()</td></tr>
+<tr class="separator:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d0f900f8b05358ab0f7bda2e624497"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a63d0f900f8b05358ab0f7bda2e624497">Data</a> (void *mem, u32 size, bool readonly=false)</td></tr>
+<tr class="separator:a63d0f900f8b05358ab0f7bda2e624497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5daa9ad4ddbd1585ad343e024d3a919b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5daa9ad4ddbd1585ad343e024d3a919b">Data</a> (u32 size)</td></tr>
+<tr class="separator:a5daa9ad4ddbd1585ad343e024d3a919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52664e17992b64006a918041d92f803e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a52664e17992b64006a918041d92f803e">~Data</a> ()</td></tr>
+<tr class="separator:a52664e17992b64006a918041d92f803e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35facff2497b4ac3320d581f4f31d62e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a35facff2497b4ac3320d581f4f31d62e">alloc</a> (u32 size, bool <a class="el" href="classvar_1_1_data.html#abf65d97bdb6d4dde3dc335adc7068688">resize</a>=false)</td></tr>
 <tr class="separator:a35facff2497b4ac3320d581f4f31d62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ead6286e3edd0975fe348e04bce4a96"><td class="memItemLeft" align="right" valign="top">virtual u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a4ead6286e3edd0975fe348e04bce4a96">calc_size</a> () const </td></tr>
@@ -52,12 +59,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1ce8421aa981101778fc78e33495ab43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d7f63758528a956dc508f4af2819042"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5d7f63758528a956dc508f4af2819042">clear</a> ()</td></tr>
 <tr class="separator:a5d7f63758528a956dc508f4af2819042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> ()</td></tr>
-<tr class="separator:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d0f900f8b05358ab0f7bda2e624497"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a63d0f900f8b05358ab0f7bda2e624497">Data</a> (void *mem, u32 size, bool readonly=false)</td></tr>
-<tr class="separator:a63d0f900f8b05358ab0f7bda2e624497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5daa9ad4ddbd1585ad343e024d3a919b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5daa9ad4ddbd1585ad343e024d3a919b">Data</a> (u32 size)</td></tr>
-<tr class="separator:a5daa9ad4ddbd1585ad343e024d3a919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcf8676ded784b05b53154a6f3ca11d7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#adcf8676ded784b05b53154a6f3ca11d7">data</a> () const </td></tr>
 <tr class="separator:adcf8676ded784b05b53154a6f3ca11d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d33ba1650f4e0b9b53d66816491d8f5"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a4d33ba1650f4e0b9b53d66816491d8f5">data_const</a> () const </td></tr>
@@ -72,8 +73,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0d036b7a3cfb4dd7488f3d28a70ecedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac90e0dfec3ca4f17c8608f2f234821"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#afac90e0dfec3ca4f17c8608f2f234821">set_capacity</a> (u32 s)</td></tr>
 <tr class="separator:afac90e0dfec3ca4f17c8608f2f234821"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52664e17992b64006a918041d92f803e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a52664e17992b64006a918041d92f803e">~Data</a> ()</td></tr>
-<tr class="separator:a52664e17992b64006a918041d92f803e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
