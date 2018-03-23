@@ -36,23 +36,31 @@ The video above will walk you through the following steps to get things going:
 
 - Download the [HelloWorld source code](https://github.com/StratifyLabs/HelloWorld) from Github
 - Unzip the archive then rename the folder from "HelloWorld-master" to "HelloWorld" (the folder name must match the project name to install correctly)
-- Open a command line or use your favorite IDE (Atom is used in the video) to:
-  - Create a folder called "cmake_arm" within the HelloWorld folder
-  - Change the terminal directly to HelloWorld/cmake_arm
-  - Configure and build the project with "cmake ..; make"
+- Open a command line or use your favorite IDE (Atom is used in the video) to enter the following commands within the HelloWorld directory.
+
+```
+#bash terminal (Mac OS X) or msys Terminal
+mkdir cmake_arm
+cd cmake_arm
+cmake ..
+make
+```
+
+```
+#windows powershell
+mkdir cmake_arm
+cd cmake_arm
+cmake -G "MinGW Makefiles" ..
+cmake --build . --target all
+```
+
 - Now use Stratify Link to install the program
   - You need to make sure the install path is set to "/app/.install" in order to install directly to flash memory.
 
 ## Notes
 
 - The video uses Atom with the "TerminalIO" plugin installed to launch the terminal. Both cmake and make are available on the path environment variable.
-- On Windows, "TerminalIO" makes use of Windows Powershell but cmd.exe shoudl work as well.
-- On Windows, you need to use the following commands within the cmake_arm directory to build:
-
-```
-cmake -G "MinGW Makefiles" ..
-cmake --build . --target all
-```
+- On Windows, "TerminalIO" makes use of Windows Powershell but cmd.exe should work as well.
 
 
 
