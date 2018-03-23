@@ -46,8 +46,13 @@ The video above will walk you through the following steps to get things going:
 ## Notes
 
 - The video uses Atom with the "TerminalIO" plugin installed to launch the terminal. Both cmake and make are available on the path environment variable.
-- On Windows, you need to use: 'cmake -G "MinGW Makefiles" ..' then 'cmake --build . --target all'.
+- On Windows, "TerminalIO" makes use of Windows Powershell but cmd.exe shoudl work as well.
+- On Windows, you need to use the following commands within the cmake_arm directory to build:
 
+```
+cmake -G "MinGW Makefiles" ..
+cmake --build . --target all
+```
 
 
 
