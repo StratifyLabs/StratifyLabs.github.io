@@ -9,10 +9,10 @@
   <Version>6.3.1</Version>
   <ReleaseDate>2018-03-08</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="51211826" CompressedSize="5058176" OS="Any"/>
+  <UpdateFile OS="Any" UncompressedSize="51211826" CompressedSize="5058176"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <Licenses>
-   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
+   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
   </Licenses>
   <SHA1>52e233f17a827552039eadbf46f1a7afbceed9e0</SHA1>
  </PackageUpdate>
@@ -23,7 +23,7 @@
   <Version>3.5.0</Version>
   <ReleaseDate>2018-03-18</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="241128667" CompressedSize="29547355" OS="Any"/>
+  <UpdateFile OS="Any" UncompressedSize="241128667" CompressedSize="29547355"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <SHA1>7f218e962d7d0df2cc8ba10c06d183d6250a170b</SHA1>
  </PackageUpdate>
@@ -34,7 +34,7 @@
   <Version>1.0</Version>
   <ReleaseDate>2018-01-04</ReleaseDate>
   <Default>true</Default>
-  <UpdateFile UncompressedSize="54826445" CompressedSize="12503710" OS="Any"/>
+  <UpdateFile OS="Any" UncompressedSize="54826445" CompressedSize="12503710"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>95c601a041ffa92ce6f521455987d7fe6b19eba9</SHA1>
  </PackageUpdate>
@@ -42,22 +42,22 @@
   <Name>co.stratifylabs.stratifyapp</Name>
   <DisplayName>Stratify App</DisplayName>
   <Description>Stratify App connects hardware, users, and the cloud in a seamless way.</Description>
-  <Version>1.6</Version>
-  <ReleaseDate>2018-02-11</ReleaseDate>
+  <Version>1.7</Version>
+  <ReleaseDate>2018-03-24</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="56244450" CompressedSize="12830220" OS="Any"/>
+  <UpdateFile OS="Any" UncompressedSize="56248674" CompressedSize="12831583"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>6c5d945e23c2e7f543dbbbc6a74708c588cb1dab</SHA1>
+  <SHA1>96ba935023f5fddc47c9aa4a1e587a59ce781c0c</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.13</Version>
-  <ReleaseDate>2018-03-08</ReleaseDate>
+  <Version>3.14</Version>
+  <ReleaseDate>2018-03-24</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="56557761" CompressedSize="12838915" OS="Any"/>
+  <UpdateFile OS="Any" UncompressedSize="56661553" CompressedSize="12920149"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>b27cd299f70bc9f24b4e1f0e5013b1f7e95aff6e</SHA1>
+  <SHA1>c6effa15c7b33af99400c2084a78f6e668d9b460</SHA1>
  </PackageUpdate>
 </Updates>

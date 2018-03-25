@@ -9,7 +9,7 @@
   <Version>6.3.1</Version>
   <ReleaseDate>2018-03-08</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="22394923" UncompressedSize="92952659" OS="Any"/>
+  <UpdateFile UncompressedSize="92952659" OS="Any" CompressedSize="22394923"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <Licenses>
    <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
@@ -23,7 +23,7 @@
   <Version>3.5.0</Version>
   <ReleaseDate>2018-03-08</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile CompressedSize="70853318" UncompressedSize="672588469" OS="Any"/>
+  <UpdateFile UncompressedSize="672588469" OS="Any" CompressedSize="70853318"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <SHA1>05ea6fe3d9780be5e5f99b5c2d2c321f1511ac56</SHA1>
  </PackageUpdate>
@@ -35,7 +35,7 @@
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="21522996" UncompressedSize="85624852" OS="Any"/>
+  <UpdateFile UncompressedSize="85624852" OS="Any" CompressedSize="21522996"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>88e4436d6c4a9aa422666c295dd96a377b98314b</SHA1>
  </PackageUpdate>
@@ -43,24 +43,24 @@
   <Name>co.stratifylabs.stratifyapp</Name>
   <DisplayName>Stratify App</DisplayName>
   <Description>Stratify App connects hardware, users, and the cloud in a seamless way.</Description>
-  <Version>1.6</Version>
-  <ReleaseDate>2018-02-11</ReleaseDate>
+  <Version>1.7</Version>
+  <ReleaseDate>2018-03-24</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="21894195" UncompressedSize="87267950" OS="Any"/>
+  <UpdateFile UncompressedSize="87270246" OS="Any" CompressedSize="21895578"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>28a4cd88bec68a35b6ada87d0bde9826df8f2c04</SHA1>
+  <SHA1>c9a1ba0dbf7e60c8c9d7a0606313138bdb652bd1</SHA1>
  </PackageUpdate>
  <PackageUpdate>
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.13</Version>
-  <ReleaseDate>2018-03-08</ReleaseDate>
+  <Version>3.14</Version>
+  <ReleaseDate>2018-03-24</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile CompressedSize="21885723" UncompressedSize="87293462" OS="Any"/>
+  <UpdateFile UncompressedSize="87402758" OS="Any" CompressedSize="21955572"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>0a44266f89ecd5a4c4c1fefc1211bb0fbf2610b4</SHA1>
+  <SHA1>54e44ff21cf04a47a999ec0b14e6fc471fc13cde</SHA1>
  </PackageUpdate>
 </Updates>
