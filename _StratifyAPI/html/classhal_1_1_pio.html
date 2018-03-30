@@ -36,7 +36,7 @@ page_source: Doxygen
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class controls pin input/output.</p>
 <dl class="section see"><dt>See also</dt><dd>Hal::Pin</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line"></div><div class="line">  <span class="comment">//This allocates a PIO object but does not affect HW state</span></div><div class="line">     Pio pio(2); <span class="comment">//use pio port 2</span></div><div class="line"></div><div class="line">     <span class="comment">//This opens the port and sets the attributes -- same as pio.open(); pio.set_attr(1&lt;&lt;10, PIO_MODE_OUTPUT);</span></div><div class="line">     pio.init(<a class="code" href="classhal_1_1_pio.html#aafcbb0545bb067fd50e532447be33279a29e1b284bfc9fd3d4ad6ac8b7fb5809e">Pio::FLAG_SET_OUTPUT</a>, 1&lt;&lt;10);</div><div class="line"></div><div class="line">     <span class="comment">//Bits can be manipulated using clrmask() and setmask()</span></div><div class="line">     pio.clear_mask(1&lt;&lt;10); <span class="comment">//clear bit 10 of port 2</span></div><div class="line">     pio.set_mask(1&lt;&lt;10); <span class="comment">//set bit 10</span></div><div class="line"></div><div class="line">  <span class="comment">//the pin can be reconfigured as an input</span></div><div class="line">     pio.set_attr(<a class="code" href="classhal_1_1_pio.html#aafcbb0545bb067fd50e532447be33279a4f11808881252011a0a2e17c1353dfc8">Pio::FLAG_SET_INPUT</a> | <a class="code" href="classhal_1_1_pio.html#aafcbb0545bb067fd50e532447be33279a9086e6eac2630b52bf7a60ee1fd34f34">Pio::FLAG_IS_PULLDOWN</a>, (1&lt;&lt;10)); <span class="comment">//set as an input with internal pulldown</span></div><div class="line"></div><div class="line">     <span class="comment">//get() is used to read the port</span></div><div class="line">     <span class="keywordflow">if</span>( pio.get_value() &amp; (1&lt;&lt;10) ){</div><div class="line">     <span class="comment">//bit 10 is set</span></div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//This closes the port for all instances (ports are closed automatically when program exits)</span></div><div class="line">     pio.close();</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<p>Example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line"></div><div class="line">  <span class="comment">//This allocates a PIO object but does not affect HW state</span></div><div class="line">     Pio pio(2); <span class="comment">//use pio port 2</span></div><div class="line"></div><div class="line">     <span class="comment">//This opens the port and sets the attributes -- same as pio.open(); pio.set_attr(1&lt;&lt;10, PIO_MODE_OUTPUT);</span></div><div class="line">     pio.init(<a class="code" href="classhal_1_1_pio.html#aab1f8be83eb7384aa94587a574f1b794a29e1b284bfc9fd3d4ad6ac8b7fb5809e">Pio::FLAG_SET_OUTPUT</a>, 1&lt;&lt;10);</div><div class="line"></div><div class="line">     <span class="comment">//Bits can be manipulated using clrmask() and setmask()</span></div><div class="line">     pio.clear_mask(1&lt;&lt;10); <span class="comment">//clear bit 10 of port 2</span></div><div class="line">     pio.set_mask(1&lt;&lt;10); <span class="comment">//set bit 10</span></div><div class="line"></div><div class="line">  <span class="comment">//the pin can be reconfigured as an input</span></div><div class="line">     pio.set_attr(<a class="code" href="classhal_1_1_pio.html#aab1f8be83eb7384aa94587a574f1b794a4f11808881252011a0a2e17c1353dfc8">Pio::FLAG_SET_INPUT</a> | <a class="code" href="classhal_1_1_pio.html#aab1f8be83eb7384aa94587a574f1b794a9086e6eac2630b52bf7a60ee1fd34f34">Pio::FLAG_IS_PULLDOWN</a>, (1&lt;&lt;10)); <span class="comment">//set as an input with internal pulldown</span></div><div class="line"></div><div class="line">     <span class="comment">//get() is used to read the port</span></div><div class="line">     <span class="keywordflow">if</span>( pio.get_value() &amp; (1&lt;&lt;10) ){</div><div class="line">     <span class="comment">//bit 10 is set</span></div><div class="line">     }</div><div class="line"></div><div class="line">     <span class="comment">//This closes the port for all instances (ports are closed automatically when program exits)</span></div><div class="line">     pio.close();</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2efc83f9542a10d69f16cd00363be497"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pio.html#a2efc83f9542a10d69f16cd00363be497">assign</a> (u32 mask) const </td></tr>
@@ -144,7 +144,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a386daf7c52194e199afb0149c181ee8c inherit pro_methods_classhal_1_1_periph_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="aafcbb0545bb067fd50e532447be33279"></a>
+<a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -154,61 +154,61 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a4f11808881252011a0a2e17c1353dfc8"></a>FLAG_SET_INPUT&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a4f11808881252011a0a2e17c1353dfc8"></a>FLAG_SET_INPUT&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a87ab487492803226f03df276ee386257">PIO_FLAG_SET_INPUT</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a29e1b284bfc9fd3d4ad6ac8b7fb5809e"></a>FLAG_SET_OUTPUT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a29e1b284bfc9fd3d4ad6ac8b7fb5809e"></a>FLAG_SET_OUTPUT&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91ac2aba738133df3a90960352442ffc9c9">PIO_FLAG_SET_OUTPUT</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a740f5057fdaa70dc60c57e215b6f4ec8"></a>FLAG_IS_PULLUP&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a740f5057fdaa70dc60c57e215b6f4ec8"></a>FLAG_IS_PULLUP&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a677704677ba5f9116f5350c03087e14c">PIO_FLAG_IS_PULLUP</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a9086e6eac2630b52bf7a60ee1fd34f34"></a>FLAG_IS_PULLDOWN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a9086e6eac2630b52bf7a60ee1fd34f34"></a>FLAG_IS_PULLDOWN&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a60d97cac1b46777dfa83f066999d230f">PIO_FLAG_IS_PULLDOWN</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a6d21d25dd3a54bd7281c30086ac61776"></a>FLAG_IS_REPEATER&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a6d21d25dd3a54bd7281c30086ac61776"></a>FLAG_IS_REPEATER&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91adf69286517d448c064c5cc274f0c57c4">PIO_FLAG_IS_REPEATER</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279ade1ee2eee141dd432588d80f8204e101"></a>FLAG_IS_FLOAT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794ade1ee2eee141dd432588d80f8204e101"></a>FLAG_IS_FLOAT&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a14a4ca40fd64be9ac5d763d16e4a7962">PIO_FLAG_IS_FLOAT</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a9c7074040b6deaa27c95e18e4cbb21c2"></a>FLAG_IS_SPEED_LOW&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a9c7074040b6deaa27c95e18e4cbb21c2"></a>FLAG_IS_SPEED_LOW&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a7303e1963dc172c5f700360c58bbfcc7">PIO_FLAG_IS_SPEED_LOW</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a8cec4ed394d4e29c982b95143be6ff0b"></a>FLAG_IS_SPEED_MEDIUM&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a8cec4ed394d4e29c982b95143be6ff0b"></a>FLAG_IS_SPEED_MEDIUM&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91af3d09fab2d89c7fc7dbae79fd5b6db38">PIO_FLAG_IS_SPEED_MEDIUM</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279ac4ce7e1e1a93354e11500882a622b835"></a>FLAG_IS_SPEED_HIGH&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794ac4ce7e1e1a93354e11500882a622b835"></a>FLAG_IS_SPEED_HIGH&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a5aeecf7a1832ee7cd8e308472fe6ad48">PIO_FLAG_IS_SPEED_HIGH</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a9cebc589cc917da3e2b3fc6715fd0f53"></a>FLAG_IS_SPEED_BLAZING&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a9cebc589cc917da3e2b3fc6715fd0f53"></a>FLAG_IS_SPEED_BLAZING&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a58851349a47b5c9a4ac4bee0ad826edd">PIO_FLAG_IS_SPEED_BLAZING</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a4716bf2ba17773e7c66903540c762f30"></a>FLAG_IS_OPENDRAIN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a4716bf2ba17773e7c66903540c762f30"></a>FLAG_IS_OPENDRAIN&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a9d1b6a9df2f09772b8144c70ba4e08ba">PIO_FLAG_IS_OPENDRAIN</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a968b2d9a59df4cd0b2dee9ccdfee5bf3"></a>FLAG_IS_HYSTERESIS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a968b2d9a59df4cd0b2dee9ccdfee5bf3"></a>FLAG_IS_HYSTERESIS&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a00079c7a88c1d6013c97f96bde765e82">PIO_FLAG_IS_HYSTERESIS</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a9220f6d75f2a98d27cafb57a3b945fbd"></a>FLAG_IS_DIRONLY&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a9220f6d75f2a98d27cafb57a3b945fbd"></a>FLAG_IS_DIRONLY&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a940880dd883958fd5948839c8deac0fb">PIO_FLAG_IS_DIRONLY</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a78a66b37dbb56c2f0df688e43b3fc1ad"></a>FLAG_IS_ANALOG&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a78a66b37dbb56c2f0df688e43b3fc1ad"></a>FLAG_IS_ANALOG&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a40471d2ad572834af8620640d05b924d">PIO_FLAG_IS_ANALOG</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279aa03f591ecf93c936cca55bcbdd6c559f"></a>FLAG_IS_INVERT&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794aa03f591ecf93c936cca55bcbdd6c559f"></a>FLAG_IS_INVERT&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91a01c879f85ca81f3349edb1d7953bad6a">PIO_FLAG_IS_INVERT</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279ad74ce152cbccc19bfa3d97f28232e12f"></a>FLAG_IS_FILTER&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794ad74ce152cbccc19bfa3d97f28232e12f"></a>FLAG_IS_FILTER&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91af2cdb0a58b79d23c84e52a552341f2da">PIO_FLAG_IS_FILTER</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a94beb60307cb7aa62e2ee3ee4fc6544b"></a>FLAG_SET&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a94beb60307cb7aa62e2ee3ee4fc6544b"></a>FLAG_SET&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91ac34d4af90f0239f983305fe877eeff59">PIO_FLAG_SET</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279ae8c37d7bac9b4179c8813dd09ade5f05"></a>FLAG_CLEAR&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794ae8c37d7bac9b4179c8813dd09ade5f05"></a>FLAG_CLEAR&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91ad37e3060f241a60266f878979578ca10">PIO_FLAG_CLEAR</a> </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="aafcbb0545bb067fd50e532447be33279a55805fb45b0f535390b7b24894f5cfee"></a>FLAG_ASSIGN&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="aab1f8be83eb7384aa94587a574f1b794a55805fb45b0f535390b7b24894f5cfee"></a>FLAG_ASSIGN&#160;</td><td class="fielddoc">
 <p>See <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___p_i_o.html#gga0c2b3d5e7a698e36b34db9eea836cf91aa88f81747ca708752df34dd43a02c7d2">PIO_FLAG_ASSIGN</a> </p>
 </td></tr>
 </table>

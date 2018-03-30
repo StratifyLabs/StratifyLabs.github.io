@@ -49,6 +49,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a29478afd10dd63920a7c926f826bb5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ab2b82b7fefb2afa3164950ca1343e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a2ab2b82b7fefb2afa3164950ca1343e2">init</a> (u32 o_flags)</td></tr>
 <tr class="separator:a2ab2b82b7fefb2afa3164950ca1343e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224295f67b72bae281a429562a527f7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a224295f67b72bae281a429562a527f7d">operator bool</a> ()</td></tr>
+<tr class="separator:a224295f67b72bae281a429562a527f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b8611277f39330883ee5a48e7e9728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhal_1_1_pin.html">Pin</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#a82b8611277f39330883ee5a48e7e9728">operator=</a> (bool on)</td></tr>
 <tr class="separator:a82b8611277f39330883ee5a48e7e9728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa26e41ac890ac51da0bf3bf910ee8a3b"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin.html#aa26e41ac890ac51da0bf3bf910ee8a3b">pinmask</a> () const </td></tr>
@@ -316,6 +318,30 @@ Additional Inherited Members</h2></td></tr>
 <p>The following is an example of initializing a pin.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classhal_1_1_pin.html#ad35b76a0d9b574e124924e10352af97e">Pin</a> p(0,1); <span class="comment">//Port 0, pin 1</span></div><div class="line"></div><div class="line">p.init(Pin::INPUT | Pin::PULLUP);</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( p.get_value() == 0 ){</div><div class="line">  <span class="comment">//this means something is driving the pin low</span></div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classhal_1_1_periph_object.html#a42e023b010c3d874bb048f584a0c2a1d">open()</a>, <a class="el" href="classhal_1_1_pin.html#aa33cea80b8adf116688dd3cdaa4303c8">set_attr()</a> </dd></dl>
 
+</div>
+</div>
+<a class="anchor" id="a224295f67b72bae281a429562a527f7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hal::Pin::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the pin is high and false if it is low.</p>
+<p>This allows the following code to work: </p><div class="fragment"><div class="line"><a class="code" href="classhal_1_1_pin.html#ad35b76a0d9b574e124924e10352af97e">Pin</a> button;</div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( button ){</div><div class="line">  printf(<span class="stringliteral">&quot;Button is logic high\n&quot;</span>);</div><div class="line">} <span class="keywordflow">else</span> {</div><div class="line">  printf(<span class="stringliteral">&quot;Button is logic low\n&quot;</span>);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a82b8611277f39330883ee5a48e7e9728"></a>
