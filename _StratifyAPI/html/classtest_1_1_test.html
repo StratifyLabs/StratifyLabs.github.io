@@ -43,7 +43,9 @@ page_source: Doxygen
 <li>Stress Tests: Should be designed to stress the system and check for unexpected behavior</li>
 <li>Additional Tests: Used as needed by inheriting classes to run additional tests</li>
 </ul>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/test.hpp&gt;</span></div><div class="line"></div><div class="line">u32 o_execute_flags = <a class="code" href="classtest_1_1_test.html#ad842c34a163b1bc89952a2765ad0a87ba622e018c5df46eb2223eb70ddd7f5914">Test::EXECUTE_ALL</a>;</div><div class="line"><a class="code" href="classtest_1_1_test.html#a7097f995b07143f41f1b729bd41ab6aa">Test::initialize</a>(cli.name(), cli.version());</div><div class="line"><span class="keywordflow">if</span>( o_flags &amp; DATA_TEST_FLAG ){</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a643d5465f33e171ff14e1eefd9951d4a">Test</a> <a class="code" href="namespacetest.html">test</a>(<span class="stringliteral">&quot;generic test&quot;</span>);  <span class="comment">//Must be constructed after Test::inialize()</span></div><div class="line">  <a class="code" href="namespacetest.html">test</a>.execute(o_execute_flags);</div><div class="line">  <span class="comment">//At this point test will be deconstructed -- must happen before Test::finalize()</span></div><div class="line">}</div><div class="line"><a class="code" href="classtest_1_1_test.html#aff841db16eb845c2cc2b285b433538f1">Test::finalize</a>();</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/test.hpp&gt;</span></div><div class="line"></div><div class="line">u32 o_execute_flags = <a class="code" href="classtest_1_1_test.html#ad842c34a163b1bc89952a2765ad0a87ba622e018c5df46eb2223eb70ddd7f5914">Test::EXECUTE_ALL</a>;</div><div class="line"><a class="code" href="classtest_1_1_test.html#a7097f995b07143f41f1b729bd41ab6aa">Test::initialize</a>(cli.name(), cli.version());</div><div class="line"><span class="keywordflow">if</span>( o_flags &amp; DATA_TEST_FLAG ){</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a643d5465f33e171ff14e1eefd9951d4a">Test</a> <a class="code" href="namespacetest.html">test</a>(<span class="stringliteral">&quot;generic test&quot;</span>);  <span class="comment">//Must be constructed after Test::inialize()</span></div><div class="line">  <a class="code" href="namespacetest.html">test</a>.execute(o_execute_flags);</div><div class="line">  <span class="comment">//At this point test will be deconstructed -- must happen before Test::finalize()</span></div><div class="line">}</div><div class="line"><a class="code" href="classtest_1_1_test.html#aff841db16eb845c2cc2b285b433538f1">Test::finalize</a>();</div></div><!-- fragment --><p>See the <a href="https://github.com/StratifyLabs/sostest">sostest</a> suite of applications for examples (like <a href="https://github.com/StratifyLabs/sostest/blob/master/api-var-test/src/DataTest.cpp">DataTest</a>).</p>
+<p>Here is an example report in JSON format:</p>
+<div class="fragment"><div class="line">{</div><div class="line">  <span class="stringliteral">&quot;system&quot;</span>: {</div><div class="line">    <span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;Stratify Alpha&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;arch&quot;</span>: <span class="stringliteral">&quot;v7em_f4sh&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;sys version&quot;</span>: <span class="stringliteral">&quot;1.5&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;kernel version&quot;</span>: <span class="stringliteral">&quot;3.5.0&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;memory size&quot;</span>: <span class="stringliteral">&quot;16384&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;-KZKdVwMXIj6vTVsbX56&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;serial&quot;</span>: <span class="stringliteral">&quot;F5001942555D5A3EAEAE24601801F01A&quot;</span></div><div class="line">  },</div><div class="line">  <span class="stringliteral">&quot;test&quot;</span>: {</div><div class="line">   <span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;api-var-test&quot;</span>,</div><div class="line">   <span class="stringliteral">&quot;version&quot;</span>: <span class="stringliteral">&quot;0.1&quot;</span></div><div class="line">  },</div><div class="line">  <span class="stringliteral">&quot;var::Data&quot;</span>: {</div><div class="line">    <span class="stringliteral">&quot;api&quot;</span>: {</div><div class="line">      <span class="stringliteral">&quot;msg-0&quot;</span>: <span class="stringliteral">&quot;fill test complete&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;msg-1&quot;</span>: <span class="stringliteral">&quot;alloc test complete&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;result&quot;</span>: <span class="keyword">true</span>,</div><div class="line">      <span class="stringliteral">&quot;microseconds&quot;</span>: 10900.0</div><div class="line">    },</div><div class="line">    <span class="stringliteral">&quot;result&quot;</span>: <span class="keyword">true</span>,</div><div class="line">    <span class="stringliteral">&quot;microseconds&quot;</span>: 11172.0</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a643d5465f33e171ff14e1eefd9951d4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a643d5465f33e171ff14e1eefd9951d4a">Test</a> (const char *name)</td></tr>
@@ -165,7 +167,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Deconstructs the test object.</p>
-<p>The object must be deconstructed before <a class="el" href="classtest_1_1_test.html#aff841db16eb845c2cc2b285b433538f1">Test::finalize()</a> </p>
+<p>The object must be deconstructed before <a class="el" href="classtest_1_1_test.html#aff841db16eb845c2cc2b285b433538f1">Test::finalize()</a> is executed. </p>
 
 </div>
 </div>
@@ -217,10 +219,10 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Closes a new test case.</p>
+<p>Closes a test case.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">result</td><td>true if the case passed and false if it failed</td></tr>
+    <tr><td class="paramname">result</td><td>true if the test case passed and false if it failed</td></tr>
   </table>
   </dd>
 </dl>
@@ -252,7 +254,7 @@ Protected Member Functions</h2></td></tr>
 <p>Executes the tests specified by <em>o_flags</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">o_flags</td><td>Bitmaks of the tests to execute (e.g., EXECUTE_API) </td></tr>
+    <tr><td class="paramname">o_flags</td><td>Bitmask of the tests to execute (e.g., <a class="el" href="classtest_1_1_test.html#ad842c34a163b1bc89952a2765ad0a87ba894d0c55593e9f352cf5d2269755c165">Test::EXECUTE_API</a>) </td></tr>
   </table>
   </dd>
 </dl>
