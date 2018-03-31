@@ -89,16 +89,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a87958a6ad02956b3f8aaadffd4be2be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989ffe5239408af598d1dbcc8cacfc69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a989ffe5239408af598d1dbcc8cacfc69">open_case</a> (const char *case_name)</td></tr>
 <tr class="separator:a989ffe5239408af598d1dbcc8cacfc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac246e459a9b362b93d3e86f4ee18085b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message</a> (const char *key, const char *message)</td></tr>
-<tr class="separator:ac246e459a9b362b93d3e86f4ee18085b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3af4047ae4a6a90e88c44b70462272ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a3af4047ae4a6a90e88c44b70462272ec">set_case_value</a> (const char *key, u32 value)</td></tr>
-<tr class="separator:a3af4047ae4a6a90e88c44b70462272ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9394f8c893ee32b6585ad8c3fb6a4466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a9394f8c893ee32b6585ad8c3fb6a4466">set_case_value</a> (const char *key, float value)</td></tr>
-<tr class="separator:a9394f8c893ee32b6585ad8c3fb6a4466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eda9689cb11becf57a7e4c1dc0b1101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a3eda9689cb11becf57a7e4c1dc0b1101">set_case_value</a> (const char *key, s32 value)</td></tr>
-<tr class="separator:a3eda9689cb11becf57a7e4c1dc0b1101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dac6cb465e756a4023d1122df1dbb20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a1dac6cb465e756a4023d1122df1dbb20">set_case_value</a> (const char *key, int value)</td></tr>
-<tr class="separator:a1dac6cb465e756a4023d1122df1dbb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe87baa385e1447ceed8c2e0cf5a516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#abfe87baa385e1447ceed8c2e0cf5a516">print_case_message</a> (const char *fmt,...)</td></tr>
+<tr class="separator:abfe87baa385e1447ceed8c2e0cf5a516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdb5b69a340005b7f6de1b3626a00ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#adfdb5b69a340005b7f6de1b3626a00ac">print_case_message</a> (const char *key, const char *fmt,...)</td></tr>
+<tr class="separator:adfdb5b69a340005b7f6de1b3626a00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classapi_1_1_s_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classapi_1_1_s_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classapi_1_1_s_object.html">api::SObject</a></td></tr>
 <tr class="memitem:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_s_object.html#a6218149cb92b523d3bf608f4035af8c6">set_error_number</a> (int value) const </td></tr>
 <tr class="separator:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,7 +281,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Executes additional test cases.</p>
 <p>By default there are not additional cases. The inheriting class should reimplement this method it additional test cases are used.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyClassTest::execute_additional_cases(){</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a989ffe5239408af598d1dbcc8cacfc69">open_case</a>(<span class="stringliteral">&quot;first test case&quot;</span>);</div><div class="line">  <a class="code" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message</a>(<span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;test case message&quot;</span>);</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a87958a6ad02956b3f8aaadffd4be2be9">close_case</a>(<span class="keyword">true</span>); <span class="comment">//case passed</span></div><div class="line"></div><div class="line">  <a class="code" href="classtest_1_1_test.html#a989ffe5239408af598d1dbcc8cacfc69">open_case</a>(<span class="stringliteral">&quot;second test case&quot;</span>);</div><div class="line">  <a class="code" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message</a>(<span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;test case message&quot;</span>);</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a87958a6ad02956b3f8aaadffd4be2be9">close_case</a>(<span class="keyword">false</span>); <span class="comment">//case failed</span></div><div class="line">}</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> MyClassTest::execute_additional_cases(){</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a989ffe5239408af598d1dbcc8cacfc69">open_case</a>(<span class="stringliteral">&quot;first test case&quot;</span>);</div><div class="line">  set_case_message(<span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;test case message&quot;</span>);</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a87958a6ad02956b3f8aaadffd4be2be9">close_case</a>(<span class="keyword">true</span>); <span class="comment">//case passed</span></div><div class="line"></div><div class="line">  <a class="code" href="classtest_1_1_test.html#a989ffe5239408af598d1dbcc8cacfc69">open_case</a>(<span class="stringliteral">&quot;second test case&quot;</span>);</div><div class="line">  set_case_message(<span class="stringliteral">&quot;message&quot;</span>, <span class="stringliteral">&quot;test case message&quot;</span>);</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a87958a6ad02956b3f8aaadffd4be2be9">close_case</a>(<span class="keyword">false</span>); <span class="comment">//case failed</span></div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="af8b2dff5d7573d91c5da5c8c7e4c7954"></a>
@@ -506,7 +500,7 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac246e459a9b362b93d3e86f4ee18085b"></a>
+<a class="anchor" id="abfe87baa385e1447ceed8c2e0cf5a516"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -514,16 +508,16 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::Test::set_case_message </td>
+          <td class="memname">void test::Test::print_case_message </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
+          <td class="paramname"><em>fmt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>message</em>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -537,20 +531,23 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets a message to be stored with the case.</p>
+<p>Prints a message to the test report.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>The message key identifier (any string) </td></tr>
-    <tr><td class="paramname">message</td><td>The message to store</td></tr>
+    <tr><td class="paramname">fmt</td><td>Formatted string with variable arguments.</td></tr>
   </table>
   </dd>
 </dl>
-<p>This method can be used for both successful and unsuccessful cases. For unsuccessful cases, if can save in the test report why the test failed.</p>
-<p>This method can be used with <a class="el" href="classtest_1_1_test.html#a3af4047ae4a6a90e88c44b70462272ec">set_case_value()</a> to save information about test execution. </p>
+<p>The key to the message is assigned automatically as</p><ul>
+<li>msg-0</li>
+<li>msg-1</li>
+<li>msg-2</li>
+<li>msg-... </li>
+</ul>
 
 </div>
 </div>
-<a class="anchor" id="a3af4047ae4a6a90e88c44b70462272ec"></a>
+<a class="anchor" id="adfdb5b69a340005b7f6de1b3626a00ac"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -558,7 +555,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void test::Test::set_case_value </td>
+          <td class="memname">void test::Test::print_case_message </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -566,8 +563,14 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u32&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -581,144 +584,14 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets a case value (u32).</p>
+<p>Prints a message to the test report.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>The key to identify the value </td></tr>
-    <tr><td class="paramname">value</td><td>The value to save</td></tr>
+    <tr><td class="paramname">key</td><td>The key value for the saved message </td></tr>
+    <tr><td class="paramname">fmt</td><td>Formatted string with variable arguments. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message()</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9394f8c893ee32b6585ad8c3fb6a4466"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void test::Test::set_case_value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets a case value (float).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The key to identify the value </td></tr>
-    <tr><td class="paramname">value</td><td>The value to save</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message()</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a3eda9689cb11becf57a7e4c1dc0b1101"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void test::Test::set_case_value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">s32&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets a case value (s32).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The key to identify the value </td></tr>
-    <tr><td class="paramname">value</td><td>The value to save</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message()</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1dac6cb465e756a4023d1122df1dbb20"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void test::Test::set_case_value </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>key</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets a case value (int).</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td>The key to identify the value </td></tr>
-    <tr><td class="paramname">value</td><td>The value to save</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classtest_1_1_test.html#ac246e459a9b362b93d3e86f4ee18085b">set_case_message()</a> </dd></dl>
 
 </div>
 </div>
