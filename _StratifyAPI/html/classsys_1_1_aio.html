@@ -60,6 +60,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4578cd1107807ba4b3821d767275002b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ada99a7f0fe41c47777b2b4334fb669"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a3ada99a7f0fe41c47777b2b4334fb669">set_buf</a> (volatile void *<a class="el" href="classsys_1_1_aio.html#a93a7ff2d461b1d11ff42fb9b41be02e6">buf</a>, int <a class="el" href="classsys_1_1_aio.html#a7d5faa6158829436a39ddb6ce40b028b">nbytes</a>)</td></tr>
 <tr class="separator:a3ada99a7f0fe41c47777b2b4334fb669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1906638a720702d5de716672dd6daf5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a1906638a720702d5de716672dd6daf5d">set_buf</a> (<a class="el" href="classvar_1_1_data.html">var::Data</a> &amp;data)</td></tr>
+<tr class="separator:a1906638a720702d5de716672dd6daf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa269f000d6634a92480be73bfa7fc604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#aa269f000d6634a92480be73bfa7fc604">set_offset</a> (int <a class="el" href="classsys_1_1_aio.html#a7487da279f97d995b855cda9fc4a7ee0">offset</a>)</td></tr>
 <tr class="separator:aa269f000d6634a92480be73bfa7fc604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f2984b28b13522c1954c2c7498132ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_aio.html#a8f2984b28b13522c1954c2c7498132ec">set_signal</a> (int number, int value)</td></tr>
@@ -354,6 +356,38 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="a1906638a720702d5de716672dd6daf5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sys::Aio::set_buf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvar_1_1_data.html">var::Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the buffer using a <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">var::Data</a> object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The data object</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The data object must not change the buffer allocation after calling this method. If it does, it will need to set the buffer again. </p>
 
 </div>
 </div>
