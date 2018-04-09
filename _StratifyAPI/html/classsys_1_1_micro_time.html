@@ -42,6 +42,8 @@ page_source: Doxygen
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2cefaa6a28de6d2621aa05217160572"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_micro_time.html#ad2cefaa6a28de6d2621aa05217160572">MicroTime</a> (u32 <a class="el" href="classsys_1_1_micro_time.html#ab0e8938dd114e7d2ec0e863acd8c2d42">microseconds</a>=0)</td></tr>
 <tr class="separator:ad2cefaa6a28de6d2621aa05217160572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d83da948d3550c2f1a6c0f8c1746eaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_micro_time.html#a2d83da948d3550c2f1a6c0f8c1746eaf">is_valid</a> () const </td></tr>
+<tr class="separator:a2d83da948d3550c2f1a6c0f8c1746eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e8938dd114e7d2ec0e863acd8c2d42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacesys.html#ad43c8e29df5a4d17b5eefe11950e8f66">micro_time_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_micro_time.html#ab0e8938dd114e7d2ec0e863acd8c2d42">microseconds</a> () const </td></tr>
 <tr class="separator:ab0e8938dd114e7d2ec0e863acd8c2d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e0739ed3cad0ca2aafc3cae34fc84e5"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_micro_time.html#a1e0739ed3cad0ca2aafc3cae34fc84e5">milliseconds</a> () const </td></tr>
@@ -65,6 +67,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:add9dd91cd1da0407e0d81d3b2db00aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bdea979fa649b3ff6b5ed0251a9a17b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsys_1_1_micro_time.html">MicroTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_micro_time.html#a3bdea979fa649b3ff6b5ed0251a9a17b">from_seconds</a> (u32 sec)</td></tr>
 <tr class="separator:a3bdea979fa649b3ff6b5ed0251a9a17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a4320a82157b60626ebdc62cbe2e91"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsys_1_1_micro_time.html">MicroTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_micro_time.html#a25a4320a82157b60626ebdc62cbe2e91">invalid</a> ()</td></tr>
+<tr class="separator:a25a4320a82157b60626ebdc62cbe2e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad2cefaa6a28de6d2621aa05217160572"></a>
@@ -167,6 +171,54 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Create a <a class="el" href="classsys_1_1_micro_time.html" title="MicroTime Class. ">MicroTime</a> object from a second value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a25a4320a82157b60626ebdc62cbe2e91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classsys_1_1_micro_time.html">MicroTime</a> sys::MicroTime::invalid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a <a class="el" href="classsys_1_1_micro_time.html" title="MicroTime Class. ">MicroTime</a> object set to the invalid time. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d83da948d3550c2f1a6c0f8c1746eaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::MicroTime::is_valid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the time is set to a valid value. </p>
 
 </div>
 </div>

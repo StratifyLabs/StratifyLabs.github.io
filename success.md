@@ -27,7 +27,7 @@ sections:
     	<div class="col-md-12">
 		<center>
 			<button id="signin-button" class="btn btn-lg btn-success" style="visibility:hidden" data-clipboard-action="copy" data-clipboard-text='{ "type": "error" }' onclick="showMessage()">
-				Click Here to Complete Signin
+				Click Here to Complete Signing in to a Stratify Labs Desktop Application
 			</button>
 			<p> </p>
 		</center>

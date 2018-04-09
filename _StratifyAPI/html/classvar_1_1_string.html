@@ -35,7 +35,7 @@ page_source: Doxygen
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This is an embedded friendly string class. It is similar to the C++ string type but is built on <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">var::Data</a> and cstring functions. The naming convention follows includes many std::string methods.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> s1;</div><div class="line"><a class="code" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> s2;</div><div class="line">s1 = <span class="stringliteral">&quot;This is my string&quot;</span>;</div><div class="line">s1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; s1.capacity() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line"><a class="code" href="classvar_1_1_string.html#abc5990638e5771f4142a51a9f47dffab">printf</a>(<span class="stringliteral">&quot;%s&quot;</span>, s1.c_str());</div><div class="line"> <span class="comment">//Strings can be compared</span></div><div class="line">s2 = <span class="stringliteral">&quot;This is another string&quot;</span>;</div><div class="line"><span class="keywordflow">if</span>( s1 == s2 ){</div><div class="line">     <a class="code" href="classvar_1_1_string.html#abc5990638e5771f4142a51a9f47dffab">printf</a>(<span class="stringliteral">&quot;The strings are the same!\n&quot;</span>);</div><div class="line">} <span class="keywordflow">else</span> {</div><div class="line">     <a class="code" href="classvar_1_1_string.html#abc5990638e5771f4142a51a9f47dffab">printf</a>(<span class="stringliteral">&quot;The strings are different\n&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><p>The above code outputs: </p><div class="fragment"><div class="line">This is my <span class="keywordtype">string</span> 64</div><div class="line">The strings are different</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"><a class="code" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> s1;</div><div class="line"><a class="code" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> s2;</div><div class="line">s1 = <span class="stringliteral">&quot;This is my string&quot;</span>;</div><div class="line">s1 &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; s1.capacity() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div><div class="line">printf(<span class="stringliteral">&quot;%s&quot;</span>, s1.c_str());</div><div class="line"> <span class="comment">//Strings can be compared</span></div><div class="line">s2 = <span class="stringliteral">&quot;This is another string&quot;</span>;</div><div class="line"><span class="keywordflow">if</span>( s1 == s2 ){</div><div class="line">     printf(<span class="stringliteral">&quot;The strings are the same!\n&quot;</span>);</div><div class="line">} <span class="keywordflow">else</span> {</div><div class="line">     printf(<span class="stringliteral">&quot;The strings are different\n&quot;</span>);</div><div class="line">}</div></div><!-- fragment --><p>The above code outputs: </p><div class="fragment"><div class="line">This is my <span class="keywordtype">string</span> 64</div><div class="line">The strings are different</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abc3a271312e9e58f43e9986a797a0bba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> ()</td></tr>
@@ -116,8 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a224d578d390def5b68e6291b6ceaee99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d855c2d27219c73e49462af4d437018"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#a0d855c2d27219c73e49462af4d437018">operator==</a> (const char *cmp) const </td></tr>
 <tr class="separator:a0d855c2d27219c73e49462af4d437018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc5990638e5771f4142a51a9f47dffab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#abc5990638e5771f4142a51a9f47dffab">printf</a> ()</td></tr>
-<tr class="separator:abc5990638e5771f4142a51a9f47dffab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e2571ae992d170d73fb0c9eacbac1d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#a1e2571ae992d170d73fb0c9eacbac1d1">print</a> (u32 o_flags=<a class="el" href="classvar_1_1_data.html#abe59aee9f21e531849e4f299659f6717a8b0b060d65e6391d28d3c0b91edcfb60">PRINT_HEX</a>) const </td></tr>
+<tr class="separator:a1e2571ae992d170d73fb0c9eacbac1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0fb9108f777dc5909726582003b312c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#ae0fb9108f777dc5909726582003b312c">push_back</a> (char c)</td></tr>
 <tr class="separator:ae0fb9108f777dc5909726582003b312c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a1b53064dd3d8878f3744100df8f86d"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#a6a1b53064dd3d8878f3744100df8f86d">rfind</a> (const <a class="el" href="classvar_1_1_string.html">String</a> &amp;<a class="el" href="classvar_1_1_string.html#aa7b9d2ccd1c7fb2935f5fd7b23c33e80">str</a>, u32 pos=0) const </td></tr>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac89de81c03b30ae50fc7e4238d25da87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b9d2ccd1c7fb2935f5fd7b23c33e80"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#aa7b9d2ccd1c7fb2935f5fd7b23c33e80">str</a> () const </td></tr>
 <tr class="separator:aa7b9d2ccd1c7fb2935f5fd7b23c33e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e51f823fde6aaa48a9fb79ba31d994c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#a5e51f823fde6aaa48a9fb79ba31d994c">substr</a> (u32 pos=0, u32 len=<a class="el" href="classvar_1_1_string.html#a144e107bc24b7d2e8040283be589b917a8073b59114269fd6db3d4b44641e4074">npos</a>) const </td></tr>
+<tr class="memitem:a5e51f823fde6aaa48a9fb79ba31d994c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#a5e51f823fde6aaa48a9fb79ba31d994c">substr</a> (u32 pos=0, u32 len=<a class="el" href="classvar_1_1_string.html#a2e6b0e19a76eda1262a63ffa7eec78e3a8073b59114269fd6db3d4b44641e4074">npos</a>) const </td></tr>
 <tr class="separator:a5e51f823fde6aaa48a9fb79ba31d994c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e28e3bf34cf948793255c048276c970"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_string.html#a3e28e3bf34cf948793255c048276c970">tolower</a> ()</td></tr>
 <tr class="separator:a3e28e3bf34cf948793255c048276c970"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +177,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0d036b7a3cfb4dd7488f3d28a70ecedc inherit pub_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac90e0dfec3ca4f17c8608f2f234821 inherit pub_methods_classvar_1_1_data"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#afac90e0dfec3ca4f17c8608f2f234821">set_capacity</a> (u32 s)</td></tr>
 <tr class="separator:afac90e0dfec3ca4f17c8608f2f234821 inherit pub_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cc92e8289420b4922faba3037dd528 inherit pub_methods_classvar_1_1_data"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ac7cc92e8289420b4922faba3037dd528">swap_byte_order</a> (int size=4)</td></tr>
+<tr class="separator:ac7cc92e8289420b4922faba3037dd528 inherit pub_methods_classvar_1_1_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classapi_1_1_s_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classapi_1_1_s_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classapi_1_1_s_object.html">api::SObject</a></td></tr>
 <tr class="memitem:a73c80e2a8831814979487f0c384812b7 inherit pub_methods_classapi_1_1_s_object"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_s_object.html#a73c80e2a8831814979487f0c384812b7">api_version</a> () const </td></tr>
 <tr class="separator:a73c80e2a8831814979487f0c384812b7 inherit pub_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,7 +197,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a144e107bc24b7d2e8040283be589b917"></a>
+<a class="anchor" id="a2e6b0e19a76eda1262a63ffa7eec78e3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -205,7 +207,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a144e107bc24b7d2e8040283be589b917a8073b59114269fd6db3d4b44641e4074"></a>npos&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2e6b0e19a76eda1262a63ffa7eec78e3a8073b59114269fd6db3d4b44641e4074"></a>npos&#160;</td><td class="fielddoc">
 <p>Defines an invalid string length and position </p>
 </td></tr>
 </table>
@@ -505,7 +507,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Converts to an integer.</p>
-<div class="fragment"><div class="line"><a class="code" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> x = <span class="stringliteral">&quot;10&quot;</span>;</div><div class="line"><a class="code" href="classvar_1_1_string.html#abc5990638e5771f4142a51a9f47dffab">printf</a>(<span class="stringliteral">&quot;X is %d\n&quot;</span>, x.atoi());</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><a class="code" href="classvar_1_1_string.html#abc3a271312e9e58f43e9986a797a0bba">String</a> x = <span class="stringliteral">&quot;10&quot;</span>;</div><div class="line">printf(<span class="stringliteral">&quot;X is %d\n&quot;</span>, x.atoi());</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="acecd3af081ea3009820daa16e3475c57"></a>
@@ -868,7 +870,7 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The position of the string or <a class="el" href="classvar_1_1_string.html#a144e107bc24b7d2e8040283be589b917a8073b59114269fd6db3d4b44641e4074">var::String::npos</a> if the <a class="el" href="classvar_1_1_string.html" title="String class. ">String</a> was not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The position of the string or <a class="el" href="classvar_1_1_string.html#a2e6b0e19a76eda1262a63ffa7eec78e3a8073b59114269fd6db3d4b44641e4074">var::String::npos</a> if the <a class="el" href="classvar_1_1_string.html" title="String class. ">String</a> was not found </dd></dl>
 
 </div>
 </div>
@@ -1258,7 +1260,7 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abc5990638e5771f4142a51a9f47dffab"></a>
+<a class="anchor" id="a1e2571ae992d170d73fb0c9eacbac1d1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1266,20 +1268,29 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int var::String::printf </td>
+          <td class="memname">int var::String::print </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classvar_1_1_data.html#abe59aee9f21e531849e4f299659f6717a8b0b060d65e6391d28d3c0b91edcfb60">PRINT_HEX</a></code></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Prints the string on the standard output.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o_flags</td><td>This is ignored but is used to override <a class="el" href="classvar_1_1_data.html#ab9626e988f69e512b3bc85b5d5d947a5">Data::print</a> </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The total number of characters written to the stdout </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classvar_1_1_data.html#ab9626e988f69e512b3bc85b5d5d947a5">var::Data</a>.</p>
 
 </div>
 </div>
@@ -1552,7 +1563,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">u32&#160;</td>
-          <td class="paramname"><em>len</em> = <code><a class="el" href="classvar_1_1_string.html#a144e107bc24b7d2e8040283be589b917a8073b59114269fd6db3d4b44641e4074">npos</a></code>&#160;</td>
+          <td class="paramname"><em>len</em> = <code><a class="el" href="classvar_1_1_string.html#a2e6b0e19a76eda1262a63ffa7eec78e3a8073b59114269fd6db3d4b44641e4074">npos</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>

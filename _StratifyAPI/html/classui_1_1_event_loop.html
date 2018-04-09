@@ -28,7 +28,8 @@ page_source: Doxygen
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">ui::EventLoop Class Reference</div>  </div>
 </div><!--header-->
@@ -36,7 +37,7 @@ page_source: Doxygen
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class executes an event loop. The events are passed to the <a class="el" href="classui_1_1_event_loop.html#a2072ca70ed7df1e21b27787e2e36473b">current_element()</a> and handled using <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">Element::handle_event()</a>. If <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">Element::handle_event()</a> returns a pointer to a new element, the event loop will <a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a8be070e9c978cced91423fa56f9e40ba">Event::EXIT</a> the current element and <a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a109db59198e5c5235b2d8b964e0f736b">Event::ENTER</a> the new element and execute an animation to the new event.</p>
 <p>The <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) ">EventLoop</a> is an abstract class, and you must implement the <a class="el" href="classev_1_1_event_loop.html#ace580fda6de05dce2423e6f47dc235c9">process_events()</a> method which needs to process user events that are specific to the system.</p>
-<div class="fragment"><div class="line"><a class="code" href="classui_1_1_button_pin.html">ui::ButtonPin</a> select_button(0,1); <span class="comment">//select button is on pin 0.1</span></div><div class="line"></div><div class="line">MyEventLoop::MyEventLoop(<a class="code" href="classui_1_1_element.html">ui::Element</a> &amp; start_element, <a class="code" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> &amp; bitmap, <a class="code" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> * scratch) :</div><div class="line">     <a class="code" href="classui_1_1_event_loop.html#a2a86c1f2650bd0ad2dec878847508bcd">EventLoop</a>(start_element, bitmap, scratch){</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> MyEventLoop::process_events() {</div><div class="line">     select_button.update();</div><div class="line">     handle_event(select_button.event());</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><a class="code" href="classui_1_1_pin_button.html">ui::ButtonPin</a> select_button(0,1); <span class="comment">//select button is on pin 0.1</span></div><div class="line"></div><div class="line">MyEventLoop::MyEventLoop(<a class="code" href="classui_1_1_element.html">ui::Element</a> &amp; start_element, <a class="code" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> &amp; bitmap, <a class="code" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> * scratch) :</div><div class="line">     <a class="code" href="classui_1_1_event_loop.html#a2a86c1f2650bd0ad2dec878847508bcd">EventLoop</a>(start_element, bitmap, scratch){</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> MyEventLoop::process_events() {</div><div class="line">     select_button.update();</div><div class="line">     handle_event(select_button.event());</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a86c1f2650bd0ad2dec878847508bcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a2a86c1f2650bd0ad2dec878847508bcd">EventLoop</a> (<a class="el" href="classui_1_1_element.html">ui::Element</a> &amp;start_element, <a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> &amp;bitmap, <a class="el" href="classsgfx_1_1_bitmap.html">sgfx::Bitmap</a> *scratch=0)</td></tr>
@@ -93,11 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae43ce2e9dff53aa19b56b05f9b40724f inherit pub_methods_classapi_1_1_s_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_s_object.html#ae43ce2e9dff53aa19b56b05f9b40724f">error_number</a> () const </td></tr>
 <tr class="separator:ae43ce2e9dff53aa19b56b05f9b40724f inherit pub_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_classev_1_1_event_loop"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classev_1_1_event_loop')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classev_1_1_event_loop.html">ev::EventLoop</a></td></tr>
-<tr class="memitem:a9ed5a3d8c4a88af770bc5599ae7c56d2 inherit pro_methods_classev_1_1_event_loop"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classev_1_1_event_loop.html#a9ed5a3d8c4a88af770bc5599ae7c56d2">handle_event</a> (const <a class="el" href="classev_1_1_event.html">Event</a> &amp;event)</td></tr>
-<tr class="separator:a9ed5a3d8c4a88af770bc5599ae7c56d2 inherit pro_methods_classev_1_1_event_loop"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a586939398642b9b0551dba9fefa448da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_event_loop.html#a586939398642b9b0551dba9fefa448da">handle_event</a> (const <a class="el" href="classev_1_1_event.html">ui::Event</a> &amp;event)</td></tr>
+<tr class="separator:a586939398642b9b0551dba9fefa448da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classapi_1_1_s_object"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classapi_1_1_s_object')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classapi_1_1_s_object.html">api::SObject</a></td></tr>
 <tr class="memitem:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_s_object.html#a6218149cb92b523d3bf608f4035af8c6">set_error_number</a> (int value) const </td></tr>
 <tr class="separator:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +190,40 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Accesses the drawing attributes. </p>
+
+</div>
+</div>
+<a class="anchor" id="a586939398642b9b0551dba9fefa448da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ui::EventLoop::handle_event </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classev_1_1_event.html">ui::Event</a> &amp;&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handles the specified event.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Event to handle within the loop</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This method should be called by <a class="el" href="classev_1_1_event_loop.html#ace580fda6de05dce2423e6f47dc235c9">process_events()</a> whenever the system triggers an event. For example, if the system needs to just handle an up button or down button press:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">ButtonPin up_button(0,0);</div><div class="line">ButtonPin down_button(0,1)</div><div class="line"></div><div class="line">void MyEventLoop::process_events(){</div><div class="line"> up_button.<a class="code" href="classui_1_1_pin_button.html#a01bab7baafdfe538e3e251927f9c669d">update</a>(); <span class="comment">//refresh button status</span></div><div class="line"> down_button.update();</div><div class="line"></div><div class="line"> handle_event(up_button.event());</div><div class="line"> handle_event(down_button.event());</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> 
+<p>Reimplemented from <a class="el" href="classev_1_1_event_loop.html#a9ed5a3d8c4a88af770bc5599ae7c56d2">ev::EventLoop</a>.</p>
 
 </div>
 </div>

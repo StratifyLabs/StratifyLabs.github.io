@@ -67,12 +67,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a744e6257721ef9b228238a61cafe7239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0140085944c397df85e2dd6764fe3e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ad0140085944c397df85e2dd6764fe3e7">free</a> ()</td></tr>
 <tr class="separator:ad0140085944c397df85e2dd6764fe3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9626e988f69e512b3bc85b5d5d947a5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ab9626e988f69e512b3bc85b5d5d947a5">print</a> (u32 o_flags=<a class="el" href="classvar_1_1_data.html#abe59aee9f21e531849e4f299659f6717a8b0b060d65e6391d28d3c0b91edcfb60">PRINT_HEX</a>) const </td></tr>
+<tr class="separator:ab9626e988f69e512b3bc85b5d5d947a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf65d97bdb6d4dde3dc335adc7068688"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#abf65d97bdb6d4dde3dc335adc7068688">resize</a> (u32 size)</td></tr>
 <tr class="separator:abf65d97bdb6d4dde3dc335adc7068688"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d036b7a3cfb4dd7488f3d28a70ecedc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a0d036b7a3cfb4dd7488f3d28a70ecedc">set</a> (void *mem, u32 size, bool readonly=false)</td></tr>
 <tr class="separator:a0d036b7a3cfb4dd7488f3d28a70ecedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac90e0dfec3ca4f17c8608f2f234821"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#afac90e0dfec3ca4f17c8608f2f234821">set_capacity</a> (u32 s)</td></tr>
 <tr class="separator:afac90e0dfec3ca4f17c8608f2f234821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7cc92e8289420b4922faba3037dd528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ac7cc92e8289420b4922faba3037dd528">swap_byte_order</a> (int size=4)</td></tr>
+<tr class="separator:ac7cc92e8289420b4922faba3037dd528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classapi_1_1_s_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classapi_1_1_s_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classapi_1_1_s_object.html">api::SObject</a></td></tr>
 <tr class="memitem:a73c80e2a8831814979487f0c384812b7 inherit pub_methods_classapi_1_1_s_object"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_s_object.html#a73c80e2a8831814979487f0c384812b7">api_version</a> () const </td></tr>
 <tr class="separator:a73c80e2a8831814979487f0c384812b7 inherit pub_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,6 +96,33 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_s_object.html#a6218149cb92b523d3bf608f4035af8c6">set_error_number</a> (int value) const </td></tr>
 <tr class="separator:a6218149cb92b523d3bf608f4035af8c6 inherit pro_methods_classapi_1_1_s_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="abe59aee9f21e531849e4f299659f6717"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="abe59aee9f21e531849e4f299659f6717a8b0b060d65e6391d28d3c0b91edcfb60"></a>PRINT_HEX&#160;</td><td class="fielddoc">
+<p>Print hex data </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe59aee9f21e531849e4f299659f6717a0765901152081f91afced202efc53537"></a>PRINT_UNSIGNED&#160;</td><td class="fielddoc">
+<p>Print unsigned integers </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe59aee9f21e531849e4f299659f6717a479e935631cdd4c4f62cbdabb8cf1b2b"></a>PRINT_SIGNED&#160;</td><td class="fielddoc">
+<p>Printd signed integers </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="abe59aee9f21e531849e4f299659f6717af080ed619863d6b72a9ad2f40dea2e68"></a>PRINT_CHAR&#160;</td><td class="fielddoc">
+<p>Print Characters </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5c380aa39498ff3d92cd5addc540fc8f"></a>
 <div class="memitem">
@@ -464,6 +495,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ab9626e988f69e512b3bc85b5d5d947a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int var::Data::print </td>
+          <td>(</td>
+          <td class="paramtype">u32&#160;</td>
+          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classvar_1_1_data.html#abe59aee9f21e531849e4f299659f6717a8b0b060d65e6391d28d3c0b91edcfb60">PRINT_HEX</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Prints the data to the standard output. </p>
+
+<p>Reimplemented in <a class="el" href="classvar_1_1_string.html#a1e2571ae992d170d73fb0c9eacbac1d1">var::String</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="abf65d97bdb6d4dde3dc335adc7068688"></a>
 <div class="memitem">
 <div class="memproto">
@@ -563,6 +621,30 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
 <p>If the memory was specified using the <a class="el" href="classvar_1_1_data.html#a0d036b7a3cfb4dd7488f3d28a70ecedc">set()</a> method, this will return an error.</p>
 <p>If the current capacity is less than <em>s</em>, the object will be resized. Otherwise, the data will </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7cc92e8289420b4922faba3037dd528"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void var::Data::swap_byte_order </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size</em> = <code>4</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Swaps the byte order of the data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>4 to swap as 32-bit words, otherwise swap 16-bit words</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If the data is read-only, no change is made and <a class="el" href="classapi_1_1_s_object.html#ae43ce2e9dff53aa19b56b05f9b40724f">error_number()</a> is set to EINVAL. </p>
 
 </div>
 </div>

@@ -36,7 +36,7 @@ page_source: Doxygen
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class is used to access files (and devices). It uses the POSIX functions <a class="el" href="classsys_1_1_file.html#aae68f8cd9f7836d3763bcd8313e36856">open()</a>, <a class="el" href="classsys_1_1_file.html#a0bd19cf99d6d352d46105a51f07b2576">read()</a>, <a class="el" href="classsys_1_1_file.html#a9b0d5e9b4b31bb51fbd2478cda2a44e4">write()</a>, <a class="el" href="classsys_1_1_file.html#a11ede04e8abe24db9df3c6dc14e858aa">close()</a>, etc. You can always call these functions directly or use the standard C library to access files (fopen(), fread(), fwrite()&ndash; these use more memory than this class or the POSIX functions).</p>
+<div class="textblock"><p>This class is used to access files (and devices). It uses the POSIX functions <a class="el" href="classsys_1_1_file.html#a7d000e0cbe8a8af07f62e5e4b63d72d5">open()</a>, <a class="el" href="classsys_1_1_file.html#a0bd19cf99d6d352d46105a51f07b2576">read()</a>, <a class="el" href="classsys_1_1_file.html#a9b0d5e9b4b31bb51fbd2478cda2a44e4">write()</a>, <a class="el" href="classsys_1_1_file.html#a11ede04e8abe24db9df3c6dc14e858aa">close()</a>, etc. You can always call these functions directly or use the standard C library to access files (fopen(), fread(), fwrite()&ndash; these use more memory than this class or the POSIX functions).</p>
 <p>Here is an example of using this class:</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">     File f;</div><div class="line">     String str;</div><div class="line"></div><div class="line"> <span class="comment">//create a new file and write a string to it</span></div><div class="line">     f.create(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">     str = <span class="stringliteral">&quot;Hello New File!\n&quot;</span>;</div><div class="line">     f.write(str);</div><div class="line">     f.close();</div><div class="line"></div><div class="line"> <span class="comment">//Now open the file we just closed</span></div><div class="line">     f.open(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">     str = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line">     f.read(str.data(), str.capacity());</div><div class="line">     f.close();</div><div class="line"></div><div class="line"> <span class="comment">//This is what was read from the file</span></div><div class="line">     printf(<span class="stringliteral">&quot;The String is %s\n&quot;</span>, str.c_str());</div><div class="line"></div><div class="line">     <a class="code" href="classsys_1_1_file.html#ae22e053ba2df2ae14a882d091a19dd3f">File::remove</a>(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>); <span class="comment">//delete the file</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -66,8 +66,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a51eefa4f1de10402090f33b1ff68ee80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50caf9fa33c99ca3c3537d4a8eeff4ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a> () const </td></tr>
 <tr class="separator:a50caf9fa33c99ca3c3537d4a8eeff4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae68f8cd9f7836d3763bcd8313e36856"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#aae68f8cd9f7836d3763bcd8313e36856">open</a> (const char *<a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a>, int <a class="el" href="classsys_1_1_file.html#ae249875dc748c887a844d58aad1ad9cf">flags</a>)</td></tr>
-<tr class="separator:aae68f8cd9f7836d3763bcd8313e36856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d000e0cbe8a8af07f62e5e4b63d72d5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a7d000e0cbe8a8af07f62e5e4b63d72d5">open</a> (const char *<a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a>, int <a class="el" href="classsys_1_1_file.html#ae249875dc748c887a844d58aad1ad9cf">flags</a>=<a class="el" href="classsys_1_1_file.html#addfb975a19aeee85c866dd60252143caa4889aa3b3d449f988dd2c5f34ae13791">RDWR</a>)</td></tr>
+<tr class="separator:a7d000e0cbe8a8af07f62e5e4b63d72d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd24b513cc460e9e7d1e83c1bea05034"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#afd24b513cc460e9e7d1e83c1bea05034">open</a> (const char *<a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a>, int <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___p_e_r_m_s.html#gaa6adc1f71f9027c8bdd8e88e8c843049">access</a>, int perms)</td></tr>
 <tr class="separator:afd24b513cc460e9e7d1e83c1bea05034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b71cff33f87a0e668595d9279458e60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a2b71cff33f87a0e668595d9279458e60">open_append</a> (const char *path)</td></tr>
@@ -263,7 +263,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Creates a new file (using the <a class="el" href="classsys_1_1_file.html#aae68f8cd9f7836d3763bcd8313e36856">open()</a> method).</p>
+<p>Creates a new file (using the <a class="el" href="classsys_1_1_file.html#a7d000e0cbe8a8af07f62e5e4b63d72d5">open()</a> method).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The path to the file </td></tr>
@@ -580,7 +580,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> * path = <span class="stringliteral">&quot;/app/flash/HelloWorld&quot;</span>;</div><div class="line">printf(<span class="stringliteral">&quot;Name is %s&quot;</span>, <a class="code" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">File::name</a>(path));</div></div><!-- fragment --><p>The above code will output: </p><div class="fragment"><div class="line">Name is HelloWorld</div></div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="aae68f8cd9f7836d3763bcd8313e36856"></a>
+<a class="anchor" id="a7d000e0cbe8a8af07f62e5e4b63d72d5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -597,7 +597,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>flags</em>&#160;</td>
+          <td class="paramname"><em>flags</em> = <code><a class="el" href="classsys_1_1_file.html#addfb975a19aeee85c866dd60252143caa4889aa3b3d449f988dd2c5f34ae13791">RDWR</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
