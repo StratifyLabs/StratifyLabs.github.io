@@ -41,7 +41,7 @@ sections:
 <li>Download and Install in less the one minute</li>
 </ul>
 
-<a href="" class="btn btn-success btn-lg">Install Now Coming Soon</a>
+<a href="https://www.hackster.io/tgil/stratify-os-on-stmf411e-disco-board-6144fb" target="_blank" class="btn btn-success btn-lg">Install Now</a>
 
 </div>
 </div>

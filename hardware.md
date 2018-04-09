@@ -45,24 +45,10 @@ sections:
     %}
 
     {% include JB/hardware-item.html
-          name="Stratify Alpha"
-          page="hardware/stratify-alpha/"
-          description="ARM Cortex-M4 Microcontroller Development Board"
-          image="stratify-alpha-angle.png"
-    %}
-
-    {% include JB/hardware-item.html
           name="Nucleo-F767ZI"
           page="hardware/nucleo144"
           description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz Ethernet"
           image="nucleo-f446ze.png"
-    %}
-
-    {% include JB/hardware-item.html
-          name="CoAction Hero"
-          page="hardware/coaction-hero/"
-          description="ARM Cortex-M3 Microcontroller Development Board"
-          image="coaction-hero-angle.png"
     %}
 
     {% include JB/hardware-item.html
@@ -105,6 +91,20 @@ sections:
           page="hardware/nucleo144"
           description="STM32 ARM CM4F 2MB Flash 256KB SRAM 180MHz Ethernet"
           image="nucleo-f446ze.png"
+    %}
+
+    {% include JB/hardware-item.html
+          name="CoAction Hero"
+          page="hardware/coaction-hero/"
+          description="ARM Cortex-M3 Microcontroller Development Board"
+          image="coaction-hero-angle.png"
+    %}
+
+    {% include JB/hardware-item.html
+          name="Stratify Alpha"
+          page="hardware/stratify-alpha/"
+          description="ARM Cortex-M4 Microcontroller Development Board"
+          image="stratify-alpha-angle.png"
     %}
 
     {% include JB/hardware-coming-soon.html
