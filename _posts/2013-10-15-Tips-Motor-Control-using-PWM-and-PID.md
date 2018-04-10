@@ -24,8 +24,7 @@ Each side of the H-bridge has two transistors with the gates tied together resul
 {% include pro-tip-begin.html %}
 
 <p>
-The H-bridge using NMOS and PMOS resistors in a complementary fashion. In the logic world, this is known a CMOS circuitry. Most
-logic gates are designed using NMOS and PMOS in a complementary way. Our <b><a href="{{ BASE_URL }}/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></b> post illustrates how to use NMOS and PMOS transistors to build logic gates such as NOT, AND, OR, etc.
+The H-bridge uses NMOS and PMOS resistors in a complementary fashion. In the logic world, this is known a CMOS circuitry. Most logic gates are designed using NMOS and PMOS in a complementary way. Our <b><a href="{{ BASE_URL }}/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></b> post illustrates how to use NMOS and PMOS transistors to build logic gates such as NOT, AND, OR, etc.
 </p>
 
 {% include pro-tip-end.html %}
