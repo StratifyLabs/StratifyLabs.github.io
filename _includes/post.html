@@ -1,3 +1,24 @@
+<script>
+window.addEventListener('auth', function () {
+    if (firebaseUser) {
+		console.log("Show Pro Tips");
+		var buttons = document.getElementsByClassName("pro-tip-button");
+        for(var i=0; i < buttons.length; i++){
+            buttons[i].style.display = "none";
+		}
+		
+        var tips = document.getElementsByClassName("pro-tip");
+        for(var i=0; i < tips.length; i++){
+            tips[i].style.display = "block";
+        }
+    } else {
+        console.log("signup:Not logged in");
+    }
+});
+
+</script>
+
+
 <div style="background: #344555; color: #fff;">
 	<div class="container">
 		<div class="row header_row">

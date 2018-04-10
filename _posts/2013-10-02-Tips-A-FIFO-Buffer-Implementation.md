@@ -16,8 +16,8 @@ A FIFO buffer stores data on a first-in, first-out basis.   The storage structur
 an array of contiguous memory.  Data is written to the "head" of the buffer and read from
 the "tail".  When the head or tail reach the end of the memory array, it wraps around to
 the beginning.  If the tail runs in to the head, the buffer is empty.  But if the head runs
-in to the tail, the implementation must define if the oldest data is discarded or the write
-does not complete.  In the example below, data is never discarded.
+in to the tail, the buffer is full, and the implementation must define if the oldest data is discarded
+or the write is not completed. In the example, below the write is not completed.
 
 ## General Implementation
 
@@ -90,6 +90,17 @@ int fifo_write(fifo_t * f, const void * buf, int nbytes){
 Many microcontroller designs have limited buffer space for data arriving on the
 UART.  Incorporating a FIFO in the UART ISR can make it easier to manage incoming
 data.  The following pseudo-code uses the above FIFO as part of the UART ISR.
+
+{% include pro-tip-begin.html %}
+
+<p>
+FIFO's are very simple and powerful mechanisms for managing data in real-time systems. This example
+can be easily adapted to work with I2S. With I2S, it is better to have the FIFO operate on frames
+rather than on bytes. This way, the I2S frame can be defined to be 32 bytes in 1ms and when the frame
+is full the head points to the next frame. A C implementation of a framed fifo is available in <a href="https://github.com/StratifyLabs/StratifyOS/blob/master/src/device/ffifo.c" target="_blank"><b>Stratify OS</b></a>.
+</p>
+
+{% include pro-tip-end.html %}
 
 {% highlight CPP %}
 static fifo_t * uart_fifo;

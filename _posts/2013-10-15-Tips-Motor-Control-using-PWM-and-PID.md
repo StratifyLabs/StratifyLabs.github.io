@@ -21,7 +21,16 @@ An H-bridge circuit consists of four transistors (usually two PMOS's and two NMO
 
 Each side of the H-bridge has two transistors with the gates tied together resulting in complementary operation--Q3 is always off when Q1 is on and vice versa.  The same is true for Q2 and Q4.  The circuit works by setting PWMB to logic zero (Q2 on; Q4 off) and then setting PWMA to logic high (Q1 off; Q3 on).  The motor direction can be reversed by toggling PWMA and PWMB.
 
-PWM is a simple way to vary the voltage applied to the motor. Most microcontrollers have dedicated PWM hardware, but an output compare timer can also generate a PWM signal.  PWM works by rapidly turning the motor on and off. For example, if the motor supply is 12V, the motor can be driven at 6V by applying a 50% duty cycle where half the time 12V is applied, and half the time 0V is applied as shown by the green signal in the plot below.
+{% include pro-tip-begin.html %}
+
+<p>
+The H-bridge using NMOS and PMOS resistors in a complementary fashion. In the logic world, this is known a CMOS circuitry. Most
+logic gates are designed using NMOS and PMOS in a complementary way. Our <b><a href="{{ BASE_URL }}/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></b> post illustrates how to use NMOS and PMOS transistors to build logic gates such as NOT, AND, OR, etc.
+</p>
+
+{% include pro-tip-end.html %}
+
+PWM is a simple way to vary the voltage applied to the motor. Most microcontrollers have dedicated PWM hardware, but an output compare timer can also generate a PWM signal. PWM works by rapidly turning the motor on and off. For example, if the motor supply is 12V, the motor can be driven at 6V by applying a 50% duty cycle where half the time 12V is applied, and half the time 0V is applied as shown by the green signal in the plot below.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/pwm-plot.svg" />
 
@@ -33,7 +42,7 @@ The easiest way to implement a shoot-through prevention circuit is to use an int
 
 ### A Snubber Circuit to Decrease Noise
 
-A snubber circuit is used to suppress the voltage transients caused by PWM switching (as well as by the inherent switching in brushed motors).  A DC motor is an inductive load; the voltage across which is proportional to the change in current, given by:
+A snubber circuit is used to suppress the voltage transients caused by PWM switching (as well as by the inherent switching in brushed motors).  A DC motor is an inductive load; the voltage across it is proportional to the change in current, given by:
 
 <img class="post_equation" src="{{ BASE_PATH }}/images/inductor-voltage-formula.svg" />
 
@@ -49,7 +58,7 @@ and capacitor in series across the terminals of the motor as shown below.
 
 ### PID Control
 
-With an H-bridge, a pair of PWM signals, and a snubber circuit, the motor is ready for bi-directional control.  The simplest form of control is open loo This means the controller simply applies a voltage (a PWM signal in this case) but has no way to measure the effect of the applied voltage.  The controller simply assumes higher voltage makes the motor go faster.  Closed loop control uses feedback from the motor, such as the motor current or speed, to adjust the PWM signal.
+With an H-bridge, a pair of PWM signals, and a snubber circuit, the motor is ready for bi-directional control.  The simplest form of control is open loop. This means the controller simply applies a voltage (a PWM signal in this case) but has no way to measure the effect of the applied voltage.  The controller simply assumes higher voltage makes the motor go faster.  Closed loop control uses feedback from the motor, such as the motor current or speed, to adjust the PWM signal.
 
 A PID loop--verbosely known as proportional, integral, differential loop--is a popular algorithm in many closed loop systems.
 
@@ -62,6 +71,14 @@ Image from Wikipedia
 The diagram above represents a PID controlled process.  In this case, the "process" or "plant" is the motor.  The feedback mechanism--y(t) called the process variable--can be either the motor current or speed.  The set point, u(t), is the desired current or speed.  The PID loop takes the difference (or error), e(t), between the set point and the process variable, applies namesake adjustments--proportional, integral, as well as differential--and then sums the result to get the new value of the manipulated variable (the PWM duty cycle).
 
 The following code is a PID loop implementation using floating point variables.  The structure (pid_f_t) is first initialized using pid_init_f() with the minimum and maximum values for the manipulated variable accepted as parameters.  The minimum is useful if the motor requires some minimum PWM duty cycle to make it turn while the maximum ensures the PID algorithm does not try to exceed 100% duty cycle.  The pid_update_f() function uses the current set point and the process variable as well as the constants stored in the pid_f_t structure to compute the manipulated variable.  The application loop includes a function to measure the motor current or speed, call pid_update_f(), and set the PWM value according to the manipulated variable.
+
+{% include pro-tip-begin.html %}
+
+<p>
+The Stratify API calc::Pid_f class is a C++ implemenation of a PID loop on boards power with Stratify OS. There are additional code references in the <a href="{{ BASE_URL }}/StratifyAPI/html/classcalc_1_1_pid__f.html"><b>documentation</b></a> and on <a href="https://github.com/StratifyLabs/StratifyAPI/blob/master/src/calc/Pid.cpp" target="_blank"><b>Github</b></a>.
+</p>
+
+{% include pro-tip-end.html %}
 
 {% highlight CPP %}
 typedef struct{

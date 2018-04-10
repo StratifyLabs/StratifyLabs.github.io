@@ -3,7 +3,7 @@ layout: post
 title: Understanding Microcontroller Pin Input/Output Modes
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, microcontroller, gpio, programming, pio, circuit]
+tags : [embedded, microcontroller, gpio, programming, pio, circuit, popular]
 page_source: MicrocontrollerBlog
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/gpio-output-types.svg" />
@@ -26,6 +26,19 @@ impedance inputs and not currently driven are called "floating".  Many times
 "tri-stated".  To prevent pins from floating when they are not externally
 driven, internally pulling resistors are used.
 
+{% include pro-tip-begin.html %}
+
+<p>
+Impedance is very similar to resistance but considers how a circuit resists when a changing
+voltage is applied. A resistor only has resistance. But inductors and capacitors have impedance.
+A 1MOhm resistor resists a constant 5V in the same way it does a 1MHz 5V sin-wave. But a
+capacitor behaves totally different when a constant 5V is applied versus a 1MHz 5V sin-wave.
+A capacitor with a constant 5V applied will charge up and then act as an open circuit (high impedance).
+But at high frequency, the capacitor will conduct current and have a voltage drop (low impedance).
+</p>
+
+{% include pro-tip-end.html %}
+
 ####  Pull Up/Down
 
 If an input is configured with an internal pull-up, it will be high unless it
@@ -33,11 +46,20 @@ is externally driven low.  The converse is true with pull-down inputs (learn mor
 about pulling resistors).  Some GPIO pins also support changing the pull-up and
 pull-down settings dynamically using repeater mode.
 
+
+{% include pro-tip-begin.html %}
+
+<p>
+<a href="{{ BASE_URL }}/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors/">Read more about pull-up and pull-down resistors.</a>
+</p>
+
+{% include pro-tip-end.html %}
+
 #### Repeater
 
 When a GPIO is configured in repeater mode, the pull-up is enabled when the pin
 is driven high, and the pull-down is enabled when the pin is driven low.  If
-nothing is driving the pin, the pull-enable will retain its last known
+nothing is driving the pin, the pin will retain its last known
 state.  In some designs, this can prevent power from leaking on pins in an
 indeterminate state.
 
@@ -78,12 +100,26 @@ is familiar with MOSFETs.  A MOSFET has three terminals called:  gate, source,
 and drain.  In an open-drain configuration, the source is grounded, the gate
 is driven internally, and the drain is open (i.e. not connected to anything).
 
-An open-drain output can only sink current.  Its two states are low and
-high-impedance.    When M1 is on, the output is set to 0V.  When M1 is
+An open-drain output can only sink current. Its two states are low and
+high-impedance. When M1 is on, the output is set to 0V.  When M1 is
 off, the output is not driven high nor low.  Most applications, including
 I2C buses, use an external pull-up resistor on any open-drain
 outputs.  Another useful application for open-drain outputs is having multiple
 external devices drive a single, active-low interrupt pin on a microcontroller.
+
+{% include pro-tip-begin.html %}
+
+<p>
+Open drain outputs are great for having multiple sources drive the same input. For example, several
+open-drain outputs that signal an interrupt condition can drive a single input on a microcontroller. Any of
+the circuits can drive the line low while not conflicting with other circuits that are in high-impedance mode.
+</p>
+<p>
+Many ASIC designers will create open-drain outputs to signal an interrupt condition. The microcontroller
+can then poll each device to see which on is driving the line to zero.
+</p>
+
+{% include pro-tip-end.html %}
 
 #### High Drive
 

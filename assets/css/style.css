@@ -302,6 +302,10 @@ article.post-card:hover {
   float: right;
 }
 
+.pro-tip {
+  display: none;
+}
+
 .tagcloud a {
   background-color: #888;
   color: #fff;
