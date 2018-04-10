@@ -25,7 +25,7 @@ If you don't have an IDE setup, you can use [Qt Creator]({{ BASE_URL }}/user%20g
 
 ## Download, Build, Install, Run HelloWorld
 
-{% include JB/youtube-video.html
+{% include youtube-video.html
 	url="https://www.youtube.com/embed/DfJZVziwmHg?rel=0&hd=1"
     cc="col-md-12"
 	dim_md='width="600" height="338"'

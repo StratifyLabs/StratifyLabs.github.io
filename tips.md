@@ -10,4 +10,4 @@ sections:
  brief: Product Development Tips
  icon: fa fa-newspaper-o fa-3x
 ---
-{% include JB/setup %}
+{% include setup %}

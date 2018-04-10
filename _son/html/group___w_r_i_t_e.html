@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -27,10 +27,10 @@ page_source: Doxygen
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae96f2c99a8480d89ca75c02cf58ec366"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___w_r_i_t_e.html#gae96f2c99a8480d89ca75c02cf58ec366">son_open_obj</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *key)</td></tr>
-<tr class="separator:gae96f2c99a8480d89ca75c02cf58ec366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40f733d154834b9eff57159730a461da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___w_r_i_t_e.html#ga40f733d154834b9eff57159730a461da">son_close_obj</a> (<a class="el" href="structson__t.html">son_t</a> *h)</td></tr>
-<tr class="separator:ga40f733d154834b9eff57159730a461da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga647441d4568907988d0deaec4f2e04a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___w_r_i_t_e.html#ga647441d4568907988d0deaec4f2e04a7">son_open_object</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *key)</td></tr>
+<tr class="separator:ga647441d4568907988d0deaec4f2e04a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga811bfb1e183cf026463c22cebddc6889"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___w_r_i_t_e.html#ga811bfb1e183cf026463c22cebddc6889">son_close_object</a> (<a class="el" href="structson__t.html">son_t</a> *h)</td></tr>
+<tr class="separator:ga811bfb1e183cf026463c22cebddc6889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace53b7c83d63b1aaef88177747c7116b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *key)</td></tr>
 <tr class="separator:gace53b7c83d63b1aaef88177747c7116b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga18d14d2617752d80d45e491925336e65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___w_r_i_t_e.html#ga18d14d2617752d80d45e491925336e65">son_close_array</a> (<a class="el" href="structson__t.html">son_t</a> *h)</td></tr>
@@ -80,7 +80,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Less than zero if there was an error</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create()</a>, <a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#gadf1f630a0acb40c35eb456a6612b12c8">son_create()</a>, <a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array()</a> </dd></dl>
 
 </div>
 </div>
@@ -109,12 +109,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga40f733d154834b9eff57159730a461da"></a>
+<a class="anchor" id="ga811bfb1e183cf026463c22cebddc6889"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int son_close_obj </td>
+          <td class="memname">int son_close_object </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structson__t.html">son_t</a> *&#160;</td>
           <td class="paramname"><em>h</em></td><td>)</td>
@@ -129,8 +129,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>The function <a class="el" href="group___w_r_i_t_e.html#ga40f733d154834b9eff57159730a461da">son_close_obj()</a> is used to close the object.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create()</a>, <a class="el" href="group___w_r_i_t_e.html#ga40f733d154834b9eff57159730a461da">son_close_obj()</a> </dd></dl>
+<p>The function <a class="el" href="group___w_r_i_t_e.html#ga811bfb1e183cf026463c22cebddc6889">son_close_object()</a> is used to close the object.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#gadf1f630a0acb40c35eb456a6612b12c8">son_create()</a>, <a class="el" href="group___w_r_i_t_e.html#ga811bfb1e183cf026463c22cebddc6889">son_close_object()</a> </dd></dl>
 
 </div>
 </div>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Less then zero for an error</dd></dl>
 <p>The function <a class="el" href="group___w_r_i_t_e.html#ga18d14d2617752d80d45e491925336e65">son_close_array()</a> is used to close the array value.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create()</a>, <a class="el" href="group___w_r_i_t_e.html#ga18d14d2617752d80d45e491925336e65">son_close_array()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#gadf1f630a0acb40c35eb456a6612b12c8">son_create()</a>, <a class="el" href="group___w_r_i_t_e.html#ga18d14d2617752d80d45e491925336e65">son_close_array()</a> </dd></dl>
 
 </div>
 </div>
@@ -207,12 +207,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gae96f2c99a8480d89ca75c02cf58ec366"></a>
+<a class="anchor" id="ga647441d4568907988d0deaec4f2e04a7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int son_open_obj </td>
+          <td class="memname">int son_open_object </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structson__t.html">son_t</a> *&#160;</td>
           <td class="paramname"><em>h</em>, </td>
@@ -239,7 +239,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Less than zero for an error (see h-&gt;err)</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="group___f_i_l_e_s.html#gadf1f630a0acb40c35eb456a6612b12c8">son_create()</a> </dd></dl>
 
 </div>
 </div>
@@ -610,6 +610,6 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

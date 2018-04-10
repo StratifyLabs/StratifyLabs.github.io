@@ -1,0 +1,151 @@
+<div style="background: #344555; color: #fff;">
+	<div class="container">
+		<div class="row header_row">
+			<div class="col-md-3 text-center">
+				<h2>
+				{% if page.sections['intro'] %}
+					<i class="{{ page.sections['icon'] }}"></i>
+				{% else %}
+					<i class="fa fa-newspaper-o fa-3x"></i>
+				{% endif %}
+			</h2>
+			</div>
+			<div class="col-md-9">
+				{% if page.sections['intro'] %}
+				<h2><b>{{ page.sections['intro'] }}</b></h2>
+				{% else %}
+				<h2><b>Blog</b></h2>
+				{% endif %}
+				<h3>{{ page.title }}</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row" style="margin-top: 0px;">
+		<div class="col-md-8">
+
+			<div class="pagination">
+				<center>
+					{% if page.previous %}
+						<a href="{{ BASE_PATH }}{{ page.previous.url }}" rel="prev" class="prev-page"><span class="meta-nav">←</span> Previous Post</a>
+					{% endif %}
+
+					{% if page.next %}
+						<a href="{{ BASE_PATH }}{{ page.next.url }}" rel="next" class="next-page">Next Post <span class="meta-nav">→</span></a>
+					{% endif %}
+				</center>
+			</div>
+
+			{% if page.ad %}
+			<div class="filter-col-ctn" style="padding: 10px;text-align: center;">
+			<article class="post-card" >
+			<a href="{{ BASE_PATH }}{{ page.ad['link'] }}" >
+			<h4>{{ page.ad['title'] }}</h4>
+			  <img src="/images/{{ page.ad['image'] }}" style="margin-bottom:20px;" class="post_image">
+			  <p>{{ page.ad['description'] }}</p>
+			  </a>
+			</article>
+			</div>
+			{% endif %}
+
+
+			{% if 0==1 %}
+			<h1><a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square"></i></a>
+    		<a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square"></i></a>
+    		<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+"><i class="fa fa-google-plus-square"></i></a></h1>
+			{% endif %}
+
+
+
+
+			<h1>{{ page.title }}</h1>
+			{% if page.tagline %}<h2>{{page.tagline}}</h2>{% endif %}
+
+			<div class="post-categories">
+				<strong>Categories:</strong>
+					{% for cat in page.category %}
+						{% capture same_page %}/tips/category/{{ cat | replace: ' ', '-' | downcase }}/{% endcapture %}
+					<a href="{{ same_page | prepend: site.baseurl }}" style="font-size:14px;text-transform:uppercase;">{{ cat }}</a>{% unless forloop.last %},{% endunless %}
+					{% endfor %}
+			</div>
+			<div class="post-date">
+				<strong>{{ page.date | date:"%B %-d, %Y" }}</strong>
+			</div>
+			<div class="clearfix"></div>
+
+
+					{{ content }}
+
+			<div class="post-meta" style="padding-bottom: 30px;">
+				<div class="sh-columns post-meta-comments">
+					<span class="post-meta-categories"> <i class="fa fa-tag"></i>
+						{% for tag in page.tags %}
+						<a href="{{ site.baseurl }}/tips/tag/{{ tag | replace: ' ', '-' | downcase }}/">{{ tag }}</a>
+						{% endfor %}
+					</span>
+				</div>
+			</div>
+
+
+		</div>
+		<div class="col-md-4">
+			{% include blog-sidebar.html %}
+		</div>
+	</div>
+
+</div>
+
+
+<div class="hidden loading-more">
+
+	{% if page.ad %}
+	<div class="filter-col-ctn" style="padding: 10px;text-align: center;">
+		<a href="{{ BASE_PATH }}{{ page.ad['link'] }}" >
+		<h4>{{ page.ad['title'] }}</h4>
+		  <img src="/images/{{ page.ad['image'] }}" style="margin-bottom:20px;" class="post_image">
+		  <p>{{ page.ad['description'] }}</p>
+		</a>
+	</div>
+	{% endif %}
+
+<article class="post-card">
+
+	<a href="{{ page.url }}" class="post-title"><h2>{{ page.title }}</h2> </a>
+
+	<div class="post-categories">
+		<strong>Categories:</strong>
+			{% for cat in page.category %}
+			{% capture same_page %}/tips/category/{{ cat | replace: ' ', '-' | downcase }}/{% endcapture %}
+			<a href="{{ same_page | prepend: site.baseurl }}" style="font-size:14px;text-transform:uppercase;">{{ cat }}</a>{% unless forloop.last %},{% endunless %}
+			{% endfor %}
+	</div>
+	<div class="post-date">
+		<strong>{{ page.date | date:"%B %-d, %Y" }}</strong>
+	</div>
+	<div class="clearfix"></div>
+
+	<div class="post-content">
+		{{ page.excerpt }}
+		<p><a class="btn btn-info" href="{{ page.url }}" title="Read More">Read More</a></p>
+	</div>
+
+	<div class="post-meta">
+		<div class="sh-columns post-meta-comments">
+			<span class="post-meta-categories"> <i class="fa fa-tag"></i>
+				{% for tag in page.tags %}
+				<a href="{{ site.baseurl }}/tips/tag/{{ tag | replace: ' ', '-' | downcase }}/">{{ tag }}</a>
+				{% endfor %}
+			</span>
+		</div>
+	</div>
+</article>
+
+</div>
+
+<div style="background: #ddd;">
+	<div class="container">
+		{% include signup.html %}
+	</div>
+</div>

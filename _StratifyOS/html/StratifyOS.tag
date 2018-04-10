@@ -125,6 +125,238 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>button.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>button_8h</filename>
+    <class kind="struct">button_status_t</class>
+    <class kind="struct">button_info_t</class>
+    <class kind="struct">button_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_BUTTON_GETINFO</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ga99d725419e2e0d08e82c7ea6a29229ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_BUTTON_SETATTR</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ga9fa85656574075b7539b2293dbfa0034</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_NONE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca44b65ff2efb4231ba8109b9f72b7ad6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_UP</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca37666936297216dce293b0aa31c474b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_DOWN</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca0c7746cfbcac16484b2266e6f51e5e0b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_LEFT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca55dc0d53615e28ee8af66827bee48e4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_RIGHT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca13046edd6d64a0de5821b5ff4c7581ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_SELECT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca9cb658f9f234247357734041c1bf46d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_BACK</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca80bbae5d9dece7dc5b0d0a45f9390770</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_EXIT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cae31ed34a644a90d667666359456a2b86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER0</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca54f99ccf077602bca1016a3f888f0529</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER1</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cad98a2d743aab9b16f14563b1a94ed528</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER2</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca64806c2c1b8d4f71cea78b3a16f8bc14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER3</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cab2ee746d91966815fe25e086731172e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER4</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caddcf825eb9fad9fdf9b53479bc22ae5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER5</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca6d98c3b751bf4356086278b90a8df71a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER6</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca499f3f4e0f6a6d11ff3ac8d8a51c58bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER7</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca8d94137b70d70f9d2aae28714b80bed1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER8</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca59ff3995555148c28850064ad8911986</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER9</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cab60d5034fbf3d00659ece9e5f895e212</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER10</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca1a355dcc9b707be8ea8cf3ab9e03775b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER11</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caeccce153acc01fca2e8f6407cb1ce9bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER12</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caebd2e731ab754cc187d6751bb928a0cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER13</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca2518cf74c6e4b51373125db28acb699c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER14</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca010a1c8d35e047bc5bcca9f8937bf09f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER15</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cad55553172a470edf223d91fb875d8c44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_PRESSED</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea3272fd070846de77a38afd119b9f7e63</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_RELEASED</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea834f594aa28801f91237aec17689d614</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_ACTUATED</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eae80c1b747fa7bfae08aebd34881a8940</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_HELD</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eaf7d1172bb6f0af64265890baa167838c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_ACTIVE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea26b6fa923ab6115df8a821159f3f3b8f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_ACTIVE_HIGH</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eaf29e84f171e5c4177fe2303683d788f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_SET_ID</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea51ee22711b92da9bdcb13a6f73487ccf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_INITIALIZE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea699d53a6062ac3eebfba66191c703527</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_DEINITIALIZE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea29780232d28ea7cc2542ae8d7fcd89f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_SET_HELD_THRESHOLD</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea582dc076a0cd02b1d671b4e9aa4e898d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_SET_ACTUATED_THRESHOLD</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea3b97cfe74ebea09f97f6a24dff8bb92b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>cfifo.h</name>
     <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>cfifo_8h</filename>
@@ -714,43 +946,43 @@
     <member kind="enumvalue">
       <name>DRIVE_FLAG_PROTECT</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da422657f0f00f2bf1c6fc3002ef050b7e</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a422657f0f00f2bf1c6fc3002ef050b7e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_UNPROTECT</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da6bcbe9631a8708469a4d46a478cc4a0d</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a6bcbe9631a8708469a4d46a478cc4a0d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_ERASE_BLOCKS</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7d5981de2ae2f1fdbfeb32fca6d39fc8</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a7d5981de2ae2f1fdbfeb32fca6d39fc8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_ERASE_DEVICE</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da4a12886daf5eb61c3bfd284fee3f1d17</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a4a12886daf5eb61c3bfd284fee3f1d17</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_POWERDOWN</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daa46be422f12ec3975a38152f6894253b</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57aa46be422f12ec3975a38152f6894253b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_POWERUP</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da40086f3f05ee0571d9fb8a5a27e46229</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a40086f3f05ee0571d9fb8a5a27e46229</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_INIT</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da4195f7a74e4c04ea072ae2c756d67759</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a4195f7a74e4c04ea072ae2c756d67759</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -981,19 +1213,19 @@
     <member kind="enumvalue">
       <name>ENET_FLAGS_USERMII</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57ae63959e536664571d59dd5b313b26dae</anchor>
+      <anchor>ggabc5c98fcc1211af2b80116dd6e0a035dae63959e536664571d59dd5b313b26dae</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_FULLDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57ad8fb14a32b90abe4c0d9128ca416d969</anchor>
+      <anchor>ggabc5c98fcc1211af2b80116dd6e0a035dad8fb14a32b90abe4c0d9128ca416d969</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_HALFDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57aa582a4f418d27604aeef4293b85151d4</anchor>
+      <anchor>ggabc5c98fcc1211af2b80116dd6e0a035daa582a4f418d27604aeef4293b85151d4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1195,61 +1427,61 @@
     <member kind="enumvalue">
       <name>I2C_ERROR_NONE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea5feee47669cdab4f25da4e0de0c16633</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a5feee47669cdab4f25da4e0de0c16633</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_START</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_WRITE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea7e270c609e58ecf5bc7946ac67dfb066</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a7e270c609e58ecf5bc7946ac67dfb066</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_STOP</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea37664a1000f758f1741ed9087903aad3</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a37664a1000f758f1741ed9087903aad3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_MASTER_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea2b7eecd3273ba4318b33f714fe81a140</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a2b7eecd3273ba4318b33f714fe81a140</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_BUS_BUSY</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9eaaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25aaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ARBITRATION_LOST</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea4ad4a8f910e34819bb7e934495c729ad</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a4ad4a8f910e34819bb7e934495c729ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_TIMEOUT</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea7a8a638a6deda6c6943409e9e4cae099</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a7a8a638a6deda6c6943409e9e4cae099</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_OVERFLOW</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea41c56aba30b0ea34f723da4d493b8a8c</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a41c56aba30b0ea34f723da4d493b8a8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -1385,91 +1617,91 @@
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_8</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da7150971097fdd72d0426984c8a839da6</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea7150971097fdd72d0426984c8a839da6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_16</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da75cc6917775c8396c1e2adf0589c44a3</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea75cc6917775c8396c1e2adf0589c44a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_24</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da96539a142fa0b31f91c0fc3faea32a49</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea96539a142fa0b31f91c0fc3faea32a49</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_32</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da1c6f3f810c5208ac2d674ecd0490a362</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea1c6f3f810c5208ac2d674ecd0490a362</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_MONO</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da52f39d0ff752118830e325b3b949d5cd</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea52f39d0ff752118830e325b3b949d5cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_STEREO</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da69835433d9ae237149269532364f3cce</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea69835433d9ae237149269532364f3cce</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_SET_MASTER</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da98b78a09cd05aa7e4fe607f71f63f439</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea98b78a09cd05aa7e4fe607f71f63f439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_SET_SLAVE</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da10166847cbcd0167dc946434778c6f52</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea10166847cbcd0167dc946434778c6f52</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_TRANSMITTER</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4dafdc2f01fd2eb4f33355436e0820f3e22</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceafdc2f01fd2eb4f33355436e0820f3e22</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_RECEIVER</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4dae191dab537f2696329528e31175cd59d</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceae191dab537f2696329528e31175cd59d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_MSB</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4daa1b69d5fb7b8a548311b3c09d4ee47b8</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceaa1b69d5fb7b8a548311b3c09d4ee47b8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_LSB</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4daeb08f67401d52e7468dbad1b8902c723</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceaeb08f67401d52e7468dbad1b8902c723</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_MCK_ENABLED</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4dad501dd84c6c9480fed39a8a6f2f19204</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcead501dd84c6c9480fed39a8a6f2f19204</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_PCM_SHORT</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da35522283d16f98e73e1a43dd695c227f</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea35522283d16f98e73e1a43dd695c227f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_PCM_LONG</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da53278c6c13efef3d11e07fce10fdffa8</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea53278c6c13efef3d11e07fce10fdffa8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -1537,19 +1769,19 @@
     <member kind="enumvalue">
       <name>MEM_FLAG_IS_QUERY</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea671eb93e618c68d10475b2c2fc7a7f28</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa671eb93e618c68d10475b2c2fc7a7f28</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MEM_FLAG_IS_RAM</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea94296b10ac8302cf61ab46134041027b</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa94296b10ac8302cf61ab46134041027b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MEM_FLAG_IS_FLASH</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fceae10ff3f5485ca4fe32d56761298be46e</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaae10ff3f5485ca4fe32d56761298be46e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2434,43 +2666,43 @@
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_FIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa3dc1fbbdc432c78363ba0569b3dcc469</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a3dc1fbbdc432c78363ba0569b3dcc469</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_VCP</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa5e04cb140bbe9402b519112f1d92a9fb</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a5e04cb140bbe9402b519112f1d92a9fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_WDT_DISABLED</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaafcb854088c42ec6ce35a03682d0ef8e1</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409afcb854088c42ec6ce35a03682d0ef8e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_REQUEST</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa241342ad3c324d1a821f090ee413a6ea</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a241342ad3c324d1a821f090ee413a6ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_TRACE</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa1dd6e87783764ccc98a878c72f5d1f1f</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a1dd6e87783764ccc98a878c72f5d1f1f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa9de927601a58b78a3234e83645beb439</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a9de927601a58b78a3234e83645beb439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO_SHARE_OUTERR</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa818044d3aa25e417e9d2deefcb1ebad7</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a818044d3aa25e417e9d2deefcb1ebad7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2509,115 +2741,115 @@
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_TIMER</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a5dfdbe71ed150ae09e23615714eff2e9</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a5dfdbe71ed150ae09e23615714eff2e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_CPU</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a742da0fb8db8c45acb6d4b018ba55d86</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a742da0fb8db8c45acb6d4b018ba55d86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC0</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a794db5e17b3079ecadee20efc13044f4</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a794db5e17b3079ecadee20efc13044f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC1</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a28be26e249e69809e36f36dcc4096ebd</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a28be26e249e69809e36f36dcc4096ebd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC2</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960aa3562f641363187babba77043975bac1</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aa3562f641363187babba77043975bac1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC3</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ab3a24764c7f9f968a79b10e034723e48</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ab3a24764c7f9f968a79b10e034723e48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGERISING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEFALLING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ad3639b3137158884e9122acaa46977c2</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad3639b3137158884e9122acaa46977c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEBOTH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a22f41aef0b086c0a35ca94a3f22b4439</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a22f41aef0b086c0a35ca94a3f22b4439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_COUNTDOWN</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_AUTO_RELOAD</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960abcb1e623cc7755340f6020cb41c9f1b0</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9abcb1e623cc7755340f6020cb41c9f1b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_CHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ad291f4ddca584ad66c7c02206e6dde9b</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad291f4ddca584ad66c7c02206e6dde9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a918e8cde8248ff148f0b25a3965ce6f3</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a918e8cde8248ff148f0b25a3965ce6f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a449baa91a44c73260b6be430d09d173f</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a449baa91a44c73260b6be430d09d173f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a7576a21d5beca6f6e0bbc7058b418e02</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a7576a21d5beca6f6e0bbc7058b418e02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a25cd980f2a1ca52032547ad6b22d260b</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a25cd980f2a1ca52032547ad6b22d260b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_PWM_MODE</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960aece070a45d921ec85472633e8e924f4f</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aece070a45d921ec85472633e8e924f4f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2719,6 +2951,12 @@
       <name>UART_FLAG_IS_PARITY_EVEN</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
       <anchor>gga836e09ffaa5767111e9d10b38a17fd75a01d2df822a1c45a97bc5c63e09719f11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UART_FLAG_SET_LINE_CODING_DEFAULT</name>
+      <anchorfile>group___u_a_r_t.html</anchorfile>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a56a2a00d50e87108aa8c4378ff2c3eab</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -4268,6 +4506,74 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>button_attr_t</name>
+    <filename>structbutton__attr__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structbutton__attr__t.html</anchorfile>
+      <anchor>ae9adf988b2a44e8b85be077c0f6f7ec5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>threshold_msec</name>
+      <anchorfile>structbutton__attr__t.html</anchorfile>
+      <anchor>a03210160a7e135631354f6acdd603bff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>loc</name>
+      <anchorfile>structbutton__attr__t.html</anchorfile>
+      <anchor>abfaeeede7ef3a3d33b56f4600d168dd3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>id</name>
+      <anchorfile>structbutton__attr__t.html</anchorfile>
+      <anchor>ad83a556eb0c3694bff89fcbc927a22e8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>button_info_t</name>
+    <filename>structbutton__info__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structbutton__info__t.html</anchorfile>
+      <anchor>ab95834816856d19fc8c3560570ba909b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>button_status_t</name>
+    <filename>structbutton__status__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structbutton__status__t.html</anchorfile>
+      <anchor>ad437beb1e2259f4f602f1cb77491c008</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>active_duration_msec</name>
+      <anchorfile>structbutton__status__t.html</anchorfile>
+      <anchor>a8f760969be0ded63bbc6431423ccbb32</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>id</name>
+      <anchorfile>structbutton__status__t.html</anchorfile>
+      <anchor>a83386829cf2566d7472606b3e9466401</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>cfifo_attr_t</name>
     <filename>structcfifo__attr__t.html</filename>
     <member kind="variable">
@@ -4912,6 +5218,10 @@
       <anchor>a59ef9fa02e695799b51074a21c530005</anchor>
       <arglist></arglist>
     </member>
+  </compound>
+  <compound kind="struct">
+    <name>led_status_t</name>
+    <filename>structled__status__t.html</filename>
   </compound>
   <compound kind="struct">
     <name>mci_attr_t</name>
@@ -5888,6 +6198,238 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>BUTTON_DEV</name>
+    <title>Button Driver</title>
+    <filename>group___b_u_t_t_o_n___d_e_v.html</filename>
+    <class kind="struct">button_status_t</class>
+    <class kind="struct">button_info_t</class>
+    <class kind="struct">button_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_BUTTON_GETINFO</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ga99d725419e2e0d08e82c7ea6a29229ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_BUTTON_SETATTR</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ga9fa85656574075b7539b2293dbfa0034</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_NONE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca44b65ff2efb4231ba8109b9f72b7ad6d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_UP</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca37666936297216dce293b0aa31c474b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_DOWN</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca0c7746cfbcac16484b2266e6f51e5e0b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_LEFT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca55dc0d53615e28ee8af66827bee48e4e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_RIGHT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca13046edd6d64a0de5821b5ff4c7581ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_SELECT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca9cb658f9f234247357734041c1bf46d7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_BACK</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca80bbae5d9dece7dc5b0d0a45f9390770</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_EXIT</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cae31ed34a644a90d667666359456a2b86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER0</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca54f99ccf077602bca1016a3f888f0529</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER1</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cad98a2d743aab9b16f14563b1a94ed528</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER2</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca64806c2c1b8d4f71cea78b3a16f8bc14</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER3</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cab2ee746d91966815fe25e086731172e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER4</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caddcf825eb9fad9fdf9b53479bc22ae5c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER5</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca6d98c3b751bf4356086278b90a8df71a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER6</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca499f3f4e0f6a6d11ff3ac8d8a51c58bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER7</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca8d94137b70d70f9d2aae28714b80bed1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER8</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca59ff3995555148c28850064ad8911986</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER9</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cab60d5034fbf3d00659ece9e5f895e212</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER10</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca1a355dcc9b707be8ea8cf3ab9e03775b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER11</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caeccce153acc01fca2e8f6407cb1ce9bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER12</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06caebd2e731ab754cc187d6751bb928a0cd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER13</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca2518cf74c6e4b51373125db28acb699c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER14</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06ca010a1c8d35e047bc5bcca9f8937bf09f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_USER15</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>ggadc29c2ff13d900c2f185ee95427fb06cad55553172a470edf223d91fb875d8c44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_PRESSED</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea3272fd070846de77a38afd119b9f7e63</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_RELEASED</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea834f594aa28801f91237aec17689d614</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_ACTUATED</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eae80c1b747fa7bfae08aebd34881a8940</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_HELD</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eaf7d1172bb6f0af64265890baa167838c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_ACTIVE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea26b6fa923ab6115df8a821159f3f3b8f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_IS_ACTIVE_HIGH</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9eaf29e84f171e5c4177fe2303683d788f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_SET_ID</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea51ee22711b92da9bdcb13a6f73487ccf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_INITIALIZE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea699d53a6062ac3eebfba66191c703527</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_DEINITIALIZE</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea29780232d28ea7cc2542ae8d7fcd89f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_SET_HELD_THRESHOLD</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea582dc076a0cd02b1d671b4e9aa4e898d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>BUTTON_FLAG_SET_ACTUATED_THRESHOLD</name>
+      <anchorfile>group___b_u_t_t_o_n___d_e_v.html</anchorfile>
+      <anchor>gga61dadd085c1777f559549e05962b2c9ea3b97cfe74ebea09f97f6a24dff8bb92b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>STDC</name>
     <title>C Standard Library</title>
     <filename>group___s_t_d_c.html</filename>
@@ -6477,6 +7019,7 @@
     <filename>group___i_f_a_c_e___d_e_v.html</filename>
     <subgroup>ADC</subgroup>
     <subgroup>BOOTLOADER_DEV</subgroup>
+    <subgroup>BUTTON_DEV</subgroup>
     <subgroup>CORE</subgroup>
     <subgroup>SYS_DEVFIFO</subgroup>
     <subgroup>DAC</subgroup>
@@ -6693,43 +7236,43 @@
     <member kind="enumvalue">
       <name>DRIVE_FLAG_PROTECT</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da422657f0f00f2bf1c6fc3002ef050b7e</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a422657f0f00f2bf1c6fc3002ef050b7e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_UNPROTECT</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da6bcbe9631a8708469a4d46a478cc4a0d</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a6bcbe9631a8708469a4d46a478cc4a0d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_ERASE_BLOCKS</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da7d5981de2ae2f1fdbfeb32fca6d39fc8</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a7d5981de2ae2f1fdbfeb32fca6d39fc8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_ERASE_DEVICE</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da4a12886daf5eb61c3bfd284fee3f1d17</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a4a12886daf5eb61c3bfd284fee3f1d17</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_POWERDOWN</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2daa46be422f12ec3975a38152f6894253b</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57aa46be422f12ec3975a38152f6894253b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_POWERUP</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da40086f3f05ee0571d9fb8a5a27e46229</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a40086f3f05ee0571d9fb8a5a27e46229</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>DRIVE_FLAG_INIT</name>
       <anchorfile>group___d_r_i_v_e.html</anchorfile>
-      <anchor>gga0411cd49bb5b71852cecd93bcbf0ca2da4195f7a74e4c04ea072ae2c756d67759</anchor>
+      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57a4195f7a74e4c04ea072ae2c756d67759</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -6895,19 +7438,19 @@
     <member kind="enumvalue">
       <name>ENET_FLAGS_USERMII</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57ae63959e536664571d59dd5b313b26dae</anchor>
+      <anchor>ggabc5c98fcc1211af2b80116dd6e0a035dae63959e536664571d59dd5b313b26dae</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_FULLDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57ad8fb14a32b90abe4c0d9128ca416d969</anchor>
+      <anchor>ggabc5c98fcc1211af2b80116dd6e0a035dad8fb14a32b90abe4c0d9128ca416d969</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>ENET_FLAGS_HALFDUPLEX</name>
       <anchorfile>group___e_i_n_t.html</anchorfile>
-      <anchor>ggab04a0655cd1e3bcac5e8f48c18df1a57aa582a4f418d27604aeef4293b85151d4</anchor>
+      <anchor>ggabc5c98fcc1211af2b80116dd6e0a035daa582a4f418d27604aeef4293b85151d4</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7273,61 +7816,61 @@
     <member kind="enumvalue">
       <name>I2C_ERROR_NONE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea5feee47669cdab4f25da4e0de0c16633</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a5feee47669cdab4f25da4e0de0c16633</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_START</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a9bc582d4159c45394cc6c2c5dc4ad14b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_WRITE</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea7e270c609e58ecf5bc7946ac67dfb066</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a7e270c609e58ecf5bc7946ac67dfb066</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a6b7ba78b8ad1e491de04b31ab0ffbb8e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_STOP</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea37664a1000f758f1741ed9087903aad3</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a37664a1000f758f1741ed9087903aad3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_MASTER_ACK</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea2b7eecd3273ba4318b33f714fe81a140</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a2b7eecd3273ba4318b33f714fe81a140</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_BUS_BUSY</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9eaaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25aaa04dc8c79e3a0fac375e2f9447d55ee</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_ARBITRATION_LOST</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea4ad4a8f910e34819bb7e934495c729ad</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a4ad4a8f910e34819bb7e934495c729ad</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_TIMEOUT</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea7a8a638a6deda6c6943409e9e4cae099</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a7a8a638a6deda6c6943409e9e4cae099</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2C_ERROR_OVERFLOW</name>
       <anchorfile>group___i2_c.html</anchorfile>
-      <anchor>gga05589fbab0657f08285ebdfe93f5ec9ea41c56aba30b0ea34f723da4d493b8a8c</anchor>
+      <anchor>ggaba01db17f4a2bfbc3db60dc172972a25a41c56aba30b0ea34f723da4d493b8a8c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumeration">
@@ -7463,91 +8006,91 @@
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_8</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da7150971097fdd72d0426984c8a839da6</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea7150971097fdd72d0426984c8a839da6</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_16</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da75cc6917775c8396c1e2adf0589c44a3</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea75cc6917775c8396c1e2adf0589c44a3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_24</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da96539a142fa0b31f91c0fc3faea32a49</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea96539a142fa0b31f91c0fc3faea32a49</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_WIDTH_32</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da1c6f3f810c5208ac2d674ecd0490a362</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea1c6f3f810c5208ac2d674ecd0490a362</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_MONO</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da52f39d0ff752118830e325b3b949d5cd</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea52f39d0ff752118830e325b3b949d5cd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_STEREO</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da69835433d9ae237149269532364f3cce</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea69835433d9ae237149269532364f3cce</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_SET_MASTER</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da98b78a09cd05aa7e4fe607f71f63f439</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea98b78a09cd05aa7e4fe607f71f63f439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_SET_SLAVE</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da10166847cbcd0167dc946434778c6f52</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea10166847cbcd0167dc946434778c6f52</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_TRANSMITTER</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4dafdc2f01fd2eb4f33355436e0820f3e22</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceafdc2f01fd2eb4f33355436e0820f3e22</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_RECEIVER</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4dae191dab537f2696329528e31175cd59d</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceae191dab537f2696329528e31175cd59d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_MSB</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4daa1b69d5fb7b8a548311b3c09d4ee47b8</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceaa1b69d5fb7b8a548311b3c09d4ee47b8</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_LSB</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4daeb08f67401d52e7468dbad1b8902c723</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceaeb08f67401d52e7468dbad1b8902c723</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_MCK_ENABLED</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4dad501dd84c6c9480fed39a8a6f2f19204</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcead501dd84c6c9480fed39a8a6f2f19204</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_PCM_SHORT</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da35522283d16f98e73e1a43dd695c227f</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea35522283d16f98e73e1a43dd695c227f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>I2S_FLAG_IS_FORMAT_PCM_LONG</name>
       <anchorfile>group___i2_s.html</anchorfile>
-      <anchor>gga16af7b253440dadd46a80a4b9fddba4da53278c6c13efef3d11e07fce10fdffa8</anchor>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea53278c6c13efef3d11e07fce10fdffa8</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -7586,19 +8129,19 @@
     <member kind="enumvalue">
       <name>MEM_FLAG_IS_QUERY</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea671eb93e618c68d10475b2c2fc7a7f28</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa671eb93e618c68d10475b2c2fc7a7f28</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MEM_FLAG_IS_RAM</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fcea94296b10ac8302cf61ab46134041027b</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa94296b10ac8302cf61ab46134041027b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>MEM_FLAG_IS_FLASH</name>
       <anchorfile>group___m_e_m.html</anchorfile>
-      <anchor>ggaaf105ae5beaca1dee30ae54530691fceae10ff3f5485ca4fe32d56761298be46e</anchor>
+      <anchor>gga6b7b47dd702d9e331586d485013fd1eaae10ff3f5485ca4fe32d56761298be46e</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9129,43 +9672,43 @@
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_FIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa3dc1fbbdc432c78363ba0569b3dcc469</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a3dc1fbbdc432c78363ba0569b3dcc469</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_VCP</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa5e04cb140bbe9402b519112f1d92a9fb</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a5e04cb140bbe9402b519112f1d92a9fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_WDT_DISABLED</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaafcb854088c42ec6ce35a03682d0ef8e1</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409afcb854088c42ec6ce35a03682d0ef8e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_REQUEST</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa241342ad3c324d1a821f090ee413a6ea</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a241342ad3c324d1a821f090ee413a6ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_TRACE</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa1dd6e87783764ccc98a878c72f5d1f1f</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a1dd6e87783764ccc98a878c72f5d1f1f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa9de927601a58b78a3234e83645beb439</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a9de927601a58b78a3234e83645beb439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO_SHARE_OUTERR</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>gga6b7b47dd702d9e331586d485013fd1eaa818044d3aa25e417e9d2deefcb1ebad7</anchor>
+      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a818044d3aa25e417e9d2deefcb1ebad7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9291,115 +9834,115 @@
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_TIMER</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a5dfdbe71ed150ae09e23615714eff2e9</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a5dfdbe71ed150ae09e23615714eff2e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_CPU</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a742da0fb8db8c45acb6d4b018ba55d86</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a742da0fb8db8c45acb6d4b018ba55d86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC0</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a794db5e17b3079ecadee20efc13044f4</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a794db5e17b3079ecadee20efc13044f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC1</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a28be26e249e69809e36f36dcc4096ebd</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a28be26e249e69809e36f36dcc4096ebd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC2</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960aa3562f641363187babba77043975bac1</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aa3562f641363187babba77043975bac1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC3</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ab3a24764c7f9f968a79b10e034723e48</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ab3a24764c7f9f968a79b10e034723e48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGERISING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEFALLING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ad3639b3137158884e9122acaa46977c2</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad3639b3137158884e9122acaa46977c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEBOTH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a22f41aef0b086c0a35ca94a3f22b4439</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a22f41aef0b086c0a35ca94a3f22b4439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_COUNTDOWN</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_AUTO_RELOAD</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960abcb1e623cc7755340f6020cb41c9f1b0</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9abcb1e623cc7755340f6020cb41c9f1b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_CHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960ad291f4ddca584ad66c7c02206e6dde9b</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad291f4ddca584ad66c7c02206e6dde9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a918e8cde8248ff148f0b25a3965ce6f3</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a918e8cde8248ff148f0b25a3965ce6f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a449baa91a44c73260b6be430d09d173f</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a449baa91a44c73260b6be430d09d173f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a7576a21d5beca6f6e0bbc7058b418e02</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a7576a21d5beca6f6e0bbc7058b418e02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960a25cd980f2a1ca52032547ad6b22d260b</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a25cd980f2a1ca52032547ad6b22d260b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_PWM_MODE</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaf9bdc3014f3d54c426b6d2df10de4960aece070a45d921ec85472633e8e924f4f</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aece070a45d921ec85472633e8e924f4f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9492,6 +10035,12 @@
       <name>UART_FLAG_IS_PARITY_EVEN</name>
       <anchorfile>group___u_a_r_t.html</anchorfile>
       <anchor>gga836e09ffaa5767111e9d10b38a17fd75a01d2df822a1c45a97bc5c63e09719f11</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>UART_FLAG_SET_LINE_CODING_DEFAULT</name>
+      <anchorfile>group___u_a_r_t.html</anchorfile>
+      <anchor>gga836e09ffaa5767111e9d10b38a17fd75a56a2a00d50e87108aa8c4378ff2c3eab</anchor>
       <arglist></arglist>
     </member>
   </compound>

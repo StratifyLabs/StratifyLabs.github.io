@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Privacy | Stratify Labs
 tagline: Privacy Policy
 page_source: Privacy

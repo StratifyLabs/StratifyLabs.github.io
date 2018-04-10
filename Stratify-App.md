@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Stratify Labs
 tagline: Rapid Embedded Development
 page_source: StratifyApp
@@ -31,7 +31,7 @@ $(function () {
 
   <div class="row">
 
-  {% include JB/youtube-video.html
+  {% include youtube-video.html
     url="https://www.youtube.com/embed/WXo7_Qmv_sY?rel=0&hd=1"
     cc="col-md-12"
     dim_md='width="600" height="338"'
@@ -105,11 +105,11 @@ $(function () {
 <div class="container">
   <h2><b>Developer</b> Links</h2>
   </div>
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>
 
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

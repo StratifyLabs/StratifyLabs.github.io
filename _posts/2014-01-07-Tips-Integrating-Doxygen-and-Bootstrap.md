@@ -50,9 +50,9 @@ We also modify the HTML header or footer to load the Bootstrap css/javascript an
 our custom javascript (doxy-boot.js).
 
 {% highlight HTML %}
-<link href="bootstrap3/css/bootstrap.min.css" rel="stylesheet">
-<script src="bootstrap3/js/jquery-2.0.3.min.js"></script>
-<script src="bootstrap3/js/bootstrap.min.js"></script>
+<link href="bootstrap.min.css" rel="stylesheet">
+<script src="jquery-2.0.3.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <script type="text/javascript" src="doxy-boot.js"></script>
 {% endhighlight %}
 

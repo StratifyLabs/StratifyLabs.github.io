@@ -50,7 +50,7 @@ Stratify Labs provides BSPs for many popular microcontroller development boards 
 
 To get started on Stratify OS, [you can install a pre-built bootloader and kernel image in a matter of minutes]({{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-Nucleo-F446ZE/).
 
-{% include JB/youtube-video.html
+{% include youtube-video.html
 	url="https://www.youtube.com/embed/21b8xLXK3zI?rel=0&hd=1"
     cc="col-md-12"
 	dim_md='width="600" height="338"'

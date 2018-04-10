@@ -1,0 +1,60 @@
+<!-- Modal -->
+<div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header" style="background: #ddd">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="notLoggedInTitle">Login</h4>
+				<h4 class="modal-title" id="loggedInTitle" style="display: none">Logged Out</h4>
+			</div>
+			<div class="modal-body">
+				<div id="notLoggedInBody">
+					<p><b>Just browsing?</b> Login to disable pop ups and get access to pro tips.</p>
+					<p><b>Developing?</b> Login to publish apps to the Stratify Cloud!</p>
+					<div id="firebaseui-auth-container"></div>
+				</div>
+
+				<div class="alert alert-info" id="loggedInBody" style="display: none">You are now signed out. Refresh the page to sign back in.
+				</div>
+			</div>
+			<div class="modal-footer" style="background: #344555">
+				<button type="button" class="btn btn-danger" id="notLoggedInButton" data-dismiss="modal">No Thanks</button>
+				<button type="button" class="btn btn-primary" id="loggedInButton" data-dismiss="modal" style="display: none">OK</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	var wasLoggedIn = false;
+	$("body").on('click', '#login-button', function () {
+		if (firebaseUser) {
+			firebase.auth().signOut().then(function () {
+				console.log('Signed Out');
+			}, function (error) {
+				console.error('Sign Out Error', error);
+			});
+		}
+	});
+
+	window.addEventListener('auth', function () {
+		if (firebaseUser) {
+			if (!wasLoggedIn) {
+				document.getElementById('loggedInTitle').style.display = "block";
+				document.getElementById('loggedInBody').style.display = "block";
+				document.getElementById('loggedInButton').style.display = "block";
+				document.getElementById('notLoggedInTitle').style.display = "none";
+				document.getElementById('notLoggedInBody').style.display = "none";
+				document.getElementById('notLoggedInButton').style.display = "none";
+				wasLoggedIn = true;
+				console.log("signup:Logged in");
+			}
+		} else {
+			console.log("signup:Not logged in");
+		}
+	});
+
+</script>

@@ -4,5 +4,14 @@ theme :
 layout: default
 permalink: /:categories/:year/:month/:day/:title
 ---
-{% include JB/setup %}
-{% include themes/twitter/page.html %}
+{% include setup %}
+
+<div class="container">
+    <div class="row" style="margin-top: 20px;">
+      <div class="col-md-12">
+        <div>
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Hardware
 tagline: Hardware
 page_source: Hardware
@@ -27,7 +27,7 @@ sections:
 <div class="container">
   <h2>Getting <b>Started</b></h2>
   </div>
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>
 
 <div style="background: #fff;">
@@ -37,98 +37,98 @@ sections:
 
   <div class="row">
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Stratify Toolbox"
           page="Stratify-Toolbox"
           description="All-in-one USB Debugging and Development Tool"
           image="toolbox-angle.jpg"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Nucleo-F767ZI"
           page="hardware/nucleo144"
           description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz Ethernet"
           image="nucleo-f446ze.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Nucleo-F446ZE"
           page="hardware/nucleo144"
           description="STM32 ARM CM4 512KB Flash 128KB RAM 168MHz"
           image="nucleo-f446ze.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Nucleo-F746ZG"
           page="hardware/nucleo144"
           description="STM32 ARM CM7 1MB Flash 320KB SRAM 216MHz Ethernet"
           image="nucleo-f446ze.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="mbed LPC1768"
           page="hardware/mbed-lpc1768/"
           description="ARM Cortex-M3 Microcontroller Development Board"
           image="mbedLPC1768-1.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Nucleo-F412ZG"
           page="hardware/nucleo144"
           description="STM32 ARM CM4F 1MB Flash 256KB RAM 100MHz"
           image="nucleo-f446ze.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="STM32F411 DISCO"
           page="hardware/stm32f411-disco"
           description="STM32 ARM CM4 512KB Flash 128KB RAM 100MHz"
           image="stm32f411e-disco.jpg"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Nucleo-F429ZI"
           page="hardware/nucleo144"
           description="STM32 ARM CM4F 2MB Flash 256KB SRAM 180MHz Ethernet"
           image="nucleo-f446ze.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="CoAction Hero"
           page="hardware/coaction-hero/"
           description="ARM Cortex-M3 Microcontroller Development Board"
           image="coaction-hero-angle.png"
     %}
 
-    {% include JB/hardware-item.html
+    {% include hardware-item.html
           name="Stratify Alpha"
           page="hardware/stratify-alpha/"
           description="ARM Cortex-M4 Microcontroller Development Board"
           image="stratify-alpha-angle.png"
     %}
 
-    {% include JB/hardware-coming-soon.html
+    {% include hardware-coming-soon.html
           name="STM32F723E-DISCO"
           page=""
           description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
           image="stm32f723e-disco-board.jpg"
     %}
 
-    {% include JB/hardware-coming-soon.html
+    {% include hardware-coming-soon.html
           name="STM32F769I-DISCO"
           page=""
           description="STM32 ARM CM7 2MB Flash 512KB SRAM 216MHz LCD Touch Panel Ethernet"
           image="stm32f769i-disco.jpg"
     %}
 
-    {% include JB/hardware-coming-soon.html
+    {% include hardware-coming-soon.html
           name="Nucleo-F303ZE"
           page=""
           description="STM32 ARM CM4F 512KB Flash 64KB RAM 72MHz"
           image="nucleo-f446ze.png"
     %}
 
-    {% include JB/hardware-coming-soon.html
+    {% include hardware-coming-soon.html
           name="EA LPC4088"
           page=""
           description="ARM CM4F 512KB/128KB Flash/SRAM 120MHz Ethernet"
@@ -146,6 +146,6 @@ sections:
 
 <div style="background: #ddd;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Contact Form Thank You
 tagline: Contact Form Thank You
 sections:
@@ -30,4 +30,4 @@ sections:
 	</div>
 </section>
 
-{% include JB/analytics-providers/google-adwords.html %}
+{% include analytics-providers/google-adwords.html %}

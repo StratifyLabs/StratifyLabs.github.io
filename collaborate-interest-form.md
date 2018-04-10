@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Collaborative Workspace Interest Form
 tagline: Collaborative Workspace Interest Form
 sections:
@@ -27,7 +27,7 @@ sections:
 		<h2 class="section-heading">{{ page.form_title }}</h2>
 		<div class="row">
 			<div class="col-md-12 col-lg-offset-3 col-lg-6">
-        		{% include JB/collaborate-interest-form.html %}
+        		{% include collaborate-interest-form.html %}
 			</div>
 		</div>
 	</div>

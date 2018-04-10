@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Stratify Cloud
 tagline: Account
 page_source: Login

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: FAQ
 tagline: Frequently Asked Questions
 page_source: FAQ

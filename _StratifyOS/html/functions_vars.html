@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -57,6 +57,9 @@ page_source: Doxygen
 &#160;
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>active_duration_msec
+: <a class="el" href="structbutton__status__t.html#a8f760969be0ded63bbc6431423ccbb32">button_status_t</a>
+</li>
 <li>addr
 : <a class="el" href="structbootloader__writepage__t.html#a036ccb9f863985d4cfb8174a75e7f02a">bootloader_writepage_t</a>
 , <a class="el" href="structflash__pageinfo__t.html#aa2210a25999758d63fd9aa363082773b">flash_pageinfo_t</a>
@@ -223,7 +226,9 @@ page_source: Doxygen
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>id
-: <a class="el" href="structsys__26__info__t.html#ad0148d59b926962065011ba056caa2a5">sys_26_info_t</a>
+: <a class="el" href="structbutton__attr__t.html#ad83a556eb0c3694bff89fcbc927a22e8">button_attr_t</a>
+, <a class="el" href="structbutton__status__t.html#a83386829cf2566d7472606b3e9466401">button_status_t</a>
+, <a class="el" href="structsys__26__info__t.html#ad0148d59b926962065011ba056caa2a5">sys_26_info_t</a>
 , <a class="el" href="structsys__killattr__t.html#a038424b0b7c8fa6ac94119846f880192">sys_killattr_t</a>
 </li>
 <li>io
@@ -253,7 +258,8 @@ page_source: Doxygen
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>loc
-: <a class="el" href="structfifo__peek__t.html#a34e5878cae08c493e8aa524f4efb26b5">fifo_peek_t</a>
+: <a class="el" href="structbutton__attr__t.html#abfaeeede7ef3a3d33b56f4600d168dd3">button_attr_t</a>
+, <a class="el" href="structfifo__peek__t.html#a34e5878cae08c493e8aa524f4efb26b5">fifo_peek_t</a>
 </li>
 </ul>
 
@@ -341,7 +347,10 @@ page_source: Doxygen
 , <a class="el" href="structmcu__action__t.html#a4b024ebb989b08788f8a6c4ffd3dd276">mcu_action_t</a>
 </li>
 <li>o_flags
-: <a class="el" href="structcfifo__attr__t.html#aa7df1c2b292e85db19f4cf5894448a78">cfifo_attr_t</a>
+: <a class="el" href="structbutton__attr__t.html#ae9adf988b2a44e8b85be077c0f6f7ec5">button_attr_t</a>
+, <a class="el" href="structbutton__info__t.html#ab95834816856d19fc8c3560570ba909b">button_info_t</a>
+, <a class="el" href="structbutton__status__t.html#ad437beb1e2259f4f602f1cb77491c008">button_status_t</a>
+, <a class="el" href="structcfifo__attr__t.html#aa7df1c2b292e85db19f4cf5894448a78">cfifo_attr_t</a>
 , <a class="el" href="structcore__attr__t.html#a88b0a8e30814bed2bcc9b4feb06e87b2">core_attr_t</a>
 , <a class="el" href="structdisplay__info__t.html#a72a65f092784cbd31956717c7d41f000">display_info_t</a>
 , <a class="el" href="structdrive__attr__t.html#abff183c5d54487ab3fd512b7d9c650e7">drive_attr_t</a>
@@ -536,6 +545,9 @@ page_source: Doxygen
 <li>task_total
 : <a class="el" href="structsos__board__config__t.html#a4e0fa6ea7ec7cfbd194da562b96b64a4">sos_board_config_t</a>
 </li>
+<li>threshold_msec
+: <a class="el" href="structbutton__attr__t.html#a03210160a7e135631354f6acdd603bff">button_attr_t</a>
+</li>
 <li>tid
 : <a class="el" href="structsys__taskattr__t.html#a533d178d8ef1a70fa2ff419eb3f34ecf">sys_taskattr_t</a>
 </li>
@@ -594,6 +606,6 @@ page_source: Doxygen
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

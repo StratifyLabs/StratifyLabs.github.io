@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Contact Form
 tagline: Contact Form
 sections:
@@ -36,7 +36,7 @@ sections:
         <a class="btn btn-lg btn-primary pull-right" href="{{ BASE_URL }}/Stratify-OS">Our Technology</a>
       </div>   
 			<div class="col-md-8 col-md-offset-2">
-        {% include JB/contact-us-form.html %}
+        {% include contact-us-form.html %}
 			</div>
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Collaborative Workspace Interest Form
 tagline: Collaborative Workspace Interest Form
 sections:
@@ -30,4 +30,4 @@ sections:
 	</div>
 </section>
 
-{% include JB/analytics-providers/google-adwords.html %}
+{% include analytics-providers/google-adwords.html %}

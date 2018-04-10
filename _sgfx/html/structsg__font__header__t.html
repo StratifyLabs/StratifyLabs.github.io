@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -55,6 +55,10 @@ Data Fields</h2></td></tr>
 <tr class="separator:a96ffa5e1a4b40cbb78f2bd4e10a854e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc35f5db867d8afe79a782b35de1cf7"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsg__font__header__t.html#adbc35f5db867d8afe79a782b35de1cf7">version</a></td></tr>
 <tr class="separator:adbc35f5db867d8afe79a782b35de1cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f79a6c0bf5771291e330131076ae7fa"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsg__font__header__t.html#a3f79a6c0bf5771291e330131076ae7fa">canvas_width</a></td></tr>
+<tr class="separator:a3f79a6c0bf5771291e330131076ae7fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75a6134d08af73a8d5ebc6f364be012"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsg__font__header__t.html#aa75a6134d08af73a8d5ebc6f364be012">canvas_height</a></td></tr>
+<tr class="separator:aa75a6134d08af73a8d5ebc6f364be012"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="aecfbfb3e5770d6d1561186d565fd662a"></a>
@@ -67,6 +71,32 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Number of bits in each pixel of the font bitmap </p>
+
+</div>
+</div>
+<a class="anchor" id="aa75a6134d08af73a8d5ebc6f364be012"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 sg_font_header_t::canvas_height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Height of the canvas in pixels </p>
+
+</div>
+</div>
+<a class="anchor" id="a3f79a6c0bf5771291e330131076ae7fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 sg_font_header_t::canvas_width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Width of the canvas in pixels </p>
 
 </div>
 </div>
@@ -131,7 +161,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Number of bytes the font occupies </p>
+<p>Number of bytes the header occupies (header, character desc, and kerning info) </p>
 
 </div>
 </div>
@@ -151,6 +181,6 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

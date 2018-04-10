@@ -5,11 +5,6 @@ category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, c, programming, popular]
 page_source: MicrocontrollerBlog
-ad:
-  title: "Get the CoAction Hero with Stratify OS pre-installed"
-  description: "The CoAction Hero is an ARM Cortex M3 development board. It has Stratify OS pre-installed which gives you easy-to-use multi-threading, hardware abstraction and debugging all by simply connecting a USB cable."
-  image: "coaction-hero-production-ad.png"
-  link: "/hardware/coaction-hero/?utm_source=blog&utm_campaign=stratify_coaction_hero&utm_medium=ad&utm_content=a"
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/flash-map.svg" />

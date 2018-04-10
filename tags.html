@@ -8,13 +8,13 @@ group: navigation
 
 <h2><i class="fa fa-tags"></i> Tags
   			<div class="list-inline pull-right">
-				{% include themes/twitter/nav-buttons %}
+				{% include nav-buttons %}
 			</div>
 </h2>
 
 <ul class="nav nav-pills">
   {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
+  {% include tags_list %}
 </ul>
 
 
@@ -23,7 +23,7 @@ group: navigation
   </h2>
   <ul>
     {% assign pages_list = tag[1] %}  
-    {% include JB/pages_list %}
+    {% include pages_list %}
   </ul>
 {% endfor %}
 

@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -29,19 +29,19 @@ page_source: Doxygen
 Functions</h2></td></tr>
 <tr class="memitem:ga55014cbf786748cff374286963610386"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga55014cbf786748cff374286963610386">son_get_error</a> (<a class="el" href="structson__t.html">son_t</a> *h)</td></tr>
 <tr class="separator:ga55014cbf786748cff374286963610386"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba466edaea5fd61eb673075f8fa34264"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#gaba466edaea5fd61eb673075f8fa34264">son_to_json</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *path)</td></tr>
-<tr class="separator:gaba466edaea5fd61eb673075f8fa34264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga699ec52045b7a22744c99107d26d8122"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, size_t stack_size)</td></tr>
-<tr class="separator:ga699ec52045b7a22744c99107d26d8122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c13c1667377122f578eec24d1f733dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga4c13c1667377122f578eec24d1f733dc">son_append</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, size_t stack_size)</td></tr>
-<tr class="separator:ga4c13c1667377122f578eec24d1f733dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18c4930979ced5adfecd1a3945429e0d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga18c4930979ced5adfecd1a3945429e0d">son_to_json</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *path, int(*callback)(void *context, const char *entry), void *context)</td></tr>
+<tr class="separator:ga18c4930979ced5adfecd1a3945429e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf1f630a0acb40c35eb456a6612b12c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#gadf1f630a0acb40c35eb456a6612b12c8">son_create</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, <a class="el" href="group___s_o_n.html#gaf216182088d7ee4189680920c62d34fd">son_size_t</a> stack_size)</td></tr>
+<tr class="separator:gadf1f630a0acb40c35eb456a6612b12c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedaed702d70da05ff40fce820d60b3ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#gaedaed702d70da05ff40fce820d60b3ae">son_append</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name, <a class="el" href="structson__stack__t.html">son_stack_t</a> *stack, <a class="el" href="group___s_o_n.html#gaf216182088d7ee4189680920c62d34fd">son_size_t</a> stack_size)</td></tr>
+<tr class="separator:gaedaed702d70da05ff40fce820d60b3ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90e32cf4df5579114312635e3593e24f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga90e32cf4df5579114312635e3593e24f">son_open</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *name)</td></tr>
 <tr class="separator:ga90e32cf4df5579114312635e3593e24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f217dcfa00977986c15b3daae675677"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___f_i_l_e_s.html#ga1f217dcfa00977986c15b3daae675677">son_close</a> (<a class="el" href="structson__t.html">son_t</a> *h)</td></tr>
 <tr class="separator:ga1f217dcfa00977986c15b3daae675677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga4c13c1667377122f578eec24d1f733dc"></a>
+<a class="anchor" id="gaedaed702d70da05ff40fce820d60b3ae"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -66,7 +66,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group___s_o_n.html#gaf216182088d7ee4189680920c62d34fd">son_size_t</a>&#160;</td>
           <td class="paramname"><em>stack_size</em>&#160;</td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Closes a file that was opened or created with <a class="el" href="group___f_i_l_e_s.html#ga699ec52045b7a22744c99107d26d8122">son_create()</a>, <a class="el" href="group___f_i_l_e_s.html#ga4c13c1667377122f578eec24d1f733dc">son_append()</a>, or <a class="el" href="group___f_i_l_e_s.html#ga90e32cf4df5579114312635e3593e24f">son_open()</a>.</p>
+<p>Closes a file that was opened or created with <a class="el" href="group___f_i_l_e_s.html#gadf1f630a0acb40c35eb456a6612b12c8">son_create()</a>, <a class="el" href="group___f_i_l_e_s.html#gaedaed702d70da05ff40fce820d60b3ae">son_append()</a>, or <a class="el" href="group___f_i_l_e_s.html#ga90e32cf4df5579114312635e3593e24f">son_open()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">h</td><td>A pointer to the handle </td></tr>
@@ -115,7 +115,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga699ec52045b7a22744c99107d26d8122"></a>
+<a class="anchor" id="gadf1f630a0acb40c35eb456a6612b12c8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -140,7 +140,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
+          <td class="paramtype"><a class="el" href="group___s_o_n.html#gaf216182088d7ee4189680920c62d34fd">son_size_t</a>&#160;</td>
           <td class="paramname"><em>stack_size</em>&#160;</td>
         </tr>
         <tr>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <p>When you create an SON file, you specify the name where the file will be created. If the file already exists, it is overwritten.</p>
 <p>You also need to provide a stack. This is so the library can work without using dynamic memory allocation. The <em>stack_size</em> needs to be as large as the deepest depth of the data. For example, the following JSON data has a depth of 4.</p>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;{</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  &quot;make&quot;: { //depth level 1 (all files have a depth of at least 1)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;     &quot;model&quot; : { //depth level 2</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;          &quot;color&quot; : &quot;red&quot; //depth level 3</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;     }</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  }</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div></div><!-- fragment --><p>The data above can be created with the following code.</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;son_t h;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;son_stack_t stack[4];</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;son_create(&amp;h, &quot;/home/data.son&quot;, stack, 4);</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;son_open_obj(&amp;h, &quot;&quot;); //open the root object</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;son_open_obj(&amp;h, &quot;make&quot;);</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;son_open_obj(&amp;h, &quot;model&quot;);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;son_write_str(&amp;h, &quot;color&quot;, &quot;red&quot;);</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;son_close(&amp;h); //this will close each obj (son_close_obj()) when closing the file</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; //then to access the value</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;char color[16];</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;son_open(&amp;h, &quot;/home/data.son&quot;);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;son_read_str(&amp;h, &quot;make.model.color&quot;, color, 16); //color will contain &quot;red&quot;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;son_close(&amp;h);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___w_r_i_t_e.html">Writing/Appending Values to Files</a> </dd></dl>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;son_t h;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;son_stack_t stack[4];</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;son_create(&amp;h, &quot;/home/data.son&quot;, stack, 4);</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;son_open_object(&amp;h, &quot;&quot;); //open the root object</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;son_open_object(&amp;h, &quot;make&quot;);</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;son_open_object(&amp;h, &quot;model&quot;);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;son_write_str(&amp;h, &quot;color&quot;, &quot;red&quot;);</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;son_close(&amp;h); //this will close each obj (son_close_object()) when closing the file</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; //then to access the value</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;char color[16];</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;son_open(&amp;h, &quot;/home/data.son&quot;);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;son_read_str(&amp;h, &quot;make.model.color&quot;, color, 16); //color will contain &quot;red&quot;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;son_close(&amp;h);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="group___w_r_i_t_e.html">Writing/Appending Values to Files</a> </dd></dl>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gaba466edaea5fd61eb673075f8fa34264"></a>
+<a class="anchor" id="ga18c4930979ced5adfecd1a3945429e0d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -243,7 +243,19 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(void *context, const char *entry)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -267,6 +279,6 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Stratify Labs
 tagline: Rapid Embedded Development
 page_source: HomeToolbox
@@ -13,7 +13,7 @@ sections:
 
 <div style="background: #ddd;">
 	<div class="container" style="padding-top: 10px; padding-bottom: 10px">
-		{% include themes/twitter/toolbox-signup.html %}
+		{% include toolbox-signup.html %}
 		<center>
 		<p>Signup now for a chance to win a free Stratify Toolbox beta</p>
 		</center>
@@ -46,7 +46,7 @@ sections:
 			</div>
 
 		</div>
-		{% include JB/youtube-video.html
+		{% include youtube-video.html
 		  url="https://www.youtube.com/embed/wt-9fTjqPx4?rel=0&hd=1"
 		  cc="col-md-8"
 		  dim_md='width="600" height="338"'
@@ -72,7 +72,7 @@ sections:
 	<div class="container" style="padding-top: 50px; padding-bottom: 50px">
 
 		<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
-		{% include JB/youtube-video.html
+		{% include youtube-video.html
 		  url="https://www.youtube.com/embed/e7PNh4W0tAA?rel=0&hd=1"
 		  cc="col-md-7"
 		  dim_md='width="480" height="270"'

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Stratify Labs
 tagline: Rapid Embedded Development
 page_source: Docs
@@ -23,7 +23,7 @@ page_source: Docs
 <div class="container">
   <h2>Getting <b>Started</b></h2>
   </div>
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>
 
 <div style="background: #fff;">
@@ -110,6 +110,6 @@ page_source: Docs
 
 <div style="background: #ddd;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

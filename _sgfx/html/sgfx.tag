@@ -267,6 +267,13 @@
       <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
     </member>
     <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_path</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>gabbe2d9eb9a8d1adf5cca89224b00eb43</anchor>
+      <arglist>(sg_bmap_t *bmap, sg_vector_path_t *path, const sg_vector_map_t *map)</arglist>
+    </member>
+    <member kind="function">
       <type>int</type>
       <name>sg_animate</name>
       <anchorfile>group___a_n_i_m_a_t_i_o_n.html</anchorfile>
@@ -298,126 +305,164 @@
     <class kind="struct">sg_bmap_t</class>
     <class kind="struct">sg_region_t</class>
     <class kind="struct">sg_vector_primitive_t</class>
+    <class kind="struct">sg_vector_path_description_t</class>
     <class kind="struct">sg_vector_icon_t</class>
     <class kind="struct">sg_vector_map_t</class>
+    <class kind="struct">sg_vector_path_t</class>
     <member kind="enumvalue">
       <name>SG_FORMAT_VARIABLE</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>a99fb83031ce9923c84392b4e92f956b5a4d2f3f26ef6f6f63bba5298e80bd51f2</anchor>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06ca4d2f3f26ef6f6f63bba5298e80bd51f2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_FORMAT_1BPP</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>a99fb83031ce9923c84392b4e92f956b5a5973517295d878d75c6c3bec315c40ef</anchor>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06ca5973517295d878d75c6c3bec315c40ef</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_FORMAT_2BPP</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>a99fb83031ce9923c84392b4e92f956b5aba5e9d03775e7d397400b279da6dff65</anchor>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06caba5e9d03775e7d397400b279da6dff65</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_FORMAT_4BPP</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>a99fb83031ce9923c84392b4e92f956b5afe939cfeb8e9acbc700829cde8a27124</anchor>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06cafe939cfeb8e9acbc700829cde8a27124</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_FORMAT_8BPP</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>a99fb83031ce9923c84392b4e92f956b5a3a37544767477194f2cd0843765a92fc</anchor>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06ca3a37544767477194f2cd0843765a92fc</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_FORMAT_RGB565</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>a99fb83031ce9923c84392b4e92f956b5a5706d3b648ac8d16ffdfd79974a8a4d5</anchor>
+      <anchor>adc29c2ff13d900c2f185ee95427fb06ca5706d3b648ac8d16ffdfd79974a8a4d5</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_SOLID</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04a82f03b17340adce16025cbab6c513ed3</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9ea82f03b17340adce16025cbab6c513ed3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_ASSIGN</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04adc5a5ef0f4e3726a04ffaa16dfeb1313</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9eadc5a5ef0f4e3726a04ffaa16dfeb1313</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_BLEND</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04a6ee09220bd41d3536d2449cb73eca7e7</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9ea6ee09220bd41d3536d2449cb73eca7e7</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_OR</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04ae86e2d410243618eab2c001f603f5f1d</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9eae86e2d410243618eab2c001f603f5f1d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_INVERT</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04ad63b3cf07d62d478b30f0484715ca7fb</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9ead63b3cf07d62d478b30f0484715ca7fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_XOR</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04a63fa873cd8423f776019595ac175f545</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9ea63fa873cd8423f776019595ac175f545</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_ERASE</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04ae02a1cfbd09e989fb7bf14ed1a3f1e87</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9eae02a1cfbd09e989fb7bf14ed1a3f1e87</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_AND</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04a30d4673f12e01711e4c208d717ba704d</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9ea30d4673f12e01711e4c208d717ba704d</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_PEN_FLAG_IS_FILL</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>abc6126af1d45847bc59afa0aa3216b04aff91d4c7c1d5be98465ef2062e484b8b</anchor>
+      <anchor>a61dadd085c1777f559549e05962b2c9eaff91d4c7c1d5be98465ef2062e484b8b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_LINE</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>adc29c2ff13d900c2f185ee95427fb06ca2662d851e49a78749ba7a14bf6c1f132</anchor>
+      <anchor>a726ca809ffd3d67ab4b8476646f26635a2662d851e49a78749ba7a14bf6c1f132</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_ARC</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>adc29c2ff13d900c2f185ee95427fb06cac720a87a3c18a6b124488e5352cf1e6c</anchor>
+      <anchor>a726ca809ffd3d67ab4b8476646f26635ac720a87a3c18a6b124488e5352cf1e6c</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_POUR</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>adc29c2ff13d900c2f185ee95427fb06ca01ed935ddeddc26061ca738d93069d62</anchor>
+      <anchor>a726ca809ffd3d67ab4b8476646f26635a01ed935ddeddc26061ca738d93069d62</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_QUADRATIC_BEZIER</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>adc29c2ff13d900c2f185ee95427fb06ca9baa776f2072a6f154089ffa1ebd366a</anchor>
+      <anchor>a726ca809ffd3d67ab4b8476646f26635a9baa776f2072a6f154089ffa1ebd366a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SG_CUBIC_BEZIER</name>
       <anchorfile>sg__types_8h.html</anchorfile>
-      <anchor>adc29c2ff13d900c2f185ee95427fb06ca4fd36127091fbb35b0a2fe10c7ffd2bf</anchor>
+      <anchor>a726ca809ffd3d67ab4b8476646f26635a4fd36127091fbb35b0a2fe10c7ffd2bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_VECTOR_PATH_MOVE</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abed82baf7f470b522273a3e37c24c600ae8aa9a8d031544bdbe050ba580c0d809</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_VECTOR_PATH_LINE</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abed82baf7f470b522273a3e37c24c600af42fdb4b50af155ac74c8fbacf7883ab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_VECTOR_PATH_QUADRATIC_BEZIER</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abed82baf7f470b522273a3e37c24c600ad60ed87d3c1bb88e34d2da8209194806</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_VECTOR_PATH_CUBIC_BEZIER</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abed82baf7f470b522273a3e37c24c600ae94202da2f54dc6ae826c6b97a90d5ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_VECTOR_PATH_CLOSE</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abed82baf7f470b522273a3e37c24c600ab573ab992120ec0a19293ffedbbb1695</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SG_VECTOR_PATH_POUR</name>
+      <anchorfile>sg__types_8h.html</anchorfile>
+      <anchor>abed82baf7f470b522273a3e37c24c600a5d8a2dcf681f9205a6b865ebc313bd8f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -489,10 +534,24 @@
     <name>sg_font_char_t</name>
     <filename>structsg__font__char__t.html</filename>
     <member kind="variable">
-      <type>u16</type>
-      <name>offset</name>
+      <type>s16</type>
+      <name>canvas_x</name>
       <anchorfile>structsg__font__char__t.html</anchorfile>
-      <anchor>ab7432beb7e38890dc11500dc424781f6</anchor>
+      <anchor>af4ba3de4d81eedbc596d934e8284638d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s16</type>
+      <name>canvas_y</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>a5bd28f4571bb58a84f90510162a1c51f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u8</type>
+      <name>canvas_idx</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>a047642e6ed82cae5db502370a771b840</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
@@ -510,17 +569,24 @@
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>s16</type>
-      <name>xoffset</name>
+      <type>u8</type>
+      <name>xadvance</name>
       <anchorfile>structsg__font__char__t.html</anchorfile>
-      <anchor>aeb47a3383ac0aff173b30ed2e22876d9</anchor>
+      <anchor>a62a9bfa542dbdf230b5a1c5137566fb5</anchor>
       <arglist></arglist>
     </member>
     <member kind="variable">
-      <type>s16</type>
+      <type>s8</type>
+      <name>xoffset</name>
+      <anchorfile>structsg__font__char__t.html</anchorfile>
+      <anchor>af601bf448ea330a0b2a21a82de2d2b71</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s8</type>
       <name>yoffset</name>
       <anchorfile>structsg__font__char__t.html</anchorfile>
-      <anchor>aa37f3c3acb00600ac78b67fb09f6f559</anchor>
+      <anchor>a5640a52e1e1e6a0f54166475acd2d0ce</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -574,6 +640,20 @@
       <name>version</name>
       <anchorfile>structsg__font__header__t.html</anchorfile>
       <anchor>adbc35f5db867d8afe79a782b35de1cf7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>canvas_width</name>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>a3f79a6c0bf5771291e330131076ae7fa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>canvas_height</name>
+      <anchorfile>structsg__font__header__t.html</anchorfile>
+      <anchor>aa75a6134d08af73a8d5ebc6f364be012</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -659,6 +739,84 @@
   <compound kind="struct">
     <name>sg_vector_map_t</name>
     <filename>structsg__vector__map__t.html</filename>
+  </compound>
+  <compound kind="struct">
+    <name>sg_vector_path_description_t</name>
+    <filename>structsg__vector__path__description__t.html</filename>
+    <member kind="variable">
+      <type>u16</type>
+      <name>type</name>
+      <anchorfile>structsg__vector__path__description__t.html</anchorfile>
+      <anchor>a206312432c9d08b6e142d87f470e16cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_vector_path_move_t</type>
+      <name>move</name>
+      <anchorfile>structsg__vector__path__description__t.html</anchorfile>
+      <anchor>a470e758d33a0c91f6c089a9c6523c9d2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_vector_path_line_t</type>
+      <name>line</name>
+      <anchorfile>structsg__vector__path__description__t.html</anchorfile>
+      <anchor>ab6205bd9e22bc621d7c6f3e0174db8c8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_vector_path_quadtratic_bezier_t</type>
+      <name>quadratic_bezier</name>
+      <anchorfile>structsg__vector__path__description__t.html</anchorfile>
+      <anchor>ae6dd394817960774bc05dbcf2c8aeb8d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_vector_path_cubic_bezier_t</type>
+      <name>cubic_bezier</name>
+      <anchorfile>structsg__vector__path__description__t.html</anchorfile>
+      <anchor>afef57f7d65ff5b526514acb63ddac5cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_vector_path_pour_t</type>
+      <name>pour</name>
+      <anchorfile>structsg__vector__path__description__t.html</anchorfile>
+      <anchor>ad9f2affce9b20ef09406ea532f860b05</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>sg_vector_path_t</name>
+    <filename>structsg__vector__path__t.html</filename>
+    <member kind="variable">
+      <type>sg_vector_path_icon_t</type>
+      <name>icon</name>
+      <anchorfile>structsg__vector__path__t.html</anchorfile>
+      <anchor>a43e531faca29e284087635930827b34e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_point_t</type>
+      <name>start</name>
+      <anchorfile>structsg__vector__path__t.html</anchorfile>
+      <anchor>a6a059ad0a257fe3b494fb47483bdadce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_point_t</type>
+      <name>current</name>
+      <anchorfile>structsg__vector__path__t.html</anchorfile>
+      <anchor>a04d924e42c674bf48f183990595c45fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>sg_region_t</type>
+      <name>region</name>
+      <anchorfile>structsg__vector__path__t.html</anchorfile>
+      <anchor>a2b76fa27ccc1c048cf2cb84fa8dab501</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="struct">
     <name>sg_vector_primitive_t</name>
@@ -1014,6 +1172,13 @@
       <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
       <anchor>gaea5d02ac292b789d87f60b114817e864</anchor>
       <arglist>(sg_bmap_t *bmap, const sg_vector_icon_t *icon, const sg_vector_map_t *map, sg_region_t *bounds)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sg_vector_draw_path</name>
+      <anchorfile>group___b_m_a_p_v_e_c_t_o_r.html</anchorfile>
+      <anchor>gabbe2d9eb9a8d1adf5cca89224b00eb43</anchor>
+      <arglist>(sg_bmap_t *bmap, sg_vector_path_t *path, const sg_vector_map_t *map)</arglist>
     </member>
   </compound>
   <compound kind="page">

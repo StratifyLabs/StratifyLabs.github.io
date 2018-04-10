@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -33,6 +33,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga7fab812c334b92df3f9b4ea271f8baf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaea5d02ac292b789d87f60b114817e864"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p_v_e_c_t_o_r.html#gaea5d02ac292b789d87f60b114817e864">sg_vector_draw_icon</a> (<a class="el" href="structsg__bmap__t.html">sg_bmap_t</a> *bmap, const <a class="el" href="structsg__vector__icon__t.html">sg_vector_icon_t</a> *icon, const <a class="el" href="structsg__vector__map__t.html">sg_vector_map_t</a> *map, <a class="el" href="structsg__region__t.html">sg_region_t</a> *bounds)</td></tr>
 <tr class="separator:gaea5d02ac292b789d87f60b114817e864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbe2d9eb9a8d1adf5cca89224b00eb43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_m_a_p_v_e_c_t_o_r.html#gabbe2d9eb9a8d1adf5cca89224b00eb43">sg_vector_draw_path</a> (<a class="el" href="structsg__bmap__t.html">sg_bmap_t</a> *bmap, <a class="el" href="structsg__vector__path__t.html">sg_vector_path_t</a> *path, const <a class="el" href="structsg__vector__map__t.html">sg_vector_map_t</a> *map)</td></tr>
+<tr class="separator:gabbe2d9eb9a8d1adf5cca89224b00eb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gaea5d02ac292b789d87f60b114817e864"></a>
@@ -77,6 +79,47 @@ Functions</h2></td></tr>
     <tr><td class="paramname">icon</td><td>A pointer to the icon object </td></tr>
     <tr><td class="paramname">map</td><td>A pointer to the map object </td></tr>
     <tr><td class="paramname">bounds</td><td>If not null, will be written with the bounding region of the icon drawn on the bitmap </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gabbe2d9eb9a8d1adf5cca89224b00eb43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sg_vector_draw_path </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structsg__bmap__t.html">sg_bmap_t</a> *&#160;</td>
+          <td class="paramname"><em>bmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structsg__vector__path__t.html">sg_vector_path_t</a> *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structsg__vector__map__t.html">sg_vector_map_t</a> *&#160;</td>
+          <td class="paramname"><em>map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Draws a vector path icon on the bitmap.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bmap</td><td>The bitmap to draw on </td></tr>
+    <tr><td class="paramname">path</td><td>The path to draw </td></tr>
+    <tr><td class="paramname">map</td><td>The map that describes how the path will be drawn on the bitmap </td></tr>
   </table>
   </dd>
 </dl>
@@ -189,6 +232,6 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

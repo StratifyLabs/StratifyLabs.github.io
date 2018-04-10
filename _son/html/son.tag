@@ -178,6 +178,12 @@
       <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2385276d3ca321793f8e2abeebd5360c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NO_CHILDREN</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feab894674292f1a35bd790b7003810e64f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>son_value_t</name>
@@ -216,9 +222,9 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>SON_OBJ</name>
+      <name>SON_OBJECT</name>
       <anchorfile>group___s_o_n.html</anchorfile>
-      <anchor>gga803f627d5226bd3c8aaadd672a934f66a4fce01a2870ef38467a7c96178371e95</anchor>
+      <anchor>gga803f627d5226bd3c8aaadd672a934f66a507aebf6176036a758de2baa04e49a4e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -249,8 +255,8 @@
       <type>int</type>
       <name>son_create_message</name>
       <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
-      <anchor>ga32ea1184d1c45cec0a8b686df64c2dc5</anchor>
-      <arglist>(son_t *h, void *message, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
+      <anchor>ga43f7cf4d053a7bdda21545c4226efa19</anchor>
+      <arglist>(son_t *h, void *message, int nbyte, son_stack_t *stack, son_size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -298,22 +304,22 @@
       <type>int</type>
       <name>son_to_json</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gaba466edaea5fd61eb673075f8fa34264</anchor>
-      <arglist>(son_t *h, const char *path)</arglist>
+      <anchor>ga18c4930979ced5adfecd1a3945429e0d</anchor>
+      <arglist>(son_t *h, const char *path, int(*callback)(void *context, const char *entry), void *context)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>son_create</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga699ec52045b7a22744c99107d26d8122</anchor>
-      <arglist>(son_t *h, const char *name, son_stack_t *stack, size_t stack_size)</arglist>
+      <anchor>gadf1f630a0acb40c35eb456a6612b12c8</anchor>
+      <arglist>(son_t *h, const char *name, son_stack_t *stack, son_size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>son_append</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga4c13c1667377122f578eec24d1f733dc</anchor>
-      <arglist>(son_t *h, const char *name, son_stack_t *stack, size_t stack_size)</arglist>
+      <anchor>gaedaed702d70da05ff40fce820d60b3ae</anchor>
+      <arglist>(son_t *h, const char *name, son_stack_t *stack, son_size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -331,16 +337,16 @@
     </member>
     <member kind="function">
       <type>int</type>
-      <name>son_open_obj</name>
+      <name>son_open_object</name>
       <anchorfile>group___w_r_i_t_e.html</anchorfile>
-      <anchor>gae96f2c99a8480d89ca75c02cf58ec366</anchor>
+      <anchor>ga647441d4568907988d0deaec4f2e04a7</anchor>
       <arglist>(son_t *h, const char *key)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
-      <name>son_close_obj</name>
+      <name>son_close_object</name>
       <anchorfile>group___w_r_i_t_e.html</anchorfile>
-      <anchor>ga40f733d154834b9eff57159730a461da</anchor>
+      <anchor>ga811bfb1e183cf026463c22cebddc6889</anchor>
       <arglist>(son_t *h)</arglist>
     </member>
     <member kind="function">
@@ -440,6 +446,13 @@
       <anchorfile>group___r_e_a_d.html</anchorfile>
       <anchor>ga115f98c2d168df3d03d1d061d97c8373</anchor>
       <arglist>(son_t *h, const char *access, son_size_t *size)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_seek_next</name>
+      <anchorfile>group___r_e_a_d.html</anchorfile>
+      <anchor>ga92cac9ea6a63e5db8451b5206be0c3f6</anchor>
+      <arglist>(son_t *h, char *name, son_value_t *type)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -610,22 +623,22 @@
       <type>int</type>
       <name>son_to_json</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>gaba466edaea5fd61eb673075f8fa34264</anchor>
-      <arglist>(son_t *h, const char *path)</arglist>
+      <anchor>ga18c4930979ced5adfecd1a3945429e0d</anchor>
+      <arglist>(son_t *h, const char *path, int(*callback)(void *context, const char *entry), void *context)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>son_create</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga699ec52045b7a22744c99107d26d8122</anchor>
-      <arglist>(son_t *h, const char *name, son_stack_t *stack, size_t stack_size)</arglist>
+      <anchor>gadf1f630a0acb40c35eb456a6612b12c8</anchor>
+      <arglist>(son_t *h, const char *name, son_stack_t *stack, son_size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
       <name>son_append</name>
       <anchorfile>group___f_i_l_e_s.html</anchorfile>
-      <anchor>ga4c13c1667377122f578eec24d1f733dc</anchor>
-      <arglist>(son_t *h, const char *name, son_stack_t *stack, size_t stack_size)</arglist>
+      <anchor>gaedaed702d70da05ff40fce820d60b3ae</anchor>
+      <arglist>(son_t *h, const char *name, son_stack_t *stack, son_size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -650,8 +663,8 @@
       <type>int</type>
       <name>son_create_message</name>
       <anchorfile>group___m_e_s_s_a_g_e.html</anchorfile>
-      <anchor>ga32ea1184d1c45cec0a8b686df64c2dc5</anchor>
-      <arglist>(son_t *h, void *message, int nbyte, son_stack_t *stack, size_t stack_size)</arglist>
+      <anchor>ga43f7cf4d053a7bdda21545c4226efa19</anchor>
+      <arglist>(son_t *h, void *message, int nbyte, son_stack_t *stack, son_size_t stack_size)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -706,6 +719,13 @@
       <anchorfile>group___r_e_a_d.html</anchorfile>
       <anchor>ga115f98c2d168df3d03d1d061d97c8373</anchor>
       <arglist>(son_t *h, const char *access, son_size_t *size)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>son_seek_next</name>
+      <anchorfile>group___r_e_a_d.html</anchorfile>
+      <anchor>ga92cac9ea6a63e5db8451b5206be0c3f6</anchor>
+      <arglist>(son_t *h, char *name, son_value_t *type)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
@@ -926,6 +946,12 @@
       <anchor>gga672a94c859b0d260bb3a04d0851ad4fea2385276d3ca321793f8e2abeebd5360c</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>SON_ERR_NO_CHILDREN</name>
+      <anchorfile>group___s_o_n.html</anchorfile>
+      <anchor>gga672a94c859b0d260bb3a04d0851ad4feab894674292f1a35bd790b7003810e64f</anchor>
+      <arglist></arglist>
+    </member>
     <member kind="enumeration">
       <type></type>
       <name>son_value_t</name>
@@ -964,9 +990,9 @@
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
-      <name>SON_OBJ</name>
+      <name>SON_OBJECT</name>
       <anchorfile>group___s_o_n.html</anchorfile>
-      <anchor>gga803f627d5226bd3c8aaadd672a934f66a4fce01a2870ef38467a7c96178371e95</anchor>
+      <anchor>gga803f627d5226bd3c8aaadd672a934f66a507aebf6176036a758de2baa04e49a4e</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
@@ -1000,16 +1026,16 @@
     <filename>group___w_r_i_t_e.html</filename>
     <member kind="function">
       <type>int</type>
-      <name>son_open_obj</name>
+      <name>son_open_object</name>
       <anchorfile>group___w_r_i_t_e.html</anchorfile>
-      <anchor>gae96f2c99a8480d89ca75c02cf58ec366</anchor>
+      <anchor>ga647441d4568907988d0deaec4f2e04a7</anchor>
       <arglist>(son_t *h, const char *key)</arglist>
     </member>
     <member kind="function">
       <type>int</type>
-      <name>son_close_obj</name>
+      <name>son_close_object</name>
       <anchorfile>group___w_r_i_t_e.html</anchorfile>
-      <anchor>ga40f733d154834b9eff57159730a461da</anchor>
+      <anchor>ga811bfb1e183cf026463c22cebddc6889</anchor>
       <arglist>(son_t *h)</arglist>
     </member>
     <member kind="function">

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Dev Board | Stratify Labs
 tagline: Hardware
 page_source: StratifyAlpha
@@ -88,11 +88,11 @@ sections:
 </div>
 
 <div style="background: #ddd; height: auto">
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>
 
 <div style="background: #fff; height: auto">
-  {% include JB/stratify-os-feature-brief.html %}
+  {% include stratify-os/feature-brief.html %}
 </div>
 
 
@@ -100,6 +100,6 @@ sections:
 
 <div style="background: #ddd;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

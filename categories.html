@@ -5,13 +5,13 @@ header: Posts By Category
 group: navigation
 page_source: CategoriesBlog
 ---
-{% include JB/setup %}
+{% include setup %}
 
 <h1>Categories</h1>
 
 <ul class="nav nav-pills">
   {% assign categories_list = site.categories %}
-  {% include JB/categories_list %}
+  {% include categories_list %}
 </ul>
 
 
@@ -19,6 +19,6 @@ page_source: CategoriesBlog
   <h2 id="{{ category[0] }}-ref" class="anchor">{{ category[0] | join: "/" }}</h2>
   <ul>
     {% assign pages_list = category[1] | sort:"name" %}
-    {% include JB/pages_list %}
+    {% include pages_list %}
   </ul>
 {% endfor %}

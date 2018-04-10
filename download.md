@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: License and Download
 tagline: License and Download
 page_source: Download
@@ -28,7 +28,7 @@ sections:
 <div class="container">
   <h2>Getting <b>Started</b></h2>
   </div>
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>
 
 <div class="container">

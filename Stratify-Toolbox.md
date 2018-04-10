@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Toolbox from Stratify Labs
 tagline: Hardware
 page_source: Toolbox
@@ -32,7 +32,7 @@ sections:
 
 <div class="row">
 
-{% include JB/youtube-video.html
+{% include youtube-video.html
   url="https://www.youtube.com/embed/wt-9fTjqPx4?rel=0&hd=1"
   cc="col-md-8"
   dim_md='width="600" height="338"'
@@ -71,7 +71,7 @@ sections:
 <h3>Signup now for a chance to win a free Beta Toolbox</h3>
 </center>
 
-{% include themes/twitter/toolbox-signup.html %}
+{% include toolbox-signup.html %}
 
 <hr />
 
@@ -120,7 +120,7 @@ sections:
 </div>
 
 <div class="col-md-6">
-{% include JB/carousel.html
+{% include carousel.html
   image0="/images/toolbox-1.jpg"
   image1="/images/toolbox-2.jpg"
   image2="/images/toolbox-3.jpg"
@@ -139,5 +139,5 @@ sections:
 <div class="container">
   <h3><b>Developer</b> Links</h3>
 </div>
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>

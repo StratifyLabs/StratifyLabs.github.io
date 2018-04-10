@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Services
 tagline: Services
 page_source: Services
@@ -136,7 +136,7 @@ sections:
 
     <div class="row">
     <div class="col-md-10 col-md-offset-1" style="margin-top: 20px; margin-bottom: 30px;">
-      {% include JB/carousel6.html
+      {% include carousel6.html
         image0="/images/schematic-capture-screen.png"
         image1="/images/pcb-3d-screen.png"
         image2="/images/PCB-carousel.png"
@@ -344,5 +344,5 @@ sections:
 
 <div style="background: #ddd; height: auto">
 <div class="container">
-{% include themes/twitter/contact-popup.html %}
+{% include contact-popup.html %}
 </div>

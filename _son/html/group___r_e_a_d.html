@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -35,6 +35,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga115f98c2d168df3d03d1d061d97c8373"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_a_d.html#ga115f98c2d168df3d03d1d061d97c8373">son_seek</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *access, <a class="el" href="group___s_o_n.html#gaf216182088d7ee4189680920c62d34fd">son_size_t</a> *size)</td></tr>
 <tr class="separator:ga115f98c2d168df3d03d1d061d97c8373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92cac9ea6a63e5db8451b5206be0c3f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_a_d.html#ga92cac9ea6a63e5db8451b5206be0c3f6">son_seek_next</a> (<a class="el" href="structson__t.html">son_t</a> *h, char *name, <a class="el" href="group___s_o_n.html#ga803f627d5226bd3c8aaadd672a934f66">son_value_t</a> *type)</td></tr>
+<tr class="separator:ga92cac9ea6a63e5db8451b5206be0c3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacedd0eec41cb4a1517b05b62c8e812cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_a_d.html#gacedd0eec41cb4a1517b05b62c8e812cc">son_read_str</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *access, char *str, <a class="el" href="group___s_o_n.html#gaf216182088d7ee4189680920c62d34fd">son_size_t</a> capacity)</td></tr>
 <tr class="separator:gacedd0eec41cb4a1517b05b62c8e812cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf54eaf0d883e16f93db7bfd767794894"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___r_e_a_d.html#gaf54eaf0d883e16f93db7bfd767794894">son_read_num</a> (<a class="el" href="structson__t.html">son_t</a> *h, const char *access)</td></tr>
@@ -350,9 +352,52 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;son_t s;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;son_size_t size;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;char * name;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;son_open(&amp;s, &quot;/home/test.son&quot;);</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;son_seek(&amp;s, &quot;person.name&quot;, &amp;size);</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;name = malloc(size);</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;son_read_str(&amp;s, &quot;person.name&quot;, name, size);</div></div><!-- fragment --> 
 </div>
 </div>
+<a class="anchor" id="ga92cac9ea6a63e5db8451b5206be0c3f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int son_seek_next </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structson__t.html">son_t</a> *&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___s_o_n.html#ga803f627d5226bd3c8aaadd672a934f66">son_value_t</a> *&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Seeks the next key in the file and copies it to name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>The handle </td></tr>
+    <tr><td class="paramname">child_sibling</td><td>Set to zero to scan for sibling and non-zero to scan for children </td></tr>
+    <tr><td class="paramname">name</td><td>A pointer to the destination memory (should have SON_KEY_NAME_CAPACITY bytes) </td></tr>
+    <tr><td class="paramname">size</td><td>A pointer to variable to store the size </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

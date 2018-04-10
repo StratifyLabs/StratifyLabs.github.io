@@ -17,7 +17,7 @@ Also, you will need to wire up the board to connect directly to the USB as shown
 
 ## Bootloader, BSP then HelloWorld
 
-{% include JB/youtube-video.html
+{% include youtube-video.html
 	url="https://www.youtube.com/embed/3HgYj3SOTgc?rel=0&hd=1"
     cc="col-md-12"
 	dim_md='width="600" height="338"'

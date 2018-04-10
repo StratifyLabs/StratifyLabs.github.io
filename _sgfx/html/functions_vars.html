@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -36,6 +36,7 @@ page_source: Doxygen
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
       <li><a href="#index_h"><span>h</span></a></li>
+      <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_k"><span>k</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
@@ -43,6 +44,7 @@ page_source: Doxygen
       <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_q"><span>q</span></a></li>
+      <li><a href="#index_r"><span>r</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_v"><span>v</span></a></li>
@@ -70,6 +72,21 @@ page_source: Doxygen
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
+<li>canvas_height
+: <a class="el" href="structsg__font__header__t.html#aa75a6134d08af73a8d5ebc6f364be012">sg_font_header_t</a>
+</li>
+<li>canvas_idx
+: <a class="el" href="structsg__font__char__t.html#a047642e6ed82cae5db502370a771b840">sg_font_char_t</a>
+</li>
+<li>canvas_width
+: <a class="el" href="structsg__font__header__t.html#a3f79a6c0bf5771291e330131076ae7fa">sg_font_header_t</a>
+</li>
+<li>canvas_x
+: <a class="el" href="structsg__font__char__t.html#af4ba3de4d81eedbc596d934e8284638d">sg_font_char_t</a>
+</li>
+<li>canvas_y
+: <a class="el" href="structsg__font__char__t.html#a5bd28f4571bb58a84f90510162a1c51f">sg_font_char_t</a>
+</li>
 <li>color
 : <a class="el" href="structsg__pen__t.html#a938fc3e8f9378beec55decd995db2c11">sg_pen_t</a>
 </li>
@@ -77,7 +94,11 @@ page_source: Doxygen
 : <a class="el" href="structsg__bmap__t.html#a737cade9457749542d3297c27186be7a">sg_bmap_t</a>
 </li>
 <li>cubic_bezier
-: <a class="el" href="structsg__vector__primitive__t.html#a6232ab28331f971004ad19b2b87b80c2">sg_vector_primitive_t</a>
+: <a class="el" href="structsg__vector__path__description__t.html#afef57f7d65ff5b526514acb63ddac5cf">sg_vector_path_description_t</a>
+, <a class="el" href="structsg__vector__primitive__t.html#a6232ab28331f971004ad19b2b87b80c2">sg_vector_primitive_t</a>
+</li>
+<li>current
+: <a class="el" href="structsg__vector__path__t.html#a04d924e42c674bf48f183990595c45fe">sg_vector_path_t</a>
 </li>
 </ul>
 
@@ -108,6 +129,13 @@ page_source: Doxygen
 </ul>
 
 
+<h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
+<li>icon
+: <a class="el" href="structsg__vector__path__t.html#a43e531faca29e284087635930827b34e">sg_vector_path_t</a>
+</li>
+</ul>
+
+
 <h3><a class="anchor" id="index_k"></a>- k -</h3><ul>
 <li>kerning_pairs
 : <a class="el" href="structsg__font__header__t.html#a96ffa5e1a4b40cbb78f2bd4e10a854e2">sg_font_header_t</a>
@@ -117,7 +145,8 @@ page_source: Doxygen
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>line
-: <a class="el" href="structsg__vector__primitive__t.html#a28e55e5417187bf250c20274c387f00d">sg_vector_primitive_t</a>
+: <a class="el" href="structsg__vector__path__description__t.html#ab6205bd9e22bc621d7c6f3e0174db8c8">sg_vector_path_description_t</a>
+, <a class="el" href="structsg__vector__primitive__t.html#a28e55e5417187bf250c20274c387f00d">sg_vector_primitive_t</a>
 </li>
 </ul>
 
@@ -135,6 +164,9 @@ page_source: Doxygen
 <li>max_word_width
 : <a class="el" href="structsg__font__header__t.html#a9d49210824ce1373415c0c4d25bfd53c">sg_font_header_t</a>
 </li>
+<li>move
+: <a class="el" href="structsg__vector__path__description__t.html#a470e758d33a0c91f6c089a9c6523c9d2">sg_vector_path_description_t</a>
+</li>
 </ul>
 
 
@@ -149,9 +181,6 @@ page_source: Doxygen
 <li>o_flags
 : <a class="el" href="structsg__pen__t.html#a5af423f420b31b17f098e572c32b020a">sg_pen_t</a>
 </li>
-<li>offset
-: <a class="el" href="structsg__font__char__t.html#ab7432beb7e38890dc11500dc424781f6">sg_font_char_t</a>
-</li>
 </ul>
 
 
@@ -163,14 +192,23 @@ page_source: Doxygen
 : <a class="el" href="structsg__region__t.html#a30f2a01f524e612a4ff7d9fef01241a7">sg_region_t</a>
 </li>
 <li>pour
-: <a class="el" href="structsg__vector__primitive__t.html#a8c03589c02c429dafb5ed6d649846df2">sg_vector_primitive_t</a>
+: <a class="el" href="structsg__vector__path__description__t.html#ad9f2affce9b20ef09406ea532f860b05">sg_vector_path_description_t</a>
+, <a class="el" href="structsg__vector__primitive__t.html#a8c03589c02c429dafb5ed6d649846df2">sg_vector_primitive_t</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_q"></a>- q -</h3><ul>
 <li>quadratic_bezier
-: <a class="el" href="structsg__vector__primitive__t.html#a54ddc3c6baff573a6c2b54f27b90544e">sg_vector_primitive_t</a>
+: <a class="el" href="structsg__vector__path__description__t.html#ae6dd394817960774bc05dbcf2c8aeb8d">sg_vector_path_description_t</a>
+, <a class="el" href="structsg__vector__primitive__t.html#a54ddc3c6baff573a6c2b54f27b90544e">sg_vector_primitive_t</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
+<li>region
+: <a class="el" href="structsg__vector__path__t.html#a2b76fa27ccc1c048cf2cb84fa8dab501">sg_vector_path_t</a>
 </li>
 </ul>
 
@@ -178,6 +216,9 @@ page_source: Doxygen
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>size
 : <a class="el" href="structsg__font__header__t.html#a741702c6a927e4034ffe7d993f04536e">sg_font_header_t</a>
+</li>
+<li>start
+: <a class="el" href="structsg__vector__path__t.html#a6a059ad0a257fe3b494fb47483bdadce">sg_vector_path_t</a>
 </li>
 </ul>
 
@@ -190,7 +231,8 @@ page_source: Doxygen
 : <a class="el" href="structsg__vector__icon__t.html#ab4c2f11d898133ffffbd9b207a98c25c">sg_vector_icon_t</a>
 </li>
 <li>type
-: <a class="el" href="structsg__vector__primitive__t.html#aa3d49efb57bd917a9eb26a534ed03ce7">sg_vector_primitive_t</a>
+: <a class="el" href="structsg__vector__path__description__t.html#a206312432c9d08b6e142d87f470e16cc">sg_vector_path_description_t</a>
+, <a class="el" href="structsg__vector__primitive__t.html#aa3d49efb57bd917a9eb26a534ed03ce7">sg_vector_primitive_t</a>
 </li>
 </ul>
 
@@ -214,8 +256,11 @@ page_source: Doxygen
 <li>x
 : <a class="el" href="unionsg__point__t.html#abf18e3c2f3694dcbea5c4c271c0428b4">sg_point_t</a>
 </li>
+<li>xadvance
+: <a class="el" href="structsg__font__char__t.html#a62a9bfa542dbdf230b5a1c5137566fb5">sg_font_char_t</a>
+</li>
 <li>xoffset
-: <a class="el" href="structsg__font__char__t.html#aeb47a3383ac0aff173b30ed2e22876d9">sg_font_char_t</a>
+: <a class="el" href="structsg__font__char__t.html#af601bf448ea330a0b2a21a82de2d2b71">sg_font_char_t</a>
 </li>
 </ul>
 
@@ -225,12 +270,12 @@ page_source: Doxygen
 : <a class="el" href="unionsg__point__t.html#a32008eeee17ae6c2f58fcd062089979e">sg_point_t</a>
 </li>
 <li>yoffset
-: <a class="el" href="structsg__font__char__t.html#aa37f3c3acb00600ac78b67fb09f6f559">sg_font_char_t</a>
+: <a class="el" href="structsg__font__char__t.html#a5640a52e1e1e6a0f54166475acd2d0ce">sg_font_char_t</a>
 </li>
 </ul>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

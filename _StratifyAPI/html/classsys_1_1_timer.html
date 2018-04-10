@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -56,6 +56,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae9caca3023aa1779ab60b900a509dcc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a109e2cdc0fbafd22af07d1b81c031e3d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#a109e2cdc0fbafd22af07d1b81c031e3d">is_stopped</a> () const </td></tr>
 <tr class="separator:a109e2cdc0fbafd22af07d1b81c031e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a022fc7fa8adf1129a8e5b844601418e8"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#a022fc7fa8adf1129a8e5b844601418e8">microseconds</a> () const </td></tr>
+<tr class="separator:a022fc7fa8adf1129a8e5b844601418e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a585bd5bb3ffdd01bf94a107cc6858b17"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#a585bd5bb3ffdd01bf94a107cc6858b17">milliseconds</a> () const </td></tr>
+<tr class="separator:a585bd5bb3ffdd01bf94a107cc6858b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a842da3ff5184956e9bc5ae11eea8a51e"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#a842da3ff5184956e9bc5ae11eea8a51e">msec</a> () const </td></tr>
 <tr class="separator:a842da3ff5184956e9bc5ae11eea8a51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabfe1a23b5b7f11a6761ccac89bdfde5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#aabfe1a23b5b7f11a6761ccac89bdfde5">reset</a> ()</td></tr>
@@ -66,6 +70,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6d16f8f71e6e7194982ead566daccc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2b4843f3928bcf0b7d1371bfca0b289"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#ab2b4843f3928bcf0b7d1371bfca0b289">sec</a> () const </td></tr>
 <tr class="separator:ab2b4843f3928bcf0b7d1371bfca0b289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4807d0a65b8a11738fdaa3306c78fe7"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#ab4807d0a65b8a11738fdaa3306c78fe7">seconds</a> () const </td></tr>
+<tr class="separator:ab4807d0a65b8a11738fdaa3306c78fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ec6d896bacd8691b507598b332579f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#ad9ec6d896bacd8691b507598b332579f">start</a> ()</td></tr>
 <tr class="separator:ad9ec6d896bacd8691b507598b332579f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2b359a62d721ff845374a36cc2ac0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_timer.html#a0e2b359a62d721ff845374a36cc2ac0e">stop</a> ()</td></tr>
@@ -349,6 +355,54 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a022fc7fa8adf1129a8e5b844601418e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 sys::Timer::microseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Is equivalent to <a class="el" href="classsys_1_1_timer.html#ac811bdc8b6f69c9e9414e9e9752f1c27">calc_usec()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a585bd5bb3ffdd01bf94a107cc6858b17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 sys::Timer::milliseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Is equivalent to <a class="el" href="classsys_1_1_timer.html#a7b646610c571d170379d2b89b651a14a">calc_msec()</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="a842da3ff5184956e9bc5ae11eea8a51e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -433,6 +487,30 @@ Static Public Member Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">u32 sys::Timer::sec </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Is equivalent to <a class="el" href="classsys_1_1_timer.html#a47c6bb578b4e0034c9f93d618fc3a203">calc_sec()</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4807d0a65b8a11738fdaa3306c78fe7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u32 sys::Timer::seconds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -658,6 +736,6 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

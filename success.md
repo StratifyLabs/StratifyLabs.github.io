@@ -1,5 +1,5 @@
 ---
-layout: logged-in
+layout: default
 title: Stratify Cloud
 tagline: Logged In
 page_source: LoggedIn
@@ -11,18 +11,33 @@ sections:
 
 {% include page-header.html %}
 
+<script src="{{ BASE_URL }}/assets/js/clipboard.min.js"></script>
+
 <script>
 	new Clipboard("#signin-button");
 
 	function showMessage(){
-		document.getElementById('logged-in-message').style.visibility = "visible";
+		document.getElementById('logged-in-message').style.display = "block";
 	}
+
+	window.addEventListener('auth', function () {
+		if (firebaseUser) {
+			console.log("Success logged in");
+			firebaseUser.getIdToken().then(function(accessToken) {
+          		var json = '{  "type": "StratifyToken", "status": "success", "uid": "' + firebaseUser.uid + '", "token": "' + accessToken + '"}';
+          		document.getElementById("signin-button").style.visibility = "visible";
+          		document.getElementById("signin-button").setAttribute('data-clipboard-text', json);
+        	});
+		} else {
+			window.location="{{ BASE_URL }}/signup";
+		}
+	});
 </script>
 
 <div class="container">
 	<div class="row">
     	<div class="col-md-12">
-			<h2>You have successfully logged in to your Stratify Cloud account.</h2>
+			<h2 style="text-align: center" id="loggedInStatus">You are logged in to your Stratify Cloud account.</h2>
 		</div>
     	<div class="col-md-12">
 		<center>
@@ -35,11 +50,12 @@ sections:
 	</div>
 </div>
 
-<div class="container" id="logged-in-message" style="visibility:hidden">
+<div class="container" id="logged-in-message" style="display:none">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="alert alert-info">
-				Now return to your Stratify Application to access your account.
+			<div class="alert alert-info" style="text-align: center">
+			<h3>Happy Coding!</h3>
+				<p>Now return to your Stratify Application to access your account.</p>
 			</div>
 		</div>
 		<div class="col-md-12">
@@ -51,7 +67,6 @@ sections:
 			<li>Return to the application</li>
 			<li>You can now access your account and publish Stratify OS applications.</li>
 			</ol>
-			<h3>Happy Coding!</h3>
 		</div>
   	</div>
  </div>
@@ -60,7 +75,7 @@ sections:
 	<div class="container">
   		<h2>Getting <b>Started</b></h2>
   	</div>
-  	{% include JB/stratify-os-resource-links.html %}
+  	{% include stratify-os/resource-links.html %}
 </div>
 
 

@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: About
 tagline: About
 page_source: About

@@ -1,3 +1,20 @@
+<script>
+    
+    window.addEventListener('auth', function() {
+        if(firebaseUser){
+            document.getElementById('login-button-text').textContent = 'Signed in';
+            console.log("navbar:Logged in");
+        } else {
+            document.getElementById('login-button-text').textContent = 'Login';
+            console.log("navbar:Not logged in");
+        }
+    });
+    
+
+</script>
+
+{% include signin-modal.html %}
+
 <header class="navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
     <div class="container">
         <div class="row">
@@ -41,8 +58,7 @@
                         <li><a href="https://github.com/StratifyLabs" target="_blank"><i class="fa fa-github fa-2x"></i> </a></li>
                         <li><a href="https://twitter.com/stratifylabs" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a></li>
                         <li><a href="https://www.facebook.com/stratifylabs/" target="_blank"><i class="fa fa-facebook fa-2x"></i> </a></li>
-                        <li><a href="{{ BASE_PATH }}/signup"><btn class="btn btn-success">Login</btn> </a></li>
-
+                        <li><a><btn class="btn btn-primary" id="login-button" data-toggle="modal" data-target="#signinModal"><i class="fa fa-user"></i> <span id="login-button-text">Login</span></btn></a></li>
                     </ul>
                 </div>
             </div>

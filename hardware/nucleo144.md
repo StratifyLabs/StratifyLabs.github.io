@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Dev Board | Stratify Labs
 tagline: Hardware
 page_source: Nucleo144
@@ -52,7 +52,7 @@ sections:
 <center>
 <h2>Installs in Less than One Minute</h2>
 
-{% include JB/youtube-video.html
+{% include youtube-video.html
 	url="https://www.youtube.com/embed/21b8xLXK3zI?rel=0&hd=1"
     cc="col-md-12"
 	dim_md='width="600" height="338"'
@@ -67,11 +67,11 @@ sections:
 </div>
 
 <div style="background: #ddd; height: auto">
-  {% include JB/stratify-os-resource-links.html %}
+  {% include stratify-os/resource-links.html %}
 </div>
 
 <div style="background: #fff; height: auto">
-  {% include JB/stratify-os-feature-brief.html %}
+  {% include stratify-os/feature-brief.html %}
 </div>
 
 
@@ -79,6 +79,6 @@ sections:
 
 <div style="background: #ddd;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

@@ -3,7 +3,7 @@ layout: page
 title: Stratify OS Docs
 page_source: Doxygen
 ---
-{% include JB/setup %}
+{% include setup %}
 <script type="text/javascript" src="doxy-boot.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <link href="style.css" rel="stylesheet" type="text/css" />
@@ -124,7 +124,7 @@ Enumerations</h2></td></tr>
 <p>14: This error happens when the key specified by the <em>access</em> parameter could not be found. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea19d9b9c8ffd16b6954a0cf7f2b9a85dd"></a>SON_ERR_STACK_OVERFLOW&#160;</td><td class="fielddoc">
-<p>15: This error happens if the depth (<a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array()</a> or <a class="el" href="group___w_r_i_t_e.html#gae96f2c99a8480d89ca75c02cf58ec366">son_open_obj()</a>) exceeds, the handle's stack size. </p>
+<p>15: This error happens if the depth (<a class="el" href="group___w_r_i_t_e.html#gace53b7c83d63b1aaef88177747c7116b">son_open_array()</a> or <a class="el" href="group___w_r_i_t_e.html#ga647441d4568907988d0deaec4f2e04a7">son_open_object()</a>) exceeds, the handle's stack size. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea34cc3c8896f650599659477b5001ad97"></a>SON_ERR_INVALID_KEY&#160;</td><td class="fielddoc">
 <p>16: This happens if an empty key is passed to anything but the root object. </p>
@@ -149,6 +149,9 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4fea2385276d3ca321793f8e2abeebd5360c"></a>SON_ERR_INCOMPLETE_MESSAGE&#160;</td><td class="fielddoc">
 <p>23: This happens when trying to send a message or get the size of the message when it is will open for editing/writing. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga672a94c859b0d260bb3a04d0851ad4feab894674292f1a35bd790b7003810e64f"></a>SON_ERR_NO_CHILDREN&#160;</td><td class="fielddoc">
+<p>24: This happens when seeking the next children if the type is not an object or array. </p>
 </td></tr>
 </table>
 
@@ -181,7 +184,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga803f627d5226bd3c8aaadd672a934f66a041eeedcea39f6079c00f7edf4a7aece"></a>SON_DATA&#160;</td><td class="fielddoc">
 <p>Data (user-defined size) (Internal use only) </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="gga803f627d5226bd3c8aaadd672a934f66a4fce01a2870ef38467a7c96178371e95"></a>SON_OBJ&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="gga803f627d5226bd3c8aaadd672a934f66a507aebf6176036a758de2baa04e49a4e"></a>SON_OBJECT&#160;</td><td class="fielddoc">
 <p>Object (Internal use only) </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga803f627d5226bd3c8aaadd672a934f66a481b22e4a5a91635484344f6d6aac052"></a>SON_ARRAY&#160;</td><td class="fielddoc">
@@ -203,6 +206,6 @@ Enumerations</h2></td></tr>
 </div><!-- contents -->
 <div style="background: #fff;">
 	<div class="container">
-		{% include themes/twitter/signup.html %}
+		{% include signup.html %}
 	</div>
 </div>

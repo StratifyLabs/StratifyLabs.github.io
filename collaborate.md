@@ -1,5 +1,5 @@
 ---
-layout: homepage
+layout: default
 title: Build Together
 tagline: Collaborative Workspace
 sections:
@@ -150,7 +150,7 @@ sections:
 	</p> -->
 		<div class="row">
 			<div class="col-md-12 col-lg-offset-3 col-lg-6">
-				{% include JB/collaborate-interest-form.html %}
+				{% include collaborate-interest-form.html %}
 			</div>
 		</div>
 
