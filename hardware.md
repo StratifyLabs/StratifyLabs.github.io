@@ -5,7 +5,7 @@ tagline: Hardware
 page_source: Hardware
 sections:
  intro: Hardware
- brief: Stratify OS pre-installed for rapid development
+ brief: Install Stratify OS for rapid development
  icon: fa fa-gears fa-3x
 ---
 

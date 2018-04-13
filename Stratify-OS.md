@@ -51,7 +51,7 @@ $(function () {
 		<div class="row" style="margin-top: 20px; margin-bottom: 20px; text-align: center">
 			<div class="col-md-4">
 				<div class="alert alert-warning" style="height:180px">
-					<h4>Stratify OS Pre-Installed</h4>
+					<h4>Install Stratify OS</h4>
 					<h1><i class="fa fa-microchip"></i></h1>
 					<p>Kernel is already built and ready to run on your board.</p>
 				</div>
@@ -72,10 +72,37 @@ $(function () {
 			</div>
 		</div>
 
+		<div class="row">
+
+<hr />
+<h2 style="text-align: center">Read More about Development on Stratify OS</h2>
+<div class="col-md-6">
+
+<ul class="fa-ul" style="font-size: 1.25em">
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/26/Understanding-Stratify-OS/">How is Stratify OS different?</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/10/HelloWorld-Download-Build-Install/">Build, Install and Run HelloWorld</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/10/Understanding-Device-Drivers/">Understand Device Drivers</a></li>
+</ul>
+
+</div>
+<div class="col-md-6">
+<ul class="fa-ul" style="font-size: 1.25em">
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/20/SDK-Qt-Creator-Setup/">Bare Metal Development with Qt Creator</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/03/07/Understanding-Filesystems-on-Stratify-OS/">Understand Filesystems</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/03/06/How-Stratify-OS-Levarages-ARM-Cortex-M/">Stratify OS on the ARM Cortex M</a></li>
+</ul>
+
+</div>
+</div>
+
+<hr />
+
+
     <div class="panel panel-default">
     <div class="panel-heading">
     <h2 class="panel-title">Features</h2>
     </div>
+	
     <div class="panel-body" style="font-size: 1.25em">
 
     <div class="row">
@@ -106,8 +133,8 @@ $(function () {
 		</div>
     </div>
     </div>
-  </div>
 
+</div>
 </div>
 
 

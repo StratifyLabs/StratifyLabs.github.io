@@ -75,6 +75,33 @@ sections:
 
 <hr />
 
+<div style="text-align: center">
+<h3>Powered by Stratify OS</h3>
+<h4><small>Learn more about developing on Stratify OS</small></h4>
+</div>
+
+<div class="row">
+<div class="col-md-6">
+
+<ul class="fa-ul" style="font-size: 1.25em">
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/26/Understanding-Stratify-OS/">How is Stratify OS different?</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/10/HelloWorld-Download-Build-Install/">Build, Install and Run HelloWorld</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/10/Understanding-Device-Drivers/">Understand Device Drivers</a></li>
+</ul>
+
+</div>
+<div class="col-md-6">
+<ul class="fa-ul" style="font-size: 1.25em">
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/02/20/SDK-Qt-Creator-Setup/">Bare Metal Development with Qt Creator</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/03/07/Understanding-Filesystems-on-Stratify-OS/">Understand Filesystems</a></li>
+<li><i class="fa-li fa fa-chevron-right"></i><a href="{{ BASE_URL }}/user%20guides/2018/03/06/How-Stratify-OS-Levarages-ARM-Cortex-M/">Stratify OS on the ARM Cortex M</a></li>
+</ul>
+
+</div>
+</div>
+
+<hr />
+
 <div class="row">
 
 <div class="col-md-6">
