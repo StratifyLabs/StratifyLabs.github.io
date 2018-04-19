@@ -1,0 +1,9 @@
+<map id="ui::Tab" name="ui::Tab">
+<area shape="rect" id="node3" href="$classui_1_1_icon_tab.html" title="Tab Icon Class. " alt="" coords="5,518,93,618"/>
+<area shape="rect" id="node4" href="$classui_1_1_progress_tab.html" title="Tab Progress Class. " alt="" coords="118,518,233,618"/>
+<area shape="rect" id="node7" href="$classui_1_1_text_tab.html" title="Tab Text Class. " alt="" coords="258,518,344,618"/>
+<area shape="rect" id="node8" href="$classui_1_1_time_tab.html" title="Tab Time Class. " alt="" coords="369,525,460,611"/>
+<area shape="rect" id="node2" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="159,6,317,306"/>
+<area shape="rect" id="node5" href="$classui_1_1_arc_progress_tab.html" title="Tab Progress Arc. " alt="" coords="25,667,160,754"/>
+<area shape="rect" id="node6" href="$classui_1_1_circle_progress_tab.html" title="Tab Progress Circle. " alt="" coords="185,667,335,754"/>
+</map>

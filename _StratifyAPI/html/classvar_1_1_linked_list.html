@@ -33,6 +33,12 @@ page_source: Doxygen
 <div class="title">var::LinkedList Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for var::LinkedList:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvar_1_1_linked_list__inherit__graph.svg" width="163" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The Linked List provides a class that manages dynamically allocated linked lists of data. </p>
 </div><table class="memberdecls">
@@ -52,8 +58,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a99e7681e7a306a8e35a2d830adad12e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c53a6b7efc2c5980e6c3e2417488763"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_linked_list.html#a9c53a6b7efc2c5980e6c3e2417488763">pop_front</a> ()</td></tr>
 <tr class="separator:a9c53a6b7efc2c5980e6c3e2417488763"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23314a6156f5958bfdb2e8b660d0d3fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_linked_list.html#a23314a6156f5958bfdb2e8b660d0d3fc">push_back</a> ()</td></tr>
-<tr class="separator:a23314a6156f5958bfdb2e8b660d0d3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a005dd7854240b0ca554cf8ba02a5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_linked_list.html#ae0a005dd7854240b0ca554cf8ba02a5b">push_back</a> ()</td></tr>
+<tr class="separator:ae0a005dd7854240b0ca554cf8ba02a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c243650c0f5506df253b678490c429b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_linked_list.html#a5c243650c0f5506df253b678490c429b">push_front</a> ()</td></tr>
 <tr class="separator:a5c243650c0f5506df253b678490c429b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classapi_1_1_s_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classapi_1_1_s_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classapi_1_1_s_object.html">api::SObject</a></td></tr>
@@ -208,12 +214,12 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a23314a6156f5958bfdb2e8b660d0d3fc"></a>
+<a class="anchor" id="ae0a005dd7854240b0ca554cf8ba02a5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool var::LinkedList::push_back </td>
+          <td class="memname">int var::LinkedList::push_back </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -221,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Allocates a new item at the back of the list.</p>
-<dl class="section return"><dt>Returns</dt><dd>True if successful </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Less than zero if push fails </dd></dl>
 
 </div>
 </div>

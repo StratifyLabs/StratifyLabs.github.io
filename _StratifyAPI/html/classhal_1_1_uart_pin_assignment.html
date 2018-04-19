@@ -31,6 +31,12 @@ page_source: Doxygen
 <div class="title">hal::UartPinAssignment Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for hal::UartPinAssignment:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1_uart_pin_assignment__inherit__graph.svg" width="262" height="587"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class allows simple manipulation of the uart_pin_assignment_t.</p>
 <div class="fragment"><div class="line">UartPinAssignment pin_assignment;</div><div class="line">pin_assignment-&gt;tx = mcu_pin(0,1);</div><div class="line">pin_assignment-&gt;rx = mcu_pin(0,1);</div><div class="line"></div><div class="line">Uart uart(0);</div><div class="line">uart.set_attr(<a class="code" href="classhal_1_1_uart.html#aa15b52dbbd66402ebba89dc5a9e8656fa8159a5a219cbca97ba0d9e6c5143b130">Uart::FLAG_SET_LINE_CODING</a>, 115200, 8, pin_assignment);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classhal_1_1_uart.html" title="UART Class. ">hal::Uart</a> </dd></dl>

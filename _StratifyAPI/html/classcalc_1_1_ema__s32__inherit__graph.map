@@ -1,0 +1,5 @@
+<map id="calc::Ema_s32" name="calc::Ema_s32">
+<area shape="rect" id="node2" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, s32,\l s64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="4,427,149,567"/>
+<area shape="rect" id="node3" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="16,6,168,173"/>
+<area shape="rect" id="node4" href="$classcalc_1_1_ema.html" title="Exponential Moving Average template class. " alt="" coords="93,225,241,365"/>
+</map>

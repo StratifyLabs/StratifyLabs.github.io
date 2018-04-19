@@ -1,0 +1,4 @@
+<map id="ui::Button" name="ui::Button">
+<area shape="rect" id="node2" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="5,255,125,422"/>
+<area shape="rect" id="node3" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="150,235,297,442"/>
+</map>

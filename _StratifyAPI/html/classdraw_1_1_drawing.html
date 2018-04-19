@@ -34,6 +34,12 @@ page_source: Doxygen
 <div class="title">draw::Drawing Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for draw::Drawing:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdraw_1_1_drawing__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This is the base class for creating drawings. A <a class="el" href="classdraw_1_1_drawing.html" title="Drawing Class. ">Drawing</a> class allows for nesting and positioning of graphics within a bitmap.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> MyObject::draw(<span class="keyword">const</span> <a class="code" href="classdraw_1_1_drawing_attr.html#a2f1c37629069b0a53c9771061e069bac">DrawingAttr::attr</a>){</div><div class="line">   Icon my_icon;</div><div class="line">   drawing_dim_t square;</div><div class="line"></div><div class="line">   square = attr.square_w(500);</div><div class="line"></div><div class="line">   <span class="comment">//this will draw my icon centered in the bitmap specified by attr</span></div><div class="line">   <span class="comment">//adding drawing_point(250, 250) offset the icon by 25% of the bitmap in both x and y</span></div><div class="line">   <span class="comment">//adding a drawing_dim_t will then scale icon to fit in a square that is half the width of the bitmap (see square_width())</span></div><div class="line">   <span class="comment">//draw will call the underlying draw_to_scale() method unless Icon re-implements draw</span></div><div class="line">   my_icon.draw(attr + <a class="code" href="namespacedraw.html#a104b78244b66746834670a93f0aca4d2">drawing_point</a>(250, 250) + square);</div><div class="line"></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">

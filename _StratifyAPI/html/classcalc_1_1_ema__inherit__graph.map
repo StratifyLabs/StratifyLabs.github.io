@@ -1,0 +1,11 @@
+<map id="calc::Ema&lt; intsmall, intmedium, intlarge &gt;" name="calc::Ema&lt; intsmall, intmedium, intlarge &gt;">
+<area shape="rect" id="node3" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, s16,\l s32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5,427,144,567"/>
+<area shape="rect" id="node5" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, s32,\l s64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="168,427,313,567"/>
+<area shape="rect" id="node7" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, u16,\l u32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="338,427,477,567"/>
+<area shape="rect" id="node9" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, u32,\l u64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="501,427,648,567"/>
+<area shape="rect" id="node2" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="248,6,400,173"/>
+<area shape="rect" id="node4" href="$classcalc_1_1_ema__s16.html" title="Exponential Moving Average class (s16) " alt="" coords="20,619,128,693"/>
+<area shape="rect" id="node6" href="$classcalc_1_1_ema__s32.html" title="Exponential Moving Average class (s32) " alt="" coords="187,619,295,693"/>
+<area shape="rect" id="node8" href="$classcalc_1_1_ema__u16.html" title="Exponential Moving Average class (u16) " alt="" coords="353,619,463,693"/>
+<area shape="rect" id="node10" href="$classcalc_1_1_ema__u32.html" title="Exponential Moving Average class (u32) " alt="" coords="520,619,629,693"/>
+</map>

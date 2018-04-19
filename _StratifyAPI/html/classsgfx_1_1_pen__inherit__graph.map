@@ -1,0 +1,5 @@
+<map id="sgfx::Pen" name="sgfx::Pen">
+<area shape="rect" id="node2" href="$classvar_1_1_item.html" title="{var::Item\&lt; sg_pen_t \&gt;\n||+ Item()\l+ Item()\l+ Item()\l+ data_const()\l+ item()\l+ operator const sg_pen_t &amp;()\l+ operator const sg_pen_t *()\l+ size()\l+ value()\l# data()\l# data_void()\l# data_void_const()\l# set()\l# set()\l}" alt="" coords="5,534,203,781"/>
+<area shape="rect" id="node3" href="$classvar_1_1_item_object.html" title="Abstract Item for storing binary data. " alt="" coords="49,6,187,146"/>
+<area shape="rect" id="node4" href="$classvar_1_1_item.html" title="Item Class for storing and accessing binary data. " alt="" coords="120,198,275,471"/>
+</map>

@@ -34,6 +34,12 @@ page_source: Doxygen
 <div class="title">var::Data Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for var::Data:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classvar_1_1_data__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> storage class can be used to manage both statically and dyncamilly allocated data. The statically allocated data can be either read/write or read-only.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span> buffer_const[16];</div><div class="line"><span class="keywordtype">char</span> buffer[16];</div><div class="line"></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> empty; <span class="comment">//the size of the data is zero. data_const() will return a pointer to a zero-length null-terminated string</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_dynamic(16); <span class="comment">//this will dynamically allocate 16 bytes (see alloc())</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_static(buffer, 16); <span class="comment">//will use buffer and consider it statically allocated (see set())</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> data_readonly(buffer_const, 16, <span class="keyword">true</span>); <span class="comment">//this will consider the data read only -- calls to data() will return 0</span></div><div class="line"></div><div class="line"><span class="keywordflow">if</span>( data_readonly.data() == 0 ){</div><div class="line">     printf(<span class="stringliteral">&quot;Data is read only\n&quot;</span>); <span class="comment">//this will print</span></div><div class="line">}</div><div class="line"></div><div class="line">printf(<span class="stringliteral">&quot;This is empty data %s\n&quot;</span>, empty.cdata_const()); <span class="comment">//this is OK because empty data will return a valid string pointer</span></div></div><!-- fragment --> </div><table class="memberdecls">
@@ -41,6 +47,8 @@ page_source: Doxygen
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> ()</td></tr>
 <tr class="separator:a5c380aa39498ff3d92cd5addc540fc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa060c8fda010f34ed0e903252ceec788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#aa060c8fda010f34ed0e903252ceec788">Data</a> (const <a class="el" href="classvar_1_1_data.html">Data</a> &amp;a)</td></tr>
+<tr class="separator:aa060c8fda010f34ed0e903252ceec788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63d0f900f8b05358ab0f7bda2e624497"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a63d0f900f8b05358ab0f7bda2e624497">Data</a> (void *mem, u32 size, bool readonly=false)</td></tr>
 <tr class="separator:a63d0f900f8b05358ab0f7bda2e624497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5daa9ad4ddbd1585ad343e024d3a919b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a5daa9ad4ddbd1585ad343e024d3a919b">Data</a> (u32 size)</td></tr>
@@ -67,6 +75,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a744e6257721ef9b228238a61cafe7239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0140085944c397df85e2dd6764fe3e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ad0140085944c397df85e2dd6764fe3e7">free</a> ()</td></tr>
 <tr class="separator:ad0140085944c397df85e2dd6764fe3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ee98bd695b410c73d035e9e2e3da70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a44ee98bd695b410c73d035e9e2e3da70">is_internally_managed</a> () const </td></tr>
+<tr class="separator:a44ee98bd695b410c73d035e9e2e3da70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f40b2c05ed62afc1444d0f1e718209a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#a0f40b2c05ed62afc1444d0f1e718209a">is_read_only</a> () const </td></tr>
+<tr class="separator:a0f40b2c05ed62afc1444d0f1e718209a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac522fb3b7641fb631acc3b5fa3eafd40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvar_1_1_data.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ac522fb3b7641fb631acc3b5fa3eafd40">operator=</a> (const <a class="el" href="classvar_1_1_data.html">Data</a> &amp;a)</td></tr>
+<tr class="separator:ac522fb3b7641fb631acc3b5fa3eafd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9626e988f69e512b3bc85b5d5d947a5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#ab9626e988f69e512b3bc85b5d5d947a5">print</a> (u32 o_flags=<a class="el" href="classvar_1_1_data.html#abe59aee9f21e531849e4f299659f6717a8b0b060d65e6391d28d3c0b91edcfb60">PRINT_HEX</a>) const </td></tr>
 <tr class="separator:ab9626e988f69e512b3bc85b5d5d947a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf65d97bdb6d4dde3dc335adc7068688"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvar_1_1_data.html#abf65d97bdb6d4dde3dc335adc7068688">resize</a> (u32 size)</td></tr>
@@ -138,6 +152,31 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Constructs a data object with no data </p>
 
+</div>
+</div>
+<a class="anchor" id="aa060c8fda010f34ed0e903252ceec788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">var::Data::Data </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvar_1_1_data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Copy constructor.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The data that will be copied into a new object</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>If <em>is</em> dynamically allocated, the new object will be a dynamically allocated and a copy of the contents.</p>
+<p>If <em>a</em> is read-only or externally managed, the new object will be externally managed and point to the same memory.</p>
+<div class="fragment"><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> a;</div><div class="line"><span class="keywordtype">char</span> static_buffer[32];</div><div class="line"></div><div class="line">a.set(static_buffer, 32);</div><div class="line"></div><div class="line"><span class="comment">//b will be of size 32 and point to static_buffer</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> b = a;</div><div class="line"></div><div class="line">a.alloc(64);</div><div class="line">a.fill(0x55);</div><div class="line"></div><div class="line"><span class="comment">//c will have it&#39;s own 64 byte buffer that is filled with 0x55</span></div><div class="line"><a class="code" href="classvar_1_1_data.html#a5c380aa39498ff3d92cd5addc540fc8f">Data</a> c = a;</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a63d0f900f8b05358ab0f7bda2e624497"></a>
@@ -471,6 +510,54 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a44ee98bd695b410c73d035e9e2e3da70"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool var::Data::is_internally_managed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the data is internally managed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0f40b2c05ed62afc1444d0f1e718209a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool var::Data::is_read_only </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the data object is read only. </p>
+
+</div>
+</div>
 <a class="anchor" id="acc6772dc7cde274e334c01b47c2c0684"></a>
 <div class="memitem">
 <div class="memproto">
@@ -492,6 +579,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the minimum data storage size of any <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> object. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac522fb3b7641fb631acc3b5fa3eafd40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classvar_1_1_data.html">Data</a>&amp; var::Data::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvar_1_1_data.html">Data</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constant assignment operator.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>The data to assign to the object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This works the same as the copy constructor. <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a> that is internally managed will be newly allocated in this object and copied. If <em>a</em> is externally managed, this object will point to the same data.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classvar_1_1_data.html#a44ee98bd695b410c73d035e9e2e3da70">is_internally_managed()</a> </dd></dl>
 
 </div>
 </div>

@@ -1,0 +1,4 @@
+<map id="hal::UsbPinAssignment" name="hal::UsbPinAssignment">
+<area shape="rect" id="node2" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; usb_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const usb\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="4,262,181,455"/>
+<area shape="rect" id="node3" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="8,6,177,199"/>
+</map>

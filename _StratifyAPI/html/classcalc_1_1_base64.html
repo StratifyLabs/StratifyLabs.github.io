@@ -33,6 +33,12 @@ page_source: Doxygen
 <div class="title">calc::Base64 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for calc::Base64:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classcalc_1_1_base64__inherit__graph.svg" width="166" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class includes methods to encode and decode data using the base64 algorithm. <a class="el" href="classcalc_1_1_base64.html" title="Base64 Encode/Decode Class. ">Base64</a> is useful for representing binary data using text characters. This can be useful when transmitting data over certain serial links that do not support binary transfers.</p>
 <p>To encode data in Base 64 format use this code: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/calc.hpp&gt;</span></div><div class="line"></div><div class="line">u8 raw_data[64]; <span class="comment">//raw binary data that needs to be encoded</span></div><div class="line"><span class="keywordtype">char</span> * encoded_data;</div><div class="line"><span class="keywordtype">int</span> encoded_size;</div><div class="line"></div><div class="line">encoded_size = <a class="code" href="classcalc_1_1_base64.html#a5a2d7ae16c7b33f248fea99a7c5e5007">Base64::calc_encoded_size</a>(64);</div><div class="line">encoded_data = malloc(encoded_size);</div><div class="line"><a class="code" href="classcalc_1_1_base64.html#a1eba043dec0e3a46ca3bbdce61ccaa59">Base64::encode</a>(encoded_data, raw_data, 64);</div></div><!-- fragment --><p>You can then decode the data using this code snippet:</p>

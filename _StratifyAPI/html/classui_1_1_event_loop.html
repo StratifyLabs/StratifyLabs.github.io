@@ -34,6 +34,12 @@ page_source: Doxygen
 <div class="title">ui::EventLoop Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for ui::EventLoop:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classui_1_1_event_loop__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class executes an event loop. The events are passed to the <a class="el" href="classui_1_1_event_loop.html#a2072ca70ed7df1e21b27787e2e36473b">current_element()</a> and handled using <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">Element::handle_event()</a>. If <a class="el" href="classui_1_1_element.html#a017cb0a93a9d3a9902385ba6ca1df4a0">Element::handle_event()</a> returns a pointer to a new element, the event loop will <a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a8be070e9c978cced91423fa56f9e40ba">Event::EXIT</a> the current element and <a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a109db59198e5c5235b2d8b964e0f736b">Event::ENTER</a> the new element and execute an animation to the new event.</p>
 <p>The <a class="el" href="classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) ">EventLoop</a> is an abstract class, and you must implement the <a class="el" href="classev_1_1_event_loop.html#ace580fda6de05dce2423e6f47dc235c9">process_events()</a> method which needs to process user events that are specific to the system.</p>

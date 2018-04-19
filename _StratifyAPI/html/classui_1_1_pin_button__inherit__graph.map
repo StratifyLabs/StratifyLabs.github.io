@@ -1,0 +1,11 @@
+<map id="ui::PinButton" name="ui::PinButton">
+<area shape="rect" id="node2" href="$classui_1_1_button.html" title="Button Class. " alt="" coords="5,1734,160,1914"/>
+<area shape="rect" id="node3" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="184,1747,304,1901"/>
+<area shape="rect" id="node4" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="189,1515,299,1682"/>
+<area shape="rect" id="node5" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pio_info\l_t, pio_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="172,1230,315,1463"/>
+<area shape="rect" id="node6" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="161,649,284,869"/>
+<area shape="rect" id="node10" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="244,921,380,1154"/>
+<area shape="rect" id="node7" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="179,497,265,597"/>
+<area shape="rect" id="node8" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="169,225,276,445"/>
+<area shape="rect" id="node9" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="146,6,299,173"/>
+</map>
