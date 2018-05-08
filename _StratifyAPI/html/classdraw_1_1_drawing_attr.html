@@ -34,6 +34,11 @@ page_source: Doxygen
 <div class="title">draw::DrawingAttr Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for draw::DrawingAttr:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classdraw_1_1_drawing_attr__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class contains the information needed to draw various <a class="el" href="classdraw_1_1_drawing.html" title="Drawing Class. ">Drawing</a> objects on a bitmap.</p>
 <p>This class is passed to Drawing::drawidth() to render graphics on a bitmap. </p>
@@ -103,6 +108,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a80a2ad97df960fd211422e9f51ffe648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26530f35ecf92dd2e597a4b0e1e2b7e3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacedraw.html#a822b2bf459241bc36cf329545de91bc1">drawing_size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdraw_1_1_drawing_attr.html#a26530f35ecf92dd2e597a4b0e1e2b7e3">scale</a> ()</td></tr>
 <tr class="separator:a26530f35ecf92dd2e597a4b0e1e2b7e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classapi_1_1_api_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classapi_1_1_api_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classapi_1_1_api_object.html">api::ApiObject</a></td></tr>
+<tr class="memitem:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_api_object.html#a6157aff14bcab76bd757bffb83716dc0">api_version</a> ()</td></tr>
+<tr class="separator:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3ae1c2dd9731d69902da45107c4d8b48"></a>
@@ -438,7 +446,7 @@ Static Public Member Functions</h2></td></tr>
 <p>This operated can be used to create a subregion within the object when used with operation+ (<a class="el" href="structdraw_1_1drawing__dim__t.html" title="Holds a dimension in the drawing system. ">drawing_dim_t</a>).</p>
 <p>For example: </p><div class="fragment"><div class="line"><a class="code" href="classdraw_1_1_drawing_attr.html#a3ae1c2dd9731d69902da45107c4d8b48">DrawingAttr</a> attr0;</div><div class="line"><a class="code" href="classdraw_1_1_drawing_attr.html#a3ae1c2dd9731d69902da45107c4d8b48">DrawingAttr</a> attr1;</div><div class="line">attr0 = attr1 + <a class="code" href="namespacedraw.html#a104b78244b66746834670a93f0aca4d2">drawing_point</a>(250,250) + <a class="code" href="namespacedraw.html#adb97b0bcb6017eb62f95df20dfceeca7">drawing_dim</a>(500,500);</div></div><!-- fragment --><p>When mapped to the same bitmap, attr0 will be half the height and half the width of attr1. attr0 and attr1 will have the same center point.</p>
 <p>These operators can be used to draw sub-drawings on drawings. The following example draws a rectangles recursively in an object.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> draw_rect_recursive(<span class="keyword">const</span> <a class="code" href="classdraw_1_1_drawing_attr.html#a3ae1c2dd9731d69902da45107c4d8b48">DrawingAttr</a> &amp; <a class="code" href="classdraw_1_1_drawing_attr.html#a2f1c37629069b0a53c9771061e069bac">attr</a>){</div><div class="line"> Rect rect;</div><div class="line"> attr.bitmap().set_pen_flags(Pen::FLAG_IS_INVERT);</div><div class="line"> rect.draw(attr + <a class="code" href="namespacedraw.html#a104b78244b66746834670a93f0aca4d2">drawing_point</a>(250,250) + <a class="code" href="namespacedraw.html#adb97b0bcb6017eb62f95df20dfceeca7">drawing_dim</a>(500,500);</div><div class="line"> <span class="keywordflow">if</span>( attr.width() &gt; 100 ){</div><div class="line">     draw_rect_recursive(attr);</div><div class="line">     }</div><div class="line">}</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> draw_rect_recursive(<span class="keyword">const</span> <a class="code" href="classdraw_1_1_drawing_attr.html#a3ae1c2dd9731d69902da45107c4d8b48">DrawingAttr</a> &amp; <a class="code" href="classdraw_1_1_drawing_attr.html#a2f1c37629069b0a53c9771061e069bac">attr</a>){</div><div class="line"> Rect rect;</div><div class="line"> attr.bitmap().set_pen_flags(Pen::FLAG_IS_INVERT);</div><div class="line"> rect.draw(attr + <a class="code" href="namespacedraw.html#a104b78244b66746834670a93f0aca4d2">drawing_point</a>(250,250) + <a class="code" href="namespacedraw.html#adb97b0bcb6017eb62f95df20dfceeca7">drawing_dim</a>(500,500);</div><div class="line"> <span class="keywordflow">if</span>( attr.width() &gt; 100 ){</div><div class="line">   draw_rect_recursive(attr);</div><div class="line">   }</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a8a82e1d4d4a85c2772ec5c825b29aa83"></a>

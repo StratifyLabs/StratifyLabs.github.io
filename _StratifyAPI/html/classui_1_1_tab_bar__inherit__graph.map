@@ -1,5 +1,10 @@
 <map id="ui::TabBar" name="ui::TabBar">
-<area shape="rect" id="node2" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="5,355,184,535"/>
-<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="15,6,173,306"/>
-<area shape="rect" id="node4" href="$classui_1_1_list_attr.html" title="List Attribute Class. " alt="" coords="209,369,361,522"/>
+<area shape="rect" id="node2" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="78,830,257,1010"/>
+<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="5,481,163,781"/>
+<area shape="rect" id="node4" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="13,358,160,431"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="89,129,247,309"/>
+<area shape="rect" id="node8" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="185,358,316,431"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="113,6,223,79"/>
+<area shape="rect" id="node7" href="$classev_1_1_event_handler.html" title="Event Handler Class. " alt="" coords="187,574,319,687"/>
+<area shape="rect" id="node9" href="$classui_1_1_list_attr.html" title="List Attribute Class. " alt="" coords="282,843,435,997"/>
 </map>

@@ -1,4 +1,7 @@
 <map id="ev::EventLoopAttr" name="ev::EventLoopAttr">
-<area shape="rect" id="node2" href="$classev_1_1_event_loop.html" title="Event Loop Class. " alt="" coords="5,222,205,495"/>
-<area shape="rect" id="node3" href="$classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) " alt="" coords="24,545,187,751"/>
+<area shape="rect" id="node5" href="$classev_1_1_event_loop.html" title="Event Loop Class. " alt="" coords="5,590,205,863"/>
+<area shape="rect" id="node2" href="$classapi_1_1_ev_info_object.html" title="Event Informatin Object. " alt="" coords="44,251,167,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="52,129,159,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="50,6,160,79"/>
+<area shape="rect" id="node6" href="$classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) " alt="" coords="24,913,187,1133"/>
 </map>

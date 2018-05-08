@@ -1,0 +1,10 @@
+<map id="api::SysInfoObject" name="api::SysInfoObject">
+<area shape="rect" id="node4" href="$classsys_1_1_appfs.html" title="Application File System Class. " alt="" coords="5,381,115,534"/>
+<area shape="rect" id="node5" href="$classsys_1_1_assets.html" title="Assets Class. " alt="" coords="140,374,289,541"/>
+<area shape="rect" id="node6" href="$classsys_1_1_mq_attr.html" title="Message Queue Attribute Class. " alt="" coords="314,381,413,534"/>
+<area shape="rect" id="node7" href="$classsys_1_1_sched.html" title="Sched Class. " alt="" coords="438,381,577,534"/>
+<area shape="rect" id="node8" href="$classsys_1_1_signal_handler.html" title="Signal Handler Class. " alt="" coords="602,407,733,507"/>
+<area shape="rect" id="node9" href="$classsys_1_1_task_info.html" title="The Task Attributes Class. " alt="" coords="758,374,865,541"/>
+<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="382,129,489,202"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="381,6,491,79"/>
+</map>

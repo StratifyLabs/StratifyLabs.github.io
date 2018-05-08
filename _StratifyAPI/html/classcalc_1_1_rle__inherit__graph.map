@@ -1,4 +1,5 @@
 <map id="calc::Rle" name="calc::Rle">
-<area shape="rect" id="node2" href="$classcalc_1_1_rle_appfs.html" title="Class for reading/writing compressed file data using Appfs. " alt="" coords="4,169,109,269"/>
-<area shape="rect" id="node3" href="$classcalc_1_1_rle_file.html" title="Class for reading/writing compressed file data. " alt="" coords="134,175,228,262"/>
+<area shape="rect" id="node2" href="$classapi_1_1_calc_info_object.html" title="Format Infomation Object. " alt="" coords="5,251,139,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="18,129,125,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="17,6,127,79"/>
 </map>

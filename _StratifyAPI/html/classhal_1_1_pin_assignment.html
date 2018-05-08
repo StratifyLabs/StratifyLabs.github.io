@@ -36,8 +36,7 @@ page_source: Doxygen
 <div class="dynheader">
 Inheritance diagram for hal::PinAssignment&lt; pin_assignment_type &gt;:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classhal_1_1_pin_assignment__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classhal_1_1_pin_assignment__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><h3>template&lt;typename pin_assignment_type&gt;<br />
@@ -45,7 +44,7 @@ class hal::PinAssignment&lt; pin_assignment_type &gt;</h3>
 
 <p>The <a class="el" href="classhal_1_1_pin.html" title="Pin class. ">Pin</a> Assignment class is a template class for manipulating pin assignment data structures.</p>
 <p>The following is an example of how to configure the SPI using the <a class="el" href="classhal_1_1_spi_pin_assignment.html" title="SPI Pin Assignment. ">hal::SpiPinAssignment</a> class (which inherits this class).</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">SpiPinAssignment pin_assignment;</div><div class="line">pin_assignment-&gt;mosi = mcu_pin(2,0);</div><div class="line">pin_assignment-&gt;sck = mcu_pin(2,0);</div><div class="line">pin_assignment-&gt;miso = mcu_pin(2,0);</div><div class="line"></div><div class="line">Spi spi(0);</div><div class="line"></div><div class="line">spi.init(</div><div class="line"> <a class="code" href="classhal_1_1_spi.html#a43eb01cc2cfab8ef301bf24706ba2343a4d0fe2b9678ff7e2f297223f1326c3f9">Spi::FLAG_SET_MASTER</a>|<a class="code" href="classhal_1_1_spi.html#a43eb01cc2cfab8ef301bf24706ba2343a7ffbb81e590f846592fc973aa9c4c37e">Spi::FLAG_IS_MODE0</a>|<a class="code" href="classhal_1_1_spi.html#a43eb01cc2cfab8ef301bf24706ba2343a8df42dc9ecb44bf182f0af589a80f9d4">Spi::FLAG_IS_FORMAT_SPI</a>,</div><div class="line"> 10000000, 8, pin_assignment</div><div class="line">);</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/hal.hpp&gt;</span></div><div class="line"></div><div class="line">SpiPinAssignment pin_assignment;</div><div class="line">pin_assignment-&gt;mosi = mcu_pin(2,0);</div><div class="line">pin_assignment-&gt;sck = mcu_pin(2,0);</div><div class="line">pin_assignment-&gt;miso = mcu_pin(2,0);</div><div class="line"></div><div class="line">Spi spi(0);</div><div class="line"></div><div class="line">spi.init(</div><div class="line"> <a class="code" href="classhal_1_1_spi.html#aa0f1c415dd658b05da8cdf81185472f7a4d0fe2b9678ff7e2f297223f1326c3f9">Spi::FLAG_SET_MASTER</a>|<a class="code" href="classhal_1_1_spi.html#aa0f1c415dd658b05da8cdf81185472f7a7ffbb81e590f846592fc973aa9c4c37e">Spi::FLAG_IS_MODE0</a>|<a class="code" href="classhal_1_1_spi.html#aa0f1c415dd658b05da8cdf81185472f7a8df42dc9ecb44bf182f0af589a80f9d4">Spi::FLAG_IS_FORMAT_SPI</a>,</div><div class="line"> 10000000, 8, pin_assignment</div><div class="line">);</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7ca805dac4e63aadc3450c3a28d58b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#aa7ca805dac4e63aadc3450c3a28d58b0">PinAssignment</a> ()</td></tr>
@@ -64,6 +63,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a367bf649202d19ffb8d7588eb2e5b457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c6b0ca3d1892d3a20aa985927dd546"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_pin_assignment.html#aa7c6b0ca3d1892d3a20aa985927dd546">size</a> () const </td></tr>
 <tr class="separator:aa7c6b0ca3d1892d3a20aa985927dd546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classapi_1_1_api_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classapi_1_1_api_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classapi_1_1_api_object.html">api::ApiObject</a></td></tr>
+<tr class="memitem:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_api_object.html#a6157aff14bcab76bd757bffb83716dc0">api_version</a> ()</td></tr>
+<tr class="separator:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aa7ca805dac4e63aadc3450c3a28d58b0"></a>

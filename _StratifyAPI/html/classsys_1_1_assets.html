@@ -33,6 +33,11 @@ page_source: Doxygen
 <div class="title">sys::Assets Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for sys::Assets:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classsys_1_1_assets__inherit__graph.svg" width="160" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The <a class="el" href="classsys_1_1_assets.html" title="Assets Class. ">Assets</a> class is a static class that allows the application to access kernel assets such as fonts, bitmaps, and vector graphics. </p>
 </div><table class="memberdecls">
@@ -54,6 +59,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae0acb536154d09b5979702b0fdaa6f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a579cf91a6d9dcdaa98a58728a1422afb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_assets.html#a579cf91a6d9dcdaa98a58728a1422afb">vector_icon_count</a> ()</td></tr>
 <tr class="separator:a579cf91a6d9dcdaa98a58728a1422afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classapi_1_1_api_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classapi_1_1_api_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classapi_1_1_api_object.html">api::ApiObject</a></td></tr>
+<tr class="memitem:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_api_object.html#a6157aff14bcab76bd757bffb83716dc0">api_version</a> ()</td></tr>
+<tr class="separator:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aea67c26b49c15c2c806d1e8b7630f334"></a>
@@ -110,7 +118,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to the font</dd></dl>
 <p>Here is an example of how to adjust the spacing of the system fonts.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> i;</div><div class="line"><span class="keywordflow">for</span>(i = 0; i &lt; <a class="code" href="classsys_1_1_assets.html#a562369b883e3e5b16d82e738a4d2bf71">Assets::font_count</a>(); i++){</div><div class="line">     <a class="code" href="classsgfx_1_1_font.html">sgfx::Font</a> * <a class="code" href="classsys_1_1_assets.html#a9ac3235542478758a724df05b83048d2">font</a> = <a class="code" href="classsys_1_1_assets.html#a9ac3235542478758a724df05b83048d2">Assets::font</a>(i);</div><div class="line">     font-&gt;<a class="code" href="classsgfx_1_1_font.html#a81cfa9b6845eed52bc0671e9c67e517d">set_space_size</a>(4);</div><div class="line">}</div></div><!-- fragment --> 
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> i;</div><div class="line"><span class="keywordflow">for</span>(i = 0; i &lt; <a class="code" href="classsys_1_1_assets.html#a562369b883e3e5b16d82e738a4d2bf71">Assets::font_count</a>(); i++){</div><div class="line">   <a class="code" href="classsgfx_1_1_font.html">sgfx::Font</a> * <a class="code" href="classsys_1_1_assets.html#a9ac3235542478758a724df05b83048d2">font</a> = <a class="code" href="classsys_1_1_assets.html#a9ac3235542478758a724df05b83048d2">Assets::font</a>(i);</div><div class="line">   font-&gt;<a class="code" href="classsgfx_1_1_font.html#a81cfa9b6845eed52bc0671e9c67e517d">set_space_size</a>(4);</div><div class="line">}</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a562369b883e3e5b16d82e738a4d2bf71"></a>

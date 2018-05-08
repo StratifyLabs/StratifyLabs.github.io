@@ -1,3 +1,6 @@
 <map id="draw::AnimationAttr" name="draw::AnimationAttr">
-<area shape="rect" id="node2" href="$classdraw_1_1_animation.html" title="Animation Class. " alt="" coords="31,209,147,335"/>
+<area shape="rect" id="node5" href="$classdraw_1_1_animation.html" title="Animation Class. " alt="" coords="31,577,147,703"/>
+<area shape="rect" id="node2" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="20,251,157,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="36,129,143,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="34,6,144,79"/>
 </map>

@@ -1,6 +1,9 @@
 <map id="ui::ProgressTab" name="ui::ProgressTab">
-<area shape="rect" id="node4" href="$classui_1_1_arc_progress_tab.html" title="Tab Progress Arc. " alt="" coords="4,667,139,754"/>
-<area shape="rect" id="node5" href="$classui_1_1_circle_progress_tab.html" title="Tab Progress Circle. " alt="" coords="163,667,313,754"/>
-<area shape="rect" id="node2" href="$classui_1_1_tab.html" title="Tab Class. " alt="" coords="97,355,211,469"/>
-<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="75,6,233,306"/>
+<area shape="rect" id="node7" href="$classui_1_1_arc_progress_tab.html" title="Tab Progress Arc. " alt="" coords="4,1142,139,1229"/>
+<area shape="rect" id="node8" href="$classui_1_1_circle_progress_tab.html" title="Tab Progress Circle. " alt="" coords="163,1142,313,1229"/>
+<area shape="rect" id="node2" href="$classui_1_1_tab.html" title="Tab Class. " alt="" coords="97,830,211,943"/>
+<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="75,481,233,781"/>
+<area shape="rect" id="node4" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="81,358,228,431"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="75,129,233,309"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="100,6,209,79"/>
 </map>

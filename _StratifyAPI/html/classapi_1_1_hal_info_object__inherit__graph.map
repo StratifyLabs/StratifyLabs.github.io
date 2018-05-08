@@ -1,0 +1,33 @@
+<map id="api::HalInfoObject" name="api::HalInfoObject">
+<area shape="rect" id="node4" href="$classhal_1_1_c_fifo_info.html" title="Channeled FIFO Information Class. " alt="" coords="4,395,149,562"/>
+<area shape="rect" id="node5" href="$classhal_1_1_core_info.html" title="The Core Info class. " alt="" coords="174,415,300,542"/>
+<area shape="rect" id="node6" href="$classhal_1_1_display_palette.html" title="Display Palette Class. " alt="" coords="325,402,456,555"/>
+<area shape="rect" id="node7" href="$classhal_1_1_f_fifo_info.html" title="FFIFO Info Class. " alt="" coords="481,402,596,555"/>
+<area shape="rect" id="node8" href="$classhal_1_1_fifo_info.html" title="Fifo Attributes Class. " alt="" coords="620,409,728,549"/>
+<area shape="rect" id="node9" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="1619,382,1788,575"/>
+<area shape="rect" id="node10" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2s_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2s\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="951,638,1123,831"/>
+<area shape="rect" id="node12" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; usb_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const usb\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="1599,638,1776,831"/>
+<area shape="rect" id="node14" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; eint_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const eint\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="1392,638,1569,831"/>
+<area shape="rect" id="node16" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; adc_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const adc\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="716,638,893,831"/>
+<area shape="rect" id="node18" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; uart_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const uart\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="1173,638,1352,831"/>
+<area shape="rect" id="node20" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; spi_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const spi\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="2371,638,2543,831"/>
+<area shape="rect" id="node22" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; tmr_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const tmr\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="2774,638,2948,831"/>
+<area shape="rect" id="node24" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; pwm_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const pwm\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="2150,638,2335,831"/>
+<area shape="rect" id="node26" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; dac_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const dac\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="1926,638,2103,831"/>
+<area shape="rect" id="node28" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2c_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2c\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="2573,638,2745,831"/>
+<area shape="rect" id="node30" href="$classhal_1_1_switchboard_connection.html" title="Switchboard Connection Class. " alt="" coords="3004,395,3191,562"/>
+<area shape="rect" id="node31" href="$classhal_1_1_switchboard_info.html" title="Switchboard Connection Class. " alt="" coords="3216,409,3408,549"/>
+<area shape="rect" id="node32" href="$classhal_1_1_switchboard_terminal.html" title="Switchboard Terminal Class. " alt="" coords="3432,389,3601,569"/>
+<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="1416,131,1523,205"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="1414,6,1524,79"/>
+<area shape="rect" id="node11" href="$classhal_1_1_i2_s_pin_assignment.html" title="I2S Pin Assignment. " alt="" coords="960,883,1115,957"/>
+<area shape="rect" id="node13" href="$classhal_1_1_usb_pin_assignment.html" title="USB Pin Assignment. " alt="" coords="1608,883,1767,957"/>
+<area shape="rect" id="node15" href="$classhal_1_1_eint_pin_assignment.html" title="EINT Pin Assignment. " alt="" coords="1402,883,1560,957"/>
+<area shape="rect" id="node17" href="$classhal_1_1_adc_pin_assignment.html" title="ADC Pin Assignment. " alt="" coords="726,883,884,957"/>
+<area shape="rect" id="node19" href="$classhal_1_1_uart_pin_assignment.html" title="UART Pin Assignment. " alt="" coords="1182,883,1343,957"/>
+<area shape="rect" id="node21" href="$classhal_1_1_spi_pin_assignment.html" title="SPI Pin Assignment. " alt="" coords="2380,883,2535,957"/>
+<area shape="rect" id="node23" href="$classhal_1_1_tmr_pin_assignment.html" title="Tmr Pin Assignment. " alt="" coords="2782,883,2940,957"/>
+<area shape="rect" id="node25" href="$classhal_1_1_pwm_pin_assignment.html" title="PWM Pin Assignment. " alt="" coords="2160,883,2324,957"/>
+<area shape="rect" id="node27" href="$classhal_1_1_dac_pin_assignment.html" title="DAC Pin Assignment. " alt="" coords="1935,883,2093,957"/>
+<area shape="rect" id="node29" href="$classhal_1_1_i2_c_pin_assignment.html" title="I2C Pin Assignment. " alt="" coords="2582,883,2737,957"/>
+</map>

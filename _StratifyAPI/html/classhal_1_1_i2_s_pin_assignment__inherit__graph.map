@@ -1,0 +1,7 @@
+<map id="hal::I2SPinAssignment" name="hal::I2SPinAssignment">
+<area shape="rect" id="node2" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2s_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2s\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="7,638,179,831"/>
+<area shape="rect" id="node3" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="4,257,131,330"/>
+<area shape="rect" id="node6" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="90,382,259,575"/>
+<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="14,131,121,205"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="13,6,123,79"/>
+</map>

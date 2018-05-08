@@ -1,0 +1,10 @@
+<map id="api::SmWorkObject" name="api::SmWorkObject">
+<area shape="rect" id="node4" href="$classsm_1_1_object.html" title="State Machine Object. " alt="" coords="181,527,309,641"/>
+<area shape="rect" id="node9" href="$classsm_1_1_simple_state_machine.html" title="Simple State Machine Class. " alt="" coords="333,481,501,687"/>
+<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="251,129,409,309"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="276,6,385,79"/>
+<area shape="rect" id="node5" href="$classsm_1_1_action.html" title="State Machine Action. " alt="" coords="5,763,93,863"/>
+<area shape="rect" id="node6" href="$classsm_1_1_condition.html" title="State Machine Condition. " alt="" coords="118,763,220,863"/>
+<area shape="rect" id="node7" href="$classsm_1_1_state.html" title="State Machine State. " alt="" coords="245,743,397,883"/>
+<area shape="rect" id="node8" href="$classsm_1_1_state_machine.html" title="State Machine. " alt="" coords="421,737,568,890"/>
+</map>

@@ -1,4 +1,7 @@
 <map id="fmt::Wav" name="fmt::Wav">
-<area shape="rect" id="node2" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="28,222,135,442"/>
-<area shape="rect" id="node3" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="5,6,157,173"/>
+<area shape="rect" id="node2" href="$classapi_1_1_fmt_file_object.html" title="Format File Class. " alt="" coords="19,750,148,823"/>
+<area shape="rect" id="node3" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="30,481,137,701"/>
+<area shape="rect" id="node4" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="15,358,152,431"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,163,309"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="29,6,139,79"/>
 </map>

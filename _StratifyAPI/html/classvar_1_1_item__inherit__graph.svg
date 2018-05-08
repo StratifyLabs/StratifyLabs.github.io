@@ -232,7 +232,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classsgfx_1_1_vector_map.html" target="_top" xlink:title="Gfx Map Class. ">
+<g id="a_node5"><a xlink:href="classsgfx_1_1_vector_map.html" target="_top" xlink:title="Vecotor Map Class. ">
 <polygon fill="none" stroke="black" points="187.226,-1 187.226,-115 300.774,-115 300.774,-1 187.226,-1"/>
 <text text-anchor="middle" x="244" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">sgfx::VectorMap</text>
 <polyline fill="none" stroke="black" points="187.226,-97 300.774,-97 "/>

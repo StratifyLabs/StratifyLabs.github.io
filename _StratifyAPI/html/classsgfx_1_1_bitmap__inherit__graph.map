@@ -1,6 +1,9 @@
 <map id="sgfx::Bitmap" name="sgfx::Bitmap">
-<area shape="rect" id="node4" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="36,694,125,834"/>
-<area shape="rect" id="node2" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="18,222,144,389"/>
-<area shape="rect" id="node3" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="5,6,157,173"/>
-<area shape="rect" id="node5" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="16,883,147,1037"/>
+<area shape="rect" id="node7" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="39,1075,128,1215"/>
+<area shape="rect" id="node2" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Object Class. " alt="" coords="14,697,153,770"/>
+<area shape="rect" id="node3" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="21,481,147,647"/>
+<area shape="rect" id="node4" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="16,358,151,431"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,163,309"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="29,6,139,79"/>
+<area shape="rect" id="node8" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="18,1265,149,1418"/>
 </map>

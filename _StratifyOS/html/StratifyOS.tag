@@ -1704,6 +1704,12 @@
       <anchor>ggaaf105ae5beaca1dee30ae54530691fcea53278c6c13efef3d11e07fce10fdffa8</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_WIDTH_16_EXTENDED</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceab5ddbfc45d4af5dac9e305cb29516b01</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>i2s_ffifo.h</name>
@@ -2213,6 +2219,27 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>random.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>random_8h</filename>
+    <class kind="struct">random_info_t</class>
+    <class kind="struct">random_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RANDOM_GETINFO</name>
+      <anchorfile>group___r_a_n_d_o_m.html</anchorfile>
+      <anchor>ga9af4cd3f0001327b6d2a3d6c87390c48</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RANDOM_SETATTR</name>
+      <anchorfile>group___r_a_n_d_o_m.html</anchorfile>
+      <anchor>ga424d538b7b8e79b0dc444670e2012b0a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>rtc.h</name>
     <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>rtc_8h</filename>
@@ -2606,6 +2633,96 @@
     </member>
   </compound>
   <compound kind="file">
+    <name>switchboard.h</name>
+    <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
+    <filename>switchboard_8h</filename>
+    <class kind="struct">switchboard_terminal_t</class>
+    <class kind="struct">switchboard_connection_t</class>
+    <class kind="struct">switchboard_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_SWITCHBOARD_GETINFO</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gadd2a49e6656b62fbcfd6fc723107ff03</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_SWITCHBOARD_SETATTR</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga3508820acb082678f436355ca22e5018</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>switchboard_connection_t</type>
+      <name>switchboard_status_t</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gaad62ceb5f74552502c9dc2ac68ce8c41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>switchboard_flag_t</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga08f9bb015ad3d5dcfddef044913bcf81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_CONNECT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81aba45c9c7ee59052708fc7d56f990b323</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_DISCONNECT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81ae500d82f46b64a624425ba821efb8453</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_PERSISTENT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a91ca0af279af2772471ef6fe07b22c42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_CONNECTED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a401702ce37674229bb5301774024ca51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_READING_ASYNC</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a532d71decdbb75c738e1a38eeeb88cf3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_WRITING_ASYNC</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a10b43079f3ef2f0a1f9ceefc5c9dbbc4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_PRIMARY_BUFFER_USED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a31517bd1064c9a57266fd69717bd781d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_SECONDARY_BUFFER_USED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81ab60b697308d7a6dbc9974ee2623d9b22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_SET_TRANSACTION_LIMIT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a372774db095f4caefedd82255d336c38</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
     <name>sys.h</name>
     <path>/Users/tgil/git/StratifyOS/include/sos/dev/</path>
     <filename>sys_8h</filename>
@@ -2666,43 +2783,43 @@
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_FIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a3dc1fbbdc432c78363ba0569b3dcc469</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a3dc1fbbdc432c78363ba0569b3dcc469</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_VCP</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a5e04cb140bbe9402b519112f1d92a9fb</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a5e04cb140bbe9402b519112f1d92a9fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_WDT_DISABLED</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409afcb854088c42ec6ce35a03682d0ef8e1</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9afcb854088c42ec6ce35a03682d0ef8e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_REQUEST</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a241342ad3c324d1a821f090ee413a6ea</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a241342ad3c324d1a821f090ee413a6ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_TRACE</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a1dd6e87783764ccc98a878c72f5d1f1f</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a1dd6e87783764ccc98a878c72f5d1f1f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a9de927601a58b78a3234e83645beb439</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a9de927601a58b78a3234e83645beb439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO_SHARE_OUTERR</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a818044d3aa25e417e9d2deefcb1ebad7</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a818044d3aa25e417e9d2deefcb1ebad7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -2741,115 +2858,115 @@
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_TIMER</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a5dfdbe71ed150ae09e23615714eff2e9</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a5dfdbe71ed150ae09e23615714eff2e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_CPU</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a742da0fb8db8c45acb6d4b018ba55d86</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a742da0fb8db8c45acb6d4b018ba55d86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC0</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a794db5e17b3079ecadee20efc13044f4</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a794db5e17b3079ecadee20efc13044f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC1</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a28be26e249e69809e36f36dcc4096ebd</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a28be26e249e69809e36f36dcc4096ebd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC2</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aa3562f641363187babba77043975bac1</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13aa3562f641363187babba77043975bac1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC3</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ab3a24764c7f9f968a79b10e034723e48</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13ab3a24764c7f9f968a79b10e034723e48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGERISING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEFALLING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad3639b3137158884e9122acaa46977c2</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13ad3639b3137158884e9122acaa46977c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEBOTH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a22f41aef0b086c0a35ca94a3f22b4439</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a22f41aef0b086c0a35ca94a3f22b4439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_COUNTDOWN</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_AUTO_RELOAD</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9abcb1e623cc7755340f6020cb41c9f1b0</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13abcb1e623cc7755340f6020cb41c9f1b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_CHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad291f4ddca584ad66c7c02206e6dde9b</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13ad291f4ddca584ad66c7c02206e6dde9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a918e8cde8248ff148f0b25a3965ce6f3</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a918e8cde8248ff148f0b25a3965ce6f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a449baa91a44c73260b6be430d09d173f</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a449baa91a44c73260b6be430d09d173f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a7576a21d5beca6f6e0bbc7058b418e02</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a7576a21d5beca6f6e0bbc7058b418e02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a25cd980f2a1ca52032547ad6b22d260b</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a25cd980f2a1ca52032547ad6b22d260b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_PWM_MODE</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aece070a45d921ec85472633e8e924f4f</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13aece070a45d921ec85472633e8e924f4f</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -5470,6 +5587,35 @@
     </member>
   </compound>
   <compound kind="struct">
+    <name>random_attr_t</name>
+    <filename>structrandom__attr__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structrandom__attr__t.html</anchorfile>
+      <anchor>aafd6f1e369568e35b3412f933054f881</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>seed</name>
+      <anchorfile>structrandom__attr__t.html</anchorfile>
+      <anchor>aa59a0815db8273f08988577a34d8e279</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>random_info_t</name>
+    <filename>structrandom__info__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>structrandom__info__t.html</anchorfile>
+      <anchor>afd604917a95b82e4e212101f51b08d99</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
     <name>rtc_attr_t</name>
     <filename>structrtc__attr__t.html</filename>
     <member kind="variable">
@@ -5626,6 +5772,102 @@
       <anchorfile>structsos__board__config__t.html</anchorfile>
       <anchor>a32841f55edc277f7bfb95775c0e76fdb</anchor>
       <arglist>)(void)</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>switchboard_attr_t</name>
+    <filename>structswitchboard__attr__t.html</filename>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gae0b4052770f2465c733b8e1fffbbd342</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>switchboard_connection_t</type>
+      <name>connection</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gadf6c38688dd1f992310d53ea32893c4b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>switchboard_connection_t</name>
+    <filename>structswitchboard__connection__t.html</filename>
+    <member kind="variable">
+      <type>u16</type>
+      <name>idx</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gaaa80039c14113fe8be27c568093fbcc2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>o_flags</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gaf79c194d7bb812836ebfdcbad21a13d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>switchboard_terminal_t</type>
+      <name>input</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gabecc57addebf1b62e03e0b057809290f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>switchboard_terminal_t</type>
+      <name>output</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga82a5d928131529898ae371e29d52f6e5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s32</type>
+      <name>nbyte</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga7df1721fbf1126183fadb810462a2753</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>transaction_limit</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga7fd35df48e191a897572413df5f3ef6e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>switchboard_terminal_t</name>
+    <filename>structswitchboard__terminal__t.html</filename>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gad0256a4284bf6fa0320e2ced52f7a723</anchor>
+      <arglist>[LINK_NAME_MAX]</arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>loc</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga8f9481592104c1e01e7a9f88948e2196</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>bytes_transferred</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga1bfa5e7fd26734695bc09884bf26e5f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s8</type>
+      <name>priority</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga8535dbe3a8b444641285ebddda457c43</anchor>
+      <arglist></arglist>
     </member>
   </compound>
   <compound kind="struct">
@@ -7038,8 +7280,10 @@
     <subgroup>PWM</subgroup>
     <subgroup>QEI</subgroup>
     <subgroup>RADIO</subgroup>
+    <subgroup>RANDOM</subgroup>
     <subgroup>RTC</subgroup>
     <subgroup>SPI</subgroup>
+    <subgroup>SWITCHBOARD</subgroup>
     <subgroup>SYS_DEV</subgroup>
     <subgroup>TTY</subgroup>
     <subgroup>TMR</subgroup>
@@ -8093,6 +8337,12 @@
       <anchor>ggaaf105ae5beaca1dee30ae54530691fcea53278c6c13efef3d11e07fce10fdffa8</anchor>
       <arglist></arglist>
     </member>
+    <member kind="enumvalue">
+      <name>I2S_FLAG_IS_WIDTH_16_EXTENDED</name>
+      <anchorfile>group___i2_s.html</anchorfile>
+      <anchor>ggaaf105ae5beaca1dee30ae54530691fceab5ddbfc45d4af5dac9e305cb29516b01</anchor>
+      <arglist></arglist>
+    </member>
   </compound>
   <compound kind="group">
     <name>LINK_LAYER</name>
@@ -8963,6 +9213,27 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>RANDOM</name>
+    <title>Random</title>
+    <filename>group___r_a_n_d_o_m.html</filename>
+    <class kind="struct">random_info_t</class>
+    <class kind="struct">random_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RANDOM_GETINFO</name>
+      <anchorfile>group___r_a_n_d_o_m.html</anchorfile>
+      <anchor>ga9af4cd3f0001327b6d2a3d6c87390c48</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_RANDOM_SETATTR</name>
+      <anchorfile>group___r_a_n_d_o_m.html</anchorfile>
+      <anchor>ga424d538b7b8e79b0dc444670e2012b0a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>RTC</name>
     <title>Real Time Clock (RTC)</title>
     <filename>group___r_t_c.html</filename>
@@ -9612,6 +9883,262 @@
     </member>
   </compound>
   <compound kind="group">
+    <name>SWITCHBOARD</name>
+    <title>Switchboard</title>
+    <filename>group___s_w_i_t_c_h_b_o_a_r_d.html</filename>
+    <class kind="struct">switchboard_terminal_t</class>
+    <class kind="struct">switchboard_connection_t</class>
+    <class kind="struct">switchboard_attr_t</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_SWITCHBOARD_GETINFO</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gadd2a49e6656b62fbcfd6fc723107ff03</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>I_SWITCHBOARD_SETATTR</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga3508820acb082678f436355ca22e5018</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>switchboard_connection_t</type>
+      <name>switchboard_status_t</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gaad62ceb5f74552502c9dc2ac68ce8c41</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>switchboard_flag_t</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga08f9bb015ad3d5dcfddef044913bcf81</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_CONNECT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81aba45c9c7ee59052708fc7d56f990b323</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_DISCONNECT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81ae500d82f46b64a624425ba821efb8453</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_PERSISTENT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a91ca0af279af2772471ef6fe07b22c42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_CONNECTED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a401702ce37674229bb5301774024ca51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_READING_ASYNC</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a532d71decdbb75c738e1a38eeeb88cf3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_WRITING_ASYNC</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a10b43079f3ef2f0a1f9ceefc5c9dbbc4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_PRIMARY_BUFFER_USED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a31517bd1064c9a57266fd69717bd781d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_SECONDARY_BUFFER_USED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81ab60b697308d7a6dbc9974ee2623d9b22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_SET_TRANSACTION_LIMIT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a372774db095f4caefedd82255d336c38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_CONNECT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81aba45c9c7ee59052708fc7d56f990b323</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_DISCONNECT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81ae500d82f46b64a624425ba821efb8453</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_PERSISTENT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a91ca0af279af2772471ef6fe07b22c42</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_CONNECTED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a401702ce37674229bb5301774024ca51</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_READING_ASYNC</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a532d71decdbb75c738e1a38eeeb88cf3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_WRITING_ASYNC</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a10b43079f3ef2f0a1f9ceefc5c9dbbc4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_PRIMARY_BUFFER_USED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a31517bd1064c9a57266fd69717bd781d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_IS_SECONDARY_BUFFER_USED</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81ab60b697308d7a6dbc9974ee2623d9b22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>SWITCHBOARD_FLAG_SET_TRANSACTION_LIMIT</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gga08f9bb015ad3d5dcfddef044913bcf81a372774db095f4caefedd82255d336c38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga1d4208d0608d7514922a1ab127b09eaf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>connection_count</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga5f922643db4ab449754aa6cfa303220f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>connection_buffer_size</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga8872b36cc59c227f2cee356f3c6c038a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>transaction_limit</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga87527c089f660e12ab9e0f14b39a56a4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gad0256a4284bf6fa0320e2ced52f7a723</anchor>
+      <arglist>[LINK_NAME_MAX]</arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>loc</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga8f9481592104c1e01e7a9f88948e2196</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>bytes_transferred</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga1bfa5e7fd26734695bc09884bf26e5f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s8</type>
+      <name>priority</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga8535dbe3a8b444641285ebddda457c43</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>idx</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gaaa80039c14113fe8be27c568093fbcc2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>o_flags</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gaf79c194d7bb812836ebfdcbad21a13d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>switchboard_terminal_t</type>
+      <name>input</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gabecc57addebf1b62e03e0b057809290f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>switchboard_terminal_t</type>
+      <name>output</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga82a5d928131529898ae371e29d52f6e5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>s32</type>
+      <name>nbyte</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga7df1721fbf1126183fadb810462a2753</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u16</type>
+      <name>transaction_limit</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>ga7fd35df48e191a897572413df5f3ef6e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>u32</type>
+      <name>o_flags</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gae0b4052770f2465c733b8e1fffbbd342</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>switchboard_connection_t</type>
+      <name>connection</name>
+      <anchorfile>group___s_w_i_t_c_h_b_o_a_r_d.html</anchorfile>
+      <anchor>gadf6c38688dd1f992310d53ea32893c4b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="group">
     <name>SYS_DEV</name>
     <title>System Devices</title>
     <filename>group___s_y_s___d_e_v.html</filename>
@@ -9672,43 +10199,43 @@
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_FIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a3dc1fbbdc432c78363ba0569b3dcc469</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a3dc1fbbdc432c78363ba0569b3dcc469</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_VCP</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a5e04cb140bbe9402b519112f1d92a9fb</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a5e04cb140bbe9402b519112f1d92a9fb</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_WDT_DISABLED</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409afcb854088c42ec6ce35a03682d0ef8e1</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9afcb854088c42ec6ce35a03682d0ef8e1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_REQUEST</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a241342ad3c324d1a821f090ee413a6ea</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a241342ad3c324d1a821f090ee413a6ea</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_TRACE</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a1dd6e87783764ccc98a878c72f5d1f1f</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a1dd6e87783764ccc98a878c72f5d1f1f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a9de927601a58b78a3234e83645beb439</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a9de927601a58b78a3234e83645beb439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>SYS_FLAG_IS_STDIO_CFIFO_SHARE_OUTERR</name>
       <anchorfile>group___s_y_s___d_e_v.html</anchorfile>
-      <anchor>ggadb49720dc49f7d4e4cf9adbf2948e409a818044d3aa25e417e9d2deefcb1ebad7</anchor>
+      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a818044d3aa25e417e9d2deefcb1ebad7</anchor>
       <arglist></arglist>
     </member>
   </compound>
@@ -9834,115 +10361,115 @@
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_TIMER</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a5dfdbe71ed150ae09e23615714eff2e9</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a5dfdbe71ed150ae09e23615714eff2e9</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_CPU</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a742da0fb8db8c45acb6d4b018ba55d86</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a742da0fb8db8c45acb6d4b018ba55d86</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC0</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a794db5e17b3079ecadee20efc13044f4</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a794db5e17b3079ecadee20efc13044f4</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC1</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a28be26e249e69809e36f36dcc4096ebd</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a28be26e249e69809e36f36dcc4096ebd</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC2</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aa3562f641363187babba77043975bac1</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13aa3562f641363187babba77043975bac1</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_IC3</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ab3a24764c7f9f968a79b10e034723e48</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13ab3a24764c7f9f968a79b10e034723e48</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGERISING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a31b18d945d80cdc8ce40cb7fc8b3cb0a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEFALLING</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad3639b3137158884e9122acaa46977c2</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13ad3639b3137158884e9122acaa46977c2</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_EDGEBOTH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a22f41aef0b086c0a35ca94a3f22b4439</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a22f41aef0b086c0a35ca94a3f22b4439</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_SOURCE_COUNTDOWN</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a975a8ba0e108ec81883e2fdaadbfcb3b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_AUTO_RELOAD</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9abcb1e623cc7755340f6020cb41c9f1b0</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13abcb1e623cc7755340f6020cb41c9f1b0</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_SET_CHANNEL</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a87040de7272d6c5d2196bf9dbcbe3a98</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_RESET</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9ad291f4ddca584ad66c7c02206e6dde9b</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13ad291f4ddca584ad66c7c02206e6dde9b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_RESET_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a918e8cde8248ff148f0b25a3965ce6f3</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a918e8cde8248ff148f0b25a3965ce6f3</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_STOP_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a449baa91a44c73260b6be430d09d173f</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a449baa91a44c73260b6be430d09d173f</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_SET_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a7576a21d5beca6f6e0bbc7058b418e02</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a7576a21d5beca6f6e0bbc7058b418e02</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_CLEAR_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a2d188a2834cd81867a3eeb6a4a94e54a</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_TOGGLE_OUTPUT_ON_MATCH</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9a25cd980f2a1ca52032547ad6b22d260b</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13a25cd980f2a1ca52032547ad6b22d260b</anchor>
       <arglist></arglist>
     </member>
     <member kind="enumvalue">
       <name>TMR_FLAG_IS_CHANNEL_PWM_MODE</name>
       <anchorfile>group___t_m_r.html</anchorfile>
-      <anchor>ggaae05225933a42f81e7c4a9fb286596f9aece070a45d921ec85472633e8e924f4f</anchor>
+      <anchor>gga39fca1837c5ce7715cbf571669660c13aece070a45d921ec85472633e8e924f4f</anchor>
       <arglist></arglist>
     </member>
   </compound>

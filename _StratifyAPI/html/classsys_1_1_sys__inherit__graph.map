@@ -1,4 +1,6 @@
 <map id="sys::Sys" name="sys::Sys">
-<area shape="rect" id="node2" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="32,222,139,442"/>
-<area shape="rect" id="node3" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="9,6,161,173"/>
+<area shape="rect" id="node2" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="32,481,139,701"/>
+<area shape="rect" id="node3" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="16,358,153,431"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="6,129,164,309"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="30,6,140,79"/>
 </map>

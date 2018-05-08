@@ -1,5 +1,8 @@
 <map id="sgfx::Pen" name="sgfx::Pen">
-<area shape="rect" id="node2" href="$classvar_1_1_item.html" title="{var::Item\&lt; sg_pen_t \&gt;\n||+ Item()\l+ Item()\l+ Item()\l+ data_const()\l+ item()\l+ operator const sg_pen_t &amp;()\l+ operator const sg_pen_t *()\l+ size()\l+ value()\l# data()\l# data_void()\l# data_void_const()\l# set()\l# set()\l}" alt="" coords="5,534,203,781"/>
-<area shape="rect" id="node3" href="$classvar_1_1_item_object.html" title="Abstract Item for storing binary data. " alt="" coords="49,6,187,146"/>
-<area shape="rect" id="node4" href="$classvar_1_1_item.html" title="Item Class for storing and accessing binary data. " alt="" coords="120,198,275,471"/>
+<area shape="rect" id="node2" href="$classvar_1_1_item.html" title="{var::Item\&lt; sg_pen_t \&gt;\n||+ Item()\l+ Item()\l+ Item()\l+ data_const()\l+ item()\l+ operator const sg_pen_t &amp;()\l+ operator const sg_pen_t *()\l+ size()\l+ value()\l# data()\l# data_void()\l# data_void_const()\l# set()\l# set()\l}" alt="" coords="33,534,231,781"/>
+<area shape="rect" id="node3" href="$classvar_1_1_item_object.html" title="Abstract Item for storing binary data. " alt="" coords="4,6,141,146"/>
+<area shape="rect" id="node4" href="$classvar_1_1_item.html" title="Item Class for storing and accessing binary data. " alt="" coords="73,198,228,471"/>
+<area shape="rect" id="node5" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Informatin Object. " alt="" coords="256,621,389,694"/>
+<area shape="rect" id="node6" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="269,298,376,371"/>
+<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="268,39,377,113"/>
 </map>

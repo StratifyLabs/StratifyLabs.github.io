@@ -1,4 +1,7 @@
 <map id="hal::PwmPinAssignment" name="hal::PwmPinAssignment">
-<area shape="rect" id="node2" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; pwm_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const pwm\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="5,262,189,455"/>
-<area shape="rect" id="node3" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="12,6,181,199"/>
+<area shape="rect" id="node2" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; pwm_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const pwm\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="5,638,189,831"/>
+<area shape="rect" id="node3" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="8,257,135,330"/>
+<area shape="rect" id="node6" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="94,382,263,575"/>
+<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="18,131,125,205"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="17,6,127,79"/>
 </map>

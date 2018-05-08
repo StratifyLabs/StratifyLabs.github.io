@@ -1,3 +1,6 @@
 <map id="draw::Image" name="draw::Image">
-<area shape="rect" id="node2" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="5,6,163,306"/>
+<area shape="rect" id="node2" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="5,481,163,781"/>
+<area shape="rect" id="node3" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="10,358,157,431"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,163,309"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="29,6,139,79"/>
 </map>

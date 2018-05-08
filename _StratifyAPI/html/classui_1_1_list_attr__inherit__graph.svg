@@ -128,14 +128,14 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classui_1_1_list_dir.html" target="_top" xlink:title="Directory List Class. ">
+<g id="a_node3"><a xlink:href="classui_1_1_dir_list.html" target="_top" xlink:title="Directory List Class. ">
 <polygon fill="none" stroke="black" points="-0.375488,-1 -0.375488,-125 100.375,-125 100.375,-1 -0.375488,-1"/>
-<text text-anchor="middle" x="50" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">ui::ListDir</text>
+<text text-anchor="middle" x="50" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">ui::DirList</text>
 <polyline fill="none" stroke="black" points="-0.375488,-107 100.375,-107 "/>
 <text text-anchor="middle" x="50" y="-95" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="-0.375488,-89 100.375,-89 "/>
-<text text-anchor="start" x="7.62451" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">+ ListDir()</text>
-<text text-anchor="start" x="7.62451" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~ListDir()</text>
+<text text-anchor="start" x="7.62451" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">+ DirList()</text>
+<text text-anchor="start" x="7.62451" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~DirList()</text>
 <text text-anchor="start" x="7.62451" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ at()</text>
 <text text-anchor="start" x="7.62451" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">+ dir()</text>
 <text text-anchor="start" x="7.62451" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">+ handle_event()</text>

@@ -1,6 +1,9 @@
 <map id="draw::ProgressAttr" name="draw::ProgressAttr">
-<area shape="rect" id="node2" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="127,209,325,322"/>
-<area shape="rect" id="node3" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="5,371,136,485"/>
-<area shape="rect" id="node4" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="161,378,292,478"/>
-<area shape="rect" id="node5" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="317,385,461,471"/>
+<area shape="rect" id="node5" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="127,577,325,690"/>
+<area shape="rect" id="node2" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="157,251,295,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="173,129,280,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="172,6,281,79"/>
+<area shape="rect" id="node6" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="5,739,136,853"/>
+<area shape="rect" id="node7" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="161,746,292,846"/>
+<area shape="rect" id="node8" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="317,753,461,839"/>
 </map>

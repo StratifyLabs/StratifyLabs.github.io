@@ -1,4 +1,7 @@
 <map id="draw::TextAttr" name="draw::TextAttr">
-<area shape="rect" id="node2" href="$classdraw_1_1_text.html" title="Text Class. " alt="" coords="4,262,131,349"/>
-<area shape="rect" id="node3" href="$classdraw_1_1_text_box.html" title="Text Box. " alt="" coords="156,222,283,389"/>
+<area shape="rect" id="node5" href="$classdraw_1_1_text.html" title="Text Class. " alt="" coords="4,630,131,717"/>
+<area shape="rect" id="node6" href="$classdraw_1_1_text_box.html" title="Text Box. " alt="" coords="156,590,283,757"/>
+<area shape="rect" id="node2" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="75,251,212,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="90,129,197,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="89,6,199,79"/>
 </map>

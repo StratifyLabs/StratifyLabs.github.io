@@ -1,13 +1,18 @@
 <map id="ui::LinkedElement" name="ui::LinkedElement">
-<area shape="rect" id="node4" href="$classui_1_1_list.html" title="List Class. " alt="" coords="106,787,315,1074"/>
-<area shape="rect" id="node7" href="$classui_1_1_list_item.html" title="List Item Class. " alt="" coords="427,854,559,1007"/>
-<area shape="rect" id="node12" href="$classui_1_1_menu.html" title="Menu Class. " alt="" coords="583,867,704,994"/>
-<area shape="rect" id="node2" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="403,355,583,535"/>
-<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="414,6,572,306"/>
-<area shape="rect" id="node5" href="$classui_1_1_list_dir.html" title="Directory List Class. " alt="" coords="5,1123,139,1290"/>
-<area shape="rect" id="node6" href="$classui_1_1_menu_list.html" title="Menu List Class. " alt="" coords="163,1150,257,1263"/>
-<area shape="rect" id="node8" href="$classui_1_1_info_list_item.html" title="List Item Info Class. " alt="" coords="283,1130,409,1283"/>
-<area shape="rect" id="node9" href="$classui_1_1_list_item_back.html" title="List Item Back Entry. " alt="" coords="434,1170,552,1243"/>
-<area shape="rect" id="node10" href="$classui_1_1_list_item_check.html" title="List Item Check (for use in a checklist) " alt="" coords="577,1150,703,1263"/>
-<area shape="rect" id="node11" href="$classui_1_1_list_item_toggle.html" title="Toggle Item. " alt="" coords="727,1143,919,1270"/>
+<area shape="rect" id="node9" href="$classui_1_1_list.html" title="List Class. " alt="" coords="106,1262,315,1549"/>
+<area shape="rect" id="node12" href="$classui_1_1_list_item.html" title="List Item Class. " alt="" coords="427,1329,559,1482"/>
+<area shape="rect" id="node17" href="$classui_1_1_menu.html" title="Menu Class. " alt="" coords="583,1342,704,1469"/>
+<area shape="rect" id="node2" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="403,830,583,1010"/>
+<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="330,481,488,781"/>
+<area shape="rect" id="node4" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="337,358,484,431"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="413,129,571,309"/>
+<area shape="rect" id="node8" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="510,358,641,431"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="437,6,547,79"/>
+<area shape="rect" id="node7" href="$classev_1_1_event_handler.html" title="Event Handler Class. " alt="" coords="513,574,644,687"/>
+<area shape="rect" id="node10" href="$classui_1_1_dir_list.html" title="Directory List Class. " alt="" coords="5,1598,139,1765"/>
+<area shape="rect" id="node11" href="$classui_1_1_menu_list.html" title="Menu List Class. " alt="" coords="163,1625,257,1738"/>
+<area shape="rect" id="node13" href="$classui_1_1_info_list_item.html" title="List Item Info Class. " alt="" coords="283,1605,409,1758"/>
+<area shape="rect" id="node14" href="$classui_1_1_list_item_back.html" title="List Item Back Entry. " alt="" coords="434,1645,552,1718"/>
+<area shape="rect" id="node15" href="$classui_1_1_list_item_check.html" title="List Item Check (for use in a checklist) " alt="" coords="577,1625,703,1738"/>
+<area shape="rect" id="node16" href="$classui_1_1_list_item_toggle.html" title="Toggle Item. " alt="" coords="727,1618,919,1745"/>
 </map>

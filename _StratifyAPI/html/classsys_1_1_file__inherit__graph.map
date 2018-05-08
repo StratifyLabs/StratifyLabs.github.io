@@ -1,42 +1,48 @@
 <map id="sys::File" name="sys::File">
-<area shape="rect" id="node3" href="$classcalc_1_1_rle_file.html" title="Class for reading/writing compressed file data. " alt="" coords="400,577,493,663"/>
-<area shape="rect" id="node4" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="517,537,643,703"/>
-<area shape="rect" id="node5" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="666,530,781,710"/>
-<area shape="rect" id="node6" href="$classfmt_1_1_xml.html" title="XML Class. " alt="" coords="805,543,912,697"/>
-<area shape="rect" id="node7" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="936,570,1023,670"/>
-<area shape="rect" id="node41" href="$classsys_1_1_sys.html" title="Sys Class. " alt="" coords="1047,497,1208,743"/>
-<area shape="rect" id="node2" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="714,6,867,173"/>
-<area shape="rect" id="node8" href="$classhal_1_1_c_fifo.html" title="Channeled FIFO Class. " alt="" coords="573,829,672,982"/>
-<area shape="rect" id="node9" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="697,829,828,982"/>
-<area shape="rect" id="node10" href="$classhal_1_1_fifo.html" title="FIFO Class. " alt="" coords="852,829,977,982"/>
-<area shape="rect" id="node11" href="$classhal_1_1_led.html" title="LED Class. " alt="" coords="1002,829,1091,982"/>
-<area shape="rect" id="node12" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="1116,795,1239,1015"/>
-<area shape="rect" id="node40" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="1263,822,1384,989"/>
-<area shape="rect" id="node13" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="1109,1067,1245,1301"/>
-<area shape="rect" id="node14" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; core_info\l_t, core_attr_t, &#39;c&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="808,1397,959,1630"/>
-<area shape="rect" id="node16" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; adc_info\l_t, adc_attr_t, &#39;a&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="5,1397,152,1630"/>
-<area shape="rect" id="node18" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pwm_info\l_t, pwm_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="413,1397,565,1630"/>
-<area shape="rect" id="node20" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; dac_info\l_t, dac_attr_t, &#39;d&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="212,1397,359,1630"/>
-<area shape="rect" id="node22" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; uart_info\l_t, uart_attr_t, UART\l_IOC_IDENT_CHAR \&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="619,1390,775,1637"/>
-<area shape="rect" id="node24" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; usb_info\l_t, usb_attr_t, &#39;u&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1004,1397,1151,1630"/>
-<area shape="rect" id="node26" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; rtc_info\l_t, rtc_attr_t, &#39;r&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2003,1397,2143,1630"/>
-<area shape="rect" id="node28" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2c_info\l_t, i2c_attr_t, &#39;i&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1294,1397,1436,1630"/>
-<area shape="rect" id="node30" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; tmr_info\l_t, tmr_attr_t, &#39;t&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2169,1397,2313,1630"/>
-<area shape="rect" id="node32" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; spi_info\l_t, spi_attr_t, &#39;s&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1834,1397,1976,1630"/>
-<area shape="rect" id="node34" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; eint_info\l_t, eint_attr_t, &#39;e&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1481,1397,1628,1630"/>
-<area shape="rect" id="node36" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pio_info\l_t, pio_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1662,1397,1804,1630"/>
-<area shape="rect" id="node15" href="$classhal_1_1_core.html" title="Core Class. " alt="" coords="795,1702,972,1855"/>
-<area shape="rect" id="node17" href="$classhal_1_1_adc.html" title="ADC Peripheral Class. " alt="" coords="36,1729,121,1829"/>
-<area shape="rect" id="node19" href="$classhal_1_1_pwm.html" title="PWM Class. " alt="" coords="429,1689,549,1869"/>
-<area shape="rect" id="node21" href="$classhal_1_1_dac.html" title="DAC Class. " alt="" coords="228,1715,341,1842"/>
-<area shape="rect" id="node23" href="$classhal_1_1_uart.html" title="UART Class. " alt="" coords="654,1709,740,1849"/>
-<area shape="rect" id="node25" href="$classhal_1_1_usb.html" title="USB Class. " alt="" coords="1006,1702,1148,1855"/>
-<area shape="rect" id="node27" href="$classhal_1_1_rtc.html" title="RTC Class. " alt="" coords="2027,1729,2119,1829"/>
-<area shape="rect" id="node29" href="$classhal_1_1_i2_c.html" title="I2C Peripheral Class. " alt="" coords="1315,1702,1415,1855"/>
-<area shape="rect" id="node31" href="$classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. " alt="" coords="2184,1689,2297,1869"/>
-<area shape="rect" id="node33" href="$classhal_1_1_spi.html" title="SPI Class. " alt="" coords="1862,1722,1948,1835"/>
-<area shape="rect" id="node35" href="$classhal_1_1_eint.html" title="External Interrupt Class. " alt="" coords="1505,1735,1604,1822"/>
-<area shape="rect" id="node37" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="1678,1695,1788,1862"/>
-<area shape="rect" id="node38" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="1673,1921,1793,2074"/>
-<area shape="rect" id="node39" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="1659,2126,1807,2333"/>
+<area shape="rect" id="node5" href="$classapi_1_1_fmt_file_object.html" title="Format File Class. " alt="" coords="1034,847,1163,921"/>
+<area shape="rect" id="node9" href="$classapi_1_1_hal_work_object.html" title="Hal Object Class. " alt="" coords="1193,847,1328,921"/>
+<area shape="rect" id="node47" href="$classsys_1_1_sys.html" title="Sys Class. " alt="" coords="1353,761,1513,1007"/>
+<area shape="rect" id="node2" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="1192,363,1329,437"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="1182,131,1340,311"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="1206,6,1316,79"/>
+<area shape="rect" id="node6" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="867,1066,992,1233"/>
+<area shape="rect" id="node7" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="1016,1059,1131,1239"/>
+<area shape="rect" id="node8" href="$classfmt_1_1_xml.html" title="XML Class. " alt="" coords="1154,1073,1261,1226"/>
+<area shape="rect" id="node10" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="1286,1099,1372,1199"/>
+<area shape="rect" id="node11" href="$classhal_1_1_c_fifo.html" title="Channeled FIFO Class. " alt="" coords="807,1325,907,1478"/>
+<area shape="rect" id="node12" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="932,1325,1063,1478"/>
+<area shape="rect" id="node13" href="$classhal_1_1_f_fifo.html" title="FFifo Class. " alt="" coords="1087,1331,1176,1471"/>
+<area shape="rect" id="node14" href="$classhal_1_1_fifo.html" title="FIFO Class. " alt="" coords="1201,1325,1327,1478"/>
+<area shape="rect" id="node15" href="$classhal_1_1_led.html" title="LED Class. " alt="" coords="1351,1325,1440,1478"/>
+<area shape="rect" id="node16" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="1465,1291,1588,1511"/>
+<area shape="rect" id="node45" href="$classhal_1_1_switchboard.html" title="Switch board class. " alt="" coords="1613,1318,1829,1485"/>
+<area shape="rect" id="node46" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="1854,1318,1975,1485"/>
+<area shape="rect" id="node17" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="1230,1563,1367,1797"/>
+<area shape="rect" id="node18" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; core_info\l_t, core_attr_t, &#39;c&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="671,1893,821,2126"/>
+<area shape="rect" id="node20" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; adc_info\l_t, adc_attr_t, &#39;a&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="849,1893,996,2126"/>
+<area shape="rect" id="node22" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pwm_info\l_t, pwm_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="5,1893,157,2126"/>
+<area shape="rect" id="node24" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; dac_info\l_t, dac_attr_t, &#39;d&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1024,1893,1171,2126"/>
+<area shape="rect" id="node26" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; uart_info\l_t, uart_attr_t, UART\l_IOC_IDENT_CHAR \&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="220,1886,376,2133"/>
+<area shape="rect" id="node28" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; usb_info\l_t, usb_attr_t, &#39;u&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="464,1893,611,2126"/>
+<area shape="rect" id="node30" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; rtc_info\l_t, rtc_attr_t, &#39;r&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2367,1893,2507,2126"/>
+<area shape="rect" id="node32" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2s_info\l_t, i2s_attr_t, &#39;I&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2030,1893,2172,2126"/>
+<area shape="rect" id="node33" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2c_info\l_t, i2c_attr_t, &#39;i&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2199,1893,2341,2126"/>
+<area shape="rect" id="node35" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; tmr_info\l_t, tmr_attr_t, &#39;t&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1292,1893,1436,2126"/>
+<area shape="rect" id="node37" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; spi_info\l_t, spi_attr_t, &#39;s&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1859,1893,2001,2126"/>
+<area shape="rect" id="node39" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; eint_info\l_t, eint_attr_t, &#39;e&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1680,1893,1827,2126"/>
+<area shape="rect" id="node41" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pio_info\l_t, pio_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1495,1893,1637,2126"/>
+<area shape="rect" id="node19" href="$classhal_1_1_core.html" title="Core Class. " alt="" coords="658,2198,835,2351"/>
+<area shape="rect" id="node21" href="$classhal_1_1_adc.html" title="ADC Peripheral Class. " alt="" coords="880,2225,965,2325"/>
+<area shape="rect" id="node23" href="$classhal_1_1_pwm.html" title="PWM Class. " alt="" coords="21,2185,141,2365"/>
+<area shape="rect" id="node25" href="$classhal_1_1_dac.html" title="DAC Class. " alt="" coords="1040,2211,1153,2338"/>
+<area shape="rect" id="node27" href="$classhal_1_1_uart.html" title="UART Class. " alt="" coords="256,2205,341,2345"/>
+<area shape="rect" id="node29" href="$classhal_1_1_usb.html" title="USB Class. " alt="" coords="466,2198,608,2351"/>
+<area shape="rect" id="node31" href="$classhal_1_1_rtc.html" title="RTC Class. " alt="" coords="2391,2225,2483,2325"/>
+<area shape="rect" id="node34" href="$classhal_1_1_i2_c.html" title="I2C Peripheral Class. " alt="" coords="2221,2198,2320,2351"/>
+<area shape="rect" id="node36" href="$classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. " alt="" coords="1307,2185,1420,2365"/>
+<area shape="rect" id="node38" href="$classhal_1_1_spi.html" title="SPI Class. " alt="" coords="1888,2218,1973,2331"/>
+<area shape="rect" id="node40" href="$classhal_1_1_eint.html" title="External Interrupt Class. " alt="" coords="1704,2231,1803,2318"/>
+<area shape="rect" id="node42" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="1512,2191,1621,2358"/>
+<area shape="rect" id="node43" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="1507,2417,1627,2570"/>
+<area shape="rect" id="node44" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="1493,2622,1640,2829"/>
 </map>

@@ -1,5 +1,9 @@
 <map id="ev::EventLoop" name="ev::EventLoop">
-<area shape="rect" id="node4" href="$classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) " alt="" coords="120,545,283,751"/>
-<area shape="rect" id="node2" href="$classev_1_1_event_loop_attr.html" title="Event Loop Attributes. " alt="" coords="5,6,200,173"/>
-<area shape="rect" id="node3" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="224,6,376,173"/>
+<area shape="rect" id="node8" href="$classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) " alt="" coords="114,1019,277,1239"/>
+<area shape="rect" id="node2" href="$classev_1_1_event_loop_attr.html" title="Event Loop Attributes. " alt="" coords="5,481,200,647"/>
+<area shape="rect" id="node3" href="$classapi_1_1_ev_info_object.html" title="Event Informatin Object. " alt="" coords="56,358,179,431"/>
+<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="68,182,175,255"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="145,6,255,79"/>
+<area shape="rect" id="node7" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="201,129,359,309"/>
+<area shape="rect" id="node6" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="224,527,355,601"/>
 </map>

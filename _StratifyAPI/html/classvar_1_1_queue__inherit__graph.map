@@ -1,4 +1,6 @@
 <map id="var::Queue&lt; T &gt;" name="var::Queue&lt; T &gt;">
-<area shape="rect" id="node3" href="$classvar_1_1_queue.html" title="{var::Queue\&lt; Test * \&gt;\n||+ Queue()\l+ back()\l+ back()\l+ clear()\l+ count()\l+ front()\land 4 more...\l}" alt="" coords="10,441,152,594"/>
-<area shape="rect" id="node2" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="5,6,157,173"/>
+<area shape="rect" id="node5" href="$classvar_1_1_queue.html" title="{var::Queue\&lt; Test * \&gt;\n||+ Queue()\l+ back()\l+ back()\l+ clear()\l+ count()\l+ front()\land 4 more...\l}" alt="" coords="12,705,155,858"/>
+<area shape="rect" id="node2" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="16,363,151,437"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,131,163,311"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="29,6,139,79"/>
 </map>

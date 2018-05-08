@@ -1,0 +1,10 @@
+<map id="api::SgfxWorkObject" name="api::SgfxWorkObject">
+<area shape="rect" id="node4" href="$classsgfx_1_1_font.html" title="Font class. " alt="" coords="201,481,373,754"/>
+<area shape="rect" id="node9" href="$classsgfx_1_1_vector.html" title="Vector Graphics Class. " alt="" coords="399,541,515,694"/>
+<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="293,129,451,309"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="317,6,427,79"/>
+<area shape="rect" id="node5" href="$classsgfx_1_1_file_font.html" title="File Font Class. " alt="" coords="4,803,176,983"/>
+<area shape="rect" id="node6" href="$classsgfx_1_1_memory_font.html" title="Monochrome Bitmap Font class (stored in flash memory) " alt="" coords="201,803,373,983"/>
+<area shape="rect" id="node7" href="$classsgfx_1_1_svg_font.html" title="Stratify Vector Graphics Font. " alt="" coords="399,830,501,957"/>
+<area shape="rect" id="node8" href="$classsgfx_1_1_svg_memory_font.html" title="Stratify Vector Graphics Memory Font. " alt="" coords="364,1033,536,1159"/>
+</map>

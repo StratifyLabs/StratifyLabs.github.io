@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 207;
+var viewWidth = 294;
 var viewHeight = 774;
 var sectionId = 'dynsection-0';
 </script>
@@ -56,111 +56,162 @@ var sectionId = 'dynsection-0';
 <title>sgfx::VectorMap</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="10.2256,-1 10.2256,-115 123.774,-115 123.774,-1 10.2256,-1"/>
-<text text-anchor="middle" x="67" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">sgfx::VectorMap</text>
-<polyline fill="none" stroke="black" points="10.2256,-97 123.774,-97 "/>
-<text text-anchor="middle" x="67" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="10.2256,-79 123.774,-79 "/>
-<text text-anchor="start" x="18.2256" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">+ VectorMap()</text>
-<text text-anchor="start" x="18.2256" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ VectorMap()</text>
-<text text-anchor="start" x="18.2256" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">+ fill_region()</text>
-<text text-anchor="start" x="18.2256" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">+ height()</text>
-<text text-anchor="start" x="18.2256" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_bitmap_center()</text>
-<text text-anchor="start" x="18.2256" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_dim()</text>
-<text text-anchor="start" x="18.2256" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
+<polygon fill="#bfbfbf" stroke="black" points="123.226,-1 123.226,-115 236.774,-115 236.774,-1 123.226,-1"/>
+<text text-anchor="middle" x="180" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">sgfx::VectorMap</text>
+<polyline fill="none" stroke="black" points="123.226,-97 236.774,-97 "/>
+<text text-anchor="middle" x="180" y="-85" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="123.226,-79 236.774,-79 "/>
+<text text-anchor="start" x="131.226" y="-67" font-family="Helvetica,sans-Serif" font-size="10.00">+ VectorMap()</text>
+<text text-anchor="start" x="131.226" y="-57" font-family="Helvetica,sans-Serif" font-size="10.00">+ VectorMap()</text>
+<text text-anchor="start" x="131.226" y="-47" font-family="Helvetica,sans-Serif" font-size="10.00">+ fill_region()</text>
+<text text-anchor="start" x="131.226" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">+ height()</text>
+<text text-anchor="start" x="131.226" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_bitmap_center()</text>
+<text text-anchor="start" x="131.226" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_dim()</text>
+<text text-anchor="start" x="131.226" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
 <g id="a_node2"><a xlink:href="classvar_1_1_item.html" target="_top" xlink:title="{var::Item\&lt; sg_vector\l_map_t \&gt;\n||+ Item()\l+ Item()\l+ Item()\l+ data_const()\l+ item()\l+ operator const sg_vector\l_map_t &amp;()\l+ operator const sg_vector\l_map_t *()\l+ size()\l+ value()\l# data()\l# data_void()\l# data_void_const()\l# set()\l# set()\l}">
-<polygon fill="none" stroke="black" points="-0.338379,-155 -0.338379,-369 134.338,-369 134.338,-155 -0.338379,-155"/>
-<text text-anchor="start" x="7.66162" y="-357" font-family="Helvetica,sans-Serif" font-size="10.00">var::Item&lt; sg_vector</text>
-<text text-anchor="middle" x="67" y="-347" font-family="Helvetica,sans-Serif" font-size="10.00">_map_t &gt;</text>
-<polyline fill="none" stroke="black" points="-0.338379,-341 134.338,-341 "/>
-<text text-anchor="middle" x="67" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="-0.338379,-323 134.338,-323 "/>
-<text text-anchor="start" x="7.66162" y="-311" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
-<text text-anchor="start" x="7.66162" y="-301" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
-<text text-anchor="start" x="7.66162" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
-<text text-anchor="start" x="7.66162" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">+ data_const()</text>
-<text text-anchor="start" x="7.66162" y="-271" font-family="Helvetica,sans-Serif" font-size="10.00">+ item()</text>
-<text text-anchor="start" x="7.66162" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const sg_vector</text>
-<text text-anchor="start" x="7.66162" y="-251" font-family="Helvetica,sans-Serif" font-size="10.00">_map_t &amp;()</text>
-<text text-anchor="start" x="7.66162" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const sg_vector</text>
-<text text-anchor="start" x="7.66162" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00">_map_t *()</text>
-<text text-anchor="start" x="7.66162" y="-221" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
-<text text-anchor="start" x="7.66162" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">+ value()</text>
-<text text-anchor="start" x="7.66162" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00"># data()</text>
-<text text-anchor="start" x="7.66162" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void()</text>
-<text text-anchor="start" x="7.66162" y="-181" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void_const()</text>
-<text text-anchor="start" x="7.66162" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
-<text text-anchor="start" x="7.66162" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
+<polygon fill="none" stroke="black" points="31.6616,-155 31.6616,-369 166.338,-369 166.338,-155 31.6616,-155"/>
+<text text-anchor="start" x="39.6616" y="-357" font-family="Helvetica,sans-Serif" font-size="10.00">var::Item&lt; sg_vector</text>
+<text text-anchor="middle" x="99" y="-347" font-family="Helvetica,sans-Serif" font-size="10.00">_map_t &gt;</text>
+<polyline fill="none" stroke="black" points="31.6616,-341 166.338,-341 "/>
+<text text-anchor="middle" x="99" y="-329" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="31.6616,-323 166.338,-323 "/>
+<text text-anchor="start" x="39.6616" y="-311" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
+<text text-anchor="start" x="39.6616" y="-301" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
+<text text-anchor="start" x="39.6616" y="-291" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
+<text text-anchor="start" x="39.6616" y="-281" font-family="Helvetica,sans-Serif" font-size="10.00">+ data_const()</text>
+<text text-anchor="start" x="39.6616" y="-271" font-family="Helvetica,sans-Serif" font-size="10.00">+ item()</text>
+<text text-anchor="start" x="39.6616" y="-261" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const sg_vector</text>
+<text text-anchor="start" x="39.6616" y="-251" font-family="Helvetica,sans-Serif" font-size="10.00">_map_t &amp;()</text>
+<text text-anchor="start" x="39.6616" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const sg_vector</text>
+<text text-anchor="start" x="39.6616" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00">_map_t *()</text>
+<text text-anchor="start" x="39.6616" y="-221" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
+<text text-anchor="start" x="39.6616" y="-211" font-family="Helvetica,sans-Serif" font-size="10.00">+ value()</text>
+<text text-anchor="start" x="39.6616" y="-201" font-family="Helvetica,sans-Serif" font-size="10.00"># data()</text>
+<text text-anchor="start" x="39.6616" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void()</text>
+<text text-anchor="start" x="39.6616" y="-181" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void_const()</text>
+<text text-anchor="start" x="39.6616" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
+<text text-anchor="start" x="39.6616" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge"><title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M67,-144.723C67,-134.53 67,-124.549 67,-115.21"/>
-<polygon fill="none" stroke="midnightblue" points="63.5001,-144.972 67,-154.972 70.5001,-144.972 63.5001,-144.972"/>
+<path fill="none" stroke="midnightblue" d="M145.242,-145.68C149.463,-135.155 153.598,-124.841 157.461,-115.21"/>
+<polygon fill="none" stroke="midnightblue" points="141.99,-144.387 141.516,-154.972 148.487,-146.993 141.99,-144.387"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
 <g id="a_node3"><a xlink:href="classvar_1_1_item_object.html" target="_top" xlink:title="Abstract Item for storing binary data. ">
-<polygon fill="none" stroke="black" points="26.084,-661 26.084,-765 129.916,-765 129.916,-661 26.084,-661"/>
-<text text-anchor="middle" x="78" y="-753" font-family="Helvetica,sans-Serif" font-size="10.00">var::ItemObject</text>
-<polyline fill="none" stroke="black" points="26.084,-747 129.916,-747 "/>
-<text text-anchor="middle" x="78" y="-735" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="26.084,-729 129.916,-729 "/>
-<text text-anchor="start" x="34.084" y="-717" font-family="Helvetica,sans-Serif" font-size="10.00">+ clear()</text>
-<text text-anchor="start" x="34.084" y="-707" font-family="Helvetica,sans-Serif" font-size="10.00">+ load()</text>
-<text text-anchor="start" x="34.084" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00">+ save()</text>
-<text text-anchor="start" x="34.084" y="-687" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
-<text text-anchor="start" x="34.084" y="-677" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void()</text>
-<text text-anchor="start" x="34.084" y="-667" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void_const()</text>
+<polygon fill="none" stroke="black" points="-0.916016,-661 -0.916016,-765 102.916,-765 102.916,-661 -0.916016,-661"/>
+<text text-anchor="middle" x="51" y="-753" font-family="Helvetica,sans-Serif" font-size="10.00">var::ItemObject</text>
+<polyline fill="none" stroke="black" points="-0.916016,-747 102.916,-747 "/>
+<text text-anchor="middle" x="51" y="-735" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="-0.916016,-729 102.916,-729 "/>
+<text text-anchor="start" x="7.08398" y="-717" font-family="Helvetica,sans-Serif" font-size="10.00">+ clear()</text>
+<text text-anchor="start" x="7.08398" y="-707" font-family="Helvetica,sans-Serif" font-size="10.00">+ load()</text>
+<text text-anchor="start" x="7.08398" y="-697" font-family="Helvetica,sans-Serif" font-size="10.00">+ save()</text>
+<text text-anchor="start" x="7.08398" y="-687" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
+<text text-anchor="start" x="7.08398" y="-677" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void()</text>
+<text text-anchor="start" x="7.08398" y="-667" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void_const()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge"><title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M71.8665,-650.439C71.1099,-640.925 70.4469,-631.205 70,-622 65.8748,-537.022 65.2958,-440.599 65.6542,-369.096"/>
-<polygon fill="none" stroke="midnightblue" points="68.3988,-650.973 72.7183,-660.648 75.3746,-650.391 68.3988,-650.973"/>
+<path fill="none" stroke="midnightblue" d="M41.799,-650.883C34.4472,-590.645 27.5396,-496.236 42,-416 44.7903,-400.517 49.0498,-384.557 54.0104,-369.053"/>
+<polygon fill="none" stroke="midnightblue" points="38.3493,-651.502 43.0753,-660.985 45.2941,-650.625 38.3493,-651.502"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="classvar_1_1_item.html" target="_top" xlink:title="Item Class for storing and accessing binary data. ">
-<polygon fill="none" stroke="black" points="78.9707,-417 78.9707,-621 195.029,-621 195.029,-417 78.9707,-417"/>
-<text text-anchor="middle" x="137" y="-609" font-family="Helvetica,sans-Serif" font-size="10.00">var::Item&lt; data_type &gt;</text>
-<polyline fill="none" stroke="black" points="78.9707,-603 195.029,-603 "/>
-<text text-anchor="middle" x="137" y="-591" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="78.9707,-585 195.029,-585 "/>
-<text text-anchor="start" x="86.9707" y="-573" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
-<text text-anchor="start" x="86.9707" y="-563" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
-<text text-anchor="start" x="86.9707" y="-553" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
-<text text-anchor="start" x="86.9707" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ data_const()</text>
-<text text-anchor="start" x="86.9707" y="-533" font-family="Helvetica,sans-Serif" font-size="10.00">+ item()</text>
-<text text-anchor="start" x="86.9707" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const data</text>
-<text text-anchor="start" x="86.9707" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">_type &amp;()</text>
-<text text-anchor="start" x="86.9707" y="-503" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const data</text>
-<text text-anchor="start" x="86.9707" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00">_type *()</text>
-<text text-anchor="start" x="86.9707" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
-<text text-anchor="start" x="86.9707" y="-473" font-family="Helvetica,sans-Serif" font-size="10.00">+ value()</text>
-<text text-anchor="start" x="86.9707" y="-463" font-family="Helvetica,sans-Serif" font-size="10.00"># data()</text>
-<text text-anchor="start" x="86.9707" y="-453" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void()</text>
-<text text-anchor="start" x="86.9707" y="-443" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void_const()</text>
-<text text-anchor="start" x="86.9707" y="-433" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
-<text text-anchor="start" x="86.9707" y="-423" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
+<polygon fill="none" stroke="black" points="50.9707,-417 50.9707,-621 167.029,-621 167.029,-417 50.9707,-417"/>
+<text text-anchor="middle" x="109" y="-609" font-family="Helvetica,sans-Serif" font-size="10.00">var::Item&lt; data_type &gt;</text>
+<polyline fill="none" stroke="black" points="50.9707,-603 167.029,-603 "/>
+<text text-anchor="middle" x="109" y="-591" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="50.9707,-585 167.029,-585 "/>
+<text text-anchor="start" x="58.9707" y="-573" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
+<text text-anchor="start" x="58.9707" y="-563" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
+<text text-anchor="start" x="58.9707" y="-553" font-family="Helvetica,sans-Serif" font-size="10.00">+ Item()</text>
+<text text-anchor="start" x="58.9707" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ data_const()</text>
+<text text-anchor="start" x="58.9707" y="-533" font-family="Helvetica,sans-Serif" font-size="10.00">+ item()</text>
+<text text-anchor="start" x="58.9707" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const data</text>
+<text text-anchor="start" x="58.9707" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">_type &amp;()</text>
+<text text-anchor="start" x="58.9707" y="-503" font-family="Helvetica,sans-Serif" font-size="10.00">+ operator const data</text>
+<text text-anchor="start" x="58.9707" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00">_type *()</text>
+<text text-anchor="start" x="58.9707" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
+<text text-anchor="start" x="58.9707" y="-473" font-family="Helvetica,sans-Serif" font-size="10.00">+ value()</text>
+<text text-anchor="start" x="58.9707" y="-463" font-family="Helvetica,sans-Serif" font-size="10.00"># data()</text>
+<text text-anchor="start" x="58.9707" y="-453" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void()</text>
+<text text-anchor="start" x="58.9707" y="-443" font-family="Helvetica,sans-Serif" font-size="10.00"># data_void_const()</text>
+<text text-anchor="start" x="58.9707" y="-433" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
+<text text-anchor="start" x="58.9707" y="-423" font-family="Helvetica,sans-Serif" font-size="10.00"># set()</text>
 </a>
 </g>
 </g>
 <!-- Node3&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node3&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M96.736,-651.029C99.6806,-641.446 102.791,-631.324 105.925,-621.125"/>
-<polygon fill="none" stroke="midnightblue" points="93.3252,-650.213 93.7334,-660.8 100.016,-652.269 93.3252,-650.213"/>
+<path fill="none" stroke="midnightblue" d="M69.4185,-651.029C72.3132,-641.446 75.3709,-631.324 78.4519,-621.125"/>
+<polygon fill="none" stroke="midnightblue" points="66.0081,-650.215 66.4667,-660.8 72.7091,-652.239 66.0081,-650.215"/>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" d="M106.486,-406.843C103.041,-394.294 99.5378,-381.53 96.1116,-369.049"/>
-<polygon fill="orange" stroke="orange" points="103.211,-408.134 109.234,-416.851 109.962,-406.281 103.211,-408.134"/>
-<text text-anchor="middle" x="150.362" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; sg_vector_map_t &gt;</text>
+<path fill="none" stroke="orange" d="M104.641,-406.843C104.149,-394.294 103.648,-381.53 103.159,-369.049"/>
+<polygon fill="orange" stroke="orange" points="101.144,-406.996 105.033,-416.851 108.139,-406.721 101.144,-406.996"/>
+<text text-anchor="middle" x="152.362" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; sg_vector_map_t &gt;</text>
+</g>
+<!-- Node5 -->
+<g id="node5" class="node"><title>Node5</title>
+<g id="a_node5"><a xlink:href="classapi_1_1_sgfx_info_object.html" target="_top" xlink:title="Sgfx Informatin Object. ">
+<polygon fill="none" stroke="black" points="184.754,-235 184.754,-289 285.246,-289 285.246,-235 184.754,-235"/>
+<text text-anchor="middle" x="235" y="-277" font-family="Helvetica,sans-Serif" font-size="10.00">api::SgfxInfoObject</text>
+<polyline fill="none" stroke="black" points="184.754,-271 285.246,-271 "/>
+<text text-anchor="middle" x="235" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="184.754,-253 285.246,-253 "/>
+<text text-anchor="middle" x="235" y="-241" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</a>
+</g>
+</g>
+<!-- Node5&#45;&gt;Node1 -->
+<g id="edge5" class="edge"><title>Node5&#45;&gt;Node1</title>
+<path fill="none" stroke="midnightblue" d="M225.148,-224.816C216.853,-194.352 204.85,-150.267 195.305,-115.21"/>
+<polygon fill="none" stroke="midnightblue" points="221.805,-225.863 227.81,-234.592 228.56,-224.024 221.805,-225.863"/>
+</g>
+<!-- Node6 -->
+<g id="node6" class="node"><title>Node6</title>
+<g id="a_node6"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="API Information Object. ">
+<polygon fill="none" stroke="black" points="194.759,-492 194.759,-546 275.241,-546 275.241,-492 194.759,-492"/>
+<text text-anchor="middle" x="235" y="-534" font-family="Helvetica,sans-Serif" font-size="10.00">api::InfoObject</text>
+<polyline fill="none" stroke="black" points="194.759,-528 275.241,-528 "/>
+<text text-anchor="middle" x="235" y="-516" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="194.759,-510 275.241,-510 "/>
+<text text-anchor="middle" x="235" y="-498" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+</a>
+</g>
+</g>
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge6" class="edge"><title>Node6&#45;&gt;Node5</title>
+<path fill="none" stroke="midnightblue" d="M235,-481.535C235,-429.426 235,-334.918 235,-289.186"/>
+<polygon fill="none" stroke="midnightblue" points="231.5,-481.671 235,-491.671 238.5,-481.671 231.5,-481.671"/>
+</g>
+<!-- Node7 -->
+<g id="node7" class="node"><title>Node7</title>
+<g id="a_node7"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<polygon fill="none" stroke="black" points="193.79,-686 193.79,-740 276.21,-740 276.21,-686 193.79,-686"/>
+<text text-anchor="middle" x="235" y="-728" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
+<polyline fill="none" stroke="black" points="193.79,-722 276.21,-722 "/>
+<text text-anchor="middle" x="235" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="193.79,-704 276.21,-704 "/>
+<text text-anchor="start" x="201.79" y="-692" font-family="Helvetica,sans-Serif" font-size="10.00">+ api_version()</text>
+</a>
+</g>
+</g>
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge7" class="edge"><title>Node7&#45;&gt;Node6</title>
+<path fill="none" stroke="midnightblue" d="M235,-675.638C235,-637.898 235,-579.793 235,-546.284"/>
+<polygon fill="none" stroke="midnightblue" points="231.5,-675.706 235,-685.706 238.5,-675.706 231.5,-675.706"/>
 </g>
 </g>
 </svg>

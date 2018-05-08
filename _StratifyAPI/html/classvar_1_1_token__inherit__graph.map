@@ -1,5 +1,7 @@
 <map id="var::Token" name="var::Token">
-<area shape="rect" id="node2" href="$classvar_1_1_string.html" title="String class. " alt="" coords="42,438,149,591"/>
-<area shape="rect" id="node3" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="33,222,159,389"/>
-<area shape="rect" id="node4" href="$classapi_1_1_s_object.html" title="SObject Class. " alt="" coords="20,6,172,173"/>
+<area shape="rect" id="node2" href="$classvar_1_1_string.html" title="String class. " alt="" coords="42,697,149,850"/>
+<area shape="rect" id="node3" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="33,481,159,647"/>
+<area shape="rect" id="node4" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="28,358,163,431"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="17,129,175,309"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="41,6,151,79"/>
 </map>

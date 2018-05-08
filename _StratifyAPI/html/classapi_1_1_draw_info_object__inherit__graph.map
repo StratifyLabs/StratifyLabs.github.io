@@ -1,0 +1,22 @@
+<map id="api::DrawInfoObject" name="api::DrawInfoObject">
+<area shape="rect" id="node4" href="$classdraw_1_1_animation_attr.html" title="Animation Attributes Class. " alt="" coords="5,427,173,581"/>
+<area shape="rect" id="node6" href="$classdraw_1_1_axis.html" title="Graph Axis Class. " alt="" coords="198,414,289,594"/>
+<area shape="rect" id="node7" href="$classdraw_1_1_data_set.html" title="Data Set Class. " alt="" coords="314,427,419,581"/>
+<area shape="rect" id="node8" href="$classdraw_1_1_drawing_attr.html" title="Drawing Attribute Class. " alt="" coords="444,374,623,634"/>
+<area shape="rect" id="node9" href="$classdraw_1_1_drawing_scaled_attr.html" title="Scaled Drawing Attributes. " alt="" coords="647,427,815,581"/>
+<area shape="rect" id="node10" href="$classdraw_1_1_icon_attr.html" title="Icon Attributes Class. " alt="" coords="838,421,980,587"/>
+<area shape="rect" id="node12" href="$classdraw_1_1_panel_attr.html" title="Panel Attributes Class. " alt="" coords="1004,447,1116,561"/>
+<area shape="rect" id="node14" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="1153,427,1311,581"/>
+<area shape="rect" id="node19" href="$classdraw_1_1_text_attr.html" title="Text Attribute Class. " alt="" coords="1368,421,1481,587"/>
+<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="677,129,784,202"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="676,6,785,79"/>
+<area shape="rect" id="node5" href="$classdraw_1_1_animation.html" title="Animation Class. " alt="" coords="31,703,147,830"/>
+<area shape="rect" id="node11" href="$classdraw_1_1_icon.html" title="Icon Class. " alt="" coords="836,717,963,817"/>
+<area shape="rect" id="node13" href="$classdraw_1_1_panel.html" title="Panel Class. " alt="" coords="988,723,1115,810"/>
+<area shape="rect" id="node15" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="1139,710,1337,823"/>
+<area shape="rect" id="node16" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="1017,899,1148,1013"/>
+<area shape="rect" id="node17" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="1173,906,1304,1006"/>
+<area shape="rect" id="node18" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="1329,913,1473,999"/>
+<area shape="rect" id="node20" href="$classdraw_1_1_text.html" title="Text Class. " alt="" coords="1361,723,1488,810"/>
+<area shape="rect" id="node21" href="$classdraw_1_1_text_box.html" title="Text Box. " alt="" coords="1513,683,1640,850"/>
+</map>

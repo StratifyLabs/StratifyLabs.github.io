@@ -38,8 +38,7 @@ page_source: Doxygen
 <div class="dynheader">
 Inheritance diagram for ui::Button:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classui_1_1_button__inherit__graph.svg" width="303" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classui_1_1_button__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class implements a button that can be pressed by the user. It implements the timing for button actuations, button holds, presses and releases. It is an abstract class where the inheriting classes must implement the ui::Button::get_value() method which returns the value of input. </p>
@@ -64,11 +63,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae9dfc57932b59be23091072eb43a546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9a4ff590ff70d11f14256dec2e455c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#ac9a4ff590ff70d11f14256dec2e455c1">reset</a> ()</td></tr>
 <tr class="separator:ac9a4ff590ff70d11f14256dec2e455c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classapi_1_1_work_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classapi_1_1_work_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classapi_1_1_work_object.html">api::WorkObject</a></td></tr>
+<tr class="memitem:a37880352cfcdcb1d2d7786da91523ac9 inherit pub_methods_classapi_1_1_work_object"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_work_object.html#a37880352cfcdcb1d2d7786da91523ac9">clear_error_number</a> () const </td></tr>
+<tr class="separator:a37880352cfcdcb1d2d7786da91523ac9 inherit pub_methods_classapi_1_1_work_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c257ffb9cf00c151003c299d4efa91 inherit pub_methods_classapi_1_1_work_object"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_work_object.html#a25c257ffb9cf00c151003c299d4efa91">error_number</a> () const </td></tr>
+<tr class="separator:a25c257ffb9cf00c151003c299d4efa91 inherit pub_methods_classapi_1_1_work_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5eee64373be4afea036b942ea2a776f"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classui_1_1_button.html#ae5eee64373be4afea036b942ea2a776f">max_held_duration</a> ()</td></tr>
 <tr class="separator:ae5eee64373be4afea036b942ea2a776f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classapi_1_1_api_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classapi_1_1_api_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classapi_1_1_api_object.html">api::ApiObject</a></td></tr>
+<tr class="memitem:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classapi_1_1_api_object.html#a6157aff14bcab76bd757bffb83716dc0">api_version</a> ()</td></tr>
+<tr class="separator:a6157aff14bcab76bd757bffb83716dc0 inherit pub_static_methods_classapi_1_1_api_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -171,9 +178,11 @@ Protected Member Functions</h2></td></tr>
 <ul>
 <li><a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849aeddeed6b8d3cdc645ade2ccd6d1fdcf6">ui::Event::BUTTON_PRESSED</a></li>
 <li><a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849af7e314dc7ac69d01774c95bd8318cdc3">ui::Event::BUTTON_RELEASED</a></li>
-<li><a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a992a86f0320c683373f5b882f2ef6584">ui::Event::BUTTON_ACTUATED</a></li>
+<li><a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a992a86f0320c683373f5b882f2ef6584">ui::Event::BUTTON_ACTUATED</a><ul>
+<li><a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a137747ff8e73a010b31cae67e5280bbb">ui::Event::BUTTON_HELD</a> </li>
 </ul>
-<p><a class="el" href="classev_1_1_event.html#a1eca40f08f5df90a81a507ca684af849a137747ff8e73a010b31cae67e5280bbb">ui::Event::BUTTON_HELD</a> </p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -197,13 +206,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns true if the button has been held for the specified duration This will only return true once per button press.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msec</td><td>The number of milliseconds the button has been held for </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns true if the button has been held for the specified duration This will only return true once per button press. </p>
 
 <p>Implemented in <a class="el" href="classui_1_1_device_button.html#a88b68322c90b0ef5998f0764e63d046c">ui::DeviceButton</a>, and <a class="el" href="classui_1_1_pin_button.html#acbb64a1638d2c733d76845f5258b4867">ui::PinButton</a>.</p>
 
