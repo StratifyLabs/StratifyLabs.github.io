@@ -43,6 +43,8 @@ Inheritance diagram for sys::Signal:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3df4a1ca3b5ccb0a402a4dc82c399c59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal.html#a3df4a1ca3b5ccb0a402a4dc82c399c59">Signal</a> (int <a class="el" href="classsys_1_1_signal.html#a011f499488e8caa5acff9705de45f77e">signo</a>, int <a class="el" href="classsys_1_1_signal.html#abbd4f48a59f5fe1a9c1a89602b17654f">sigvalue</a>=0)</td></tr>
 <tr class="separator:a3df4a1ca3b5ccb0a402a4dc82c399c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46a26189b3fbd25cce6297b19455184e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal.html#a46a26189b3fbd25cce6297b19455184e">Signal</a> (int <a class="el" href="classsys_1_1_signal.html#a011f499488e8caa5acff9705de45f77e">signo</a>, void *<a class="el" href="classsys_1_1_signal.html#acc5d1bd4cc96ce19205aa0d9b3b2c5b7">sigptr</a>=0)</td></tr>
+<tr class="separator:a46a26189b3fbd25cce6297b19455184e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa242d445b71f895ff7fe344ea4630e75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classev_1_1_event.html">ev::Event</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal.html#aa242d445b71f895ff7fe344ea4630e75">event</a> ()</td></tr>
 <tr class="separator:aa242d445b71f895ff7fe344ea4630e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc2c0f561b4d80f27e0e9253d1ecb936"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_signal.html#acc2c0f561b4d80f27e0e9253d1ecb936">set_handler</a> (const <a class="el" href="classsys_1_1_signal_handler.html">SignalHandler</a> &amp;handler) const </td></tr>
@@ -218,6 +220,48 @@ Additional Inherited Members</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">signo</td><td>The signal number </td></tr>
     <tr><td class="paramname">sigvalue</td><td>The signal value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a46a26189b3fbd25cce6297b19455184e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">sys::Signal::Signal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>signo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>sigptr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an event based on a signal number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">signo</td><td>The signal number </td></tr>
+    <tr><td class="paramname">sigptr</td><td>The signal value as a pointer </td></tr>
   </table>
   </dd>
 </dl>

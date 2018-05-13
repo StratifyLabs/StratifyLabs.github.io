@@ -36,7 +36,7 @@ page_source: Doxygen
 <div class="dynheader">
 Inheritance diagram for hal::FFifoInfo:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1_f_fifo_info__inherit__graph.svg" width="136" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhal_1_1_f_fifo_info__inherit__graph.svg" width="136" height="547"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"></div><table class="memberdecls">
@@ -50,6 +50,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a23daaea1c2f6b8e89e561b2d8b1f2ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82576b1fb3891d7497f69da2bf417b61"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_f_fifo_info.html#a82576b1fb3891d7497f69da2bf417b61">frame_size</a> () const </td></tr>
 <tr class="separator:a82576b1fb3891d7497f69da2bf417b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d138680469491d642dce973c7c34ed"><td class="memItemLeft" align="right" valign="top">u16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_f_fifo_info.html#a24d138680469491d642dce973c7c34ed">frames_used</a> () const </td></tr>
+<tr class="separator:a24d138680469491d642dce973c7c34ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae53e87fe465095b7ef56a1d7323f9c27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_f_fifo_info.html#ae53e87fe465095b7ef56a1d7323f9c27">is_overflow</a> () const </td></tr>
 <tr class="separator:ae53e87fe465095b7ef56a1d7323f9c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cb01fb07f5645ffc337fe931467f6bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_f_fifo_info.html#a4cb01fb07f5645ffc337fe931467f6bd">is_valid</a> () const </td></tr>
@@ -159,6 +161,31 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the number of frames in the framed FIFO. </p>
+
+</div>
+</div>
+<a class="anchor" id="a24d138680469491d642dce973c7c34ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">u16 hal::FFifoInfo::frames_used </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of frames currently in use.</p>
+<p>This is the number of frames that is ready to be read. </p>
 
 </div>
 </div>

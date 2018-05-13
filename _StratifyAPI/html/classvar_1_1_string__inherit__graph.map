@@ -1,11 +1,11 @@
 <map id="var::String" name="var::String">
-<area shape="rect" id="node6" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="4,906,136,1073"/>
-<area shape="rect" id="node7" href="$classvar_1_1_name_string.html" title="{var::NameString\n||+ NameString()\l}" alt="" coords="161,953,279,1026"/>
-<area shape="rect" id="node8" href="$classvar_1_1_path_string.html" title="{var::PathString\n||+ PathString()\l+ file_name()\l+ filename()\l+ strip_suffix()\l}" alt="" coords="303,933,412,1046"/>
-<area shape="rect" id="node9" href="$classvar_1_1_static_string.html" title="{var::StaticString\&lt;\l arraysize \&gt;\n||+ StaticString()\l+ StaticString()\l+ StaticString()\l}" alt="" coords="436,933,559,1046"/>
-<area shape="rect" id="node10" href="$classvar_1_1_token.html" title="Abstract Token Class. " alt="" coords="582,899,764,1079"/>
-<area shape="rect" id="node2" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="294,481,420,647"/>
-<area shape="rect" id="node3" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="289,358,424,431"/>
-<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="278,129,436,309"/>
+<area shape="rect" id="node6" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="4,919,136,1086"/>
+<area shape="rect" id="node7" href="$classvar_1_1_name_string.html" title="{var::NameString\n||+ NameString()\l}" alt="" coords="161,966,279,1039"/>
+<area shape="rect" id="node8" href="$classvar_1_1_path_string.html" title="{var::PathString\n||+ PathString()\l+ file_name()\l+ filename()\l+ strip_suffix()\l}" alt="" coords="303,946,412,1059"/>
+<area shape="rect" id="node9" href="$classvar_1_1_static_string.html" title="{var::StaticString\&lt;\l arraysize \&gt;\n||+ StaticString()\l+ StaticString()\l+ StaticString()\l}" alt="" coords="436,946,559,1059"/>
+<area shape="rect" id="node10" href="$classvar_1_1_token.html" title="Abstract Token Class. " alt="" coords="582,913,764,1093"/>
+<area shape="rect" id="node2" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="294,494,420,661"/>
+<area shape="rect" id="node3" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="289,371,424,445"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="263,129,452,322"/>
 <area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="302,6,412,79"/>
 </map>

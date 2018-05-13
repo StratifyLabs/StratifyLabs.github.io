@@ -1,10 +1,10 @@
 <map id="draw::CircleProgress" name="draw::CircleProgress">
-<area shape="rect" id="node2" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="75,830,273,943"/>
-<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="5,481,163,781"/>
-<area shape="rect" id="node4" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="18,358,165,431"/>
-<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="19,129,177,309"/>
-<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="124,6,233,79"/>
-<area shape="rect" id="node9" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="205,182,312,255"/>
-<area shape="rect" id="node7" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="188,554,345,707"/>
-<area shape="rect" id="node8" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="193,358,331,431"/>
+<area shape="rect" id="node2" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="85,843,283,957"/>
+<area shape="rect" id="node3" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="14,494,172,794"/>
+<area shape="rect" id="node4" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="25,371,172,445"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,195,322"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="130,6,240,79"/>
+<area shape="rect" id="node9" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="218,189,325,262"/>
+<area shape="rect" id="node7" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="197,567,355,721"/>
+<area shape="rect" id="node8" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="205,371,343,445"/>
 </map>

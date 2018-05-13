@@ -1,7 +1,7 @@
 <map id="ui::Button" name="ui::Button">
-<area shape="rect" id="node5" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="5,730,125,897"/>
-<area shape="rect" id="node6" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="150,710,297,917"/>
-<area shape="rect" id="node2" href="$classapi_1_1_ui_work_object.html" title="User Interface Work Object Class. " alt="" coords="80,358,208,431"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="65,129,223,309"/>
+<area shape="rect" id="node5" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="5,743,125,910"/>
+<area shape="rect" id="node6" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="150,723,297,930"/>
+<area shape="rect" id="node2" href="$classapi_1_1_ui_work_object.html" title="User Interface Work Object Class. " alt="" coords="80,371,208,445"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="49,129,239,322"/>
 <area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="89,6,199,79"/>
 </map>

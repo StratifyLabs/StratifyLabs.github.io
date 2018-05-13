@@ -6,7 +6,7 @@ category: User Guides
 tags : [c, c++, user-guide, development, windows, macosx, Stratify, gcc]
 ---
 
-
+<img class="post_image" src="{{ BASE_PATH }}/images/Stratify-OS-Overview.png" />
 Stratify OS is not like any other microcontroller operating system you have ever used. [It was built from the ground up for the ARM Cortex M architecture]({{ BASE_URL }}/user%20guides/2018/03/06/How-Stratify-OS-Levarages-ARM-Cortex-M/) to solve the challenge of increasingly complex hardware designs and software requirements. 
 
 It does this by:
@@ -20,7 +20,7 @@ It does this by:
 Stratify OS is perfect for building hardware modules (like bluetooth, wifi, etc). Most module manufacturers use serialization or complex SDKs based on source code integration or scripting.
 </p>
 <p>
-With Stratify OS, module manufacturers can define the BSP and root applications while allowing customers to build and run applications that run natively on the MCU using an easy-to-use POSIX API.
+With Stratify OS, module manufacturers can define the BSP and root applications while allowing customers to build and run applications that run native C/C++ applications on the MCU using an easy-to-use POSIX API.
 </p>
 <p>
 If you are a module maker interested in providing a simple-to-use SDK to your customers, <a href="{{ BASE_URL }}/contact-us">we can help</a>.

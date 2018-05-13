@@ -64,12 +64,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a373881fd8bcf04a9759d36deecc01a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e630baedf218bcdc9c97cd04ee98575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a7e630baedf218bcdc9c97cd04ee98575">is_running</a> () const </td></tr>
 <tr class="separator:a7e630baedf218bcdc9c97cd04ee98575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad67fb50b5f04680cffce6d7dc5f23adf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#ad67fb50b5f04680cffce6d7dc5f23adf">is_valid</a> () const </td></tr>
+<tr class="separator:ad67fb50b5f04680cffce6d7dc5f23adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10423a9b52ab5d7b491f931462b67c62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a10423a9b52ab5d7b491f931462b67c62">join</a> (void **value_ptr=0) const </td></tr>
 <tr class="separator:a10423a9b52ab5d7b491f931462b67c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4953dbe5e1f467e15aefe18a138d4657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a4953dbe5e1f467e15aefe18a138d4657">kill</a> (int sig)</td></tr>
 <tr class="separator:a4953dbe5e1f467e15aefe18a138d4657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e045e74a26a70db56ce6d27e4658f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a63e045e74a26a70db56ce6d27e4658f3">reset</a> ()</td></tr>
 <tr class="separator:a63e045e74a26a70db56ce6d27e4658f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a106262c12ac4df77dd070b560cf3bb6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a106262c12ac4df77dd070b560cf3bb6a">set_detachstate</a> (int value)</td></tr>
+<tr class="separator:a106262c12ac4df77dd070b560cf3bb6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da33b14dfff625c7421c327396859ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a7da33b14dfff625c7421c327396859ef">set_priority</a> (int prio, enum <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fe">Sched::policy</a> policy=<a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fea9306544dcd3534f1f27d0eb65ef0d6e7">Sched::RR</a>)</td></tr>
 <tr class="separator:a7da33b14dfff625c7421c327396859ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21badf2491c24bf649ae2df5cce5873b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a21badf2491c24bf649ae2df5cce5873b">set_stacksize</a> (int size)</td></tr>
@@ -84,10 +88,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad04457dbf640ad702c2ddce7abdde390"><td class="memItemLeft" align="right" valign="top">static pid_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#ad04457dbf640ad702c2ddce7abdde390">get_pid</a> ()</td></tr>
+<tr class="separator:ad04457dbf640ad702c2ddce7abdde390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ae0c1d24f508a094f9e60270aba7277"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a8ae0c1d24f508a094f9e60270aba7277">join</a> (int ident, void **value_ptr=0)</td></tr>
 <tr class="separator:a8ae0c1d24f508a094f9e60270aba7277"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a701b7a32be086dcfb4d43a5e10c40f53"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a701b7a32be086dcfb4d43a5e10c40f53">set_scheduler</a> (int <a class="el" href="classsys_1_1_thread.html#a858cae77f4590d279c2110b4843bc4ea">id</a>, enum <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fe">Sched::policy</a> value, int <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_w_i_t_c_h_b_o_a_r_d.html#ga8535dbe3a8b444641285ebddda457c43">priority</a>)</td></tr>
-<tr class="separator:a701b7a32be086dcfb4d43a5e10c40f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a974e3202f1067582d23ab748562ff3eb"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a974e3202f1067582d23ab748562ff3eb">join</a> (const <a class="el" href="classsys_1_1_thread.html">Thread</a> &amp;thread, void **value_ptr=0)</td></tr>
+<tr class="separator:a974e3202f1067582d23ab748562ff3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769d61abd56775d6d8844cdb5593018a"><td class="memItemLeft" align="right" valign="top">static pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a769d61abd56775d6d8844cdb5593018a">self</a> ()</td></tr>
+<tr class="separator:a769d61abd56775d6d8844cdb5593018a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bec52ab1d2233a0f791562165cc54d9"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a4bec52ab1d2233a0f791562165cc54d9">yield</a> ()</td></tr>
 <tr class="separator:a4bec52ab1d2233a0f791562165cc54d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classapi_1_1_api_object"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classapi_1_1_api_object')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classapi_1_1_api_object.html">api::ApiObject</a></td></tr>
@@ -247,6 +255,30 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad04457dbf640ad702c2ddce7abdde390"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pid_t sys::Thread::get_pid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the process ID of the calling thread. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad4d146e7c80b9c61c2a8bb3815bb1874"></a>
 <div class="memitem">
 <div class="memproto">
@@ -351,6 +383,31 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad67fb50b5f04680cffce6d7dc5f23adf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool sys::Thread::is_valid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns true if the thread has a valid id.</p>
+<p>If <a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create()</a> has not been called, this will return false. If there was an error creating the thread, this will also return false; </p>
+
+</div>
+</div>
 <a class="anchor" id="a8ae0c1d24f508a094f9e60270aba7277"></a>
 <div class="memitem">
 <div class="memproto">
@@ -382,7 +439,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Joins the current thread to the specified thread.</p>
+<p>Joins the calling thread to the specified thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ident</td><td>the ID of the target thread </td></tr>
@@ -390,7 +447,52 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>This method will block the calling thread until the joined thread returns. </p>
+
+</div>
+</div>
+<a class="anchor" id="a974e3202f1067582d23ab748562ff3eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int sys::Thread::join </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classsys_1_1_thread.html">Thread</a> &amp;&#160;</td>
+          <td class="paramname"><em>thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void **&#160;</td>
+          <td class="paramname"><em>value_ptr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Joins the calling thread to the specified thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>A reference to the thread to joing </td></tr>
+    <tr><td class="paramname">value_ptr</td><td>a pointer to where the return value of <em>thread</em> will be stored </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>This method will block the calling thread until the joined thread returns. </p>
 
 </div>
 </div>
@@ -407,8 +509,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Joins the calling thread with id <a class="el" href="classsys_1_1_thread.html#a858cae77f4590d279c2110b4843bc4ea">Thread::id()</a></p>
-<dl class="section return"><dt>Returns</dt><dd>0 if joined, -1 if couldn't join (doesn't exist or is detached) </dd></dl>
+<p>Joins the calling thread this object's thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_ptr</td><td>A pointer to where the return value of the thread function will be stored (ignored if null) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if joined, -1 if couldn't join (doesn't exist or is detached)</dd></dl>
+<p>This method will block the calling thread until the thread function returns. </p>
 
 </div>
 </div>
@@ -461,6 +570,53 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a769d61abd56775d6d8844cdb5593018a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static pthread_t sys::Thread::self </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the thread ID of the calling thread. </p>
+
+</div>
+</div>
+<a class="anchor" id="a106262c12ac4df77dd070b560cf3bb6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sys::Thread::set_detachstate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the detach state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Detach state: use JOINABLE or DETACHED </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a7da33b14dfff625c7421c327396859ef"></a>
 <div class="memitem">
 <div class="memproto">
@@ -485,56 +641,6 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the thread priority. </p>
-
-</div>
-</div>
-<a class="anchor" id="a701b7a32be086dcfb4d43a5e10c40f53"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int sys::Thread::set_scheduler </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">enum <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fe">Sched::policy</a>&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>priority</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets the scheduler.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>The process ID </td></tr>
-    <tr><td class="paramname">value</td><td>The policy (such as <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feaffb56b517ad688e3e3af3833043e1bda">Sched::FIFO</a>) </td></tr>
-    <tr><td class="paramname">priority</td><td>The priority (higher is higher priority) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success of -1 with errno set </dd></dl>
 
 </div>
 </div>
@@ -599,7 +705,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

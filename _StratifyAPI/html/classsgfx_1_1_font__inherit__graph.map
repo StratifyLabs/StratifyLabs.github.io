@@ -1,9 +1,9 @@
 <map id="sgfx::Font" name="sgfx::Font">
-<area shape="rect" id="node5" href="$classsgfx_1_1_file_font.html" title="File Font Class. " alt="" coords="4,803,176,983"/>
-<area shape="rect" id="node6" href="$classsgfx_1_1_memory_font.html" title="Monochrome Bitmap Font class (stored in flash memory) " alt="" coords="201,803,373,983"/>
-<area shape="rect" id="node7" href="$classsgfx_1_1_svg_font.html" title="Stratify Vector Graphics Font. " alt="" coords="399,830,501,957"/>
-<area shape="rect" id="node2" href="$classapi_1_1_sgfx_work_object.html" title="Sgfx Object Class. " alt="" coords="217,358,359,431"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="209,129,367,309"/>
+<area shape="rect" id="node5" href="$classsgfx_1_1_file_font.html" title="File Font Class. " alt="" coords="4,817,176,997"/>
+<area shape="rect" id="node6" href="$classsgfx_1_1_memory_font.html" title="Monochrome Bitmap Font class (stored in flash memory) " alt="" coords="201,817,373,997"/>
+<area shape="rect" id="node7" href="$classsgfx_1_1_svg_font.html" title="Stratify Vector Graphics Font. " alt="" coords="399,843,501,970"/>
+<area shape="rect" id="node2" href="$classapi_1_1_sgfx_work_object.html" title="Sgfx Object Class. " alt="" coords="217,371,359,445"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="193,129,383,322"/>
 <area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="233,6,343,79"/>
-<area shape="rect" id="node8" href="$classsgfx_1_1_svg_memory_font.html" title="Stratify Vector Graphics Memory Font. " alt="" coords="364,1033,536,1159"/>
+<area shape="rect" id="node8" href="$classsgfx_1_1_svg_memory_font.html" title="Stratify Vector Graphics Memory Font. " alt="" coords="364,1046,536,1173"/>
 </map>

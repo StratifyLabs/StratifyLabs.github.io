@@ -1,8 +1,8 @@
 <map id="draw::Animation" name="draw::Animation">
-<area shape="rect" id="node2" href="$classdraw_1_1_animation_attr.html" title="Animation Attributes Class. " alt="" coords="5,481,173,634"/>
-<area shape="rect" id="node3" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="32,358,169,431"/>
-<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="50,182,157,255"/>
-<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="128,6,237,79"/>
-<area shape="rect" id="node7" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="183,129,341,309"/>
-<area shape="rect" id="node6" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="197,521,344,594"/>
+<area shape="rect" id="node2" href="$classdraw_1_1_animation_attr.html" title="Animation Attributes Class. " alt="" coords="5,494,173,647"/>
+<area shape="rect" id="node3" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="24,371,161,445"/>
+<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="41,189,148,262"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="125,6,235,79"/>
+<area shape="rect" id="node7" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="172,129,361,322"/>
+<area shape="rect" id="node6" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="197,534,344,607"/>
 </map>

@@ -92,6 +92,7 @@ page_source: Docs
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/Understanding-Device-Drivers/">Understanding How to Access Hardware in Stratify OS Applications</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/03/06/How-Stratify-OS-Levarages-ARM-Cortex-M/">How Stratify OS Leverages ARM Cortex M Hardware</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/03/07/Understanding-Filesystems-on-Stratify-OS/">Understanding Filesystems on Stratify OS</a></li>
+	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/04/30/Understanding-Threads-on-Stratify-OS/">Understanding Threads on Stratify OS</a></li>
 </ul>
 
 

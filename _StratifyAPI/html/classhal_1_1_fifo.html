@@ -51,8 +51,8 @@ Inheritance diagram for hal::Fifo:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aff1e802b98dde86ffe5845661a8caf21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#aff1e802b98dde86ffe5845661a8caf21">flush</a> () const </td></tr>
 <tr class="separator:aff1e802b98dde86ffe5845661a8caf21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a192338d884bd7081aa01c8c583326bbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#a192338d884bd7081aa01c8c583326bbc">get_info</a> (fifo_info_t &amp;info) const </td></tr>
-<tr class="separator:a192338d884bd7081aa01c8c583326bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad39bfd2321f0e656eb9570001f71ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#aaad39bfd2321f0e656eb9570001f71ee">get_info</a> (<a class="el" href="classhal_1_1_fifo_info.html">FifoInfo</a> &amp;info) const </td></tr>
+<tr class="separator:aaad39bfd2321f0e656eb9570001f71ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3fc3a4f15c23c0d13ad26f4428b6e61"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classhal_1_1_fifo_info.html">FifoInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#aa3fc3a4f15c23c0d13ad26f4428b6e61">get_info</a> () const </td></tr>
 <tr class="separator:aa3fc3a4f15c23c0d13ad26f4428b6e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e95762d0495a9df2141f4c1e2b6549"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_fifo.html#a50e95762d0495a9df2141f4c1e2b6549">init</a> () const </td></tr>
@@ -64,6 +64,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeab36fe44a2044a2ca18232a2f2fca3c inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8cf2d04193dbebee997f8c1df00eee4 inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#ae8cf2d04193dbebee997f8c1df00eee4">read</a> (<a class="el" href="classsys_1_1_aio.html">sys::Aio</a> &amp;aio) const </td></tr>
 <tr class="separator:ae8cf2d04193dbebee997f8c1df00eee4 inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f721db6408f2545ed0c167b60b2173 inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#a48f721db6408f2545ed0c167b60b2173">set_signal_action</a> (const <a class="el" href="classhal_1_1_device_signal.html">DeviceSignal</a> &amp;<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_i_g_n_a_l.html#ga07e401f456a0156eba71562d79a76afa">signal</a>, u32 o_events, u32 channel)</td></tr>
+<tr class="separator:a48f721db6408f2545ed0c167b60b2173 inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346197b2e09f5c504f623d71e7c3a5bd inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#a346197b2e09f5c504f623d71e7c3a5bd">write</a> (<a class="el" href="classsys_1_1_aio.html">sys::Aio</a> &amp;aio) const </td></tr>
 <tr class="separator:a346197b2e09f5c504f623d71e7c3a5bd inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
@@ -154,14 +156,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a192338d884bd7081aa01c8c583326bbc"></a>
+<a class="anchor" id="aaad39bfd2321f0e656eb9570001f71ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int hal::Fifo::get_info </td>
           <td>(</td>
-          <td class="paramtype">fifo_info_t &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classhal_1_1_fifo_info.html">FifoInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>info</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -174,9 +176,6 @@ Additional Inherited Members</h2></td></tr>
 <a class="anchor" id="aa3fc3a4f15c23c0d13ad26f4428b6e61"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const <a class="el" href="classhal_1_1_fifo_info.html">FifoInfo</a> hal::Fifo::get_info </td>
@@ -185,11 +184,6 @@ Additional Inherited Members</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Returns the fifo info. </p>
 

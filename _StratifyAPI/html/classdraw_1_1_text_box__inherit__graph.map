@@ -1,9 +1,9 @@
 <map id="draw::TextBox" name="draw::TextBox">
-<area shape="rect" id="node2" href="$classdraw_1_1_text_attr.html" title="Text Attribute Class. " alt="" coords="18,547,131,714"/>
-<area shape="rect" id="node3" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="4,358,141,431"/>
-<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="24,182,131,255"/>
+<area shape="rect" id="node2" href="$classdraw_1_1_text_attr.html" title="Text Attribute Class. " alt="" coords="18,561,131,727"/>
+<area shape="rect" id="node3" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="4,371,141,445"/>
+<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="18,189,125,262"/>
 <area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="102,6,212,79"/>
-<area shape="rect" id="node8" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="158,129,316,309"/>
-<area shape="rect" id="node6" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="158,481,316,781"/>
-<area shape="rect" id="node7" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="166,358,313,431"/>
+<area shape="rect" id="node8" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="149,129,339,322"/>
+<area shape="rect" id="node6" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="158,494,316,794"/>
+<area shape="rect" id="node7" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="169,371,316,445"/>
 </map>

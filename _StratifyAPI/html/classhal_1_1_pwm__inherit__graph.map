@@ -1,11 +1,11 @@
 <map id="hal::Pwm" name="hal::Pwm">
-<area shape="rect" id="node2" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pwm_info\l_t, pwm_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\l+ set_action()\l+ set_attr()\l+ set_attr()\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="29,1619,181,1853"/>
-<area shape="rect" id="node3" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="22,1038,145,1258"/>
-<area shape="rect" id="node10" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="105,1310,241,1543"/>
-<area shape="rect" id="node4" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="40,886,127,986"/>
-<area shape="rect" id="node5" href="$classapi_1_1_hal_work_object.html" title="Hal Object Class. " alt="" coords="16,761,151,834"/>
-<area shape="rect" id="node6" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="30,489,137,709"/>
-<area shape="rect" id="node7" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="15,363,152,437"/>
-<area shape="rect" id="node8" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,131,163,311"/>
-<area shape="rect" id="node9" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="29,6,139,79"/>
+<area shape="rect" id="node2" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pwm_info\l_t, pwm_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="45,1619,197,1826"/>
+<area shape="rect" id="node3" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="38,1065,161,1285"/>
+<area shape="rect" id="node10" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="121,1337,257,1543"/>
+<area shape="rect" id="node4" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="28,899,172,1013"/>
+<area shape="rect" id="node5" href="$classapi_1_1_hal_work_object.html" title="Hal Object Class. " alt="" coords="32,774,167,847"/>
+<area shape="rect" id="node6" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="46,502,153,722"/>
+<area shape="rect" id="node7" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="31,377,168,450"/>
+<area shape="rect" id="node8" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,131,195,325"/>
+<area shape="rect" id="node9" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="45,6,155,79"/>
 </map>

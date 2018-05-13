@@ -36,8 +36,7 @@ page_source: Doxygen
 <div class="dynheader">
 Inheritance diagram for hal::Switchboard:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classhal_1_1_switchboard__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classhal_1_1_switchboard__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>The <a class="el" href="classhal_1_1_switchboard.html" title="Switch board class. ">Switchboard</a> class is used to interface with /dev/switchboard0 and similar devices.</p>
@@ -76,6 +75,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeab36fe44a2044a2ca18232a2f2fca3c inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8cf2d04193dbebee997f8c1df00eee4 inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#ae8cf2d04193dbebee997f8c1df00eee4">read</a> (<a class="el" href="classsys_1_1_aio.html">sys::Aio</a> &amp;aio) const </td></tr>
 <tr class="separator:ae8cf2d04193dbebee997f8c1df00eee4 inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48f721db6408f2545ed0c167b60b2173 inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#a48f721db6408f2545ed0c167b60b2173">set_signal_action</a> (const <a class="el" href="classhal_1_1_device_signal.html">DeviceSignal</a> &amp;<a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_i_g_n_a_l.html#ga07e401f456a0156eba71562d79a76afa">signal</a>, u32 o_events, u32 channel)</td></tr>
+<tr class="separator:a48f721db6408f2545ed0c167b60b2173 inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346197b2e09f5c504f623d71e7c3a5bd inherit pub_methods_classhal_1_1_device"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_device.html#a346197b2e09f5c504f623d71e7c3a5bd">write</a> (<a class="el" href="classsys_1_1_aio.html">sys::Aio</a> &amp;aio) const </td></tr>
 <tr class="separator:a346197b2e09f5c504f623d71e7c3a5bd inherit pub_methods_classhal_1_1_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classsys_1_1_file"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classsys_1_1_file')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classsys_1_1_file.html">sys::File</a></td></tr>
@@ -186,6 +187,18 @@ Additional Inherited Members</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab2f0b589ac4f173d293d0bcd1d5010b3a4f7e77a62e1f8ebfc727b43440f2a62e"></a>IS_OUTPUT_NON_BLOCKING&#160;</td><td class="fielddoc">
 <p>Execute input transactions as non-blocking </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab2f0b589ac4f173d293d0bcd1d5010b3a2ef8c89a5c5fc6072e7195af17eb176b"></a>IS_FILL_LAST_8&#160;</td><td class="fielddoc">
+<p>Fill output with last byte of most recent packet </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab2f0b589ac4f173d293d0bcd1d5010b3a289884e6aa1e420ba2f933796c1d135c"></a>IS_FILL_LAST_16&#160;</td><td class="fielddoc">
+<p>Fill output with last 16-bit word of most recent packet </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab2f0b589ac4f173d293d0bcd1d5010b3af6321c901af91820d03d9a4bad02f20b"></a>IS_FILL_LAST_32&#160;</td><td class="fielddoc">
+<p>Fill output with last 32-bit word of most recent packet </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab2f0b589ac4f173d293d0bcd1d5010b3a12b4d118ca713a9ecfccf4e6ad153251"></a>IS_FILL_LAST_64&#160;</td><td class="fielddoc">
+<p>Fill output with last 64-bit word of most recent packet </p>
 </td></tr>
 </table>
 

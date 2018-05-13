@@ -1,12 +1,12 @@
 <map id="draw::Progress" name="draw::Progress">
-<area shape="rect" id="node9" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="5,993,136,1106"/>
-<area shape="rect" id="node10" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="161,999,292,1099"/>
-<area shape="rect" id="node11" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="317,1006,461,1093"/>
-<area shape="rect" id="node2" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="57,481,215,781"/>
-<area shape="rect" id="node3" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="70,358,217,431"/>
-<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="71,129,229,309"/>
-<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="176,6,285,79"/>
-<area shape="rect" id="node8" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="257,182,364,255"/>
-<area shape="rect" id="node6" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="240,554,397,707"/>
-<area shape="rect" id="node7" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="245,358,383,431"/>
+<area shape="rect" id="node9" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="5,1006,136,1119"/>
+<area shape="rect" id="node10" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="161,1013,292,1113"/>
+<area shape="rect" id="node11" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="317,1019,461,1106"/>
+<area shape="rect" id="node2" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="57,494,215,794"/>
+<area shape="rect" id="node3" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="68,371,215,445"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="48,129,237,322"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="173,6,283,79"/>
+<area shape="rect" id="node8" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="261,189,368,262"/>
+<area shape="rect" id="node6" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="240,567,397,721"/>
+<area shape="rect" id="node7" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="248,371,385,445"/>
 </map>

@@ -48,12 +48,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a531aa2c2efb211a3faafa154bc221788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32f6c977822fa2885de7e6ac1802204f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#a32f6c977822fa2885de7e6ac1802204f">count_total</a> ()</td></tr>
 <tr class="separator:a32f6c977822fa2885de7e6ac1802204f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a500defcc78c40c65b699b483dc669b86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsys_1_1_task_info.html">TaskInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#a500defcc78c40c65b699b483dc669b86">get_attr</a> (int <a class="el" href="classsys_1_1_task.html#a1c7ccf21a5b9cd56fb5a31463a67481c">id</a>)</td></tr>
-<tr class="separator:a500defcc78c40c65b699b483dc669b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab81b0ee31b5e8246871f256fe0b8e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsys_1_1_task_info.html">TaskInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#a3ab81b0ee31b5e8246871f256fe0b8e5">get_info</a> (int <a class="el" href="classsys_1_1_task.html#a1c7ccf21a5b9cd56fb5a31463a67481c">id</a>)</td></tr>
+<tr class="separator:a3ab81b0ee31b5e8246871f256fe0b8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f4bb2e26fede5db4ae3d1edeec0aa7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#a83f4bb2e26fede5db4ae3d1edeec0aa7">get_next</a> (<a class="el" href="classsys_1_1_task_info.html">TaskInfo</a> &amp;attr)</td></tr>
 <tr class="separator:a83f4bb2e26fede5db4ae3d1edeec0aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c7ccf21a5b9cd56fb5a31463a67481c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#a1c7ccf21a5b9cd56fb5a31463a67481c">id</a> () const </td></tr>
 <tr class="separator:a1c7ccf21a5b9cd56fb5a31463a67481c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae0f1dd29ddea6417800a274ec81f238"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#aae0f1dd29ddea6417800a274ec81f238">print</a> (int pid=-1)</td></tr>
+<tr class="separator:aae0f1dd29ddea6417800a274ec81f238"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adecfc2ce419dab4f6f8bd6aa327015c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_task.html#adecfc2ce419dab4f6f8bd6aa327015c9">set_id</a> (int value)</td></tr>
 <tr class="separator:adecfc2ce419dab4f6f8bd6aa327015c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classapi_1_1_work_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classapi_1_1_work_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classapi_1_1_work_object.html">api::WorkObject</a></td></tr>
@@ -101,12 +103,12 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a500defcc78c40c65b699b483dc669b86"></a>
+<a class="anchor" id="a3ab81b0ee31b5e8246871f256fe0b8e5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classsys_1_1_task_info.html">TaskInfo</a> sys::Task::get_attr </td>
+          <td class="memname"><a class="el" href="classsys_1_1_task_info.html">TaskInfo</a> sys::Task::get_info </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -162,6 +164,23 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the index of the current task. </p>
+
+</div>
+</div>
+<a class="anchor" id="aae0f1dd29ddea6417800a274ec81f238"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sys::Task::print </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Prints info for all enabled tasks. </p>
 
 </div>
 </div>

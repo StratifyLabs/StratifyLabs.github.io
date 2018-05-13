@@ -1,17 +1,17 @@
 <map id="var::Data" name="var::Data">
-<area shape="rect" id="node5" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Object Class. " alt="" coords="33,737,172,810"/>
-<area shape="rect" id="node9" href="$classvar_1_1_ring.html" title="Ring Buffer class. " alt="" coords="253,697,413,850"/>
-<area shape="rect" id="node10" href="$classvar_1_1_string.html" title="String class. " alt="" coords="438,697,545,850"/>
-<area shape="rect" id="node16" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="570,697,685,850"/>
-<area shape="rect" id="node2" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="344,358,479,431"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="333,129,491,309"/>
+<area shape="rect" id="node5" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Object Class. " alt="" coords="33,750,172,823"/>
+<area shape="rect" id="node9" href="$classvar_1_1_ring.html" title="Ring Buffer class. " alt="" coords="253,710,413,863"/>
+<area shape="rect" id="node10" href="$classvar_1_1_string.html" title="String class. " alt="" coords="438,710,545,863"/>
+<area shape="rect" id="node16" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="570,710,685,863"/>
+<area shape="rect" id="node2" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="344,371,479,445"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="317,129,507,322"/>
 <area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="357,6,467,79"/>
-<area shape="rect" id="node6" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="5,899,144,1106"/>
-<area shape="rect" id="node7" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="30,1155,119,1295"/>
-<area shape="rect" id="node8" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="9,1345,140,1498"/>
-<area shape="rect" id="node11" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="168,919,300,1086"/>
-<area shape="rect" id="node12" href="$classvar_1_1_name_string.html" title="{var::NameString\n||+ NameString()\l}" alt="" coords="325,966,443,1039"/>
-<area shape="rect" id="node13" href="$classvar_1_1_path_string.html" title="{var::PathString\n||+ PathString()\l+ file_name()\l+ filename()\l+ strip_suffix()\l}" alt="" coords="467,946,576,1059"/>
-<area shape="rect" id="node14" href="$classvar_1_1_static_string.html" title="{var::StaticString\&lt;\l arraysize \&gt;\n||+ StaticString()\l+ StaticString()\l+ StaticString()\l}" alt="" coords="600,946,723,1059"/>
-<area shape="rect" id="node15" href="$classvar_1_1_token.html" title="Abstract Token Class. " alt="" coords="746,913,928,1093"/>
+<area shape="rect" id="node6" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="5,913,144,1119"/>
+<area shape="rect" id="node7" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="30,1169,119,1309"/>
+<area shape="rect" id="node8" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="9,1358,140,1511"/>
+<area shape="rect" id="node11" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="168,933,300,1099"/>
+<area shape="rect" id="node12" href="$classvar_1_1_name_string.html" title="{var::NameString\n||+ NameString()\l}" alt="" coords="325,979,443,1053"/>
+<area shape="rect" id="node13" href="$classvar_1_1_path_string.html" title="{var::PathString\n||+ PathString()\l+ file_name()\l+ filename()\l+ strip_suffix()\l}" alt="" coords="467,959,576,1073"/>
+<area shape="rect" id="node14" href="$classvar_1_1_static_string.html" title="{var::StaticString\&lt;\l arraysize \&gt;\n||+ StaticString()\l+ StaticString()\l+ StaticString()\l}" alt="" coords="600,959,723,1073"/>
+<area shape="rect" id="node15" href="$classvar_1_1_token.html" title="Abstract Token Class. " alt="" coords="746,926,928,1106"/>
 </map>

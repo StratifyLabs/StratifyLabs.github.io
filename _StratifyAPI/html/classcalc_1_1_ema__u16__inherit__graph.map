@@ -1,7 +1,7 @@
 <map id="calc::Ema_u16" name="calc::Ema_u16">
-<area shape="rect" id="node2" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, u16,\l u32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="37,691,176,831"/>
-<area shape="rect" id="node3" href="$classapi_1_1_calc_work_object.html" title="Format Work Object Class. " alt="" coords="13,363,155,437"/>
-<area shape="rect" id="node6" href="$classcalc_1_1_ema.html" title="Exponential Moving Average template class. " alt="" coords="105,489,253,629"/>
-<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,131,163,311"/>
-<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="29,6,139,79"/>
+<area shape="rect" id="node2" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, u16,\l u32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="53,705,192,845"/>
+<area shape="rect" id="node3" href="$classapi_1_1_calc_work_object.html" title="Format Work Object Class. " alt="" coords="29,377,171,450"/>
+<area shape="rect" id="node6" href="$classcalc_1_1_ema.html" title="Exponential Moving Average template class. " alt="" coords="121,502,269,642"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,131,195,325"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="45,6,155,79"/>
 </map>
