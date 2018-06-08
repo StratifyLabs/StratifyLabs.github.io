@@ -3,9 +3,9 @@
 <area shape="rect" id="node7" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, s32,\l s64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="168,705,313,845"/>
 <area shape="rect" id="node9" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, u16,\l u32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="338,705,477,845"/>
 <area shape="rect" id="node11" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, u32,\l u64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="501,705,648,845"/>
-<area shape="rect" id="node2" href="$classapi_1_1_calc_work_object.html" title="Format Work Object Class. " alt="" coords="253,377,395,450"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="229,131,419,325"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="269,6,379,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_calc_work_object.html" title="Calc Work Object. " alt="" coords="253,377,395,450"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="229,131,419,325"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="269,6,379,79"/>
 <area shape="rect" id="node6" href="$classcalc_1_1_ema__s16.html" title="Exponential Moving Average class (s16) " alt="" coords="20,897,128,970"/>
 <area shape="rect" id="node8" href="$classcalc_1_1_ema__s32.html" title="Exponential Moving Average class (s32) " alt="" coords="187,897,295,970"/>
 <area shape="rect" id="node10" href="$classcalc_1_1_ema__u16.html" title="Exponential Moving Average class (u16) " alt="" coords="353,897,463,970"/>

@@ -86,7 +86,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classapi_1_1_ev_info_object.html" target="_top" xlink:title="Event Informatin Object. ">
+<g id="a_node3"><a xlink:href="classapi_1_1_ev_info_object.html" target="_top" xlink:title="Event Information Object. ">
 <polygon fill="none" stroke="black" points="31.9238,-607 31.9238,-661 124.076,-661 124.076,-607 31.9238,-607"/>
 <text text-anchor="middle" x="78" y="-649" font-family="Helvetica,sans-Serif" font-size="10.00">api::EvInfoObject</text>
 <polyline fill="none" stroke="black" points="31.9238,-643 124.076,-643 "/>
@@ -103,7 +103,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="API Information Object. ">
+<g id="a_node4"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="Information Object. ">
 <polygon fill="none" stroke="black" points="38.7588,-744 38.7588,-798 119.241,-798 119.241,-744 38.7588,-744"/>
 <text text-anchor="middle" x="79" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">api::InfoObject</text>
 <polyline fill="none" stroke="black" points="38.7588,-780 119.241,-780 "/>
@@ -120,7 +120,7 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node5"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="102.79,-881 102.79,-935 185.21,-935 185.21,-881 102.79,-881"/>
 <text text-anchor="middle" x="144" y="-923" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="102.79,-917 185.21,-917 "/>
@@ -137,7 +137,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="WorkObject Class. ">
+<g id="a_node7"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="Work Object. ">
 <polygon fill="none" stroke="black" points="137.914,-699 137.914,-843 280.086,-843 280.086,-699 137.914,-699"/>
 <text text-anchor="middle" x="209" y="-831" font-family="Helvetica,sans-Serif" font-size="10.00">api::WorkObject</text>
 <polyline fill="none" stroke="black" points="137.914,-825 280.086,-825 "/>

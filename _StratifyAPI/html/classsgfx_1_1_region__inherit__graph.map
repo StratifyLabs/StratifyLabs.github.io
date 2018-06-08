@@ -1,5 +1,5 @@
 <map id="sgfx::Region" name="sgfx::Region">
-<area shape="rect" id="node2" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Informatin Object. " alt="" coords="5,251,139,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="18,129,125,202"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="17,6,127,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Information Object. " alt="" coords="5,251,139,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="18,129,125,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="17,6,127,79"/>
 </map>

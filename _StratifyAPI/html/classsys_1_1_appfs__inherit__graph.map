@@ -1,5 +1,5 @@
 <map id="sys::Appfs" name="sys::Appfs">
 <area shape="rect" id="node2" href="$classapi_1_1_sys_info_object.html" title="System Info Object. " alt="" coords="5,251,133,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="16,129,123,202"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="14,6,124,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="16,129,123,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="14,6,124,79"/>
 </map>

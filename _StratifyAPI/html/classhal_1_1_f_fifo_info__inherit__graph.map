@@ -1,5 +1,5 @@
 <map id="hal::FFifoInfo" name="hal::FFifoInfo">
 <area shape="rect" id="node2" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="4,251,131,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="14,129,121,202"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="13,6,123,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="14,129,121,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="13,6,123,79"/>
 </map>

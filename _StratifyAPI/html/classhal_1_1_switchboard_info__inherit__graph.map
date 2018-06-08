@@ -1,5 +1,5 @@
 <map id="hal::SwitchboardInfo" name="hal::SwitchboardInfo">
 <area shape="rect" id="node2" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="38,251,164,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="48,129,155,202"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="46,6,156,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="48,129,155,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="46,6,156,79"/>
 </map>

@@ -22,7 +22,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classapi_1_1_calc_info_object.html" target="_top" xlink:title="Format Infomation Object. ">
+<g id="a_node2"><a xlink:href="classapi_1_1_calc_info_object.html" target="_top" xlink:title="Calc Infomation Object. ">
 <polygon fill="none" stroke="black" points="1.75635,-123 1.75635,-177 102.244,-177 102.244,-123 1.75635,-123"/>
 <text text-anchor="middle" x="52" y="-165" font-family="Helvetica,sans-Serif" font-size="10.00">api::CalcInfoObject</text>
 <polyline fill="none" stroke="black" points="1.75635,-159 102.244,-159 "/>
@@ -39,7 +39,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="API Information Object. ">
+<g id="a_node3"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="Information Object. ">
 <polygon fill="none" stroke="black" points="11.7588,-215 11.7588,-269 92.2412,-269 92.2412,-215 11.7588,-215"/>
 <text text-anchor="middle" x="52" y="-257" font-family="Helvetica,sans-Serif" font-size="10.00">api::InfoObject</text>
 <polyline fill="none" stroke="black" points="11.7588,-251 92.2412,-251 "/>
@@ -56,7 +56,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node4"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="10.7896,-307 10.7896,-361 93.2104,-361 93.2104,-307 10.7896,-307"/>
 <text text-anchor="middle" x="52" y="-349" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="10.7896,-343 93.2104,-343 "/>

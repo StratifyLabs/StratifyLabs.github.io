@@ -164,7 +164,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classapi_1_1_sgfx_info_object.html" target="_top" xlink:title="Sgfx Informatin Object. ">
+<g id="a_node5"><a xlink:href="classapi_1_1_sgfx_info_object.html" target="_top" xlink:title="Sgfx Information Object. ">
 <polygon fill="none" stroke="black" points="184.754,-235 184.754,-289 285.246,-289 285.246,-235 184.754,-235"/>
 <text text-anchor="middle" x="235" y="-277" font-family="Helvetica,sans-Serif" font-size="10.00">api::SgfxInfoObject</text>
 <polyline fill="none" stroke="black" points="184.754,-271 285.246,-271 "/>
@@ -181,7 +181,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="API Information Object. ">
+<g id="a_node6"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="Information Object. ">
 <polygon fill="none" stroke="black" points="194.759,-492 194.759,-546 275.241,-546 275.241,-492 194.759,-492"/>
 <text text-anchor="middle" x="235" y="-534" font-family="Helvetica,sans-Serif" font-size="10.00">api::InfoObject</text>
 <polyline fill="none" stroke="black" points="194.759,-528 275.241,-528 "/>
@@ -198,7 +198,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node7"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="193.79,-686 193.79,-740 276.21,-740 276.21,-686 193.79,-686"/>
 <text text-anchor="middle" x="235" y="-728" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="193.79,-722 276.21,-722 "/>

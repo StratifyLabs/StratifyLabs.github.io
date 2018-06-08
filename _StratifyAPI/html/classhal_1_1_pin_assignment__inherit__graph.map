@@ -10,8 +10,8 @@
 <area shape="rect" id="node21" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; dac_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const dac\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="1615,638,1792,831"/>
 <area shape="rect" id="node23" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2c_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2c\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="1817,638,1989,831"/>
 <area shape="rect" id="node2" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="931,257,1057,330"/>
-<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="941,131,1048,205"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="940,6,1049,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="941,131,1048,205"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="940,6,1049,79"/>
 <area shape="rect" id="node6" href="$classhal_1_1_i2_s_pin_assignment.html" title="I2S Pin Assignment. " alt="" coords="13,883,168,957"/>
 <area shape="rect" id="node8" href="$classhal_1_1_usb_pin_assignment.html" title="USB Pin Assignment. " alt="" coords="211,883,369,957"/>
 <area shape="rect" id="node10" href="$classhal_1_1_eint_pin_assignment.html" title="EINT Pin Assignment. " alt="" coords="413,883,571,957"/>

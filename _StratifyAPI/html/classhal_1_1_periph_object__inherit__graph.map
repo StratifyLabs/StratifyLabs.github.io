@@ -14,11 +14,11 @@
 <area shape="rect" id="node30" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; eint_info\l_t, eint_attr_t, &#39;e&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1588,1639,1735,1846"/>
 <area shape="rect" id="node32" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pio_info\l_t, pio_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1419,1639,1561,1846"/>
 <area shape="rect" id="node2" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="1454,899,1599,1013"/>
-<area shape="rect" id="node3" href="$classapi_1_1_hal_work_object.html" title="Hal Object Class. " alt="" coords="1459,774,1593,847"/>
+<area shape="rect" id="node3" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="1459,774,1593,847"/>
 <area shape="rect" id="node4" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="1473,502,1580,722"/>
-<area shape="rect" id="node5" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="1458,377,1595,450"/>
-<area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="1432,131,1621,325"/>
-<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="1472,6,1581,79"/>
+<area shape="rect" id="node5" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="1458,377,1595,450"/>
+<area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="1432,131,1621,325"/>
+<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="1472,6,1581,79"/>
 <area shape="rect" id="node10" href="$classhal_1_1_core.html" title="Core Class. " alt="" coords="619,1918,796,2071"/>
 <area shape="rect" id="node12" href="$classhal_1_1_adc.html" title="ADC Peripheral Class. " alt="" coords="852,1945,937,2045"/>
 <area shape="rect" id="node14" href="$classhal_1_1_pwm.html" title="PWM Class. " alt="" coords="21,1905,141,2085"/>

@@ -122,7 +122,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classapi_1_1_draw_work_object.html" target="_top" xlink:title="State Machine Work Object Class. ">
+<g id="a_node4"><a xlink:href="classapi_1_1_draw_work_object.html" target="_top" xlink:title="Draw Work Object. ">
 <polygon fill="none" stroke="black" points="14.854,-507 14.854,-561 125.146,-561 125.146,-507 14.854,-507"/>
 <text text-anchor="middle" x="70" y="-549" font-family="Helvetica,sans-Serif" font-size="10.00">api::DrawWorkObject</text>
 <polyline fill="none" stroke="black" points="14.854,-543 125.146,-543 "/>
@@ -139,7 +139,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="WorkObject Class. ">
+<g id="a_node5"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="Work Object. ">
 <polygon fill="none" stroke="black" points="-0.0859375,-599 -0.0859375,-743 142.086,-743 142.086,-599 -0.0859375,-599"/>
 <text text-anchor="middle" x="71" y="-731" font-family="Helvetica,sans-Serif" font-size="10.00">api::WorkObject</text>
 <polyline fill="none" stroke="black" points="-0.0859375,-725 142.086,-725 "/>
@@ -165,7 +165,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
-<g id="a_node6"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node6"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="93.7896,-781 93.7896,-835 176.21,-835 176.21,-781 93.7896,-781"/>
 <text text-anchor="middle" x="135" y="-823" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="93.7896,-817 176.21,-817 "/>
@@ -182,7 +182,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="API Information Object. ">
+<g id="a_node9"><a xlink:href="classapi_1_1_info_object.html" target="_top" xlink:title="Information Object. ">
 <polygon fill="none" stroke="black" points="159.759,-644 159.759,-698 240.241,-698 240.241,-644 159.759,-644"/>
 <text text-anchor="middle" x="200" y="-686" font-family="Helvetica,sans-Serif" font-size="10.00">api::InfoObject</text>
 <polyline fill="none" stroke="black" points="159.759,-680 240.241,-680 "/>

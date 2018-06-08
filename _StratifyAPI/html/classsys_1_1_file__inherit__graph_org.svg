@@ -21,7 +21,7 @@
 <text text-anchor="start" x="892.759" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ fileno()</text>
 <text text-anchor="start" x="892.759" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ flags()</text>
 <text text-anchor="start" x="892.759" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ gets()</text>
-<text text-anchor="start" x="892.759" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 21 more...</text>
+<text text-anchor="start" x="892.759" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
 <text text-anchor="start" x="892.759" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ name()</text>
 <text text-anchor="start" x="892.759" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
 <text text-anchor="start" x="892.759" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
@@ -47,7 +47,7 @@
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="classapi_1_1_hal_work_object.html" target="_top" xlink:title="Hal Object Class. ">
+<g id="a_node9"><a xlink:href="classapi_1_1_hal_work_object.html" target="_top" xlink:title="Hal Work Object. ">
 <polygon fill="none" stroke="black" points="874.019,-1392 874.019,-1446 975.981,-1446 975.981,-1392 874.019,-1392"/>
 <text text-anchor="middle" x="925" y="-1434" font-family="Helvetica,sans-Serif" font-size="10.00">api::HalWorkObject</text>
 <polyline fill="none" stroke="black" points="874.019,-1428 975.981,-1428 "/>
@@ -81,9 +81,9 @@
 <text text-anchor="start" x="1001.61" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">+ free_ram()</text>
 <text text-anchor="start" x="1001.61" y="-1373" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_kernel_version()</text>
 <text text-anchor="start" x="1001.61" y="-1363" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_version()</text>
-<text text-anchor="start" x="1001.61" y="-1353" font-family="Helvetica,sans-Serif" font-size="10.00">+ hibernate()</text>
-<text text-anchor="start" x="1001.61" y="-1343" font-family="Helvetica,sans-Serif" font-size="10.00">+ launch()</text>
-<text text-anchor="start" x="1001.61" y="-1333" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
+<text text-anchor="start" x="1001.61" y="-1353" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_version()</text>
+<text text-anchor="start" x="1001.61" y="-1343" font-family="Helvetica,sans-Serif" font-size="10.00">+ hibernate()</text>
+<text text-anchor="start" x="1001.61" y="-1333" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
 </a>
 </g>
 </g>
@@ -94,7 +94,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classapi_1_1_sys_work_object.html" target="_top" xlink:title="System Work Object Class. ">
+<g id="a_node2"><a xlink:href="classapi_1_1_sys_work_object.html" target="_top" xlink:title="System Work Object. ">
 <polygon fill="none" stroke="black" points="873.187,-1755 873.187,-1809 976.813,-1809 976.813,-1755 873.187,-1755"/>
 <text text-anchor="middle" x="925" y="-1797" font-family="Helvetica,sans-Serif" font-size="10.00">api::SysWorkObject</text>
 <polyline fill="none" stroke="black" points="873.187,-1791 976.813,-1791 "/>
@@ -111,7 +111,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="WorkObject Class. ">
+<g id="a_node3"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="Work Object. ">
 <polygon fill="none" stroke="black" points="853.914,-1849 853.914,-1993 996.086,-1993 996.086,-1849 853.914,-1849"/>
 <text text-anchor="middle" x="925" y="-1981" font-family="Helvetica,sans-Serif" font-size="10.00">api::WorkObject</text>
 <polyline fill="none" stroke="black" points="853.914,-1975 996.086,-1975 "/>
@@ -137,7 +137,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node4"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="883.79,-2033 883.79,-2087 966.21,-2087 966.21,-2033 883.79,-2033"/>
 <text text-anchor="middle" x="925" y="-2075" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="883.79,-2069 966.21,-2069 "/>

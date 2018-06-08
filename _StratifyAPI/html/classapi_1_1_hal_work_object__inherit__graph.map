@@ -1,9 +1,9 @@
 <map id="api::HalWorkObject" name="api::HalWorkObject">
 <area shape="rect" id="node6" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="1258,899,1403,1013"/>
 <area shape="rect" id="node2" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="1277,502,1384,722"/>
-<area shape="rect" id="node3" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="1262,377,1399,450"/>
-<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="1236,131,1425,325"/>
-<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="1276,6,1385,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="1262,377,1399,450"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="1236,131,1425,325"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="1276,6,1385,79"/>
 <area shape="rect" id="node7" href="$classhal_1_1_c_fifo.html" title="Channeled FIFO Class. " alt="" coords="809,1098,908,1251"/>
 <area shape="rect" id="node8" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="933,1098,1064,1251"/>
 <area shape="rect" id="node9" href="$classhal_1_1_f_fifo.html" title="FFifo Class. " alt="" coords="1089,1105,1177,1245"/>

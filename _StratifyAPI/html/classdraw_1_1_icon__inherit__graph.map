@@ -1,9 +1,9 @@
 <map id="draw::Icon" name="draw::Icon">
 <area shape="rect" id="node2" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="19,494,177,794"/>
-<area shape="rect" id="node3" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="26,371,173,445"/>
-<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,195,322"/>
-<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="130,6,240,79"/>
-<area shape="rect" id="node8" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="218,189,325,262"/>
+<area shape="rect" id="node3" href="$classapi_1_1_draw_work_object.html" title="Draw Work Object. " alt="" coords="26,371,173,445"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="5,129,195,322"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="130,6,240,79"/>
+<area shape="rect" id="node8" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="218,189,325,262"/>
 <area shape="rect" id="node6" href="$classdraw_1_1_icon_attr.html" title="Icon Attributes Class. " alt="" coords="202,561,344,727"/>
 <area shape="rect" id="node7" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="203,371,340,445"/>
 </map>

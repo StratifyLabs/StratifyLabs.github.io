@@ -18,8 +18,8 @@
 <area shape="rect" id="node30" href="$classhal_1_1_switchboard_connection.html" title="Switchboard Connection Class. " alt="" coords="3006,395,3193,562"/>
 <area shape="rect" id="node31" href="$classhal_1_1_switchboard_info.html" title="Switchboard Connection Class. " alt="" coords="3218,409,3411,549"/>
 <area shape="rect" id="node32" href="$classhal_1_1_switchboard_terminal.html" title="Switchboard Terminal Class. " alt="" coords="3435,389,3604,569"/>
-<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="1418,131,1525,205"/>
-<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="1417,6,1527,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="1418,131,1525,205"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="1417,6,1527,79"/>
 <area shape="rect" id="node11" href="$classhal_1_1_i2_s_pin_assignment.html" title="I2S Pin Assignment. " alt="" coords="962,883,1117,957"/>
 <area shape="rect" id="node13" href="$classhal_1_1_usb_pin_assignment.html" title="USB Pin Assignment. " alt="" coords="1611,883,1769,957"/>
 <area shape="rect" id="node15" href="$classhal_1_1_eint_pin_assignment.html" title="EINT Pin Assignment. " alt="" coords="1405,883,1563,957"/>

@@ -9,9 +9,9 @@
 <area shape="rect" id="node17" href="$classdraw_1_1_text_box.html" title="Text Box. " alt="" coords="1208,850,1335,1017"/>
 <area shape="rect" id="node18" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="1359,843,1539,1023"/>
 <area shape="rect" id="node30" href="$classui_1_1_tab.html" title="Tab Class. " alt="" coords="1648,877,1761,990"/>
-<area shape="rect" id="node2" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="801,371,948,445"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="780,129,969,322"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="820,6,929,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_draw_work_object.html" title="Draw Work Object. " alt="" coords="801,371,948,445"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="780,129,969,322"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="820,6,929,79"/>
 <area shape="rect" id="node6" href="$classdraw_1_1_bar_graph.html" title="Bar Graph Element. " alt="" coords="5,1119,120,1193"/>
 <area shape="rect" id="node7" href="$classdraw_1_1_line_graph.html" title="Line Graph Drawing. " alt="" coords="144,1119,263,1193"/>
 <area shape="rect" id="node12" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="560,1099,691,1213"/>

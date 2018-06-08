@@ -3,6 +3,6 @@
 <area shape="rect" id="node3" href="$classvar_1_1_item_object.html" title="Abstract Item for storing binary data. " alt="" coords="4,6,141,146"/>
 <area shape="rect" id="node4" href="$classvar_1_1_item.html" title="Item Class for storing and accessing binary data. " alt="" coords="73,198,228,471"/>
 <area shape="rect" id="node5" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="248,641,375,714"/>
-<area shape="rect" id="node6" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="258,298,365,371"/>
-<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="257,39,367,113"/>
+<area shape="rect" id="node6" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="258,298,365,371"/>
+<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="257,39,367,113"/>
 </map>

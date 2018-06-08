@@ -1,8 +1,8 @@
 <map id="ev::EventHandler" name="ev::EventHandler">
 <area shape="rect" id="node5" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="478,657,657,837"/>
 <area shape="rect" id="node2" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="502,371,633,445"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="473,129,663,322"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="513,6,623,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="473,129,663,322"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="513,6,623,79"/>
 <area shape="rect" id="node6" href="$classui_1_1_linked_element.html" title="Linked Element. " alt="" coords="428,893,557,1046"/>
 <area shape="rect" id="node16" href="$classui_1_1_tab_bar.html" title="Tab Bar Class. " alt="" coords="583,886,705,1053"/>
 <area shape="rect" id="node7" href="$classui_1_1_list.html" title="List Class. " alt="" coords="106,1102,315,1389"/>

@@ -1,5 +1,5 @@
 <map id="sys::Assets" name="sys::Assets">
 <area shape="rect" id="node2" href="$classapi_1_1_sys_info_object.html" title="System Info Object. " alt="" coords="15,251,144,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="26,129,133,202"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="25,6,135,79"/>
+<area shape="rect" id="node3" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="26,129,133,202"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="25,6,135,79"/>
 </map>

@@ -2,9 +2,9 @@
 <area shape="rect" id="node2" href="$classui_1_1_linked_element.html" title="Linked Element. " alt="" coords="103,1073,232,1226"/>
 <area shape="rect" id="node3" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="78,843,257,1023"/>
 <area shape="rect" id="node4" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="5,494,163,794"/>
-<area shape="rect" id="node5" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="12,371,159,445"/>
-<area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="72,129,261,322"/>
+<area shape="rect" id="node5" href="$classapi_1_1_draw_work_object.html" title="Draw Work Object. " alt="" coords="12,371,159,445"/>
+<area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="72,129,261,322"/>
 <area shape="rect" id="node9" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="185,371,316,445"/>
-<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="112,6,221,79"/>
+<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="112,6,221,79"/>
 <area shape="rect" id="node8" href="$classev_1_1_event_handler.html" title="Event Handler Class. " alt="" coords="187,587,319,701"/>
 </map>

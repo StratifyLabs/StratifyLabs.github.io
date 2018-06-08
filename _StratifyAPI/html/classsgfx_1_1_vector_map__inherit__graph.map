@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$classvar_1_1_item.html" title="{var::Item\&lt; sg_vector\l_map_t \&gt;\n||+ Item()\l+ Item()\l+ Item()\l+ data_const()\l+ item()\l+ operator const sg_vector\l_map_t &amp;()\l+ operator const sg_vector\l_map_t *()\l+ size()\l+ value()\l# data()\l# data_void()\l# data_void_const()\l# set()\l# set()\l}" alt="" coords="48,534,227,821"/>
 <area shape="rect" id="node3" href="$classvar_1_1_item_object.html" title="Abstract Item for storing binary data. " alt="" coords="4,6,141,146"/>
 <area shape="rect" id="node4" href="$classvar_1_1_item.html" title="Item Class for storing and accessing binary data. " alt="" coords="73,198,228,471"/>
-<area shape="rect" id="node5" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Informatin Object. " alt="" coords="252,641,385,714"/>
-<area shape="rect" id="node6" href="$classapi_1_1_info_object.html" title="API Information Object. " alt="" coords="265,298,372,371"/>
-<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="264,39,373,113"/>
+<area shape="rect" id="node5" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Information Object. " alt="" coords="252,641,385,714"/>
+<area shape="rect" id="node6" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="265,298,372,371"/>
+<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="264,39,373,113"/>
 </map>

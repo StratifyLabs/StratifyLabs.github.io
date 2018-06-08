@@ -1,0 +1,11 @@
+<map id="api::DspWorkObject" name="api::DspWorkObject">
+<area shape="rect" id="node4" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="574,635,711,802"/>
+<area shape="rect" id="node10" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="910,871,1089,1038"/>
+<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="816,131,1005,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="856,6,965,79"/>
+<area shape="rect" id="node5" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="4,871,168,1038"/>
+<area shape="rect" id="node6" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="193,885,357,1025"/>
+<area shape="rect" id="node7" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="383,871,544,1038"/>
+<area shape="rect" id="node8" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="570,871,715,1038"/>
+<area shape="rect" id="node9" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="740,865,885,1045"/>
+</map>

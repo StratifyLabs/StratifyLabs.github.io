@@ -1,8 +1,8 @@
 <map id="api::DrawWorkObject" name="api::DrawWorkObject">
 <area shape="rect" id="node4" href="$classdraw_1_1_animation.html" title="Animation Class. " alt="" coords="655,581,771,707"/>
 <area shape="rect" id="node5" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="795,494,953,794"/>
-<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="699,129,888,322"/>
-<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="738,6,848,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="699,129,888,322"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="738,6,848,79"/>
 <area shape="rect" id="node6" href="$classdraw_1_1_graph.html" title="Abstract Graph Class. " alt="" coords="63,863,203,1003"/>
 <area shape="rect" id="node9" href="$classdraw_1_1_icon.html" title="Icon Class. " alt="" coords="227,883,353,983"/>
 <area shape="rect" id="node10" href="$classdraw_1_1_image.html" title="Image Class. " alt="" coords="379,870,505,997"/>

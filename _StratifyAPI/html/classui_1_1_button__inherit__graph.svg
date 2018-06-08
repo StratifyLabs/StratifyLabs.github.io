@@ -124,7 +124,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classapi_1_1_ui_work_object.html" target="_top" xlink:title="User Interface Work Object Class. ">
+<g id="a_node2"><a xlink:href="classapi_1_1_ui_work_object.html" target="_top" xlink:title="User Interface Work Object. ">
 <polygon fill="none" stroke="black" points="55.7998,-365 55.7998,-419 152.2,-419 152.2,-365 55.7998,-365"/>
 <text text-anchor="middle" x="104" y="-407" font-family="Helvetica,sans-Serif" font-size="10.00">api::UiWorkObject</text>
 <polyline fill="none" stroke="black" points="55.7998,-401 152.2,-401 "/>
@@ -141,7 +141,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="WorkObject Class. ">
+<g id="a_node3"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="Work Object. ">
 <polygon fill="none" stroke="black" points="32.9141,-457 32.9141,-601 175.086,-601 175.086,-457 32.9141,-457"/>
 <text text-anchor="middle" x="104" y="-589" font-family="Helvetica,sans-Serif" font-size="10.00">api::WorkObject</text>
 <polyline fill="none" stroke="black" points="32.9141,-583 175.086,-583 "/>
@@ -167,7 +167,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node4"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="62.7896,-639 62.7896,-693 145.21,-693 145.21,-639 62.7896,-639"/>
 <text text-anchor="middle" x="104" y="-681" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="62.7896,-675 145.21,-675 "/>

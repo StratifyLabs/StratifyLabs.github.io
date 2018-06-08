@@ -1,6 +1,17 @@
 <map id="var::Vector&lt; T &gt;" name="var::Vector&lt; T &gt;">
-<area shape="rect" id="node2" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="37,494,163,661"/>
-<area shape="rect" id="node3" href="$classapi_1_1_var_work_object.html" title="Format Work Object Class. " alt="" coords="32,371,167,445"/>
-<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,195,322"/>
-<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="45,6,155,79"/>
+<area shape="rect" id="node6" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="391,970,536,1123"/>
+<area shape="rect" id="node13" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q31_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="561,963,703,1130"/>
+<area shape="rect" id="node14" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q15_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="727,963,868,1130"/>
+<area shape="rect" id="node15" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; float32_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="892,963,1051,1130"/>
+<area shape="rect" id="node16" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; ComplexF32 \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="1076,963,1259,1130"/>
+<area shape="rect" id="node2" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="734,502,860,682"/>
+<area shape="rect" id="node3" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="729,377,864,450"/>
+<area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="703,131,892,325"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="742,6,852,79"/>
+<area shape="rect" id="node7" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="4,1199,168,1366"/>
+<area shape="rect" id="node8" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="193,1213,357,1353"/>
+<area shape="rect" id="node9" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="383,1199,544,1366"/>
+<area shape="rect" id="node10" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="570,1199,715,1366"/>
+<area shape="rect" id="node11" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="740,1193,885,1373"/>
+<area shape="rect" id="node12" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="977,1199,1156,1366"/>
 </map>

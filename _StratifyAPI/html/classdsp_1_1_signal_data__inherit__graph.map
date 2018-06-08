@@ -1,0 +1,14 @@
+<map id="dsp::SignalData&lt; T, BigType &gt;" name="dsp::SignalData&lt; T, BigType &gt;">
+<area shape="rect" id="node8" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="4,1394,168,1561"/>
+<area shape="rect" id="node9" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="193,1407,357,1547"/>
+<area shape="rect" id="node10" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="383,1394,544,1561"/>
+<area shape="rect" id="node11" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="570,1394,715,1561"/>
+<area shape="rect" id="node12" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="740,1387,885,1567"/>
+<area shape="rect" id="node13" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="910,1394,1089,1561"/>
+<area shape="rect" id="node2" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="431,939,547,1106"/>
+<area shape="rect" id="node3" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="418,707,544,887"/>
+<area shape="rect" id="node4" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="408,377,543,450"/>
+<area shape="rect" id="node5" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="460,131,649,325"/>
+<area shape="rect" id="node7" href="$classapi_1_1_dsp_work_object.html" title="DSP Work Object. " alt="" coords="492,475,691,682"/>
+<area shape="rect" id="node6" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="500,6,609,79"/>
+</map>

@@ -97,7 +97,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classapi_1_1_ui_work_object.html" target="_top" xlink:title="User Interface Work Object Class. ">
+<g id="a_node3"><a xlink:href="classapi_1_1_ui_work_object.html" target="_top" xlink:title="User Interface Work Object. ">
 <polygon fill="none" stroke="black" points="14.7998,-512 14.7998,-566 111.2,-566 111.2,-512 14.7998,-512"/>
 <text text-anchor="middle" x="63" y="-554" font-family="Helvetica,sans-Serif" font-size="10.00">api::UiWorkObject</text>
 <polyline fill="none" stroke="black" points="14.7998,-548 111.2,-548 "/>
@@ -114,7 +114,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="WorkObject Class. ">
+<g id="a_node4"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="Work Object. ">
 <polygon fill="none" stroke="black" points="37.9141,-751 37.9141,-895 180.086,-895 180.086,-751 37.9141,-751"/>
 <text text-anchor="middle" x="109" y="-883" font-family="Helvetica,sans-Serif" font-size="10.00">api::WorkObject</text>
 <polyline fill="none" stroke="black" points="37.9141,-877 180.086,-877 "/>
@@ -140,7 +140,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="classapi_1_1_sys_work_object.html" target="_top" xlink:title="System Work Object Class. ">
+<g id="a_node9"><a xlink:href="classapi_1_1_sys_work_object.html" target="_top" xlink:title="System Work Object. ">
 <polygon fill="none" stroke="black" points="110.187,-659 110.187,-713 213.813,-713 213.813,-659 110.187,-659"/>
 <text text-anchor="middle" x="162" y="-701" font-family="Helvetica,sans-Serif" font-size="10.00">api::SysWorkObject</text>
 <polyline fill="none" stroke="black" points="110.187,-695 213.813,-695 "/>
@@ -157,7 +157,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node5"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="67.7896,-933 67.7896,-987 150.21,-987 150.21,-933 67.7896,-933"/>
 <text text-anchor="middle" x="109" y="-975" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="67.7896,-969 150.21,-969 "/>
@@ -194,7 +194,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="classapi_1_1_hal_work_object.html" target="_top" xlink:title="Hal Object Class. ">
+<g id="a_node7"><a xlink:href="classapi_1_1_hal_work_object.html" target="_top" xlink:title="Hal Work Object. ">
 <polygon fill="none" stroke="black" points="134.019,-325 134.019,-379 235.981,-379 235.981,-325 134.019,-325"/>
 <text text-anchor="middle" x="185" y="-367" font-family="Helvetica,sans-Serif" font-size="10.00">api::HalWorkObject</text>
 <polyline fill="none" stroke="black" points="134.019,-361 235.981,-361 "/>
@@ -223,7 +223,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="146.759" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ fileno()</text>
 <text text-anchor="start" x="146.759" y="-533" font-family="Helvetica,sans-Serif" font-size="10.00">+ flags()</text>
 <text text-anchor="start" x="146.759" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+ gets()</text>
-<text text-anchor="start" x="146.759" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">and 21 more...</text>
+<text text-anchor="start" x="146.759" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
 <text text-anchor="start" x="146.759" y="-503" font-family="Helvetica,sans-Serif" font-size="10.00">+ name()</text>
 <text text-anchor="start" x="146.759" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
 <text text-anchor="start" x="146.759" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>

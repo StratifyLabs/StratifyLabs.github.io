@@ -1,5 +1,5 @@
 <map id="sys::Mutex" name="sys::Mutex">
-<area shape="rect" id="node2" href="$classapi_1_1_sys_work_object.html" title="System Work Object Class. " alt="" coords="31,371,168,445"/>
-<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,195,322"/>
-<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="45,6,155,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="31,371,168,445"/>
+<area shape="rect" id="node3" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="5,129,195,322"/>
+<area shape="rect" id="node4" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="45,6,155,79"/>
 </map>

@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$classui_1_1_progress_tab.html" title="Tab Progress Class. " alt="" coords="42,1006,157,1106"/>
 <area shape="rect" id="node3" href="$classui_1_1_tab.html" title="Tab Class. " alt="" coords="43,843,156,957"/>
 <area shape="rect" id="node4" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="21,494,179,794"/>
-<area shape="rect" id="node5" href="$classapi_1_1_draw_work_object.html" title="State Machine Work Object Class. " alt="" coords="26,371,173,445"/>
-<area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="5,129,195,322"/>
-<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="45,6,155,79"/>
+<area shape="rect" id="node5" href="$classapi_1_1_draw_work_object.html" title="Draw Work Object. " alt="" coords="26,371,173,445"/>
+<area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="5,129,195,322"/>
+<area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="45,6,155,79"/>
 </map>

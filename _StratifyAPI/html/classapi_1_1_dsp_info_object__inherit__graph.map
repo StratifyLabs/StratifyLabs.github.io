@@ -1,0 +1,11 @@
+<map id="api::DspInfoObject" name="api::DspInfoObject">
+<area shape="rect" id="node4" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; float32_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="5,598,181,751"/>
+<area shape="rect" id="node6" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; q15_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="388,598,547,751"/>
+<area shape="rect" id="node8" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; q31_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="206,598,364,751"/>
+<area shape="rect" id="node10" href="$classdsp_1_1_complex.html" title="Complex Class. " alt="" coords="205,382,339,535"/>
+<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="125,131,232,205"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="124,6,233,79"/>
+<area shape="rect" id="node5" href="$classdsp_1_1_complex_f32.html" title="Complex F32 Value. " alt="" coords="30,803,156,877"/>
+<area shape="rect" id="node7" href="$classdsp_1_1_complex_q15.html" title="Complex Q15 Value. " alt="" coords="404,803,532,877"/>
+<area shape="rect" id="node9" href="$classdsp_1_1_complex_q31.html" title="Complex Q31 Value. " alt="" coords="221,803,349,877"/>
+</map>

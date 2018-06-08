@@ -66,73 +66,73 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="classsys_1_1_aio.html" target="_top" xlink:title="Asynchronous IO Class. ">
-<polygon fill="none" stroke="black" points="549.54,-1571 549.54,-1695 624.46,-1695 624.46,-1571 549.54,-1571"/>
-<text text-anchor="middle" x="587" y="-1683" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Aio</text>
-<polyline fill="none" stroke="black" points="549.54,-1677 624.46,-1677 "/>
-<text text-anchor="middle" x="587" y="-1665" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="549.54,-1659 624.46,-1659 "/>
-<text text-anchor="start" x="557.54" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ Aio()</text>
-<text text-anchor="start" x="557.54" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ Aio()</text>
-<text text-anchor="start" x="557.54" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ buf()</text>
-<text text-anchor="start" x="557.54" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ error()</text>
-<text text-anchor="start" x="557.54" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">+ is_busy()</text>
-<text text-anchor="start" x="557.54" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ is_done()</text>
-<text text-anchor="start" x="557.54" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
-<text text-anchor="start" x="557.54" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
+<polygon fill="none" stroke="black" points="544.54,-1571 544.54,-1695 619.46,-1695 619.46,-1571 544.54,-1571"/>
+<text text-anchor="middle" x="582" y="-1683" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Aio</text>
+<polyline fill="none" stroke="black" points="544.54,-1677 619.46,-1677 "/>
+<text text-anchor="middle" x="582" y="-1665" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="544.54,-1659 619.46,-1659 "/>
+<text text-anchor="start" x="552.54" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ Aio()</text>
+<text text-anchor="start" x="552.54" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ Aio()</text>
+<text text-anchor="start" x="552.54" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ buf()</text>
+<text text-anchor="start" x="552.54" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ error()</text>
+<text text-anchor="start" x="552.54" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">+ is_busy()</text>
+<text text-anchor="start" x="552.54" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ is_done()</text>
+<text text-anchor="start" x="552.54" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
+<text text-anchor="start" x="552.54" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ suspend()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node4 -->
 <g id="edge3" class="edge"><title>Node1&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M1096.45,-1780.21C973.866,-1777.55 707.509,-1766.02 633,-1716 625.004,-1710.63 618.251,-1703.38 612.592,-1695.4"/>
-<polygon fill="none" stroke="midnightblue" points="1096.72,-1783.71 1106.79,-1780.42 1096.86,-1776.72 1096.72,-1783.71"/>
+<path fill="none" stroke="midnightblue" d="M1097.15,-1780.31C973.999,-1777.83 703.498,-1766.63 628,-1716 619.866,-1710.55 613.017,-1703.14 607.299,-1695.01"/>
+<polygon fill="none" stroke="midnightblue" points="1097.11,-1783.81 1107.18,-1780.49 1097.24,-1776.81 1097.11,-1783.81"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="classsys_1_1_cli.html" target="_top" xlink:title="Command Line Interface class. ">
-<polygon fill="none" stroke="black" points="642.43,-1576 642.43,-1690 771.57,-1690 771.57,-1576 642.43,-1576"/>
-<text text-anchor="middle" x="707" y="-1678" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Cli</text>
-<polyline fill="none" stroke="black" points="642.43,-1672 771.57,-1672 "/>
-<text text-anchor="middle" x="707" y="-1660" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="642.43,-1654 771.57,-1654 "/>
-<text text-anchor="start" x="650.43" y="-1642" font-family="Helvetica,sans-Serif" font-size="10.00">+ Cli()</text>
-<text text-anchor="start" x="650.43" y="-1632" font-family="Helvetica,sans-Serif" font-size="10.00">+ at()</text>
-<text text-anchor="start" x="650.43" y="-1622" font-family="Helvetica,sans-Serif" font-size="10.00">+ count()</text>
-<text text-anchor="start" x="650.43" y="-1612" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_argument()</text>
-<text text-anchor="start" x="650.43" y="-1602" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_hex_value()</text>
-<text text-anchor="start" x="650.43" y="-1592" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_pin()</text>
-<text text-anchor="start" x="650.43" y="-1582" font-family="Helvetica,sans-Serif" font-size="10.00">and 13 more...</text>
+<polygon fill="none" stroke="black" points="637.43,-1576 637.43,-1690 766.57,-1690 766.57,-1576 637.43,-1576"/>
+<text text-anchor="middle" x="702" y="-1678" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Cli</text>
+<polyline fill="none" stroke="black" points="637.43,-1672 766.57,-1672 "/>
+<text text-anchor="middle" x="702" y="-1660" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="637.43,-1654 766.57,-1654 "/>
+<text text-anchor="start" x="645.43" y="-1642" font-family="Helvetica,sans-Serif" font-size="10.00">+ Cli()</text>
+<text text-anchor="start" x="645.43" y="-1632" font-family="Helvetica,sans-Serif" font-size="10.00">+ at()</text>
+<text text-anchor="start" x="645.43" y="-1622" font-family="Helvetica,sans-Serif" font-size="10.00">+ count()</text>
+<text text-anchor="start" x="645.43" y="-1612" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_argument()</text>
+<text text-anchor="start" x="645.43" y="-1602" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_hex_value()</text>
+<text text-anchor="start" x="645.43" y="-1592" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_pin()</text>
+<text text-anchor="start" x="645.43" y="-1582" font-family="Helvetica,sans-Serif" font-size="10.00">and 13 more...</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node5 -->
 <g id="edge4" class="edge"><title>Node1&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M1096.81,-1775.28C1003.95,-1765.9 834.267,-1745.34 781,-1716 769.074,-1709.43 758.072,-1700.2 748.397,-1690.29"/>
-<polygon fill="none" stroke="midnightblue" points="1096.62,-1778.77 1106.92,-1776.28 1097.31,-1771.81 1096.62,-1778.77"/>
+<path fill="none" stroke="midnightblue" d="M1096.73,-1775.43C1002.81,-1766.19 830.126,-1745.74 776,-1716 764.067,-1709.44 753.061,-1700.22 743.386,-1690.31"/>
+<polygon fill="none" stroke="midnightblue" points="1096.66,-1778.94 1106.95,-1776.42 1097.34,-1771.97 1096.66,-1778.94"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
 <g id="a_node6"><a xlink:href="classsys_1_1_dir.html" target="_top" xlink:title="Dir class. ">
-<polygon fill="none" stroke="black" points="789.54,-1571 789.54,-1695 864.46,-1695 864.46,-1571 789.54,-1571"/>
-<text text-anchor="middle" x="827" y="-1683" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Dir</text>
-<polyline fill="none" stroke="black" points="789.54,-1677 864.46,-1677 "/>
-<text text-anchor="middle" x="827" y="-1665" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="789.54,-1659 864.46,-1659 "/>
-<text text-anchor="start" x="797.54" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ Dir()</text>
-<text text-anchor="start" x="797.54" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Dir()</text>
-<text text-anchor="start" x="797.54" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ close()</text>
-<text text-anchor="start" x="797.54" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ count()</text>
-<text text-anchor="start" x="797.54" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">+ data()</text>
-<text text-anchor="start" x="797.54" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ dirp()</text>
-<text text-anchor="start" x="797.54" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
-<text text-anchor="start" x="797.54" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
+<polygon fill="none" stroke="black" points="784.759,-1571 784.759,-1695 865.241,-1695 865.241,-1571 784.759,-1571"/>
+<text text-anchor="middle" x="825" y="-1683" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Dir</text>
+<polyline fill="none" stroke="black" points="784.759,-1677 865.241,-1677 "/>
+<text text-anchor="middle" x="825" y="-1665" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="784.759,-1659 865.241,-1659 "/>
+<text text-anchor="start" x="792.759" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ Dir()</text>
+<text text-anchor="start" x="792.759" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Dir()</text>
+<text text-anchor="start" x="792.759" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ close()</text>
+<text text-anchor="start" x="792.759" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ count()</text>
+<text text-anchor="start" x="792.759" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">+ data()</text>
+<text text-anchor="start" x="792.759" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ dirp()</text>
+<text text-anchor="start" x="792.759" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
+<text text-anchor="start" x="792.759" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge"><title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M1097.01,-1780.85C1034.94,-1777.72 939.49,-1764.48 874,-1716 866.351,-1710.34 859.755,-1703.03 854.129,-1695.12"/>
-<polygon fill="none" stroke="midnightblue" points="1096.91,-1784.35 1107.05,-1781.28 1097.21,-1777.36 1096.91,-1784.35"/>
+<path fill="none" stroke="midnightblue" d="M1096.92,-1780.59C1034.99,-1777.24 939.831,-1763.82 874,-1716 866.218,-1710.35 859.446,-1703.05 853.628,-1695.14"/>
+<polygon fill="none" stroke="midnightblue" points="1096.79,-1784.08 1106.94,-1781.06 1097.12,-1777.09 1096.79,-1784.08"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
@@ -148,7 +148,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="890.759" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ fileno()</text>
 <text text-anchor="start" x="890.759" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ flags()</text>
 <text text-anchor="start" x="890.759" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ gets()</text>
-<text text-anchor="start" x="890.759" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 21 more...</text>
+<text text-anchor="start" x="890.759" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
 <text text-anchor="start" x="890.759" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ name()</text>
 <text text-anchor="start" x="890.759" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
 <text text-anchor="start" x="890.759" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
@@ -316,7 +316,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="1613.78" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ create()</text>
 <text text-anchor="start" x="1613.78" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_detachstate()</text>
 <text text-anchor="start" x="1613.78" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_policy()</text>
-<text text-anchor="start" x="1613.78" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 13 more...</text>
+<text text-anchor="start" x="1613.78" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
 <text text-anchor="start" x="1613.78" y="-1597" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_pid()</text>
 <text text-anchor="start" x="1613.78" y="-1587" font-family="Helvetica,sans-Serif" font-size="10.00">+ join()</text>
 <text text-anchor="start" x="1613.78" y="-1577" font-family="Helvetica,sans-Serif" font-size="10.00">+ join()</text>
@@ -332,7 +332,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="WorkObject Class. ">
+<g id="a_node2"><a xlink:href="classapi_1_1_work_object.html" target="_top" xlink:title="Work Object. ">
 <polygon fill="none" stroke="black" points="1087.91,-1849 1087.91,-1993 1230.09,-1993 1230.09,-1849 1087.91,-1849"/>
 <text text-anchor="middle" x="1159" y="-1981" font-family="Helvetica,sans-Serif" font-size="10.00">api::WorkObject</text>
 <polyline fill="none" stroke="black" points="1087.91,-1975 1230.09,-1975 "/>
@@ -358,7 +358,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="API Object Class. ">
+<g id="a_node3"><a xlink:href="classapi_1_1_api_object.html" target="_top" xlink:title="Application Programming Interface Object. ">
 <polygon fill="none" stroke="black" points="1117.79,-2033 1117.79,-2087 1200.21,-2087 1200.21,-2033 1117.79,-2033"/>
 <text text-anchor="middle" x="1159" y="-2075" font-family="Helvetica,sans-Serif" font-size="10.00">api::ApiObject</text>
 <polyline fill="none" stroke="black" points="1117.79,-2069 1200.21,-2069 "/>
@@ -387,12 +387,12 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node7&#45;&gt;Node8 -->
 <g id="edge7" class="edge"><title>Node7&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M876.858,-1555.83C875.568,-1553.86 874.28,-1551.91 873,-1550 848.452,-1513.28 818.018,-1472.37 798.315,-1446.42"/>
-<polygon fill="none" stroke="midnightblue" points="874.151,-1558.09 882.52,-1564.59 880.029,-1554.29 874.151,-1558.09"/>
+<path fill="none" stroke="midnightblue" d="M876.946,-1554.47C875.962,-1552.96 874.979,-1551.47 874,-1550 849.435,-1513.1 818.624,-1472.23 798.634,-1446.34"/>
+<polygon fill="none" stroke="midnightblue" points="874.231,-1556.72 882.584,-1563.23 880.118,-1552.93 874.231,-1556.72"/>
 </g>
 <!-- Node12 -->
 <g id="node12" class="node"><title>Node12</title>
-<g id="a_node12"><a xlink:href="classapi_1_1_hal_work_object.html" target="_top" xlink:title="Hal Object Class. ">
+<g id="a_node12"><a xlink:href="classapi_1_1_hal_work_object.html" target="_top" xlink:title="Hal Work Object. ">
 <polygon fill="none" stroke="black" points="872.019,-1392 872.019,-1446 973.981,-1446 973.981,-1392 872.019,-1392"/>
 <text text-anchor="middle" x="923" y="-1434" font-family="Helvetica,sans-Serif" font-size="10.00">api::HalWorkObject</text>
 <polyline fill="none" stroke="black" points="872.019,-1428 973.981,-1428 "/>
@@ -426,9 +426,9 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="999.612" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">+ free_ram()</text>
 <text text-anchor="start" x="999.612" y="-1373" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_kernel_version()</text>
 <text text-anchor="start" x="999.612" y="-1363" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_version()</text>
-<text text-anchor="start" x="999.612" y="-1353" font-family="Helvetica,sans-Serif" font-size="10.00">+ hibernate()</text>
-<text text-anchor="start" x="999.612" y="-1343" font-family="Helvetica,sans-Serif" font-size="10.00">+ launch()</text>
-<text text-anchor="start" x="999.612" y="-1333" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
+<text text-anchor="start" x="999.612" y="-1353" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_version()</text>
+<text text-anchor="start" x="999.612" y="-1343" font-family="Helvetica,sans-Serif" font-size="10.00">+ hibernate()</text>
+<text text-anchor="start" x="999.612" y="-1333" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
 </a>
 </g>
 </g>

@@ -1,0 +1,7 @@
+<map id="dsp::ComplexF32" name="dsp::ComplexF32">
+<area shape="rect" id="node2" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; float32_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="5,598,181,751"/>
+<area shape="rect" id="node3" href="$classapi_1_1_dsp_info_object.html" title="DSP Information Object. " alt="" coords="8,257,139,330"/>
+<area shape="rect" id="node6" href="$classdsp_1_1_complex.html" title="Complex Class. " alt="" coords="95,382,228,535"/>
+<area shape="rect" id="node4" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="20,131,127,205"/>
+<area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="18,6,128,79"/>
+</map>

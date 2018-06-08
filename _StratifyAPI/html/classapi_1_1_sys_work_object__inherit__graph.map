@@ -1,7 +1,7 @@
 <map id="api::SysWorkObject" name="api::SysWorkObject">
-<area shape="rect" id="node4" href="$classsys_1_1_aio.html" title="Asynchronous IO Class. " alt="" coords="738,529,837,695"/>
-<area shape="rect" id="node5" href="$classsys_1_1_cli.html" title="Command Line Interface class. " alt="" coords="862,535,1033,689"/>
-<area shape="rect" id="node6" href="$classsys_1_1_dir.html" title="Dir class. " alt="" coords="1058,529,1157,695"/>
+<area shape="rect" id="node4" href="$classsys_1_1_aio.html" title="Asynchronous IO Class. " alt="" coords="731,529,831,695"/>
+<area shape="rect" id="node5" href="$classsys_1_1_cli.html" title="Command Line Interface class. " alt="" coords="855,535,1027,689"/>
+<area shape="rect" id="node6" href="$classsys_1_1_dir.html" title="Dir class. " alt="" coords="1052,529,1159,695"/>
 <area shape="rect" id="node7" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="1182,502,1289,722"/>
 <area shape="rect" id="node51" href="$classsys_1_1_messenger.html" title="Messenger Class. " alt="" coords="1314,535,1472,689"/>
 <area shape="rect" id="node52" href="$classsys_1_1_mq.html" title="Message Queue Class. " alt="" coords="1498,529,1603,695"/>
@@ -10,10 +10,10 @@
 <area shape="rect" id="node55" href="$classsys_1_1_signal.html" title="Class for sending Signal events (see SignalHandler for an example) " alt="" coords="1880,535,1991,689"/>
 <area shape="rect" id="node57" href="$classsys_1_1_task.html" title="Task Class. " alt="" coords="2016,535,2123,689"/>
 <area shape="rect" id="node58" href="$classsys_1_1_thread.html" title="Thread Class. " alt="" coords="2146,502,2283,722"/>
-<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="WorkObject Class. " alt="" coords="1456,131,1645,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="API Object Class. " alt="" coords="1496,6,1605,79"/>
+<area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="1456,131,1645,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="1496,6,1605,79"/>
 <area shape="rect" id="node8" href="$classapi_1_1_fmt_file_object.html" title="Format File Class. " alt="" coords="978,861,1107,934"/>
-<area shape="rect" id="node12" href="$classapi_1_1_hal_work_object.html" title="Hal Object Class. " alt="" coords="1168,861,1303,934"/>
+<area shape="rect" id="node12" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="1168,861,1303,934"/>
 <area shape="rect" id="node50" href="$classsys_1_1_sys.html" title="Sys Class. " alt="" coords="1327,774,1488,1021"/>
 <area shape="rect" id="node9" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="971,1079,1096,1246"/>
 <area shape="rect" id="node10" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="1120,1073,1235,1253"/>
