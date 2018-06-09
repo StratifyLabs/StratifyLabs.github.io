@@ -1945,29 +1945,30 @@ var sectionId = 'dynsection-0';
 <!-- Node85 -->
 <g id="node85" class="node"><title>Node85</title>
 <g id="a_node85"><a xlink:href="classsys_1_1_file.html" target="_top" xlink:title="File Class. ">
-<polygon fill="none" stroke="black" points="2211.76,-1680 2211.76,-1844 2292.24,-1844 2292.24,-1680 2211.76,-1680"/>
-<text text-anchor="middle" x="2252" y="-1832" font-family="Helvetica,sans-Serif" font-size="10.00">sys::File</text>
-<polyline fill="none" stroke="black" points="2211.76,-1826 2292.24,-1826 "/>
-<text text-anchor="start" x="2219.76" y="-1814" font-family="Helvetica,sans-Serif" font-size="10.00"># m_fd</text>
-<polyline fill="none" stroke="black" points="2211.76,-1808 2292.24,-1808 "/>
-<text text-anchor="start" x="2219.76" y="-1796" font-family="Helvetica,sans-Serif" font-size="10.00">+ File()</text>
-<text text-anchor="start" x="2219.76" y="-1786" font-family="Helvetica,sans-Serif" font-size="10.00">+ close()</text>
-<text text-anchor="start" x="2219.76" y="-1776" font-family="Helvetica,sans-Serif" font-size="10.00">+ create()</text>
-<text text-anchor="start" x="2219.76" y="-1766" font-family="Helvetica,sans-Serif" font-size="10.00">+ fileno()</text>
-<text text-anchor="start" x="2219.76" y="-1756" font-family="Helvetica,sans-Serif" font-size="10.00">+ flags()</text>
-<text text-anchor="start" x="2219.76" y="-1746" font-family="Helvetica,sans-Serif" font-size="10.00">+ gets()</text>
-<text text-anchor="start" x="2219.76" y="-1736" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
-<text text-anchor="start" x="2219.76" y="-1726" font-family="Helvetica,sans-Serif" font-size="10.00">+ name()</text>
-<text text-anchor="start" x="2219.76" y="-1716" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
-<text text-anchor="start" x="2219.76" y="-1706" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
-<text text-anchor="start" x="2219.76" y="-1696" font-family="Helvetica,sans-Serif" font-size="10.00">+ stat()</text>
-<text text-anchor="start" x="2219.76" y="-1686" font-family="Helvetica,sans-Serif" font-size="10.00">+ suffix()</text>
+<polygon fill="none" stroke="black" points="2211.76,-1675 2211.76,-1849 2292.24,-1849 2292.24,-1675 2211.76,-1675"/>
+<text text-anchor="middle" x="2252" y="-1837" font-family="Helvetica,sans-Serif" font-size="10.00">sys::File</text>
+<polyline fill="none" stroke="black" points="2211.76,-1831 2292.24,-1831 "/>
+<text text-anchor="start" x="2219.76" y="-1819" font-family="Helvetica,sans-Serif" font-size="10.00"># m_fd</text>
+<polyline fill="none" stroke="black" points="2211.76,-1813 2292.24,-1813 "/>
+<text text-anchor="start" x="2219.76" y="-1801" font-family="Helvetica,sans-Serif" font-size="10.00">+ File()</text>
+<text text-anchor="start" x="2219.76" y="-1791" font-family="Helvetica,sans-Serif" font-size="10.00">+ close()</text>
+<text text-anchor="start" x="2219.76" y="-1781" font-family="Helvetica,sans-Serif" font-size="10.00">+ create()</text>
+<text text-anchor="start" x="2219.76" y="-1771" font-family="Helvetica,sans-Serif" font-size="10.00">+ fileno()</text>
+<text text-anchor="start" x="2219.76" y="-1761" font-family="Helvetica,sans-Serif" font-size="10.00">+ flags()</text>
+<text text-anchor="start" x="2219.76" y="-1751" font-family="Helvetica,sans-Serif" font-size="10.00">+ gets()</text>
+<text text-anchor="start" x="2219.76" y="-1741" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
+<text text-anchor="start" x="2219.76" y="-1731" font-family="Helvetica,sans-Serif" font-size="10.00">+ copy()</text>
+<text text-anchor="start" x="2219.76" y="-1721" font-family="Helvetica,sans-Serif" font-size="10.00">+ name()</text>
+<text text-anchor="start" x="2219.76" y="-1711" font-family="Helvetica,sans-Serif" font-size="10.00">+ remove()</text>
+<text text-anchor="start" x="2219.76" y="-1701" font-family="Helvetica,sans-Serif" font-size="10.00">+ size()</text>
+<text text-anchor="start" x="2219.76" y="-1691" font-family="Helvetica,sans-Serif" font-size="10.00">+ stat()</text>
+<text text-anchor="start" x="2219.76" y="-1681" font-family="Helvetica,sans-Serif" font-size="10.00">+ suffix()</text>
 </a>
 </g>
 </g>
 <!-- Node81&#45;&gt;Node85 -->
 <g id="edge90" class="edge"><title>Node81&#45;&gt;Node85</title>
-<path fill="none" stroke="midnightblue" d="M2564.01,-2013.56C2490.19,-1997.81 2368.44,-1960.75 2301,-1880 2292.11,-1869.35 2284.62,-1856.86 2278.39,-1844.07"/>
+<path fill="none" stroke="midnightblue" d="M2564.01,-2013.56C2490.19,-1997.81 2368.44,-1960.75 2301,-1880 2293.31,-1870.79 2286.67,-1860.2 2280.98,-1849.23"/>
 <polygon fill="none" stroke="midnightblue" points="2563.59,-2017.05 2574.09,-2015.65 2565.01,-2010.19 2563.59,-2017.05"/>
 </g>
 <!-- Node129 -->
@@ -2152,8 +2153,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node85&#45;&gt;Node86 -->
 <g id="edge91" class="edge"><title>Node85&#45;&gt;Node86</title>
-<path fill="none" stroke="midnightblue" d="M2244.51,-1669.99C2240.48,-1621.15 2235.82,-1564.5 2233.16,-1532.19"/>
-<polygon fill="none" stroke="midnightblue" points="2241.02,-1670.29 2245.33,-1679.97 2247.99,-1669.71 2241.02,-1670.29"/>
+<path fill="none" stroke="midnightblue" d="M2244.06,-1664.62C2240.15,-1617.07 2235.72,-1563.35 2233.16,-1532.22"/>
+<polygon fill="none" stroke="midnightblue" points="2240.58,-1664.99 2244.89,-1674.67 2247.56,-1664.42 2240.58,-1664.99"/>
 </g>
 <!-- Node90 -->
 <g id="node90" class="node"><title>Node90</title>
@@ -2169,8 +2170,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node85&#45;&gt;Node90 -->
 <g id="edge95" class="edge"><title>Node85&#45;&gt;Node90</title>
-<path fill="none" stroke="midnightblue" d="M2286.39,-1670.6C2305.02,-1621.62 2326.69,-1564.64 2339.04,-1532.19"/>
-<polygon fill="none" stroke="midnightblue" points="2283.11,-1669.38 2282.82,-1679.97 2289.65,-1671.86 2283.11,-1669.38"/>
+<path fill="none" stroke="midnightblue" d="M2288.43,-1665.22C2306.58,-1617.52 2327.13,-1563.48 2339.03,-1532.22"/>
+<polygon fill="none" stroke="midnightblue" points="2285.12,-1664.08 2284.84,-1674.67 2291.67,-1666.57 2285.12,-1664.08"/>
 </g>
 <!-- Node128 -->
 <g id="node128" class="node"><title>Node128</title>
@@ -2199,8 +2200,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node85&#45;&gt;Node128 -->
 <g id="edge146" class="edge"><title>Node85&#45;&gt;Node128</title>
-<path fill="none" stroke="midnightblue" d="M2281.15,-1670.7C2286.72,-1660.97 2293.29,-1651.79 2301,-1644 2337.43,-1607.23 2367.21,-1629.87 2408,-1598 2411.16,-1595.53 2414.26,-1592.88 2417.28,-1590.1"/>
-<polygon fill="none" stroke="midnightblue" points="2277.92,-1669.31 2276.3,-1679.78 2284.1,-1672.61 2277.92,-1669.31"/>
+<path fill="none" stroke="midnightblue" d="M2283.88,-1666.11C2288.84,-1658.08 2294.51,-1650.55 2301,-1644 2337.43,-1607.23 2367.21,-1629.87 2408,-1598 2411.16,-1595.53 2414.26,-1592.88 2417.28,-1590.1"/>
+<polygon fill="none" stroke="midnightblue" points="2280.73,-1664.57 2278.78,-1674.98 2286.8,-1668.06 2280.73,-1664.57"/>
 </g>
 <!-- Node87 -->
 <g id="node87" class="node"><title>Node87</title>
@@ -2302,13 +2303,13 @@ var sectionId = 'dynsection-0';
 <polyline fill="none" stroke="black" points="2943.4,-1095 3018.6,-1095 "/>
 <text text-anchor="middle" x="2981" y="-1083" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polyline fill="none" stroke="black" points="2943.4,-1077 3018.6,-1077 "/>
-<text text-anchor="start" x="2951.4" y="-1065" font-family="Helvetica,sans-Serif" font-size="10.00">+ CFifo()</text>
-<text text-anchor="start" x="2951.4" y="-1055" font-family="Helvetica,sans-Serif" font-size="10.00">+ exit()</text>
-<text text-anchor="start" x="2951.4" y="-1045" font-family="Helvetica,sans-Serif" font-size="10.00">+ flush()</text>
-<text text-anchor="start" x="2951.4" y="-1035" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_count()</text>
+<text text-anchor="start" x="2951.4" y="-1065" font-family="Helvetica,sans-Serif" font-size="10.00">+ exit()</text>
+<text text-anchor="start" x="2951.4" y="-1055" font-family="Helvetica,sans-Serif" font-size="10.00">+ flush()</text>
+<text text-anchor="start" x="2951.4" y="-1045" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_count()</text>
+<text text-anchor="start" x="2951.4" y="-1035" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_info()</text>
 <text text-anchor="start" x="2951.4" y="-1025" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_info()</text>
 <text text-anchor="start" x="2951.4" y="-1015" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_info()</text>
-<text text-anchor="start" x="2951.4" y="-1005" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
+<text text-anchor="start" x="2951.4" y="-1005" font-family="Helvetica,sans-Serif" font-size="10.00">and 6 more...</text>
 </a>
 </g>
 </g>

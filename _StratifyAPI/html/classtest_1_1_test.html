@@ -48,7 +48,7 @@ Inheritance diagram for test::Test:</div>
 <li>Stress Tests: Should be designed to stress the system and check for unexpected behavior</li>
 <li>Additional Tests: Used as needed by inheriting classes to run additional tests</li>
 </ul>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/test.hpp&gt;</span></div><div class="line"></div><div class="line">u32 o_execute_flags = <a class="code" href="classtest_1_1_test.html#a5b9994da348a4cc01f93974cb3696eb7a622e018c5df46eb2223eb70ddd7f5914">Test::EXECUTE_ALL</a>;</div><div class="line"><a class="code" href="classtest_1_1_test.html#a7097f995b07143f41f1b729bd41ab6aa">Test::initialize</a>(cli.name(), cli.version());</div><div class="line"><span class="keywordflow">if</span>( <a class="codeRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_w_i_t_c_h_b_o_a_r_d.html#ga1d4208d0608d7514922a1ab127b09eaf">o_flags</a> &amp; DATA_TEST_FLAG ){</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a52a1423a74ccc7b51e15086f4d513ec7">Test</a> <a class="code" href="namespacetest.html">test</a>(<span class="stringliteral">&quot;generic test&quot;</span>);  <span class="comment">//Must be constructed after Test::inialize()</span></div><div class="line">  <a class="code" href="namespacetest.html">test</a>.execute(o_execute_flags);</div><div class="line">  <span class="comment">//At this point test will be deconstructed -- must happen before Test::finalize()</span></div><div class="line">}</div><div class="line"><a class="code" href="classtest_1_1_test.html#aff841db16eb845c2cc2b285b433538f1">Test::finalize</a>();</div></div><!-- fragment --><p>See the <a href="https://github.com/StratifyLabs/sostest">sostest</a> suite of applications for examples (like <a href="https://github.com/StratifyLabs/sostest/blob/master/api-var-test/src/DataTest.cpp">DataTest</a>).</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/test.hpp&gt;</span></div><div class="line"></div><div class="line">u32 o_execute_flags = <a class="code" href="classtest_1_1_test.html#a128aee0546f01cf1a3be43d87d85e4dda622e018c5df46eb2223eb70ddd7f5914">Test::EXECUTE_ALL</a>;</div><div class="line"><a class="code" href="classtest_1_1_test.html#a7097f995b07143f41f1b729bd41ab6aa">Test::initialize</a>(cli.name(), cli.version());</div><div class="line"><span class="keywordflow">if</span>( <a class="codeRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_w_i_t_c_h_b_o_a_r_d.html#ga1d4208d0608d7514922a1ab127b09eaf">o_flags</a> &amp; DATA_TEST_FLAG ){</div><div class="line">  <a class="code" href="classtest_1_1_test.html#a52a1423a74ccc7b51e15086f4d513ec7">Test</a> <a class="code" href="namespacetest.html">test</a>(<span class="stringliteral">&quot;generic test&quot;</span>);  <span class="comment">//Must be constructed after Test::inialize()</span></div><div class="line">  <a class="code" href="namespacetest.html">test</a>.execute(o_execute_flags);</div><div class="line">  <span class="comment">//At this point test will be deconstructed -- must happen before Test::finalize()</span></div><div class="line">}</div><div class="line"><a class="code" href="classtest_1_1_test.html#aff841db16eb845c2cc2b285b433538f1">Test::finalize</a>();</div></div><!-- fragment --><p>See the <a href="https://github.com/StratifyLabs/sostest">sostest</a> suite of applications for examples (like <a href="https://github.com/StratifyLabs/sostest/blob/master/api-var-test/src/DataTest.cpp">DataTest</a>).</p>
 <p>Here is an example report in JSON format:</p>
 <div class="fragment"><div class="line">{</div><div class="line">  <span class="stringliteral">&quot;system&quot;</span>: {</div><div class="line">    <span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;Stratify Alpha&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;arch&quot;</span>: <span class="stringliteral">&quot;v7em_f4sh&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;sys version&quot;</span>: <span class="stringliteral">&quot;1.5&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;kernel version&quot;</span>: <span class="stringliteral">&quot;3.5.0&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;memory size&quot;</span>: <span class="stringliteral">&quot;16384&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;id&quot;</span>: <span class="stringliteral">&quot;-KZKdVwMXIj6vTVsbX56&quot;</span>,</div><div class="line">    <span class="stringliteral">&quot;serial&quot;</span>: <span class="stringliteral">&quot;F5001942555D5A3EAEAE24601801F01A&quot;</span></div><div class="line">  },</div><div class="line">  <span class="stringliteral">&quot;test&quot;</span>: {</div><div class="line">   <span class="stringliteral">&quot;name&quot;</span>: <span class="stringliteral">&quot;api-var-test&quot;</span>,</div><div class="line">   <span class="stringliteral">&quot;version&quot;</span>: <span class="stringliteral">&quot;0.1&quot;</span></div><div class="line">  },</div><div class="line">  <span class="stringliteral">&quot;var::Data&quot;</span>: {</div><div class="line">    <span class="stringliteral">&quot;api&quot;</span>: {</div><div class="line">      <span class="stringliteral">&quot;msg-0&quot;</span>: <span class="stringliteral">&quot;fill test complete&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;msg-1&quot;</span>: <span class="stringliteral">&quot;alloc test complete&quot;</span>,</div><div class="line">      <span class="stringliteral">&quot;result&quot;</span>: <span class="keyword">true</span>,</div><div class="line">      <span class="stringliteral">&quot;microseconds&quot;</span>: 10900.0</div><div class="line">    },</div><div class="line">    <span class="stringliteral">&quot;result&quot;</span>: <span class="keyword">true</span>,</div><div class="line">    <span class="stringliteral">&quot;microseconds&quot;</span>: 11172.0</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -57,7 +57,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a52a1423a74ccc7b51e15086f4d513ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a328ed6bba3b51a1359639f9c2b4a5616"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a328ed6bba3b51a1359639f9c2b4a5616">~Test</a> ()</td></tr>
 <tr class="separator:a328ed6bba3b51a1359639f9c2b4a5616"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59d0bd275023e51c694d7c66241e4143"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a59d0bd275023e51c694d7c66241e4143">execute</a> (int <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_w_i_t_c_h_b_o_a_r_d.html#gae0b4052770f2465c733b8e1fffbbd342">o_flags</a>=<a class="el" href="classtest_1_1_test.html#a5b9994da348a4cc01f93974cb3696eb7a622e018c5df46eb2223eb70ddd7f5914">EXECUTE_ALL</a>)</td></tr>
+<tr class="memitem:a59d0bd275023e51c694d7c66241e4143"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a59d0bd275023e51c694d7c66241e4143">execute</a> (int <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_w_i_t_c_h_b_o_a_r_d.html#gae0b4052770f2465c733b8e1fffbbd342">o_flags</a>=<a class="el" href="classtest_1_1_test.html#a128aee0546f01cf1a3be43d87d85e4dda622e018c5df46eb2223eb70ddd7f5914">EXECUTE_ALL</a>)</td></tr>
 <tr class="separator:a59d0bd275023e51c694d7c66241e4143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff843fd21641be0de2f71753c597443"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtest_1_1_test.html#a9ff843fd21641be0de2f71753c597443">execute_additional_cases</a> ()</td></tr>
 <tr class="separator:a9ff843fd21641be0de2f71753c597443"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +107,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:abc7d470802be3aa6037e76ebd1ee310b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a5b9994da348a4cc01f93974cb3696eb7"></a>
+<a class="anchor" id="a128aee0546f01cf1a3be43d87d85e4dd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -117,19 +117,19 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a5b9994da348a4cc01f93974cb3696eb7a894d0c55593e9f352cf5d2269755c165"></a>EXECUTE_API&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a128aee0546f01cf1a3be43d87d85e4dda894d0c55593e9f352cf5d2269755c165"></a>EXECUTE_API&#160;</td><td class="fielddoc">
 <p>API <a class="el" href="classtest_1_1_test.html" title="Test Class. ">Test</a> Execution flag </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b9994da348a4cc01f93974cb3696eb7abd38270ba07c6850a01c7c955c012b7a"></a>EXECUTE_STRESS&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a128aee0546f01cf1a3be43d87d85e4ddabd38270ba07c6850a01c7c955c012b7a"></a>EXECUTE_STRESS&#160;</td><td class="fielddoc">
 <p>Stress <a class="el" href="classtest_1_1_test.html" title="Test Class. ">Test</a> Execution flag </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b9994da348a4cc01f93974cb3696eb7a78e5955985459f48683da9e4f359a846"></a>EXECUTE_PERFORMANCE&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a128aee0546f01cf1a3be43d87d85e4dda78e5955985459f48683da9e4f359a846"></a>EXECUTE_PERFORMANCE&#160;</td><td class="fielddoc">
 <p>Performance <a class="el" href="classtest_1_1_test.html" title="Test Class. ">Test</a> Execution flag </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b9994da348a4cc01f93974cb3696eb7aec1a72368ce74110c5f85853e72c2704"></a>EXECUTE_ADDITIONAL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a128aee0546f01cf1a3be43d87d85e4ddaec1a72368ce74110c5f85853e72c2704"></a>EXECUTE_ADDITIONAL&#160;</td><td class="fielddoc">
 <p>Additional <a class="el" href="classtest_1_1_test.html" title="Test Class. ">Test</a> Execution flag </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a5b9994da348a4cc01f93974cb3696eb7a622e018c5df46eb2223eb70ddd7f5914"></a>EXECUTE_ALL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a128aee0546f01cf1a3be43d87d85e4dda622e018c5df46eb2223eb70ddd7f5914"></a>EXECUTE_ALL&#160;</td><td class="fielddoc">
 <p>API Execution flag </p>
 </td></tr>
 </table>
@@ -260,7 +260,7 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">virtual void test::Test::execute </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classtest_1_1_test.html#a5b9994da348a4cc01f93974cb3696eb7a622e018c5df46eb2223eb70ddd7f5914">EXECUTE_ALL</a></code></td><td>)</td>
+          <td class="paramname"><em>o_flags</em> = <code><a class="el" href="classtest_1_1_test.html#a128aee0546f01cf1a3be43d87d85e4dda622e018c5df46eb2223eb70ddd7f5914">EXECUTE_ALL</a></code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -273,7 +273,7 @@ Protected Member Functions</h2></td></tr>
 <p>Executes the tests specified by <em>o_flags</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">o_flags</td><td>Bitmask of the tests to execute (e.g., <a class="el" href="classtest_1_1_test.html#a5b9994da348a4cc01f93974cb3696eb7a894d0c55593e9f352cf5d2269755c165">Test::EXECUTE_API</a>) </td></tr>
+    <tr><td class="paramname">o_flags</td><td>Bitmask of the tests to execute (e.g., <a class="el" href="classtest_1_1_test.html#a128aee0546f01cf1a3be43d87d85e4dda894d0c55593e9f352cf5d2269755c165">Test::EXECUTE_API</a>) </td></tr>
   </table>
   </dd>
 </dl>

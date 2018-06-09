@@ -38,12 +38,13 @@ page_source: Doxygen
 <div class="dynheader">
 Inheritance diagram for sys::File:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classsys_1_1_file__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classsys_1_1_file__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
 <div class="textblock"><p>This class is used to access files (and devices). It uses the POSIX functions <a class="el" href="classsys_1_1_file.html#a7d000e0cbe8a8af07f62e5e4b63d72d5">open()</a>, <a class="el" href="classsys_1_1_file.html#a0bd19cf99d6d352d46105a51f07b2576">read()</a>, <a class="el" href="classsys_1_1_file.html#a9b0d5e9b4b31bb51fbd2478cda2a44e4">write()</a>, <a class="el" href="classsys_1_1_file.html#a11ede04e8abe24db9df3c6dc14e858aa">close()</a>, etc. You can always call these functions directly or use the standard C library to access files (fopen(), fread(), fwrite()&ndash; these use more memory than this class or the POSIX functions).</p>
 <p>Here is an example of using this class:</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">   File f;</div><div class="line">   String str;</div><div class="line"></div><div class="line"> <span class="comment">//create a new file and write a string to it</span></div><div class="line">   f.create(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">   str = <span class="stringliteral">&quot;Hello New File!\n&quot;</span>;</div><div class="line">   f.write(str);</div><div class="line">   f.close();</div><div class="line"></div><div class="line"> <span class="comment">//Now open the file we just closed</span></div><div class="line">   f.open(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">   str = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line">   f.read(str.data(), str.capacity());</div><div class="line">   f.close();</div><div class="line"></div><div class="line"> <span class="comment">//This is what was read from the file</span></div><div class="line">   printf(<span class="stringliteral">&quot;The String is %s\n&quot;</span>, str.c_str());</div><div class="line"></div><div class="line">   <a class="code" href="classsys_1_1_file.html#ae22e053ba2df2ae14a882d091a19dd3f">File::remove</a>(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>); <span class="comment">//delete the file</span></div><div class="line">   <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;sapi/sys.hpp&gt;</span></div><div class="line"><span class="preprocessor">#include &lt;sapi/var.hpp&gt;</span></div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div><div class="line">   File f;</div><div class="line">   String str;</div><div class="line"></div><div class="line"> <span class="comment">//create a new file and write a string to it</span></div><div class="line">   f.create(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">   str = <span class="stringliteral">&quot;Hello New File!\n&quot;</span>;</div><div class="line">   f.write(str);</div><div class="line">   f.close();</div><div class="line"></div><div class="line"> <span class="comment">//Now open the file we just closed</span></div><div class="line">   f.open(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>);</div><div class="line">   str = <span class="stringliteral">&quot;&quot;</span>;</div><div class="line">   f.read(str.data(), str.capacity());</div><div class="line">   f.close();</div><div class="line"></div><div class="line"> <span class="comment">//This is what was read from the file</span></div><div class="line">   printf(<span class="stringliteral">&quot;The String is %s\n&quot;</span>, str.c_str());</div><div class="line"></div><div class="line">   <a class="code" href="classsys_1_1_file.html#ae22e053ba2df2ae14a882d091a19dd3f">File::remove</a>(<span class="stringliteral">&quot;/home/myfile.txt&quot;</span>); <span class="comment">//delete the file</span></div><div class="line">   <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 </table><table class="memberdecls">
@@ -87,6 +88,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a742c18026cb42020b52fd9f356e1e26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeadfbb00ef0acb3309d5b57bfb9e697"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#adeadfbb00ef0acb3309d5b57bfb9e697">seek</a> (int <a class="el" href="classsys_1_1_file.html#a50caf9fa33c99ca3c3537d4a8eeff4ee">loc</a>, int whence=LINK_SEEK_SET) const </td></tr>
 <tr class="separator:adeadfbb00ef0acb3309d5b57bfb9e697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5ae67502b886b90d52739cf091179a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a9e5ae67502b886b90d52739cf091179a">set_fileno</a> (int fd)</td></tr>
+<tr class="separator:a9e5ae67502b886b90d52739cf091179a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29ccfa0078ff1f1d4158d54c3b0ed2e7"><td class="memItemLeft" align="right" valign="top">u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a29ccfa0078ff1f1d4158d54c3b0ed2e7">size</a> () const </td></tr>
 <tr class="separator:a29ccfa0078ff1f1d4158d54c3b0ed2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b0d5e9b4b31bb51fbd2478cda2a44e4"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a9b0d5e9b4b31bb51fbd2478cda2a44e4">write</a> (const void *buf, int <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_w_i_t_c_h_b_o_a_r_d.html#ga7df1721fbf1126183fadb810462a2753">nbyte</a>) const </td></tr>
@@ -103,6 +106,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a066440efd9a7f25731787fd7f711b97a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a066440efd9a7f25731787fd7f711b97a">copy</a> (<a class="el" href="classvar_1_1_string.html">var::String</a> &amp;source_path, <a class="el" href="classvar_1_1_string.html">var::String</a> &amp;dest_path)</td></tr>
+<tr class="separator:a066440efd9a7f25731787fd7f711b97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d09b5d81f8397c2822e672756058fad"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#a9d09b5d81f8397c2822e672756058fad">name</a> (const char *path)</td></tr>
 <tr class="separator:a9d09b5d81f8397c2822e672756058fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae22e053ba2df2ae14a882d091a19dd3f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_file.html#ae22e053ba2df2ae14a882d091a19dd3f">remove</a> (const char *path)</td></tr>
@@ -229,6 +234,49 @@ Static Public Member Functions</h2></td></tr>
 <p>Closes the file or device. </p>
 
 <p>Reimplemented in <a class="el" href="classfmt_1_1_xml.html#ae6a5b37a831a8a9901de68ebcd7e0c1e">fmt::Xml</a>, and <a class="el" href="classhal_1_1_periph_object.html#a2779d035240b32cbc91face5729eb13d">hal::PeriphObject</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a066440efd9a7f25731787fd7f711b97a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int sys::File::copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classvar_1_1_string.html">var::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>source_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classvar_1_1_string.html">var::String</a> &amp;&#160;</td>
+          <td class="paramname"><em>dest_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies a file from the source to the destination.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source_path</td><td>Path to the source file </td></tr>
+    <tr><td class="paramname">dest_path</td><td>Path to the destination file (new location) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
 </div>
@@ -920,6 +968,31 @@ Static Public Member Functions</h2></td></tr>
 <p>Seeks to a location in the file or on the device. </p>
 
 <p>Reimplemented in <a class="el" href="classhal_1_1_periph_object.html#acd23c9364df35b77aff14c4e2917c478">hal::PeriphObject</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e5ae67502b886b90d52739cf091179a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sys::File::set_fileno </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the file descriptor for this object. </p>
 
 </div>
 </div>
