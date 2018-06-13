@@ -1,244 +1,243 @@
 <map id="api::ApiObject" name="api::ApiObject">
-<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="8385,191,8492,265"/>
-<area shape="rect" id="node93" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="3229,131,3419,325"/>
-<area shape="rect" id="node3" href="$classapi_1_1_calc_info_object.html" title="Calc Infomation Object. " alt="" coords="7992,410,8125,483"/>
-<area shape="rect" id="node7" href="$classapi_1_1_chrono_info_object.html" title="Chrono Information Object. " alt="" coords="8601,377,8756,517"/>
-<area shape="rect" id="node12" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="9523,410,9660,483"/>
-<area shape="rect" id="node31" href="$classapi_1_1_dsp_info_object.html" title="DSP Information Object. " alt="" coords="10360,410,10491,483"/>
-<area shape="rect" id="node39" href="$classapi_1_1_ev_info_object.html" title="Event Information Object. " alt="" coords="6376,410,6499,483"/>
-<area shape="rect" id="node44" href="$classapi_1_1_fmt_info_object.html" title="Format Infomation Object. " alt="" coords="10515,410,10644,483"/>
-<area shape="rect" id="node45" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="11956,410,12083,483"/>
-<area shape="rect" id="node75" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Information Object. " alt="" coords="13858,410,13992,483"/>
-<area shape="rect" id="node81" href="$classapi_1_1_sm_info_object.html" title="State Machine Information Object. " alt="" coords="7840,410,7967,483"/>
-<area shape="rect" id="node82" href="$classapi_1_1_sys_info_object.html" title="System Info Object. " alt="" coords="7265,410,7393,483"/>
-<area shape="rect" id="node90" href="$classapi_1_1_test_info_object.html" title="Test Information Object. " alt="" coords="8150,410,8281,483"/>
-<area shape="rect" id="node91" href="$classapi_1_1_ui_info_object.html" title="User Interface Information Object. " alt="" coords="8305,410,8424,483"/>
-<area shape="rect" id="node92" href="$classapi_1_1_var_info_object.html" title="Var Infomation Object. " alt="" coords="8450,410,8576,483"/>
-<area shape="rect" id="node4" href="$classcalc_1_1_base64.html" title="Base64 Encode/Decode Class. " alt="" coords="7801,741,7956,854"/>
-<area shape="rect" id="node5" href="$classcalc_1_1_checksum.html" title="Checksum Class. " alt="" coords="7980,741,8119,854"/>
-<area shape="rect" id="node6" href="$classcalc_1_1_rle.html" title="Run Length Encoding Class. " alt="" coords="8144,741,8240,854"/>
-<area shape="rect" id="node8" href="$classchrono_1_1_clock.html" title="Clock Class. " alt="" coords="8616,754,8741,841"/>
-<area shape="rect" id="node9" href="$classchrono_1_1_clock_time.html" title="Clock Time Class. " alt="" coords="8766,714,8897,881"/>
-<area shape="rect" id="node10" href="$classchrono_1_1_micro_time.html" title="MicroTime Class. " alt="" coords="8264,674,8421,921"/>
-<area shape="rect" id="node11" href="$classchrono_1_1_time.html" title="Time Class. " alt="" coords="8446,714,8591,881"/>
-<area shape="rect" id="node13" href="$classdraw_1_1_animation_attr.html" title="Animation Attributes Class. " alt="" coords="9408,721,9576,874"/>
-<area shape="rect" id="node15" href="$classdraw_1_1_axis.html" title="Graph Axis Class. " alt="" coords="10133,707,10224,887"/>
-<area shape="rect" id="node16" href="$classdraw_1_1_data_set.html" title="Data Set Class. " alt="" coords="10248,721,10353,874"/>
-<area shape="rect" id="node17" href="$classdraw_1_1_drawing_attr.html" title="Drawing Attribute Class. " alt="" coords="9601,667,9780,927"/>
-<area shape="rect" id="node18" href="$classdraw_1_1_drawing_scaled_attr.html" title="Scaled Drawing Attributes. " alt="" coords="9804,721,9972,874"/>
-<area shape="rect" id="node19" href="$classdraw_1_1_icon_attr.html" title="Icon Attributes Class. " alt="" coords="9104,714,9245,881"/>
-<area shape="rect" id="node21" href="$classdraw_1_1_panel_attr.html" title="Panel Attributes Class. " alt="" coords="9996,741,10108,854"/>
-<area shape="rect" id="node23" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="8922,721,9080,874"/>
-<area shape="rect" id="node28" href="$classdraw_1_1_text_attr.html" title="Text Attribute Class. " alt="" coords="9270,714,9383,881"/>
-<area shape="rect" id="node14" href="$classdraw_1_1_animation.html" title="Animation Class. " alt="" coords="9308,1090,9424,1217"/>
-<area shape="rect" id="node20" href="$classdraw_1_1_icon.html" title="Icon Class. " alt="" coords="7275,1103,7401,1203"/>
-<area shape="rect" id="node22" href="$classdraw_1_1_panel.html" title="Panel Class. " alt="" coords="9679,1110,9805,1197"/>
-<area shape="rect" id="node24" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="6853,1097,7051,1210"/>
-<area shape="rect" id="node25" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="7009,1406,7140,1519"/>
-<area shape="rect" id="node26" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="7165,1413,7296,1513"/>
-<area shape="rect" id="node27" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="6839,1419,6984,1506"/>
-<area shape="rect" id="node29" href="$classdraw_1_1_text.html" title="Text Class. " alt="" coords="8469,1110,8596,1197"/>
-<area shape="rect" id="node30" href="$classdraw_1_1_text_box.html" title="Text Box. " alt="" coords="8671,1070,8797,1237"/>
-<area shape="rect" id="node32" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; float32_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="10437,1077,10613,1230"/>
-<area shape="rect" id="node34" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; q15_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="10254,1077,10412,1230"/>
-<area shape="rect" id="node36" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; q31_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="10638,1077,10796,1230"/>
-<area shape="rect" id="node38" href="$classdsp_1_1_complex.html" title="Complex Class. " alt="" coords="10429,721,10563,874"/>
-<area shape="rect" id="node33" href="$classdsp_1_1_complex_f32.html" title="Complex F32 Value. " alt="" coords="10462,1426,10588,1499"/>
-<area shape="rect" id="node35" href="$classdsp_1_1_complex_q15.html" title="Complex Q15 Value. " alt="" coords="10269,1426,10397,1499"/>
-<area shape="rect" id="node37" href="$classdsp_1_1_complex_q31.html" title="Complex Q31 Value. " alt="" coords="10653,1426,10781,1499"/>
-<area shape="rect" id="node40" href="$classev_1_1_event.html" title="Event Class. " alt="" coords="6385,721,6489,874"/>
-<area shape="rect" id="node41" href="$classev_1_1_event_loop_attr.html" title="Event Loop Attributes. " alt="" coords="6165,714,6360,881"/>
-<area shape="rect" id="node42" href="$classev_1_1_event_loop.html" title="Event Loop Class. " alt="" coords="6163,1017,6363,1290"/>
-<area shape="rect" id="node43" href="$classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) " alt="" coords="6369,1353,6532,1573"/>
-<area shape="rect" id="node46" href="$classhal_1_1_c_fifo_info.html" title="Channeled FIFO Information Class. " alt="" coords="11559,714,11704,881"/>
-<area shape="rect" id="node47" href="$classhal_1_1_core_info.html" title="The Core Info class. " alt="" coords="11729,734,11855,861"/>
-<area shape="rect" id="node48" href="$classhal_1_1_display_palette.html" title="Display Palette Class. " alt="" coords="11879,721,12011,874"/>
-<area shape="rect" id="node49" href="$classhal_1_1_f_fifo_info.html" title="FFIFO Info Class. " alt="" coords="12035,714,12153,881"/>
-<area shape="rect" id="node50" href="$classhal_1_1_fifo_info.html" title="Fifo Attributes Class. " alt="" coords="12178,721,12285,874"/>
-<area shape="rect" id="node51" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="12412,701,12581,894"/>
-<area shape="rect" id="node52" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2s_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2s\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="11656,1057,11828,1250"/>
-<area shape="rect" id="node54" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; usb_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const usb\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="11295,1057,11472,1250"/>
-<area shape="rect" id="node56" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; eint_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const eint\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12758,1057,12935,1250"/>
-<area shape="rect" id="node58" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; adc_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const adc\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="11896,1057,12073,1250"/>
-<area shape="rect" id="node60" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; uart_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const uart\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="13381,1057,13560,1250"/>
-<area shape="rect" id="node62" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; spi_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const spi\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="13180,1057,13352,1250"/>
-<area shape="rect" id="node64" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; tmr_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const tmr\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12974,1057,13148,1250"/>
-<area shape="rect" id="node66" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; pwm_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const pwm\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12520,1057,12704,1250"/>
-<area shape="rect" id="node68" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; dac_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const dac\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="10820,1057,10997,1250"/>
-<area shape="rect" id="node70" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2c_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2c\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12140,1057,12312,1250"/>
-<area shape="rect" id="node72" href="$classhal_1_1_switchboard_connection.html" title="Switchboard Connection Class. " alt="" coords="10936,714,11123,881"/>
-<area shape="rect" id="node73" href="$classhal_1_1_switchboard_info.html" title="Switchboard Connection Class. " alt="" coords="11148,727,11340,867"/>
-<area shape="rect" id="node74" href="$classhal_1_1_switchboard_terminal.html" title="Switchboard Terminal Class. " alt="" coords="11364,707,11533,887"/>
-<area shape="rect" id="node53" href="$classhal_1_1_i2_s_pin_assignment.html" title="I2S Pin Assignment. " alt="" coords="11665,1426,11820,1499"/>
-<area shape="rect" id="node55" href="$classhal_1_1_usb_pin_assignment.html" title="USB Pin Assignment. " alt="" coords="11304,1426,11463,1499"/>
-<area shape="rect" id="node57" href="$classhal_1_1_eint_pin_assignment.html" title="EINT Pin Assignment. " alt="" coords="12767,1426,12925,1499"/>
-<area shape="rect" id="node59" href="$classhal_1_1_adc_pin_assignment.html" title="ADC Pin Assignment. " alt="" coords="11906,1426,12064,1499"/>
-<area shape="rect" id="node61" href="$classhal_1_1_uart_pin_assignment.html" title="UART Pin Assignment. " alt="" coords="13390,1426,13551,1499"/>
-<area shape="rect" id="node63" href="$classhal_1_1_spi_pin_assignment.html" title="SPI Pin Assignment. " alt="" coords="13189,1426,13344,1499"/>
-<area shape="rect" id="node65" href="$classhal_1_1_tmr_pin_assignment.html" title="Tmr Pin Assignment. " alt="" coords="12982,1426,13140,1499"/>
-<area shape="rect" id="node67" href="$classhal_1_1_pwm_pin_assignment.html" title="PWM Pin Assignment. " alt="" coords="12529,1426,12693,1499"/>
-<area shape="rect" id="node69" href="$classhal_1_1_dac_pin_assignment.html" title="DAC Pin Assignment. " alt="" coords="10830,1426,10988,1499"/>
-<area shape="rect" id="node71" href="$classhal_1_1_i2_c_pin_assignment.html" title="I2C Pin Assignment. " alt="" coords="12149,1426,12304,1499"/>
-<area shape="rect" id="node76" href="$classsgfx_1_1_dim.html" title="Dimension Class. " alt="" coords="13620,721,13768,874"/>
-<area shape="rect" id="node77" href="$classsgfx_1_1_pen.html" title="Pen Class. " alt="" coords="13794,721,13899,874"/>
-<area shape="rect" id="node78" href="$classsgfx_1_1_point.html" title="Point Class. " alt="" coords="13924,714,14080,881"/>
-<area shape="rect" id="node79" href="$classsgfx_1_1_region.html" title="Region Class. " alt="" coords="14105,721,14204,874"/>
-<area shape="rect" id="node80" href="$classsgfx_1_1_vector_map.html" title="Vecotor Map Class. " alt="" coords="14228,721,14379,874"/>
-<area shape="rect" id="node83" href="$classsys_1_1_appfs.html" title="Application File System Class. " alt="" coords="7045,721,7155,874"/>
-<area shape="rect" id="node84" href="$classsys_1_1_assets.html" title="Assets Class. " alt="" coords="7180,714,7329,881"/>
-<area shape="rect" id="node85" href="$classsys_1_1_mq_attr.html" title="Message Queue Attribute Class. " alt="" coords="7354,721,7453,874"/>
-<area shape="rect" id="node86" href="$classsys_1_1_mutex_attr.html" title="Mutex Attibutes. " alt="" coords="7478,721,7612,874"/>
-<area shape="rect" id="node87" href="$classsys_1_1_sched.html" title="Sched Class. " alt="" coords="7637,721,7776,874"/>
-<area shape="rect" id="node88" href="$classsys_1_1_signal_handler.html" title="Signal Handler Class. " alt="" coords="6748,747,6880,847"/>
-<area shape="rect" id="node89" href="$classsys_1_1_task_info.html" title="The Task Attributes Class. " alt="" coords="6904,707,7020,887"/>
-<area shape="rect" id="node94" href="$classapi_1_1_calc_work_object.html" title="Calc Work Object. " alt="" coords="5094,410,5236,483"/>
-<area shape="rect" id="node107" href="$classapi_1_1_chrono_work_object.html" title="Chrono Work Object. " alt="" coords="1228,377,1387,517"/>
-<area shape="rect" id="node109" href="$classapi_1_1_draw_work_object.html" title="Draw Work Object. " alt="" coords="6522,410,6669,483"/>
-<area shape="rect" id="node135" href="$classapi_1_1_dsp_work_object.html" title="DSP Work Object. " alt="" coords="2739,1050,2937,1257"/>
-<area shape="rect" id="node143" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="5738,410,5869,483"/>
-<area shape="rect" id="node145" href="$classapi_1_1_fmt_work_object.html" title="Format Work Object Class. " alt="" coords="2848,410,2987,483"/>
-<area shape="rect" id="node147" href="$classapi_1_1_sgfx_work_object.html" title="Sgfx Work Object. " alt="" coords="2557,410,2699,483"/>
-<area shape="rect" id="node154" href="$classapi_1_1_sm_work_object.html" title="State Machine Work Object. " alt="" coords="3841,410,3976,483"/>
-<area shape="rect" id="node161" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="1570,410,1707,483"/>
-<area shape="rect" id="node217" href="$classapi_1_1_test_work_object.html" title="Test Work Object. " alt="" coords="4087,410,4227,483"/>
-<area shape="rect" id="node220" href="$classapi_1_1_ui_work_object.html" title="User Interface Work Object. " alt="" coords="594,542,723,615"/>
-<area shape="rect" id="node222" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="3256,410,3391,483"/>
-<area shape="rect" id="node95" href="$classcalc_1_1_ema.html" title="Exponential Moving Average template class. " alt="" coords="5448,727,5596,867"/>
-<area shape="rect" id="node96" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, s16,\l s32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5176,1083,5315,1223"/>
-<area shape="rect" id="node98" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, s32,\l s64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5502,1083,5647,1223"/>
-<area shape="rect" id="node100" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, u16,\l u32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5338,1083,5477,1223"/>
-<area shape="rect" id="node102" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, u32,\l u64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5005,1083,5152,1223"/>
-<area shape="rect" id="node104" href="$classcalc_1_1_ema__f.html" title="Exponential Moving Average class (float) " alt="" coords="4960,721,5075,874"/>
-<area shape="rect" id="node105" href="$classcalc_1_1_lookup.html" title="Lookup Table Template Class. " alt="" coords="5099,747,5232,847"/>
-<area shape="rect" id="node106" href="$classcalc_1_1_pid__f.html" title="PID Control Loop Class (float) " alt="" coords="5257,721,5423,874"/>
-<area shape="rect" id="node97" href="$classcalc_1_1_ema__s16.html" title="Exponential Moving Average class (s16) " alt="" coords="5188,1426,5296,1499"/>
-<area shape="rect" id="node99" href="$classcalc_1_1_ema__s32.html" title="Exponential Moving Average class (s32) " alt="" coords="5455,1426,5563,1499"/>
-<area shape="rect" id="node101" href="$classcalc_1_1_ema__u16.html" title="Exponential Moving Average class (u16) " alt="" coords="5321,1426,5431,1499"/>
-<area shape="rect" id="node103" href="$classcalc_1_1_ema__u32.html" title="Exponential Moving Average class (u32) " alt="" coords="5024,1426,5133,1499"/>
-<area shape="rect" id="node108" href="$classchrono_1_1_timer.html" title="Timer Class. " alt="" coords="693,701,800,894"/>
-<area shape="rect" id="node110" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="6514,647,6672,947"/>
-<area shape="rect" id="node111" href="$classdraw_1_1_graph.html" title="Abstract Graph Class. " alt="" coords="6538,1083,6677,1223"/>
-<area shape="rect" id="node114" href="$classdraw_1_1_image.html" title="Image Class. " alt="" coords="6701,1090,6828,1217"/>
-<area shape="rect" id="node115" href="$classdraw_1_1_rect.html" title="Rect Class. " alt="" coords="6387,1110,6513,1197"/>
-<area shape="rect" id="node116" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="5714,1063,5893,1243"/>
-<area shape="rect" id="node128" href="$classui_1_1_tab.html" title="Tab Class. " alt="" coords="6024,1097,6137,1210"/>
-<area shape="rect" id="node112" href="$classdraw_1_1_bar_graph.html" title="Bar Graph Element. " alt="" coords="6557,1426,6672,1499"/>
-<area shape="rect" id="node113" href="$classdraw_1_1_line_graph.html" title="Line Graph Drawing. " alt="" coords="6696,1426,6815,1499"/>
-<area shape="rect" id="node117" href="$classui_1_1_linked_element.html" title="Linked Element. " alt="" coords="5588,1386,5717,1539"/>
-<area shape="rect" id="node127" href="$classui_1_1_tab_bar.html" title="Tab Bar Class. " alt="" coords="5743,1379,5865,1546"/>
-<area shape="rect" id="node118" href="$classui_1_1_list.html" title="List Class. " alt="" coords="5315,1635,5524,1922"/>
-<area shape="rect" id="node121" href="$classui_1_1_list_item.html" title="List Item Class. " alt="" coords="5725,1702,5856,1855"/>
-<area shape="rect" id="node126" href="$classui_1_1_menu.html" title="Menu Class. " alt="" coords="5579,1715,5700,1842"/>
-<area shape="rect" id="node119" href="$classui_1_1_dir_list.html" title="Directory List Class. " alt="" coords="5353,1994,5487,2161"/>
-<area shape="rect" id="node120" href="$classui_1_1_menu_list.html" title="Menu List Class. " alt="" coords="5233,2021,5328,2134"/>
-<area shape="rect" id="node122" href="$classui_1_1_info_list_item.html" title="List Item Info Class. " alt="" coords="5727,2001,5853,2154"/>
-<area shape="rect" id="node123" href="$classui_1_1_list_item_back.html" title="List Item Back Entry. " alt="" coords="5878,2041,5996,2114"/>
-<area shape="rect" id="node124" href="$classui_1_1_list_item_check.html" title="List Item Check (for use in a checklist) " alt="" coords="6021,2021,6147,2134"/>
-<area shape="rect" id="node125" href="$classui_1_1_list_item_toggle.html" title="Toggle Item. " alt="" coords="5511,2014,5703,2141"/>
-<area shape="rect" id="node129" href="$classui_1_1_icon_tab.html" title="Tab Icon Class. " alt="" coords="6257,1413,6345,1513"/>
-<area shape="rect" id="node130" href="$classui_1_1_progress_tab.html" title="Tab Progress Class. " alt="" coords="5890,1413,6005,1513"/>
-<area shape="rect" id="node133" href="$classui_1_1_text_tab.html" title="Tab Text Class. " alt="" coords="6030,1413,6116,1513"/>
-<area shape="rect" id="node134" href="$classui_1_1_time_tab.html" title="Tab Time Class. " alt="" coords="6141,1419,6232,1506"/>
-<area shape="rect" id="node131" href="$classui_1_1_arc_progress_tab.html" title="Tab Progress Arc. " alt="" coords="5880,1735,6015,1822"/>
-<area shape="rect" id="node132" href="$classui_1_1_circle_progress_tab.html" title="Tab Progress Circle. " alt="" coords="6039,1735,6189,1822"/>
-<area shape="rect" id="node136" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="2746,1379,2883,1546"/>
-<area shape="rect" id="node142" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="2621,1695,2800,1862"/>
-<area shape="rect" id="node137" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="3277,1695,3441,1862"/>
-<area shape="rect" id="node138" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="3483,1709,3647,1849"/>
-<area shape="rect" id="node139" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="2974,1695,3135,1862"/>
-<area shape="rect" id="node140" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="3855,1695,4000,1862"/>
-<area shape="rect" id="node141" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="3680,1689,3825,1869"/>
-<area shape="rect" id="node144" href="$classev_1_1_event_handler.html" title="Event Handler Class. " alt="" coords="5738,741,5869,854"/>
-<area shape="rect" id="node146" href="$classfmt_1_1_son.html" title="Stratify Object Notation. " alt="" coords="2828,714,2992,881"/>
-<area shape="rect" id="node148" href="$classsgfx_1_1_font.html" title="Font class. " alt="" coords="2541,661,2713,934"/>
-<area shape="rect" id="node153" href="$classsgfx_1_1_vector.html" title="Vector Graphics Class. " alt="" coords="2400,721,2516,874"/>
-<area shape="rect" id="node149" href="$classsgfx_1_1_file_font.html" title="File Font Class. " alt="" coords="2541,1063,2713,1243"/>
-<area shape="rect" id="node150" href="$classsgfx_1_1_memory_font.html" title="Monochrome Bitmap Font class (stored in flash memory) " alt="" coords="2216,1063,2388,1243"/>
-<area shape="rect" id="node151" href="$classsgfx_1_1_svg_font.html" title="Stratify Vector Graphics Font. " alt="" coords="2413,1090,2516,1217"/>
-<area shape="rect" id="node152" href="$classsgfx_1_1_svg_memory_font.html" title="Stratify Vector Graphics Memory Font. " alt="" coords="2291,1399,2463,1526"/>
-<area shape="rect" id="node155" href="$classsm_1_1_object.html" title="State Machine Object. " alt="" coords="4337,741,4465,854"/>
-<area shape="rect" id="node160" href="$classsm_1_1_simple_state_machine.html" title="Simple State Machine Class. " alt="" coords="3825,694,3993,901"/>
-<area shape="rect" id="node156" href="$classsm_1_1_action.html" title="State Machine Action. " alt="" coords="4357,1103,4445,1203"/>
-<area shape="rect" id="node157" href="$classsm_1_1_condition.html" title="State Machine Condition. " alt="" coords="4470,1103,4572,1203"/>
-<area shape="rect" id="node158" href="$classsm_1_1_state.html" title="State Machine State. " alt="" coords="4597,1083,4749,1223"/>
-<area shape="rect" id="node159" href="$classsm_1_1_state_machine.html" title="State Machine. " alt="" coords="4187,1077,4333,1230"/>
-<area shape="rect" id="node162" href="$classsys_1_1_aio.html" title="Asynchronous IO Class. " alt="" coords="2081,714,2180,881"/>
-<area shape="rect" id="node163" href="$classsys_1_1_cli.html" title="Command Line Interface class. " alt="" coords="2205,721,2376,874"/>
-<area shape="rect" id="node164" href="$classsys_1_1_dir.html" title="Dir class. " alt="" coords="824,714,931,881"/>
-<area shape="rect" id="node165" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="1522,681,1629,914"/>
-<area shape="rect" id="node209" href="$classsys_1_1_messenger.html" title="Messenger Class. " alt="" coords="955,721,1113,874"/>
-<area shape="rect" id="node210" href="$classsys_1_1_mq.html" title="Message Queue Class. " alt="" coords="1139,714,1244,881"/>
-<area shape="rect" id="node211" href="$classsys_1_1_mutex.html" title="Mutex Class. " alt="" coords="1269,721,1373,874"/>
-<area shape="rect" id="node212" href="$classsys_1_1_sem.html" title="Semaphore Class. " alt="" coords="1398,714,1497,881"/>
-<area shape="rect" id="node213" href="$classsys_1_1_signal.html" title="Class for sending Signal events (see SignalHandler for an example) " alt="" coords="1654,721,1764,874"/>
-<area shape="rect" id="node215" href="$classsys_1_1_task.html" title="Task Class. " alt="" coords="1789,721,1896,874"/>
-<area shape="rect" id="node216" href="$classsys_1_1_thread.html" title="Thread Class. " alt="" coords="1920,687,2056,907"/>
-<area shape="rect" id="node166" href="$classapi_1_1_fmt_file_object.html" title="Format File Class. " alt="" coords="1014,1117,1143,1190"/>
-<area shape="rect" id="node170" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="1272,1117,1407,1190"/>
-<area shape="rect" id="node208" href="$classsys_1_1_sys.html" title="Sys Class. " alt="" coords="1479,1030,1640,1277"/>
-<area shape="rect" id="node167" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="944,1379,1069,1546"/>
-<area shape="rect" id="node168" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="1093,1373,1208,1553"/>
-<area shape="rect" id="node169" href="$classfmt_1_1_xml.html" title="XML Class. " alt="" coords="813,1386,920,1539"/>
-<area shape="rect" id="node171" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="1232,1406,1376,1519"/>
-<area shape="rect" id="node172" href="$classhal_1_1_c_fifo.html" title="Channeled FIFO Class. " alt="" coords="1623,1702,1723,1855"/>
-<area shape="rect" id="node173" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="3002,2001,3133,2154"/>
-<area shape="rect" id="node174" href="$classhal_1_1_f_fifo.html" title="FFifo Class. " alt="" coords="857,1709,945,1849"/>
-<area shape="rect" id="node175" href="$classhal_1_1_fifo.html" title="FIFO Class. " alt="" coords="970,1702,1096,1855"/>
-<area shape="rect" id="node176" href="$classhal_1_1_led.html" title="LED Class. " alt="" coords="1121,1702,1209,1855"/>
-<area shape="rect" id="node177" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="1234,1669,1357,1889"/>
-<area shape="rect" id="node206" href="$classhal_1_1_switchboard.html" title="Switch board class. " alt="" coords="1382,1695,1599,1862"/>
-<area shape="rect" id="node207" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="709,1695,829,1862"/>
-<area shape="rect" id="node178" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="1176,1974,1312,2181"/>
-<area shape="rect" id="node179" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; core_info\l_t, core_attr_t, &#39;c&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1644,2277,1795,2483"/>
-<area shape="rect" id="node181" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; adc_info\l_t, adc_attr_t, &#39;a&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2199,2277,2345,2483"/>
-<area shape="rect" id="node183" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pwm_info\l_t, pwm_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2015,2277,2168,2483"/>
-<area shape="rect" id="node185" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; dac_info\l_t, dac_attr_t, &#39;d&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2372,2277,2519,2483"/>
-<area shape="rect" id="node187" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; uart_info\l_t, uart_attr_t, UART\l_IOC_IDENT_CHAR \&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1426,2270,1581,2490"/>
-<area shape="rect" id="node189" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; usb_info\l_t, usb_attr_t, &#39;u&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="53,2277,200,2483"/>
-<area shape="rect" id="node191" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; rtc_info\l_t, rtc_attr_t, &#39;r&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="959,2277,1099,2483"/>
-<area shape="rect" id="node193" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2s_info\l_t, i2s_attr_t, &#39;I&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="778,2277,920,2483"/>
-<area shape="rect" id="node194" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2c_info\l_t, i2c_attr_t, &#39;i&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1151,2277,1293,2483"/>
-<area shape="rect" id="node196" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; tmr_info\l_t, tmr_attr_t, &#39;t&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="394,2277,539,2483"/>
-<area shape="rect" id="node198" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; spi_info\l_t, spi_attr_t, &#39;s&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1839,2277,1981,2483"/>
-<area shape="rect" id="node200" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; eint_info\l_t, eint_attr_t, &#39;e&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="224,2277,371,2483"/>
-<area shape="rect" id="node202" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pio_info\l_t, pio_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="563,2277,705,2483"/>
-<area shape="rect" id="node180" href="$classhal_1_1_core.html" title="Core Class. " alt="" coords="1631,2555,1808,2709"/>
-<area shape="rect" id="node182" href="$classhal_1_1_adc.html" title="ADC Peripheral Class. " alt="" coords="2229,2582,2315,2682"/>
-<area shape="rect" id="node184" href="$classhal_1_1_pwm.html" title="PWM Class. " alt="" coords="2032,2542,2152,2722"/>
-<area shape="rect" id="node186" href="$classhal_1_1_dac.html" title="DAC Class. " alt="" coords="2388,2569,2501,2695"/>
-<area shape="rect" id="node188" href="$classhal_1_1_uart.html" title="UART Class. " alt="" coords="1461,2562,1547,2702"/>
-<area shape="rect" id="node190" href="$classhal_1_1_usb.html" title="USB Class. " alt="" coords="55,2555,197,2709"/>
-<area shape="rect" id="node192" href="$classhal_1_1_rtc.html" title="RTC Class. " alt="" coords="983,2582,1075,2682"/>
-<area shape="rect" id="node195" href="$classhal_1_1_i2_c.html" title="I2C Peripheral Class. " alt="" coords="1173,2555,1272,2709"/>
-<area shape="rect" id="node197" href="$classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. " alt="" coords="409,2542,523,2722"/>
-<area shape="rect" id="node199" href="$classhal_1_1_spi.html" title="SPI Class. " alt="" coords="1868,2575,1953,2689"/>
-<area shape="rect" id="node201" href="$classhal_1_1_eint.html" title="External Interrupt Class. " alt="" coords="248,2589,347,2675"/>
-<area shape="rect" id="node203" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="556,2549,665,2715"/>
-<area shape="rect" id="node204" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="177,2774,297,2927"/>
-<area shape="rect" id="node205" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="5,2979,152,3186"/>
-<area shape="rect" id="node214" href="$classhal_1_1_device_signal.html" title="Class for bridging device events with Signal events. " alt="" coords="1664,1097,1788,1210"/>
-<area shape="rect" id="node218" href="$classtest_1_1_test.html" title="Test Class. " alt="" coords="4580,641,4767,954"/>
-<area shape="rect" id="node219" href="$classtest_1_1_function.html" title="Function Test Class Template. " alt="" coords="4773,1077,4980,1230"/>
-<area shape="rect" id="node221" href="$classui_1_1_button.html" title="Button Class. " alt="" coords="578,1373,733,1553"/>
-<area shape="rect" id="node223" href="$classvar_1_1_queue.html" title="{var::Queue\&lt; Test * \&gt;\n||+ Queue()\l+ back()\l+ back()\l+ clear()\l+ count()\l+ front()\land 4 more...\l}" alt="" coords="3018,1077,3160,1230"/>
-<area shape="rect" id="node224" href="$classvar_1_1_array.html" title="Array Class. " alt="" coords="3260,714,3388,881"/>
-<area shape="rect" id="node225" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="3591,707,3717,887"/>
-<area shape="rect" id="node242" href="$classvar_1_1_linked_list.html" title="Linked List Class. " alt="" coords="3412,721,3521,874"/>
-<area shape="rect" id="node243" href="$classvar_1_1_queue.html" title="Queue Class. " alt="" coords="3118,721,3236,874"/>
-<area shape="rect" id="node226" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="3737,1117,3876,1190"/>
-<area shape="rect" id="node229" href="$classvar_1_1_ring.html" title="Ring Buffer class. " alt="" coords="3901,1077,4061,1230"/>
-<area shape="rect" id="node230" href="$classvar_1_1_string.html" title="String class. " alt="" coords="3293,1077,3400,1230"/>
-<area shape="rect" id="node236" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="3597,1070,3712,1237"/>
-<area shape="rect" id="node238" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q31_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="3692,1379,3833,1546"/>
-<area shape="rect" id="node239" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q15_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="4028,1379,4169,1546"/>
-<area shape="rect" id="node240" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; float32_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="4194,1379,4352,1546"/>
-<area shape="rect" id="node241" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; ComplexF32 \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="2539,1379,2721,1546"/>
-<area shape="rect" id="node227" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="4377,1359,4516,1566"/>
-<area shape="rect" id="node228" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="4122,1709,4211,1849"/>
-<area shape="rect" id="node231" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="3114,1379,3245,1546"/>
-<area shape="rect" id="node232" href="$classvar_1_1_name_string.html" title="String for file files. " alt="" coords="3271,1426,3388,1499"/>
-<area shape="rect" id="node233" href="$classvar_1_1_path_string.html" title="String for file paths. " alt="" coords="3412,1406,3521,1519"/>
-<area shape="rect" id="node234" href="$classvar_1_1_static_string.html" title="String using static memory allocation. " alt="" coords="3545,1406,3668,1519"/>
-<area shape="rect" id="node235" href="$classvar_1_1_token.html" title="Abstract Token Class. " alt="" coords="2908,1373,3089,1553"/>
-<area shape="rect" id="node237" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="3858,1386,4003,1539"/>
+<area shape="rect" id="node2" href="$classapi_1_1_info_object.html" title="Information Object. " alt="" coords="9744,191,9851,265"/>
+<area shape="rect" id="node93" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="4863,131,5052,325"/>
+<area shape="rect" id="node3" href="$classapi_1_1_calc_info_object.html" title="Calc Infomation Object. " alt="" coords="9274,410,9408,483"/>
+<area shape="rect" id="node7" href="$classapi_1_1_chrono_info_object.html" title="Chrono Information Object. " alt="" coords="9594,377,9749,517"/>
+<area shape="rect" id="node12" href="$classapi_1_1_draw_info_object.html" title="Draw Information Object. " alt="" coords="10759,410,10896,483"/>
+<area shape="rect" id="node31" href="$classapi_1_1_dsp_info_object.html" title="DSP Information Object. " alt="" coords="11613,410,11744,483"/>
+<area shape="rect" id="node39" href="$classapi_1_1_ev_info_object.html" title="Event Information Object. " alt="" coords="6824,410,6947,483"/>
+<area shape="rect" id="node44" href="$classapi_1_1_fmt_info_object.html" title="Format Infomation Object. " alt="" coords="11768,410,11897,483"/>
+<area shape="rect" id="node45" href="$classapi_1_1_hal_info_object.html" title="Hal Info Object. " alt="" coords="13386,410,13512,483"/>
+<area shape="rect" id="node75" href="$classapi_1_1_sgfx_info_object.html" title="Sgfx Information Object. " alt="" coords="7545,410,7679,483"/>
+<area shape="rect" id="node81" href="$classapi_1_1_sm_info_object.html" title="State Machine Information Object. " alt="" coords="9123,410,9249,483"/>
+<area shape="rect" id="node82" href="$classapi_1_1_sys_info_object.html" title="System Info Object. " alt="" coords="8455,410,8584,483"/>
+<area shape="rect" id="node90" href="$classapi_1_1_test_info_object.html" title="Test Information Object. " alt="" coords="9774,410,9905,483"/>
+<area shape="rect" id="node91" href="$classapi_1_1_ui_info_object.html" title="User Interface Information Object. " alt="" coords="9929,410,10048,483"/>
+<area shape="rect" id="node92" href="$classapi_1_1_var_info_object.html" title="Var Infomation Object. " alt="" coords="10922,410,11048,483"/>
+<area shape="rect" id="node4" href="$classcalc_1_1_base64.html" title="Base64 Encode/Decode Class. " alt="" coords="9264,741,9419,854"/>
+<area shape="rect" id="node5" href="$classcalc_1_1_checksum.html" title="Checksum Class. " alt="" coords="8980,741,9119,854"/>
+<area shape="rect" id="node6" href="$classcalc_1_1_rle.html" title="Run Length Encoding Class. " alt="" coords="9144,741,9240,854"/>
+<area shape="rect" id="node8" href="$classchrono_1_1_clock.html" title="Clock Class. " alt="" coords="9951,754,10076,841"/>
+<area shape="rect" id="node9" href="$classchrono_1_1_clock_time.html" title="Clock Time Class. " alt="" coords="9443,714,9575,881"/>
+<area shape="rect" id="node10" href="$classchrono_1_1_micro_time.html" title="MicroTime Class. " alt="" coords="9769,674,9927,921"/>
+<area shape="rect" id="node11" href="$classchrono_1_1_time.html" title="Time Class. " alt="" coords="9599,714,9744,881"/>
+<area shape="rect" id="node13" href="$classdraw_1_1_animation_attr.html" title="Animation Attributes Class. " alt="" coords="10772,721,10940,874"/>
+<area shape="rect" id="node15" href="$classdraw_1_1_axis.html" title="Graph Axis Class. " alt="" coords="11361,707,11452,887"/>
+<area shape="rect" id="node16" href="$classdraw_1_1_data_set.html" title="Data Set Class. " alt="" coords="11476,721,11581,874"/>
+<area shape="rect" id="node17" href="$classdraw_1_1_drawing_attr.html" title="Drawing Attribute Class. " alt="" coords="10965,667,11144,927"/>
+<area shape="rect" id="node18" href="$classdraw_1_1_drawing_scaled_attr.html" title="Scaled Drawing Attributes. " alt="" coords="11168,721,11336,874"/>
+<area shape="rect" id="node19" href="$classdraw_1_1_icon_attr.html" title="Icon Attributes Class. " alt="" coords="10100,714,10241,881"/>
+<area shape="rect" id="node21" href="$classdraw_1_1_panel_attr.html" title="Panel Attributes Class. " alt="" coords="10265,741,10377,854"/>
+<area shape="rect" id="node23" href="$classdraw_1_1_progress_attr.html" title="Progress Attribute Class. " alt="" coords="10540,721,10697,874"/>
+<area shape="rect" id="node28" href="$classdraw_1_1_text_attr.html" title="Text Attribute Class. " alt="" coords="10402,714,10515,881"/>
+<area shape="rect" id="node14" href="$classdraw_1_1_animation.html" title="Animation Class. " alt="" coords="10707,1090,10823,1217"/>
+<area shape="rect" id="node20" href="$classdraw_1_1_icon.html" title="Icon Class. " alt="" coords="8008,1103,8135,1203"/>
+<area shape="rect" id="node22" href="$classdraw_1_1_panel.html" title="Panel Class. " alt="" coords="8477,1110,8604,1197"/>
+<area shape="rect" id="node24" href="$classdraw_1_1_progress.html" title="Progress Class. " alt="" coords="9211,1097,9409,1210"/>
+<area shape="rect" id="node25" href="$classdraw_1_1_arc_progress.html" title="Progress Arc Class. " alt="" coords="9089,1406,9220,1519"/>
+<area shape="rect" id="node26" href="$classdraw_1_1_bar_progress.html" title="Progress Bar Class. " alt="" coords="9245,1413,9376,1513"/>
+<area shape="rect" id="node27" href="$classdraw_1_1_circle_progress.html" title="Progress Circle Class. " alt="" coords="9401,1419,9545,1506"/>
+<area shape="rect" id="node29" href="$classdraw_1_1_text.html" title="Text Class. " alt="" coords="8788,1110,8915,1197"/>
+<area shape="rect" id="node30" href="$classdraw_1_1_text_box.html" title="Text Box. " alt="" coords="9020,1070,9147,1237"/>
+<area shape="rect" id="node32" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; float32_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="11518,1077,11695,1230"/>
+<area shape="rect" id="node34" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; q15_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="11719,1077,11877,1230"/>
+<area shape="rect" id="node36" href="$classdsp_1_1_complex.html" title="{dsp::Complex\&lt; q31_t \&gt;\n||+ imaginary()\l+ imaginary()\l+ operator!=()\l+ operator+()\l+ operator+=()\l+ operator&#45;()\land 4 more...\l}" alt="" coords="11902,1077,12060,1230"/>
+<area shape="rect" id="node38" href="$classdsp_1_1_complex.html" title="Complex Class. " alt="" coords="11681,721,11815,874"/>
+<area shape="rect" id="node33" href="$classdsp_1_1_complex_f32.html" title="Complex F32 Value. " alt="" coords="11544,1426,11669,1499"/>
+<area shape="rect" id="node35" href="$classdsp_1_1_complex_q15.html" title="Complex Q15 Value. " alt="" coords="11735,1426,11863,1499"/>
+<area shape="rect" id="node37" href="$classdsp_1_1_complex_q31.html" title="Complex Q31 Value. " alt="" coords="11917,1426,12045,1499"/>
+<area shape="rect" id="node40" href="$classev_1_1_event.html" title="Event Class. " alt="" coords="6833,721,6937,874"/>
+<area shape="rect" id="node41" href="$classev_1_1_event_loop_attr.html" title="Event Loop Attributes. " alt="" coords="6613,714,6808,881"/>
+<area shape="rect" id="node42" href="$classev_1_1_event_loop.html" title="Event Loop Class. " alt="" coords="6681,1017,6881,1290"/>
+<area shape="rect" id="node43" href="$classui_1_1_event_loop.html" title="Event Loop Class (Graphical UI) " alt="" coords="6920,1353,7083,1573"/>
+<area shape="rect" id="node46" href="$classhal_1_1_c_fifo_info.html" title="Channeled FIFO Information Class. " alt="" coords="13871,714,14016,881"/>
+<area shape="rect" id="node47" href="$classhal_1_1_core_info.html" title="The Core Info class. " alt="" coords="14041,734,14167,861"/>
+<area shape="rect" id="node48" href="$classhal_1_1_display_palette.html" title="Display Palette Class. " alt="" coords="14191,721,14323,874"/>
+<area shape="rect" id="node49" href="$classhal_1_1_f_fifo_info.html" title="FFIFO Info Class. " alt="" coords="14347,714,14465,881"/>
+<area shape="rect" id="node50" href="$classhal_1_1_fifo_info.html" title="Fifo Attributes Class. " alt="" coords="14490,721,14597,874"/>
+<area shape="rect" id="node51" href="$classhal_1_1_pin_assignment.html" title="Pin Assignment Class. " alt="" coords="12952,701,13121,894"/>
+<area shape="rect" id="node52" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2s_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2s\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12520,1057,12692,1250"/>
+<area shape="rect" id="node54" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; usb_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const usb\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12944,1057,13121,1250"/>
+<area shape="rect" id="node56" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; eint_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const eint\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="13934,1057,14111,1250"/>
+<area shape="rect" id="node58" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; adc_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const adc\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="14534,1057,14711,1250"/>
+<area shape="rect" id="node60" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; uart_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const uart\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12729,1057,12908,1250"/>
+<area shape="rect" id="node62" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; spi_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const spi\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="13244,1057,13416,1250"/>
+<area shape="rect" id="node64" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; tmr_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const tmr\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12086,1057,12260,1250"/>
+<area shape="rect" id="node66" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; pwm_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const pwm\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="12294,1057,12479,1250"/>
+<area shape="rect" id="node68" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; dac_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const dac\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="14234,1057,14411,1250"/>
+<area shape="rect" id="node70" href="$classhal_1_1_pin_assignment.html" title="{hal::PinAssignment\l\&lt; i2c_pin_assignment_t \&gt;\n||+ PinAssignment()\l+ assign()\l+ clear()\l+ copy()\l+ count()\l+ operator const i2c\l_pin_assignment_t *()\l+ operator&#45;\&gt;()\l+ size()\l}" alt="" coords="13539,1057,13711,1250"/>
+<area shape="rect" id="node72" href="$classhal_1_1_switchboard_connection.html" title="Switchboard Connection Class. " alt="" coords="13248,714,13435,881"/>
+<area shape="rect" id="node73" href="$classhal_1_1_switchboard_info.html" title="Switchboard Connection Class. " alt="" coords="13460,727,13652,867"/>
+<area shape="rect" id="node74" href="$classhal_1_1_switchboard_terminal.html" title="Switchboard Terminal Class. " alt="" coords="13676,707,13845,887"/>
+<area shape="rect" id="node53" href="$classhal_1_1_i2_s_pin_assignment.html" title="I2S Pin Assignment. " alt="" coords="12529,1426,12684,1499"/>
+<area shape="rect" id="node55" href="$classhal_1_1_usb_pin_assignment.html" title="USB Pin Assignment. " alt="" coords="12954,1426,13112,1499"/>
+<area shape="rect" id="node57" href="$classhal_1_1_eint_pin_assignment.html" title="EINT Pin Assignment. " alt="" coords="13943,1426,14101,1499"/>
+<area shape="rect" id="node59" href="$classhal_1_1_adc_pin_assignment.html" title="ADC Pin Assignment. " alt="" coords="14543,1426,14701,1499"/>
+<area shape="rect" id="node61" href="$classhal_1_1_uart_pin_assignment.html" title="UART Pin Assignment. " alt="" coords="12738,1426,12899,1499"/>
+<area shape="rect" id="node63" href="$classhal_1_1_spi_pin_assignment.html" title="SPI Pin Assignment. " alt="" coords="13253,1426,13408,1499"/>
+<area shape="rect" id="node65" href="$classhal_1_1_tmr_pin_assignment.html" title="Tmr Pin Assignment. " alt="" coords="12094,1426,12252,1499"/>
+<area shape="rect" id="node67" href="$classhal_1_1_pwm_pin_assignment.html" title="PWM Pin Assignment. " alt="" coords="12304,1426,12468,1499"/>
+<area shape="rect" id="node69" href="$classhal_1_1_dac_pin_assignment.html" title="DAC Pin Assignment. " alt="" coords="14243,1426,14401,1499"/>
+<area shape="rect" id="node71" href="$classhal_1_1_i2_c_pin_assignment.html" title="I2C Pin Assignment. " alt="" coords="13547,1426,13703,1499"/>
+<area shape="rect" id="node76" href="$classsgfx_1_1_dim.html" title="Dimension Class. " alt="" coords="7624,721,7772,874"/>
+<area shape="rect" id="node77" href="$classsgfx_1_1_pen.html" title="Pen Class. " alt="" coords="7798,721,7903,874"/>
+<area shape="rect" id="node78" href="$classsgfx_1_1_point.html" title="Point Class. " alt="" coords="7144,714,7300,881"/>
+<area shape="rect" id="node79" href="$classsgfx_1_1_region.html" title="Region Class. " alt="" coords="7325,721,7424,874"/>
+<area shape="rect" id="node80" href="$classsgfx_1_1_vector_map.html" title="Vecotor Map Class. " alt="" coords="7448,721,7599,874"/>
+<area shape="rect" id="node83" href="$classsys_1_1_appfs.html" title="Application File System Class. " alt="" coords="8387,721,8497,874"/>
+<area shape="rect" id="node84" href="$classsys_1_1_assets.html" title="Assets Class. " alt="" coords="8522,714,8672,881"/>
+<area shape="rect" id="node85" href="$classsys_1_1_mq_attr.html" title="Message Queue Attribute Class. " alt="" coords="8697,721,8796,874"/>
+<area shape="rect" id="node86" href="$classsys_1_1_mutex_attr.html" title="Mutex Attibutes. " alt="" coords="8820,721,8955,874"/>
+<area shape="rect" id="node87" href="$classsys_1_1_sched.html" title="Sched Class. " alt="" coords="7927,721,8067,874"/>
+<area shape="rect" id="node88" href="$classsys_1_1_signal_handler.html" title="Signal Handler Class. " alt="" coords="8091,747,8223,847"/>
+<area shape="rect" id="node89" href="$classsys_1_1_task_info.html" title="The Task Attributes Class. " alt="" coords="8247,707,8363,887"/>
+<area shape="rect" id="node94" href="$classapi_1_1_calc_work_object.html" title="Calc Work Object. " alt="" coords="5674,410,5816,483"/>
+<area shape="rect" id="node107" href="$classapi_1_1_chrono_work_object.html" title="Chrono Work Object. " alt="" coords="6444,377,6603,517"/>
+<area shape="rect" id="node109" href="$classapi_1_1_draw_work_object.html" title="Draw Work Object. " alt="" coords="6970,410,7117,483"/>
+<area shape="rect" id="node135" href="$classapi_1_1_dsp_work_object.html" title="DSP Work Object. " alt="" coords="4481,1050,4680,1257"/>
+<area shape="rect" id="node143" href="$classapi_1_1_ev_work_object.html" title="Event Object Class. " alt="" coords="6277,410,6408,483"/>
+<area shape="rect" id="node145" href="$classapi_1_1_fmt_work_object.html" title="Format Work Object Class. " alt="" coords="3436,410,3575,483"/>
+<area shape="rect" id="node147" href="$classapi_1_1_sgfx_work_object.html" title="Sgfx Work Object. " alt="" coords="3110,410,3252,483"/>
+<area shape="rect" id="node154" href="$classapi_1_1_sm_work_object.html" title="State Machine Work Object. " alt="" coords="4889,410,5024,483"/>
+<area shape="rect" id="node161" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="2126,410,2263,483"/>
+<area shape="rect" id="node217" href="$classapi_1_1_test_work_object.html" title="Test Work Object. " alt="" coords="5110,410,5249,483"/>
+<area shape="rect" id="node220" href="$classapi_1_1_ui_work_object.html" title="User Interface Work Object. " alt="" coords="4389,542,4517,615"/>
+<area shape="rect" id="node222" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="3748,410,3883,483"/>
+<area shape="rect" id="node95" href="$classcalc_1_1_ema.html" title="Exponential Moving Average template class. " alt="" coords="5464,727,5612,867"/>
+<area shape="rect" id="node96" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, s16,\l s32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5695,1083,5833,1223"/>
+<area shape="rect" id="node98" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, s32,\l s64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5524,1083,5669,1223"/>
+<area shape="rect" id="node100" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u8, u16,\l u32 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="5857,1083,5996,1223"/>
+<area shape="rect" id="node102" href="$classcalc_1_1_ema.html" title="{calc::Ema\&lt; u16, u32,\l u64 \&gt;\n||+ Ema()\l+ average()\l+ calc()\l+ set_average()\l+ small_max()\l}" alt="" coords="6020,1083,6167,1223"/>
+<area shape="rect" id="node104" href="$classcalc_1_1_ema__f.html" title="Exponential Moving Average class (float) " alt="" coords="5688,721,5803,874"/>
+<area shape="rect" id="node105" href="$classcalc_1_1_lookup.html" title="Lookup Table Template Class. " alt="" coords="5827,747,5960,847"/>
+<area shape="rect" id="node106" href="$classcalc_1_1_pid__f.html" title="PID Control Loop Class (float) " alt="" coords="5985,721,6151,874"/>
+<area shape="rect" id="node97" href="$classcalc_1_1_ema__s16.html" title="Exponential Moving Average class (s16) " alt="" coords="5710,1426,5817,1499"/>
+<area shape="rect" id="node99" href="$classcalc_1_1_ema__s32.html" title="Exponential Moving Average class (s32) " alt="" coords="5543,1426,5651,1499"/>
+<area shape="rect" id="node101" href="$classcalc_1_1_ema__u16.html" title="Exponential Moving Average class (u16) " alt="" coords="5872,1426,5981,1499"/>
+<area shape="rect" id="node103" href="$classcalc_1_1_ema__u32.html" title="Exponential Moving Average class (u32) " alt="" coords="6005,1426,6115,1499"/>
+<area shape="rect" id="node108" href="$classchrono_1_1_timer.html" title="Timer Class. " alt="" coords="6482,701,6589,894"/>
+<area shape="rect" id="node110" href="$classdraw_1_1_drawing.html" title="Drawing Class. " alt="" coords="6962,647,7120,947"/>
+<area shape="rect" id="node111" href="$classdraw_1_1_graph.html" title="Abstract Graph Class. " alt="" coords="7209,1083,7348,1223"/>
+<area shape="rect" id="node114" href="$classdraw_1_1_image.html" title="Image Class. " alt="" coords="6905,1090,7032,1217"/>
+<area shape="rect" id="node115" href="$classdraw_1_1_rect.html" title="Rect Class. " alt="" coords="7057,1110,7184,1197"/>
+<area shape="rect" id="node116" href="$classui_1_1_element.html" title="Element Class. " alt="" coords="6258,1063,6437,1243"/>
+<area shape="rect" id="node128" href="$classui_1_1_tab.html" title="Tab Class. " alt="" coords="6543,1097,6656,1210"/>
+<area shape="rect" id="node112" href="$classdraw_1_1_bar_graph.html" title="Bar Graph Element. " alt="" coords="7164,1426,7279,1499"/>
+<area shape="rect" id="node113" href="$classdraw_1_1_line_graph.html" title="Line Graph Drawing. " alt="" coords="7303,1426,7421,1499"/>
+<area shape="rect" id="node117" href="$classui_1_1_linked_element.html" title="Linked Element. " alt="" coords="6286,1386,6415,1539"/>
+<area shape="rect" id="node127" href="$classui_1_1_tab_bar.html" title="Tab Bar Class. " alt="" coords="6139,1379,6261,1546"/>
+<area shape="rect" id="node118" href="$classui_1_1_list.html" title="List Class. " alt="" coords="6527,1635,6736,1922"/>
+<area shape="rect" id="node121" href="$classui_1_1_list_item.html" title="List Item Class. " alt="" coords="6285,1702,6416,1855"/>
+<area shape="rect" id="node126" href="$classui_1_1_menu.html" title="Menu Class. " alt="" coords="6139,1715,6260,1842"/>
+<area shape="rect" id="node119" href="$classui_1_1_dir_list.html" title="Directory List Class. " alt="" coords="6703,1994,6837,2161"/>
+<area shape="rect" id="node120" href="$classui_1_1_menu_list.html" title="Menu List Class. " alt="" coords="6584,2021,6679,2134"/>
+<area shape="rect" id="node122" href="$classui_1_1_info_list_item.html" title="List Item Info Class. " alt="" coords="6140,2001,6267,2154"/>
+<area shape="rect" id="node123" href="$classui_1_1_list_item_back.html" title="List Item Back Entry. " alt="" coords="6292,2041,6409,2114"/>
+<area shape="rect" id="node124" href="$classui_1_1_list_item_check.html" title="List Item Check (for use in a checklist) " alt="" coords="6434,2021,6560,2134"/>
+<area shape="rect" id="node125" href="$classui_1_1_list_item_toggle.html" title="Toggle Item. " alt="" coords="5924,2014,6116,2141"/>
+<area shape="rect" id="node129" href="$classui_1_1_icon_tab.html" title="Tab Icon Class. " alt="" coords="6556,1413,6644,1513"/>
+<area shape="rect" id="node130" href="$classui_1_1_progress_tab.html" title="Tab Progress Class. " alt="" coords="6779,1413,6895,1513"/>
+<area shape="rect" id="node133" href="$classui_1_1_text_tab.html" title="Tab Text Class. " alt="" coords="6668,1413,6755,1513"/>
+<area shape="rect" id="node134" href="$classui_1_1_time_tab.html" title="Tab Time Class. " alt="" coords="6439,1419,6531,1506"/>
+<area shape="rect" id="node131" href="$classui_1_1_arc_progress_tab.html" title="Tab Progress Arc. " alt="" coords="6935,1735,7069,1822"/>
+<area shape="rect" id="node132" href="$classui_1_1_circle_progress_tab.html" title="Tab Progress Circle. " alt="" coords="6761,1735,6911,1822"/>
+<area shape="rect" id="node136" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="4613,1379,4749,1546"/>
+<area shape="rect" id="node142" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="5004,1695,5183,1862"/>
+<area shape="rect" id="node137" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="4807,1695,4971,1862"/>
+<area shape="rect" id="node138" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="4617,1709,4781,1849"/>
+<area shape="rect" id="node139" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="4260,1695,4421,1862"/>
+<area shape="rect" id="node140" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="4447,1695,4592,1862"/>
+<area shape="rect" id="node141" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="4090,1689,4235,1869"/>
+<area shape="rect" id="node144" href="$classev_1_1_event_handler.html" title="Event Handler Class. " alt="" coords="6277,741,6408,854"/>
+<area shape="rect" id="node146" href="$classfmt_1_1_son.html" title="Stratify Object Notation. " alt="" coords="3292,714,3456,881"/>
+<area shape="rect" id="node148" href="$classsgfx_1_1_font.html" title="Font class. " alt="" coords="3095,661,3267,934"/>
+<area shape="rect" id="node153" href="$classsgfx_1_1_vector.html" title="Vector Graphics Class. " alt="" coords="2954,721,3069,874"/>
+<area shape="rect" id="node149" href="$classsgfx_1_1_file_font.html" title="File Font Class. " alt="" coords="3085,1063,3257,1243"/>
+<area shape="rect" id="node150" href="$classsgfx_1_1_memory_font.html" title="Monochrome Bitmap Font class (stored in flash memory) " alt="" coords="2760,1063,2932,1243"/>
+<area shape="rect" id="node151" href="$classsgfx_1_1_svg_font.html" title="Stratify Vector Graphics Font. " alt="" coords="2957,1090,3060,1217"/>
+<area shape="rect" id="node152" href="$classsgfx_1_1_svg_memory_font.html" title="Stratify Vector Graphics Memory Font. " alt="" coords="2603,1399,2775,1526"/>
+<area shape="rect" id="node155" href="$classsm_1_1_object.html" title="State Machine Object. " alt="" coords="4808,741,4936,854"/>
+<area shape="rect" id="node160" href="$classsm_1_1_simple_state_machine.html" title="Simple State Machine Class. " alt="" coords="4960,694,5128,901"/>
+<area shape="rect" id="node156" href="$classsm_1_1_action.html" title="State Machine Action. " alt="" coords="4705,1103,4793,1203"/>
+<area shape="rect" id="node157" href="$classsm_1_1_condition.html" title="State Machine Condition. " alt="" coords="4818,1103,4920,1203"/>
+<area shape="rect" id="node158" href="$classsm_1_1_state.html" title="State Machine State. " alt="" coords="4945,1083,5097,1223"/>
+<area shape="rect" id="node159" href="$classsm_1_1_state_machine.html" title="State Machine. " alt="" coords="5121,1077,5268,1230"/>
+<area shape="rect" id="node162" href="$classsys_1_1_aio.html" title="Asynchronous IO Class. " alt="" coords="2634,714,2733,881"/>
+<area shape="rect" id="node163" href="$classsys_1_1_cli.html" title="Command Line Interface class. " alt="" coords="2758,721,2929,874"/>
+<area shape="rect" id="node164" href="$classsys_1_1_dir.html" title="Dir class. " alt="" coords="1377,714,1484,881"/>
+<area shape="rect" id="node165" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="2076,654,2183,941"/>
+<area shape="rect" id="node209" href="$classsys_1_1_messenger.html" title="Messenger Class. " alt="" coords="1508,721,1667,874"/>
+<area shape="rect" id="node210" href="$classsys_1_1_mq.html" title="Message Queue Class. " alt="" coords="1692,714,1797,881"/>
+<area shape="rect" id="node211" href="$classsys_1_1_mutex.html" title="Mutex Class. " alt="" coords="1822,721,1927,874"/>
+<area shape="rect" id="node212" href="$classsys_1_1_sem.html" title="Semaphore Class. " alt="" coords="1951,714,2051,881"/>
+<area shape="rect" id="node213" href="$classsys_1_1_signal.html" title="Class for sending Signal events (see SignalHandler for an example) " alt="" coords="2338,721,2448,874"/>
+<area shape="rect" id="node215" href="$classsys_1_1_task.html" title="Task Class. " alt="" coords="2207,721,2313,874"/>
+<area shape="rect" id="node216" href="$classsys_1_1_thread.html" title="Thread Class. " alt="" coords="2473,687,2609,907"/>
+<area shape="rect" id="node166" href="$classapi_1_1_fmt_file_object.html" title="Format File Class. " alt="" coords="2150,1117,2279,1190"/>
+<area shape="rect" id="node170" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="1989,1117,2124,1190"/>
+<area shape="rect" id="node208" href="$classsys_1_1_sys.html" title="Sys Class. " alt="" coords="2303,1030,2464,1277"/>
+<area shape="rect" id="node167" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="2425,1379,2551,1546"/>
+<area shape="rect" id="node168" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="2156,1373,2271,1553"/>
+<area shape="rect" id="node169" href="$classfmt_1_1_xml.html" title="XML Class. " alt="" coords="2294,1386,2401,1539"/>
+<area shape="rect" id="node171" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="1988,1406,2132,1519"/>
+<area shape="rect" id="node172" href="$classhal_1_1_c_fifo.html" title="Channeled FIFO Class. " alt="" coords="1826,1702,1925,1855"/>
+<area shape="rect" id="node173" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="2614,2001,2745,2154"/>
+<area shape="rect" id="node174" href="$classhal_1_1_f_fifo.html" title="FFifo Class. " alt="" coords="1950,1709,2039,1849"/>
+<area shape="rect" id="node175" href="$classhal_1_1_fifo.html" title="FIFO Class. " alt="" coords="2064,1702,2189,1855"/>
+<area shape="rect" id="node176" href="$classhal_1_1_led.html" title="LED Class. " alt="" coords="2214,1702,2303,1855"/>
+<area shape="rect" id="node177" href="$classhal_1_1_periph_object.html" title="Periph Object Class. " alt="" coords="1449,1669,1572,1889"/>
+<area shape="rect" id="node206" href="$classhal_1_1_switchboard.html" title="Switch board class. " alt="" coords="2585,1695,2801,1862"/>
+<area shape="rect" id="node207" href="$classui_1_1_device_button.html" title="Device Button Class. " alt="" coords="3417,1695,3537,1862"/>
+<area shape="rect" id="node178" href="$classhal_1_1_periph.html" title="Peripheral Class. " alt="" coords="1224,1974,1360,2181"/>
+<area shape="rect" id="node179" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; core_info\l_t, core_attr_t, &#39;c&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1728,2277,1879,2483"/>
+<area shape="rect" id="node181" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; adc_info\l_t, adc_attr_t, &#39;a&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="5,2277,152,2483"/>
+<area shape="rect" id="node183" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pwm_info\l_t, pwm_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="799,2277,952,2483"/>
+<area shape="rect" id="node185" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; dac_info\l_t, dac_attr_t, &#39;d&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2175,2277,2321,2483"/>
+<area shape="rect" id="node187" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; uart_info\l_t, uart_attr_t, UART\l_IOC_IDENT_CHAR \&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1520,2270,1676,2490"/>
+<area shape="rect" id="node189" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; usb_info\l_t, usb_attr_t, &#39;u&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="604,2277,751,2483"/>
+<area shape="rect" id="node191" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; rtc_info\l_t, rtc_attr_t, &#39;r&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1998,2277,2137,2483"/>
+<area shape="rect" id="node193" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2s_info\l_t, i2s_attr_t, &#39;I&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="214,2277,356,2483"/>
+<area shape="rect" id="node194" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; i2c_info\l_t, i2c_attr_t, &#39;i&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1353,2277,1495,2483"/>
+<area shape="rect" id="node196" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; tmr_info\l_t, tmr_attr_t, &#39;t&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="409,2277,553,2483"/>
+<area shape="rect" id="node198" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; spi_info\l_t, spi_attr_t, &#39;s&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="2353,2277,2495,2483"/>
+<area shape="rect" id="node200" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; eint_info\l_t, eint_attr_t, &#39;e&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1177,2277,1324,2483"/>
+<area shape="rect" id="node202" href="$classhal_1_1_periph.html" title="{hal::Periph\&lt; pio_info\l_t, pio_attr_t, &#39;p&#39;\&gt;\n||+ Periph()\l+ get_info()\l+ get_version()\l+ init()\l+ port()\l+ set_action()\land 4 more...\l# get_channel()\l# set_channel()\l# set_channel()\l}" alt="" coords="1003,2277,1145,2483"/>
+<area shape="rect" id="node180" href="$classhal_1_1_core.html" title="Core Class. " alt="" coords="1715,2555,1892,2709"/>
+<area shape="rect" id="node182" href="$classhal_1_1_adc.html" title="ADC Peripheral Class. " alt="" coords="36,2582,121,2682"/>
+<area shape="rect" id="node184" href="$classhal_1_1_pwm.html" title="PWM Class. " alt="" coords="816,2542,936,2722"/>
+<area shape="rect" id="node186" href="$classhal_1_1_dac.html" title="DAC Class. " alt="" coords="2191,2569,2304,2695"/>
+<area shape="rect" id="node188" href="$classhal_1_1_uart.html" title="UART Class. " alt="" coords="1556,2562,1641,2702"/>
+<area shape="rect" id="node190" href="$classhal_1_1_usb.html" title="USB Class. " alt="" coords="606,2555,748,2709"/>
+<area shape="rect" id="node192" href="$classhal_1_1_rtc.html" title="RTC Class. " alt="" coords="2022,2582,2113,2682"/>
+<area shape="rect" id="node195" href="$classhal_1_1_i2_c.html" title="I2C Peripheral Class. " alt="" coords="1374,2555,1473,2709"/>
+<area shape="rect" id="node197" href="$classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. " alt="" coords="424,2542,537,2722"/>
+<area shape="rect" id="node199" href="$classhal_1_1_spi.html" title="SPI Class. " alt="" coords="2381,2575,2467,2689"/>
+<area shape="rect" id="node201" href="$classhal_1_1_eint.html" title="External Interrupt Class. " alt="" coords="1201,2589,1300,2675"/>
+<area shape="rect" id="node203" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="1054,2549,1164,2715"/>
+<area shape="rect" id="node204" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="3004,2774,3124,2927"/>
+<area shape="rect" id="node205" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="3543,2979,3691,3186"/>
+<area shape="rect" id="node214" href="$classhal_1_1_device_signal.html" title="Class for bridging device events with Signal events. " alt="" coords="2488,1097,2612,1210"/>
+<area shape="rect" id="node218" href="$classtest_1_1_test.html" title="Test Class. " alt="" coords="5180,641,5367,954"/>
+<area shape="rect" id="node219" href="$classtest_1_1_function.html" title="Function Test Class Template. " alt="" coords="5292,1077,5499,1230"/>
+<area shape="rect" id="node221" href="$classui_1_1_button.html" title="Button Class. " alt="" coords="4264,1373,4419,1553"/>
+<area shape="rect" id="node223" href="$classvar_1_1_queue.html" title="{var::Queue\&lt; Test * \&gt;\n||+ Queue()\l+ back()\l+ back()\l+ clear()\l+ count()\l+ front()\land 4 more...\l}" alt="" coords="3283,1077,3425,1230"/>
+<area shape="rect" id="node224" href="$classvar_1_1_array.html" title="Array Class. " alt="" coords="3959,714,4087,881"/>
+<area shape="rect" id="node225" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="3807,707,3933,887"/>
+<area shape="rect" id="node241" href="$classvar_1_1_linked_list.html" title="Linked List Class. " alt="" coords="3481,721,3591,874"/>
+<area shape="rect" id="node242" href="$classvar_1_1_queue.html" title="Queue Class. " alt="" coords="3665,721,3783,874"/>
+<area shape="rect" id="node226" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="3450,1117,3589,1190"/>
+<area shape="rect" id="node229" href="$classvar_1_1_string.html" title="String class. " alt="" coords="3614,1077,3721,1230"/>
+<area shape="rect" id="node235" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="4061,1070,4176,1237"/>
+<area shape="rect" id="node237" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q31_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="3749,1379,3891,1546"/>
+<area shape="rect" id="node238" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q15_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="4099,1379,4240,1546"/>
+<area shape="rect" id="node239" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; float32_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="3915,1379,4073,1546"/>
+<area shape="rect" id="node240" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; ComplexF32 \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="4774,1379,4956,1546"/>
+<area shape="rect" id="node227" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="2801,1359,2940,1566"/>
+<area shape="rect" id="node228" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="2826,1709,2915,1849"/>
+<area shape="rect" id="node230" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="3592,1379,3724,1546"/>
+<area shape="rect" id="node231" href="$classvar_1_1_name_string.html" title="String for file files. " alt="" coords="3317,1426,3435,1499"/>
+<area shape="rect" id="node232" href="$classvar_1_1_path_string.html" title="String for file paths. " alt="" coords="3459,1406,3568,1519"/>
+<area shape="rect" id="node233" href="$classvar_1_1_static_string.html" title="String using static memory allocation. " alt="" coords="2965,1406,3088,1519"/>
+<area shape="rect" id="node234" href="$classvar_1_1_token.html" title="Tokenize a String. " alt="" coords="3112,1373,3293,1553"/>
+<area shape="rect" id="node236" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="4443,1386,4588,1539"/>
 </map>

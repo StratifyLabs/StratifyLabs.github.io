@@ -39,7 +39,29 @@ Inheritance diagram for sys::Sched:</div>
 <div class="center"><iframe scrolling="no" frameborder="0" src="classsys_1_1_sched__inherit__graph.svg" width="150" height="534"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>The <a class="el" href="classsys_1_1_sched.html" title="Sched Class. ">Sched</a> class is used to change the scheduing policy of the current thread or process. </p>
+<div class="textblock"><p>The <a class="el" href="classsys_1_1_sched.html" title="Sched Class. ">Sched</a> class is used to change the scheduing policy of the current thread or process.</p>
+<p>Stratify OS has three scheduling policies:</p>
+<ul>
+<li>Other</li>
+<li>Round Robin</li>
+<li>FIFO</li>
+</ul>
+<p>Other (<a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a>) is the default. It is a round robin scheduler with a single priority (lowest priority). When a thread or process is using <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a>, it will yield the CPU in the following cases:</p>
+<ul>
+<li>It's round robin time is expired and it will be pre-empted</li>
+<li>It makes a call to a blocking function:<ul>
+<li><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___s_l_e_e_p.html#ga59715f1a0a2ee4dc75e8343aca15c1dd">usleep()</a> (<a class="el" href="classapi_1_1_chrono_work_object.html#a7bc1e82a7c99c287191c6c778764080b">chrono::Timer::wait_microseconds()</a>)</li>
+<li><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___s_l_e_e_p.html#ga69c97039c9ec10a30e5edbdf365e3bbd">sleep()</a> (<a class="el" href="classapi_1_1_chrono_work_object.html#abf115563ab454777888de2a6ab1bc3f0">chrono::Timer::wait_seconds()</a>)</li>
+<li><a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read()</a> or <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write()</a> (not all read or writes will yield the CPU, only those that can be accomplished in the background)</li>
+<li>sched_yield() (<a class="el" href="classsys_1_1_sched.html#a1ef899fa980f3a204833b1d1de094b7c">Sched::yield()</a>)</li>
+<li>mutexes (Sys::Mutex), semaphores (Sys::Sem), message queues (Sys::Mq), and other system sync mechanisms can also cause the thread to block and yield the processor</li>
+</ul>
+</li>
+<li>It receives a signal that pauses the process (SIGSTOP for example)</li>
+</ul>
+<p>Round Robin (<a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fea9306544dcd3534f1f27d0eb65ef0d6e7">Sched::RR</a>) scheduling behaves the same as <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a> but allows different priorities to be set. Lower priority threads will ONLY get CPU time if higher priority threads are blocked. The thread will block in the same cases as <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a>.</p>
+<p>FIFO (<a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feaffb56b517ad688e3e3af3833043e1bda">Sched::FIFO</a>) scheduling will not be pre-empted by the round robin timer. It will keep control of the CPU until it calls a function had yields (same as the functions for <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a>). FIFO scheduling is good for high priority data processing (such as handling a packet arriving from the network).</p>
+<p>None of the scheduling modes will meet hard real-time constraints. In those cases, it is nessary to write a kernel driver or request (<a class="el" href="classsys_1_1_sys.html#ab3ef1f793fcb6361158bc6c216f0f80c">Sys::request()</a>) (integrated with the Board support package) that can handle real-time constraints in interrupt services routines with very low latency. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -77,6 +99,9 @@ Static Public Member Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0906b70307c21ce7c9539eb75d2350feaffb56b517ad688e3e3af3833043e1bda"></a>FIFO&#160;</td><td class="fielddoc">
 <p>First in, first out (task won't yield until it calls <a class="el" href="classsys_1_1_sched.html#a1ef899fa980f3a204833b1d1de094b7c">Sched::yield()</a>, sleeps or uses Sync IO) </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5"></a>OTHER&#160;</td><td class="fielddoc">
+<p>Default scheduling: round robin with no priority) </p>
 </td></tr>
 </table>
 

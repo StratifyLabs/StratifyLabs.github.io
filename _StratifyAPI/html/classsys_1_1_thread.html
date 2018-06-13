@@ -48,8 +48,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a467bd45ac6734704477c13f9d6892b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af50749a6ca519ea6c2b79ff9075ef997"><td class="memItemLeft" align="right" valign="top">const pthread_attr_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#af50749a6ca519ea6c2b79ff9075ef997">attr</a> () const </td></tr>
 <tr class="separator:af50749a6ca519ea6c2b79ff9075ef997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbb82658f81de23797da83e021f0fcee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create</a> (void *(*func)(void *), void *args=NULL, int prio=0, enum <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fe">Sched::policy</a> policy=Sched::OTHER)</td></tr>
-<tr class="separator:afbb82658f81de23797da83e021f0fcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e1674b6496b3575299e85e680ba3aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create</a> (handler_function_t func, void *args=NULL, int prio=0, enum <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fe">Sched::policy</a> policy=<a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a>)</td></tr>
+<tr class="separator:ad8e1674b6496b3575299e85e680ba3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57c06bec5a86510d32476c1647b5a0a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a57c06bec5a86510d32476c1647b5a0a5">get_detachstate</a> () const </td></tr>
 <tr class="separator:a57c06bec5a86510d32476c1647b5a0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d146e7c80b9c61c2a8bb3815bb1874"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#ad4d146e7c80b9c61c2a8bb3815bb1874">get_policy</a> () const </td></tr>
@@ -187,14 +187,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="afbb82658f81de23797da83e021f0fcee"></a>
+<a class="anchor" id="ad8e1674b6496b3575299e85e680ba3aa"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">int sys::Thread::create </td>
           <td>(</td>
-          <td class="paramtype">void *(*)(void *)&#160;</td>
+          <td class="paramtype">handler_function_t&#160;</td>
           <td class="paramname"><em>func</em>, </td>
         </tr>
         <tr>
@@ -213,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">enum <a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fe">Sched::policy</a>&#160;</td>
-          <td class="paramname"><em>policy</em> = <code>Sched::OTHER</code>&#160;</td>
+          <td class="paramname"><em>policy</em> = <code><a class="el" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350feab0795654b4a9133f37057afb48530cd5">Sched::OTHER</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -402,7 +402,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns true if the thread has a valid id.</p>
-<p>If <a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create()</a> has not been called, this will return false. If there was an error creating the thread, this will also return false; </p>
+<p>If <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a> has not been called, this will return false. If there was an error creating the thread, this will also return false; </p>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the stacksize (no effect after <a class="el" href="classsys_1_1_thread.html#afbb82658f81de23797da83e021f0fcee">create()</a> method). </p>
+<p>Sets the stacksize (no effect after <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a> method). </p>
 
 </div>
 </div>

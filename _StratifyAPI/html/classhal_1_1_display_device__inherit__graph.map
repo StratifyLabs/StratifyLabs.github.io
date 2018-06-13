@@ -1,13 +1,13 @@
 <map id="hal::DisplayDevice" name="hal::DisplayDevice">
-<area shape="rect" id="node2" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="42,1155,131,1295"/>
-<area shape="rect" id="node3" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="14,899,153,1106"/>
-<area shape="rect" id="node4" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="5,777,144,850"/>
-<area shape="rect" id="node5" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="11,521,137,701"/>
+<area shape="rect" id="node2" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="42,1209,131,1349"/>
+<area shape="rect" id="node3" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="14,953,153,1159"/>
+<area shape="rect" id="node4" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="5,830,144,903"/>
+<area shape="rect" id="node5" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="11,547,137,727"/>
 <area shape="rect" id="node6" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="7,371,141,445"/>
 <area shape="rect" id="node7" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="60,129,249,322"/>
 <area shape="rect" id="node12" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="167,371,304,445"/>
 <area shape="rect" id="node8" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="100,6,209,79"/>
-<area shape="rect" id="node9" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="157,1169,301,1282"/>
-<area shape="rect" id="node10" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="168,777,303,850"/>
-<area shape="rect" id="node11" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="182,494,289,727"/>
+<area shape="rect" id="node9" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="157,1222,301,1335"/>
+<area shape="rect" id="node10" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="168,830,303,903"/>
+<area shape="rect" id="node11" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="182,494,289,781"/>
 </map>

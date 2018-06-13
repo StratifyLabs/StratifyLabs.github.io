@@ -1,7 +1,7 @@
 <map id="hal::Switchboard" name="hal::Switchboard">
-<area shape="rect" id="node2" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="41,899,185,1013"/>
-<area shape="rect" id="node3" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="45,777,180,850"/>
-<area shape="rect" id="node4" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="60,494,167,727"/>
+<area shape="rect" id="node2" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="41,953,185,1066"/>
+<area shape="rect" id="node3" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="45,830,180,903"/>
+<area shape="rect" id="node4" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="60,494,167,781"/>
 <area shape="rect" id="node5" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="44,371,181,445"/>
 <area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="19,129,208,322"/>
 <area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="58,6,168,79"/>

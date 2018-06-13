@@ -1,8 +1,8 @@
 <map id="api::FmtFileObject" name="api::FmtFileObject">
-<area shape="rect" id="node6" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="5,906,131,1073"/>
-<area shape="rect" id="node7" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="154,899,269,1079"/>
-<area shape="rect" id="node8" href="$classfmt_1_1_xml.html" title="XML Class. " alt="" coords="293,913,400,1066"/>
-<area shape="rect" id="node2" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="158,494,265,727"/>
+<area shape="rect" id="node6" href="$classfmt_1_1_bmp.html" title="BMP File format. " alt="" coords="5,959,131,1126"/>
+<area shape="rect" id="node7" href="$classfmt_1_1_wav.html" title="WAV File format. " alt="" coords="154,953,269,1133"/>
+<area shape="rect" id="node8" href="$classfmt_1_1_xml.html" title="XML Class. " alt="" coords="293,966,400,1119"/>
+<area shape="rect" id="node2" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="158,494,265,781"/>
 <area shape="rect" id="node3" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="143,371,280,445"/>
 <area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="117,129,307,322"/>
 <area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="157,6,267,79"/>

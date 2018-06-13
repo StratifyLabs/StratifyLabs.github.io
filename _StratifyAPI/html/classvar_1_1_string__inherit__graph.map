@@ -3,7 +3,7 @@
 <area shape="rect" id="node7" href="$classvar_1_1_name_string.html" title="String for file files. " alt="" coords="161,979,279,1053"/>
 <area shape="rect" id="node8" href="$classvar_1_1_path_string.html" title="String for file paths. " alt="" coords="303,959,412,1073"/>
 <area shape="rect" id="node9" href="$classvar_1_1_static_string.html" title="String using static memory allocation. " alt="" coords="436,959,559,1073"/>
-<area shape="rect" id="node10" href="$classvar_1_1_token.html" title="Abstract Token Class. " alt="" coords="582,926,764,1106"/>
+<area shape="rect" id="node10" href="$classvar_1_1_token.html" title="Tokenize a String. " alt="" coords="582,926,764,1106"/>
 <area shape="rect" id="node2" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="294,494,420,674"/>
 <area shape="rect" id="node3" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="289,371,424,445"/>
 <area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="263,129,452,322"/>

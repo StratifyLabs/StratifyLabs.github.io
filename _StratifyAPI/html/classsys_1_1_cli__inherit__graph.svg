@@ -67,7 +67,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14.4302" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_argument()</text>
 <text text-anchor="start" x="14.4302" y="-27" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_hex_value()</text>
 <text text-anchor="start" x="14.4302" y="-17" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_option_pin()</text>
-<text text-anchor="start" x="14.4302" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">and 13 more...</text>
+<text text-anchor="start" x="14.4302" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>

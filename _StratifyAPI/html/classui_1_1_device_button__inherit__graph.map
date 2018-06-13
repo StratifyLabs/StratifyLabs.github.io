@@ -1,10 +1,10 @@
 <map id="ui::DeviceButton" name="ui::DeviceButton">
-<area shape="rect" id="node2" href="$classui_1_1_button.html" title="Button Class. " alt="" coords="5,777,160,957"/>
-<area shape="rect" id="node3" href="$classapi_1_1_ui_work_object.html" title="User Interface Work Object. " alt="" coords="25,574,153,647"/>
+<area shape="rect" id="node2" href="$classui_1_1_button.html" title="Button Class. " alt="" coords="5,830,160,1010"/>
+<area shape="rect" id="node3" href="$classapi_1_1_ui_work_object.html" title="User Interface Work Object. " alt="" coords="25,601,153,674"/>
 <area shape="rect" id="node4" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="56,129,245,322"/>
 <area shape="rect" id="node9" href="$classapi_1_1_sys_work_object.html" title="System Work Object. " alt="" coords="152,371,289,445"/>
 <area shape="rect" id="node5" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="96,6,205,79"/>
-<area shape="rect" id="node6" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="164,1006,308,1119"/>
-<area shape="rect" id="node7" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="184,830,319,903"/>
-<area shape="rect" id="node8" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="190,494,297,727"/>
+<area shape="rect" id="node6" href="$classhal_1_1_device.html" title="Device Class. " alt="" coords="164,1059,308,1173"/>
+<area shape="rect" id="node7" href="$classapi_1_1_hal_work_object.html" title="Hal Work Object. " alt="" coords="184,883,319,957"/>
+<area shape="rect" id="node8" href="$classsys_1_1_file.html" title="File Class. " alt="" coords="190,494,297,781"/>
 </map>
