@@ -40,8 +40,17 @@ Inheritance diagram for sys::Thread:</div>
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classsys_1_1_thread__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>This class creates and manages new threads using POSIX calls. </p>
-</div><table class="memberdecls">
+<div class="textblock"><p>This class creates and manages new threads using POSIX calls.</p>
+<p>Before creating the thread, the attributes should be set using:</p>
+<ul>
+<li><a class="el" href="classsys_1_1_thread.html#a21badf2491c24bf649ae2df5cce5873b">set_stacksize()</a></li>
+<li><a class="el" href="classsys_1_1_thread.html#a106262c12ac4df77dd070b560cf3bb6a">set_detachstate()</a></li>
+</ul>
+<p>Once the thread is running the scheduling policy can be updated using:</p>
+<ul>
+<li><a class="el" href="classsys_1_1_thread.html#a7da33b14dfff625c7421c327396859ef">set_priority()</a></li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> thread_execute(<span class="keywordtype">void</span> * args);</div><div class="line"></div><div class="line"><a class="code" href="classsys_1_1_thread.html#a467bd45ac6734704477c13f9d6892b14">Thread</a> t; <span class="comment">//default 4096 stack size and detached = true</span></div><div class="line"></div><div class="line">t.set_stacksize(2048);</div><div class="line">t.set_detachstate(<a class="code" href="classsys_1_1_thread.html#a9ef3f01b1fe5c1ad67846842a0fc7311a6f9fe45ac05f3b7f95cfaeb6057a907c">Thread::JOINABLE</a>);</div><div class="line"></div><div class="line"><span class="comment">//calling get_policy() or get_priority() before thread is created will return an error</span></div><div class="line"></div><div class="line">t.create(thread_execute);</div><div class="line"></div><div class="line">t.set_priority(5, <a class="code" href="classsys_1_1_sched.html#a0906b70307c21ce7c9539eb75d2350fea9306544dcd3534f1f27d0eb65ef0d6e7">Sched::RR</a>); <span class="comment">//priority 5 round robin scheduling</span></div><div class="line"></div><div class="line"><span class="comment">//now that the thread is running, the stacksize and detachstate cannot be changed</span></div><div class="line"></div><div class="line">printf(<span class="stringliteral">&quot;Thread policy is %d\n&quot;</span>, t.get_policy());</div><div class="line">printf(<span class="stringliteral">&quot;Thread priority is %d\n&quot;</span>, t.get_priority());</div><div class="line">printf(<span class="stringliteral">&quot;Thread stacksize is %d\n&quot;</span>, t.get_stacksize());</div><div class="line">printf(<span class="stringliteral">&quot;Thread is joinable? %d\n&quot;</span>, t.is_joinable());</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a467bd45ac6734704477c13f9d6892b14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a467bd45ac6734704477c13f9d6892b14">Thread</a> (int stack_size=4096, bool detached=true)</td></tr>
@@ -58,8 +67,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a17ae4bc63604f5f350c318e5f4550e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac156f5dd660eac9acd85dc6e65b90452"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#ac156f5dd660eac9acd85dc6e65b90452">get_stacksize</a> () const </td></tr>
 <tr class="separator:ac156f5dd660eac9acd85dc6e65b90452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858cae77f4590d279c2110b4843bc4ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a858cae77f4590d279c2110b4843bc4ea">id</a> () const </td></tr>
-<tr class="separator:a858cae77f4590d279c2110b4843bc4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3e92beb9b91343c86400cd96fe17640"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#aa3e92beb9b91343c86400cd96fe17640">id</a> () const </td></tr>
+<tr class="separator:aa3e92beb9b91343c86400cd96fe17640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373881fd8bcf04a9759d36deecc01a4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a373881fd8bcf04a9759d36deecc01a4b">is_joinable</a> () const </td></tr>
 <tr class="separator:a373881fd8bcf04a9759d36deecc01a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e630baedf218bcdc9c97cd04ee98575"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsys_1_1_thread.html#a7e630baedf218bcdc9c97cd04ee98575">is_running</a> () const </td></tr>
@@ -233,7 +242,13 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
-<p>This method creates a new thread. The <a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> object only manages one thread at a time. To create multiple threads, you will need multiple instances of the <a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> object. </p>
+<p>This method creates a new thread. The <a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> object only manages one thread at a time. To create multiple threads, you will need multiple instances of the <a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> object.</p>
+<p>Use the following methods to change thread attributes:</p>
+<ul>
+<li><a class="el" href="classsys_1_1_thread.html#a21badf2491c24bf649ae2df5cce5873b">set_stacksize()</a>: must be called before calling this method</li>
+<li><a class="el" href="classsys_1_1_thread.html#a106262c12ac4df77dd070b560cf3bb6a">set_detachstate()</a>: must be called before calling this method</li>
+<li><a class="el" href="classsys_1_1_thread.html#a7da33b14dfff625c7421c327396859ef">set_priority()</a>: must be called after calling this method </li>
+</ul>
 
 </div>
 </div>
@@ -321,11 +336,12 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the stacksize. </p>
+<p>Gets the stacksize.</p>
+<p>This method will return zero if the stack size could not be retrieved. The <a class="el" href="classapi_1_1_work_object.html#a25c257ffb9cf00c151003c299d4efa91">error_number()</a> method can be used to determine why. </p>
 
 </div>
 </div>
-<a class="anchor" id="a858cae77f4590d279c2110b4843bc4ea"></a>
+<a class="anchor" id="aa3e92beb9b91343c86400cd96fe17640"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -333,7 +349,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int sys::Thread::id </td>
+          <td class="memname">pthread_t sys::Thread::id </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -384,9 +400,6 @@ Static Public Member Functions</h2></td></tr>
 <a class="anchor" id="ad67fb50b5f04680cffce6d7dc5f23adf"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool sys::Thread::is_valid </td>
@@ -395,11 +408,6 @@ Static Public Member Functions</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Returns true if the thread has a valid id.</p>
 <p>If <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a> has not been called, this will return false. If there was an error creating the thread, this will also return false; </p>
@@ -507,7 +515,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Joins the calling thread this object's thread.</p>
+<p>Joins the calling thread to this object's thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">value_ptr</td><td>A pointer to where the return value of the thread function will be stored (ignored if null) </td></tr>
@@ -547,8 +555,9 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
-
+<dl class="section return"><dt>Returns</dt><dd>Zero on success</dd></dl>
+<p>This method sends a signal to the thread (equivalend to <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/group___s_i_g_n_a_l.html#ga401869937d4e310d70fafea2bd67149a">pthread_kill()</a>). It causes the signal handler to be executed in the context of the thread, but the signal action will affect the whole process.</p>
+<div class="fragment"><div class="line"><a class="code" href="classsys_1_1_thread.html#a467bd45ac6734704477c13f9d6892b14">Thread</a> t;</div><div class="line"></div><div class="line"><span class="comment">//create the thread</span></div><div class="line"></div><div class="line">t.kill(0); <span class="comment">//returns zero if the thread is valid but doesn&#39;t send a signal</span></div><div class="line">t.kill(<a class="code" href="classsys_1_1_signal.html#a0f1c7dc4f91b140e36dc59f1351dc013aa3a19e96722c7ea4bca5dc7f7d4f1eae">Signal::KILL</a>); <span class="comment">//will cause the entire process to die</span></div><div class="line">t.kill(<a class="code" href="classsys_1_1_signal.html#a0f1c7dc4f91b140e36dc59f1351dc013a79adc546dd878950b721abd07af562cd">Signal::STOP</a>); <span class="comment">//will stop the thread from running</span></div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="a769d61abd56775d6d8844cdb5593018a"></a>
@@ -591,10 +600,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Sets the detach state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>Detach state: use JOINABLE or DETACHED </td></tr>
+    <tr><td class="paramname">value</td><td>Detach state: use JOINABLE or DETACHED</td></tr>
   </table>
   </dd>
 </dl>
+<p>This method must be called before calling <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a>. </p>
 
 </div>
 </div>
@@ -621,7 +631,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the thread priority. </p>
+<p>Sets the thread priority.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prio</td><td><a class="el" href="classsys_1_1_thread.html" title="Thread Class. ">Thread</a> priority (higher value has higher priority) </td></tr>
+    <tr><td class="paramname">policy</td><td>Scheduling policy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success and less than zero for an error</dd></dl>
+<p>This method must be called after calling <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a>. </p>
 
 </div>
 </div>
@@ -638,7 +657,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the stacksize (no effect after <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a> method). </p>
+<p>Sets the stacksize.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Stack size in bytes</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>This method must be called before calling <a class="el" href="classsys_1_1_thread.html#ad8e1674b6496b3575299e85e680ba3aa">create()</a>. </p>
 
 </div>
 </div>

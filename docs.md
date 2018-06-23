@@ -84,6 +84,7 @@ page_source: Docs
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-mbedLPC1768/">Running Stratify OS on the mbedLPC1768</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/Installing-StratifyOS-on-Nucleo-F446ZE/">Running Stratify OS on the Nucleo-F446ZE</a></li>
 	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/02/10/HelloWorld-Download-Build-Install/">Build, Install and Run Hello World</a></li>
+	<li><i class="fa fa-chevron-right"></i> <a href="{{ BASE_URL }}/user%20guides/2018/06/23/Blinky-Application-Tutorial/">Blinky Application Tutorial</a></li>
 </ul>
 
 <h4>Stratify OS Concepts</h4>

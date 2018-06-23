@@ -1,7 +1,7 @@
 <map id="dsp::SignalComplexQ31" name="dsp::SignalComplexQ31">
 <area shape="rect" id="node2" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="91,966,255,1119"/>
 <area shape="rect" id="node3" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="57,750,172,917"/>
-<area shape="rect" id="node4" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="5,507,131,687"/>
+<area shape="rect" id="node4" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="5,501,131,694"/>
 <area shape="rect" id="node5" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="20,371,155,445"/>
 <area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="45,129,235,322"/>
 <area shape="rect" id="node8" href="$classapi_1_1_dsp_work_object.html" title="DSP Work Object. " alt="" coords="156,494,355,701"/>

@@ -117,27 +117,28 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
 <g id="a_node4"><a xlink:href="classvar_1_1_data.html" target="_top" xlink:title="Data storage class. ">
-<polygon fill="none" stroke="black" points="-0.589844,-457 -0.589844,-591 94.5898,-591 94.5898,-457 -0.589844,-457"/>
-<text text-anchor="middle" x="47" y="-579" font-family="Helvetica,sans-Serif" font-size="10.00">var::Data</text>
-<polyline fill="none" stroke="black" points="-0.589844,-573 94.5898,-573 "/>
-<text text-anchor="middle" x="47" y="-561" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="-0.589844,-555 94.5898,-555 "/>
-<text text-anchor="start" x="7.41016" y="-543" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="7.41016" y="-533" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="7.41016" y="-523" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="7.41016" y="-513" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="7.41016" y="-503" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
-<text text-anchor="start" x="7.41016" y="-493" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
-<text text-anchor="start" x="7.41016" y="-483" font-family="Helvetica,sans-Serif" font-size="10.00">and 19 more...</text>
-<text text-anchor="start" x="7.41016" y="-473" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
-<text text-anchor="start" x="7.41016" y="-463" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>
+<polygon fill="none" stroke="black" points="-0.589844,-452 -0.589844,-596 94.5898,-596 94.5898,-452 -0.589844,-452"/>
+<text text-anchor="middle" x="47" y="-584" font-family="Helvetica,sans-Serif" font-size="10.00">var::Data</text>
+<polyline fill="none" stroke="black" points="-0.589844,-578 94.5898,-578 "/>
+<text text-anchor="middle" x="47" y="-566" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="-0.589844,-560 94.5898,-560 "/>
+<text text-anchor="start" x="7.41016" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="7.41016" y="-538" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="7.41016" y="-528" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="7.41016" y="-518" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="7.41016" y="-508" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
+<text text-anchor="start" x="7.41016" y="-498" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
+<text text-anchor="start" x="7.41016" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
+<text text-anchor="start" x="7.41016" y="-478" font-family="Helvetica,sans-Serif" font-size="10.00">+ block_size()</text>
+<text text-anchor="start" x="7.41016" y="-468" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
+<text text-anchor="start" x="7.41016" y="-458" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge"><title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M62.2384,-446.808C64.7624,-434.188 67.3502,-421.249 69.7871,-409.064"/>
-<polygon fill="none" stroke="midnightblue" points="58.7612,-446.348 60.232,-456.84 65.6253,-447.721 58.7612,-446.348"/>
+<path fill="none" stroke="midnightblue" d="M63.2475,-441.763C65.4504,-430.748 67.68,-419.6 69.7956,-409.022"/>
+<polygon fill="none" stroke="midnightblue" points="59.765,-441.329 61.2358,-451.821 66.6291,-442.701 59.765,-441.329"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
@@ -153,7 +154,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M58.1289,-628.87C56.8881,-617.289 55.4727,-604.078 54.0769,-591.051"/>
+<path fill="none" stroke="midnightblue" d="M58.1388,-628.963C57.0557,-618.853 55.8389,-607.497 54.618,-596.101"/>
 <polygon fill="none" stroke="midnightblue" points="54.6683,-629.425 59.2138,-638.995 61.6284,-628.679 54.6683,-629.425"/>
 </g>
 <!-- Node6 -->

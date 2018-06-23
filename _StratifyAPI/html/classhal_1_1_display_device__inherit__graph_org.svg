@@ -92,27 +92,28 @@
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
 <g id="a_node5"><a xlink:href="classvar_1_1_data.html" target="_top" xlink:title="Data storage class. ">
-<polygon fill="none" stroke="black" points="4.41016,-619 4.41016,-753 99.5898,-753 99.5898,-619 4.41016,-619"/>
-<text text-anchor="middle" x="52" y="-741" font-family="Helvetica,sans-Serif" font-size="10.00">var::Data</text>
-<polyline fill="none" stroke="black" points="4.41016,-735 99.5898,-735 "/>
-<text text-anchor="middle" x="52" y="-723" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="4.41016,-717 99.5898,-717 "/>
-<text text-anchor="start" x="12.4102" y="-705" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="12.4102" y="-695" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="12.4102" y="-685" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="12.4102" y="-675" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="12.4102" y="-665" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
-<text text-anchor="start" x="12.4102" y="-655" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
-<text text-anchor="start" x="12.4102" y="-645" font-family="Helvetica,sans-Serif" font-size="10.00">and 19 more...</text>
-<text text-anchor="start" x="12.4102" y="-635" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
-<text text-anchor="start" x="12.4102" y="-625" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>
+<polygon fill="none" stroke="black" points="4.41016,-614 4.41016,-758 99.5898,-758 99.5898,-614 4.41016,-614"/>
+<text text-anchor="middle" x="52" y="-746" font-family="Helvetica,sans-Serif" font-size="10.00">var::Data</text>
+<polyline fill="none" stroke="black" points="4.41016,-740 99.5898,-740 "/>
+<text text-anchor="middle" x="52" y="-728" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="4.41016,-722 99.5898,-722 "/>
+<text text-anchor="start" x="12.4102" y="-710" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="12.4102" y="-700" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="12.4102" y="-690" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="12.4102" y="-680" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="12.4102" y="-670" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
+<text text-anchor="start" x="12.4102" y="-660" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
+<text text-anchor="start" x="12.4102" y="-650" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
+<text text-anchor="start" x="12.4102" y="-640" font-family="Helvetica,sans-Serif" font-size="10.00">+ block_size()</text>
+<text text-anchor="start" x="12.4102" y="-630" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
+<text text-anchor="start" x="12.4102" y="-620" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node4 -->
 <g id="edge4" class="edge"><title>Node5&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M52,-608.546C52,-584.465 52,-559.46 52,-541.367"/>
-<polygon fill="none" stroke="midnightblue" points="48.5001,-608.787 52,-618.787 55.5001,-608.787 48.5001,-608.787"/>
+<path fill="none" stroke="midnightblue" d="M52,-603.598C52,-581.096 52,-558.258 52,-541.405"/>
+<polygon fill="none" stroke="midnightblue" points="48.5001,-603.89 52,-613.89 55.5001,-603.89 48.5001,-603.89"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node"><title>Node6</title>
@@ -128,7 +129,7 @@
 </g>
 <!-- Node6&#45;&gt;Node5 -->
 <g id="edge5" class="edge"><title>Node6&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M52,-820.768C52,-801.121 52,-776.221 52,-753.246"/>
+<path fill="none" stroke="midnightblue" d="M52,-820.621C52,-802.356 52,-779.579 52,-758.032"/>
 <polygon fill="none" stroke="midnightblue" points="48.5001,-820.81 52,-830.81 55.5001,-820.81 48.5001,-820.81"/>
 </g>
 <!-- Node7 -->

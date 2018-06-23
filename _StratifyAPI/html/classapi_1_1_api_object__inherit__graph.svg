@@ -5271,26 +5271,27 @@ var sectionId = 'dynsection-0';
 <!-- Node225 -->
 <g id="node225" class="node"><title>Node225</title>
 <g id="a_node225"><a xlink:href="classvar_1_1_data.html" target="_top" xlink:title="Data storage class. ">
-<polygon fill="none" stroke="black" points="2851.41,-1725 2851.41,-1859 2946.59,-1859 2946.59,-1725 2851.41,-1725"/>
-<text text-anchor="middle" x="2899" y="-1847" font-family="Helvetica,sans-Serif" font-size="10.00">var::Data</text>
-<polyline fill="none" stroke="black" points="2851.41,-1841 2946.59,-1841 "/>
-<text text-anchor="middle" x="2899" y="-1829" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="2851.41,-1823 2946.59,-1823 "/>
-<text text-anchor="start" x="2859.41" y="-1811" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="2859.41" y="-1801" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="2859.41" y="-1791" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="2859.41" y="-1781" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
-<text text-anchor="start" x="2859.41" y="-1771" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
-<text text-anchor="start" x="2859.41" y="-1761" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
-<text text-anchor="start" x="2859.41" y="-1751" font-family="Helvetica,sans-Serif" font-size="10.00">and 19 more...</text>
-<text text-anchor="start" x="2859.41" y="-1741" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
-<text text-anchor="start" x="2859.41" y="-1731" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>
+<polygon fill="none" stroke="black" points="2851.41,-1720 2851.41,-1864 2946.59,-1864 2946.59,-1720 2851.41,-1720"/>
+<text text-anchor="middle" x="2899" y="-1852" font-family="Helvetica,sans-Serif" font-size="10.00">var::Data</text>
+<polyline fill="none" stroke="black" points="2851.41,-1846 2946.59,-1846 "/>
+<text text-anchor="middle" x="2899" y="-1834" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="2851.41,-1828 2946.59,-1828 "/>
+<text text-anchor="start" x="2859.41" y="-1816" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="2859.41" y="-1806" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="2859.41" y="-1796" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="2859.41" y="-1786" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
+<text text-anchor="start" x="2859.41" y="-1776" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
+<text text-anchor="start" x="2859.41" y="-1766" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
+<text text-anchor="start" x="2859.41" y="-1756" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
+<text text-anchor="start" x="2859.41" y="-1746" font-family="Helvetica,sans-Serif" font-size="10.00">+ block_size()</text>
+<text text-anchor="start" x="2859.41" y="-1736" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
+<text text-anchor="start" x="2859.41" y="-1726" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>
 </a>
 </g>
 </g>
 <!-- Node222&#45;&gt;Node225 -->
 <g id="edge265" class="edge"><title>Node222&#45;&gt;Node225</title>
-<path fill="none" stroke="midnightblue" d="M2863.74,-2017.48C2870.16,-1976.59 2880.71,-1909.46 2888.59,-1859.25"/>
+<path fill="none" stroke="midnightblue" d="M2863.73,-2017.55C2869.94,-1977.98 2880.02,-1913.81 2887.82,-1864.18"/>
 <polygon fill="none" stroke="midnightblue" points="2860.25,-2017.12 2862.16,-2027.54 2867.17,-2018.2 2860.25,-2017.12"/>
 </g>
 <!-- Node241 -->
@@ -5353,8 +5354,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node226 -->
 <g id="edge266" class="edge"><title>Node225&#45;&gt;Node226</title>
-<path fill="none" stroke="midnightblue" d="M2870.02,-1715.56C2862.29,-1700.81 2852.96,-1686.16 2842,-1674 2826.23,-1656.51 2818.98,-1654.48 2797,-1646 2755.28,-1629.9 2734.85,-1653.33 2698,-1628 2671.36,-1609.69 2654.16,-1575.82 2644.8,-1552.15"/>
-<polygon fill="none" stroke="midnightblue" points="2867.02,-1717.38 2874.63,-1724.74 2873.27,-1714.24 2867.02,-1717.38"/>
+<path fill="none" stroke="midnightblue" d="M2867.45,-1710.77C2860.24,-1697.66 2851.77,-1684.84 2842,-1674 2826.23,-1656.51 2818.98,-1654.48 2797,-1646 2755.28,-1629.9 2734.85,-1653.33 2698,-1628 2671.36,-1609.69 2654.16,-1575.82 2644.8,-1552.15"/>
+<polygon fill="none" stroke="midnightblue" points="2864.48,-1712.64 2872.23,-1719.87 2870.68,-1709.39 2864.48,-1712.64"/>
 </g>
 <!-- Node229 -->
 <g id="node229" class="node"><title>Node229</title>
@@ -5376,8 +5377,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node229 -->
 <g id="edge270" class="edge"><title>Node225&#45;&gt;Node229</title>
-<path fill="none" stroke="midnightblue" d="M2863.88,-1715.59C2856.91,-1701.61 2849.45,-1687.25 2842,-1674 2824.57,-1642.99 2803.33,-1609.55 2785.36,-1582.32"/>
-<polygon fill="none" stroke="midnightblue" points="2860.81,-1717.29 2868.38,-1724.71 2867.09,-1714.19 2860.81,-1717.29"/>
+<path fill="none" stroke="midnightblue" d="M2861.46,-1710.77C2855.2,-1698.33 2848.59,-1685.73 2842,-1674 2824.57,-1642.99 2803.33,-1609.55 2785.36,-1582.32"/>
+<polygon fill="none" stroke="midnightblue" points="2858.36,-1712.39 2865.96,-1719.78 2864.63,-1709.27 2858.36,-1712.39"/>
 </g>
 <!-- Node235 -->
 <g id="node235" class="node"><title>Node235</title>
@@ -5400,8 +5401,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node235 -->
 <g id="edge276" class="edge"><title>Node225&#45;&gt;Node235</title>
-<path fill="none" stroke="midnightblue" d="M2924.94,-1715.87C2932.99,-1700.47 2943.21,-1685.48 2956,-1674 2973.58,-1658.22 2987.71,-1670.95 3006,-1656 3028.39,-1637.7 3046.08,-1611.27 3059,-1587.02"/>
-<polygon fill="none" stroke="midnightblue" points="2921.74,-1714.44 2920.44,-1724.96 2928.01,-1717.54 2921.74,-1714.44"/>
+<path fill="none" stroke="midnightblue" d="M2927.68,-1710.79C2935.27,-1697.2 2944.62,-1684.21 2956,-1674 2973.58,-1658.22 2987.71,-1670.95 3006,-1656 3028.39,-1637.7 3046.08,-1611.27 3059,-1587.02"/>
+<polygon fill="none" stroke="midnightblue" points="2924.51,-1709.3 2922.94,-1719.78 2930.7,-1712.57 2924.51,-1709.3"/>
 </g>
 <!-- Node237 -->
 <g id="node237" class="node"><title>Node237</title>
@@ -5424,8 +5425,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node237 -->
 <g id="edge292" class="edge"><title>Node225&#45;&gt;Node237</title>
-<path fill="none" stroke="midnightblue" d="M2890.58,-1714.62C2888.61,-1695.49 2886.61,-1675.01 2885,-1656 2876.03,-1550.41 2868.48,-1427.25 2864.36,-1355.22"/>
-<polygon fill="none" stroke="midnightblue" points="2887.12,-1715.2 2891.64,-1724.78 2894.08,-1714.48 2887.12,-1715.2"/>
+<path fill="none" stroke="midnightblue" d="M2890.07,-1709.65C2888.27,-1691.97 2886.48,-1673.37 2885,-1656 2876.03,-1550.41 2868.48,-1427.25 2864.36,-1355.22"/>
+<polygon fill="none" stroke="midnightblue" points="2886.62,-1710.34 2891.13,-1719.93 2893.59,-1709.63 2886.62,-1710.34"/>
 </g>
 <!-- Node238 -->
 <g id="node238" class="node"><title>Node238</title>
@@ -5448,8 +5449,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node238 -->
 <g id="edge291" class="edge"><title>Node225&#45;&gt;Node238</title>
-<path fill="none" stroke="midnightblue" d="M2917.02,-1714.93C2942,-1614.3 2988.64,-1443.84 3029,-1394 3039.03,-1381.62 3048.03,-1386.52 3060,-1376 3067.15,-1369.72 3074.04,-1362.53 3080.47,-1355.06"/>
-<polygon fill="none" stroke="midnightblue" points="2913.6,-1714.19 2914.6,-1724.74 2920.39,-1715.87 2913.6,-1714.19"/>
+<path fill="none" stroke="midnightblue" d="M2918.27,-1709.92C2943.53,-1608.74 2989.31,-1443.03 3029,-1394 3039.03,-1381.62 3048.03,-1386.52 3060,-1376 3067.15,-1369.72 3074.04,-1362.53 3080.47,-1355.06"/>
+<polygon fill="none" stroke="midnightblue" points="2914.83,-1709.25 2915.81,-1719.8 2921.62,-1710.94 2914.83,-1709.25"/>
 </g>
 <!-- Node239 -->
 <g id="node239" class="node"><title>Node239</title>
@@ -5472,8 +5473,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node239 -->
 <g id="edge290" class="edge"><title>Node225&#45;&gt;Node239</title>
-<path fill="none" stroke="midnightblue" d="M2898.46,-1714.76C2899.81,-1633.6 2907.57,-1502.21 2940,-1394 2943.9,-1380.97 2949.52,-1367.65 2955.63,-1355.15"/>
-<polygon fill="none" stroke="midnightblue" points="2894.96,-1714.85 2898.32,-1724.89 2901.96,-1714.94 2894.96,-1714.85"/>
+<path fill="none" stroke="midnightblue" d="M2898.55,-1709.69C2900.14,-1628.2 2908.23,-1499.98 2940,-1394 2943.9,-1380.97 2949.52,-1367.65 2955.63,-1355.15"/>
+<polygon fill="none" stroke="midnightblue" points="2895.05,-1709.82 2898.38,-1719.88 2902.05,-1709.94 2895.05,-1709.82"/>
 </g>
 <!-- Node240 -->
 <g id="node240" class="node"><title>Node240</title>
@@ -5496,8 +5497,8 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node225&#45;&gt;Node240 -->
 <g id="edge289" class="edge"><title>Node225&#45;&gt;Node240</title>
-<path fill="none" stroke="midnightblue" d="M2923.74,-1715.69C2931.88,-1700.07 2942.45,-1685.03 2956,-1674 2958.01,-1672.36 3134.74,-1629.27 3137,-1628 3251.31,-1563.89 3232.38,-1483.71 3348,-1422 3435.74,-1375.17 3480.14,-1424.44 3567,-1376 3576.95,-1370.45 3586.4,-1363.21 3595.06,-1355.32"/>
-<polygon fill="none" stroke="midnightblue" points="2920.47,-1714.41 2919.22,-1724.93 2926.76,-1717.49 2920.47,-1714.41"/>
+<path fill="none" stroke="midnightblue" d="M2926.49,-1710.61C2934.22,-1696.84 2943.92,-1683.83 2956,-1674 2958.01,-1672.36 3134.74,-1629.27 3137,-1628 3251.31,-1563.89 3232.38,-1483.71 3348,-1422 3435.74,-1375.17 3480.14,-1424.44 3567,-1376 3576.95,-1370.45 3586.4,-1363.21 3595.06,-1355.32"/>
+<polygon fill="none" stroke="midnightblue" points="2923.24,-1709.27 2921.68,-1719.75 2929.43,-1712.53 2923.24,-1709.27"/>
 </g>
 <!-- Node227 -->
 <g id="node227" class="node"><title>Node227</title>

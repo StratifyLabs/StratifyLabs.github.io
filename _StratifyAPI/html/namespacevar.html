@@ -30,7 +30,17 @@ page_source: Doxygen
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Documentation</h2>
-<div class="textblock"><p>The var namespace is a collection of volatile data storage mechanisms and routines such as buffers and strings. </p>
+<div class="textblock"><p>The var namespace is a collection of data storage mechanisms and routines such as buffers and strings.</p>
+<p>Here is a brief summary of the most commonly used classes:</p>
+<ul>
+<li><a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a>: manages static and dynamic allocation of memory ensuring no memory leaks</li>
+<li><a class="el" href="classvar_1_1_string.html" title="String class. ">String</a>: An embedded friendly <a class="el" href="classvar_1_1_string.html" title="String class. ">String</a> object that implements many methods from std::string</li>
+<li><a class="el" href="classvar_1_1_queue.html" title="Queue Class. ">Queue</a>: similar to std::queue (inherits <a class="el" href="classvar_1_1_linked_list.html" title="Linked List Class. ">LinkedList</a>)</li>
+<li><a class="el" href="classvar_1_1_vector.html" title="Vector Class. ">Vector</a>: similar to std::vector (inherits <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a>)</li>
+<li><a class="el" href="classvar_1_1_ring.html" title="Ring Buffer. ">Ring</a>: template class for creating first-in first-out buffers of fixed size (inherits <a class="el" href="classvar_1_1_data.html" title="Data storage class. ">Data</a>)</li>
+<li><a class="el" href="classvar_1_1_token.html" title="Tokenize a String. ">Token</a>: Breaks strings into tokens (inherits <a class="el" href="classvar_1_1_string.html" title="String class. ">String</a>)</li>
+<li><a class="el" href="classvar_1_1_array.html" title="Array Class. ">Array</a>: similar to std::array </li>
+</ul>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Class List</h2></td></tr>

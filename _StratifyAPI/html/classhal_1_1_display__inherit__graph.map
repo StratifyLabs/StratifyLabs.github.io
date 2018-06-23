@@ -1,8 +1,8 @@
 <map id="hal::Display" name="hal::Display">
-<area shape="rect" id="node8" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="34,1291,165,1445"/>
-<area shape="rect" id="node2" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="30,846,169,1053"/>
-<area shape="rect" id="node3" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="30,723,169,797"/>
-<area shape="rect" id="node4" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="37,494,163,674"/>
+<area shape="rect" id="node8" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="34,1305,165,1458"/>
+<area shape="rect" id="node2" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="30,859,169,1066"/>
+<area shape="rect" id="node3" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="30,737,169,810"/>
+<area shape="rect" id="node4" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="37,494,163,687"/>
 <area shape="rect" id="node5" href="$classapi_1_1_var_work_object.html" title="Var Work Object. " alt="" coords="32,371,167,445"/>
 <area shape="rect" id="node6" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="5,129,195,322"/>
 <area shape="rect" id="node7" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="45,6,155,79"/>

@@ -1,31 +1,31 @@
 <map id="api::VarWorkObject" name="api::VarWorkObject">
-<area shape="rect" id="node4" href="$classvar_1_1_queue.html" title="{var::Queue\&lt; Test * \&gt;\n||+ Queue()\l+ back()\l+ back()\l+ clear()\l+ count()\l+ front()\land 4 more...\l}" alt="" coords="52,751,195,905"/>
-<area shape="rect" id="node5" href="$classvar_1_1_array.html" title="Array Class. " alt="" coords="243,509,371,675"/>
-<area shape="rect" id="node6" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="395,502,521,682"/>
-<area shape="rect" id="node29" href="$classvar_1_1_linked_list.html" title="Linked List Class. " alt="" coords="547,515,656,669"/>
-<area shape="rect" id="node30" href="$classvar_1_1_queue.html" title="Queue Class. " alt="" coords="50,515,168,669"/>
+<area shape="rect" id="node4" href="$classvar_1_1_queue.html" title="{var::Queue\&lt; Test * \&gt;\n||+ Queue()\l+ back()\l+ back()\l+ clear()\l+ count()\l+ front()\land 4 more...\l}" alt="" coords="52,765,195,918"/>
+<area shape="rect" id="node5" href="$classvar_1_1_array.html" title="Array Class. " alt="" coords="243,515,371,682"/>
+<area shape="rect" id="node6" href="$classvar_1_1_data.html" title="Data storage class. " alt="" coords="395,502,521,695"/>
+<area shape="rect" id="node29" href="$classvar_1_1_linked_list.html" title="Linked List Class. " alt="" coords="547,522,656,675"/>
+<area shape="rect" id="node30" href="$classvar_1_1_queue.html" title="Queue Class. " alt="" coords="50,522,168,675"/>
 <area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="212,131,401,325"/>
 <area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="252,6,361,79"/>
-<area shape="rect" id="node7" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="866,791,1005,865"/>
-<area shape="rect" id="node11" href="$classvar_1_1_string.html" title="String class. " alt="" coords="1309,751,1416,905"/>
-<area shape="rect" id="node17" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="513,745,628,911"/>
-<area shape="rect" id="node25" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q31_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="397,994,539,1161"/>
-<area shape="rect" id="node26" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q15_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="232,994,373,1161"/>
-<area shape="rect" id="node27" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; float32_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="732,994,891,1161"/>
-<area shape="rect" id="node28" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; ComplexF32 \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="24,994,207,1161"/>
-<area shape="rect" id="node8" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="915,974,1055,1181"/>
-<area shape="rect" id="node9" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="1115,1263,1204,1403"/>
-<area shape="rect" id="node10" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="1094,1475,1225,1629"/>
-<area shape="rect" id="node12" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="1079,994,1211,1161"/>
-<area shape="rect" id="node13" href="$classvar_1_1_name_string.html" title="String for file files. " alt="" coords="1236,1041,1353,1114"/>
-<area shape="rect" id="node14" href="$classvar_1_1_path_string.html" title="String for file paths. " alt="" coords="1377,1021,1487,1134"/>
-<area shape="rect" id="node15" href="$classvar_1_1_static_string.html" title="String using static memory allocation. " alt="" coords="1510,1021,1633,1134"/>
-<area shape="rect" id="node16" href="$classvar_1_1_token.html" title="Tokenize a String. " alt="" coords="1657,987,1839,1167"/>
-<area shape="rect" id="node18" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="563,1001,708,1154"/>
-<area shape="rect" id="node19" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="925,1250,1089,1417"/>
-<area shape="rect" id="node20" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="208,1263,372,1403"/>
-<area shape="rect" id="node21" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="398,1250,559,1417"/>
-<area shape="rect" id="node22" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="584,1250,729,1417"/>
-<area shape="rect" id="node23" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="755,1243,900,1423"/>
-<area shape="rect" id="node24" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="5,1250,184,1417"/>
+<area shape="rect" id="node7" href="$classapi_1_1_sgfx_data_object.html" title="Sgfx Data Object. " alt="" coords="866,805,1005,878"/>
+<area shape="rect" id="node11" href="$classvar_1_1_string.html" title="String class. " alt="" coords="1309,765,1416,918"/>
+<area shape="rect" id="node17" href="$classvar_1_1_vector.html" title="Vector Class. " alt="" coords="513,758,628,925"/>
+<area shape="rect" id="node25" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q31_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="397,1007,539,1174"/>
+<area shape="rect" id="node26" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; q15_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="232,1007,373,1174"/>
+<area shape="rect" id="node27" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; float32_t \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="732,1007,891,1174"/>
+<area shape="rect" id="node28" href="$classvar_1_1_vector.html" title="{var::Vector\&lt; ComplexF32 \&gt;\n||+ Vector()\l+ Vector()\l+ at()\l+ at()\l+ capacity()\l+ clear()\land 13 more...\l# compare()\l}" alt="" coords="24,1007,207,1174"/>
+<area shape="rect" id="node8" href="$classsgfx_1_1_bitmap.html" title="Bitmap Class. " alt="" coords="915,987,1055,1194"/>
+<area shape="rect" id="node9" href="$classhal_1_1_display.html" title="Display Class. " alt="" coords="1115,1277,1204,1417"/>
+<area shape="rect" id="node10" href="$classhal_1_1_display_device.html" title="Display Device. " alt="" coords="1094,1489,1225,1642"/>
+<area shape="rect" id="node12" href="$classsys_1_1_trace.html" title="Trace Class. " alt="" coords="1079,1007,1211,1174"/>
+<area shape="rect" id="node13" href="$classvar_1_1_name_string.html" title="String for file files. " alt="" coords="1236,1054,1353,1127"/>
+<area shape="rect" id="node14" href="$classvar_1_1_path_string.html" title="String for file paths. " alt="" coords="1377,1034,1487,1147"/>
+<area shape="rect" id="node15" href="$classvar_1_1_static_string.html" title="String using static memory allocation. " alt="" coords="1510,1034,1633,1147"/>
+<area shape="rect" id="node16" href="$classvar_1_1_token.html" title="Tokenize a String. " alt="" coords="1657,1001,1839,1181"/>
+<area shape="rect" id="node18" href="$classdsp_1_1_signal_data.html" title="Signal Data Template. " alt="" coords="563,1014,708,1167"/>
+<area shape="rect" id="node19" href="$classdsp_1_1_signal_complex_q15.html" title="Signal with Complex q1.15 data. " alt="" coords="925,1263,1089,1430"/>
+<area shape="rect" id="node20" href="$classdsp_1_1_signal_complex_q31.html" title="Signal with Complex q1.31 Data. " alt="" coords="208,1277,372,1417"/>
+<area shape="rect" id="node21" href="$classdsp_1_1_signal_f32.html" title="Signal with 32&#45;bit Floating Point values. " alt="" coords="398,1263,559,1430"/>
+<area shape="rect" id="node22" href="$classdsp_1_1_signal_q15.html" title="Signal q1.15. " alt="" coords="584,1263,729,1430"/>
+<area shape="rect" id="node23" href="$classdsp_1_1_signal_q31.html" title="Fixed point q1.31 data signal. " alt="" coords="755,1257,900,1437"/>
+<area shape="rect" id="node24" href="$classdsp_1_1_signal_data.html" title="{dsp::SignalData\&lt; Complex\lF32, float32_t \&gt;\n||+ SignalData()\l+ SignalData()\l+ abs()\l+ abs()\l+ add()\l+ add()\land 49 more...\l}" alt="" coords="5,1263,184,1430"/>
 </map>
