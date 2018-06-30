@@ -56,18 +56,18 @@ var sectionId = 'dynsection-0';
 <title>sys::Signal</title>
 <!-- Node1 -->
 <g id="node1" class="node"><title>Node1</title>
-<polygon fill="#bfbfbf" stroke="black" points="29.2305,-123 29.2305,-237 112.77,-237 112.77,-123 29.2305,-123"/>
+<polygon fill="#bfbfbf" stroke="black" points="33.5396,-123 33.5396,-237 108.46,-237 108.46,-123 33.5396,-123"/>
 <text text-anchor="middle" x="71" y="-225" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Signal</text>
-<polyline fill="none" stroke="black" points="29.2305,-219 112.77,-219 "/>
+<polyline fill="none" stroke="black" points="33.5396,-219 108.46,-219 "/>
 <text text-anchor="middle" x="71" y="-207" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="29.2305,-201 112.77,-201 "/>
-<text text-anchor="start" x="37.2305" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
-<text text-anchor="start" x="37.2305" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
-<text text-anchor="start" x="37.2305" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00">+ event()</text>
-<text text-anchor="start" x="37.2305" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_handler()</text>
-<text text-anchor="start" x="37.2305" y="-149" font-family="Helvetica,sans-Serif" font-size="10.00">+ signo()</text>
-<text text-anchor="start" x="37.2305" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">+ sigptr()</text>
-<text text-anchor="start" x="37.2305" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00">and 5 more...</text>
+<polyline fill="none" stroke="black" points="33.5396,-201 108.46,-201 "/>
+<text text-anchor="start" x="41.5396" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
+<text text-anchor="start" x="41.5396" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
+<text text-anchor="start" x="41.5396" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00">+ event()</text>
+<text text-anchor="start" x="41.5396" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00">+ queue()</text>
+<text text-anchor="start" x="41.5396" y="-149" font-family="Helvetica,sans-Serif" font-size="10.00">+ send()</text>
+<text text-anchor="start" x="41.5396" y="-139" font-family="Helvetica,sans-Serif" font-size="10.00">+ send()</text>
+<text text-anchor="start" x="41.5396" y="-129" font-family="Helvetica,sans-Serif" font-size="10.00">and 5 more...</text>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>

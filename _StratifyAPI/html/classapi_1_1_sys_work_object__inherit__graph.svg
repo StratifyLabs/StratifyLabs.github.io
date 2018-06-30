@@ -263,77 +263,77 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node55 -->
 <g id="node55" class="node"><title>Node55</title>
-<g id="a_node55"><a xlink:href="classsys_1_1_signal.html" target="_top" xlink:title="Class for sending Signal events (see SignalHandler for an example) ">
-<polygon fill="none" stroke="black" points="1406.23,-1601 1406.23,-1715 1489.77,-1715 1489.77,-1601 1406.23,-1601"/>
-<text text-anchor="middle" x="1448" y="-1703" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Signal</text>
-<polyline fill="none" stroke="black" points="1406.23,-1697 1489.77,-1697 "/>
-<text text-anchor="middle" x="1448" y="-1685" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1406.23,-1679 1489.77,-1679 "/>
-<text text-anchor="start" x="1414.23" y="-1667" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
-<text text-anchor="start" x="1414.23" y="-1657" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
-<text text-anchor="start" x="1414.23" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ event()</text>
-<text text-anchor="start" x="1414.23" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_handler()</text>
-<text text-anchor="start" x="1414.23" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ signo()</text>
-<text text-anchor="start" x="1414.23" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ sigptr()</text>
-<text text-anchor="start" x="1414.23" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 5 more...</text>
+<g id="a_node55"><a xlink:href="classsys_1_1_signal.html" target="_top" xlink:title="Signal Class. ">
+<polygon fill="none" stroke="black" points="1406.54,-1601 1406.54,-1715 1481.46,-1715 1481.46,-1601 1406.54,-1601"/>
+<text text-anchor="middle" x="1444" y="-1703" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Signal</text>
+<polyline fill="none" stroke="black" points="1406.54,-1697 1481.46,-1697 "/>
+<text text-anchor="middle" x="1444" y="-1685" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1406.54,-1679 1481.46,-1679 "/>
+<text text-anchor="start" x="1414.54" y="-1667" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
+<text text-anchor="start" x="1414.54" y="-1657" font-family="Helvetica,sans-Serif" font-size="10.00">+ Signal()</text>
+<text text-anchor="start" x="1414.54" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ event()</text>
+<text text-anchor="start" x="1414.54" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ queue()</text>
+<text text-anchor="start" x="1414.54" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ send()</text>
+<text text-anchor="start" x="1414.54" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ send()</text>
+<text text-anchor="start" x="1414.54" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 5 more...</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node55 -->
 <g id="edge67" class="edge"><title>Node1&#45;&gt;Node55</title>
-<path fill="none" stroke="midnightblue" d="M1221.29,-1828.09C1273.55,-1822.63 1347.4,-1807.47 1397,-1766 1412.79,-1752.8 1424.02,-1733.59 1431.85,-1715.07"/>
-<polygon fill="none" stroke="midnightblue" points="1220.76,-1824.63 1211.14,-1829.06 1221.43,-1831.6 1220.76,-1824.63"/>
+<path fill="none" stroke="midnightblue" d="M1221.13,-1828.53C1273.62,-1823.35 1347.89,-1808.36 1397,-1766 1412.36,-1752.75 1422.9,-1733.52 1430.03,-1715.01"/>
+<polygon fill="none" stroke="midnightblue" points="1220.59,-1825.06 1210.94,-1829.44 1221.21,-1832.03 1220.59,-1825.06"/>
 </g>
 <!-- Node57 -->
 <g id="node57" class="node"><title>Node57</title>
 <g id="a_node57"><a xlink:href="classsys_1_1_task.html" target="_top" xlink:title="Task Class. ">
-<polygon fill="none" stroke="black" points="1507.9,-1601 1507.9,-1715 1588.1,-1715 1588.1,-1601 1507.9,-1601"/>
-<text text-anchor="middle" x="1548" y="-1703" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Task</text>
-<polyline fill="none" stroke="black" points="1507.9,-1697 1588.1,-1697 "/>
-<text text-anchor="middle" x="1548" y="-1685" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1507.9,-1679 1588.1,-1679 "/>
-<text text-anchor="start" x="1515.9" y="-1667" font-family="Helvetica,sans-Serif" font-size="10.00">+ Task()</text>
-<text text-anchor="start" x="1515.9" y="-1657" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Task()</text>
-<text text-anchor="start" x="1515.9" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ count_free()</text>
-<text text-anchor="start" x="1515.9" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ count_total()</text>
-<text text-anchor="start" x="1515.9" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_attr()</text>
-<text text-anchor="start" x="1515.9" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_info()</text>
-<text text-anchor="start" x="1515.9" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 4 more...</text>
+<polygon fill="none" stroke="black" points="1499.9,-1601 1499.9,-1715 1580.1,-1715 1580.1,-1601 1499.9,-1601"/>
+<text text-anchor="middle" x="1540" y="-1703" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Task</text>
+<polyline fill="none" stroke="black" points="1499.9,-1697 1580.1,-1697 "/>
+<text text-anchor="middle" x="1540" y="-1685" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1499.9,-1679 1580.1,-1679 "/>
+<text text-anchor="start" x="1507.9" y="-1667" font-family="Helvetica,sans-Serif" font-size="10.00">+ Task()</text>
+<text text-anchor="start" x="1507.9" y="-1657" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Task()</text>
+<text text-anchor="start" x="1507.9" y="-1647" font-family="Helvetica,sans-Serif" font-size="10.00">+ count_free()</text>
+<text text-anchor="start" x="1507.9" y="-1637" font-family="Helvetica,sans-Serif" font-size="10.00">+ count_total()</text>
+<text text-anchor="start" x="1507.9" y="-1627" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_attr()</text>
+<text text-anchor="start" x="1507.9" y="-1617" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_info()</text>
+<text text-anchor="start" x="1507.9" y="-1607" font-family="Helvetica,sans-Serif" font-size="10.00">and 4 more...</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node57 -->
 <g id="edge69" class="edge"><title>Node1&#45;&gt;Node57</title>
-<path fill="none" stroke="midnightblue" d="M1221.11,-1825.84C1306.85,-1817.59 1455.69,-1798.94 1498,-1766 1514.34,-1753.28 1525.57,-1733.94 1533.18,-1715.18"/>
-<polygon fill="none" stroke="midnightblue" points="1220.61,-1822.37 1210.98,-1826.79 1221.26,-1829.34 1220.61,-1822.37"/>
+<path fill="none" stroke="midnightblue" d="M1221.26,-1825.49C1305.23,-1816.96 1448.98,-1798.08 1490,-1766 1506.31,-1753.24 1517.54,-1733.89 1525.15,-1715.14"/>
+<polygon fill="none" stroke="midnightblue" points="1220.68,-1822.03 1211.08,-1826.51 1221.38,-1829 1220.68,-1822.03"/>
 </g>
 <!-- Node58 -->
 <g id="node58" class="node"><title>Node58</title>
 <g id="a_node58"><a xlink:href="classsys_1_1_thread.html" target="_top" xlink:title="Thread Class. ">
-<polygon fill="none" stroke="black" points="1605.78,-1576 1605.78,-1740 1708.22,-1740 1708.22,-1576 1605.78,-1576"/>
-<text text-anchor="middle" x="1657" y="-1728" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Thread</text>
-<polyline fill="none" stroke="black" points="1605.78,-1722 1708.22,-1722 "/>
-<text text-anchor="middle" x="1657" y="-1710" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1605.78,-1704 1708.22,-1704 "/>
-<text text-anchor="start" x="1613.78" y="-1692" font-family="Helvetica,sans-Serif" font-size="10.00">+ Thread()</text>
-<text text-anchor="start" x="1613.78" y="-1682" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Thread()</text>
-<text text-anchor="start" x="1613.78" y="-1672" font-family="Helvetica,sans-Serif" font-size="10.00">+ attr()</text>
-<text text-anchor="start" x="1613.78" y="-1662" font-family="Helvetica,sans-Serif" font-size="10.00">+ create()</text>
-<text text-anchor="start" x="1613.78" y="-1652" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_detachstate()</text>
-<text text-anchor="start" x="1613.78" y="-1642" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_policy()</text>
-<text text-anchor="start" x="1613.78" y="-1632" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
-<text text-anchor="start" x="1613.78" y="-1622" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_pid()</text>
-<text text-anchor="start" x="1613.78" y="-1612" font-family="Helvetica,sans-Serif" font-size="10.00">+ join()</text>
-<text text-anchor="start" x="1613.78" y="-1602" font-family="Helvetica,sans-Serif" font-size="10.00">+ join()</text>
-<text text-anchor="start" x="1613.78" y="-1592" font-family="Helvetica,sans-Serif" font-size="10.00">+ self()</text>
-<text text-anchor="start" x="1613.78" y="-1582" font-family="Helvetica,sans-Serif" font-size="10.00">+ yield()</text>
+<polygon fill="none" stroke="black" points="1597.78,-1576 1597.78,-1740 1700.22,-1740 1700.22,-1576 1597.78,-1576"/>
+<text text-anchor="middle" x="1649" y="-1728" font-family="Helvetica,sans-Serif" font-size="10.00">sys::Thread</text>
+<polyline fill="none" stroke="black" points="1597.78,-1722 1700.22,-1722 "/>
+<text text-anchor="middle" x="1649" y="-1710" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1597.78,-1704 1700.22,-1704 "/>
+<text text-anchor="start" x="1605.78" y="-1692" font-family="Helvetica,sans-Serif" font-size="10.00">+ Thread()</text>
+<text text-anchor="start" x="1605.78" y="-1682" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Thread()</text>
+<text text-anchor="start" x="1605.78" y="-1672" font-family="Helvetica,sans-Serif" font-size="10.00">+ attr()</text>
+<text text-anchor="start" x="1605.78" y="-1662" font-family="Helvetica,sans-Serif" font-size="10.00">+ create()</text>
+<text text-anchor="start" x="1605.78" y="-1652" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_detachstate()</text>
+<text text-anchor="start" x="1605.78" y="-1642" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_policy()</text>
+<text text-anchor="start" x="1605.78" y="-1632" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
+<text text-anchor="start" x="1605.78" y="-1622" font-family="Helvetica,sans-Serif" font-size="10.00">+ get_pid()</text>
+<text text-anchor="start" x="1605.78" y="-1612" font-family="Helvetica,sans-Serif" font-size="10.00">+ join()</text>
+<text text-anchor="start" x="1605.78" y="-1602" font-family="Helvetica,sans-Serif" font-size="10.00">+ join()</text>
+<text text-anchor="start" x="1605.78" y="-1592" font-family="Helvetica,sans-Serif" font-size="10.00">+ self()</text>
+<text text-anchor="start" x="1605.78" y="-1582" font-family="Helvetica,sans-Serif" font-size="10.00">+ yield()</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node58 -->
 <g id="edge70" class="edge"><title>Node1&#45;&gt;Node58</title>
-<path fill="none" stroke="midnightblue" d="M1221.15,-1828.54C1327.23,-1823.26 1537.54,-1807.71 1597,-1766 1606.85,-1759.09 1615.28,-1750.02 1622.42,-1740.07"/>
-<polygon fill="none" stroke="midnightblue" points="1220.73,-1825.06 1210.91,-1829.04 1221.07,-1832.05 1220.73,-1825.06"/>
+<path fill="none" stroke="midnightblue" d="M1221.2,-1828.3C1325.69,-1822.69 1530.75,-1806.7 1589,-1766 1598.86,-1759.11 1607.3,-1750.05 1614.45,-1740.11"/>
+<polygon fill="none" stroke="midnightblue" points="1220.91,-1824.81 1211.1,-1828.83 1221.27,-1831.8 1220.91,-1824.81"/>
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
@@ -1510,22 +1510,22 @@ var sectionId = 'dynsection-0';
 <!-- Node56 -->
 <g id="node56" class="node"><title>Node56</title>
 <g id="a_node56"><a xlink:href="classhal_1_1_device_signal.html" target="_top" xlink:title="Class for bridging device events with Signal events. ">
-<polygon fill="none" stroke="black" points="1401.37,-1377 1401.37,-1461 1494.63,-1461 1494.63,-1377 1401.37,-1377"/>
-<text text-anchor="middle" x="1448" y="-1449" font-family="Helvetica,sans-Serif" font-size="10.00">hal::DeviceSignal</text>
-<polyline fill="none" stroke="black" points="1401.37,-1443 1494.63,-1443 "/>
-<text text-anchor="middle" x="1448" y="-1431" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1401.37,-1425 1494.63,-1425 "/>
-<text text-anchor="start" x="1409.37" y="-1413" font-family="Helvetica,sans-Serif" font-size="10.00">+ DeviceSignal()</text>
-<text text-anchor="start" x="1409.37" y="-1403" font-family="Helvetica,sans-Serif" font-size="10.00">+ DeviceSignal()</text>
-<text text-anchor="start" x="1409.37" y="-1393" font-family="Helvetica,sans-Serif" font-size="10.00">+ DeviceSignal()</text>
-<text text-anchor="start" x="1409.37" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">+ create_action()</text>
+<polygon fill="none" stroke="black" points="1397.37,-1377 1397.37,-1461 1490.63,-1461 1490.63,-1377 1397.37,-1377"/>
+<text text-anchor="middle" x="1444" y="-1449" font-family="Helvetica,sans-Serif" font-size="10.00">hal::DeviceSignal</text>
+<polyline fill="none" stroke="black" points="1397.37,-1443 1490.63,-1443 "/>
+<text text-anchor="middle" x="1444" y="-1431" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1397.37,-1425 1490.63,-1425 "/>
+<text text-anchor="start" x="1405.37" y="-1413" font-family="Helvetica,sans-Serif" font-size="10.00">+ DeviceSignal()</text>
+<text text-anchor="start" x="1405.37" y="-1403" font-family="Helvetica,sans-Serif" font-size="10.00">+ DeviceSignal()</text>
+<text text-anchor="start" x="1405.37" y="-1393" font-family="Helvetica,sans-Serif" font-size="10.00">+ DeviceSignal()</text>
+<text text-anchor="start" x="1405.37" y="-1383" font-family="Helvetica,sans-Serif" font-size="10.00">+ create_action()</text>
 </a>
 </g>
 </g>
 <!-- Node55&#45;&gt;Node56 -->
 <g id="edge68" class="edge"><title>Node55&#45;&gt;Node56</title>
-<path fill="none" stroke="midnightblue" d="M1448,-1590.79C1448,-1549.26 1448,-1497 1448,-1461.3"/>
-<polygon fill="none" stroke="midnightblue" points="1444.5,-1590.83 1448,-1600.83 1451.5,-1590.83 1444.5,-1590.83"/>
+<path fill="none" stroke="midnightblue" d="M1444,-1590.79C1444,-1549.26 1444,-1497 1444,-1461.3"/>
+<polygon fill="none" stroke="midnightblue" points="1440.5,-1590.83 1444,-1600.83 1447.5,-1590.83 1440.5,-1590.83"/>
 </g>
 </g>
 </svg>

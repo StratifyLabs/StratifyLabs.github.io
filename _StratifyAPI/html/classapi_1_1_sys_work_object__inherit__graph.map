@@ -7,9 +7,9 @@
 <area shape="rect" id="node52" href="$classsys_1_1_mq.html" title="Message Queue Class. " alt="" coords="1498,562,1603,729"/>
 <area shape="rect" id="node53" href="$classsys_1_1_mutex.html" title="Mutex Class. " alt="" coords="1627,569,1732,722"/>
 <area shape="rect" id="node54" href="$classsys_1_1_sem.html" title="Semaphore Class. " alt="" coords="1757,562,1856,729"/>
-<area shape="rect" id="node55" href="$classsys_1_1_signal.html" title="Class for sending Signal events (see SignalHandler for an example) " alt="" coords="1880,569,1991,722"/>
-<area shape="rect" id="node57" href="$classsys_1_1_task.html" title="Task Class. " alt="" coords="2016,569,2123,722"/>
-<area shape="rect" id="node58" href="$classsys_1_1_thread.html" title="Thread Class. " alt="" coords="2146,535,2283,755"/>
+<area shape="rect" id="node55" href="$classsys_1_1_signal.html" title="Signal Class. " alt="" coords="1881,569,1980,722"/>
+<area shape="rect" id="node57" href="$classsys_1_1_task.html" title="Task Class. " alt="" coords="2005,569,2112,722"/>
+<area shape="rect" id="node58" href="$classsys_1_1_thread.html" title="Thread Class. " alt="" coords="2136,535,2272,755"/>
 <area shape="rect" id="node2" href="$classapi_1_1_work_object.html" title="Work Object. " alt="" coords="1456,131,1645,325"/>
 <area shape="rect" id="node3" href="$classapi_1_1_api_object.html" title="Application Programming Interface Object. " alt="" coords="1496,6,1605,79"/>
 <area shape="rect" id="node8" href="$classapi_1_1_fmt_file_object.html" title="Format File Class. " alt="" coords="978,927,1107,1001"/>
@@ -55,5 +55,5 @@
 <area shape="rect" id="node45" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="1513,2218,1623,2385"/>
 <area shape="rect" id="node46" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="1508,2443,1628,2597"/>
 <area shape="rect" id="node47" href="$classui_1_1_pin_button.html" title="Pin Button Class. " alt="" coords="1494,2649,1641,2855"/>
-<area shape="rect" id="node56" href="$classhal_1_1_device_signal.html" title="Class for bridging device events with Signal events. " alt="" coords="1874,907,1997,1021"/>
+<area shape="rect" id="node56" href="$classhal_1_1_device_signal.html" title="Class for bridging device events with Signal events. " alt="" coords="1868,907,1992,1021"/>
 </map>
