@@ -1113,21 +1113,25 @@
 <!-- Node38 -->
 <g id="node38" class="node"><title>Node38</title>
 <g id="a_node38"><a xlink:href="classhal_1_1_spi.html" target="_top" xlink:title="SPI Class. ">
-<polygon fill="none" stroke="black" points="1411.69,-374 1411.69,-458 1476.31,-458 1476.31,-374 1411.69,-374"/>
-<text text-anchor="middle" x="1444" y="-446" font-family="Helvetica,sans-Serif" font-size="10.00">hal::Spi</text>
-<polyline fill="none" stroke="black" points="1411.69,-440 1476.31,-440 "/>
-<text text-anchor="middle" x="1444" y="-428" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="1411.69,-422 1476.31,-422 "/>
-<text text-anchor="start" x="1419.69" y="-410" font-family="Helvetica,sans-Serif" font-size="10.00">+ Spi()</text>
-<text text-anchor="start" x="1419.69" y="-400" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
-<text text-anchor="start" x="1419.69" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_attr()</text>
-<text text-anchor="start" x="1419.69" y="-380" font-family="Helvetica,sans-Serif" font-size="10.00">+ swap()</text>
+<polygon fill="none" stroke="black" points="1410.58,-354 1410.58,-478 1477.42,-478 1477.42,-354 1410.58,-354"/>
+<text text-anchor="middle" x="1444" y="-466" font-family="Helvetica,sans-Serif" font-size="10.00">hal::Spi</text>
+<polyline fill="none" stroke="black" points="1410.58,-460 1477.42,-460 "/>
+<text text-anchor="middle" x="1444" y="-448" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="black" points="1410.58,-442 1477.42,-442 "/>
+<text text-anchor="start" x="1418.58" y="-430" font-family="Helvetica,sans-Serif" font-size="10.00">+ Spi()</text>
+<text text-anchor="start" x="1418.58" y="-420" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
+<text text-anchor="start" x="1418.58" y="-410" font-family="Helvetica,sans-Serif" font-size="10.00">+ init()</text>
+<text text-anchor="start" x="1418.58" y="-400" font-family="Helvetica,sans-Serif" font-size="10.00">+ initialize()</text>
+<text text-anchor="start" x="1418.58" y="-390" font-family="Helvetica,sans-Serif" font-size="10.00">+ initialize()</text>
+<text text-anchor="start" x="1418.58" y="-380" font-family="Helvetica,sans-Serif" font-size="10.00">+ set_attr()</text>
+<text text-anchor="start" x="1418.58" y="-370" font-family="Helvetica,sans-Serif" font-size="10.00">+ swap()</text>
+<text text-anchor="start" x="1418.58" y="-360" font-family="Helvetica,sans-Serif" font-size="10.00">+ transfer()</text>
 </a>
 </g>
 </g>
 <!-- Node37&#45;&gt;Node38 -->
 <g id="edge37" class="edge"><title>Node37&#45;&gt;Node38</title>
-<path fill="none" stroke="midnightblue" d="M1444,-517.797C1444,-497.021 1444,-475.76 1444,-458.154"/>
+<path fill="none" stroke="midnightblue" d="M1444,-517.759C1444,-504.37 1444,-490.782 1444,-478.101"/>
 <polygon fill="none" stroke="midnightblue" points="1440.5,-517.94 1444,-527.94 1447.5,-517.94 1440.5,-517.94"/>
 </g>
 <!-- Node40 -->

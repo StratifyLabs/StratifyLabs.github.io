@@ -49,8 +49,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6402488cdaf886f28a5eb9226798c45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27fe055ec54908f86b1b034e919d637d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c_attr.html#a27fe055ec54908f86b1b034e919d637d">set_scl</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a> &amp;pin)</td></tr>
 <tr class="separator:a27fe055ec54908f86b1b034e919d637d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc30d20157fa3e91a5456c14462a077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c_attr.html#a7cc30d20157fa3e91a5456c14462a077">set_scl</a> (u8 port, u8 pin)</td></tr>
+<tr class="separator:a7cc30d20157fa3e91a5456c14462a077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fb917492846883f696b9aebd586fade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c_attr.html#a8fb917492846883f696b9aebd586fade">set_sda</a> (const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a> &amp;pin)</td></tr>
 <tr class="separator:a8fb917492846883f696b9aebd586fade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe344f88f30eef0b0887c17f7eaf7a46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c_attr.html#abe344f88f30eef0b0887c17f7eaf7a46">set_sda</a> (u8 port, u8 pin)</td></tr>
+<tr class="separator:abe344f88f30eef0b0887c17f7eaf7a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba79b74f047878187f40e28c326b1cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c_attr.html#afba79b74f047878187f40e28c326b1cd">set_slave_addr</a> (u8 addr)</td></tr>
 <tr class="separator:afba79b74f047878187f40e28c326b1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe2cad8f1d06498fe5eef2bed904d016"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_i2_c_attr.html#afe2cad8f1d06498fe5eef2bed904d016">set_slave_addr16</a> (u16 addr)</td></tr>
@@ -134,6 +138,41 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a7cc30d20157fa3e91a5456c14462a077"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal::I2CAttr::set_scl </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>pin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the SCL pin assignment value. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8fb917492846883f696b9aebd586fade"></a>
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +186,41 @@ Public Member Functions</h2></td></tr>
           <td class="paramtype">const <a class="elRef" doxygen="/Users/tgil/git/StratifyLabs.github.io/_StratifyOS/html/StratifyOS.tag:../../StratifyOS/html/" href="../../StratifyOS/html/structmcu__pin__t.html">mcu_pin_t</a> &amp;&#160;</td>
           <td class="paramname"><em>pin</em></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the SDA pin assignment value. </p>
+
+</div>
+</div>
+<a class="anchor" id="abe344f88f30eef0b0887c17f7eaf7a46"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hal::I2CAttr::set_sda </td>
+          <td>(</td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">u8&#160;</td>
+          <td class="paramname"><em>pin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>

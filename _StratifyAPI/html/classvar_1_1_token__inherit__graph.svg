@@ -108,7 +108,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="31.4102" y="-391" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
 <text text-anchor="start" x="31.4102" y="-381" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
 <text text-anchor="start" x="31.4102" y="-371" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
-<text text-anchor="start" x="31.4102" y="-361" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
+<text text-anchor="start" x="31.4102" y="-361" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
 <text text-anchor="start" x="31.4102" y="-351" font-family="Helvetica,sans-Serif" font-size="10.00">+ block_size()</text>
 <text text-anchor="start" x="31.4102" y="-341" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
 <text text-anchor="start" x="31.4102" y="-331" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>

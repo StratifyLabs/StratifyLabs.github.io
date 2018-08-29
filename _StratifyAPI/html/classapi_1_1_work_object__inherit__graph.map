@@ -131,7 +131,7 @@
 <area shape="rect" id="node112" href="$classhal_1_1_rtc.html" title="RTC Class. " alt="" coords="4998,2529,5089,2629"/>
 <area shape="rect" id="node115" href="$classhal_1_1_i2_c.html" title="I2C Peripheral Class. " alt="" coords="3059,2502,3159,2655"/>
 <area shape="rect" id="node117" href="$classhal_1_1_tmr.html" title="Tmr (hardware timer) Class. " alt="" coords="3641,2489,3755,2669"/>
-<area shape="rect" id="node119" href="$classhal_1_1_spi.html" title="SPI Class. " alt="" coords="4196,2522,4281,2635"/>
+<area shape="rect" id="node119" href="$classhal_1_1_spi.html" title="SPI Class. " alt="" coords="4194,2495,4283,2662"/>
 <area shape="rect" id="node121" href="$classhal_1_1_eint.html" title="External Interrupt Class. " alt="" coords="4361,2535,4460,2622"/>
 <area shape="rect" id="node123" href="$classhal_1_1_pio.html" title="Pin Input/Output Class. " alt="" coords="4692,2495,4801,2662"/>
 <area shape="rect" id="node124" href="$classhal_1_1_pin.html" title="Pin class. " alt="" coords="3161,2721,3281,2874"/>

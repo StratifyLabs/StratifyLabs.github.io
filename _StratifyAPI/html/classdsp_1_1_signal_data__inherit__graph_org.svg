@@ -206,7 +206,7 @@
 <text text-anchor="start" x="317.41" y="-577" font-family="Helvetica,sans-Serif" font-size="10.00">+ Data()</text>
 <text text-anchor="start" x="317.41" y="-567" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Data()</text>
 <text text-anchor="start" x="317.41" y="-557" font-family="Helvetica,sans-Serif" font-size="10.00">+ alloc()</text>
-<text text-anchor="start" x="317.41" y="-547" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
+<text text-anchor="start" x="317.41" y="-547" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
 <text text-anchor="start" x="317.41" y="-537" font-family="Helvetica,sans-Serif" font-size="10.00">+ block_size()</text>
 <text text-anchor="start" x="317.41" y="-527" font-family="Helvetica,sans-Serif" font-size="10.00">+ minimum_size()</text>
 <text text-anchor="start" x="317.41" y="-517" font-family="Helvetica,sans-Serif" font-size="10.00"># copy()</text>

@@ -27,18 +27,18 @@
 <polyline fill="none" stroke="black" points="15.3623,-331 138.638,-331 "/>
 <text text-anchor="start" x="23.3623" y="-319" font-family="Helvetica,sans-Serif" font-size="10.00">+ Test()</text>
 <text text-anchor="start" x="23.3623" y="-309" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Test()</text>
-<text text-anchor="start" x="23.3623" y="-299" font-family="Helvetica,sans-Serif" font-size="10.00">+ close_case()</text>
-<text text-anchor="start" x="23.3623" y="-289" font-family="Helvetica,sans-Serif" font-size="10.00">+ execute()</text>
-<text text-anchor="start" x="23.3623" y="-279" font-family="Helvetica,sans-Serif" font-size="10.00">+ execute_additional</text>
-<text text-anchor="start" x="23.3623" y="-269" font-family="Helvetica,sans-Serif" font-size="10.00">_cases()</text>
-<text text-anchor="start" x="23.3623" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">+ execute_api_case()</text>
-<text text-anchor="start" x="23.3623" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
-<text text-anchor="start" x="23.3623" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ finalize()</text>
-<text text-anchor="start" x="23.3623" y="-229" font-family="Helvetica,sans-Serif" font-size="10.00">+ initialize()</text>
-<text text-anchor="start" x="23.3623" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00">+ parse_options()</text>
+<text text-anchor="start" x="23.3623" y="-299" font-family="Helvetica,sans-Serif" font-size="10.00">+ case_result()</text>
+<text text-anchor="start" x="23.3623" y="-289" font-family="Helvetica,sans-Serif" font-size="10.00">+ close_case()</text>
+<text text-anchor="start" x="23.3623" y="-279" font-family="Helvetica,sans-Serif" font-size="10.00">+ close_case()</text>
+<text text-anchor="start" x="23.3623" y="-269" font-family="Helvetica,sans-Serif" font-size="10.00">+ execute()</text>
+<text text-anchor="start" x="23.3623" y="-259" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
+<text text-anchor="start" x="23.3623" y="-249" font-family="Helvetica,sans-Serif" font-size="10.00">+ finalize()</text>
+<text text-anchor="start" x="23.3623" y="-239" font-family="Helvetica,sans-Serif" font-size="10.00">+ initialize()</text>
+<text text-anchor="start" x="23.3623" y="-229" font-family="Helvetica,sans-Serif" font-size="10.00">+ parse_options()</text>
+<text text-anchor="start" x="23.3623" y="-219" font-family="Helvetica,sans-Serif" font-size="10.00"># case_timer()</text>
 <text text-anchor="start" x="23.3623" y="-209" font-family="Helvetica,sans-Serif" font-size="10.00"># case_timer()</text>
-<text text-anchor="start" x="23.3623" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00"># case_timer()</text>
-<text text-anchor="start" x="23.3623" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00"># indent()</text>
+<text text-anchor="start" x="23.3623" y="-199" font-family="Helvetica,sans-Serif" font-size="10.00"># indent()</text>
+<text text-anchor="start" x="23.3623" y="-189" font-family="Helvetica,sans-Serif" font-size="10.00"># print_case_failed()</text>
 <text text-anchor="start" x="23.3623" y="-179" font-family="Helvetica,sans-Serif" font-size="10.00"># print_case_message()</text>
 <text text-anchor="start" x="23.3623" y="-169" font-family="Helvetica,sans-Serif" font-size="10.00"># print_case_message</text>
 <text text-anchor="start" x="23.3623" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00">_with_key()</text>
