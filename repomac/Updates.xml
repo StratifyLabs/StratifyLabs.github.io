@@ -12,7 +12,7 @@
   <UpdateFile UncompressedSize="51211826" OS="Any" CompressedSize="5058176"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <Licenses>
-   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
+   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
   </Licenses>
   <SHA1>52e233f17a827552039eadbf46f1a7afbceed9e0</SHA1>
  </PackageUpdate>
@@ -53,11 +53,11 @@
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.17</Version>
+  <Version>3.17.4</Version>
   <ReleaseDate>2018-09-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile UncompressedSize="57160641" OS="Any" CompressedSize="12930521"/>
+  <UpdateFile UncompressedSize="57013598" OS="Any" CompressedSize="12923971"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>d98bcfa7e462f68a65c81b80fdb9664ef7ff4c91</SHA1>
+  <SHA1>846a037f33319c7a377bca09bbf9ef138d7b9992</SHA1>
  </PackageUpdate>
 </Updates>
