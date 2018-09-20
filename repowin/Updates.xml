@@ -9,10 +9,10 @@
   <Version>6.3.1</Version>
   <ReleaseDate>2018-03-08</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile OS="Any" CompressedSize="22394923" UncompressedSize="92952659"/>
+  <UpdateFile OS="Any" UncompressedSize="92952659" CompressedSize="22394923"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <Licenses>
-   <License file="gpl3.txt" name="GNU GENERAL PUBLIC LICENSE Version 3"/>
+   <License name="GNU GENERAL PUBLIC LICENSE Version 3" file="gpl3.txt"/>
   </Licenses>
   <SHA1>9b825acfbf826194711077fddc22cbd7080523a8</SHA1>
  </PackageUpdate>
@@ -24,7 +24,7 @@
   <ReleaseDate>2018-01-23</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile OS="Any" CompressedSize="21522996" UncompressedSize="85624852"/>
+  <UpdateFile OS="Any" UncompressedSize="85624852" CompressedSize="21522996"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>88e4436d6c4a9aa422666c295dd96a377b98314b</SHA1>
  </PackageUpdate>
@@ -36,7 +36,7 @@
   <ReleaseDate>2018-04-20</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile OS="Any" CompressedSize="21896299" UncompressedSize="87273568"/>
+  <UpdateFile OS="Any" UncompressedSize="87273568" CompressedSize="21896299"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
   <SHA1>c6fe66dc327e1df484ac11e6e60ab3879fb9312e</SHA1>
  </PackageUpdate>
@@ -47,7 +47,7 @@
   <Version>3.7.0</Version>
   <ReleaseDate>2018-09-04</ReleaseDate>
   <Default>false</Default>
-  <UpdateFile OS="Any" CompressedSize="70530115" UncompressedSize="681653271"/>
+  <UpdateFile OS="Any" UncompressedSize="681653271" CompressedSize="70530115"/>
   <DownloadableArchives>Tools.7z</DownloadableArchives>
   <SHA1>8d593599158113a0a11bbd05f9ca9ba04893f180</SHA1>
  </PackageUpdate>
@@ -55,12 +55,12 @@
   <Name>co.stratifylabs.stratifylink</Name>
   <DisplayName>Stratify Link</DisplayName>
   <Description>Stratify Link is a desktop application designed for developing and debugging Stratify OS applications.</Description>
-  <Version>3.17</Version>
-  <ReleaseDate>2018-09-04</ReleaseDate>
+  <Version>3.18</Version>
+  <ReleaseDate>2018-09-20</ReleaseDate>
   <Default>true</Default>
   <Script>installscript.qs</Script>
-  <UpdateFile OS="Any" CompressedSize="21956056" UncompressedSize="87395424"/>
+  <UpdateFile UncompressedSize="87390817" OS="Any" CompressedSize="21958737"/>
   <DownloadableArchives>Apps.7z</DownloadableArchives>
-  <SHA1>f005f485224177bf4c5f81de9f948c2ae39f9688</SHA1>
+  <SHA1>93dc602efc5f8995364c4c59868fa6bd65e09e3d</SHA1>
  </PackageUpdate>
 </Updates>
