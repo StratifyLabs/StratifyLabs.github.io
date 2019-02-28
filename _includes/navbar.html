@@ -1,7 +1,6 @@
 <script>
-    
     window.addEventListener('auth', function() {
-        if(firebaseUser){
+        if (firebaseUser) {
             document.getElementById('login-button-text').textContent = 'Signed in';
             console.log("navbar:Logged in");
         } else {
@@ -9,8 +8,6 @@
             console.log("navbar:Not logged in");
         }
     });
-    
-
 </script>
 
 {% include signin-modal.html %}
@@ -33,24 +30,24 @@
                     <ul class="nav navbar-nav">
                         <li><a href="{{ BASE_PATH }}/services"><i class="fa fa-object-ungroup"></i> Services</a></li>
 
-                        <li class = "dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gears"></i> Products <span class="caret"></span></a>
-                              <ul class="dropdown-menu">
-                    <li><a href="{{ BASE_PATH }}/Stratify-Toolbox"><i class="fa fa-wrench"></i> Stratify Toolbox</a></li>
-                    <li><a href="{{ BASE_PATH }}/Stratify-OS"><i class="fa fa-cog"></i> Stratify OS</a></li>
-                    <li><a href="{{ BASE_PATH }}/Stratify-Link"><i class="fa fa-link"></i> Stratify Link</a></li>
-                    <li><a href="{{ BASE_PATH }}/Stratify-App"><i class="fa fa-desktop"></i> Stratify App</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gears"></i> Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ BASE_PATH }}/Stratify-Toolbox"><i class="fa fa-wrench"></i> Stratify Toolbox</a></li>
+                                <li><a href="{{ BASE_PATH }}/Stratify-OS"><i class="fa fa-cog"></i> Stratify OS</a></li>
+                                <li><a href="{{ BASE_PATH }}/Stratify-Link"><i class="fa fa-link"></i> Stratify Link</a></li>
+                                <li><a href="{{ BASE_PATH }}/Stratify-App"><i class="fa fa-desktop"></i> Stratify App</a></li>
                             </ul>
                         </li>
-          <li class = "dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code-fork"></i> Developer <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="{{ BASE_PATH }}/hardware"><i class="fa fa-gears"></i> Hardware</a></li>
-                    <li><a href="{{ BASE_PATH }}/download"><i class="fa fa-download"></i> SDK Download</a></li>
-                    <li><a href="https://github.com/StratifyLabs" target="_blank"><i class="fa fa-github"></i> Code</a></li>
-                    <li><a href="{{ BASE_PATH }}/docs"><i class="fa fa-file-text-o"></i> Docs</a></li>
-            </ul>
-          </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code-fork"></i> Developer <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://app.stratifylabs.co"><i class="fa fa-gears"></i> Hardware</a></li>
+                                <li><a href="https://app.stratifylabs.co"><i class="fa fa-download"></i> SDK Download</a></li>
+                                <li><a href="https://github.com/StratifyLabs" target="_blank"><i class="fa fa-github"></i> Code</a></li>
+                                <li><a href="https://docs.stratifylabs.co" target="_blank"><i class="fa fa-file-text-o"></i> Docs</a></li>
+                            </ul>
+                        </li>
                         <li><a href="{{ BASE_PATH }}/tips"><i class="fa fa-newspaper-o"></i> Blog</a></li>
                         <li><a href="{{ BASE_PATH }}/about"><i class="fa fa-info-circle"></i> About</a></li>
                     </ul>
@@ -58,7 +55,7 @@
                         <li><a href="https://github.com/StratifyLabs" target="_blank"><i class="fa fa-github fa-2x"></i> </a></li>
                         <li><a href="https://twitter.com/stratifylabs" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a></li>
                         <li><a href="https://www.facebook.com/stratifylabs/" target="_blank"><i class="fa fa-facebook fa-2x"></i> </a></li>
-                        <li><a><btn class="btn btn-primary" id="login-button" data-toggle="modal" data-target="#signinModal"><i class="fa fa-user"></i> <span id="login-button-text">Login</span></btn></a></li>
+                        <li><a href="https://app.stratifylabs.co/" target="_blank" class="btn btn-primary" id="login-button" data-toggle="modal" data-target="#signinModal"><i class="fa fa-user"></i> Login</a></li>
                     </ul>
                 </div>
             </div>
