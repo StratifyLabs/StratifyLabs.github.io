@@ -13,9 +13,14 @@ sections:
 
 <div style="background: #ddd;">
 	<div class="container" style="padding-top: 10px; padding-bottom: 10px">
-		{% include toolbox-signup.html %}
+		<div class="row" style="margin-top: 20px; margin-bottom: 20px;">
+			<div class="col-md-12 text-center">
+			<a class="btn btn-primary btn-lg" href="https://app.stratifylabs.co/" target="_blank">
+			  Learn More
+			</a>
+		</div>
 		<center>
-		<p>Signup now for a chance to win a free Stratify Toolbox beta</p>
+		<p>Try out the Stratify Toolbox Beta Web Portal</p>
 		</center>
 	</div>
 </div>
