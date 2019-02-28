@@ -19,7 +19,7 @@ sections:
 			  Learn More
 			</a>
 		</div>
-		<p>&nbsp</p>
+		<p> </p>
 		<center>
 		<p>Try out the Stratify Toolbox Beta Web Portal</p>
 		</center>
