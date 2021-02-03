@@ -10,7 +10,7 @@ number: 02
 
 A function is a collection of C statements that can be utilized many times throughout a program or packaged into a module and re-used throughout many programs. The anatomy of a C function includes the prototype, the return type, the parameters, the name, and the body. Here is an example:
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 int my_first_function(int x, int y); //this is the prototype
@@ -30,7 +30,7 @@ int my_first_function(int x, int y){
      x = 0;
      return sum; //tells the compiler to return the int x+y to the caller
 }
-{% endhighlight %}
+```
 
 The code above demonstrates my_first_function(). The prototype is always the return type, name, and parameters followed by a semi-colon. In most cases, the prototype is part of a header file so that the function can be used in many different source files. This is the case for printf() whose prototype is part of the stdio.h header file. The compiler gives a warning if a function is used, but a prototype is not found. It is important for the compiler to know function prototypes so that it can verify the number and types of the parameters passed to a function are compatible. It also checks that the return type is used correctly.
 
@@ -50,7 +50,7 @@ The naming rules for parameters are the same for functions in that they must be 
 
 The body of a function includes any number of C statements (separted by semicolons) within curly brackets. The return keyword is used to exit the function. If the return type is void, using return is optional. Also, return does not have to come at the end of the function. A function may conditionally return before it reaches the end. Here are a few examples to illustrate using return.
 
-{% highlight CPP %}
+```c++
 void print_output(int value){
      printf("Output is %d\n", value);
      //because the return type is void, return is optional here
@@ -61,7 +61,7 @@ int sum_abc(int a, int b, int c){
      }
      return a + b + c; //return the sum (as an int)
 }
-{% endhighlight %}    
+```    
 
 ## Take Away
 

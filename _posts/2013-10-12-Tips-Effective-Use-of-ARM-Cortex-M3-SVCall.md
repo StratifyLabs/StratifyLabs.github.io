@@ -24,7 +24,7 @@ The SVC instruction invokes the service call interrupt. The bottom 8-bits of the
 
 To effectively use the service call interrupt, we pass two arguments to a function which immediately invokes the SVC instruction. The arguments are a pointer to a function to execute in privileged mode and a pointer to a data structure that the function can use to read/write data in the caller's context. The following code shows the prototype and body of the function.
 
-{% highlight CPP %}
+```c++
 //we need to decrease the optimization so the the compiler
 //does not ignore func and args
 void service_call(void (*func)(void*), void* args) __attribute__((optimize("1"));
@@ -33,11 +33,11 @@ void service_call(void (*func)(void*), void* args){
      //by convention func is in r0 and args is in r1
      asm volatile("svc 0");
 }
-{% endhighlight %}
+```
 
 When SVC is executed, the NVIC immediately stacks various registers including r0 and r1 and then executes the interrupt handler. The interrupt handler then needs to grab the values of r0 and r1 from the stack. The value in r0 is the function pointer while r1 is a pointer to some data in the caller's context. The r0 value is type casted as a function and executed with a single argument, the value of r1.
 
-{% highlight CPP %}
+```c++
 typedef void (*svcall_t)(void*);
 
 void svcall_handler(void){
@@ -49,11 +49,11 @@ void svcall_handler(void){
   args = (void*)(frame[1]);
   call(args);
 }
-{% endhighlight %}
+```
 
 Finally, to make a privileged call:
 
-{% highlight CPP %}
+```c++
 void my_priv_func(void * data){
     int * my_int;
     my_int = data;
@@ -71,7 +71,7 @@ int main(void){
     }
     return 0;
 }
-{% endhighlight %}
+```
 
 ## Conclusion
 

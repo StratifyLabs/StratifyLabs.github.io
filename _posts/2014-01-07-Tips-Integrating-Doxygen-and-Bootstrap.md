@@ -23,9 +23,9 @@ output.
 Doxygen allows you to customize the HTML output by modifying the master HTML header, footer, and
 stylesheet.  The following command will generate the default Doxygen HTML files.
 
-{% highlight BASH %}
+```bash
 doxygen -w html header.html footer.html customdoxygen.css
-{% endhighlight %}
+```
 
 Modifying these files alone is not enough to get good Twitter Bootstrap integration.  Bootstrap
 requires that certain classes be applied within the body of the HTML.  For example,
@@ -41,7 +41,7 @@ $( document ).ready(function() {
 	$("table.directory").addClass("table table-striped");
 	$("table.fieldtable").addClass("table");
 });
-{% endhighlight %}
+```
 
 For this to work well, we need to modify doxygen's default stylesheet and remove almost all
 formatting.  We leave the code highlighting formatting in place since this doesn't affect
@@ -54,7 +54,7 @@ our custom javascript (doxy-boot.js).
 <script src="jquery-2.0.3.min.js"></script>
 <script src="bootstrap.min.js"></script>
 <script type="text/javascript" src="doxy-boot.js"></script>
-{% endhighlight %}
+```
 
 The [Stratify documentation]({{ BASE_URL }}/StratifyLib/html) is built using this technique.
 

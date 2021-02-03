@@ -58,9 +58,9 @@ When this program is installed, the value 0xdeff826d (penultimate line) is chang
 
 This approach has two limitations.  First, the program (flash and RAM) must be less than 16MB (not a problem for most microcontroller applications).  Second, if the program uses data between 0xDE000000 and 0xDEFFFFFF (integers between 3.72 billion and 3.74 billion), the embedded installer will modify the data even if it does not refer to a memory location.  For example, the embedded installer will mistake the following variable for a memory address and translate it to a new location.
 
-{% highlight CPP %}
+```c++
 uint32_t world_population_1970 = 3733996830; //0xDE90451E
-{% endhighlight %}
+```
 
 ## Conclusion
 

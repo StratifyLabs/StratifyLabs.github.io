@@ -79,7 +79,7 @@ value was above V<sub>IH</sub>, in which case the pin is high, or below V<sub>IL
 which means the pin is low.  The following graph illustrates the difference
 between no hysteresis (A) and hysteresis (B) for a given signal (U).
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/smitt_hysteresis_graph.svg" />
+![](/images/smitt_hysteresis_graph.svg" />
 
 ### Output Modes
 

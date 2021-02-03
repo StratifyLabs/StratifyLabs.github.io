@@ -77,7 +77,7 @@ These documents are both super boring and super important. It will be well worth
 
 The high level architecture diagram identifies which technologies will be used to meet the requirements.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/engineering-process-architecture.svg" />
+![](/images/engineering-process-architecture.svg" />
 
 The diagram above shows the architecture of the [Stratify Toolbox]({{ BASE_URL }}/Stratify-Toolbox). It calls out the computing platform (STM32F7) and the basic functions.
 

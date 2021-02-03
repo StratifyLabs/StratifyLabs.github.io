@@ -7,7 +7,7 @@ page_source: PcbBlog
 tags : [embedded, circuit, led, control]
 ---
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-circuit.svg" />
+![](/images/LED-circuit.svg" />
 LEDs are a common element of many embedded designs.  Though the devices are
 simple; their implementation is not always simplistic.  Optimizing LED cost
 and performance includes ensuring the driving circuitry is providing the
@@ -20,7 +20,7 @@ an LED using such a resistor.
 
 To optimize the performance of the LED, the resistor must be sized correctly (note the resistor can be either above or below the LED without affecting the operation or performance of the circuit).  The LED manufacturer provides the rated current and forward voltage values that are essential to calculating the resistor size.  The rated current is the optimal current value for the LED, and the forward voltage is the drop in voltage across the LED when the rated current is applied.  The following diagram shows fictitious but typical values for VCC, the forward voltage, and the rated current.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-circuit-annotated.svg" />
+![](/images/LED-circuit-annotated.svg" />
 
 The value of the resistor is calculated using the given constraints and Ohm's law.  The voltage drop across R1 is 2.1V, which is VCC (3.3V) minus the forward voltage across the diode (1.2V).  The current through R1--the same as the rated current of D1--is 20mA.  From Ohm's law, R1 is 105 Ohms.
 
@@ -38,16 +38,16 @@ In this circuit D1 is always on.  The ground or power connection can be replaced
 
 p.LED's can be driven using a GPIO pin or--if more current is needed--a transistor.  Depending on the current capabilities of the GPIO pin, it may act as either a sink or a source for the current through the LED.  The datasheet for the MCU will specifiy how much current each pin can sink or source.  The following picture shows an example of the GPIO acting as a current sink.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-GPIO-sink.svg" />
+![](/images/LED-GPIO-sink.svg" />
 
 
 When the GPIO outputs a low value, the LED turns off.  Conversely when the GPIO outputs a high value the LED is off.  Interestingly, the LED is also off when the pin is configured as an input.  The GPIO is called a current sink in this case because the current flows in to the pin (much like water flows down the drain of a kitchen sink).  The pin can also act a a current source if configured as shown below.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-GPIO-source.svg" />
+![](/images/LED-GPIO-source.svg" />
 
 In this case, the LED is on when the GPIO outputs a logic one.  In both these scenarios, the current through the LED is limited by the sinking/sourcing capabilities of the GPIO.  This limitation is overcome by using a transistor to drive the LED (shown below).
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-NMOS.svg" />
+![](/images/LED-NMOS.svg" />
 
 To turn the LED on, Q1 needs to be turned on; that is, the GPIO pin outputs a logic one.  Outputting a logic zero on the pin turns the LED off.  In this case, if the GPIO is configured as an input, Q1 will be in an un-stable state, and the light may be on, off, or flickering.  If keeping Q1 in a stable state is critical, a pull-up or pull-down resistor may be added to the gate of Q1 to ensure a known state while the GPIO pin is initializing.
 

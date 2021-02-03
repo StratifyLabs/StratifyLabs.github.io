@@ -20,7 +20,7 @@ C also provides two important tools for programmers that allow them to define ne
 
 Of these types the struct is the most commonly used. In programming design, related data is combined in a struct. The C language, per se, does not define any struct's. However, the C standard library defines a number of them. A good example of this is struct tm which is the data structure for storing calendar time. The following code segment shows how the structure is defined (part of the time.h header).
 
-{% highlight CPP %}
+```c++
 struct tm {
     int tm_sec;
     int tm_min;
@@ -32,11 +32,11 @@ struct tm {
     int tm_yday;
     int tm_isdst;
 }
-{% endhighlight %}
+```
 
 The program below shows how to access (read and write) members of a struct using the period (.) syntax to access members.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>  //"struct tm" is defined here
@@ -48,7 +48,7 @@ int main(int argc, char * argv[]){
      printf("time is %d:%d:%d\n", t.tm_hour, t.tm_min, t.tm_sec);
      exit(0);
 }
-{% endhighlight %}
+```
 
 This program ouputs:
 
@@ -67,7 +67,7 @@ An enum is a list of values that should be assigned to a variable. An enum varia
 
 Compound data types (specifically, unions and structs) can be combined in various ways. There can be unions within structs, vice versa, and almost any other combination. The following code shows a couple of examples.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -97,7 +97,7 @@ int main(int argc, char * argv[]){
      printf("%d,%d,%d %d\n", p0.x, p0.y, p0.z, p0.color.rgba);
      exit(0);
 }
-{% endhighlight %}
+```
 
 In this example, there is a struct within a union within a struct. When p0 is assigned memory, it has the following layout assuming int is four bytes:
 
@@ -107,7 +107,7 @@ In this example, there is a struct within a union within a struct. When p0 is as
 
 Users (C Programmers) can define types using any raw or compound data type as well as previously defined user types. The stdint.h header is a good example of user-defined types using purely raw data types. The code snippet below shows a partial, simplied implemenation of stdint.h on a 32-bit processor.
 
-{% highlight CPP %}
+```c++
 #ifndef _STDINT_H  //this is the header guard
 #define _STDINT_H
 typedef unsigned int uint32_t;
@@ -117,11 +117,11 @@ typedef signed char int8_t;
 typedef unsigned short uint16_t;
 typedef signed short int16_t;
 #endif
-{% endhighlight %}
+```
 
 Since this is a header file, the first thing is the header guard as mentioned in the preprocessor directives lesson. Next, the typedef keyword is introduced which defines a new data type than can be declared just like any other data type. The example then uses raw types to define the C99 integers in stdint.h. The code below illustrates the use of these types alongside raw types; it also introduces a new C keyword: sizeof.
 
-{% highlight CPP %}
+```c++
 #include <stdlib.h>
 #include <stdio.h>  
 #include <stdint.h
@@ -134,7 +134,7 @@ int main(int argc, char * argv[]){
 	printf("sizeof(w) is %d, sizeof(z) is %d\n", sizeof(w), sizeof(z));
 	exit(0);
 }
-{% endhighlight %}
+```
 
 As shown, uint8_t can be used just like unsigned char after the typedef unsigned char uint8_t line which is located in stdint.h. The program has the following output showing that the uint8_t/unsigned char types use one byte in memory while the int32_t/int types use four bytes in memory.
 

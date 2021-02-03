@@ -25,7 +25,7 @@ Ideal op-amps are a good first order approximation of op-amp behavior and are us
 
 To apply these two rules to op-amp circuit analysis, it is important to be familiar with two electrical laws: Ohm's Law and Kirchhoff's Current Law. Ohm's law is defined by the equation:
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/ohms-law.svg" />
+![](/images/ohms-law.svg" />
 
 That is, voltage is equal to current times resistance. Ohm's law can be used to calculate the current through the resistor in the diagram below.
 
@@ -33,23 +33,23 @@ That is, voltage is equal to current times resistance. Ohm's law can be used to 
 
 Kirchhoff's current law states that the sum of all currents entering a node is zero. The law implies that all currents entering the node are equal to the currents leaving the node. This law can be applied to the op-amp circuit above (first in the article).
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-0.svg" />
+![](/images/opamp-kirchhoff-0.svg" />
 
 
 If Ohm's law is combined with Kirchhoff's current law, the equation then becomes the following.
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-1.svg" />
+![](/images/opamp-kirchhoff-1.svg" />
 
 The equation is simplified further by applying the rules of an ideal op-am.  First,
 infinite input impedance means that current i3 is zero. Second, the
 voltage difference on the inputs is zero means V<sub>n</sub> = V<sub>p</sub> = 0V.
 The resulting equation is as follows.
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-2.svg" />
+![](/images/opamp-kirchhoff-2.svg" />
 
 To calculate the gain of the circuit, the above equation is solved for the output divided by the input.
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-3.svg" />
+![](/images/opamp-kirchhoff-3.svg" />
 
 The op-amp circuit shown above is called an inverting amplifier (the output is the input times a negative number). As drawn, the inverting amplifier is not well adapted to single supply embedded systems because the output is centered at 0V. However, there are plenty of great ways to use op-amps in single supply, embedded designs.
 
@@ -65,7 +65,7 @@ A pressure sensor typically has an output in the millivolt range. To measure thi
 
 The analysis technique described above shows that the output of the op-amp is:
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/opamp-kirchhoff-4.svg" />
+![](/images/opamp-kirchhoff-4.svg" />
 
 If the feedback resistor is 9KOhms and the input resistor is 1KOhms, the gain will be 10 such that the output of the pressure sensor will be scaled to take advantage of the full range of the ADC.
 

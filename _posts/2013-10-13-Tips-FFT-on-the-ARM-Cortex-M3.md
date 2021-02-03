@@ -43,7 +43,7 @@ and bottom).
 
 The above graphs use the following equation for the time-domain representation:
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/fft-formula1.svg" />
+![](/images/fft-formula1.svg" />
 
 This signal represents the number five using dual-tone multi-frequency
 encoding (DTMF)--that is, the sound you hear when you are on a phone call and
@@ -83,7 +83,7 @@ in code.  The code sample below helps to bridge that gap.
 The code below is a snippet for performing an FFT.  ARM provides a DSP library
 as part of the Cortex Microcontroller Software Inteface Standard (CMSIS).
 
-{% highlight CPP %}
+```c++
 typedef struct {
   int32_t real;
   int32_t imag;
@@ -143,7 +143,7 @@ void core_fft_i32(fft_context_i32_t * context, fft_i32_t * dest, fft_i32_t * src
 
   }
 }
-{% endhighlight %}  
+```  
 
 ## Conclusion
 

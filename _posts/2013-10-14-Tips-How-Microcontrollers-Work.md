@@ -7,7 +7,7 @@ page_source: MicrocontrollerBlog
 tags : [embedded, microcontroller, circuit]
 ---
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/sili-atom.svg" />
+![](/images/sili-atom.svg" />
 Microcontrollers are small computers that contain a central processor, memory,
 and input/output circuitry all on one integrated chiComputers in general
 contain all these components with varying degrees of integration. Most people
@@ -188,13 +188,13 @@ These operations can also be combined. NOR is a combination of NOT and OR where 
 
 The diagram below shows a CMOS inverter which is the CMOS implementation of the boolean NOT operation--the circuit is also known as a NOT gate. The transistor on the VDD side is a PMOS while the one connected to ground is an NMOS. The drains of the PMOS and NMOS are connected at the voltage output. The gates are also connected at the voltage input.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/cmos-inverter.svg" />
+![](/images/cmos-inverter.svg" />
 
 When the voltage input is zero volts, the output voltage is VDD (henceforth called logic zero and logic one respectively). With zero input voltage, the gate-source voltage of the PMOS is -VDD. This causes the PMOS to conduct current. Effectively, the output is shorted to VDD. In this state, the gate-source voltage on the NMOS is zero volts keeping the NMOS off.
 
 Conversely, when the voltage input is VDD, the output is logic zero. In this state, the NMOS is on, and the PMOS is off. Each input scenario is shown in the diagram below.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/cmos-inverter-on-off.svg" />
+![](/images/cmos-inverter-on-off.svg" />
 
 By adding two more complementary transistors, other gates are created.
 
@@ -305,7 +305,7 @@ Microcontroller architecture relies on digital devices created using combination
 
 A basic microcontroller architecture includes memory, a CPU, and peripheral circuitry. The memory might be flash (typically used for program instructions) and RAM. The CPU contains circuitry that can load and store data from memories as well as perform various calculations such as adding and subtracting using the arithmetic logic unit (ALU). The CPU also has a set of registers, which is a special type of RAM that is directly wired to the ALU. This means the CPU cannot directly add two values from RAM. It must first load the values to the CPU registers to perform the calculation. The general purpose CPU registers are typically called r0, r1, r2, and so on. Special CPU registers also include the program counter and stack pointer. Finally, microcontrollers contain peripheral circuitry that is controlled using peripheral registers. The peripheral registers are also RAM like. But instead of the data just sitting there, it actively controls the peripheral circuitry such as the UART, SPI, I2C, GPIO, and so on. Therefore by reading and writing the peripheral registers, the CPU can interact with external devices (such as a bluetooth radio).
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/mcu-arch.svg" />
+![](/images/mcu-arch.svg" />
 
 For a microcontroller to execute an instruction, it goes through three basic steps.
 

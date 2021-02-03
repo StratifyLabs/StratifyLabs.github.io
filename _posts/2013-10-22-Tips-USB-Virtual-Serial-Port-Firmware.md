@@ -98,7 +98,7 @@ host while the bulk out endpoint transfer data from the host to the device.
 The following code is used to set up the endpoint descriptors for the
 virtual serial port.
 
-{% highlight CPP %} 		
+```c++ 		
 #include <stdint.h>
 
 //This is the standard device descriptor
@@ -358,7 +358,7 @@ const link_cfg_desc_t app_cfg_desc = {
 
     .terminator = 0
 };
-{% endhighlight %}
+```
 
 ### Required Interface Requests
 

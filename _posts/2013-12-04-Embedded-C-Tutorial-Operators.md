@@ -22,7 +22,7 @@ imperative; second, divide does not do any rounding; third, the operators may
 cause an overflow depending on the data type. The code below illustrates these
 operators and their quirks as well as introduces formatted number printing using printf().
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -43,17 +43,17 @@ int main(int argc, char * argv[]){
      printf("5.  13 % 2 is %d\n", z);
      exit(0);
 }
-{% endhighlight %}
+```
 
 The output of the above program is:
 
-{% highlight BASH %}
+```bash
 1.  5*10+10 is 60
 2.  5+10*10 is 105
 3.  5/10 is 0
 4.  5-6 is 255
 5.  13 % 2 is 1
-{% endhighlight %}
+```
 
 The program output illustrates how these operators work.
 
@@ -89,13 +89,13 @@ If we recall learning to count, we learned the first column is known as the one'
 0, 1, 10 (add a column and restart), 11, 100 (add a column and start over), 101, 110, 111, 1000 (add a column and restart)
 Instead of the one's, ten's and hundred's column, each new column is just two times greater yieding the one's, two's, four's, eight's, and sixteen's column. The table below shows binary numbers from 0 to 15.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/binary-count.svg" />
+![](/images/binary-count.svg" />
 
 When looking at binary numbers, you can convert to decimal by adding the value of the column for the columns with a one. Take 12 for example. It is written 1100 in binary. The column values are 8-4-2-1. There are ones in the 8 column and the 4 column and 8+4 is equal to 12. For the binary number 7 (111), we add 4+2+1 to get 7.
 
 Armed with an understanding of binary numbers, the binary operators in C should come easily. The operators include "shift", "and", "or", "xor", and "not". A shift comes in left and right varieties while the others can be either bit-wise or logical. The following code illustrates shifting.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -113,15 +113,15 @@ int main(int argc, char * argv[]){
     printf("3.  128<<2 is %d\n", z);
     exit(0);
 }
-{% endhighlight %}
+```
 
 The above program produces the following output.
 
-{% highlight BASH %}
+```bash
 1. 5>>1 is 2
 2. 2<<3 is 16
 3. 128<<2 is 0
-{% endhighlight %}
+```
 
 Looking at the output above:
 
@@ -144,7 +144,7 @@ The bit-wise "not" operator is denoted in C using the ~. It only has one argumen
 
 p The logical versions of "and", "or", and "not" assume the inputs are either zero or non-zero and output one or zero accordingly. The symbols are &&, || (two, consecutive vertical lines), and ! respectively. The code example below illustratres how to use these operators.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -168,17 +168,17 @@ int main(int argc, char * argv[]){
     printf("5.  z is %d !z is %d\n", z, !z);
     exit(0);
 }
-{% endhighlight %}
+```
 
 The output of the above program is:
 
-{% highlight BASH %}
+```bash
 1.  5&7 is 5
 2.  5|7 is 7
 3.  0&&10 is 0
 4.  0||10 is 1
 5.  z is 1 !z is 0
-{% endhighlight %}
+```
 
 1. This is a bitwise "and" of 0b00000101 (5) and 0b00000111 (7). Since bits 0 and 2 are one in both input values, they are both one in the output value of 0b00000101 (5).
 1. For the bitwise "or" of 0b00000101 (5) as well as 0b00000111 (7), the output is 0b00000111 because these bits are set in either of the inputs.
@@ -206,7 +206,7 @@ doing math. Here are the operators:
 
 The following program demonstrates how these work.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -229,25 +229,25 @@ int main(int argc, char * argv[]){
      printf("6.  5>=10 is %d\n", z);
      exit(0);
 }
-{% endhighlight %}
+```
 
 The output of the program is:
-{% highlight BASH %}
+```bash
 1.  5==10 is 0
 2.  5==5 is 1
 3.  5>10 is 0
 4.  5<10 is 1
 5.  5<=5 is 1
 6.  5>=10 is 0
-{% endhighlight %}
+```
 
 These operators should be pretty straightforward. There is one thing to remember.
 It is bad practice to use == with a floating point value. It is better to bound
 the range using something like
 
-{% highlight CPP %}
+```c++
 ((x > 2.0) && (x < 4.0))
-{% endhighlight %}
+```
 
 Notice how the logical
 "and" is used in conjuction with the other operators. Combining operators is
@@ -262,7 +262,7 @@ desired result. The order of operations is mentioned briefly above in the
 
 When combining operators, things can get confusing when trying to deduce the order of operations. It is good programming practice to use copious amount of parentheses to make things clear both to you and to future maintainers of your code. The program below illustrates both good and bad use of parentheses when combining operators.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char * argv[]){
@@ -286,13 +286,13 @@ int main(int argc, char * argv[]){
     }
     return 0;
 }
-{% endhighlight %}
+```
 
 ## Shortcut Operators
 
 The C language provides a number of shorthand ways to do some operations. One of the most common is ++ which increments a variable.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc; char * argv[]){
@@ -302,7 +302,7 @@ int main(int argc; char * argv[]){
      printf("x is now %d\n", ++x);
      exit(0);
 }
-{% endhighlight %}
+```
 The code above demonstrates both post-increment and pre-increment short cuts. It outputs:
 
 1. x is 0
@@ -312,7 +312,7 @@ The x++ statement increments x after its value is passed to the printf() functio
 
 Here is the full list of shortcuts plus their equivalents:
 
-{% highlight CPP %}
+```c++
 x++; //(post-increment) equivalent to x = x + 1
 ++x; //(pre-increment) equivalent to x = x + 1
 //post/pre increment have different rules for the order of operations
@@ -328,7 +328,7 @@ x&=y; //equivalent to x = x & y
 x^=y; //equivalent to x = x ^ y
 x>>=y; //equivalent to x = x >> y
 x<<=y; //equivalent to x = x << y
-{% endhighlight %}
+```
 
 
 ## Take Away

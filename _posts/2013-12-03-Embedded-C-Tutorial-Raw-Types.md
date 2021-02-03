@@ -12,7 +12,7 @@ number: 03
 
 Programs are created to do something useful--in embedded systems, to make a device or gadget do something useful. As a means to an end, the program uses data and operations. For example, a motor's position is represented as data in a program; the motor's speed, also represented as data, can be calculated using various operations given the change in motor positions for a given period of time. This tutorial introduces C raw data types. The following code snippet illustrates how to use data in C and introduces the raw data type int.
 
-{% highlight CPP %}
+```c++
 #include <stdlib.h> //this declares exit()
 #include <unistd.h> //this contains usleep()
 #include "motor.h" //this is a fictitious header than contains get_motor_position()
@@ -31,7 +31,7 @@ int main(int argc, char * argv[]){
      motor_speed = (motor_pos1 - motor_pos0) / 1000;
      exit(0); //exit the program
 }
-{% endhighlight %}
+```
 
 ##  Data Types
 

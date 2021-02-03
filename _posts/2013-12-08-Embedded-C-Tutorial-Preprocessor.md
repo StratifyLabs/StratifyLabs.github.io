@@ -21,16 +21,16 @@ The C language preprocesses all code before compilation. Within the program, pre
 
 When the preprocessor encounters the #include directive, it replaces the #include line with the contents of the included file. Local files are included using quotation marks while system files are included using less/greater than symbols.
 
-{% highlight CPP %}
+```c++
 #include <stdlib.h>//This is a system file
 #include "local.h" //This is a local include file
-{% endhighlight %}
+```
 
 ### #define and #undef
 
 When the preprocessor encounters the #define directive, it replaces the symbol with the specified definition. As a matter of convention, defined symbols are written in all capital letters using underscores to separate words. The #undef directive can be used to remove the definition of a previous #define. The following program shows the basic usage of #define.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #define INIT_X_VALUE 10
@@ -42,13 +42,13 @@ int main(int argc, char * argv[]){
      printf("X is %d, Y is %d\n", x, y);
      exit(0);
 }
-{% endhighlight %}
+```
 
 ### #if, #ifdef, #ifndef, #else, #endif
 
 The conditional directives tell the compiler to omit or include certain code snippets based on various criteria. Let's start with a program example.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #define DEBUG 1
@@ -61,25 +61,25 @@ int main(int argc, char * argv[]){
      debug_printf("This is a debug message\n");
      exit(0);
 }
-{% endhighlight %}
+```
 
 The preceding program illustrates one way to enable and disable debugging messages in a program. It uses the #ifdef directive to tell the compiler to use printf() if DEBUG is defined and just use an empty statement if it is not.
 
 One standard use of the #ifndef directive is called a header guard. If a single program includes the same header more than once, this can sometimes cause problems because some types may be defined more than one time. A header guard prevents these problems by defining a new symbol and only including the header if the new symbol has not yet been defined. This ensures the preprocessor only includes the file one time.
 
-{% highlight CPP %}
+```c++
 #ifndef MY_HEADER_FILE_H_
 #define MY_HEADER_FILE_H_
 typedef int my_int_type;
 int my_function_prototype(void);
 #endif //end if for MY_HEADER_FILE_H_
-{% endhighlight %}
+```
 
 ### #error and #warning
 
 The #error and #warning directives allow for user defined errors and warnings that the compiler picks uThe utility of these directives is in making sure the program is configured correctly if there are limits on what conditions the program may compile. The following program illustrates how these directives may be used.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <stdlib.h>
 #define DEBUG 1
@@ -92,7 +92,7 @@ int main(int argc, char * argv[]){
      debug_printf("This is a debug message\n");
      exit(0);
 }
-{% endhighlight %}
+```
 
 The program above uses a preprocessor directive that causes the compiler to warn the user if debugging is enabled. In other situations, #error might be more appropriate. For example, if the user has defined a value that is not in a valid range.
 

@@ -6,7 +6,7 @@ category: User Guides
 tags : [user-guide, development, Stratify, arm, cortex-m3, cortex-m4, cortex-m7, programming]
 ---
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/filesystem-icon.png" />
+![](/images/filesystem-icon.png" />
 Stratify OS supports any number and any type of filesystem. 
 
 The filesystem can be a:

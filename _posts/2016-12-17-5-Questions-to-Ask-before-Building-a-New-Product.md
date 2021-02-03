@@ -13,7 +13,7 @@ Do you have an idea for an amazing product that will change the world? There is 
 
 ### (1) What pain/problem does your idea solve?
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/5-questions-pain-points.jpg" />
+![](/images/5-questions-pain-points.jpg" />
 
 Your idea should make people's lives better or easier in some way. Can you identify a pain point in people's lives that you are solving? A bigger pain means people will be willing to pay more to address it.
 

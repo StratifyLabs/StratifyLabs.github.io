@@ -14,7 +14,7 @@ While studying electrical engineering, I learned early on that electricity doesn
 
 ## Electrons Physically Flow in the Opposite Direction of Current
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/electrical-current-battery.jpg" />
+![](/images/electrical-current-battery.jpg" />
 <small>Image by: <a href="https://www.flickr.com/photos/andyarmstrong/190078748/in/photolist-hNcMN-4XpHv6-Hg1rRz-9b1CSY-DrLxqE-e1CTR8-awHFrS-5oBLZh-9uvRdX-nkJehk-9uyRzm-cpg9f-51Gxth-8v4FZw-jMRhX-8mXeU-MYHwCD-NP4yDn-f3LfTr-NLuWTm-f3Lge6-3m7fC-S84ZbB-rBjqX-exnwi1-BBTZ87-7SN5K6-7SN5Wv-83JXcv-3jLmyh-D7e1Jh-a2nroW-7SRHmd-7SN66T-7SN5Rr-S5utvU-S84Z2Z-74YSJu-eK1VVR-jKUAb-S862Fe-b9zXep-S852WX-4JJPRr-5nn2nU-7Bcw32-m6q2x-e7GXHq-e7BgkF-EWASz">Andy Armstrong</a></small>
 
 This one is really about convention. We define current as the flow of charge, or more specifically the flow of positive charge. Because electrons have negative charge that means positive charge flows in the opposite direction that the electrons are actually moving. For example, in a battery, current flows from the positive terminal to the negative terminal. But in reality electrons are physically flowing from the negative terminal to the positive terminal.
@@ -35,7 +35,7 @@ But of course, you already knew that. You have experienced static electricity an
 
 We have all seen the "Danger: High Voltage" signs. That is because high voltage is dangerous but the sign could also say with less drama "Danger: Potentially small amounts of electric current".
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/electrical-current-taser.png" />
+![](/images/electrical-current-taser.png" />
 <small>Image by: <a href="https://www.flickr.com/photos/centralasian/4627311692/in/photolist-83Uby5-a9zYHf-8ic6z2-7k7p71-AcXDv9-6B4LZR-7DFpj2-9bJzbp-4Z5FoV-6vABhR-4dPyRW-95YnGk-8X5Wk-6vtyRi-96evQH-jhQMRQ-8X7ve-dWzuGK-dtxRBv-oUghni-72vqix-dVrfye-dViPZ2-dVrgfP-acpuWL-95LTdb-jhNKGk-96hFiY-96hxAo-96hBsh-hwAgto-FqJr9-5gdcde-46YobJ-dWzuKt-dWF8cY-jhNpMF-hggfwU-4RNAsV-5R6dYb-dWzut4-jhN5qV-oUf8yk-pbKyGt-dVpsrE-abzATc-dVwJ9E-pbHtvN-8P1BrM-oUgh6X">cea+</a></small>
 
 For example, while a taser uses 10's of thousands of volts, it only delivers a few milliamps of current and causes significant disruption in muscle function. The way the math works is that current (in amps) is equal to voltage divided by resistance. The resistance of your body is high enough that most voltages only cause micro amps of current to flow through your body.

@@ -14,7 +14,7 @@ Let's analyze the simplest of circuits: a power supply with a load resistor (sho
 
 Power is calculated as the voltage times current.  There are a few algebraic ohm's law substitutions in the diagram below.
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/ohms-law-with-power.svg" />
+![](/images/ohms-law-with-power.svg" />
 
 For the case above, the voltage is 3.0 volts and the current is 0.1A resulting in 0.3W of power being dissipated in the resistor. A typical 1/4W resistor is insufficient in this case. A 0.5W or 1W resistor is a better choice for this application. A good rule of thumb is calculate the max power and then double it.
 

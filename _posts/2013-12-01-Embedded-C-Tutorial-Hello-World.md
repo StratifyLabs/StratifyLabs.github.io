@@ -13,7 +13,7 @@ Programming tutorials, as you will notice, always begin with the quintessential
 of the language, and how to use output--essential for seeing if your program is
 working correctly. The code below is the standard C Hello World program.
 
-{% highlight CPP %}
+```c++
 //include is a compiler directive and .h refers to a header file
 #include <stdio.h> //contains the prototype for printf
 #include <stdlib.h> //contains the prototype for exit
@@ -23,7 +23,7 @@ int main(int argc, char * argv[]){
      printf("Hello World\n"); //printf is part of stdio
      exit(0);
 }
-{% endhighlight %}
+```
 
 {{ excerpt_separator }}
 
@@ -84,10 +84,10 @@ and argv which is the norm for desktop operating systems. For some embedded syst
 main() may be declared more simply (see below) because only one program is
 ever installed on the system and no parameters are passed to main().
 
-{% highlight cpp %}
+```c++
 //OS doesn't pass any arguments to main(), int is returned
 int main(void);
-{% endhighlight %}
+```
 
 Before running main(), the OS runs startup code referred to as the C-runtime (CRT)
 code which initializes the program. The program then executes statements--separated

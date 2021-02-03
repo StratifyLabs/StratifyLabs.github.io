@@ -36,7 +36,7 @@ There may have been other cases of damages bu those were the only two I could re
 
 ## What to Buy
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/wrist-strap.jpg" />
+![](/images/wrist-strap.jpg" />
 
 Here are three products for less than $40 that will improve your ESD setup:
 
@@ -45,7 +45,7 @@ Here are three products for less than $40 that will improve your ESD setup:
 - [Wrist Strap](https://www.amazon.com/Rosewill-Anti-Static-Components-RTK-002-Yellow/dp/B004N8ZQKY): $5
 
 
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/ground-adapter.jpg" />
+![](/images/ground-adapter.jpg" />
 
 ## Going Full IPC
 

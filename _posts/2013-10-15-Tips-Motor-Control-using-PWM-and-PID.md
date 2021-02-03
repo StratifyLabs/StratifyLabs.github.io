@@ -43,7 +43,7 @@ The easiest way to implement a shoot-through prevention circuit is to use an int
 
 A snubber circuit is used to suppress the voltage transients caused by PWM switching (as well as by the inherent switching in brushed motors).  A DC motor is an inductive load; the voltage across it is proportional to the change in current, given by:
 
-<img class="post_equation" src="{{ BASE_PATH }}/images/inductor-voltage-formula.svg" />
+![](/images/inductor-voltage-formula.svg" />
 
 When the PWM signal switches the motor from on to off, there is a rapid change
 in current (ie di/dt is large) which causes a voltage spike.  Without a snubber
@@ -79,7 +79,7 @@ The Stratify API calc::Pid_f class is a C++ implemenation of a PID loop on board
 
 {% include pro-tip-end.html %}
 
-{% highlight CPP %}
+```c++
 typedef struct{
   float max /*! Max manipulated value */;
   float min /*! Miniumum manipulated value */;
@@ -126,7 +126,7 @@ float pid_update_f(float sp /*! The set point */,
   }
   return manp;
 }
-{% endhighlight %}
+```
 
 It is important to properly apply the manipulated variable to the process.  In the H-bridge shown above, Q5 inverts the PWM signal which means the software needs to invert the PWM value before applying it.  Also while switching Q2 and Q4, the states of Q1 and Q3 determine the motor direction; this affects how the sign of the manipulated variable is interpreted.  These nuances in the circuit can make debugging a PID loop tricky but can be overcome with sound analysis as well as trial and error.
 
@@ -154,7 +154,7 @@ The following drawing shows the specific connections. The user input (to set the
 
 The source code uses a PID loop to control the motor speed. First, it reads the ADC to calculate a speed setting from 1500RPM to 10,000RPM which is set by the user using the potentiometer. After the ADC is sampled, it is filtered using an exponential moving average, low-pass filter. This prevents noise on the ADC from causing changes to the speed setting. The code then calculates the motor speed in revolutions per minute. It measures the rising edges of the rotary encoder (200 counts per revolution) using the timer clock input. It then uses the POSIX function (provided by CoActionOS) clock_gettime() to calculate the change in time since the last measurement. The current speed is then the change in number of revolutions divided by the change in time. The current speed and the set point speed are then passed to the PID calculation which returns the duty cycle which is applied to the PWM output.
 
-{% highlight CPP %}
+```c++
 #include <stdio.h>
 #include <applib/pwm.h>
 #include <applib/tmr.h>
@@ -381,7 +381,7 @@ void set_duty(int duty){
     pwm_set(PWM_PORT, &req);
   }
 }
-{% endhighlight %}
+```
 
 ### Results
 

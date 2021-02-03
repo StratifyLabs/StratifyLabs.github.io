@@ -26,7 +26,7 @@ Once the design is done, each bit of functionality is assigned to a Doxygen
 group.  The groups are then grouped together.  For example, functions in the UART driver are
 part of the UART group, and the UART group is part of the PERIPHERAL group as shown below:
 
-{% highlight CPP %}
+```c++
 /*! \addtogroup UART UART Driver
  *
  * \ingroup PERIPHERAL
@@ -66,7 +66,7 @@ int uart_wr(int port /*! The port to write */,
 void uart_close(int port /*! The port to close */);
 
 #endif
-{% endhighlight %}
+```
 
 To complete the design hierarchy, the PERIPHERAL group is part of a top group
 called SYSTEM.  To document all of the modules shown in the architecture diagram

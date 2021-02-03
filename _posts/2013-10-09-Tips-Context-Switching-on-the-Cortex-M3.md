@@ -51,14 +51,14 @@ status, to allow the context switcher to selectively execute
 tasks.  The following code shows an example of a structure that can
 be used for an entry in the task table:
 
-{% highlight CPP %}
+```c++
 typedef struct {
      void * sp; //The task's current stack pointer
      int flags; //Status flags includes activity status, parent task, etc
 } task_table_t;
 int current_task;
 task_table_t task_table[MAX_TASKS];
-{% endhighlight %}
+```
 
 The sp member stores the value of the task's stack pointer, while
 flags holds the task status. In this example, the task uses two
@@ -77,7 +77,7 @@ The context switcher needs to:
 The following code is an example of a context switcher, preceded by some
 helper functions, and the interrupt handlers.
 
-{% highlight CPP %}
+```c++
 static uint32_t * stack; //This is stored on the heap rather than the stack
 
 #define MAIN_RETURN 0xFFFFFFF9  //Tells the handler to return using the MSP
@@ -137,14 +137,14 @@ static inline void * rd_thread_stack_ptr(void){
 static inline void wr_thread_stack_ptr(void * ptr){
     asm volatile ("MSR psp, %0\n\t" : : "r" (ptr) );
 }
-{% endhighlight %}
+```
 
 This is the function for the actual context switcher. This context
 switcher uses the MSP for task 0 (assumed to be the kernel) and the
 PSP for other tasks.  It is also possible to use the PSP for the
 kernel and just use the MSP during interrupt handling.
 
-{% highlight CPP %}
+```c++
 //This is the context switcher
 void context_switcher(void){
    task_table[current_task].sp = rd_proc_stack_ptr(); //Save the current task's stack pointer
@@ -162,7 +162,7 @@ void context_switcher(void){
    } while(1);
    wr_proc_stack_ptr( task_table[current_task].sp ); //write the value of the PSP to the new task
 }
-{% endhighlight %}
+```
 
 The following diagram shows the chronology of the stack pointer when a
 switch happens between task one and task two. Note that because this
@@ -179,7 +179,7 @@ than MAIN_RETURN above.
 The first thing that must be done is to initialize the main stack's
 task table entry.
 
-{% highlight CPP %}
+```c++
 //This defines the stack frame that is saved  by the hardware
 typedef struct {
   uint32_t r0;
@@ -213,7 +213,7 @@ void task_init(void){
     //The systick needs to be configured to the desired round-robin time
     //..when the systick interrupt fires, context switching will begin
 }
-{% endhighlight %}
+```
 
 ### Creating a New Task
 
@@ -221,7 +221,7 @@ Once the context switcher is initialized, there needs to be a mechanism
 to start new tasks. Starting a new task involves finding an available
 entry in the task table and initializing the new task's stack.
 
-{% highlight CPP %}
+```c++
 int new_task(void *(*p)(void*), void * arg, void * stackaddr, int stack_size){
     int i, j;
     void * mem;
@@ -265,7 +265,7 @@ void del_process(void){
   SCB->ICSR |= (1<<28); //switch the context
   while(1); //once the context changes, the program will no longer return to this thread
 }
-{% endhighlight %}
+```
 
 ### Conclusion
 
